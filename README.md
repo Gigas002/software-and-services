@@ -61,7 +61,6 @@ Main extensions:
 
 - [DuckDuckGo Privacy Essentials](https://github.com/duckduckgo/duckduckgo-privacy-extension) -- enables DuckDuckGo search in search bar by default, blocks some trackers and stuff
 - [ff2mpv](https://github.com/woodruffw/ff2mpv) -- adds an ability to play any browser video through mpv. Read more in **media players** section below. There's also a ready [AUR package](https://aur.archlinux.org/packages/ff2mpv-native-messaging-host-git/) for this
-- [Firefox containers](https://github.com/mozilla/multi-account-containers) -- firefox containers for using multiple accounts in one browser instance
 - [Maximize all windows](https://github.com/ericchase/maximize-all-windows) -- useful when using arkenox's user.js, read more below
 - [Plasma Integration](https://invent.kde.org/plasma/plasma-browser-integration) -- if you're using KDE desktop; usually KDE suggests it itself
 - [Skip redirect](https://github.com/sblask/webextension-skip-redirect) -- as the title says - blocks some annoiying redirects
@@ -74,6 +73,8 @@ Plus some advices from [arkenfox's wiki](https://github.com/arkenfox/user.js/wik
 - Don't use **HTTPS Everywhere**, it will be deprecated soon. Just enable HTTPS-only mode in your browser settings
 - Don't use NoScript, Ghostery, Disconnect, Privacy Badger, etc -- redundant with uBlock Origin; easily detected; practically abandonware
 - Instead of url-shorteners use [Actually Legitimate URL Shortener Tool](https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener.txt) for uBlock (with `AdGuard URL Tracking Protection`)
+- Don't use [Firefox containers](https://github.com/mozilla/multi-account-containers) add-on, it's prebuilt in firefox already, just enable it. Containers are used for multiple accounts in one browser instance
+
 
 Additional/situative extensions and recommendations:
 
