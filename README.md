@@ -148,11 +148,7 @@ Well, here comes nothing.
 
 ## Password Managers and 2FA
 
-- $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- awesome open source password manager with browsers extensions and standalone apps for modern operating systems, including iOS. Slowly migrating here from firefox account...
-
-TODO: explain these and add sources:
-
-authy
+- $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- awesome open source password manager with browsers extensions and standalone apps for modern operating systems, including iOS. Has 2FA and other good stuff on paid plans, compare [here](https://bitwarden.com/pricing/). Slowly migrating from firefox account...
 
 ## File sync and share
 
