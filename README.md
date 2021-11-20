@@ -33,7 +33,7 @@ MediaCreationTool.bat, ExplorerPatcher, Destroy-Windows-10-Spying, Open-Shell-Me
 
 ## Routers firmware
 
-Read [this article](https://www.privacyguides.org/operating-systems/#firmware). I don't use custom firmware because my router isn't supported by these systems yet.
+Read [this article](https://www.privacyguides.org/operating-systems/#firmware). I don't use custom firmware because my router isn't supported by these systems yet. If you're lucky to have one of these and you're a proton user, you can configure your router to force all connections through ProtonVPN, see detailed guide [here](https://protonvpn.com/support/installing-protonvpn-on-a-router/).
 
 ## Create boot device
 
@@ -197,7 +197,7 @@ VeraCrypt, https://www.privacyguides.org/software/productivity/#encrypt
 TODO: explain these and add sources:
 
 qimgv, mpv (+ config, shaders, etc), ffmpeg, imagemagick, libvips, pngquant, ruffle + mpv guide https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/
-AntiDupl.NET, gimp/krita, kdenlive, K-Lite Codec Pack, vlc, ImageGlass
+AntiDupl.NET, gimp/krita, kdenlive, K-Lite Codec Pack, vlc + ios, ImageGlass
 
 ## Games
 
