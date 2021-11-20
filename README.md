@@ -27,9 +27,14 @@ TODO: TOC
 
 ### Windows tweaks
 
-TODO: explain these and add sources:
+The whole section is !WINDOWS! only
 
-MediaCreationTool.bat, ExplorerPatcher, Destroy-Windows-10-Spying, Open-Shell-Menu, WindowsSpyBlocker, OOSU10, sysinternals suite
+- [MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat) -- lets you create bootable device on/for unsupported win 11 pc
+- [Explorer Patcher](https://github.com/valinet/ExplorerPatcher) -- set of tweaks for win 11 to return win 10's behavior
+- [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) -- more minor tweaks for win 7 - win 10. Not sure if win 11 is supported, but project seems a bit abandoned, since the last commit was in june
+- [WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker) -- disables telemetry and some services
+- !PROPRIETARY! [O&O ShutUp10++](https://www.oo-software.com/en/shutup10) -- portable, free to use app to block lots of tracking stuff and services in windows. Has a GUI
+- !PROPRIETARY! [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) -- set of semi-official tools for windows. It's very useful and I highly recommend it
 
 ## Routers firmware
 
