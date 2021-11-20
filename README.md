@@ -207,10 +207,31 @@ VeraCrypt, https://www.privacyguides.org/software/productivity/#encrypt
 
 ## Media stuff
 
-TODO: explain these and add sources:
+### Image viewers
 
-qimgv, mpv (+ config, shaders, etc), ffmpeg, imagemagick, libvips, pngquant, ruffle + mpv guide https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/
-AntiDupl.NET, gimp/krita, kdenlive, K-Lite Codec Pack, vlc + ios, ImageGlass
+- [qimgv](https://github.com/easymodo/qimgv) -- awesome lightweight image viewer on c++. Even supports playing videos through `mpv`
+- !WINDOWS! [ImageGlass](https://github.com/d2phap/ImageGlass) -- good alternative for windows, if you didn't like qimgv. Written on c# with .net framework, .net5+ support planned
+
+### Image libs
+
+- [libvips](https://github.com/libvips/libvips) -- insane fast image processing library on c. Supports huge amount of formats and ImageMagick as plugin
+- [ImageMagick](https://github.com/ImageMagick/ImageMagick) -- alternative to libvips, slower on benchmarks but still usable for some tasks
+- [pngquant](https://github.com/kornelski/pngquant) -- lossy image-compression command line tool
+- !WINDOWS! [AntiDupl](https://github.com/ermig1979/AntiDupl) -- app to scan and remove duplicated images. Based on simd library on c++
+
+### Video stuff
+
+- [mpv](https://github.com/mpv-player/mpv) -- IMO best video player nowadays. Supported by a lot of plugins and programs like `ff2mpv`, `freetube`, `qimgv` and more. Has an ability to run sripts. My configs are included in this repo (based on [eXmendiC guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/)). These configs also contains links to the shaders I like
+- [vlc](https://github.com/videolan/vlc) -- alternative for mpv. The only good player on iOS (since there is no free mpv players available)
+- !WINDOWS! [K-Lite Codec Pack with MPC-HC](https://www.codecguide.com/download_kl.htm) -- collection of DirectShow filters, codecs, and tools. Handles HDR video with MadVR pretty good, comparing to VLC. Need to compare with mpv though
+- [ruffle](https://github.com/ruffle-rs/ruffle) -- flash player emulator on rust
+- [ffmpeg](https://github.com/FFmpeg/FFmpeg) -- cross-platform solution to record, convert and stream audio and video; CLI
+
+### Editors
+
+- [krita](https://github.com/KDE/krita) -- analogue of photoshop, IMO better than GIMP
+- [GIMP](https://github.com/GNOME/gimp) -- analogue of photoshop. While I think it's worse, than krita, I still think it's a good software choice
+- [kdenlive](https://github.com/KDE/kdenlive) -- free and open source video editing application
 
 ## Games
 
