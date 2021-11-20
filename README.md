@@ -72,6 +72,7 @@ Main extensions:
 - [Stylus](https://github.com/openstyles/stylus/) -- style manager. [Here's](https://uso.kkx.one/) open source style archive
 - [Tabliss](https://github.com/joelshepherd/tabliss) -- lets you configure your "new tab" page
 - [uBlock](https://github.com/gorhill/uBlock) -- ad/malware blocker
+- [Privacy Redirects](https://github.com/SimonBrazell/privacy-redirect) -- redirects your queries to normal services (e.g. youtube links opens in FreeTube)
 
 Plus some advices from [arkenfox's wiki](https://github.com/arkenfox/user.js/wiki/4.1-Extensions):
 
@@ -155,11 +156,10 @@ Well, here comes nothing.
 Read more [on privacyguides](https://www.privacyguides.org/software/file-sharing/).
 
 - ?PROPRIETARY? $PAID$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- early beta version of file sync service by proton team. Available only for paid (*plus and higher, not basic-paid*) plans. Currently [closed source](https://github.com/ProtonMail/proton-drive/issues/11) (*temporarily?*). No desktop/mobile apps yet either
-- [OnionShare](https://github.com/onionshare/onionshare) -- share files and chat with friends using tor network
-
-TODO: explain these and add sources:
-
-git, altserver?
+- [OnionShare](https://github.com/onionshare/onionshare) -- share files and chat with friends using tor network. Desktop only
+- [Git](https://git-scm.com/downloads) -- do I really need to explain what git is
+- !WINDOWS! [AltStore/AltServer](https://github.com/rileytestut/AltStore) -- gives you an opportunity to install apps not from AppStore
+- !PROPRIETARY! !WINDOWS! [iTunes/iCloud](https://support.apple.com/en-us/HT210384) -- unfortunately it's a needed dependency for `AltServer` to work
 
 ## Search engines
 
@@ -175,11 +175,23 @@ If you need an alternative for services like twitter/facebook/etc, check out [th
 - [Nitter](https://github.com/zedeus/nitter) -- alternative twitter frontend, focused on privacy. It's still in early beta, so there's not much features released
 - [Pawoo](https://github.com/CrossGate-Pawoo/mastodon) -- alternative TO twitter for japanese artists and users, developed by pixiv stuff. Fork of [mastodon](https://github.com/mastodon/mastodon)
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your YouTube data easily, doesn't spy on you. Cons: desktop only, lacks playlists support, FUCKING ELECTRON
+- !iOS! [EhPanda](https://github.com/tatsuz0u/EhPanda) -- only one good open source app for sad panda on iOS. Installable through `AltServer`
 
-TODO: explain these and add sources:
+### Messengers
 
-telegram, element, discord alternatives (abaddon, gtkcord, fosscord https://www.privacyguides.org/software/real-time-communication/
-sadpanda, sankaku, pixiv, fantia, EhPanda for ios
+Read more about instant messengers on [privacyguides](https://www.privacyguides.org/software/real-time-communication/)
+
+- !PROPRIETARY! [Telegram](https://github.com/telegramdesktop/tdesktop) -- only app is open source, it lacks encryption by default and has many other problems. But still it's a lightweight client, that smoothly run on every system and even with bad internet connection. It also has a lot of awesome features, that completely open source alternatives doesn't
+- [Element](https://github.com/vector-im) -- good replacement for telegram/discord for future. Now lacks lots of features and feels very slow at all tasks
+
+**Discord alternatives**
+
+Discord is shit as is and I would recommend you never use it because it's app VERY slow, has lots of bugs and I personally don't love discord policies. Third-party apps can fix first problems, but last one is in discord itself. Anyway, here's a short list
+
+- [Abaddon](https://github.com/uowuo/abaddon) -- young replacement of discord app on c++ without electron. In very early state, but can be good in future, developer seems really passionate about his program
+- !LINUX! [Gtkcord3](https://github.com/diamondburned/gtkcord3) -- discord client on golang. As developer stated, `gtkcord3 won't be receiving any new features`, so I don't think there's a point in using this
+- [Fosscord](https://github.com/fosscord/fosscord) -- free open source selfhostable discord compatible communication platform. Looks like an awesome replacement for original discord. It's [client](https://github.com/fosscord/fosscord-client) uses react-native instead of electron
+- !WINDOWS! [Unicord](https://github.com/UnicordDev/Unicord) -- UWP client, more feature-complete, than abaddon or gtkcord3, but developes very slow and win-only
 
 ## Self-Contained Networks
 
