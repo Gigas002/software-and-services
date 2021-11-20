@@ -174,7 +174,7 @@ If you need an alternative for services like twitter/facebook/etc, check out [th
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your data easily, doesn't spy on you. Cons: desktop only, lacks pleylists support, FUCKING ELECTRON
 
 TODO: explain these and add sources: 
-telegram, element, discord alternatives (abaddon, gtkcord) https://www.privacyguides.org/software/real-time-communication/
+telegram, element, discord alternatives (abaddon, gtkcord, fosscord https://www.privacyguides.org/software/real-time-communication/
 EhPanda for ios
 
 ## Self-Contained Networks
