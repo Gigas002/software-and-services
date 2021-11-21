@@ -207,17 +207,15 @@ VeraCrypt, https://www.privacyguides.org/software/productivity/#encrypt
 
 ## Media stuff
 
-### Image viewers
+### Image stuff
 
-- [qimgv](https://github.com/easymodo/qimgv) -- awesome lightweight image viewer on c++. Even supports playing videos through `mpv`
+- [qimgv](https://github.com/easymodo/qimgv) -- awesome lightweight image viewer on c++. Even supports playing videos through `mpv`. I've also created a [fork for arch users](https://aur.archlinux.org/packages/qimgv-qt6-kde-git/), which enables qt6 compilation and KDE support for cmake args. Build script is located here, in `/qimgv-qt6-kde` directory
 - !WINDOWS! [ImageGlass](https://github.com/d2phap/ImageGlass) -- good alternative for windows, if you didn't like qimgv. Written on c# with .net framework, .net5+ support planned
-
-### Image libs
-
 - [libvips](https://github.com/libvips/libvips) -- insane fast image processing library on c. Supports huge amount of formats and ImageMagick as plugin
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick) -- alternative to libvips, slower on benchmarks but still usable for some tasks
 - [pngquant](https://github.com/kornelski/pngquant) -- lossy image-compression command line tool
 - !WINDOWS! [AntiDupl](https://github.com/ermig1979/AntiDupl) -- app to scan and remove duplicated images. Based on simd library on c++
+- [DigiKam](https://invent.kde.org/graphics/digikam) -- photo management application. IMO handles duplicate-finding worse, than AntiDupl, but has a lot of other features
 
 ### Video stuff
 
