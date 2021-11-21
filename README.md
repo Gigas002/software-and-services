@@ -177,6 +177,8 @@ If you need an alternative for services like twitter/facebook/etc, check out [th
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your YouTube data easily, doesn't spy on you. Cons: desktop only, lacks playlists support, FUCKING ELECTRON
 - !iOS! [EhPanda](https://github.com/tatsuz0u/EhPanda) -- only one good open source app for sad panda on iOS. Installable through `AltServer`
 
+TODO: search for pawoo (mastodon), shitter apps?
+
 ### Messengers
 
 Read more about instant messengers on [privacyguides](https://www.privacyguides.org/software/real-time-communication/)
