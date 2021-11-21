@@ -214,7 +214,7 @@ VeraCrypt, https://www.privacyguides.org/software/productivity/#encrypt
 - [libvips](https://github.com/libvips/libvips) -- insane fast image processing library on c. Supports huge amount of formats and ImageMagick as plugin
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick) -- alternative to libvips, slower on benchmarks but still usable for some tasks
 - [pngquant](https://github.com/kornelski/pngquant) -- lossy image-compression command line tool
-- !WINDOWS! [AntiDupl](https://github.com/ermig1979/AntiDupl) -- app to scan and remove duplicated images. Based on simd library on c++
+- !WINDOWS! [AntiDupl](https://github.com/ermig1979/AntiDupl) -- app to scan and remove duplicated images. Based on simd library on c++. It's kind of abandoned, so I'd suggest you find an alternative. I [tried](https://github.com/Gigas002/AntiDupl/tree/change_structs) to upgrade program to modern systems -- merged .NET Core 3.1 patch into original repo and developed modernized .NET 5.0+ fork, but when I decided to touch the UI's code (to rewrite it with avalonia) I gave up, since it requires a LOT of time and I just don't have enough passion. Feel free to contribute though
 - [DigiKam](https://invent.kde.org/graphics/digikam) -- photo management application. IMO handles duplicate-finding worse, than AntiDupl, but has a lot of other features
 
 ### Video stuff
