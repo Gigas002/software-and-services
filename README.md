@@ -4,7 +4,7 @@
 
 This is a list of software, services and some minor tweaks which I use. I made it in for myself to have a backup for most important things and have a quick startup if something breaks.
 
-List mostly targets arch-based linux distributives, but there are also some windows apps. Most part of list if FLOSS and I treat this as default choice, but there are some proprietary apps just in case/no alternative, I'll mark them correspondingly.
+List mostly targets arch-based linux distributives, but there are also some windows apps. Most part of list if FLOSS and I treat this as default choice, but there are some proprietary apps just in case/no alternative, I'll mark them correspondingly. If you're more into iOS platform, than desktop, [here's](https://github.com/dkhamsing/open-source-ios-apps) more preferrable list of open source software for you. And an analogue for android users [here](https://github.com/pcqpcq/open-source-android-apps).
 
 A lot of stuff and recommendations on privacy was taken from [privacyguides](https://www.privacyguides.org/). Also a lot of useful software and tweaks for arch-based distributives listed on [arch wiki page](https://wiki.archlinux.org/title/List_of_applications).
 
@@ -19,6 +19,8 @@ $ marks $ shows if software is not completely free
 TODO: TOC
 
 ## OS
+
+This section will cover the OSes I've used or use now
 
 - [Manjaro](https://manjaro.org/download/) -- easy to start and use arch distributive
 - [Kubuntu](https://kubuntu.org/getkubuntu/) -- in case you prefer debians
@@ -176,8 +178,12 @@ If you need an alternative for services like twitter/facebook/etc, check out [th
 - [Pawoo](https://github.com/CrossGate-Pawoo/mastodon) -- alternative TO twitter for japanese artists and users, developed by pixiv stuff. Fork of [mastodon](https://github.com/mastodon/mastodon)
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your YouTube data easily, doesn't spy on you. Cons: desktop only, lacks playlists support, FUCKING ELECTRON
 - !iOS! [EhPanda](https://github.com/tatsuz0u/EhPanda) -- only one good open source app for sad panda on iOS. Installable through `AltServer`
+- !iOS! [iMast](https://github.com/cinderella-project/iMast) -- ios app for mastodon (including pawoo). Available only on japanese for now
+- [Syncplay](https://github.com/Syncplay/syncplay) -- client/server app to synchronize media playback on mpv/VLC/MPC-HC/MPC-BE. Analogue for services like synctube, discord's youtube together, etc
+- [Owncast](https://github.com/owncast/owncast) -- self-hosted streaming platform (alternative for twitch). Requires you to have a static IP address or server (e.g. digital ocean)
+- [vkopt](https://github.com/VkOpt/VkOpt) -- if you're still using vk (**you shouldn't!**) that's a good script for greasemonkey to download all your music/video/etc and leave from vk forever
 
-TODO: search for pawoo (mastodon), shitter apps?
+TODO: search for pawoo (mastodon), shitter desktop apps?
 
 ### Messengers
 
@@ -186,7 +192,7 @@ Read more about instant messengers on [privacyguides](https://www.privacyguides.
 - !PROPRIETARY! [Telegram](https://github.com/telegramdesktop/tdesktop) -- only app is open source, it lacks encryption by default and has many other problems. But still it's a lightweight client, that smoothly run on every system and even with bad internet connection. It also has a lot of awesome features, that completely open source alternatives doesn't
 - [Element](https://github.com/vector-im) -- good replacement for telegram/discord for future. Now lacks lots of features and feels very slow at all tasks
 
-**Discord alternatives**
+**Discord alternatives and tweaks**
 
 Discord is shit as is and I would recommend you never use it because it's app VERY slow, has lots of bugs and I personally don't love discord policies. Third-party apps can fix first problems, but last one is in discord itself. Anyway, here's a short list
 
@@ -194,18 +200,20 @@ Discord is shit as is and I would recommend you never use it because it's app VE
 - !LINUX! [Gtkcord3](https://github.com/diamondburned/gtkcord3) -- discord client on golang. As developer stated, `gtkcord3 won't be receiving any new features`, so I don't think there's a point in using this
 - [Fosscord](https://github.com/fosscord/fosscord) -- free open source selfhostable discord compatible communication platform. Looks like an awesome replacement for original discord. It's [client](https://github.com/fosscord/fosscord-client) uses react-native instead of electron
 - !WINDOWS! [Unicord](https://github.com/UnicordDev/Unicord) -- UWP client, more feature-complete, than abaddon or gtkcord3, but developes very slow and win-only
+- [Undiscord](https://github.com/victornpb/deleteDiscordMessages) -- greasemonkey script to remove all your discord history. Theoretically can be the reason to ban you, but hey, I guess that's not a big problem
 
 ## Self-Contained Networks
 
-TODO: explain these and add sources:
+If you - for some reason - want to browse the dark web, than you definetely need to read the page about self-constained networks on [privacyguides](https://www.privacyguides.org/software/networks/). Long story short, you can use onion services, listed in this README (onionshare, tor, etc) or these:
 
-tor, i2p, retroshare, https://www.privacyguides.org/software/networks/
+- [i2p](https://github.com/i2p/i2p.i2p) -- tor analogue
+- [retroshare](https://github.com/RetroShare/RetroShare) -- onionshare p2p analogue with more complex UI and lots of possibilities
 
 ## File Encryption Software
 
-TODO: explain these and add sources:
+It's very important to have your storages encrypted. Even microsoft's BitLocker is better than nothing. Here's full list of recommendations from [privacygides](https://www.privacyguides.org/software/productivity/#encrypt). My choice is following:
 
-VeraCrypt, https://www.privacyguides.org/software/productivity/#encrypt
+- [VeraCrypt](https://github.com/veracrypt/VeraCrypt) -- simple, efficient and secure encryption tool
 
 ## Media stuff
 
@@ -235,30 +243,43 @@ VeraCrypt, https://www.privacyguides.org/software/productivity/#encrypt
 
 ## Games
 
+Games are rarely released open source, but still there are a lot of good and complete ones, and ESPECIALLY open source engines for existing games (e.g. openmw, openjk, openrct, etc). This section won't give you exact games, but some lists and tools for it.
+
+- [Open source games on github](https://github.com/leereilly/games) -- list of open source game projects, hosted on github
+- [Open source games](https://github.com/Trilarion/opensourcegames) -- alternative for list above
+- [Open source game clones](https://github.com/opengaming/osgameclones) -- list, targeting only game-clones (e.g. open source diablo engine)
+- [Emulation wiki](https://emulation.gametechwiki.com/index.php/Main_Page) -- a complete and improving wiki of emulators of any platform. Writes pros and cons for each emulator, writes about updates and much more. Cons are that they doesn't always write about forks about unsupported emulators (e.g. [Mesen-X](https://github.com/NovaSquirrel/Mesen-X) -- fork of awesome, but archived [Mesen](https://github.com/SourMesen/Mesen) is not listed here)
+- [Cheat Engine](https://github.com/cheat-engine/cheat-engine) -- ultimate -- and more safe, than trainers -- solution if you need cheats in games
+
 TODO: explain these and add sources:
 
-open source games list, Cheat Engine, emulators wiki, lutris, steam, proton, wine, protontricks, winetricks, protondb
+lutris, proton, wine, protontricks, winetricks, protondb, proton-ge, poi
 
 ## Downloaders
 
+- [curl](https://github.com/curl/curl) -- first and most important app for this section. I hope I don't even need to explain why and how it can be used
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) -- fork of abandoned [youtube-dl](https://github.com/blackjack4494/yt-dlc) for downloading videos (*not only youtube supported*); CLI
 - [Open Video Downloader](https://github.com/jely2002/youtube-dl-gui) -- youtube-dl (*actually yt-dlp*) GUI for Windows
-
-TODO: explain these and add sources:
-
-qbittorrent, pixivutil2, fantiadl, hitomi downloader, imgbrd-grabber, vkopt, doujindownloader, curl
+- [qBitTorrent](https://github.com/qbittorrent/qBittorrent) -- simple and fast bittorrent client on qt. Sometimes preinstalled on linux systems
+- [gallery-dl](https://github.com/mikf/gallery-dl) -- awesome command-line program to download stuff from a [huge](https://github.com/mikf/gallery-dl/blob/master/docs/supportedsites.md) variaty of websites. Configs are usually located in `~/.config/gallery-dl/config.json` (create one if you don't have any)
+- [pixivutil2](https://github.com/Nandaka/PixivUtil2) -- CLI on python to download stuff from pixiv, alternative for gallery-dl for pixiv only (*gallery-dl supports pixiv too*) Supports authentication, pixiv FANBOX, downloading videos (through ffmpeg). Has an AUR package. Config is located in `~/.local/share/PixivUtil2`
+- ?PROPRIETARY? !WINDOWS! [Hitomi Downloader](https://github.com/KurtBestor/Hitomi-Downloader) -- [partially closed-source](https://github.com/KurtBestor/Hitomi-Downloader/issues/2226) software for downloading galleries, alternative to gallery-dl with GUI. Though it's [mentioned](https://github.com/KurtBestor/Hitomi-Downloader/issues/885) to work on linux with **Wine** I couldn't run it myself
+- [DoujinDownloader](https://github.com/Gigas002/DoujinDownloader) -- my own tool to organize doujins repo using `.md` or `.json` files. It's not actually a downloader, since there are a lot of better tools for this, but it's capable of parsing undownloaded list of links into file, that downloaders like **Hitomi Downloader** can handle
+- [imgbrd-grabber](https://github.com/Bionus/imgbrd-grabber) -- imageboard/booru downloader with rich GUI and lots of features, including adding your own data sources
 
 ## Package managers
 
-TODO: explain these and add sources:
-
-yay, windows package manager?, appimagelauncher, snap, flatpak
+- !WINDOWS! [winget](https://github.com/microsoft/winget-cli) -- windows package manager. It's good to have at least something on windows
+- !LINUX! [yay](https://github.com/Jguer/yay) -- awesome helper for arch's pacman
+- !LINUX! [flatpak](https://github.com/flatpak/flatpak) -- application sandboxing and distribution framework. Better, than `snap`, but I still prefer `yay` or `appimages`
+- !LINUX! [snap](https://github.com/snapcore/snapd) -- if you don't have an alternative
+- !LINUX! [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) -- not a package manager, but an organizer for your AppImages
 
 ## Virtualization
 
-TODO: explain these and add sources:
+I'm not an expert on this question and used only `vmware` and `vbox`
 
-virtualbox
+- [Virtual Box](https://www.virtualbox.org/wiki/Downloads) -- most basic and simple to use virtualization application
 
 ## Terminals
 
@@ -269,21 +290,21 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 
 ## Text editors and development
 
-TODO: explain these and add sources:
-
-vscodium, notepad++
+- [vscodium](https://github.com/VSCodium/vscodium) -- VS Code without MS branding/telemetry/licensing
+- [notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) -- fast (hey, it's not a *browser*) and extensible source code editor on C++
+- !LINUX! [nano](https://nano-editor.org/) -- I prefer it over `vim` because of tragic incident in childhood, when I was trapped inside of it...
 
 ## Screenshots and screen recording
 
-TODO: explain these and add sources:
-
-Flameshot, OBS, ShareX
+- [flameshot](https://github.com/flameshot-org/flameshot) -- cross-platform screenshoting tool on C++
+- !WINDOWS! [ShareX](https://github.com/ShareX/ShareX) -- windows-only analogue of flameshot on C#. Can shot videos with `ffmpeg` and supports additional task (e.g. convert your screenshots to `.webp` before saving)
+- [OBS Studio](https://github.com/obsproject/obs-studio) -- free and open source software for live streaming and screen recording. MUCH better, than default windows 10's screen recording through game bar
 
 ## Cleaners
 
-TODO: explain these and add sources:
-
-ccleaner, bleachbit, stacer
+- $FREEMIUM$ !WINDOWS! !PROPRIETARY! [CCleaner](https://www.ccleaner.com) -- application to clean up windows systems from garbage and old register strings
+- [BleachBit](https://github.com/bleachbit/bleachbit) -- app, that cleans files to free disk space and to maintain privacy. Cleans less stuff on windows, than ccleaner
+- !LINUX! [Stacer](https://github.com/oguzhaninan/Stacer) -- system cleaner, primarily targeting debian-based linux systems
 
 ## Office software
 
