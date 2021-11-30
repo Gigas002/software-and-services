@@ -176,7 +176,13 @@ If you need an alternative for services like twitter/facebook/etc, check out [th
 
 - [Nitter](https://github.com/zedeus/nitter) -- alternative twitter frontend, focused on privacy. It's still in early beta, so there's not much features released
 - [Pawoo](https://github.com/CrossGate-Pawoo/mastodon) -- alternative TO twitter for japanese artists and users, developed by pixiv stuff. Fork of [mastodon](https://github.com/mastodon/mastodon)
-- [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your YouTube data easily, doesn't spy on you. Cons: desktop only, lacks playlists support, FUCKING ELECTRON
+- [Libreddit](https://github.com/spikecodes/libreddit) -- private front-end for Reddit
+- [Invidious](https://github.com/iv-org/invidious) -- alternative front-end to YouTube
+- [Bibliogram](https://github.com/Booteille/bibliogram) -- alternative front-end for Instagram
+- [Wikiless](https://codeberg.org/orenom/Wikiless) -- alternative Wikipedia front-end focused on privacy
+- [SimplyTranslate](https://github.com/Simple-Web-Project/SimplyTranslate-Web) -- alternative to google translate, that can use Google, DeepL, ICIBA and LibreTranslate APIs to translate text. Not very convenient for hieroglyphic languages
+- [OpenStreetMap](https://github.com/openstreetmap/openstreetmap-website) -- alternative to google maps
+- [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your YouTube data easily, doesn't spy on you. Cons: desktop only, lacks playlists support, FUCKING ELECTRON. Can use [invidious](https://github.com/iv-org/invidious) API
 - !iOS! [EhPanda](https://github.com/tatsuz0u/EhPanda) -- only one good open source app for sad panda on iOS. Installable through `AltServer`
 - !iOS! [iMast](https://github.com/cinderella-project/iMast) -- ios app for mastodon (including pawoo). Available only on japanese for now
 - [Syncplay](https://github.com/Syncplay/syncplay) -- client/server app to synchronize media playback on mpv/VLC/MPC-HC/MPC-BE. Analogue for services like synctube, discord's youtube together, etc
