@@ -19,8 +19,8 @@ $ marks $ shows if software is not completely free
 ## TOC
 
 - [Software and services](#software-and-services)
-  * [TOC](#toc)
   * [Legend](#legend)
+  * [TOC](#toc)
   * [OS](#os)
     + [Windows tweaks](#windows-tweaks)
   * [Routers firmware](#routers-firmware)
