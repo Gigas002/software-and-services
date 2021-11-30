@@ -16,7 +16,47 @@ $ marks $ shows if software is not completely free
 
 ? marks ? needs clarification
 
-TODO: TOC
+## TOC
+
+- [Software and services](#software-and-services)
+  * [TOC](#toc)
+  * [Legend](#legend)
+  * [OS](#os)
+    + [Windows tweaks](#windows-tweaks)
+  * [Routers firmware](#routers-firmware)
+  * [Create boot device](#create-boot-device)
+  * [Internet browsers](#internet-browsers)
+    + [Firefox addons](#firefox-addons)
+    + [Firefox tweaks](#firefox-tweaks)
+  * [Networking](#networking)
+    + [DNS](#dns)
+    + [VPN](#vpn)
+    + [Anti-virus stuff](#anti-virus-stuff)
+  * [Email software and providers](#email-software-and-providers)
+  * [Password Managers and 2FA](#password-managers-and-2fa)
+  * [File sync and share](#file-sync-and-share)
+  * [Search engines](#search-engines)
+  * [Social networks and communication](#social-networks-and-communication)
+    + [Messengers](#messengers)
+  * [Self-Contained Networks](#self-contained-networks)
+  * [File Encryption Software](#file-encryption-software)
+  * [Media stuff](#media-stuff)
+    + [Image stuff](#image-stuff)
+    + [Video stuff](#video-stuff)
+    + [Editors](#editors)
+  * [Games](#games)
+  * [Downloaders](#downloaders)
+  * [Package managers](#package-managers)
+  * [Virtualization](#virtualization)
+  * [Terminals](#terminals)
+  * [Text editors and development](#text-editors-and-development)
+  * [Screenshots and screen recording](#screenshots-and-screen-recording)
+  * [Cleaners](#cleaners)
+  * [Office software](#office-software)
+  * [Archivators](#archivators)
+  * [Theme engines](#theme-engines)
+  * [File browsers](#file-browsers)
+  * [Driver installers](#driver-installers)
 
 ## OS
 
