@@ -255,11 +255,15 @@ Games are rarely released open source, but still there are a lot of good and com
 - [Open source games](https://github.com/Trilarion/opensourcegames) -- alternative for list above
 - [Open source game clones](https://github.com/opengaming/osgameclones) -- list, targeting only game-clones (e.g. open source diablo engine)
 - [Emulation wiki](https://emulation.gametechwiki.com/index.php/Main_Page) -- a complete and improving wiki of emulators of any platform. Writes pros and cons for each emulator, writes about updates and much more. Cons are that they doesn't always write about forks about unsupported emulators (e.g. [Mesen-X](https://github.com/NovaSquirrel/Mesen-X) -- fork of awesome, but archived [Mesen](https://github.com/SourMesen/Mesen) is not listed here)
+- [Poi](https://github.com/poooi/poi) -- scalable browser and tool set for Kantai Collection(KanColle)
 - [Cheat Engine](https://github.com/cheat-engine/cheat-engine) -- ultimate -- and more safe, than trainers -- solution if you need cheats in games
-
-TODO: explain these and add sources:
-
-lutris, proton, wine, protontricks, winetricks, protondb, proton-ge, poi
+- !LINUX! [Lutris](https://github.com/lutris/lutris) -- helper for installation and playing video games from all eras and from most gaming systems
+- !LINUX! [Wine](https://github.com/wine-mirror/wine) -- you've probably heard it before, but **Wine Is Not an Emulator**!
+- !LINUX! [Proton](https://github.com/ValveSoftware/Proton) -- Valve's fork of wine, that's used in steam
+- !LINUX! [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) -- popular fork of **proton** with some additional tweaks. Recommended to trying out, if wine/proton couldn't handle running your game
+- !LINUX! [Winetricks](https://github.com/Winetricks/winetricks) -- lets you install a lot of usefull stuff for your wine instance
+- !LINUX! [Protontricks](https://github.com/Matoking/protontricks) -- alternative of **winetricks** for **proton**
+- [ProtonDB](https://www.protondb.com/) -- database of reports of gamers about games being playable with **proton**
 
 ## Downloaders
 
@@ -314,42 +318,25 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 
 ## Office software
 
-TODO: explain these and add sources:
-
-libreoffice, onlyoffice
+- [LibreOffice](https://github.com/LibreOffice) -- alternative to MS Office. More or less supports microsot data formats, but mainly targets support of it's own `.ods` and other formats
+- $FREEMIUM$ [OnlyOffice](https://github.com/ONLYOFFICE) -- cloud-based alternative to MS Office. Primarily targets MS data formats support
 
 ## Archivators
 
-TODO: explain these and add sources:
+- [7z](https://www.7-zip.org/) -- fast archiver with a high compression ratio. Since 21.01 officially supports linux build (was used on linux as p7zip before)
+- !LINUX! [Ark](https://github.com/KDE/ark) -- file archiver by KDE 
 
-7z, ark
+## Theme engines
 
-## Translators
-
-TODO: explain these and add sources:
-
-libretranslate
-
-## Maps
-
-TODO: explain these and add sources:
-
-OpenStreeetMaps
-
-## Themes
-
-TODO: explain these and add sources:
-
-kvantum
+- !LINUX! [kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) -- SVG-based theme engine for Qt, tuned to KDE and LXQt, with an emphasis on elegance, usability and practicality
 
 ## File browsers
 
-TODO: explain these and add sources:
-
-Files (win), dolphin, totalcmd, DB Browser for sqlite
+- [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) -- well, name says it's all for myself
+- !LINUX! [Dolphin](https://github.com/KDE/dolphin) -- KDE file manager
+- !WINDOWS! [Files](https://github.com/files-community/Files) -- better file explorer for windows 10+
+- !WINDOWS! $FREEMIUM$ !PROPRIETARY! [Total Commander](https://www.ghisler.com/) -- customizable file explorer for windows with rich set of features. Free for first 30 days
 
 ## Driver installers
 
-TODO: explain these and add sources:
-
-Snappy Driver Installer (win)
+- !WINDOWS! [Snappy Driver Installer](https://sdi-tool.org/) -- open source driver installer/updater for windows systems
