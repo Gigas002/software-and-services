@@ -329,7 +329,9 @@ Games are rarely released open source, but still there are a lot of good and com
 
 I'm not an expert on this question and used only `vmware` and `vbox`
 
+- [Docker](https://www.docker.com/get-started) -- popular CLI containerization application. Has free community edition and paid enterprise, more explanation on this regards [here](https://askinglot.com/is-docker-a-open-source)
 - [Virtual Box](https://www.virtualbox.org/wiki/Downloads) -- most basic and simple to use virtualization application
+- !WINDOWS! [wslg](https://github.com/microsoft/wslg) -- enable support for running Linux GUI applications (X11 and Wayland) on Windows. Requires win11+ and special drivers (read more on their github page)
 
 ## Terminals
 
@@ -364,6 +366,7 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 ## Archivators
 
 - [7z](https://www.7-zip.org/) -- fast archiver with a high compression ratio. Since 21.01 officially supports linux build (was used on linux as p7zip before)
+- ?WINDOWS? [7-zip-zstd](https://github.com/mcmilk/7-Zip-zstd) -- 7z's fork with support for [zstandard](https://github.com/facebook/zstd/), [brotli](https://github.com/google/brotli/), [lz4](https://github.com/lz4/lz4/), [lz5](https://github.com/lz4/lz4/), [lizard](https://github.com/inikep/lizard/) and [fast-lzma2](https://github.com/conor42/fast-lzma2). Has GUI app for windows only, supports linux build as [p7zip's fork](https://github.com/jinfeihan57/p7zip), though I wouldn't recommend that one
 - !LINUX! [Ark](https://github.com/KDE/ark) -- file archiver by KDE 
 
 ## Theme engines
@@ -380,3 +383,13 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 ## Driver installers
 
 - !WINDOWS! [Snappy Driver Installer](https://sdi-tool.org/) -- open source driver installer/updater for windows systems
+
+## SDKs and runtimes
+
+You're probably familiar with this, since you're on github and know what to use and why. But for other users (especially windows ones) some things aren't always clear, e.g. not even everyone knows about openjdk and oracle's java builds. I'll only list basic things here, not mentioning minor stuff for developemtnt, like IDEs, libraries, package managers, etc. Plus, I'm only (mostly) aware about `c++`/`c#` stuff, which advanced developers knows anyways
+
+- [CPython](https://github.com/python/cpython) -- the most popular implementation of python standards. Yes, there are more efficient ones (for some tasks, at leasts), but I'd prefer stability, since a lot of various software bind to this version
+- [OpenJDK](https://github.com/openjdk/jdk) -- open source java builds without oracle's shit
+- [dotnet](https://github.com/dotnet/sdk) -- official microsoft implementation of .NET language family. Alternative to [mono project](https://github.com/mono/mono) that is an open source of older (closed source) .NET Framework. See [compatibility page](https://www.mono-project.com/docs/about-mono/compatibility/) for more info
+- !LINUX! [base-devel](https://archlinux.org/groups/x86_64/base-devel/) -- set of must-have development tools for linux distributives. Can have another name on other (not arch) dists, but still will contain `make`, `sudo`, `gcc` and others
+- !WINDOWS! [MSYS2](https://github.com/msys2) -- alternative to above **base-devel** for windows with lots of linux tools, like `mingw`. You can also try [cygwin](https://github.com/cygwin/cygwin) if this didn't work in your case
