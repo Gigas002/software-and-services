@@ -235,6 +235,7 @@ If you need an alternative for services like twitter/facebook/etc, check out [th
 - [Syncplay](https://github.com/Syncplay/syncplay) -- client/server app to synchronize media playback on mpv/VLC/MPC-HC/MPC-BE. Analogue for services like synctube, discord's youtube together, etc
 - [Owncast](https://github.com/owncast/owncast) -- self-hosted streaming platform (alternative for twitch). Requires you to have a static IP address or server (e.g. digital ocean)
 - [vkopt](https://github.com/VkOpt/VkOpt) -- if you're still using vk (**you shouldn't!**) that's a good script for greasemonkey to download all your music/video/etc and leave from vk forever
+- [PeerTube](https://github.com/Chocobozzz/PeerTube) -- decentralized and federated video platform developed as an alternative to other platforms that centralize our data and attention, such as YouTube, Dailymotion or Vimeo
 
 TODO: search for pawoo (mastodon), shitter desktop apps?
 
