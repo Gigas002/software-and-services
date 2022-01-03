@@ -310,8 +310,11 @@ Games are rarely released open source, but still there are a lot of good and com
 - !LINUX! [Proton](https://github.com/ValveSoftware/Proton) -- Valve's fork of wine, that's used in steam
 - !LINUX! [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) -- popular fork of **proton** with some additional tweaks. Recommended to trying out, if wine/proton couldn't handle running your game
 - !LINUX! [Winetricks](https://github.com/Winetricks/winetricks) -- lets you install a lot of usefull stuff for your wine instance
-- !LINUX! [Protontricks](https://github.com/Matoking/protontricks) -- alternative of **winetricks** for **proton**
+- !LINUX! [Protontricks](https://github.com/Matoking/protontricks) -- cli of **winetricks** for **proton**
 - [ProtonDB](https://www.protondb.com/) -- database of reports of gamers about games being playable with **proton**
+- [dxvk](https://github.com/doitsujin/dxvk) -- Vulkan-based implementation of D3D9, D3D10 and D3D11. Can be used on Windows too (and sometimes shows significant performance improvements)
+- !LINUX! [vkd3d/vkd3d-proton](https://source.winehq.org/git/vkd3d.git/) -- implementation of Direct3D 12 API on top of Vulkan
+- [innoextract](https://github.com/dscharrer/innoextract) -- tool to unpack installers created by Inno Setup (e.g. GOG games)
 
 ## Downloaders
 
