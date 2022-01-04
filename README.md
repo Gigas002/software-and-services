@@ -319,7 +319,7 @@ Games are rarely released open source, but still there are a lot of good and com
 ## Downloaders
 
 - [curl](https://github.com/curl/curl) -- first and most important app for this section. I hope I don't even need to explain why and how it can be used
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) -- fork of abandoned [youtube-dl](https://github.com/blackjack4494/yt-dlc) for downloading videos (*not only youtube supported*); CLI
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) -- fork of abandoned [youtube-dl](https://github.com/ytdl-org/youtube-dl) for downloading videos (*not only youtube supported*); CLI
 - [Open Video Downloader](https://github.com/jely2002/youtube-dl-gui) -- youtube-dl (*actually yt-dlp*) GUI for Windows
 - [qBitTorrent](https://github.com/qbittorrent/qBittorrent) -- simple and fast bittorrent client on qt. Sometimes preinstalled on linux systems
 - [gallery-dl](https://github.com/mikf/gallery-dl) -- awesome command-line program to download stuff from a [huge](https://github.com/mikf/gallery-dl/blob/master/docs/supportedsites.md) variaty of websites. Configs are usually located in `~/.config/gallery-dl/config.json` (create one if you don't have any)
