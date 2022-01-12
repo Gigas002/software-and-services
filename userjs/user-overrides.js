@@ -15,8 +15,6 @@ user_pref("browser.sessionstore.privacy_level", 0); // 1003
 user_pref("network.cookie.lifetimePolicy", 0); // 2801
 // user_pref("privacy.clearOnShutdown.history", true); // 2811
 // user_pref("privacy.clearOnShutdown.sessions", true); // 2811
-user_pref("privacy.clearOnShutdown.offlineApps", false); // 2811
-user_pref("privacy.clearOnShutdown.cookies", false); // 2811
 user_pref("browser.privatebrowsing.autostart", false); // 5001
 //user_pref("places.history.enabled", true); // 5013
 
@@ -26,3 +24,15 @@ user_pref("network.http.referer.XOriginTrimmingPolicy", 0); // 1602
 
 // GIGAS: inner window resolution fix
 user_pref("privacy.resistFingerprinting.letterboxing", false); // 4504
+
+// GIGAS: Enable custome themes, e.g. https://github.com/EliverLara/firefox-sweet-theme
+
+/* user.js
+ * https://github.com/rafaelmardojai/firefox-gnome-theme/
+ */
+
+// Enable userChrome.css
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+// Enable CSD
+user_pref("browser.tabs.drawInTitlebar", true);
