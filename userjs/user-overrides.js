@@ -36,3 +36,7 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
 // Enable CSD
 user_pref("browser.tabs.drawInTitlebar", true);
+
+// Reset homepage, see tabliss's guide: https://tabliss.io/support.html
+user_pref("browser.startup.page", 1);
+user_pref("browser.startup.homepage", "moz-extension://6e9a4d20-5f3f-4c24-913e-060004aaf9c0/index.html");
