@@ -43,6 +43,11 @@ VerbosePkgLists
 `yay --editmenu --save`
 
 
+**Remove withour checking for installed dependencies:**
+
+`yay -Rdd`
+
+
 **Enable NumLock on SDDM in /etc/sddm.conf:**
 
 ```text
