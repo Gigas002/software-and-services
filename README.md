@@ -288,6 +288,7 @@ It's very important to have your storages encrypted. Even microsoft's BitLocker 
 - !WINDOWS! [K-Lite Codec Pack with MPC-HC](https://www.codecguide.com/download_kl.htm) -- collection of DirectShow filters, codecs, and tools. Handles HDR video with MadVR pretty good, comparing to VLC. Need to compare with mpv though
 - [ruffle](https://github.com/ruffle-rs/ruffle) -- flash player emulator on rust
 - [ffmpeg](https://github.com/FFmpeg/FFmpeg) -- cross-platform solution to record, convert and stream audio and video; CLI
+- [libplacebo](https://github.com/haasn/libplacebo) -- core rendering algorithms and ideas of mpv rewritten as an independent library
 
 ### Editors
 
@@ -304,17 +305,22 @@ Games are rarely released open source, but still there are a lot of good and com
 - [Open source game clones](https://github.com/opengaming/osgameclones) -- list, targeting only game-clones (e.g. open source diablo engine)
 - [Emulation wiki](https://emulation.gametechwiki.com/index.php/Main_Page) -- a complete and improving wiki of emulators of any platform. Writes pros and cons for each emulator, writes about updates and much more. Cons are that they doesn't always write about forks about unsupported emulators (e.g. [Mesen-X](https://github.com/NovaSquirrel/Mesen-X) -- fork of awesome, but archived [Mesen](https://github.com/SourMesen/Mesen) is not listed here)
 - [Poi](https://github.com/poooi/poi) -- scalable browser and tool set for Kantai Collection(KanColle)
-- [Cheat Engine](https://github.com/cheat-engine/cheat-engine) -- ultimate -- and more safe, than trainers -- solution if you need cheats in games
+- [Cheat Engine](https://github.com/cheat-engine/cheat-engine) -- ultimate -- and more safe, than trainers -- solution if you need cheats in games. Only works through wine and `ceserver`
+- !LINUX! [Pince](https://github.com/korcankaraokcu/PINCE) -- native analogue of **Cheat Engine** for linux. Supports cheat tables (but not **cheat engine** ones, has it;s own format)
 - !LINUX! [Lutris](https://github.com/lutris/lutris) -- helper for installation and playing video games from all eras and from most gaming systems
-- !LINUX! [Wine](https://github.com/wine-mirror/wine) -- you've probably heard it before, but **Wine Is Not an Emulator**!
+- !LINUX! [Wine/Wine-staging](https://github.com/wine-mirror/wine) -- you've probably heard it before, but **Wine Is Not an Emulator**!
+- !LINUX! [Wine-Mono](https://github.com/madewokherd/wine-mono) -- package containing Mono and other projects, intended as a replacement for the .NET Framework (4.x and earlier) in Wine. Dependency for a lot of games
 - !LINUX! [Proton](https://github.com/ValveSoftware/Proton) -- Valve's fork of wine, that's used in steam
-- !LINUX! [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) -- popular fork of **proton** with some additional tweaks. Recommended to trying out, if wine/proton couldn't handle running your game
+- !LINUX! [Proton-GE/Wine-GE](https://github.com/GloriousEggroll/proton-ge-custom) -- popular fork of **proton** with some additional tweaks. Recommended to trying out, if wine/proton couldn't handle running your game
 - !LINUX! [Winetricks](https://github.com/Winetricks/winetricks) -- lets you install a lot of usefull stuff for your wine instance
 - !LINUX! [Protontricks](https://github.com/Matoking/protontricks) -- cli of **winetricks** for **proton**
 - [ProtonDB](https://www.protondb.com/) -- database of reports of gamers about games being playable with **proton**
 - [dxvk](https://github.com/doitsujin/dxvk) -- Vulkan-based implementation of D3D9, D3D10 and D3D11. Can be used on Windows too (and sometimes shows significant performance improvements)
-- !LINUX! [vkd3d/vkd3d-proton](https://source.winehq.org/git/vkd3d.git/) -- implementation of Direct3D 12 API on top of Vulkan
+- [vkd3d/vkd3d-proton](https://github.com/lutris/vkd3d) -- implementation of Direct3D 12 API on top of Vulkan (link to lutris builds repo)
 - [innoextract](https://github.com/dscharrer/innoextract) -- tool to unpack installers created by Inno Setup (e.g. GOG games)
+- !LINUX! [mangohud](https://github.com/flightlessmango/MangoHud) -- A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
+- !LINUX! [goverlay](https://github.com/benjamimgois/goverlay) -- GUI settings manager for **mangohud**, [vkBasalt](https://github.com/DadSchoorse/vkBasalt) and [ReplaySorcery](https://github.com/matanui159/ReplaySorcery)
+- !LINUX! [gamemode](https://github.com/FeralInteractive/gamemode) -- daemon/lib combo for Linux that allows games to request a set of optimisations be temporarily applied to the host OS and/or a game process
 
 ## Downloaders
 
