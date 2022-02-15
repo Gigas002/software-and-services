@@ -2,9 +2,9 @@
 
 *What's this?*
 
-This is a list of software, services and some minor tweaks which I use. I made it in for myself to have a backup for most important things and have a quick startup if something breaks.
+This is a list of software, services and some minor tweaks which I use. I made it for myself to have a backup for most important things and have a quick startup if something breaks.
 
-List mostly targets arch-based linux distributives, but there are also some windows apps. Most part of list if FLOSS and I treat this as default choice, but there are some proprietary apps just in case/no alternative, I'll mark them correspondingly. If you're more into iOS platform, than desktop, [here's](https://github.com/dkhamsing/open-source-ios-apps) more preferrable list of open source software for you. And an analogue for android users [here](https://github.com/pcqpcq/open-source-android-apps).
+List mostly targets arch-based linux distributives, but there are also some windows apps. Most part of list is FLOSS and I treat this as default choice, but there are some proprietary apps just in case/no alternative, I'll mark them correspondingly. If you're more into iOS platform, than desktop, [here's](https://github.com/dkhamsing/open-source-ios-apps) more preferrable list of open source software for you. And an analogue for android users [here](https://github.com/pcqpcq/open-source-android-apps).
 
 A lot of stuff and recommendations on privacy was taken from [privacyguides](https://www.privacyguides.org/). Also a lot of useful software and tweaks for arch-based distributives listed on [arch wiki page](https://wiki.archlinux.org/title/List_of_applications).
 
