@@ -40,3 +40,9 @@ user_pref("browser.tabs.drawInTitlebar", true);
 // Reset homepage, see tabliss's guide: https://tabliss.io/support.html
 user_pref("browser.startup.page", 1);
 user_pref("browser.startup.homepage", "moz-extension://6e9a4d20-5f3f-4c24-913e-060004aaf9c0/index.html");
+
+// KDE Linux only: use KDE file explorer instead of gtk
+user_pref("widget.use-xdg-desktop-portal", true);
+user_pref("widget.use-xdg-desktop-portal.kde", true);
+user_pref("GTK_USE_PORTAL", 0);
+user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
