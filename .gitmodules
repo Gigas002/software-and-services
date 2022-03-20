@@ -1,0 +1,3 @@
+[submodule "arch-packages/docfx-git"]
+	path = arch-packages/docfx-git
+	url = https://aur.archlinux.org/docfx-git.git
