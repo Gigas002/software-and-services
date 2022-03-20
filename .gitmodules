@@ -1,3 +1,15 @@
 [submodule "arch-packages/docfx-git"]
 	path = arch-packages/docfx-git
 	url = https://aur.archlinux.org/docfx-git.git
+[submodule "arch-packages/sweet-kde-theme-git"]
+	path = arch-packages/sweet-kde-theme-git
+	url = https://aur.archlinux.org/sweet-kde-theme-git.git
+[submodule "arch-packages/sweet-kvantum-theme-git"]
+	path = arch-packages/sweet-kvantum-theme-git
+	url = https://aur.archlinux.org/sweet-kvantum-theme-git.git
+[submodule "arch-packages/sweet-cursors-theme-git"]
+	path = arch-packages/sweet-cursors-theme-git
+	url = https://aur.archlinux.org/sweet-cursors-theme-git.git
+[submodule "arch-packages/qimgv-qt6-kde-git"]
+	path = arch-packages/qimgv-qt6-kde-git
+	url = https://aur.archlinux.org/qimgv-qt6-kde-git.git
