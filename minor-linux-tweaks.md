@@ -63,3 +63,7 @@ Numlock=on
 GRUB_TIMEOUT=2
 GRUB_TIMEOUT_STYLE=menu
 ```
+
+**Use dolphin for vscode:**
+
+See: https://github.com/microsoft/vscode/issues/50386#issuecomment-1035081994
