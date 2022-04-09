@@ -46,3 +46,6 @@ user_pref("widget.use-xdg-desktop-portal", true);
 user_pref("widget.use-xdg-desktop-portal.kde", true);
 user_pref("GTK_USE_PORTAL", 0);
 user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
+
+// GTK scrollbars
+user_pref("widget.gtk.overlay-scrollbars.enabled", true);
