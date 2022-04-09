@@ -79,18 +79,12 @@
             "metadata": true,
             "parent-metadata": true
         },
-
+        
         "hitomi":
         {
-            "metadata": false,
-            "directory":
-            {
-                "'token' in locals()": ["exhentai", "\fE ', '.join([t[7:] for t in tags if t.startswith('artist:')])", "{title}", "{language}"]
-            },
-            "filename":
-            {
-                "'token' in locals()": "{num:>04}.{extension}"
-            }
+            "#": "see: https://github.com/mikf/gallery-dl/issues/2444",
+            "metadata": true,
+            "directory": ["exhentai", "{artist}", "{title}", "{language}"]
         },
 
         "sankaku":
@@ -104,7 +98,9 @@
         {
             "#": "write text content for *all* tweets",
             "postprocessors": ["content"],
-            "text-tweets": true
+            "text-tweets": true,
+            "#": "download NSFW tweets without logging in, see: https://github.com/mikf/gallery-dl/issues/2354",
+            "syndication": true
         },
 
         "mastodon":
