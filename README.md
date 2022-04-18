@@ -132,15 +132,12 @@ Plus some advices from [arkenfox's wiki](https://github.com/arkenfox/user.js/wik
 
 Additional/situative extensions and recommendations:
 
-- [ClearURLs](https://gitlab.com/KevinRoebert/ClearUrls) is actually still better sometimes, but not in all cases
 - $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- awesome open source password manager with browsers extensions and standalone apps for modern operating systems, including iOS. Slowly migrating here from firefox account...
 - [cookies.txt](https://github.com/lennonhill/cookies-txt) -- lets you save your cookies into `.txt` file
 - $FREEMIUM$ [Firefox relay](https://github.com/mozilla/fx-private-relay) -- not tested this one yet, but looks interesting; TODO: test and add info
 - [ViolentMonkey](https://github.com/violentmonkey/violentmonkey) -- provides userscripts support for browsers. It works on browsers with WebExtensions support. Seems more "alive", than [GreaseMonkey](https://github.com/greasemonkey/greasemonkey)
 - [Terms of Service; Didn’t Read](https://github.com/tosdr/browser-extensions) -- short version of main points in terms of service
 - [xBrowserSync](https://github.com/xbrowsersync/api) -- sync browser data securely
-
-Not an addon, but browser service: [pdf-editor](https://github.com/ShizukuIchi/pdf-editor).
 
 ### Firefox tweaks
 
@@ -204,7 +201,7 @@ Well, here comes nothing.
 
 Read more [on privacyguides](https://www.privacyguides.org/software/file-sharing/).
 
-- ?PROPRIETARY? $PAID$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- early beta version of file sync service by proton team. Available only for paid (*plus and higher, not basic-paid*) plans. Currently [closed source](https://github.com/ProtonMail/proton-drive/issues/11) (*temporarily?*). No desktop/mobile apps yet either
+- $PAID$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- early beta version of file sync service by proton team. No desktop/mobile apps [yet](https://protonmail.com/blog/2022-roadmap/)
 - [OnionShare](https://github.com/onionshare/onionshare) -- share files and chat with friends using tor network. Desktop only
 - [Syncthing](https://github.com/syncthing/syncthing) -- open source file synchronization tool
 - [Git](https://git-scm.com/downloads) -- do I really need to explain what git is
