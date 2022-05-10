@@ -28,6 +28,15 @@
                 "whitelist": ["danbooru", "moebooru", "sankaku"]
             }
         ],
+        
+        "kemonoparty":
+        {
+            "username": "gigas002",
+            "password": "secret",
+            "directory": ["kemonoparty", "{service}", "{username}"],
+            "filename": "{id}_p{num} - {title}.{extension}",
+            "metadata": true
+        },
 
         "pixiv":
         {
