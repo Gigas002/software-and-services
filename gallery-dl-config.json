@@ -28,11 +28,14 @@
                 "whitelist": ["danbooru", "moebooru", "sankaku"]
             }
         ],
-        
+
         "kemonoparty":
         {
-            "username": "gigas002",
-            "password": "secret",
+            "#": "Logging in disabled for logging with cookies, see: https://github.com/mikf/gallery-dl/issues/1606",
+
+            "#": "username",
+            "#": "password",
+
             "directory": ["kemonoparty", "{service}", "{username}"],
             "filename": "{id}_p{num} - {title}.{extension}",
             "metadata": true
@@ -46,9 +49,8 @@
             "#": "set custom directory and filename format strings for all pixiv downloads",
             "filename": "{filename} - {title}.{extension}",
             "directory": ["pixiv", "{user[name]} ({user[id]})"],
-
             "#": "get your refresh token with `gallery-dl oauth:pixiv` command",
-            "refresh-token": "",
+            "refresh-token": "secret",
 
             "#": "transform ugoira into lossless MKVs",
             "ugoira": true,
@@ -63,8 +65,15 @@
             {
                 "directory": ["Pixiv", "My Bookmarks"],
                 "#": "get your refresh token with `gallery-dl oauth:pixiv` command",
-                "refresh-token": ""
+                "refresh-token": "secret"
             }
+        },
+        
+        "fanbox":
+        {
+            "#": "see https://github.com/mikf/gallery-dl/issues/2033",
+            "ugoira": true,
+            "postprocessors": ["ugoira-copy"]
         },
 
         "danbooru":
@@ -88,7 +97,7 @@
             "metadata": true,
             "parent-metadata": true
         },
-        
+
         "hitomi":
         {
             "#": "see: https://github.com/mikf/gallery-dl/issues/2444",
@@ -98,9 +107,11 @@
 
         "sankaku":
         {
+            "#": "Logging in disabled for logging with cookies, see: https://github.com/mikf/gallery-dl/issues/1606",
+            
             "#": "authentication with cookies is not possible for sankaku",
-            "username": "user",
-            "password": "#secret#"
+            "#": "username:",
+            "#": "password:"
         },
 
         "twitter":
@@ -237,5 +248,7 @@
     "#": "use a custom cache file location",
     "cache": {
         "file": "~/gallery-dl/cache.sqlite3"
-    }
+    },
+
+    "cookies": [ "firefox" ]
 }
