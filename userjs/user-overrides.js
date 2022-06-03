@@ -39,9 +39,9 @@ user_pref("browser.tabs.drawInTitlebar", true);
 
 // Reset homepage, see tabliss's guide: https://tabliss.io/support.html
 user_pref("browser.startup.page", 1);
-user_pref("browser.startup.homepage", "moz-extension://6e9a4d20-5f3f-4c24-913e-060004aaf9c0/index.html");
+user_pref("browser.startup.homepage", "moz-extension://4d648020-4e4a-4402-8dd2-0a47d9df69e8/index.html");
 
-// KDE Linux only: use KDE file explorer instead of gtk
+// KDE file explorer
 user_pref("widget.use-xdg-desktop-portal", true);
 user_pref("widget.use-xdg-desktop-portal.kde", true);
 user_pref("GTK_USE_PORTAL", 0);
@@ -49,3 +49,8 @@ user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
 
 // GTK scrollbars
 user_pref("widget.gtk.overlay-scrollbars.enabled", true);
+
+// Enable GPU acceleration, see: https://www.opennet.ru/opennews/art.shtml?num=57297
+user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.enabled", true);
+user_pref("media.ffmpeg.vaapi.enabled", true);
