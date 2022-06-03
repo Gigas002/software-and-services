@@ -38,6 +38,17 @@ VerbosePkgLists
 `yay -Sc`
 
 
+**Remove unneeded dependencies:**
+
+`yay -Yc`
+
+
+**Force program to run with specific language:**
+
+`LANG=en_US.UTF-8 yay`
+
+
+
 **Always add choice to edit PKGBUILD:**
 
 `yay --editmenu --save`
