@@ -120,7 +120,9 @@
             "postprocessors": ["content"],
             "text-tweets": true,
             "#": "download NSFW tweets without logging in, see: https://github.com/mikf/gallery-dl/issues/2354",
-            "syndication": true
+            "syndication": true,
+            "#": "In case troubles with cookies logging in, see: https://github.com/mikf/gallery-dl/issues/2676",
+            "csrf": "auto"
         },
 
         "mastodon":
