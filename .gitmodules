@@ -13,15 +13,3 @@
 [submodule "arch-packages/qimgv-qt6-kde-git"]
 	path = arch-packages/qimgv-qt6-kde-git
 	url = https://aur.archlinux.org/qimgv-qt6-kde-git.git
-[submodule "arch-packages/fuzzylite-git"]
-	path = arch-packages/fuzzylite-git
-	url = https://aur.archlinux.org/fuzzylite-git.git
-[submodule "arch-packages/clunk-vangers-git"]
-	path = arch-packages/clunk-vangers-git
-	url = https://aur.archlinux.org/clunk-vangers-git.git
-[submodule "arch-packages/vangers-git"]
-	path = arch-packages/vangers-git
-	url = https://aur.archlinux.org/vangers-git.git
-[submodule "arch-packages/sweet-theme-full-git"]
-	path = arch-packages/sweet-theme-full-git
-	url = https://aur.archlinux.org/sweet-theme-full-git.git
