@@ -100,7 +100,7 @@ Read [this article](https://www.privacyguides.org/operating-systems/#firmware). 
 
 - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) -- preinstalled browser on most linux distibutives
 - Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use
-- [Ungoogled chromium](https://github.com/Eloston/ungoogled-chromium#downloads) -- if you for some reason need another browser, though I'd recommend you to use Firefox's containers feature
+- [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
 
 **iOS**
 
