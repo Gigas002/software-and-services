@@ -28,3 +28,6 @@
 [submodule "arch-packages/vangers-git"]
 	path = arch-packages/vangers-git
 	url = https://aur.archlinux.org/vangers-git.git
+[submodule "arch-packages/wowup-bin"]
+	path = arch-packages/wowup-bin
+	url = https://aur.archlinux.org/wowup-bin.git
