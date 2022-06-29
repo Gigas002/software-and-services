@@ -87,7 +87,7 @@ The whole section is !LINUX! only
 
 ## Routers firmware
 
-Read [this article](https://www.privacyguides.org/operating-systems/#firmware). I don't use custom firmware because my router isn't supported by these systems yet. If you're lucky to have one of these and you're a proton user, you can configure your router to force all connections through ProtonVPN, see detailed guide [here](https://protonvpn.com/support/installing-protonvpn-on-a-router/).
+Read [this article](https://www.privacyguides.org/router/). I don't use custom firmware because my router isn't supported by these systems yet. If you're lucky to have one of these and you're a proton user, you can configure your router to force all connections through ProtonVPN, see detailed guide [here](https://protonvpn.com/support/installing-protonvpn-on-a-router/).
 
 ## Create boot device
 
@@ -98,7 +98,7 @@ Read [this article](https://www.privacyguides.org/operating-systems/#firmware). 
 
 **Desktop**
 
-- [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) -- preinstalled browser on most linux distibutives
+- [Mozilla Firefox](https://ftp.mozilla.org/pub/firefox/releases/) -- preinstalled browser on most linux distibutives
 - Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use
 - [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
 
@@ -127,7 +127,7 @@ Plus some advices from [arkenfox's wiki](https://github.com/arkenfox/user.js/wik
 
 - Don't use **HTTPS Everywhere**, it will be deprecated soon. Just enable HTTPS-only mode in your browser settings
 - Don't use NoScript, Ghostery, Disconnect, Privacy Badger, etc -- redundant with uBlock Origin; easily detected; practically abandonware
-- Instead of url-shorteners use [Actually Legitimate URL Shortener Tool](https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener.txt) for uBlock (with `AdGuard URL Tracking Protection`)
+- Instead of url-shorteners use [Actually Legitimate URL Shortener Tool](https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener.txt) for uBlock (with `AdGuard URL Tracking Protection`). Be sure to add it in `Filter list`, not in `My filters` page
 - Don't use [Firefox containers](https://github.com/mozilla/multi-account-containers) add-on, it's prebuilt in firefox already, just enable it. Containers are used for multiple accounts in one browser instance
 
 Additional/situative extensions and recommendations:
@@ -141,7 +141,7 @@ Additional/situative extensions and recommendations:
 
 ### Firefox tweaks
 
-I'm using user.js from this repo in my firefox's everyday life. If you want to see, on which it was based see [arkenfox's user.js](https://github.com/arkenfox/user.js). Don't miss the wiki there, there are plenty of good advices on how to configure your firefox for more privacy.
+I'm using user.js from this repo in my firefox's everyday life. If you want to see, on which it was based see [arkenfox's user.js](https://github.com/arkenfox/user.js). Don't miss the wiki there, there are plenty of good advices on how to configure your firefox for more privacy. **And don't just blindly apply that user.js if you're not sure, that will purge all your cookies, etc!**
 Plus, I recommend enable DNS over HTTPS in browser/device/router connection settings. Read more in **Networking -> DNS** section below.
 
 User.js is usually located in: `~/.mozilla/firefox/profile-id/`, look at `about:profiles` for exact paths. I mark my changes between arkenfox's one with `// GIGAS` comment and short explanation.
@@ -152,7 +152,7 @@ User.js is usually located in: `~/.mozilla/firefox/profile-id/`, look at `about:
 
 **Desktop**
 
-Encrypt your DNS queries with *DNS over HTTPS*, *DNS over TLS*, *DNSCrypt* and more. This section mostly refers to corresponding [privacyguides page](https://www.privacyguides.org/providers/dns/).
+Encrypt your DNS queries with *DNS over HTTPS*, *DNS over TLS*, *DNSCrypt* and more. This section mostly refers to corresponding [privacyguides page](https://www.privacyguides.org/dns/).
 
 First, select your DNS provider from the link above. I personally prefer [AdGuard DNS](https://github.com/AdguardTeam/AdGuardDNS/) over Cloudflare since these are open source, support of DoH, DoT, DNSCrypt and it's fast, though keep some logs for 24 hours. As an alternative I use [BlahDNS](https://github.com/ookangzheng/blahdns/) which is said to "not collect any logs", but it's speed is slower, so it's on the second place in priority. Plus, you can enable **DNS over HTTPS** in firefox settings (which is redundant if you've set it up on router level).
 
@@ -175,12 +175,11 @@ It's not recommended to enable scan of downloads for viruses in browser, since i
 
 ## Email software and providers
 
-Read more about [providers](https://www.privacyguides.org/providers/email/) and [software](https://www.privacyguides.org/software/email/) choice.
+Read more about [providers](https://www.privacyguides.org/email/) and [software](https://www.privacyguides.org/email-clients) choice.
 
 **Providers**
 
 - $FREEMIUM$ [ProtonMail](https://github.com/ProtonMail) -- can't say I recommend it's free plan, since it doesn't allow you to do lots of things, but paid plans are awesome. *Plus* plan lets you use [new ProtonDrive service](https://protonmail.com/blog/proton-drive-early-access/), more info about it in **File sync and share** section below
-- [Disroot](https://disroot.org/en/services/email) -- free alternative for ProtonMail
 
 **Desktop software**
 
@@ -199,9 +198,9 @@ Well, here comes nothing.
 
 ## File sync and share
 
-Read more [on privacyguides](https://www.privacyguides.org/software/file-sharing/).
+Read more [on privacyguides](https://www.privacyguides.org/file-sharing/).
 
-- $PAID$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- early beta version of file sync service by proton team. No desktop/mobile apps [yet](https://protonmail.com/blog/2022-roadmap/)
+- $FREEMIUM$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- early beta version of file sync service by proton team. No desktop/mobile apps [yet](https://protonmail.com/blog/2022-roadmap/)
 - [OnionShare](https://github.com/onionshare/onionshare) -- share files and chat with friends using tor network. Desktop only
 - [Syncthing](https://github.com/syncthing/syncthing) -- open source file synchronization tool
 - [Git](https://git-scm.com/downloads) -- do I really need to explain what git is
@@ -210,14 +209,14 @@ Read more [on privacyguides](https://www.privacyguides.org/software/file-sharing
 
 ## Search engines
 
-Read more [on privacyguides](https://www.privacyguides.org/providers/search-engines/).
+Read more [on privacyguides](https://www.privacyguides.org/search-engines/).
 
 - [DuckDuckGo](https://github.com/duckduckgo) -- default choice on TorBrowser, supports onion services. Partly proprietary
 - [Searx](https://github.com/searx/searx) -- alternative for DuckDuckGo. Completely open source and not located in US. Disroot's default search engine. You can select your instance [here](https://searx.space/)
 
 ## Social networks and communication
 
-If you need an alternative for services like twitter/facebook/etc, check out [this article on privacyguides](https://www.privacyguides.org/providers/social-networks/). Here I'll mainly cover some alternative frontends for these mainstream services, not introducing completely new and already good ones.
+Here I'll mainly cover some alternative frontends for these mainstream services, not introducing completely new and already good ones.
 
 - [Nitter](https://github.com/zedeus/nitter) -- alternative twitter frontend, focused on privacy. It's still in early beta, so there's not much features released
 - [Pawoo](https://github.com/CrossGate-Pawoo/mastodon) -- alternative TO twitter for japanese artists and users, developed by pixiv stuff. Fork of [mastodon](https://github.com/mastodon/mastodon)
@@ -229,41 +228,39 @@ If you need an alternative for services like twitter/facebook/etc, check out [th
 - [OpenStreetMap](https://github.com/openstreetmap/openstreetmap-website) -- alternative to google maps
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your YouTube data easily, doesn't spy on you. Cons: desktop only, lacks playlists support, FUCKING ELECTRON. Can use [invidious](https://github.com/iv-org/invidious) API
 - !iOS! [EhPanda](https://github.com/tatsuz0u/EhPanda) -- only one good open source app for sad panda on iOS. Installable through `AltServer`
-- !iOS! [iMast](https://github.com/cinderella-project/iMast) -- ios app for mastodon (including pawoo). Available only on japanese for now
 - [Syncplay](https://github.com/Syncplay/syncplay) -- client/server app to synchronize media playback on mpv/VLC/MPC-HC/MPC-BE. Analogue for services like synctube, discord's youtube together, etc
 - [Owncast](https://github.com/owncast/owncast) -- self-hosted streaming platform (alternative for twitch). Requires you to have a static IP address or server (e.g. digital ocean)
 - [vkopt](https://github.com/VkOpt/VkOpt) -- if you're still using vk (**you shouldn't!**) that's a good script for greasemonkey to download all your music/video/etc and leave from vk forever
 - [PeerTube](https://github.com/Chocobozzz/PeerTube) -- decentralized and federated video platform developed as an alternative to other platforms that centralize our data and attention, such as YouTube, Dailymotion or Vimeo
-
-TODO: search for pawoo (mastodon), shitter desktop apps?
+- !iOS! [Yattee](https://github.com/yattee/yattee) -- Alternative YouTube frontend for iOS (iPhone, iPad), macOS and tvOS (Apple TV) built with Invidious and Piped. Available through testflight
 
 ### Messengers
 
-Read more about instant messengers on [privacyguides](https://www.privacyguides.org/software/real-time-communication/)
+Read more about instant messengers on [privacyguides](https://www.privacyguides.org/real-time-communication/)
 
 - !PROPRIETARY! [Telegram](https://github.com/telegramdesktop/tdesktop) -- only app is open source, it lacks encryption by default and has many other problems. But still it's a lightweight client, that smoothly run on every system and even with bad internet connection. It also has a lot of awesome features, that completely open source alternatives doesn't
 - [Element](https://github.com/vector-im) -- good replacement for telegram/discord for future. Now lacks lots of features and feels very slow at all tasks
+- [Session](https://github.com/oxen-io/session-desktop) -- Session Desktop - Onion routing based messenger. Fork of [Signal](https://github.com/signalapp/Signal-Desktop). that doesn't require any personal data for registration
 
 **Discord alternatives and tweaks**
 
 Discord is shit as is and I would recommend you never use it because it's app VERY slow, has lots of bugs and I personally don't love discord policies. Third-party apps can fix first problems, but last one is in discord itself. Anyway, here's a short list
 
 - [Abaddon](https://github.com/uowuo/abaddon) -- young replacement of discord app on c++ without electron. In very early state, but can be good in future, developer seems really passionate about his program
-- !LINUX! [Gtkcord3](https://github.com/diamondburned/gtkcord3) -- discord client on golang. As developer stated, `gtkcord3 won't be receiving any new features`, so I don't think there's a point in using this
+- !LINUX! [Gtkcord4](https://github.com/diamondburned/gtkcord4) -- discord client on golang
 - [Fosscord](https://github.com/fosscord/fosscord) -- free open source selfhostable discord compatible communication platform. Looks like an awesome replacement for original discord. It's [client](https://github.com/fosscord/fosscord-client) uses react-native instead of electron
-- !WINDOWS! [Unicord](https://github.com/UnicordDev/Unicord) -- UWP client, more feature-complete, than abaddon or gtkcord3, but developes very slow and win-only
 - [Undiscord](https://github.com/victornpb/deleteDiscordMessages) -- greasemonkey script to remove all your discord history. Theoretically can be the reason to ban you, but hey, I guess that's not a big problem
 
 ## Self-Contained Networks
 
-If you - for some reason - want to browse the dark web, than you definetely need to read the page about self-constained networks on [privacyguides](https://www.privacyguides.org/software/networks/). Long story short, you can use onion services, listed in this README (onionshare, tor, etc) or these:
+If you - for some reason - want to browse the dark web, than you definetely need to read the page about self-constained networks on [privacyguides](https://www.privacyguides.org/self-contained-networks/). Long story short, you can use onion services, listed in this README (onionshare, tor, etc) or these:
 
 - [i2p](https://github.com/i2p/i2p.i2p) -- tor analogue
 - [retroshare](https://github.com/RetroShare/RetroShare) -- onionshare p2p analogue with more complex UI and lots of possibilities
 
 ## File Encryption Software
 
-It's very important to have your storages encrypted. Even microsoft's BitLocker is better than nothing. Here's full list of recommendations from [privacygides](https://www.privacyguides.org/software/productivity/#encrypt). My choice is following:
+It's very important to have your storages encrypted. Even microsoft's BitLocker is better than nothing. Here's full list of recommendations from [privacygides](https://www.privacyguides.org/encryption/). My choice is following:
 
 - [VeraCrypt](https://github.com/veracrypt/VeraCrypt) -- simple, efficient and secure encryption tool
 
@@ -304,7 +301,8 @@ Games are rarely released open source, but still there are a lot of good and com
 - [Emulation wiki](https://emulation.gametechwiki.com/index.php/Main_Page) -- a complete and improving wiki of emulators of any platform. Writes pros and cons for each emulator, writes about updates and much more. Cons are that they doesn't always write about forks about unsupported emulators (e.g. [Mesen-X](https://github.com/NovaSquirrel/Mesen-X) -- fork of awesome, but archived [Mesen](https://github.com/SourMesen/Mesen) is not listed here)
 - [Poi](https://github.com/poooi/poi) -- scalable browser and tool set for Kantai Collection(KanColle)
 - [Cheat Engine](https://github.com/cheat-engine/cheat-engine) -- ultimate -- and more safe, than trainers -- solution if you need cheats in games. Only works through wine and `ceserver`
-- !LINUX! [Pince](https://github.com/korcankaraokcu/PINCE) -- native analogue of **Cheat Engine** for linux. Supports cheat tables (but not **cheat engine** ones, has it;s own format)
+- !LINUX! [scanmem/gameconqueror](https://github.com/scanmem/scanmem) -- native analogue of **Cheat Engine** for linux
+- !LINUX! [Pince](https://github.com/korcankaraokcu/PINCE) -- yet another native analogue of **Cheat Engine** for linux. Supports cheat tables (but not **cheat engine** ones, has it;s own format)
 - !LINUX! [Lutris](https://github.com/lutris/lutris) -- helper for installation and playing video games from all eras and from most gaming systems
 - !LINUX! [Wine/Wine-staging](https://github.com/wine-mirror/wine) -- you've probably heard it before, but **Wine Is Not an Emulator**!
 - !LINUX! [Wine-Mono](https://github.com/madewokherd/wine-mono) -- package containing Mono and other projects, intended as a replacement for the .NET Framework (4.x and earlier) in Wine. Dependency for a lot of games
@@ -329,7 +327,7 @@ Games are rarely released open source, but still there are a lot of good and com
 - [qBitTorrent](https://github.com/qbittorrent/qBittorrent) -- simple and fast bittorrent client on qt. Sometimes preinstalled on linux systems
 - [gallery-dl](https://github.com/mikf/gallery-dl) -- awesome command-line program to download stuff from a [huge](https://github.com/mikf/gallery-dl/blob/master/docs/supportedsites.md) variaty of websites. Configs are usually located in `~/.config/gallery-dl/config.json` (create one if you don't have any)
 - [pixivutil2](https://github.com/Nandaka/PixivUtil2) -- CLI on python to download stuff from pixiv, alternative for gallery-dl for pixiv only (*gallery-dl supports pixiv too*) Supports authentication, pixiv FANBOX, downloading videos (through ffmpeg). Has an AUR package. Config is located in `~/.local/share/PixivUtil2`
-- ?PROPRIETARY? !WINDOWS! [Hitomi Downloader](https://github.com/KurtBestor/Hitomi-Downloader) -- [partially closed-source](https://github.com/KurtBestor/Hitomi-Downloader/issues/2226) software for downloading galleries, alternative to gallery-dl with GUI. Though it's [mentioned](https://github.com/KurtBestor/Hitomi-Downloader/issues/885) to work on linux with **Wine** I couldn't run it myself
+- !PROPRIETARY! !WINDOWS! [Hitomi Downloader](https://github.com/KurtBestor/Hitomi-Downloader) -- [partially closed-source](https://github.com/KurtBestor/Hitomi-Downloader/issues/2226) software for downloading galleries, alternative to gallery-dl with GUI. Though it's [mentioned](https://github.com/KurtBestor/Hitomi-Downloader/issues/885) to work on linux with **Wine** I couldn't run it myself
 - [DoujinDownloader](https://github.com/Gigas002/DoujinDownloader) -- my own tool to organize doujins repo using `.md` or `.json` files. It's not actually a downloader, since there are a lot of better tools for this, but it's capable of parsing undownloaded list of links into file, that downloaders like **Hitomi Downloader** can handle
 - [imgbrd-grabber](https://github.com/Bionus/imgbrd-grabber) -- imageboard/booru downloader with rich GUI and lots of features, including adding your own data sources
 
