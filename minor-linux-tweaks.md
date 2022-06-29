@@ -58,6 +58,20 @@ VerbosePkgLists
 `yay -Rdd`
 
 
+**Create new package for AUR:**
+
+First, add your `ssh` key to aur account. Then you can clone the empty (non-existant) repo and start making the package:
+
+`git clone ssh://aur@aur.archlinux.org/package-name.git`
+
+Now you can create PKGBUILD file in this directory. To generate `.SRCINFO` file before pushing commit, use `makepkg --printsrcinfo >.SRCINFO`
+
+
+**Update binary package sums before pushing the new version:**
+
+`updpkgsums`
+
+
 **Enable NumLock on SDDM in /etc/sddm.conf:**
 
 ```text

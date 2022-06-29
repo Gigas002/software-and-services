@@ -121,7 +121,7 @@ Main extensions:
 - [Stylus](https://github.com/openstyles/stylus/) -- style manager. [Here's](https://uso.kkx.one/) open source style archive
 - [Tabliss](https://github.com/joelshepherd/tabliss) -- lets you configure your "new tab" page
 - [uBlock](https://github.com/gorhill/uBlock) -- ad/malware blocker
-- [Privacy Redirects](https://github.com/SimonBrazell/privacy-redirect) -- redirects your queries to normal services (e.g. youtube links opens in FreeTube)
+- [Libredirect](https://github.com/libredirect/libredirect) -- redirects your queries to normal services (e.g. youtube links opens in Invidious)
 
 Plus some advices from [arkenfox's wiki](https://github.com/arkenfox/user.js/wiki/4.1-Extensions):
 
