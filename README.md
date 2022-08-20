@@ -318,6 +318,7 @@ Games are rarely released open source, but still there are a lot of good and com
 - !LINUX! [mangohud](https://github.com/flightlessmango/MangoHud) -- A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
 - !LINUX! [goverlay](https://github.com/benjamimgois/goverlay) -- GUI settings manager for **mangohud**, [vkBasalt](https://github.com/DadSchoorse/vkBasalt) and [ReplaySorcery](https://github.com/matanui159/ReplaySorcery)
 - !LINUX! [gamemode](https://github.com/FeralInteractive/gamemode) -- daemon/lib combo for Linux that allows games to request a set of optimisations be temporarily applied to the host OS and/or a game process
+- !LINUX! [steamtinkerlaunch](https://github.com/frostworx/steamtinkerlaunch) --  Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs
 
 ## Downloaders
 
