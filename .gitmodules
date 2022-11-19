@@ -31,3 +31,6 @@
 [submodule "arch-packages/wowup-bin"]
 	path = arch-packages/wowup-bin
 	url = https://aur.archlinux.org/wowup-bin.git
+[submodule "arch-packages/wowup-cf-bin"]
+	path = arch-packages/wowup-cf-bin
+	url = https://aur.archlinux.org/wowup-cf-bin.git
