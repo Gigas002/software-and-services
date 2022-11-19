@@ -17,6 +17,8 @@ user_pref("network.cookie.lifetimePolicy", 0); // 2801
 // user_pref("privacy.clearOnShutdown.sessions", true); // 2811
 user_pref("browser.privatebrowsing.autostart", false); // 5001
 //user_pref("places.history.enabled", true); // 5013
+user_pref("privacy.clearOnShutdown.cookies", false); // Cookies
+user_pref("privacy.clearOnShutdown.offlineApps", false); // Site Data
 
 // GIGAS: for pixiv
 user_pref("network.http.referer.XOriginPolicy", 0); // 1601

@@ -106,3 +106,9 @@ journalctl --disk-usage
 ```sh
 journalctl --vacuum-size=500M
 ```
+
+**Show only critical log messages from previous boot**
+
+```sh
+journalctl --boot=-1 --priority=3
+```
