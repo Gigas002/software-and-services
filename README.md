@@ -408,3 +408,9 @@ You're probably familiar with this, since you're on github and know what to use 
 - [dotnet](https://github.com/dotnet/sdk) -- official microsoft implementation of .NET language family. Alternative to [mono project](https://github.com/mono/mono) that is an open source of older (closed source) .NET Framework. See [compatibility page](https://www.mono-project.com/docs/about-mono/compatibility/) for more info
 - !LINUX! [base-devel](https://archlinux.org/groups/x86_64/base-devel/) -- set of must-have development tools for linux distributives. Can have another name on other (not arch) dists, but still will contain `make`, `sudo`, `gcc` and others
 - !WINDOWS! [MSYS2](https://github.com/msys2) -- alternative to above **base-devel** for windows with lots of linux tools, like `mingw`. You can also try [cygwin](https://github.com/cygwin/cygwin) if this didn't work in your case
+
+## Android
+
+- !LINUX! [anbox](https://github.com/anbox/anbox) -- a container-based approach to boot a full Android system on a regular GNU/Linux system
+- !LINUX! [waydroid](https://github.com/waydroid/waydroid) -- analogue of **anbox**, uses `wayland`
+- !ANDROID! [LineageOS](https://github.com/LineageOS/android) -- a free and open-source operating system for various devices, based on the Android mobile platform
