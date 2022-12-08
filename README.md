@@ -99,7 +99,7 @@ Read [this article](https://www.privacyguides.org/router/). I don't use custom f
 **Desktop**
 
 - [Mozilla Firefox](https://ftp.mozilla.org/pub/firefox/releases/) -- preinstalled browser on most linux distibutives
-- Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use
+- Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also keep in mind, that there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation
 - [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
 
 **iOS**
@@ -179,7 +179,7 @@ Read more about [providers](https://www.privacyguides.org/email/) and [software]
 
 **Providers**
 
-- $FREEMIUM$ [ProtonMail](https://github.com/ProtonMail) -- can't say I recommend it's free plan, since it doesn't allow you to do lots of things, but paid plans are awesome. *Plus* plan lets you use [new ProtonDrive service](https://protonmail.com/blog/proton-drive-early-access/), more info about it in **File sync and share** section below
+- $FREEMIUM$ [ProtonMail](https://github.com/ProtonMail) -- can't say I recommend it's free plan, since it doesn't allow you to do lots of things, but paid plans are awesome
 
 **Desktop software**
 
@@ -195,12 +195,13 @@ Well, here comes nothing.
 ## Password Managers and 2FA
 
 - $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- awesome open source password manager with browsers extensions and standalone apps for modern operating systems, including iOS. Has 2FA and other good stuff on paid plans, compare [here](https://bitwarden.com/pricing/). Slowly migrating from firefox account...
+- !iOS! [Raivo OTP](https://github.com/raivo-otp/ios-application) -- A native, lightweight and secure one-time-password solution
 
 ## File sync and share
 
 Read more [on privacyguides](https://www.privacyguides.org/file-sharing/).
 
-- $FREEMIUM$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- early beta version of file sync service by proton team. No desktop/mobile apps [yet](https://protonmail.com/blog/2022-roadmap/)
+- $FREEMIUM$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- E2EE general file storage service. Available on iOS and Android as apps, through browser on desktop
 - [OnionShare](https://github.com/onionshare/onionshare) -- share files and chat with friends using tor network. Desktop only
 - [Syncthing](https://github.com/syncthing/syncthing) -- open source file synchronization tool
 - [Git](https://git-scm.com/downloads) -- do I really need to explain what git is
@@ -390,7 +391,6 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 
 ## File browsers
 
-- [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) -- well, name says it's all for myself
 - !LINUX! [Dolphin](https://github.com/KDE/dolphin) -- KDE file manager
 - !WINDOWS! [Files](https://github.com/files-community/Files) -- better file explorer for windows 10+
 - !WINDOWS! $FREEMIUM$ !PROPRIETARY! [Total Commander](https://www.ghisler.com/) -- customizable file explorer for windows with rich set of features. Free for first 30 days
@@ -414,3 +414,12 @@ You're probably familiar with this, since you're on github and know what to use 
 - !LINUX! [anbox](https://github.com/anbox/anbox) -- a container-based approach to boot a full Android system on a regular GNU/Linux system
 - !LINUX! [waydroid](https://github.com/waydroid/waydroid) -- analogue of **anbox**, uses `wayland`
 - !ANDROID! [LineageOS](https://github.com/LineageOS/android) -- a free and open-source operating system for various devices, based on the Android mobile platform
+- !ANDROID! [GrapheneOS](https://github.com/GrapheneOS) -- build with security and privacy in mind fork of android. Currently supports only Google Pixel devices
+- !ANDROID! [DivestOS](https://github.com/Divested-Mobile/DivestOS-Build) -- a soft-fork of LineageOS. DivestOS inherits many supported devices from LineageOS. It has signed builds, making it possible to have verified boot on some non-Pixel devices
+
+## Database stuff
+
+- [PostgreSQL](https://github.com/postgres/postgres) -- a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance
+- [MariaDB](https://github.com/MariaDB/server) -- a community-developed, commercially supported fork of the MySQL, intended to remain free and open-source software under the GNU General Public License
+- [dbeaver](https://github.com/dbeaver/dbeaver) -- free multi-platform database tool for developers, SQL programmers, database administrators and analysts
+- [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) -- standalone browser for SQLite databases
