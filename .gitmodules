@@ -34,3 +34,6 @@
 [submodule "arch-packages/wowup-cf-bin"]
 	path = arch-packages/wowup-cf-bin
 	url = https://aur.archlinux.org/wowup-cf-bin.git
+[submodule "arch-packages/vcmi"]
+	path = arch-packages/vcmi
+	url = https://aur.archlinux.org/vcmi.git

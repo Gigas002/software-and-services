@@ -112,3 +112,9 @@ journalctl --vacuum-size=500M
 ```sh
 journalctl --boot=-1 --priority=3
 ```
+
+**Add submodule for git repo:**
+
+```sh
+git submodule add https://aur.archlinux.org/package_name.git arch-packages/package_name
+```
