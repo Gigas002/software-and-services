@@ -1,8 +1,20 @@
 # List of minor linux tweks
 
+
+
 **Export list of installed packages:**
 
-`pacman -Qqe > installs.txt`
+See: https://www.reddit.com/r/archlinux/comments/kfrdqa/export_then_reinstall_packages_installed_with_yay/
+and: https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages
+
+`yay -Qqe > installs.txt` or `pacman -Qqe > installs.txt`
+
+
+
+**Reinstall packages from list of installs:**
+
+`yay -S --needed - < installs.txt` or `pacman -S --needed - < pkglist.txt`
+
 
 
 **yay first run:**
