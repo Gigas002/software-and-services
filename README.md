@@ -53,7 +53,7 @@ $ marks $ shows if software is not completely free
   * [Screenshots and screen recording](#screenshots-and-screen-recording)
   * [Cleaners](#cleaners)
   * [Office software](#office-software)
-  * [Archivators](#archivators)
+  * [Archivers](#archivers)
   * [Theme engines](#theme-engines)
   * [File browsers](#file-browsers)
   * [Driver installers](#driver-installers)
@@ -379,11 +379,12 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 - [LibreOffice](https://github.com/LibreOffice) -- alternative to MS Office. More or less supports microsot data formats, but mainly targets support of it's own `.ods` and other formats
 - $FREEMIUM$ [OnlyOffice](https://github.com/ONLYOFFICE) -- cloud-based alternative to MS Office. Primarily targets MS data formats support
 
-## Archivators
+## Archivers
 
+- !LINUX! [p7zip-zstd](https://github.com/mcmilk/7-Zip-zstd) -- fork of modern 7zip (22.00+) and outdated [p7zip](https://sourceforge.net/projects/p7zip/) with support for major modern codecs such as Brotli, Fast LZMA2, LZ4, LZ5, Lizard and Zstd
 - [7z](https://www.7-zip.org/) -- fast archiver with a high compression ratio. Since 21.01 officially supports linux build (was used on linux as p7zip before)
-- ?WINDOWS? [7-zip-zstd](https://github.com/mcmilk/7-Zip-zstd) -- 7z's fork with support for [zstandard](https://github.com/facebook/zstd/), [brotli](https://github.com/google/brotli/), [lz4](https://github.com/lz4/lz4/), [lz5](https://github.com/lz4/lz4/), [lizard](https://github.com/inikep/lizard/) and [fast-lzma2](https://github.com/conor42/fast-lzma2). Has GUI app for windows only, supports linux build as [p7zip's fork](https://github.com/jinfeihan57/p7zip), though I wouldn't recommend that one
-- !LINUX! [Ark](https://github.com/KDE/ark) -- file archiver by KDE 
+- !WINDOWS! [7-zip-zstd](https://github.com/mcmilk/7-Zip-zstd) -- 7z's fork with support for [zstandard](https://github.com/facebook/zstd/), [brotli](https://github.com/google/brotli/), [lz4](https://github.com/lz4/lz4/), [lz5](https://github.com/lz4/lz4/), [lizard](https://github.com/inikep/lizard/) and [fast-lzma2](https://github.com/conor42/fast-lzma2). Has GUI app for windows only, supports linux build as [p7zip's fork](https://github.com/jinfeihan57/p7zip), though I wouldn't recommend that one
+- !LINUX! [Ark](https://github.com/KDE/ark) -- file archiver by KDE , can be also used as GUI for 7zip and other archivers
 
 ## Theme engines
 
