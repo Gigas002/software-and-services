@@ -291,6 +291,7 @@ It's very important to have your storages encrypted. Even microsoft's BitLocker 
 - [krita](https://github.com/KDE/krita) -- analogue of photoshop, IMO better than GIMP
 - [GIMP](https://github.com/GNOME/gimp) -- analogue of photoshop. While I think it's worse, than krita, I still think it's a good software choice
 - [kdenlive](https://github.com/KDE/kdenlive) -- free and open source video editing application
+- [handbrake](https://github.com/HandBrake/HandBrake) -- open-source video transcoder
 
 ## Games
 
