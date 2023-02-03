@@ -220,6 +220,7 @@ Read more [on privacyguides](https://www.privacyguides.org/search-engines/).
 Here I'll mainly cover some alternative frontends for these mainstream services, not introducing completely new and already good ones.
 
 - [Nitter](https://github.com/zedeus/nitter) -- alternative twitter frontend, focused on privacy. It's still in early beta, so there's not much features released
+- [tweak-new-twitter](https://github.com/insin/tweak-new-twitter) -- browser extension for better twitter experience
 - [Pawoo](https://github.com/CrossGate-Pawoo/mastodon) -- alternative TO twitter for japanese artists and users, developed by pixiv stuff. Fork of [mastodon](https://github.com/mastodon/mastodon)
 - [Libreddit](https://github.com/spikecodes/libreddit) -- private front-end for Reddit
 - [Invidious](https://github.com/iv-org/invidious) -- alternative front-end to YouTube
@@ -228,12 +229,16 @@ Here I'll mainly cover some alternative frontends for these mainstream services,
 - [SimplyTranslate](https://github.com/Simple-Web-Project/SimplyTranslate-Web) -- alternative to google translate, that can use Google, DeepL, ICIBA and LibreTranslate APIs to translate text. Not very convenient for hieroglyphic languages
 - [OpenStreetMap](https://github.com/openstreetmap/openstreetmap-website) -- alternative to google maps
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) -- desktop YouTube player built with privacy in mind. Pros: no ads, supports external players, lets you download videos on their pages, export/import your YouTube data easily, doesn't spy on you. Cons: desktop only, lacks playlists support, FUCKING ELECTRON. Can use [invidious](https://github.com/iv-org/invidious) API
-- !iOS! [EhPanda](https://github.com/tatsuz0u/EhPanda) -- only one good open source app for sad panda on iOS. Installable through `AltServer`
+- !iOS! [EhPanda](https://github.com/tatsuz0u/EhPanda) -- open source app for sad panda on iOS, written with Swift. Installable through `AltServer`
+- !iOS! [FEhViewer](https://github.com/honjow/FEhViewer) -- another sad panda app for iOS. Has better support, than `EhPanda`, but written using flutter
 - [Syncplay](https://github.com/Syncplay/syncplay) -- client/server app to synchronize media playback on mpv/VLC/MPC-HC/MPC-BE. Analogue for services like synctube, discord's youtube together, etc
 - [Owncast](https://github.com/owncast/owncast) -- self-hosted streaming platform (alternative for twitch). Requires you to have a static IP address or server (e.g. digital ocean)
 - [vkopt](https://github.com/VkOpt/VkOpt) -- if you're still using vk (**you shouldn't!**) that's a good script for greasemonkey to download all your music/video/etc and leave from vk forever
 - [PeerTube](https://github.com/Chocobozzz/PeerTube) -- decentralized and federated video platform developed as an alternative to other platforms that centralize our data and attention, such as YouTube, Dailymotion or Vimeo
 - !iOS! [Yattee](https://github.com/yattee/yattee) -- Alternative YouTube frontend for iOS (iPhone, iPad), macOS and tvOS (Apple TV) built with Invidious and Piped. Available through testflight
+- [EH-Page-Scrobbler](https://github.com/Meldo-Megimi/EH-Page-Scrobbler) -- browser script to return pages on sadpanda website
+- [danbooru](https://github.com/danbooru/danbooru) -- taggable image board written in Rails
+
 
 ### Messengers
 
