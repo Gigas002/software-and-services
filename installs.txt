@@ -44,7 +44,7 @@ dhclient
 dhcpcd
 diffutils
 digikam
-discord-canary
+discordo-git
 dmidecode
 dmraid
 dnsmasq
@@ -64,7 +64,6 @@ ecryptfs-utils
 efibootmgr
 electron
 electron19
-elisa
 emovix
 exfat-utils
 f2fs-tools
@@ -93,6 +92,7 @@ gnome-themes-extra
 goverlay-bin
 grub
 grub-btrfs
+grub-customizer-git
 grub-theme-manjaro
 gst-libav
 gst-plugins-bad
@@ -102,6 +102,7 @@ gst-plugins-ugly
 gtk
 gtk3
 gtk4
+gtkmm3
 gufw
 gvfs
 gvfs-afc
@@ -187,7 +188,6 @@ lib32-vulkan-radeon
 libcanberra
 libdvdcss
 libktorrent
-libldap24
 libpamac-flatpak-plugin
 libpamac-snap-plugin
 libplacebo-git
@@ -229,7 +229,7 @@ libretro-snes9x
 libretro-yabause
 libva-intel-driver
 libva-mesa-driver
-libva-vdpau-driver
+libva-nvidia-driver
 libvips
 libxpresent
 licenses
@@ -287,6 +287,7 @@ mpd
 mpv-git
 mtpfs
 nano
+nasm
 neofetch
 neovim
 net-tools
@@ -314,6 +315,7 @@ onefetch
 onionshare
 opencl-headers
 openresolv
+openslide
 openssh
 os-prober
 osu-lazer-bin
@@ -428,6 +430,7 @@ retroarch-assets-xmb
 rsync
 ruby
 ruffle-nightly-bin
+rustdesk-bin
 s-nail
 samba
 scanmem
@@ -436,8 +439,8 @@ sddm
 sddm-breath-theme
 sddm-kcm
 sdl2_net
+session-desktop-bin
 shadow
-signal-desktop
 skanlite
 snapd
 snapd-glib
@@ -542,4 +545,5 @@ yay
 yt-dlp
 yuzu-mainline-bin
 zensu
+zip
 zoom
