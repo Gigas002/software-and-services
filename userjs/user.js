@@ -1,7 +1,7 @@
 /******
 *    name: arkenfox user.js
-*    date: 21 November 2022
-* version: 107
+*    date: 7 February 2023
+* version: 109
 *     url: https://github.com/arkenfox/user.js
 * license: MIT: https://github.com/arkenfox/user.js/blob/master/LICENSE.txt
 
@@ -110,13 +110,6 @@
  user_pref("geo.provider.use_corelocation", false); // [MAC]
  user_pref("geo.provider.use_gpsd", false); // [LINUX]
  user_pref("geo.provider.use_geoclue", false); // [FF102+] [LINUX]
- /* 0203: disable region updates
-  * [1] https://firefox-source-docs.mozilla.org/toolkit/modules/toolkit_modules/Region.html ***/
- user_pref("browser.region.update.enabled", false); // [FF79+]
-    // user_pref("browser.region.network.url", ""); // [FF78+] Defense-in-depth
- /* 0204: set search region
-  * [NOTE] May not be hidden if Firefox has changed your settings due to your region (0203) ***/
-    // user_pref("browser.search.region", "US"); // [HIDDEN PREF]
  /* 0210: set preferred language for displaying pages
   * [SETTING] General>Language and Appearance>Language>Choose your preferred language...
   * [TEST] https://addons.mozilla.org/about ***/
@@ -268,6 +261,7 @@
  /* 0701: disable IPv6
   * IPv6 can be abused, especially with MAC addresses, and can leak with VPNs: assuming
   * your ISP and/or router and/or website is IPv6 capable. Most sites will fall back to IPv4
+  * [SETUP-WEB] PR_CONNECT_RESET_ERROR: this pref *might* be the cause
   * [STATS] Firefox telemetry (Sept 2022) shows ~8% of successful connections are IPv6
   * [NOTE] This is an application level fallback. Disabling IPv6 is best done at an
   * OS/network level, and/or configured properly in VPN setups. If you are not masking your IP,
@@ -477,8 +471,7 @@
  user_pref("security.family_safety.mode", 0);
  /* 1223: enable strict PKP (Public Key Pinning)
   * 0=disabled, 1=allow user MiTM (default; such as your antivirus), 2=strict
-  * [SETUP-WEB] MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE: If you rely on an AV (antivirus) to protect
-  * your web browsing by inspecting ALL your web traffic, then override to current default ***/
+  * [SETUP-WEB] MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE ***/
  user_pref("security.cert_pinning.enforcement_level", 2);
  /* 1224: enable CRLite [FF73+]
   * 0 = disabled
@@ -565,10 +558,8 @@
  /*** [SECTION 2000]: PLUGINS / MEDIA / WEBRTC ***/
  user_pref("_user.js.parrot", "2000 syntax error: the parrot's snuffed it!");
  /* 2001: disable WebRTC (Web Real-Time Communication)
-  * Firefox uses mDNS hostname obfuscation on desktop (except Windows7/8) and the
-  * private IP is NEVER exposed, except if required in TRUSTED scenarios; i.e. after
-  * you grant device (microphone or camera) access
-  * [SETUP-HARDEN] Test first. Windows7/8 users only: behind a proxy who never use WebRTC
+  * Firefox desktop uses mDNS hostname obfuscation and the private IP is never exposed until
+  * required in TRUSTED scenarios; i.e. after you grant device (microphone or camera) access
   * [TEST] https://browserleaks.com/webrtc
   * [1] https://groups.google.com/g/discuss-webrtc/c/6stQXi72BEU/m/2FwZd24UAQAJ
   * [2] https://datatracker.ietf.org/doc/html/draft-ietf-mmusic-mdns-ice-candidates#section-3.1.1 ***/
@@ -603,22 +594,15 @@
  user_pref("_user.js.parrot", "2400 syntax error: the parrot's kicked the bucket!");
  /* 2402: prevent scripts from moving and resizing open windows ***/
  user_pref("dom.disable_window_move_resize", true);
- /* 2404: limit events that can cause a popup [SETUP-WEB] ***/
- user_pref("dom.popup_allowed_events", "click dblclick mousedown pointerdown");
  
  /*** [SECTION 2600]: MISCELLANEOUS ***/
  user_pref("_user.js.parrot", "2600 syntax error: the parrot's run down the curtain!");
  /* 2601: prevent accessibility services from accessing your browser [RESTART]
   * [1] https://support.mozilla.org/kb/accessibility-services ***/
  user_pref("accessibility.force_disabled", 1);
- /* 2602: disable sending additional analytics to web servers
-  * [1] https://developer.mozilla.org/docs/Web/API/Navigator/sendBeacon ***/
- user_pref("beacon.enabled", false);
  /* 2603: remove temp files opened with an external application
   * [1] https://bugzilla.mozilla.org/302433 ***/
  user_pref("browser.helperApps.deleteTempFileOnExit", true);
- /* 2604: disable page thumbnail collection ***/
- user_pref("browser.pagethumbnails.capturing_disabled", true); // [HIDDEN PREF]
  /* 2606: disable UITour backend so there is no chance that a remote page can use it ***/
  user_pref("browser.uitour.enabled", false);
     // user_pref("browser.uitour.url", ""); // Defense-in-depth
@@ -829,6 +813,7 @@
      531915 - use fdlibm's sin, cos and tan in jsmath (FF93, ESR91.1)
     1756280 - enforce navigator.pdfViewerEnabled as true and plugins/mimeTypes as hard-coded values (FF100)
     1692609 - reduce JS timing precision to 16.67ms (previously FF55+ was 100ms) (FF102)
+    1422237 - return "srgb" with color-gamut (FF110)
  ***/
  user_pref("_user.js.parrot", "4500 syntax error: the parrot's popped 'is clogs");
  /* 4501: enable privacy.resistFingerprinting [FF41+]
@@ -863,10 +848,6 @@
     // user_pref("privacy.resistFingerprinting.testGranularityMask", 0);
  /* 4506: set RFP's font visibility level (1402) [FF94+] ***/
     // user_pref("layout.css.font-visibility.resistFingerprinting", 1); // [DEFAULT: 1]
- /* 4507: disable showing about:blank as soon as possible during startup [FF60+]
-  * When default true this no longer masks the RFP chrome resizing activity
-  * [1] https://bugzilla.mozilla.org/1448423 ***/
- user_pref("browser.startup.blankWindow", false);
  /* 4510: disable using system colors
   * [SETTING] General>Language and Appearance>Fonts and Colors>Colors>Use system colors ***/
  user_pref("browser.display.use_system_colors", false); // [DEFAULT: false NON-WINDOWS]
@@ -973,6 +954,10 @@
     // user_pref("extensions.formautofill.addresses.enabled", false); // [FF55+]
     // user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
     // user_pref("extensions.formautofill.heuristics.enabled", false); // [FF55+]
+ /* 5017: limit events that can cause a pop-up ***/
+    // user_pref("dom.popup_allowed_events", "click dblclick mousedown pointerdown");
+ /* 5018: disable page thumbnail collection ***/
+    // user_pref("browser.pagethumbnails.capturing_disabled", true); // [HIDDEN PREF]
  
  /*** [SECTION 5500]: OPTIONAL HARDENING
     Not recommended. Overriding these can cause breakage and performance issues,
@@ -1034,18 +1019,21 @@
   * In FF96+ these are listed in about:compat
   * [1] https://blog.mozilla.org/security/2021/03/23/introducing-smartblock/ ***/
  user_pref("extensions.webcompat.enable_shims", true); // [DEFAULT: true]
- /* 6010: enforce/reset TLS 1.0/1.1 downgrades to session only
-  * [NOTE] In FF97+ the TLS 1.0/1.1 downgrade UX was removed
+ /* 6010: enforce no TLS 1.0/1.1 downgrades
   * [TEST] https://tls-v1-1.badssl.com:1010/ ***/
  user_pref("security.tls.version.enable-deprecated", false); // [DEFAULT: false]
  /* 6011: enforce disabling of Web Compatibility Reporter [FF56+]
   * Web Compatibility Reporter adds a "Report Site Issue" button to send data to Mozilla
   * [WHY] To prevent wasting Mozilla's time with a custom setup ***/
  user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
- /* 6050: prefsCleaner: reset items removed from arkenfox FF102+ ***/
+ /* 6050: prefsCleaner: reset previously active items removed from arkenfox FF102+ ***/
+    // user_pref("beacon.enabled", "");
+    // user_pref("browser.startup.blankWindow", "");
     // user_pref("browser.newtab.preload", "");
     // user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", "");
     // user_pref("browser.newtabpage.activity-stream.feeds.snippets", "");
+    // user_pref("browser.region.network.url", "");
+    // user_pref("browser.region.update.enabled", "");
     // user_pref("browser.ssl_override_behavior", "");
     // user_pref("devtools.chrome.enabled", "");
     // user_pref("dom.disable_beforeunload", "");
@@ -1194,6 +1182,9 @@
  user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
  /* 9003: disable What's New toolbar icon [FF69+] ***/
  user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
+ /* 9004: disable search terms [FF110+]
+  * [SETTING] Search>Search Bar>Use the address bar for search and navigation>Show search terms instead of URL... ***/
+ user_pref("browser.urlbar.showSearchTerms.enabled", false);
  
  /*** [SECTION 9999]: DEPRECATED / REMOVED / LEGACY / RENAMED
     Documentation denoted as [-]. Items deprecated prior to FF91 have been archived at [1]
@@ -1271,7 +1262,7 @@
  user_pref("widget.gtk.overlay-scrollbars.enabled", true);
  
  // Enable GPU acceleration, see: https://www.opennet.ru/opennews/art.shtml?num=57297
- // user_pref("gfx.webrender.all", false);
- // user_pref("gfx.webrender.enabled", false);
- // user_pref("media.ffmpeg.vaapi.enabled", false);
+ user_pref("gfx.webrender.all", false);
+ user_pref("gfx.webrender.enabled", false);
+ user_pref("media.ffmpeg.vaapi.enabled", false);
  

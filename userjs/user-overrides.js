@@ -53,6 +53,6 @@ user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
 user_pref("widget.gtk.overlay-scrollbars.enabled", true);
 
 // Enable GPU acceleration, see: https://www.opennet.ru/opennews/art.shtml?num=57297
-// user_pref("gfx.webrender.all", false);
-// user_pref("gfx.webrender.enabled", false);
-// user_pref("media.ffmpeg.vaapi.enabled", false);
+user_pref("gfx.webrender.all", false);
+user_pref("gfx.webrender.enabled", false);
+user_pref("media.ffmpeg.vaapi.enabled", false);
