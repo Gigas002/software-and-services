@@ -101,6 +101,7 @@ Read [this article](https://www.privacyguides.org/router/). I don't use custom f
 - [Mozilla Firefox](https://ftp.mozilla.org/pub/firefox/releases/) -- preinstalled browser on most linux distibutives
 - Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also keep in mind, that there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation
 - [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
+- [carbonyl](https://github.com/fathyb/carbonyl) -- chromium-based browser built to run in a terminal. Just for fun. I find it a better soultion, than [browsh](https://github.com/browsh-org/browsh)
 
 **iOS**
 
@@ -207,6 +208,7 @@ Read more [on privacyguides](https://www.privacyguides.org/file-sharing/).
 - [Git](https://git-scm.com/downloads) -- do I really need to explain what git is
 - !WINDOWS! [AltStore/AltServer](https://github.com/rileytestut/AltStore) -- gives you an opportunity to install apps not from AppStore
 - !PROPRIETARY! !WINDOWS! [iTunes/iCloud](https://support.apple.com/en-us/HT210384) -- unfortunately it's a needed dependency for `AltServer` to work
+- [rustdesk](https://github.com/rustdesk/rustdesk) -- open source virtual/remote desktop infrastructure for everyone! The open source TeamViewer/AnyDesk alternative
 
 ## Search engines
 
