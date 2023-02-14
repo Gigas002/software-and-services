@@ -37,3 +37,9 @@
 [submodule "arch-packages/vcmi"]
 	path = arch-packages/vcmi
 	url = https://aur.archlinux.org/vcmi.git
+[submodule "arch-packages/grub-customizer-git"]
+	path = arch-packages/grub-customizer-git
+	url = https://aur.archlinux.org/grub-customizer-git.git
+[submodule "arch-packages/carbonyl-bin"]
+	path = arch-packages/carbonyl-bin
+	url = https://aur.archlinux.org/carbonyl-bin.git
