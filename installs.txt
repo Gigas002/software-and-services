@@ -8,14 +8,17 @@ adobe-source-sans-fonts
 alsa-firmware
 alsa-utils
 amd-ucode
+an-anime-game-launcher-gtk-bin
 apparmor
 ark
 aspnet-runtime-bin
 aspnet-targeting-pack-bin
 autoconf
+autoconf2.13
 automake
 avahi
 b43-fwcutter
+base-devel
 bash
 bison
 bitwarden
@@ -26,6 +29,8 @@ brave-browser-beta
 breeze-gtk
 btrfs-progs
 bzip2
+carbonyl-bin
+ccache
 cdparanoia
 cdrdao
 chromium
@@ -82,6 +87,7 @@ fwupd
 gallery-dl-git
 gameconqueror
 gamemode
+gamescope
 gcc-libs
 geforcenow-electron
 glibc
@@ -99,6 +105,7 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
+gstreamer-vaapi
 gtk
 gtk3
 gtk4
@@ -186,6 +193,7 @@ lib32-vkd3d
 lib32-vulkan-intel
 lib32-vulkan-radeon
 libcanberra
+libdovi
 libdvdcss
 libktorrent
 libpamac-flatpak-plugin
@@ -236,10 +244,10 @@ licenses
 linux-steam-integration
 linux-xanmod-linux-bin-x64v3
 linux-xanmod-linux-headers-bin-x64v3
-linux515
-linux515-headers
 linux61
 linux61-headers
+linux62
+linux62-headers
 logrotate
 lua
 lutris
@@ -350,6 +358,7 @@ powertop
 ppsspp
 print-manager
 procps-ng
+profile-cleaner
 proton-ge-custom
 protontricks
 protonvpn
@@ -370,6 +379,7 @@ python-pyqt5-purchasing
 python-pyqt5-webengine
 python-pysmbc
 python-reportlab
+python-virtualenv
 python-wheel
 qbittorrent
 qimgv-qt6-kde-git
@@ -451,7 +461,7 @@ sqlitebrowser
 sshfs
 steam
 steam-native-runtime
-steamtinkerlaunch-git
+steamtinkerlaunch
 sweeper
 sweet-theme-full-git
 syncthing
@@ -476,6 +486,7 @@ tor-browser
 transcode
 ttf-dejavu
 ttf-droid
+ttf-fira-sans
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
