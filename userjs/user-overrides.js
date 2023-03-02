@@ -52,7 +52,47 @@ user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
 // GTK scrollbars
 user_pref("widget.gtk.overlay-scrollbars.enabled", true);
 
-// Enable GPU acceleration, see: https://www.opennet.ru/opennews/art.shtml?num=57297
-user_pref("gfx.webrender.all", false);
-user_pref("gfx.webrender.enabled", false);
-user_pref("media.ffmpeg.vaapi.enabled", false);
+// Enable GPU acceleration/Hardware Video Decoding, see: https://www.opennet.ru/opennews/art.shtml?num=57297
+user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.software", false);
+user_pref("gfx.webrender.enabled", true);
+
+// Hardware video decoding: https://linuxreviews.org/HOWTO_Make_Mozilla_Firefox_Blazing_Fast_On_Linux
+user_pref("media.ffmpeg.vaapi.enabled", true);
+user_pref("media.ffmpeg.vaapi-drm-display.enabled", true);
+user_pref("media.ffvpx.enabled", false);
+
+// Enable EGL Rendering
+user_pref("gfx.x11-egl.force-enabled", true);
+
+// Force 144fps
+user_pref("layout.frame_rate", 144);
+
+// Smooth scrolling: https://wiki.archlinux.org/title/Firefox/Tweaks
+user_pref("general.smoothScroll.lines.durationMaxMS", 125);
+user_pref("general.smoothScroll.lines.durationMinMS", 125);
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 200);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 100);
+user_pref("general.smoothScroll.msdPhysics.enabled", true);
+user_pref("general.smoothScroll.other.durationMaxMS", 125);
+user_pref("general.smoothScroll.other.durationMinMS", 125);
+user_pref("general.smoothScroll.pages.durationMaxMS", 125);
+user_pref("general.smoothScroll.pages.durationMinMS", 125);
+user_pref("mousewheel.min_line_scroll_amount", 30);
+user_pref("mousewheel.system_scroll_override_on_root_content.enabled", true);
+user_pref("mousewheel.system_scroll_override_on_root_content.horizontal.factor", 175);
+user_pref("mousewheel.system_scroll_override_on_root_content.vertical.factor", 175);
+user_pref("toolkit.scrollbox.horizontalScrollDistance", 6);
+user_pref("toolkit.scrollbox.verticalScrollDistance", 2);
+
+// Disable restore on crash
+user_pref("browser.sessionstore.resume_from_crash", false);
+
+// Use system values for scroll speed
+// user_pref("mousewheel.system_scroll_override.enabled", false);
+
+// Make backspace go to the previous page
+user_pref("browser.backspace_action", 0);
+
+// Enable ipv6
+user_pref("network.dns.disableIPv6", false);
