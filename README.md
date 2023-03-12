@@ -101,6 +101,7 @@ Read [this article](https://www.privacyguides.org/router/). I don't use custom f
 - [Mozilla Firefox](https://ftp.mozilla.org/pub/firefox/releases/) -- preinstalled browser on most linux distibutives
 - Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also keep in mind, that there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation
 - [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
+- [thorium](https://github.com/Alex313031/thorium) -- chromium fork with various nice patches, especially for linux
 - [carbonyl](https://github.com/fathyb/carbonyl) -- chromium-based browser built to run in a terminal. Just for fun. I find it a better soultion, than [browsh](https://github.com/browsh-org/browsh)
 
 **iOS**
@@ -123,6 +124,7 @@ Main extensions:
 - [Tabliss](https://github.com/joelshepherd/tabliss) -- lets you configure your "new tab" page
 - [uBlock](https://github.com/gorhill/uBlock) -- ad/malware blocker
 - [Libredirect](https://github.com/libredirect/libredirect) -- redirects your queries to normal services (e.g. youtube links opens in Invidious)
+- [control-panel-for-twitter](https://github.com/insin/control-panel-for-twitter) -- gives you more control over your Twitter timeline and adds missing features and UI improvements
 
 Plus some advices from [arkenfox's wiki](https://github.com/arkenfox/user.js/wiki/4.1-Extensions):
 
@@ -379,7 +381,7 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 
 ## Cleaners
 
-- $FREEMIUM$ !WINDOWS! !PROPRIETARY! [CCleaner](https://www.ccleaner.com) -- application to clean up windows systems from garbage and old register strings
+- [czkawka](https://github.com/qarmin/czkawka) -- a simple, fast and free app to remove unnecessary files from your computer. Written with Rust
 - [BleachBit](https://github.com/bleachbit/bleachbit) -- app, that cleans files to free disk space and to maintain privacy. Cleans less stuff on windows, than ccleaner
 - !LINUX! [Stacer](https://github.com/oguzhaninan/Stacer) -- system cleaner, primarily targeting debian-based linux systems
 
