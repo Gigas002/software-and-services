@@ -8,7 +8,6 @@ adobe-source-sans-fonts
 alsa-firmware
 alsa-utils
 amd-ucode
-an-anime-game-launcher-gtk-bin
 apparmor
 ark
 aspnet-runtime-bin
@@ -25,7 +24,6 @@ bitwarden
 bleachbit
 bluedevil
 boost
-brave-browser-beta
 breeze-gtk
 btrfs-progs
 bzip2
@@ -33,7 +31,6 @@ carbonyl-bin
 ccache
 cdparanoia
 cdrdao
-chromium
 clunk-vangers-git
 cmake
 coreutils
@@ -63,7 +60,8 @@ dotnet-sdk-bin
 dotnet-targeting-pack-bin
 dpkg
 dvd+rw-tools
-dxvk-bin
+dxvk-mingw-git
+dxvk-nvapi-mingw-git
 e2fsprogs
 ecryptfs-utils
 efibootmgr
@@ -89,7 +87,6 @@ gameconqueror
 gamemode
 gamescope
 gcc-libs
-geforcenow-electron
 glibc
 glibc-locales
 gnome-icon-theme
@@ -284,6 +281,7 @@ mesa-vdpau
 meson
 mhwd
 mhwd-db
+microsoft-edge-dev-bin
 milou
 minecraft-launcher
 mkinitcpio-openswap
@@ -456,6 +454,7 @@ snapd
 snapd-glib
 spectacle
 spectre-meltdown-checker
+speedtest-cli
 spirv-headers
 sqlitebrowser
 sshfs
@@ -476,6 +475,7 @@ tar
 teams
 telegram-desktop
 terminus-font
+thorium-browser-bin
 thunderbird
 timeshift
 timeshift-autosnap-manjaro
@@ -513,7 +513,7 @@ vi
 vim
 vkbasalt
 vkd3d
-vkd3d-proton-bin
+vkd3d-proton-mingw-git
 vlc
 vscodium-bin
 vulkan-extra-layers
