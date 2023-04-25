@@ -99,7 +99,7 @@ Read [this article](https://www.privacyguides.org/router/). I don't use custom f
 **Desktop**
 
 - [Mozilla Firefox](https://ftp.mozilla.org/pub/firefox/releases/) -- preinstalled browser on most linux distibutives
-- Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also keep in mind, that there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation
+- Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also keep in mind, that there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation. Rust [crate's page](https://docs.rs/arti/latest/arti/#using-arti-with-tor-browser) describes a way to use it with tor right now, but keep in mind that's an early beta
 - [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
 - [thorium](https://github.com/Alex313031/thorium) -- chromium fork with various nice patches, especially for linux
 - [carbonyl](https://github.com/fathyb/carbonyl) -- chromium-based browser built to run in a terminal. Just for fun. I find it a better soultion, than [browsh](https://github.com/browsh-org/browsh)
@@ -165,7 +165,7 @@ I suggest using [DNSCloak](https://github.com/s-s/dnscloak), which is a GUI and 
 
 ### VPN
 
-- $FREEMIUM$ [ProtonVPN](https://protonvpn.com/) -- while it's free plan is not very good, it's paid plans are a good choice. ProtonVPN supports *Secure Core*, *Netshield* and *Kill Switch* on most platofrms. Plus, it has a solid ecosystem, which I'll mention in below sections.
+- $FREEMIUM$ [ProtonVPN](https://github.com/ProtonVPN) -- while it's free plan is not very good, it's paid plans are a good choice. ProtonVPN supports *Secure Core*, *Netshield* and *Kill Switch* on most platofrms. Plus, it has a solid ecosystem, which I'll mention in below sections.
 
 ### Anti-virus stuff
 
@@ -204,11 +204,11 @@ Well, here comes nothing.
 
 Read more [on privacyguides](https://www.privacyguides.org/file-sharing/).
 
-- $FREEMIUM$ [ProtonDrive](https://protonmail.com/blog/proton-drive-early-access/) -- E2EE general file storage service. Available on iOS and Android as apps, through browser on desktop
+- $FREEMIUM$ [ProtonDrive](https://github.com/ProtonMail/WebClients) -- E2EE general file storage service. Available on iOS and Android as apps, through browser on desktop
 - [OnionShare](https://github.com/onionshare/onionshare) -- share files and chat with friends using tor network. Desktop only
 - [Syncthing](https://github.com/syncthing/syncthing) -- open source file synchronization tool
 - [Git](https://git-scm.com/downloads) -- do I really need to explain what git is
-- !WINDOWS! [AltStore/AltServer](https://github.com/rileytestut/AltStore) -- gives you an opportunity to install apps not from AppStore
+- !WINDOWS! [AltStore/AltServer](https://github.com/rileytestut/AltStore) -- gives you an opportunity to install apps not from AppStore. Has an [unofficial app](https://github.com/powenn/AltServer-Linux-ShellScript) for linux, but that one didn't worked out for me yet
 - !PROPRIETARY! !WINDOWS! [iTunes/iCloud](https://support.apple.com/en-us/HT210384) -- unfortunately it's a needed dependency for `AltServer` to work
 - [rustdesk](https://github.com/rustdesk/rustdesk) -- open source virtual/remote desktop infrastructure for everyone! The open source TeamViewer/AnyDesk alternative
 
@@ -224,7 +224,7 @@ Read more [on privacyguides](https://www.privacyguides.org/search-engines/).
 Here I'll mainly cover some alternative frontends for these mainstream services, not introducing completely new and already good ones.
 
 - [Nitter](https://github.com/zedeus/nitter) -- alternative twitter frontend, focused on privacy. It's still in early beta, so there's not much features released
-- [tweak-new-twitter](https://github.com/insin/tweak-new-twitter) -- browser extension for better twitter experience
+- [control-panel-for-twitter](https://github.com/insin/control-panel-for-twitter) -- browser extension for better twitter experience
 - [Pawoo](https://github.com/CrossGate-Pawoo/mastodon) -- alternative TO twitter for japanese artists and users, developed by pixiv stuff. Fork of [mastodon](https://github.com/mastodon/mastodon)
 - [Libreddit](https://github.com/spikecodes/libreddit) -- private front-end for Reddit
 - [Invidious](https://github.com/iv-org/invidious) -- alternative front-end to YouTube
