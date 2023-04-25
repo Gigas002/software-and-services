@@ -243,8 +243,6 @@ linux-xanmod-linux-bin-x64v3
 linux-xanmod-linux-headers-bin-x64v3
 linux61
 linux61-headers
-linux62
-linux62-headers
 logrotate
 lua
 lutris
@@ -357,7 +355,7 @@ ppsspp
 print-manager
 procps-ng
 profile-cleaner
-proton-ge-custom
+proton-ge-custom-bin
 protontricks
 protonvpn
 psensor
@@ -467,7 +465,6 @@ syncthing
 sysfsutils
 system-config-printer
 systemd
-systemd-fsck-silent
 systemd-kcm
 systemd-sysvcompat
 systemsettings
