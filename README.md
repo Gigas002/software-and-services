@@ -250,7 +250,7 @@ Read more about instant messengers on [privacyguides](https://www.privacyguides.
 
 - !PROPRIETARY! [Telegram](https://github.com/telegramdesktop/tdesktop) -- only app is open source, it lacks encryption by default and has many other problems. But still it's a lightweight client, that smoothly run on every system and even with bad internet connection. It also has a lot of awesome features, that completely open source alternatives doesn't
 - [Element](https://github.com/vector-im) -- good replacement for telegram/discord for future. Now lacks lots of features and feels very slow at all tasks
-- [Session](https://github.com/oxen-io/session-desktop) -- Session Desktop - Onion routing based messenger. Fork of [Signal](https://github.com/signalapp/Signal-Desktop). that doesn't require any personal data for registration
+- [Session](https://github.com/oxen-io/session-desktop) -- Onion routing based messenger. Fork of [Signal](https://github.com/signalapp/Signal-Desktop). that doesn't require any personal data for registration
 
 **Discord alternatives and tweaks**
 
