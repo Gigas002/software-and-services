@@ -171,7 +171,7 @@ I suggest using [DNSCloak](https://github.com/s-s/dnscloak), which is a GUI and 
 
 It's not recommended to enable scan of downloads for viruses in browser, since it uses google services, but I'd prefer not to have viruses, so I turn it on. Here's mozilla explanation on [how it works](https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work).
 
-- [ClamAV](https://github.com/clamwin/clamav) -- open source, CLI, scanning antivirus for Windows/Linux
+- [ClamAV](https://github.com/Cisco-Talos/clamav) -- open source, CLI, scanning antivirus for Windows/Linux
 - !LINUX! [ClamTK](https://github.com/dave-theunsub/clamtk) -- GUI for ClamAV, works only on Linux
 - !LINUX! [gufw](https://github.com/costales/gufw) -- firewall for linux systems, which is a GUI for [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall)
 - !PROPRIETARY! !WINDOWS! Windows defender and firewall (*WIN10+*) -- handles most cases pretty good without any need of additional software
