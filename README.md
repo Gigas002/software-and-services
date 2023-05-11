@@ -259,7 +259,6 @@ Discord is shit as is and I would recommend you never use it because it's app VE
 - [discordo](https://github.com/ayn2op/discordo) -- a lightweight, secure, and feature-rich Discord terminal client 
 - [Abaddon](https://github.com/uowuo/abaddon) -- young replacement of discord app on c++ without electron. In very early state, but can be good in future, developer seems really passionate about his program
 - !LINUX! [Gtkcord4](https://github.com/diamondburned/gtkcord4) -- discord client on golang
-- [Fosscord](https://github.com/fosscord/fosscord) -- free open source selfhostable discord compatible communication platform. Looks like an awesome replacement for original discord. It's [client](https://github.com/fosscord/fosscord-client) uses react-native instead of electron
 - [Undiscord](https://github.com/victornpb/deleteDiscordMessages) -- greasemonkey script to remove all your discord history. Theoretically can be the reason to ban you, but hey, I guess that's not a big problem
 
 ## Self-Contained Networks
