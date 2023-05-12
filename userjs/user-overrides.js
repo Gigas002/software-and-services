@@ -96,3 +96,6 @@ user_pref("browser.backspace_action", 0);
 
 // Enable ipv6
 user_pref("network.dns.disableIPv6", false);
+
+// Enable experimental servo layout
+user_pref("layout.css.servo.enabled", true);
