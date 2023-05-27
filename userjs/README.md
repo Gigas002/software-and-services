@@ -1,4 +1,12 @@
-# Updating guide
+# Contents
+
+Use [arkenfox's user.js](https://github.com/arkenfox/user.js/) as base `user.js` to add these overrides.
+
+Overrides content is divided by three zones. First are my private overrides for better experience, especially on linux.
+
+Second and third are `Smoothfox.js` and `Fastfox.js`'s parts from [Betterfox](https://github.com/yokoffing/BetterFox) repo
+
+## Updating guide
 
 Simple version of [this guide](https://github.com/arkenfox/user.js/wiki/3.4-Apply-&-Update-&-Maintain) for updating and cleanup
 
