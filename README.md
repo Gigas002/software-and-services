@@ -104,6 +104,8 @@ Read [this article](https://www.privacyguides.org/router/). I don't use custom f
 - Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also keep in mind, that there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation. Rust [crate's page](https://docs.rs/arti/latest/arti/#using-arti-with-tor-browser) describes a way to use it with tor right now, but keep in mind that's an early beta
 - [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
 - [thorium](https://github.com/Alex313031/thorium) -- chromium fork with various nice patches, especially for linux
+- [mercury](https://github.com/Alex313031/Mercury) -- firefox fork by thorium's author, targeting better performance and privacy. Not so alive, compating to `thorium`
+- [pulse-browser](https://github.com/pulse-browser/browser) -- yet another `firefox` fork, targeting minimalistic design and performance. Uses [betterfox](https://github.com/yokoffing/Betterfox) tweaks
 - [carbonyl](https://github.com/fathyb/carbonyl) -- chromium-based browser built to run in a terminal. Just for fun. I find it a better soultion, than [browsh](https://github.com/browsh-org/browsh)
 
 **iOS**
@@ -143,6 +145,7 @@ Additional/situative extensions and recommendations:
 - [ViolentMonkey](https://github.com/violentmonkey/violentmonkey) -- provides userscripts support for browsers. It works on browsers with WebExtensions support. Seems more "alive", than [GreaseMonkey](https://github.com/greasemonkey/greasemonkey)
 - [Terms of Service; Didn’t Read](https://github.com/tosdr/browser-extensions) -- short version of main points in terms of service
 - [xBrowserSync](https://github.com/xbrowsersync/api) -- sync browser data securely
+- [darkreader](https://github.com/darkreader/darkreader) -- analyzes web pages and aims to reduce eyestrain while browsing the web. Slows your browser, so decide by yourself
 
 ### Firefox tweaks
 
@@ -244,6 +247,7 @@ Here I'll mainly cover some alternative frontends for these mainstream services,
 - !iOS! [Yattee](https://github.com/yattee/yattee) -- Alternative YouTube frontend for iOS (iPhone, iPad), macOS and tvOS (Apple TV) built with Invidious and Piped. Available through testflight
 - [EH-Page-Scrobbler](https://github.com/Meldo-Megimi/EH-Page-Scrobbler) -- browser script to return pages on sadpanda website
 - [danbooru](https://github.com/danbooru/danbooru) -- taggable image board written in Rails
+- [waifu2x](https://github.com/nagadomi/nunif) -- upscaler for anime pictures on neural nets
 
 
 ### Messengers
@@ -251,6 +255,7 @@ Here I'll mainly cover some alternative frontends for these mainstream services,
 Read more about instant messengers on [privacyguides](https://www.privacyguides.org/real-time-communication/)
 
 - !PROPRIETARY! [Telegram](https://github.com/telegramdesktop/tdesktop) -- only app is open source, it lacks encryption by default and has many other problems. But still it's a lightweight client, that smoothly run on every system and even with bad internet connection. It also has a lot of awesome features, that completely open source alternatives doesn't
+- [SimpleX](https://github.com/simplex-chat/simplex-chat) -- messaging platform that has no user identifiers of any kind
 - [Element](https://github.com/vector-im) -- good replacement for telegram/discord for future. Now lacks lots of features and feels very slow at all tasks
 - [Session](https://github.com/oxen-io/session-desktop) -- Onion routing based messenger. Fork of [Signal](https://github.com/signalapp/Signal-Desktop). that doesn't require any personal data for registration
 
@@ -281,6 +286,8 @@ It's very important to have your storages encrypted. Even microsoft's BitLocker 
 ### Image stuff
 
 - [qimgv](https://github.com/easymodo/qimgv) -- awesome lightweight image viewer on c++. Even supports playing videos through `mpv`. I've also created a [fork for arch users](https://aur.archlinux.org/packages/qimgv-qt6-kde-git/), which enables qt6 compilation and KDE support for cmake args. Build script is located here, in `/qimgv-qt6-kde` directory
+- [qView](https://github.com/jurplel/qView) -- image viewer designed with minimalism and usability in mind. Currently more 'alive' than `qimgv`
+- !LINUX! [imv](https://sr.ht/~exec64/imv/) -- command line image viewer intended for use with tiling window managers. Supports `wayland` natively, but a bit dead since moved to sourcehut
 - !WINDOWS! [ImageGlass](https://github.com/d2phap/ImageGlass) -- good alternative for windows, if you didn't like qimgv. Written on c# with .net framework, .net5+ support planned
 - [libvips](https://github.com/libvips/libvips) -- insane fast image processing library on c. Supports huge amount of formats and ImageMagick as plugin
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick) -- alternative to libvips, slower on benchmarks but still usable for some tasks
@@ -332,6 +339,7 @@ Games are rarely released open source, but still there are a lot of good and com
 - !LINUX! [goverlay](https://github.com/benjamimgois/goverlay) -- GUI settings manager for **mangohud**, [vkBasalt](https://github.com/DadSchoorse/vkBasalt) and [ReplaySorcery](https://github.com/matanui159/ReplaySorcery)
 - !LINUX! [gamemode](https://github.com/FeralInteractive/gamemode) -- daemon/lib combo for Linux that allows games to request a set of optimisations be temporarily applied to the host OS and/or a game process
 - !LINUX! [steamtinkerlaunch](https://github.com/frostworx/steamtinkerlaunch) --  Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs
+- !LINUX! [darling](https://github.com/darlinghq/darling) -- analogue of wine which targets macos behavior on linux
 
 ## Downloaders
 
