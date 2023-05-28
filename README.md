@@ -23,6 +23,7 @@ $ marks $ shows if software is not completely free
   * [TOC](#toc)
   * [OS](#os)
     + [Windows tweaks](#windows-tweaks)
+  * [Linux tweaks](#linux-tweaks)
   * [Routers firmware](#routers-firmware)
   * [Create boot device](#create-boot-device)
   * [Internet browsers](#internet-browsers)
@@ -50,6 +51,7 @@ $ marks $ shows if software is not completely free
   * [Virtualization](#virtualization)
   * [Terminals](#terminals)
   * [Text editors and development](#text-editors-and-development)
+  * [Diff tools](#diff-tools)
   * [Screenshots and screen recording](#screenshots-and-screen-recording)
   * [Cleaners](#cleaners)
   * [Office software](#office-software)
@@ -57,6 +59,9 @@ $ marks $ shows if software is not completely free
   * [Theme engines](#theme-engines)
   * [File browsers](#file-browsers)
   * [Driver installers](#driver-installers)
+  * [SDKs and runtimes](#sdks-and-runtimes)
+  * [Android](#android)
+  * [Database stuff](#database-stuff)
 
 ## OS
 
