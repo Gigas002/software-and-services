@@ -130,3 +130,51 @@ journalctl --boot=-1 --priority=3
 ```sh
 git submodule add https://aur.archlinux.org/package_name.git arch-packages/package_name
 ```
+
+## pacdiff
+
+Sometimes you'll need to run `pacdiff` on your system, e.g. when updating `grub` package. In these cases you'll need to diff and merge the `.pacnew` file with your current config. Run the program as follows:
+
+```sh
+sudo DIFFPROG=meld pacdiff
+```
+
+The selection of `diff` tool is up to you, but be sure it supports running with `sudo`
+
+
+## Wayland tweaks
+
+Electron apps: https://wiki.archlinux.org/title/Wayland; `code`/`vscodium` requires running from cli: `code --ozone-platform=wayland`;
+
+Native wayland support for `SDDM` is currently available only in `SDDM-git` package. Example of `/etc/sddm.conf.d/10-wayland.conf`:
+
+```conf
+[General]
+DisplayServer=wayland
+GreeterEnvironment=QT_WAYLAND_SHELL_INTEGRATION=layer-shell
+Numlock=on
+
+[Wayland]
+CompositorCommand=kwin_wayland --no-lockscreen
+```
+
+Set environment variables for wayland only by writing them into `/etc/profile.d/wayland-env.sh`. Example:
+
+```sh
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+  export GDK_BACKEND=wayland
+#  export QT_AUTO_SCREEN_SCALE_FACTOR=1
+#  export QT_SCALE_FACTOR=1
+  export GTK_USE_PORTAL=0
+  export MOZ_ENABLE_WAYLAND=1
+#  export GBM_BACKEND=nvidia-drm
+  export __GLX_VENDOR_LIBRARY_NAME=nvidia
+  export __NV_PRIME_RENDER_OFFLOAD=1
+  export __VK_LAYER_NV_optimus=NVIDIA_only
+  export QT_QPA_PLATFORM="wayland;xcb"
+#  export QT_QPA_PLATFORM="wayland"
+  export SDL_VIDEODRIVER=wayland
+fi
+```
+
+`Flameshot` is slow on resizing selection: use version `12.1.0` until [PR](https://github.com/flameshot-org/flameshot/pull/3059) is merged

@@ -85,42 +85,7 @@ The whole section is !LINUX! only
 - [optimus-manager](https://github.com/Askannz/optimus-manager) -- a program, that provides a solution for GPU switching on Optimus laptops (i.e laptops with a dual Nvidia/Intel or Nvidia/AMD configuration). [Has](https://github.com/Shatur/optimus-manager-qt) an unofficial gui on Qt
 - [pipewire](https://github.com/PipeWire/pipewire) -- PipeWire is a server and user space API to deal with multimedia pipelines. If you're planning on replacing `pulseaudio` with `pipewire`, you should also use `pipewire-pulse` packages. On manjaro it's recommended to use `manjaro-pipewire` meta package. It's also recommended to use `manjaro-bluetooth` meta package, if you're using bluetooth audio devices
 
-### Wayland tweaks
-
-Electron apps: https://wiki.archlinux.org/title/Wayland; `code`/`vscodium` requires running from cli: `code --ozone-platform=wayland`;
-
-Native wayland support for `SDDM` is currently available only in `SDDM-git` package. Example of `/etc/sddm.conf.d/10-wayland.conf`:
-
-```conf
-[General]
-DisplayServer=wayland
-GreeterEnvironment=QT_WAYLAND_SHELL_INTEGRATION=layer-shell
-Numlock=on
-
-[Wayland]
-CompositorCommand=kwin_wayland --no-lockscreen
-```
-
-Set environment variables for wayland only by writing them into `/etc/profile.d/wayland-env.sh`. Example:
-
-```sh
-if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-  export GDK_BACKEND=wayland
-#  export QT_AUTO_SCREEN_SCALE_FACTOR=1
-#  export QT_SCALE_FACTOR=1
-  export GTK_USE_PORTAL=0
-  export MOZ_ENABLE_WAYLAND=1
-#  export GBM_BACKEND=nvidia-drm
-  export __GLX_VENDOR_LIBRARY_NAME=nvidia
-  export __NV_PRIME_RENDER_OFFLOAD=1
-  export __VK_LAYER_NV_optimus=NVIDIA_only
-  export QT_QPA_PLATFORM="wayland;xcb"
-#  export QT_QPA_PLATFORM="wayland"
-  export SDL_VIDEODRIVER=wayland
-fi
-```
-
-`Flameshot` is slow on resizing selection: use version `12.1.0` until [PR](https://github.com/flameshot-org/flameshot/pull/3059) is merged
+For more minor tweaks please see the [minor-linux-tweaks](minor-linux-tweaks.md) file in this repo
 
 ## Routers firmware
 
@@ -408,6 +373,12 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 - [vscodium](https://github.com/VSCodium/vscodium) -- VS Code without MS branding/telemetry/licensing
 - [notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) -- fast (hey, it's not a *browser*) and extensible source code editor on C++
 - !LINUX! [nano](https://nano-editor.org/) -- I prefer it over `vim` because of tragic incident in childhood, when I was trapped inside of it...
+
+## Diff tools
+
+The `code`/`vscodium` isn't bad, but it's not recommended to run it with `sudo` (cases like `pacdiff`), so tools here must be able to run with `sudo` without problems.
+
+- [meld](https://github.com/GNOME/meld) -- visual diff and merge tool targeted at developers
 
 ## Screenshots and screen recording
 
