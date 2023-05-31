@@ -131,6 +131,19 @@ journalctl --boot=-1 --priority=3
 git submodule add https://aur.archlinux.org/package_name.git arch-packages/package_name
 ```
 
+**Change author of last X commits:**
+
+```sh
+git rebase -i HEAD~44 -x "git commit --amend --no-edit --reset-author"
+```
+
+**Restart plasma session:**
+
+```sh
+kquitapp5 plasmashell || killall plasmashell && kstart5 plasmashell
+```
+
+
 ## pacdiff
 
 Sometimes you'll need to run `pacdiff` on your system, e.g. when updating `grub` package. In these cases you'll need to diff and merge the `.pacnew` file with your current config. Run the program as follows:
