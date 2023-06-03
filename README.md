@@ -92,6 +92,18 @@ The whole section is !LINUX! only
 
 For more minor tweaks please see the [minor-linux-tweaks](minor-linux-tweaks.md) file in this repo
 
+### Wayland compositors
+
+Outdated, but worth reading: [awesome-wayland-1](https://github.com/natpen/awesome-wayland)
+
+I tried [kwinft](https://gitlab.com/kwinft/kwinft) project and it doesn't seem to be stable at all, at least on my machine. So i looked up for moar on arch wiki and found out about awesome `hyprland` tiling compositor. Almost all this section is about awesome stuff for this compositor to run:
+
+- [hyprland](https://github.com/hyprwm/Hyprland) -- a highly customizable dynamic tiling Wayland compositor. Read it's [docs](https://wiki.hyprland.org/Getting-Started/Master-Tutorial/) and [arch wiki](https://wiki.archlinux.org/title/Hyprland) for more info ob troubleshooting and configurations
+- [hyprland-dotfiles](https://github.com/taylor85345/hyprland-dotfiles) -- set of configs and themes for fast start with `hyprland`. Installation info in repo's readme. I will probably use my own configs and publish them in this repo, when I'll finally migrate to `hyprland`
+- [hyprV4](https://github.com/SolDoesTech/HyprV4) -- `hyprland` installation script for clean `arch` distro
+- [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) -- list of awesome tools for `hyprland`. I won't list tools, that are already listed there
+- [hyprland community tools](https://github.com/orgs/hyprland-community/repositories) -- list of tools, not listed in `awesome-hyprland`, but highly usable
+
 ## Routers firmware
 
 Read [this article](https://www.privacyguides.org/router/). I don't use custom firmware because my router isn't supported by these systems yet. If you're lucky to have one of these and you're a proton user, you can configure your router to force all connections through ProtonVPN, see detailed guide [here](https://protonvpn.com/support/installing-protonvpn-on-a-router/).
@@ -396,6 +408,8 @@ The `code`/`vscodium` isn't bad, but it's not recommended to run it with `sudo` 
 ## Screenshots and screen recording
 
 - [flameshot](https://github.com/flameshot-org/flameshot) -- cross-platform screenshoting tool on C++
+- !LINUX! [wayshot](https://github.com/waycrate/wayshot) -- screenshoting tool for `wlroots` based compositors
+- !LINUX! [watershot](https://github.com/Kirottu/watershot) -- analogue of flameshot on rust for `wlroots` based compositors
 - !WINDOWS! [ShareX](https://github.com/ShareX/ShareX) -- windows-only analogue of flameshot on C#. Can shot videos with `ffmpeg` and supports additional task (e.g. convert your screenshots to `.webp` before saving)
 - [OBS Studio](https://github.com/obsproject/obs-studio) -- free and open source software for live streaming and screen recording. MUCH better, than default windows 10's screen recording through game bar
 
