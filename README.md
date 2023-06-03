@@ -390,8 +390,12 @@ I'm not an expert on this question and used only `vmware` and `vbox`
 
 While bash/zsh on linux works good on it's own, there are alternatives for windows. As KDE user I prefer *konsole* + *zsh*. Only advice to arch users is to uncomment `Color` string in your `/etc/pacman.conf`. Seriously.
 
+*TODO: search for rust terminals, targeting native wayland*
+
+- !LINUX! [foot](https://github.com/DanteAlighierin/foot) -- terminal emulator for wayland
+- [kitty](https://github.com/kovidgoyal/kitty) -- cross-platform, fast, feature-rich, GPU based terminal
 - [PowerShell Core aka pwsh](https://github.com/powershell/powershell) -- modern rewrite of windows's proprietary powershell. Works on windows/linux/mac. Be aware, that some commands require you to run pwsh as administrator on windows or even doesn't work in a new version
-- !WINDOWS! [Windows Terminal](https://github.com/Microsoft/Terminal) -- terminal for windows system. Supports WSL, git bash, etc and is actually good.
+- !WINDOWS! [Windows Terminal](https://github.com/Microsoft/Terminal) -- terminal for windows system. Supports WSL, git bash, etc and is actually good
 
 ## Text editors and development
 
