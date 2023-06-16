@@ -449,7 +449,7 @@ The `code`/`vscodium` isn't bad, but it's not recommended to run it with `sudo` 
 
 - !WINDOWS! [Snappy Driver Installer](https://sdi-tool.org/) -- open source driver installer/updater for windows systems
 
-## SDKs and runtimes
+## Development
 
 You're probably familiar with this, since you're on github and know what to use and why. But for other users (especially windows ones) some things aren't always clear, e.g. not even everyone knows about openjdk and oracle's java builds. I'll only list basic things here, not mentioning minor stuff for developemtnt, like IDEs, libraries, package managers, etc. Plus, I'm only (mostly) aware about `c++`/`c#` stuff, which advanced developers knows anyways
 
@@ -458,6 +458,9 @@ You're probably familiar with this, since you're on github and know what to use 
 - [dotnet](https://github.com/dotnet/sdk) -- official microsoft implementation of .NET language family. Alternative to [mono project](https://github.com/mono/mono) that is an open source of older (closed source) .NET Framework. See [compatibility page](https://www.mono-project.com/docs/about-mono/compatibility/) for more info
 - !LINUX! [base-devel](https://archlinux.org/groups/x86_64/base-devel/) -- set of must-have development tools for linux distributives. Can have another name on other (not arch) dists, but still will contain `make`, `sudo`, `gcc` and others
 - !WINDOWS! [MSYS2](https://github.com/msys2) -- alternative to above **base-devel** for windows with lots of linux tools, like `mingw`. You can also try [cygwin](https://github.com/cygwin/cygwin) if this didn't work in your case
+- [dotdevelop](https://github.com/dotdevelop/dotdevelop) -- wip fork of abandoned **monodevelop** project, that aims to create an open-source and cross-platform IDE for dotnet developers
+- [netcoredbg](https://github.com/Samsung/netcoredbg) -- open-source debugger for dotnet core
+- [csharpier](https://github.com/belav/csharpier) -- FLOSS formatter for dotnet code
 
 ## Android
 
@@ -473,3 +476,7 @@ You're probably familiar with this, since you're on github and know what to use 
 - [MariaDB](https://github.com/MariaDB/server) -- a community-developed, commercially supported fork of the MySQL, intended to remain free and open-source software under the GNU General Public License
 - [dbeaver](https://github.com/dbeaver/dbeaver) -- free multi-platform database tool for developers, SQL programmers, database administrators and analysts
 - [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) -- standalone browser for SQLite databases
+
+## Fonts
+
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) -- a project that patches developer targeted fonts with a high number of glyphs (icons)
