@@ -123,7 +123,7 @@ user_pref("mousewheel.default.delta_multiplier_y",                      300); //
 
 
 /*** 
- * Fastfox zone (ver. 113)
+ * Fastfox zone (ver. 115)
  * see: https://github.com/yokoffing/Betterfox/blob/master/Fastfox.js
  * Options, overriden in arkenfox are commented
  *  ***/
@@ -203,22 +203,10 @@ user_pref("browser.startup.preXulSkeletonUI", false);
 // [1] https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
 
-// PREF: CSS Animation Composition [NIGHTLY]
-// [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1785329
-// [2] https://bugzilla.mozilla.org/show_bug.cgi?id=1293490
-// [3] https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition
-user_pref("layout.css.animation-composition.enabled", true);
-
 // PREF: Prioritized Task Scheduling API [NIGHTLY]
 // [1] https://blog.mozilla.org/performance/2022/06/02/prioritized-task-scheduling-api-is-prototyped-in-nightly/
 // [2] https://medium.com/airbnb-engineering/building-a-faster-web-experience-with-the-posttask-scheduler-276b83454e91
 user_pref("dom.enable_web_task_scheduling", true);
-
-// PREF: inert HTML attribute [NIGHTLY]
-//user_pref("html5.inert.enabled", true);
-
-// PREF: container query length units [NIGHTLY]
-//user_pref("layout.css.container-queries.enabled", true);
 
 // PREF: scroll-linked animations [NIGHTLY]
 //user_pref("layout.css.scroll-driven-animations.enabled", true);
@@ -226,18 +214,19 @@ user_pref("dom.enable_web_task_scheduling", true);
 // PREF: HTML Sanitizer API [NIGHTLY]
 //user_pref("dom.security.sanitizer.enabled", true);
 
-// PREF: Clear-Site-Data: "cache" header [NIGHTLY]
-// [1] https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
-//user_pref("privacy.clearsitedata.cache.enabled", true);
-
 // PREF: Shadowrealms [NIGHTLY]
 // [1] https://github.com/tc39/proposal-shadowrealm/blob/main/explainer.md#introduction
 //user_pref("javascript.options.experimental.shadow_realms", true);
 
-// PREF: Wasm GC + References [NIGHTLY]
+// PREF: Wasm GC [NIGHTLY]
+// WASM GC refers to garbage collection for WebAssembly. Garbage collection is a mechanism
+// to automatically free up memory that is no longer being used by a program. This helps
+// manage memory and prevent memory leaks. 
 // [1] https://github.com/WebAssembly/gc/blob/main/proposals/gc/Overview.md
-// [2] https://github.com/WebAssembly/function-references/blob/master/proposals/function-references/Overview.md
 //user_pref("javascript.options.wasm_gc", true);
+
+// PREF: WASM Function References [NIGHTLY]
+// [1] https://github.com/WebAssembly/function-references/blob/master/proposals/function-references/Overview.md
 //user_pref("javascript.options.wasm_function_references", true);
 
 // PREF: import assertions [NIGHTLY]
@@ -247,11 +236,12 @@ user_pref("dom.enable_web_task_scheduling", true);
 // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1795452
 //user_pref("javascript.options.experimental.array_grouping", true);
 //user_pref("javascript.options.experimental.enable_change_array_by_copy", true);
+//user_pref("javascript.options.experimental.enable_array_from_async", true);
 
-// PREF: indexedDB
+// PREF: indexedDB preprocessing
 // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1112702
-//user_pref("dom.indexedDB.preprocessing", true);
-//user_pref("dom.indexedDB.experimental", false); // DEFAULT
+//user_pref("dom.indexedDB.experimental", true);
+    //user_pref("dom.indexedDB.preprocessing", true);
 
 // PREF: WebGPU [HIGHLY EXPERIMENTAL!]
 // [WARNING] Do not enable unless you are a web developer!
@@ -261,10 +251,6 @@ user_pref("dom.enable_web_task_scheduling", true);
 // [4] https://hacks.mozilla.org/2020/04/experimental-webgpu-in-firefox/
 //user_pref("dom.webgpu.enabled", true);
     //user_pref("gfx.webgpu.force-enabled", true);
-
-// PREF: Animated AVIF [NIGHTLY]
-// [1] https://codecalamity.com/animated-avif-is-finally-coming-to-firefox/
-//user_pref("image.avif.sequence.enabled", true);
 
 // PREF: NVIDIA RTX Video Super Resolution for video overlay [WINDOWS]
 // This is also a setting in NVIDIA's driver settings, so once this is
@@ -348,9 +334,9 @@ user_pref("media.cache_resume_threshold", 6000); // default=30; when a network c
 // having to re-download objects for the websites you visit frequently
 //user_pref("browser.cache.disk.enable", true); // DEFAULT; overrides Securefox
 //user_pref("browser.cache.disk.capacity", 1048576); // 1 GB disk cache; 8192000 = 8 GB
-    //user_pref("browser.cache.disk.smart_size.enabled", false); // disable adaptive cache size on disk
+    //user_pref("browser.cache.disk.smart_size.enabled", false); // force a fixed max cache size on disk
 //user_pref("browser.cache.disk.max_entry_size", 51200); // DEFAULT
-//user_pref("browser.cache.disk.metadata_memory_limit", 1024); // increase the memory capacity in Firefox, in order to load more pages, faster
+//user_pref("browser.cache.disk.metadata_memory_limit", 15360); // increase size (in KB) of intermediate memory caching of frequently used metadata (disk cache memory pool)
 //user_pref("browser.cache.max_shutdown_io_lag", 8); // number of seconds the cache spends writing pending data and closing files after shutdown has been signalled
 //user_pref("browser.cache.frecency_half_life_hours", 6); // DEFAULT; sweep intervals, the half life used to re-compute cache entries frequency (in hours)
 
@@ -380,18 +366,13 @@ user_pref("network.http.max-persistent-connections-per-server", 10); // default=
 //user_pref("network.http.pacing.requests.min-parallelism", 18); // default=6
 
 // PREF: increase DNS cache
-// [NOTE] May be overridden by DNS resolver, especially if using TRR
+// [NOTE] The latter two may be overridden by DNS resolver, especially if using TRR
 //user_pref("network.dnsCacheEntries", 20000);
 //user_pref("network.dnsCacheExpiration", 3600); // keep entries for 1 hour
 //user_pref("network.dnsCacheExpirationGracePeriod", 240); // 4 minutes
 
 // PREF: increase TLS token caching 
 user_pref("network.ssl_tokens_cache_capacity", 32768); // default=2048; more TLS token caching (fast reconnects)
-
-// PREF: temporary fix for upload speed in Firefox
-// [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1596576
-//user_pref("network.http.http2.send-buffer-size", 33554432);
-//user_pref("network.http.http2.push-allowance", 33554432);
 
 /****************************************************************************
  * SECTION: SPECULATIVE CONNECTIONS                                         *
@@ -411,6 +392,9 @@ user_pref("network.ssl_tokens_cache_capacity", 32768); // default=2048; more TLS
 //user_pref("network.http.speculative-parallel-limit", 18); // default=6; overrides SecureFox
 //user_pref("network.dns.disablePrefetch", false); // overrides SecureFox
 //user_pref("network.dns.disablePrefetchFromHTTPS", false);
+//user_pref("network.early-hints.enabled", true);
+    //user_pref("network.early-hints.preconnect.enabled", true);
+    //user_pref("network.early-hints.preconnect.max_connections", 20); // FF113
 //user_pref("browser.urlbar.speculativeConnect.enabled", true); // overrides SecureFox
 //user_pref("browser.places.speculativeConnect.enabled", true); // overrides SecureFox
 //user_pref("network.prefetch-next", true); // overrides SecureFox
@@ -424,4 +408,3 @@ user_pref("network.ssl_tokens_cache_capacity", 32768); // default=2048; more TLS
         //user_pref("network.predictor.prefetch-rolling-load-count", 120); // default=10
     //user_pref("network.predictor.max-resources-per-entry", 250); // default=100
     //user_pref("network.predictor.max-uri-length", 1000); // default=500
-
