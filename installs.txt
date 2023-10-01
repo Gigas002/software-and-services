@@ -1,6 +1,7 @@
 7-zip
 acpi
 acpid
+adduser
 adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
@@ -8,6 +9,7 @@ adobe-source-sans-fonts
 alsa-firmware
 alsa-utils
 amd-ucode
+android-tools
 apparmor
 ark
 asciidoc
@@ -26,6 +28,7 @@ bleachbit
 bluedevil
 boost
 breeze-gtk
+breeze-plymouth
 btrfs-progs
 bzip2
 carbonyl-bin
@@ -41,6 +44,7 @@ cpio
 cpupower
 cronie
 cryptsetup
+curl
 dbeaver
 debtap
 debugedit
@@ -49,7 +53,9 @@ dhclient
 dhcpcd
 diffutils
 digikam
+discord_arch_electron
 discordo-git
+discover
 dmidecode
 dmraid
 dnsmasq
@@ -61,7 +67,9 @@ dotnet-host-bin
 dotnet-runtime-bin
 dotnet-sdk-bin
 dotnet-targeting-pack-bin
+downgrade
 dpkg
+drkonqi
 dvd+rw-tools
 dxvk-bin
 dxvk-nvapi-mingw
@@ -69,7 +77,6 @@ e2fsprogs
 ecryptfs-utils
 efibootmgr
 electron
-electron19
 emovix
 exfat-utils
 f2fs-tools
@@ -80,8 +87,10 @@ ffnvcodec-headers
 filelight
 filesystem
 firefox
-flameshot
+flameshot-wayland-patch
+flatpak-kcm
 flex
+foot
 freetube-bin
 fuzzylite-git
 fwupd
@@ -153,13 +162,12 @@ kdialog
 keditbookmarks
 kernel-alive
 kfind
-kfloppy
 kgamma5
 kget
 kgpg
 khelpcenter
 khotkeys
-kimageformats
+kimageformats5
 kinfocenter
 kinit
 kio-extras
@@ -249,12 +257,13 @@ libvips
 libxpresent
 licenses
 linux-steam-integration
-linux-xanmod-linux-bin-x64v3
-linux-xanmod-linux-headers-bin-x64v3
+linux-xanmod-edge-linux-bin-x64v3
+linux-xanmod-edge-linux-headers-bin-x64v3
 linux61
 linux61-headers
 logrotate
 lua
+lurk
 lutris
 lvm2
 man-db
@@ -300,11 +309,13 @@ modprobed-db
 mono
 mpd
 mpv-git
+msquic
 mtpfs
 nano
 nasm
 neofetch
-neovim
+nerd-fonts-inter
+nerd-fonts-meta
 net-tools
 networkmanager
 networkmanager-openconnect
@@ -331,7 +342,6 @@ oh-my-zsh-powerline-theme-git
 onefetch
 onionshare
 opencl-headers
-opencl-mesa
 openresolv
 openslide
 openssh
@@ -342,7 +352,7 @@ oxygen-icons
 p7zip
 packagekit-qt5
 pamac-cli
-pamac-gtk
+pamac-gtk3
 pamac-tray-icon-plasma
 partitionmanager
 pciutils
@@ -352,14 +362,21 @@ phonon-qt5-gstreamer
 pkgconf
 plasma-browser-integration
 plasma-desktop
+plasma-disks
+plasma-firewall
 plasma-nm
 plasma-pa
+plasma-sdk
 plasma-simplemenu
 plasma-systemmonitor
+plasma-thunderbolt
+plasma-vault
 plasma-wayland-protocols
 plasma-wayland-session
+plasma-welcome
 plasma-workspace
 plasma-workspace-wallpapers
+plymouth-kcm
 poi-nightly-bin
 poppler-data
 postgresql
@@ -450,7 +467,6 @@ qt6-websockets
 qt6-webview
 realtime-privileges
 reiserfsprogs
-reshade-shaders-git
 retroarch
 retroarch-assets-glui
 retroarch-assets-ozone
@@ -472,6 +488,7 @@ shadow
 skanlite
 snapd
 snapd-glib
+socat
 spectacle
 spectre-meltdown-checker
 speedtest-cli
@@ -502,7 +519,6 @@ timeshift-autosnap-manjaro
 tlp
 tlpui
 tor
-tor-browser
 transcode
 ttf-dejavu
 ttf-droid
@@ -518,6 +534,7 @@ ttf-ms-win11-sea
 ttf-ms-win11-thai
 ttf-ms-win11-zh_cn
 ttf-ms-win11-zh_tw
+ttf-nerd-fonts-symbols
 ttf-noto-nerd
 ttf-roboto
 ttf-ubuntu-font-family
@@ -554,6 +571,8 @@ wowup-cf-bin
 wpa_supplicant
 xclip
 xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 xdg-desktop-portal-kde
 xdg-user-dirs
 xdg-utils
