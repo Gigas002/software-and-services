@@ -357,12 +357,13 @@ Games are rarely released open source, but still there are a lot of good and com
 - !LINUX! [gamemode](https://github.com/FeralInteractive/gamemode) -- daemon/lib combo for Linux that allows games to request a set of optimisations be temporarily applied to the host OS and/or a game process
 - !LINUX! [steamtinkerlaunch](https://github.com/frostworx/steamtinkerlaunch) --  Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs
 - !LINUX! [darling](https://github.com/darlinghq/darling) -- analogue of wine which targets macos behavior on linux
+- [Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher) -- A Native GOG, Amazon and Epic Games Launcher for Linux, Windows and Mac
 
 ## Downloaders
 
 - [curl](https://github.com/curl/curl) -- first and most important app for this section. I hope I don't even need to explain why and how it can be used
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) -- fork of abandoned [youtube-dl](https://github.com/ytdl-org/youtube-dl) for downloading videos (*not only youtube supported*); CLI
-- [Open Video Downloader](https://github.com/jely2002/youtube-dl-gui) -- youtube-dl (*actually yt-dlp*) GUI for Windows
+- [youtube-dl-gui](https://github.com/StefanLobbenmeier/youtube-dl-gui) -- youtube-dl (*actually yt-dlp*) GUI
 - [qBitTorrent](https://github.com/qbittorrent/qBittorrent) -- simple and fast bittorrent client on qt. Sometimes preinstalled on linux systems
 - [gallery-dl](https://github.com/mikf/gallery-dl) -- awesome command-line program to download stuff from a [huge](https://github.com/mikf/gallery-dl/blob/master/docs/supportedsites.md) variaty of websites. Configs are usually located in `~/.config/gallery-dl/config.json` (create one if you don't have any)
 - [pixivutil2](https://github.com/Nandaka/PixivUtil2) -- CLI on python to download stuff from pixiv, alternative for gallery-dl for pixiv only (*gallery-dl supports pixiv too*) Supports authentication, pixiv FANBOX, downloading videos (through ffmpeg). Has an AUR package. Config is located in `~/.local/share/PixivUtil2`
@@ -464,11 +465,23 @@ You're probably familiar with this, since you're on github and know what to use 
 
 ## Android
 
+AS the name implies, the whole section is about android apps or android emulation
+
 - !LINUX! [anbox](https://github.com/anbox/anbox) -- a container-based approach to boot a full Android system on a regular GNU/Linux system
 - !LINUX! [waydroid](https://github.com/waydroid/waydroid) -- analogue of **anbox**, uses `wayland`
-- !ANDROID! [LineageOS](https://github.com/LineageOS/android) -- a free and open-source operating system for various devices, based on the Android mobile platform
-- !ANDROID! [GrapheneOS](https://github.com/GrapheneOS) -- build with security and privacy in mind fork of android. Currently supports only Google Pixel devices
-- !ANDROID! [DivestOS](https://github.com/Divested-Mobile/DivestOS-Build) -- a soft-fork of LineageOS. DivestOS inherits many supported devices from LineageOS. It has signed builds, making it possible to have verified boot on some non-Pixel devices
+- [LineageOS](https://github.com/LineageOS/android) -- a free and open-source operating system for various devices, based on the Android mobile platform
+- [GrapheneOS](https://github.com/GrapheneOS) -- build with security and privacy in mind fork of android. Currently supports only Google Pixel devices
+- [DivestOS](https://github.com/Divested-Mobile/DivestOS-Build) -- a soft-fork of LineageOS. DivestOS inherits many supported devices from LineageOS. It has signed builds, making it possible to have verified boot on some non-Pixel devices
+- [Aegis](https://github.com/beemdevelopment/Aegis) -- a free, secure and open source app for Android to manage your 2-step verification tokens
+- [GmsCore](https://github.com/microg/GmsCore) -- free implementation of Google Play Services
+- [Magisk](https://github.com/topjohnwu/Magisk) -- a suite of open source software for customizing Android
+- [K-9](https://github.com/thundernest/k-9) -- Open Source Email App for Android
+- [AdAway](https://github.com/AdAway/AdAway) -- a free and open source ad blocker for Android
+- [AuroraStore](https://gitlab.com/AuroraOSS/AuroraStore) -- an unofficial FOSS client to Google Play with an elegant design and privacy
+- [FDroid](https://github.com/f-droid/fdroidclient) -- Free Software repository system for Android
+- [LoliSnatcher](https://github.com/NO-ob/LoliSnatcher_Droid) -- a booru client with support for batch downloading 
+- [mpv-android](https://github.com/mpv-android/mpv-android) -- a video player for Android based on libmpv
+- [Pix-EzViewer](https://github.com/ultranity/Pix-EzViewer) -- a third-party Pixiv Android client with modern design and many other enhancements
 
 ## Database stuff
 
