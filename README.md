@@ -181,6 +181,8 @@ Encrypt your DNS queries with *DNS over HTTPS*, *DNS over TLS*, *DNSCrypt* and m
 
 First, select your DNS provider from the link above. I personally prefer [AdGuard DNS](https://github.com/AdguardTeam/AdGuardDNS/) over Cloudflare since these are open source, support of DoH, DoT, DNSCrypt and it's fast, though keep some logs for 24 hours. As an alternative I use [BlahDNS](https://github.com/ookangzheng/blahdns/) which is said to "not collect any logs", but it's speed is slower, so it's on the second place in priority. Plus, you can enable **DNS over HTTPS** in firefox settings (which is redundant if you've set it up on router level).
 
+- [Pi-Hole](https://github.com/pi-hole/pi-hole) -- a DNS sinkhole that protects your devices from unwanted content without installing any client-side software
+
 **iOS**
 
 I suggest using [DNSCloak](https://github.com/s-s/dnscloak), which is a GUI and wrapper for *dnscrypt-proxy 2*.
