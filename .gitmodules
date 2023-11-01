@@ -43,3 +43,9 @@
 [submodule "arch-packages/carbonyl-bin"]
 	path = arch-packages/carbonyl-bin
 	url = https://aur.archlinux.org/carbonyl-bin.git
+[submodule "arch-packages/plasma5-themes-sweet-kde-git"]
+	path = arch-packages/plasma5-themes-sweet-kde-git
+	url = https://aur.archlinux.org/plasma5-themes-sweet-kde-git.git
+[submodule "arch-packages/plasma5-themes-sweet-full-git"]
+	path = arch-packages/plasma5-themes-sweet-full-git
+	url = https://aur.archlinux.org/plasma5-themes-sweet-full-git.git
