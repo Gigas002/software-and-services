@@ -55,7 +55,6 @@ diffutils
 digikam
 discord_arch_electron
 discordo-git
-discover
 dmidecode
 dmraid
 dnsmasq
@@ -88,7 +87,6 @@ filelight
 filesystem
 firefox
 flameshot-wayland-patch
-flatpak-kcm
 flex
 foot
 freetube-bin
@@ -106,7 +104,6 @@ glu
 gnome-icon-theme
 gnome-keyring
 gnome-themes-extra
-goverlay-bin
 grub
 grub-btrfs
 grub-customizer-git
@@ -152,7 +149,6 @@ kcalc
 kcharselect
 kde-gtk-config
 kdebugsettings
-kdeconnect
 kdegraphics-thumbnailers
 kdenetwork-filesharing
 kdenlive
@@ -257,8 +253,8 @@ libvips
 libxpresent
 licenses
 linux-steam-integration
-linux-xanmod-edge-linux-bin-x64v3
-linux-xanmod-edge-linux-headers-bin-x64v3
+linux-xanmod-linux-bin-x64v3
+linux-xanmod-linux-headers-bin-x64v3
 linux61
 linux61-headers
 logrotate
@@ -376,6 +372,8 @@ plasma-wayland-session
 plasma-welcome
 plasma-workspace
 plasma-workspace-wallpapers
+plasma5-themes-sweet-full-git
+plasma5-themes-sweet-kde-git
 plymouth-kcm
 poi-nightly-bin
 poppler-data
@@ -499,7 +497,7 @@ steam
 steam-native-runtime
 steamtinkerlaunch
 sweeper
-sweet-theme-full-git
+sweet-folders-icons-git
 syncthing
 sysfsutils
 system-config-printer
@@ -519,7 +517,6 @@ timeshift-autosnap-manjaro
 tlp
 tlpui
 tor
-transcode
 ttf-dejavu
 ttf-droid
 ttf-fira-sans
