@@ -160,7 +160,7 @@ set positionlog
 # set smarthome
 
 ## Spread overlong lines over multiple screen lines.
-# set softwrap
+set softwrap
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not have a default value.
@@ -197,7 +197,7 @@ set trimblanks
 ## The characters (besides alphanumeric ones) that should be considered
 ## as parts of words.  This option does not have a default value.  When
 ## set, it overrides option 'set wordbounds'.
-# set wordchars "<_>."
+set wordchars "<_>."
 
 ## Let an unmodified Backspace or Delete erase the marked region (instead
 ## of a single character, and without affecting the cutbuffer).
@@ -299,8 +299,8 @@ include "/usr/share/nano/*.nanorc"
 ## such as ^O for Open, ^F for Find, ^H for Help, and ^Q for Quit,
 ## then uncomment these:
 #bind ^X cut main
-#bind ^C copy main
-#bind ^V paste all
+bind ^C copy main
+bind ^V paste all
 #bind ^Q exit all
 #bind ^S savefile main
 #bind ^W writeout main
@@ -308,7 +308,7 @@ include "/usr/share/nano/*.nanorc"
 #set multibuffer
 #bind ^H help all
 #bind ^H exit help
-#bind ^F whereis all
+bind ^F whereis all
 #bind ^G findnext all
 #bind ^B wherewas all
 #bind ^D findprevious all
@@ -327,5 +327,5 @@ include "/usr/share/nano/*.nanorc"
 #bind ^E execute main
 #bind ^K "{mark}{end}{zap}" main
 #bind ^U "{mark}{home}{zap}" main
-#bind ^Z undo main
-#bind ^Y redo main
+bind ^Z undo main
+bind ^Y redo main
