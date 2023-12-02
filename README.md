@@ -2,9 +2,9 @@
 
 *What's this?*
 
-This is a list of software, services and some minor tweaks which I use. I made it for myself to have a backup for most important things and have a quick startup if something breaks.
+This is a list of software, services and some minor tweaks which I use. I made it for myself to have a backup for most important things and have a quick startup if something completely breaks or to try a new distro.
 
-List mostly targets arch-based linux distributives, but there are also some windows apps. Most part of list is FLOSS and I treat this as default choice, but there are some proprietary apps just in case/no alternative, I'll mark them correspondingly. If you're more into iOS platform, than desktop, [here's](https://github.com/dkhamsing/open-source-ios-apps) more preferrable list of open source software for you. And an analogue for android users [here](https://github.com/pcqpcq/open-source-android-apps).
+List mostly targets arch-based linux distributives, but there are also some windows apps. Most part of list is FLOSS and I treat this as default choice, but there are some proprietary apps just in case/no alternative, I'll mark them correspondingly. If you're more into iOS platform, [here's](https://github.com/dkhamsing/open-source-ios-apps) a comprehensive list of open source software for you. And an analogue for android users is [here](https://github.com/pcqpcq/open-source-android-apps).
 
 A lot of stuff and recommendations on privacy was taken from [privacyguides](https://www.privacyguides.org/). Also a lot of useful software and tweaks for arch-based distributives listed on [arch wiki page](https://wiki.archlinux.org/title/List_of_applications).
 
@@ -20,14 +20,14 @@ $ marks $ shows if software is not completely free
 
 - [Software and services](#software-and-services)
   * [Legend](#legend)
-  * [TOC](#toc)
-  * [OS](#os)
-    + [Windows tweaks](#windows-tweaks)
-  * [Linux tweaks](#linux-tweaks)
+  * [Linux distros](#linux-distros)
+  * [Wayland compositors](#wayland-compositors)
+  * [Linux-misc](#linux-misc)
+  * [Windows-misc](#windows-misc)
   * [Routers firmware](#routers-firmware)
   * [Create boot device](#create-boot-device)
   * [Internet browsers](#internet-browsers)
-    + [Firefox addons](#firefox-addons)
+    + [Firefox addons and tweaks](#firefox-addons-and-tweaks)
     + [Firefox tweaks](#firefox-tweaks)
   * [Networking](#networking)
     + [DNS](#dns)
@@ -35,7 +35,7 @@ $ marks $ shows if software is not completely free
     + [Anti-virus stuff](#anti-virus-stuff)
   * [Email software and providers](#email-software-and-providers)
   * [Password Managers and 2FA](#password-managers-and-2fa)
-  * [File sync and share](#file-sync-and-share)
+  * [File sync, share, version control, remote desktop](#file-sync--share--version-control--remote-desktop)
   * [Search engines](#search-engines)
   * [Social networks and communication](#social-networks-and-communication)
     + [Messengers](#messengers)
@@ -59,66 +59,75 @@ $ marks $ shows if software is not completely free
   * [Theme engines](#theme-engines)
   * [File browsers](#file-browsers)
   * [Driver installers](#driver-installers)
-  * [SDKs and runtimes](#sdks-and-runtimes)
+  * [Development](#development)
   * [Android](#android)
   * [Database stuff](#database-stuff)
+  * [Fonts](#fonts)
 
-## OS
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-This section will cover the OSes I've used or use now
+## Linux distros
 
-- [Manjaro](https://manjaro.org/download/) -- easy to start and use arch distributive
+Some tweaks and/or config are in separate folders in this repo. There are also some arch packages I maintain.
+
+- [EndeavourOS](https://endeavouros.com/) -- arch-based configurable distro
+- [Manjaro](https://manjaro.org/download/) -- great arch-based distro for beginners, breaks rarely if you stay on `stable` updates branch
 - [Kubuntu](https://kubuntu.org/getkubuntu/) -- in case you prefer debians
-- !PROPRIETARY! $PAID$ [Windows](https://www.microsoft.com/en-us/software-download/windows11) -- familiar system for everyone. Requires some tweaks, read below
 - [Qubes](https://www.qubes-os.org/downloads/)/[Whonix](https://www.whonix.org/wiki/Download) -- if you REALLY need some privacy
 
-### Windows tweaks
+I also find `NixOS` and `Gentoo` interesting, but haven't yet tried these out.
 
-The whole section is !WINDOWS! only
+## Wayland compositors
 
-- [MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat) -- lets you create bootable device on/for unsupported win 11 pc
-- [Explorer Patcher](https://github.com/valinet/ExplorerPatcher) -- set of tweaks for win 11 to return win 10's behavior
-- [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) -- more minor tweaks for win 7 - win 10. Not sure if win 11 is supported, but project seems a bit abandoned, since the last commit was in june
-- [WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker) -- disables telemetry and some services
-- !PROPRIETARY! [O&O ShutUp10++](https://www.oo-software.com/en/shutup10) -- portable, free to use app to block lots of tracking stuff and services in windows. Has a GUI
-- !PROPRIETARY! [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) -- set of semi-official tools for windows. It's very useful and I highly recommend it
+You can skip this part, if you're using a complete [DE](https://wiki.archlinux.org/title/Desktop_environment), e.g. KDE Plasma, Gnome, etc. List below includes only compositors without DE and ones I'm interested in. I'm not going to dig deep into the wayland-specific apps (like `wlgreet`, etc), you'll have to figure out which ones suits you best on your own. You can use the [awesome-wayland](https://github.com/natpen/awesome-wayland) list for this.
 
-## Linux tweaks
+- [hyprland](https://github.com/hyprwm/Hyprland) -- a highly customizable dynamic tiling Wayland compositor. Read it's [docs](https://wiki.hyprland.org/Getting-Started/Master-Tutorial/) and [arch wiki](https://wiki.archlinux.org/title/Hyprland) for more info on troubleshooting and configurations. See the [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) and [community tools](https://github.com/orgs/hyprland-community/repositories) for some basic apps and configurations too
+- [sway](https://github.com/swaywm/sway) -- i3-compatible Wayland compositor
+= [river](https://github.com/riverwm/river) -- a dynamic tiling Wayland compositor with flexible runtime configuration
 
-The whole section is !LINUX! only
+I tried [kwinft](https://gitlab.com/kwinft/kwinft) project as replacement for default `KWin`, but it doesn't seem to be stable at all, so I can't recommend it now, though it's always good to have alternatives and I hope it will evolve.
+
+I also want to note the Pop!_OS's [COSMIC DE](https://github.com/pop-os/cosmic-epoch), which is a *first* (?) DE on Rust. The project is currently under heavy development. Would be interesting to try it out, when it'll be usable, though I don't like the fact, that it's *inspired by GNOME*.
+
+**tmp**
+
+I'll remove this section when I'll be done with my own hyprland setup and will upload the configs in a separate folder in this repo
+
+- [hyprland-dotfiles](https://github.com/taylor85345/hyprland-dotfiles) -- set of configs and themes for fast start with `hyprland`. Installation info in repo's readme. I will probably use my own configs and publish them in this repo, when I'll finally migrate to `hyprland`
+- [hyprV4](https://github.com/SolDoesTech/HyprV4) -- `hyprland` installation script for clean `arch` distro
+
+## Linux-misc
 
 - [optimus-manager](https://github.com/Askannz/optimus-manager) -- a program, that provides a solution for GPU switching on Optimus laptops (i.e laptops with a dual Nvidia/Intel or Nvidia/AMD configuration). [Has](https://github.com/Shatur/optimus-manager-qt) an unofficial gui on Qt
 - [pipewire](https://github.com/PipeWire/pipewire) -- PipeWire is a server and user space API to deal with multimedia pipelines. If you're planning on replacing `pulseaudio` with `pipewire`, you should also use `pipewire-pulse` packages. On manjaro it's recommended to use `manjaro-pipewire` meta package. It's also recommended to use `manjaro-bluetooth` meta package, if you're using bluetooth audio devices
 
-For more minor tweaks please see the [minor-linux-tweaks](minor-linux-tweaks.md) file in this repo
+## Windows-misc
 
-### Wayland compositors
+Some tweaks and tools for Windows (*probably only Win10+*)
 
-Outdated, but worth reading: [awesome-wayland-1](https://github.com/natpen/awesome-wayland)
-
-I tried [kwinft](https://gitlab.com/kwinft/kwinft) project and it doesn't seem to be stable at all, at least on my machine. So i looked up for moar on arch wiki and found out about awesome `hyprland` tiling compositor. Almost all this section is about awesome stuff for this compositor to run:
-
-- [hyprland](https://github.com/hyprwm/Hyprland) -- a highly customizable dynamic tiling Wayland compositor. Read it's [docs](https://wiki.hyprland.org/Getting-Started/Master-Tutorial/) and [arch wiki](https://wiki.archlinux.org/title/Hyprland) for more info ob troubleshooting and configurations
-- [hyprland-dotfiles](https://github.com/taylor85345/hyprland-dotfiles) -- set of configs and themes for fast start with `hyprland`. Installation info in repo's readme. I will probably use my own configs and publish them in this repo, when I'll finally migrate to `hyprland`
-- [hyprV4](https://github.com/SolDoesTech/HyprV4) -- `hyprland` installation script for clean `arch` distro
-- [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) -- list of awesome tools for `hyprland`. I won't list tools, that are already listed there
-- [hyprland community tools](https://github.com/orgs/hyprland-community/repositories) -- list of tools, not listed in `awesome-hyprland`, but highly usable
+- [PowerToys](https://github.com/microsoft/PowerToys) -- official system utilities to maximize productivity
+- [MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat) -- lets you create bootable device on/for unsupported win 11 pc
+- [Explorer Patcher](https://github.com/valinet/ExplorerPatcher) -- set of tweaks for win 11 to return win 10's behavior
+- [Open Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) -- more minor tweaks for win 7-11
+- [WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker) -- disables telemetry and some services
+- !PROPRIETARY! [O&O ShutUp10++](https://www.oo-software.com/en/shutup10) -- portable, free to use app to block lots of tracking stuff and services in windows. Has a GUI
+- !PROPRIETARY! [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) -- set of semi-official tools for windows. It's very useful and I highly recommend it
 
 ## Routers firmware
 
-Read [this article](https://www.privacyguides.org/router/). I don't use custom firmware because my router isn't supported by these systems yet. If you're lucky to have one of these and you're a proton user, you can configure your router to force all connections through ProtonVPN, see detailed guide [here](https://protonvpn.com/support/installing-protonvpn-on-a-router/).
+Read [this article](https://www.privacyguides.org/router/). I don't use custom firmware because my router isn't supported by these systems. If you're lucky to have one of these and you're a proton user, you can configure your router to force all connections through ProtonVPN, see detailed guide [here](https://protonvpn.com/support/installing-protonvpn-on-a-router/).
 
 ## Create boot device
 
-- [bootiso](https://github.com/jsamr/bootiso) -- linux only, CLI
-- [rufus](https://github.com/pbatard/rufus) -- windows only, GUI
+- [bootiso](https://github.com/jsamr/bootiso) -- command line tool to create bootable drives
+- [rufus](https://github.com/pbatard/rufus) -- a tool to create a bootable devices on windows
 
 ## Internet browsers
 
 **Desktop**
 
 - [Mozilla Firefox](https://ftp.mozilla.org/pub/firefox/releases/) -- preinstalled browser on most linux distibutives
-- Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also keep in mind, that there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation. Rust [crate's page](https://docs.rs/arti/latest/arti/#using-arti-with-tor-browser) describes a way to use it with tor right now, but keep in mind that's an early beta
+- Tor Browser [arch](https://aur.archlinux.org/packages/tor-browser/)/[win](https://www.torproject.org/) -- not for everyday use. Also there's a rust fork, named [Arti](https://gitlab.torproject.org/tpo/core/arti), that will replace current C tor implementation. Rust [crate's page](https://docs.rs/arti/latest/arti/#using-arti-with-tor-browser) describes a way to use it with tor right now, but keep in mind that's an early beta
 - [Brave](https://github.com/brave/brave-browser) -- if you for some reason need chromium browser, recommended by [privacyguides](https://www.privacyguides.org/browsers/#brave)
 - [thorium](https://github.com/Alex313031/thorium) -- chromium fork with various nice patches, especially for linux
 - [mercury](https://github.com/Alex313031/Mercury) -- firefox fork by thorium's author, targeting better performance and privacy. Not so alive, compating to `thorium`
@@ -127,12 +136,12 @@ Read [this article](https://www.privacyguides.org/router/). I don't use custom f
 
 **iOS**
 
-- [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) -- official rewrite of firefox for iOS devices. Doesn't support all features of original browser because of apple's shit in mind
+- [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) -- official rewrite of firefox for iOS devices. Doesn't support all features of original browser because of differencies in iPhone-specific impementations
 - [Onion browser](https://github.com/onionbrowser/onionbrowser) -- TorBrowser for iOS
 
-### Firefox addons
+### Firefox addons and tweaks
 
-Since I only use firefox as my browser, tools listed here fits only it's ecosystem, but I'm sure there are alternatives for chromium family.
+Since I only use firefox as my browser, tools listed here fits only it's ecosystem, but I'm sure there are alternatives for chromium family. When using my version of `user.js`, keep in mind, that it's mostly a **linux-only**, plus I'm using some experimental features, e.g. [servo](https://github.com/servo/servo).
 
 Main extensions:
 
@@ -146,19 +155,19 @@ Main extensions:
 - [uBlock](https://github.com/gorhill/uBlock) -- ad/malware blocker
 - [Libredirect](https://github.com/libredirect/libredirect) -- redirects your queries to normal services (e.g. youtube links opens in Invidious)
 - [control-panel-for-twitter](https://github.com/insin/control-panel-for-twitter) -- gives you more control over your Twitter timeline and adds missing features and UI improvements
+- $FREEMIUM$ [ProtonPass](https://github.com/ProtonPass) -- cross-platform password manager from Proton team, IMO more reliable, than having passwords in a Firefox account
+- $FREEMIUM$ [Firefox relay](https://github.com/mozilla/fx-private-relay) -- provides generated email addresses to use in place of personal email addresses.
 
 Plus some advices from [arkenfox's wiki](https://github.com/arkenfox/user.js/wiki/4.1-Extensions):
 
 - Don't use **HTTPS Everywhere**, it will be deprecated soon. Just enable HTTPS-only mode in your browser settings
 - Don't use NoScript, Ghostery, Disconnect, Privacy Badger, etc -- redundant with uBlock Origin; easily detected; practically abandonware
 - Instead of url-shorteners use [Actually Legitimate URL Shortener Tool](https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener.txt) for uBlock (with `AdGuard URL Tracking Protection`). Be sure to add it in `Filter list`, not in `My filters` page
-- Don't use [Firefox containers](https://github.com/mozilla/multi-account-containers) add-on, it's prebuilt in firefox already, just enable it. Containers are used for multiple accounts in one browser instance
 
 Additional/situative extensions and recommendations:
 
-- $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- awesome open source password manager with browsers extensions and standalone apps for modern operating systems, including iOS. Slowly migrating here from firefox account...
+- $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- great alternative for **ProtonPass**
 - [cookies.txt](https://github.com/lennonhill/cookies-txt) -- lets you save your cookies into `.txt` file
-- $FREEMIUM$ [Firefox relay](https://github.com/mozilla/fx-private-relay) -- not tested this one yet, but looks interesting; TODO: test and add info
 - [ViolentMonkey](https://github.com/violentmonkey/violentmonkey) -- provides userscripts support for browsers. It works on browsers with WebExtensions support. Seems more "alive", than [GreaseMonkey](https://github.com/greasemonkey/greasemonkey)
 - [Terms of Service; Didn’t Read](https://github.com/tosdr/browser-extensions) -- short version of main points in terms of service
 - [xBrowserSync](https://github.com/xbrowsersync/api) -- sync browser data securely
@@ -217,21 +226,27 @@ Read more about [providers](https://www.privacyguides.org/email/) and [software]
 Well, here comes nothing.
 
 - [ProtonMail](https://github.com/ProtonMail/ios-mail) -- nice choice, but works only for proton's mail, not other providers
-- !PROPRIETARY! ?PAID? [CanaryMail](https://canarymail.io/) -- privacyguides says it's a paid service, but at the moment *20.11.2021* it seems to become free for personal use. I'll update the section when I'll be able to check the app out
+
+**Android**
+
+TODO
 
 ## Password Managers and 2FA
 
-- $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- awesome open source password manager with browsers extensions and standalone apps for modern operating systems, including iOS. Has 2FA and other good stuff on paid plans, compare [here](https://bitwarden.com/pricing/). Slowly migrating from firefox account...
+- $FREEMIUM$ [ProtonPass](https://github.com/ProtonPass) -- cross-platform password manager from Proton team, IMO more reliable, than having passwords in a Firefox account
+- $FREEMIUM$ [Bitwarden](https://github.com/bitwarden) -- great alternative for **ProtonPass**
 - !iOS! [Raivo OTP](https://github.com/raivo-otp/ios-application) -- A native, lightweight and secure one-time-password solution
 
-## File sync and share
+TODO: android
+
+## File sync, share, version control, remote desktop
 
 Read more [on privacyguides](https://www.privacyguides.org/file-sharing/).
 
 - $FREEMIUM$ [ProtonDrive](https://github.com/ProtonMail/WebClients) -- E2EE general file storage service. Available on iOS and Android as apps, through browser on desktop
 - [OnionShare](https://github.com/onionshare/onionshare) -- share files and chat with friends using tor network. Desktop only
 - [Syncthing](https://github.com/syncthing/syncthing) -- open source file synchronization tool
-- [Git](https://git-scm.com/downloads) -- do I really need to explain what git is
+- [Git](https://git-scm.com/downloads) -- a common version control system
 - !WINDOWS! [AltStore/AltServer](https://github.com/rileytestut/AltStore) -- gives you an opportunity to install apps not from AppStore. Has an [unofficial app](https://github.com/powenn/AltServer-Linux-ShellScript) for linux, but that one didn't worked out for me yet
 - !PROPRIETARY! !WINDOWS! [iTunes/iCloud](https://support.apple.com/en-us/HT210384) -- unfortunately it's a needed dependency for `AltServer` to work
 - [rustdesk](https://github.com/rustdesk/rustdesk) -- open source virtual/remote desktop infrastructure for everyone! The open source TeamViewer/AnyDesk alternative
@@ -261,13 +276,13 @@ Here I'll mainly cover some alternative frontends for these mainstream services,
 - !iOS! [FEhViewer](https://github.com/honjow/FEhViewer) -- another sad panda app for iOS. Has better support, than `EhPanda`, but written using flutter
 - [Syncplay](https://github.com/Syncplay/syncplay) -- client/server app to synchronize media playback on mpv/VLC/MPC-HC/MPC-BE. Analogue for services like synctube, discord's youtube together, etc
 - [Owncast](https://github.com/owncast/owncast) -- self-hosted streaming platform (alternative for twitch). Requires you to have a static IP address or server (e.g. digital ocean)
-- [vkopt](https://github.com/VkOpt/VkOpt) -- if you're still using vk (**you shouldn't!**) that's a good script for greasemonkey to download all your music/video/etc and leave from vk forever
 - [PeerTube](https://github.com/Chocobozzz/PeerTube) -- decentralized and federated video platform developed as an alternative to other platforms that centralize our data and attention, such as YouTube, Dailymotion or Vimeo
 - !iOS! [Yattee](https://github.com/yattee/yattee) -- Alternative YouTube frontend for iOS (iPhone, iPad), macOS and tvOS (Apple TV) built with Invidious and Piped. Available through testflight
 - [EH-Page-Scrobbler](https://github.com/Meldo-Megimi/EH-Page-Scrobbler) -- browser script to return pages on sadpanda website
 - [danbooru](https://github.com/danbooru/danbooru) -- taggable image board written in Rails
 - [waifu2x](https://github.com/nagadomi/nunif) -- upscaler for anime pictures on neural nets
 
+TODO: Android apps
 
 ### Messengers
 
@@ -305,23 +320,26 @@ It's very important to have your storages encrypted. Even microsoft's BitLocker 
 ### Image stuff
 
 - [qimgv](https://github.com/easymodo/qimgv) -- awesome lightweight image viewer on c++. Even supports playing videos through `mpv`. I've also created a [fork for arch users](https://aur.archlinux.org/packages/qimgv-qt6-kde-git/), which enables qt6 compilation and KDE support for cmake args. Build script is located here, in `/qimgv-qt6-kde` directory
-- [qView](https://github.com/jurplel/qView) -- image viewer designed with minimalism and usability in mind. Currently more 'alive' than `qimgv`
-- !LINUX! [imv](https://sr.ht/~exec64/imv/) -- command line image viewer intended for use with tiling window managers. Supports `wayland` natively, but a bit dead since moved to sourcehut
-- !WINDOWS! [ImageGlass](https://github.com/d2phap/ImageGlass) -- good alternative for windows, if you didn't like qimgv. Written on c# with .net framework, .net5+ support planned
+- [oculante](https://github.com/woelper/oculante) -- minimalistic crossplatform image viewer written in rust. Native wayland support included
+- !WINDOWS! [ImageGlass](https://github.com/d2phap/ImageGlass) -- good alternative for windows, if you didn't like qimgv
 - [libvips](https://github.com/libvips/libvips) -- insane fast image processing library on c. Supports huge amount of formats and ImageMagick as plugin
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick) -- alternative to libvips, slower on benchmarks but still usable for some tasks
 - [pngquant](https://github.com/kornelski/pngquant) -- lossy image-compression command line tool
-- !WINDOWS! [AntiDupl](https://github.com/ermig1979/AntiDupl) -- app to scan and remove duplicated images. Based on simd library on c++. It's kind of abandoned, so I'd suggest you find an alternative. I [tried](https://github.com/Gigas002/AntiDupl/tree/change_structs) to upgrade program to modern systems -- merged .NET Core 3.1 patch into original repo and developed modernized .NET 5.0+ fork, but when I decided to touch the UI's code (to rewrite it with avalonia) I gave up, since it requires a LOT of time and I just don't have enough passion. Feel free to contribute though
-- [DigiKam](https://invent.kde.org/graphics/digikam) -- photo management application. IMO handles duplicate-finding worse, than AntiDupl, but has a lot of other features
+- !WINDOWS! [AntiDupl](https://github.com/ermig1979/AntiDupl) -- app to scan and remove duplicated images, based on simd library on c++
+- [DigiKam](https://invent.kde.org/graphics/digikam) -- photo management application. IMO handles duplicate-finding worse, than AntiDupl, but has a lot of other features and a best choice on linux
+
+TODO: add some wayland stuff
 
 ### Video stuff
 
 - [mpv](https://github.com/mpv-player/mpv) -- IMO best video player nowadays. Supported by a lot of plugins and programs like `ff2mpv`, `freetube`, `qimgv` and more. Has an ability to run sripts. My configs are included in this repo (based on [eXmendiC guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/)). These configs also contains links to the shaders I like
-- [vlc](https://github.com/videolan/vlc) -- alternative for mpv. The only good player on iOS (since there is no free mpv players available)
+- [vlc](https://github.com/videolan/vlc) -- alternative for mpv
 - !WINDOWS! [K-Lite Codec Pack with MPC-HC](https://www.codecguide.com/download_kl.htm) -- collection of DirectShow filters, codecs, and tools. Handles HDR video with MadVR pretty good, comparing to VLC. Need to compare with mpv though
 - [ruffle](https://github.com/ruffle-rs/ruffle) -- flash player emulator on rust
 - [ffmpeg](https://github.com/FFmpeg/FFmpeg) -- cross-platform solution to record, convert and stream audio and video; CLI
 - [libplacebo](https://github.com/haasn/libplacebo) -- core rendering algorithms and ideas of mpv rewritten as an independent library
+
+TODO: yatte plays video on iOS through mpv
 
 ### Editors
 
@@ -361,29 +379,28 @@ Games are rarely released open source, but still there are a lot of good and com
 - !LINUX! [darling](https://github.com/darlinghq/darling) -- analogue of wine which targets macos behavior on linux
 - [Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher) -- A Native GOG, Amazon and Epic Games Launcher for Linux, Windows and Mac
 
+TODO: move darling from games section
+
 ## Downloaders
 
-- [curl](https://github.com/curl/curl) -- first and most important app for this section. I hope I don't even need to explain why and how it can be used
+- [curl](https://github.com/curl/curl) -- a command line tool and library for transferring data
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) -- fork of abandoned [youtube-dl](https://github.com/ytdl-org/youtube-dl) for downloading videos (*not only youtube supported*); CLI
 - [youtube-dl-gui](https://github.com/StefanLobbenmeier/youtube-dl-gui) -- youtube-dl (*actually yt-dlp*) GUI
 - [qBitTorrent](https://github.com/qbittorrent/qBittorrent) -- simple and fast bittorrent client on qt. Sometimes preinstalled on linux systems
 - [gallery-dl](https://github.com/mikf/gallery-dl) -- awesome command-line program to download stuff from a [huge](https://github.com/mikf/gallery-dl/blob/master/docs/supportedsites.md) variaty of websites. Configs are usually located in `~/.config/gallery-dl/config.json` (create one if you don't have any)
 - [pixivutil2](https://github.com/Nandaka/PixivUtil2) -- CLI on python to download stuff from pixiv, alternative for gallery-dl for pixiv only (*gallery-dl supports pixiv too*) Supports authentication, pixiv FANBOX, downloading videos (through ffmpeg). Has an AUR package. Config is located in `~/.local/share/PixivUtil2`
 - !PROPRIETARY! !WINDOWS! [Hitomi Downloader](https://github.com/KurtBestor/Hitomi-Downloader) -- [partially closed-source](https://github.com/KurtBestor/Hitomi-Downloader/issues/2226) software for downloading galleries, alternative to gallery-dl with GUI. Though it's [mentioned](https://github.com/KurtBestor/Hitomi-Downloader/issues/885) to work on linux with **Wine** I couldn't run it myself
-- [DoujinDownloader](https://github.com/Gigas002/DoujinDownloader) -- my own tool to organize doujins repo using `.md` or `.json` files. It's not actually a downloader, since there are a lot of better tools for this, but it's capable of parsing undownloaded list of links into file, that downloaders like **Hitomi Downloader** can handle
+- [DoujinDownloader](https://github.com/Gigas002/DoujinDownloader) -- my own tool to organize doujins repo using `.md` or `.json` files. It's not actually a downloader, since there are a lot of better tools for this, but it's capable of parsing undownloaded list of links into file, that downloaders like **gallery=dl** can handle
 - [imgbrd-grabber](https://github.com/Bionus/imgbrd-grabber) -- imageboard/booru downloader with rich GUI and lots of features, including adding your own data sources
+
+TODO: add wget
 
 ## Package managers
 
 - !WINDOWS! [winget](https://github.com/microsoft/winget-cli) -- windows package manager. It's good to have at least something on windows
 - !LINUX! [yay](https://github.com/Jguer/yay) -- awesome helper for arch's pacman
-- !LINUX! [flatpak](https://github.com/flatpak/flatpak) -- application sandboxing and distribution framework. Better, than `snap`, but I still prefer `yay` or `appimages`
-- !LINUX! [snap](https://github.com/snapcore/snapd) -- if you don't have an alternative
-- !LINUX! [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) -- not a package manager, but an organizer for your AppImages
 
 ## Virtualization
-
-I'm not an expert on this question and used only `vmware` and `vbox`
 
 - [Docker](https://www.docker.com/get-started) -- popular CLI containerization application. Has free community edition and paid enterprise, more explanation on this regards [here](https://askinglot.com/is-docker-a-open-source)
 - [Virtual Box](https://www.virtualbox.org/wiki/Downloads) -- most basic and simple to use virtualization application
@@ -395,14 +412,14 @@ While bash/zsh on linux works good on it's own, there are alternatives for windo
 
 - !LINUX! [foot](https://github.com/DanteAlighierin/foot) -- terminal emulator for wayland
 - [zellij](https://github.com/zellij-org/zellij) -- a terminal workspace. Useful with foot/alacritty
-- [PowerShell Core aka pwsh](https://github.com/powershell/powershell) -- modern rewrite of windows's proprietary powershell. Works on windows/linux/mac. Be aware, that some commands require you to run pwsh as administrator on windows or even doesn't work in a new version
-- !WINDOWS! [Windows Terminal](https://github.com/Microsoft/Terminal) -- terminal for windows system. Supports WSL, git bash, etc and is actually good
+- [PowerShell Core](https://github.com/powershell/powershell) -- modern rewrite of windows's proprietary powershell. Works on windows/linux/mac. Be aware, that some commands require you to run pwsh as administrator on windows or even doesn't work in a new version
+- !WINDOWS! [Windows Terminal](https://github.com/Microsoft/Terminal) -- terminal for windows system. Supports WSL, git bash, theming, etc and is actually very good
 
 ## Text editors and development
 
 - [vscodium](https://github.com/VSCodium/vscodium) -- VS Code without MS branding/telemetry/licensing
 - [notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) -- fast (hey, it's not a *browser*) and extensible source code editor on C++
-- !LINUX! [nano](https://nano-editor.org/) -- I prefer it over `vim` because of tragic incident in childhood, when I was trapped inside of it...
+- !LINUX! [nano](https://nano-editor.org/) -- I prefer it over `vim` because of it's ease of usage
 
 ## Diff tools
 
@@ -417,6 +434,8 @@ The `code`/`vscodium` isn't bad, but it's not recommended to run it with `sudo` 
 - !LINUX! [watershot](https://github.com/Kirottu/watershot) -- analogue of flameshot on rust for `wlroots` based compositors
 - !WINDOWS! [ShareX](https://github.com/ShareX/ShareX) -- windows-only analogue of flameshot on C#. Can shot videos with `ffmpeg` and supports additional task (e.g. convert your screenshots to `.webp` before saving)
 - [OBS Studio](https://github.com/obsproject/obs-studio) -- free and open source software for live streaming and screen recording. MUCH better, than default windows 10's screen recording through game bar
+
+TODO: test and add some wayland tools
 
 ## Cleaners
 
@@ -465,7 +484,9 @@ You're probably familiar with this, since you're on github and know what to use 
 
 ## Android
 
-AS the name implies, the whole section is about android apps or android emulation
+TODO: clean this mess up
+
+As the name implies, the whole section is about android apps or android emulation
 
 - !LINUX! [anbox](https://github.com/anbox/anbox) -- a container-based approach to boot a full Android system on a regular GNU/Linux system
 - !LINUX! [waydroid](https://github.com/waydroid/waydroid) -- analogue of **anbox**, uses `wayland`
@@ -492,4 +513,4 @@ AS the name implies, the whole section is about android apps or android emulatio
 
 ## Fonts
 
-- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) -- a project that patches developer targeted fonts with a high number of glyphs (icons)
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) -- a project that patches developer targeted fonts with a high number of glyphs (icons). Personally I prefer using *CaskaydiaMono Nerd Font Mono*, which is based on [Cascadia Code](https://github.com/microsoft/cascadia-code) by microsoft, for my terminal
