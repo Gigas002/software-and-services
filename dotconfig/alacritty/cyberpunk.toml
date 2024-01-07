@@ -1,0 +1,25 @@
+# [colors]
+# dim_foreground = "#5C6370"
+# foreground = "#C3C7D1"
+# bright_foreground = "#828997"
+# dim_background = "#282C34"
+# background = "#161925"
+# bright_background = "#282C34"
+
+[colors.normal]
+black = "#000000"
+red = "#FF0000"
+green = "#00FF00"
+yellow = "#FFE600"
+blue = "#0078D4"
+magenta = "#FF00FF"
+cyan = "#00E5E5"
+white = "#C3C7D1"
+
+[colors.bright]
+white = "#FFFFFF"
+
+# [colors.dim]
+# white = "#DCDFE4"
+
+# draw_bold_text_with_bright_colors = true 

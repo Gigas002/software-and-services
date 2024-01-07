@@ -1,0 +1,26 @@
+# See https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+
+# Themes:
+import = ["~/.config/alacritty/cyberpunk.toml"]
+# import = ["/usr/share/alacritty/themes/campbell.yaml"]
+
+shell = "zsh"
+
+[env]
+# TODO: ~/.config/zsh/ doesn't work
+ZDOTDIR = "/home/gigas/.config/zsh/"
+
+[window]
+opacity = 0.3
+blur = true
+startup_mode = "Maximized"
+
+[font]
+normal = { family = "CaskaydiaMono Nerd Font Mono", style = "Regular" }
+bold = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold" }
+italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold Italic" }
+size = 14.0
+
+[selection]
+save_to_clipboard = true

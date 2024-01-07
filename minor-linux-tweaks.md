@@ -100,6 +100,8 @@ GRUB_TIMEOUT=2
 GRUB_TIMEOUT_STYLE=menu
 ```
 
+Run `sudo update-grub` afterwards
+
 
 **Use dolphin for vscode:**
 

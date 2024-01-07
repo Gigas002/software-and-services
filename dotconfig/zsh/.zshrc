@@ -122,6 +122,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set the default editor
 export EDITOR='nano'
+export VISUAL=vscodium
 
 # Fix autosuggestions bug
 unset ZSH_AUTOSUGGEST_USE_ASYNC
@@ -167,7 +168,7 @@ zstyle ':completion:*' menu select                              # Highlight menu
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
-HISTFILE=~/.zsh_history
+HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
@@ -193,4 +194,4 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-R
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
