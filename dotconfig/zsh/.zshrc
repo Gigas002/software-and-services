@@ -8,6 +8,9 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Set .zcompdump location
+export ZSH_COMPDUMP=$HOME/.config/zsh/.zcompdump-$HOST
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -78,7 +81,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git dotnet colored-man-pages)
+plugins=(git dotnet python rust colored-man-pages)
 
 
 # User configuration
@@ -123,6 +126,9 @@ source $ZSH/oh-my-zsh.sh
 # Set the default editor
 export EDITOR='nano'
 export VISUAL=vscodium
+
+# pacdiff
+export DIFFPROG=meld
 
 # Fix autosuggestions bug
 unset ZSH_AUTOSUGGEST_USE_ASYNC
