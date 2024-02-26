@@ -146,9 +146,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # Enable history-substring-search plugin
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-# Alias ls to exa for colorful output, requires exa to be installed
-alias ls="exa"
-alias la="exa --long --all --group"
+# Alias ls to lsd for colorful output, requires lsd to be installed
+alias ls="lsd"
+alias la="lsd -la"
 
 # Set manjaro's default config options, based on:
 # https://github.com/Chrysostomus/manjaro-zsh-config/blob/master/manjaro-zsh-config
