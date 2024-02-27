@@ -100,6 +100,8 @@ I'll remove this section when I'll be done with my own hyprland setup and will u
 
 - [optimus-manager](https://github.com/Askannz/optimus-manager) -- a program, that provides a solution for GPU switching on Optimus laptops (i.e laptops with a dual Nvidia/Intel or Nvidia/AMD configuration). [Has](https://github.com/Shatur/optimus-manager-qt) an unofficial gui on Qt
 - [pipewire](https://github.com/PipeWire/pipewire) -- PipeWire is a server and user space API to deal with multimedia pipelines. If you're planning on replacing `pulseaudio` with `pipewire`, you should also use `pipewire-pulse` packages. On manjaro it's recommended to use `manjaro-pipewire` meta package. It's also recommended to use `manjaro-bluetooth` meta package, if you're using bluetooth audio devices
+- [openrazer](https://github.com/openrazer/openrazer) -- open source, linux-native driver for razer devices
+- [polychromatic](https://github.com/polychromatic/polychromatic/) -- open source RGB lighting management front-end application to customise OpenRazer peripherals on GNU/Linux
 
 ## Windows-misc
 
