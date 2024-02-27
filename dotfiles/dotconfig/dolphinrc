@@ -1,0 +1,31 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[General]
+Version=202
+ViewPropsTimestamp=2021,12,10,23,29,26.718
+
+[IconsMode]
+PreviewSize=48
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+detailViewIconSize=16
+
+[KPropertiesDialog]
+1920x1080 screen: Height=566
+1920x1080 screen: Width=630
+3840x2160 screen: Window-Maximized=true
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,opendocumentthumbnail,svgthumbnail,windowsexethumbnail,windowsimagethumbnail,ffmpegthumbs,mltpreview,blenderthumbnail,gsthumbnail,mobithumbnail,rawthumbnail,fontthumbnail,marble_thumbnail_kml,marble_thumbnail_gpx,directorythumbnail,marble_thumbnail_kmz,marble_thumbnail_osm,marble_thumbnail_shp,marble_thumbnail_geojson
+
+[Search]
+Location=Everywhere
