@@ -10,7 +10,7 @@ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
   export QT_QPA_PLATFORM="wayland;xcb"
 
   # KDE File Picker by default: https://bbs.archlinux.org/viewtopic.php?id=253132
-  export GTK_USE_PORTAL=0
+  export GTK_USE_PORTAL=1
 
   # Firefox wayland backend: https://wiki.archlinux.org/title/Firefox#Wayland
   export MOZ_ENABLE_WAYLAND=1
