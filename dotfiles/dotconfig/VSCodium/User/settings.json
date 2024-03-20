@@ -4,29 +4,32 @@
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.enabled": false,
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.iconTheme": "vscode-icons",
     "terminal.external.linuxExec": "alacritty",
     "terminal.explorerKind": "both",
     "terminal.sourceControlRepositoriesKind": "both",
-    "telemetry.telemetryLevel": "off",  
+    "telemetry.telemetryLevel": "off",
     "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-        "zsh": {
-            "path": "zsh",
-            "icon": "terminal-linux"
-        },
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
-        }
+      "bash": {
+        "path": "bash",
+        "icon": "terminal-bash"
+      },
+      "zsh": {
+        "path": "zsh",
+        "icon": "terminal-linux"
+      },
+      "pwsh": {
+        "path": "pwsh",
+        "icon": "terminal-powershell"
+      }
     },
     "terminal.integrated.fontFamily": "NotoMono Nerd Font",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "dotnetAcquisitionExtension.enableTelemetry": false,
-    "gitlens.telemetry.enabled": false
-}
+    "gitlens.telemetry.enabled": false,
+    "workbench.colorTheme": "Default Dark+",
+    "editor.renderWhitespace": "all"
+  }
+  
