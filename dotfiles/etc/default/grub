@@ -2,7 +2,7 @@ GRUB_DEFAULT=0
 GRUB_TIMEOUT="2"
 GRUB_TIMEOUT_STYLE="menu"
 GRUB_DISTRIBUTOR="Manjaro"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet apparmor=1 security=apparmor udev.log_priority=3 nvidia_drm.modeset=1 amd_pstate=guided"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet apparmor=1 security=apparmor udev.log_priority=3 nvidia_drm.modeset=1 amd_pstate=guided psi=1"
 # Swap partition (hybernation)
 # resume=UUID=095652b9-970d-4821-b278-407d8bcae184
 GRUB_CMDLINE_LINUX=""
