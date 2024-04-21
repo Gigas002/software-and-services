@@ -1,0 +1,92 @@
+#
+### Text theming
+#
+	# Default text color
+	#
+	# All text defaults to this color if not otherwise specified.
+	text-color = #c3c7c8
+
+	# Prompt text theme
+	prompt-color = #f9dc5c
+
+	# Placeholder text theme
+	# placeholder-color = #FFFFFFA8
+
+	# Input text theme
+	input-color = #00c1e4
+
+	# Default result text theme
+	# default-result-color = #FFFFFF
+
+	# Selection text
+	selection-color = #bd93f9
+
+	# Matching portion of selection text
+	# selection-match-color = #00000000
+
+
+#
+### Text cursor theme
+#
+	# Style of the optional text cursor.
+	#
+	# Supported values: bar, block, underscore
+	# text-cursor-style = bar
+
+	# Color of the text cursor
+	#
+	# If unspecified, defaults to the same as input-color
+	# text-cursor-color = #FFFFFF
+
+	# Color of text behind the text cursor when text-cursor-style = block
+	#
+	# If unspecified, defaults to the same as background-color
+	# text-cursor-background = #000000
+
+	# Corner radius of the text cursor
+	# text-cursor-corner-radius = 0
+
+	# Thickness of the bar and underscore text cursors.
+	#
+	# If unspecified, defaults to a font-dependent value when
+	# text-cursor-style = underscore, or to 2 otherwise.
+	# text-cursor-thickness = 2
+
+#
+### Window theming
+#
+	# Width and height of the window. Can be pixels or a percentage.
+	width = 45%
+	height = 60%
+
+	# Window background color
+	background-color = #000000bb
+
+	# Width of the border outlines in pixels.
+	outline-width = 1
+
+	# Border outline color
+	outline-color = #ed254eff
+
+	# Width of the border in pixels.
+	border-width = 2
+
+	# Border color
+	border-color = #c74dedff
+
+	# Radius of window corners in pixels.
+	corner-radius = 50
+
+	# Padding between borders and text. Can be pixels or a percentage.
+	# padding-top = 35%
+	# padding-bottom = 0
+	# padding-left = 35%
+	# padding-right = 0
+
+	# Whether to clip text drawing to be within the specified padding. This
+	# is mostly important for allowing text to be inset from the border,
+	# while still allowing text backgrounds to reach right to the edge.
+	clip-to-padding = true
+
+	# Whether to scale the window by the output's scale factor.
+	scale = true

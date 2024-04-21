@@ -1,13 +1,11 @@
 # See https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
 
 # Themes:
-import = ["~/.config/alacritty/cyberpunk.toml"]
-# import = ["/usr/share/alacritty/themes/campbell.yaml"]
+import = ["~/.config/alacritty/themes/cyberpunk.toml"]
 
 shell = "zsh"
 
 [env]
-# TODO: ~/.config/zsh/ doesn't work
 ZDOTDIR = "/home/gigas/.config/zsh/"
 
 [window]

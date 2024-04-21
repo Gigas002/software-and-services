@@ -1,0 +1,29 @@
+# [colors]
+# dim_foreground = "#5C6370"
+# foreground = "#C3C7D1"
+# bright_foreground = "#828997"
+# dim_background = "#282C34"
+# background = "#161925"
+# bright_background = "#282C34"
+
+[colors.normal]
+black = "#697388"
+red = "#ed254e"
+green = "#71f79f"
+yellow = "#f9dc5c"
+blue = "#7cb7ff"
+magenta = "#c74ded"
+cyan = "#00c1e4"
+white = "#dcdfe4"
+
+[colors.bright]
+white = "#ffffff"
+
+# [colors.dim]
+# white = "#dcdfe4"
+
+# draw_bold_text_with_bright_colors = true 
+
+[window]
+opacity = 0.3
+blur = true
