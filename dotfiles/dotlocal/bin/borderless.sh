@@ -13,4 +13,5 @@ done
 
 echo $id
 
+hyprctl keyword decoration:dim_inactive false
 hyprctl keyword workspace $id,gapsin:0,gapsout:0,rounding:false,bordersize:0
