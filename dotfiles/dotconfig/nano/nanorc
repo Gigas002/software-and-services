@@ -209,17 +209,17 @@ set zap
 
 ## Paint the interface elements of nano.  These are examples; there are
 ## no colors by default, except for errorcolor and spotlightcolor.
-set titlecolor bold,white,blue
-set promptcolor lightwhite,grey
-set statuscolor bold,white,green
-set errorcolor bold,white,red
-set spotlightcolor black,lightyellow
-set selectedcolor lightwhite,magenta
-set stripecolor ,yellow
-set scrollercolor cyan
-set numbercolor cyan
-set keycolor cyan
-set functioncolor green
+set titlecolor bold,#dde,#c4e
+set promptcolor #dde,#678
+set statuscolor bold,#dde,#7f9
+set errorcolor bold,#dde,#e24
+set spotlightcolor #678,#fd5
+set selectedcolor #dde,#c4e
+set stripecolor ,#fd5
+set scrollercolor #7bf
+set numbercolor #0ce
+set keycolor #0ce
+set functioncolor #7f9
 
 ## In root's .nanorc you might want to use:
 # set titlecolor bold,white,magenta
@@ -239,7 +239,7 @@ set functioncolor green
 ## For all details, see 'man nanorc', section SYNTAX HIGHLIGHTING.
 
 ## To include most of the existing syntax definitions, you can do:
-include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano-syntax-highlighting/*.nanorc"
 
 ## Or you can select just the ones you need.  For example:
 # include "/usr/share/nano/html.nanorc"
