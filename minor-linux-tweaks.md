@@ -157,6 +157,11 @@ sudo DIFFPROG=meld pacdiff
 The selection of `diff` tool is up to you, but be sure it supports running with `sudo`
 
 
+## downgrade package
+
+`sudo downgrade mpv`
+
+
 ## Wayland tweaks
 
 Electron apps: https://wiki.archlinux.org/title/Wayland; `code`/`vscodium` requires running from cli: `code --ozone-platform=wayland`;
