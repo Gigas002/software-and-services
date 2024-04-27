@@ -11,11 +11,15 @@ alsa-firmware
 alsa-utils
 amd-ucode
 android-tools
+anime4k
+anyrun-git
 apparmor
+appmenu-gtk-module
 ark
 asciidoc
 aspnet-runtime
 aspnet-targeting-pack
+asunder
 autoconf
 autoconf2.13
 automake
@@ -24,7 +28,6 @@ awesome-terminal-fonts
 b43-fwcutter
 base-devel
 bash
-beautyline
 bibata-cursor-theme
 bison
 bleachbit
@@ -40,10 +43,13 @@ carbonyl-bin
 ccache
 cdparanoia
 cdrdao
+chaotic-keyring
+chaotic-mirrorlist
 clamav
 cliphist
 cmake
 cmocka
+code
 coreutils
 cowsay
 cpio
@@ -58,7 +64,6 @@ device-mapper
 dhclient
 dhcpcd
 diffutils
-discordo-git
 dmidecode
 dmraid
 dnsmasq
@@ -73,7 +78,6 @@ drkonqi
 dunst
 dvd+rw-tools
 dxvk-bin
-dxvk-nvapi-mingw
 e2fsprogs
 ecryptfs-utils
 efibootmgr
@@ -102,6 +106,7 @@ glad
 glibc
 glibc-locales
 glu
+gnome-calculator
 gnome-icon-theme
 gnome-keyring
 gnome-themes-extra
@@ -132,10 +137,11 @@ handbrake
 haveged
 hoholsay
 htop
-hyprdim
+hypridle
 hyprkeys
 hyprland
-hyprlock-git
+hyprlock
+hyprnotify
 hyprpaper
 hyprpicker-git
 hyprshot
@@ -185,7 +191,6 @@ kpeople
 kplotting
 kscreen
 kscreenlocker
-kservice5
 ksshaskpass
 ksystemlog
 kteatime
@@ -281,7 +286,6 @@ manjaro-application-utility
 manjaro-bluetooth
 manjaro-browser-settings
 manjaro-hello
-manjaro-hotfixes
 manjaro-kde-settings
 manjaro-pipewire
 manjaro-printer
@@ -304,7 +308,6 @@ mesa-vdpau
 meson
 mhwd
 mhwd-db
-microsoft-edge-stable-bin
 milou
 minecraft-launcher
 mkinitcpio-openswap
@@ -316,6 +319,7 @@ mpd
 mpv
 mtpfs
 nano
+nano-syntax-highlighting-git
 nasm
 neofetch
 nerd-fonts-inter
@@ -342,14 +346,11 @@ nvidia-prime
 nvme-cli
 nwg-look
 obs-studio
-oculante
+oculante-bin
 oh-my-zsh-git
 oh-my-zsh-powerline-theme-git
 onefetch
-onionshare
 opencl-headers
-openrazer-daemon
-openrazer-driver-dkms
 openresolv
 openslide
 openssh
@@ -390,7 +391,6 @@ plasma-workspace-wallpapers
 plasma5-themes-sweet-full-git
 plasma5-themes-sweet-kde-git
 plymouth-kcm
-polychromatic
 poppler-data
 postgresql
 postgresql-old-upgrade
@@ -402,7 +402,7 @@ ppsspp
 print-manager
 procps-ng
 profile-cleaner
-proton-ge-custom-bin
+proton-ge-custom
 protontricks
 protonvpn
 psensor
@@ -456,6 +456,7 @@ qt6-datavis3d
 qt6-declarative
 qt6-doc
 qt6-examples
+qt6-graphs
 qt6-grpc
 qt6-httpserver
 qt6-languageserver
@@ -521,6 +522,7 @@ steamtinkerlaunch
 swappy
 swaylock-effects-git
 sweeper
+sweet-cursors-hyprcursor-git
 sweet-folders-icons-git
 swww
 syncthing
@@ -531,9 +533,9 @@ systemd-sysvcompat
 systemsettings
 tar
 tcpdump
-teams
 telegram-desktop
 terminus-font
+the-honkers-railway-launcher-bin
 thorium-browser-bin
 threadweaver
 thunderbird
@@ -541,6 +543,7 @@ timeshift
 timeshift-autosnap-manjaro
 tlp
 tlpui
+tofi-git
 tor
 ttf-0xproto-nerd
 ttf-cascadia-mono-nerd
@@ -577,7 +580,6 @@ vcdimager
 vcmi
 vi
 vim
-visual-studio-code-bin
 vkbasalt
 vkd3d
 vkd3d-proton-bin
@@ -591,7 +593,7 @@ vulkan-mesa-layers
 vulkan-radeon
 vulkan-validation-layers
 vulkan-virtio
-watershot
+watershot-fork-git
 waybar
 wayshot
 wget
@@ -599,8 +601,8 @@ wine-ge-custom
 wine-mono
 winetricks-git
 wl-clipboard
+wleave-git
 wlogout
-wofi
 wowup-cf-bin
 wpa_supplicant
 xclip
