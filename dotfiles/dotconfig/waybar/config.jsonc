@@ -191,6 +191,7 @@
         "format-alt": "{:%d.%m.%y}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
+            "mode-mon-col": 3,
             "on-click-right": "mode",
             "format": {
                 "months": "<span color='#f9dc5c'><b>{}</b></span>",
