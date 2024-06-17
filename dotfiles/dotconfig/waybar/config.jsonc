@@ -62,6 +62,7 @@
         "on-click-middle": "close"
     },
     "mpris": {
+        "max-length": 500,
         "format": "{player_icon} {dynamic}",
         "format-paused": "{status_icon} <i>{dynamic}</i>",
         "player-icons": {
@@ -74,6 +75,7 @@
         "interval": 1
     },
     "hyprland/window": {
+        "max-length": 500,
         "format": " {}",
         "separate-outputs": true,
         "rewrite": {
@@ -94,6 +96,7 @@
         "tooltip": true
     },
     "hyprland/language": {
+        "min-length": 2,
         "format": "{short} {variant}"
     },
     "backlight": {
