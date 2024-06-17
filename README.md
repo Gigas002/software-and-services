@@ -516,3 +516,75 @@ As the name implies, the whole section is about android apps or android emulatio
 ## Fonts
 
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) -- a project that patches developer targeted fonts with a high number of glyphs (icons). Personally I prefer using *CaskaydiaMono Nerd Font Mono*, which is based on [Cascadia Code](https://github.com/microsoft/cascadia-code) by microsoft, for my terminal
+
+## AI stuff
+
+I hate any kind of ridiculous censorship, so here's the list of AI-related tools/services I use \w pros and cons
+
+### LLMs
+
+- [ollama](https://github.com/ollama/ollama) -- lets you run lots of LLMs locally on your PC. Can work even on GPU-less setups, though considerably slower
+- [Cognitive Computation models aka Dolphin](https://huggingface.co/cognitivecomputations) -- open-source, free from censorship LLMs by Cognitive Computations group. Also see it's founder's, [Eric Hartford's blog](https://erichartford.com/) for details and some interesting articles
+
+As for cloud alternatives, I'm not aware of any FLOSS services that could provide `dolphin` models, but there are some paywalled ones
+
+### Stable Diffusion
+
+First, it's very important to note, that at current point of time (`SD3 Medium` release) only uncesored (good) base models are `SD1.5` and `SDXL` and their derivatives, so keep that in mind when selecting your model
+
+- [Stability Matrix](https://github.com/LykosAI/StabilityMatrix) -- package manager, made it easier to manage different models, plugins, UIs and virtual environments for stable diffusion instances
+
+For usage tips and overall guidance on how Stable Diffusion works under the hood and why, I recommend reading the articles on [Stable Diffusion Art](https://stable-diffusion-art.com/) website, here are some basic ones:
+
+- [How Stable Diffusion works?](https://stable-diffusion-art.com/how-stable-diffusion-work)
+- Inpaint guides: [basics](https://stable-diffusion-art.com/inpainting_basics/), [more specific example](https://stable-diffusion-art.com/change-clothes-ai)
+- [Samplers and Schedulers](https://stable-diffusion-art.com/samplers)
+- [Basic model selecting guide](https://stable-diffusion-art.com/models)
+- Prompting: [basics](https://stable-diffusion-art.com/how-to-come-up-with-good-prompts-for-ai-image-generation/), [fine-tuning](https://stable-diffusion-art.com/fine-tune-your-ai-images-with-these-simple-prompting-techniques), [anime examples](https://docs.google.com/document/d/1NAVTmZXq7xRXKnFMyiAeJ2IyYN5QsgbSEaL7knv_xbs/edit#heading=h.lf3n2mefp672)
+- [Embeddings/Textual Inversions](https://stable-diffusion-art.com/embedding/)
+- [Hypernetworks](https://stable-diffusion-art.com/hypernetwork/)
+- [LORA](https://stable-diffusion-art.com/lora/)
+- [LyCORIS](https://stable-diffusion-art.com/lycoris/)
+- [VAE](https://stable-diffusion-art.com/how-to-use-vae/)
+- [ComfyUI basics](https://stable-diffusion-art.com/comfyui/)
+
+#### UI
+
+- [AUTOMATIC1111's Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) -- most popular, easiest to use web UI for Stable Diffusion. Probably also has most number of different plugins
+- [Stable Diffusion WebUI Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) -- fork of A1111's UI, made for compatibility with AMD GPUs and some nice perf improvements
+- [SD.Next](https://github.com/vladmandic/automatic) -- so far the only (?) UI that allows running on AMD GPUs with [ZLUDA](https://github.com/vosen/ZLUDA)
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) -- advanced UI, that offers best performance, but requires some knowledge of how Stable Diffusion works under the hood and learing to use these nodes. Also has a lot of useful extensions, making it capabilities on par with A1111. Has an ability to export/import any run configurations! Also **never** install/update unknown nodes without checking them out. There are already security incedents occured in the past
+
+As for cloud solution, I use [thinkdiffusion](https://www.thinkdiffusion.com/), it's the cheapest one I could found, but still not free. And I highly recommend you to get some learning/practice before you start using it just to not throw away your money
+
+#### Models
+
+I'm not interested in not-anime models, so these are not listed here
+
+Always check the parameters and prompting guide for each and every model/lora/etc you download so you won't get shitty results
+
+**SDXL**
+
+Base `SDXL` models are trained on `1024x1024` resolution images, so you shouldn't generate smaller images if you want something with decent quality and relevance to your prompt. This also means you'll need a better GPU with decent amount of VRAM
+
+Basic parameters for running `SDXL1.0` models are: `Steps: 20-30`, `Sampler: DPM++ 2M SDE`, `Schedule type: Karras`, `CFG Scale: 6-7`
+Note, that `SDXL Lightning`/`Turbo` models need different running parameters, usually something like this: `Steps: 6-8`, `Sampler: DPM++ SDE`, `Schedule type: Karras`, `CFG Scale: 2-4`
+
+- [Kohaku-XL Epsilon](https://civitai.com/models/399873) and other models by [kblueleaf](https://civitai.com/user/kblueleaf) -- models, trained on large amount of data from danbooru. Optimal parameters: `Clip Skip: 1`
+- [Animagine XL](https://civitai.com/models/260267) -- analogue of `Kohaku-XL`. I personally like it lesser, but it still gives good results too. `Clip skip: 2`, also recommended to use bundled `VAE`
+- [Anything XL](https://civitai.com/models/9409) -- mix of data of several great models, including `Kohaku-XL` and `Animagine XL`. Gives very decent results, maybe the best of three. `Clip skip: 2`
+- [XL_VAE_C](https://civitai.com/models/152040) -- custom VAE for anime models. Not a requirement
+- [NegativeXL](https://civitai.com/models/118418) -- negative embeddings for anime `SDXL` models
+- [Useful Quality Embeddings XL](https://civitai.com/models/144327) -- more great negative embeddings for anime SDXL models
+
+**SD1.5**
+
+Probably the only good reason to use `SD1.5` over `SDXL` based models is the availability of some `LORA`/`LyCORIS` only for `SD1.5`, e.g. [Kagamihara Nadeshiko](https://civitai.com/search/models?sortBy=models_v9&query=Kagamihara%20Nadeshiko) `LORA`s are available only for `SD1.5` or `Pony` (can't generate lolis, so it's a no-no).
+
+As for resolution, you use classic `512x512` at least and apply `hires fix` if you need something better
+
+- [Kohaku V5](https://civitai.com/models/220068) -- model, trained on large amount of data from danbooru
+- [Anything XL v5](https://civitai.com/models/9409?modelVersionId=30163) -- note, that you should select `V5` to use `SD1.5` and not `SDXL`
+- [ClearVAE](https://civitai.com/models/22354) -- custom VAE for anime models. Not a requirement
+- [EasyNegative](https://civitai.com/models/7808) -- negative embeddings for anime `SD1.5` models
+- [badhandv4](https://civitai.com/models/16993) -- negative embeddings for anime `SD1.5` models, and especially hands
