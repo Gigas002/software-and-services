@@ -21,6 +21,8 @@ user_pref("browser.privatebrowsing.autostart", false); // 5001
 //user_pref("places.history.enabled", true); // 5013
 user_pref("privacy.clearOnShutdown.cookies", false); // Cookies
 user_pref("privacy.clearOnShutdown.offlineApps", false); // Site Data
+user_pref("privacy.clearOnShutdown.sessions", false);  // Active Logins [DEFAULT: true]
+user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // Cookies, Site Data, Active Logins [FF128+]
 
 // GIGAS: for pixiv
 user_pref("network.http.referer.XOriginPolicy", 0); // 1601
@@ -46,10 +48,14 @@ user_pref("browser.startup.page", 1);
 user_pref("browser.startup.homepage", "moz-extension://4d648020-4e4a-4402-8dd2-0a47d9df69e8/index.html");
 
 // KDE file explorer
+user_pref("GTK_USE_PORTAL", 1);
+user_pref("GDK_DEBUG", "portals");
 user_pref("widget.use-xdg-desktop-portal", true);
 user_pref("widget.use-xdg-desktop-portal.kde", true);
-user_pref("GTK_USE_PORTAL", 0);
-user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
+user_pref("widget.use-xdg-desktop-portal.location", 1);
+user_pref("widget.use-xdg-desktop-portal.mime-handler", 1);
+user_pref("widget.use-xdg-desktop-portal.open-uri", 1);
+user_pref("widget.use-xdg-desktop-portal.settings", 1);
 
 // GTK scrollbars
 user_pref("widget.gtk.overlay-scrollbars.enabled", true);
