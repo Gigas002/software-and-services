@@ -151,7 +151,7 @@ kquitapp5 plasmashell || killall plasmashell && kstart5 plasmashell
 Sometimes you'll need to run `pacdiff` on your system, e.g. when updating `grub` package. In these cases you'll need to diff and merge the `.pacnew` file with your current config. Run the program as follows:
 
 ```sh
-sudo DIFFPROG=meld pacdiff
+sudo -E DIFFPROG=meld pacdiff
 ```
 
 The selection of `diff` tool is up to you, but be sure it supports running with `sudo`
