@@ -107,6 +107,7 @@ I'll remove this section when I'll be done with my own hyprland setup and will u
 
 Some tweaks and tools for Windows (*probably only Win10+*)
 
+- [scoop](https://github.com/ScoopInstaller/Scoop) -- a command-line installer for Windows
 - [PowerToys](https://github.com/microsoft/PowerToys) -- official system utilities to maximize productivity
 - [MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat) -- lets you create bootable device on/for unsupported win 11 pc
 - [Explorer Patcher](https://github.com/valinet/ExplorerPatcher) -- set of tweaks for win 11 to return win 10's behavior
@@ -520,6 +521,8 @@ As the name implies, the whole section is about android apps or android emulatio
 ## AI stuff
 
 I hate any kind of ridiculous censorship, so here's the list of AI-related tools/services I use \w pros and cons
+
+- [ZLUDA](https://github.com/lshqqytiger/ZLUDA) -- CUDA on AMD GPUs 
 
 ### LLMs
 
