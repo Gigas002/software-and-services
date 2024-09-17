@@ -35,6 +35,7 @@ breeze-plymouth
 brightnessctl
 btrfs-progs
 bzip2
+cargo-cache
 ccache
 cdparanoia
 cdrdao
@@ -80,6 +81,7 @@ emovix
 exfat-utils
 extra-cmake-modules
 f2fs-tools
+fastfetch
 ff2mpv-native-messaging-host-git
 ffmpeg
 ffmpegthumbs
@@ -131,6 +133,7 @@ hypridle
 hyprkeys
 hyprland
 hyprlock
+hyprpaper
 illyria-wallpaper
 imv
 inetutils
@@ -268,7 +271,6 @@ mtpfs
 nano
 nano-syntax-highlighting-git
 nasm
-neofetch
 nerd-fonts-inter
 net-tools
 network-manager-applet
@@ -288,7 +290,7 @@ nss-mdns
 ntfs-3g
 ntp
 numlockx
-nvidia-dkms
+nvidia-open-dkms
 nvidia-prime
 nvme-cli
 nwg-look
@@ -349,7 +351,6 @@ proton-vpn-gtk-app
 protontricks
 psensor
 psmisc
-pulseaudio-ctl
 python-build
 python-installer
 python-pillow
@@ -394,15 +395,13 @@ qt6-webchannel
 qt6-webengine
 qt6-websockets
 qt6-webview
-qt6ct
+qt6ct-kde
 realtime-privileges
 reiserfsprogs
 rsync
 ruby
-ruffle-nightly-bin
 rust
 rust-src
-rustdesk-bin
 s-nail
 samba
 samrewritten-git
@@ -437,7 +436,6 @@ tar
 tcpdump
 telegram-desktop
 terminus-font
-the-honkers-railway-launcher-bin
 thorium-browser-bin
 threadweaver
 thunderbird
@@ -480,6 +478,7 @@ usbutils
 util-linux
 vcdimager
 vcmi
+vesktop
 vim
 vkbasalt
 vkd3d
