@@ -3,7 +3,7 @@
 # Themes:
 import = ["~/.config/alacritty/themes/cyberpunk.toml"]
 
-shell = "zsh"
+shell = "nu"
 
 [env]
 ZDOTDIR = "/home/gigas/.config/zsh/"
