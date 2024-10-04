@@ -47,12 +47,12 @@ VerbosePkgLists
 
 **Cleanup cache:**
 
-`yay -Sc`
+`yay -Sc` or `paru -Sc`
 
 
 **Remove unneeded dependencies:**
 
-`yay -Yc`
+`yay -Yc` or `paru -Rns $(paru -Qtdq)`
 
 
 **Force program to run with specific language:**
