@@ -32,6 +32,7 @@ bat
 bison
 bluedevil
 blueman
+bluez-utils
 boost
 bottom
 breeze-gtk
@@ -57,6 +58,7 @@ cpupower
 cronie
 cryptsetup
 curl
+curl-rustls
 dbeaver
 debtap
 debugedit
@@ -75,13 +77,13 @@ dotnet-sdk
 downgrade
 dpkg
 drkonqi
+dualsensectl-git
 dunst
 dvd+rw-tools
 dxvk-async-git
 e2fsprogs
 ecryptfs-utils
 efibootmgr
-electron
 emovix
 exfat-utils
 extra-cmake-modules
@@ -207,12 +209,10 @@ lib32-libcanberra
 lib32-libglvnd
 lib32-libva
 lib32-libva-intel-driver
-lib32-libva-mesa-driver
 lib32-libva-vdpau-driver
 lib32-lzo
 lib32-mangohud
 lib32-mesa-demos
-lib32-mesa-vdpau
 lib32-nvidia-utils
 lib32-vkbasalt
 lib32-vkd3d
@@ -228,7 +228,6 @@ libreoffice-fresh
 libunity
 libva
 libva-intel-driver
-libva-mesa-driver
 libvips
 libxpresent
 licenses
@@ -265,7 +264,6 @@ memtest86+
 mesa
 mesa-demos
 mesa-utils
-mesa-vdpau
 meson
 mhwd
 mhwd-db
@@ -491,6 +489,7 @@ ttf-roboto
 ttf-ubuntu-font-family
 udiskie
 udisks2
+umu-launcher
 unarchiver
 usb_modeswitch
 usbutils
