@@ -1,5 +1,7 @@
 keybinds {
-    unbind "Ctrl q"
+	normal {
+    	unbind "Ctrl q" "Ctrl s"
+	}
 }
 
 // Choose the path to the default shell that zellij will use for opening new panes
