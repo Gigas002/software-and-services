@@ -110,7 +110,7 @@ user_pref("layout.css.servo.enabled", true);
 
 
 /*** 
- * Smoothfox zone (ver. December 2023)
+ * Smoothfox zone (ver. December 2024)
  * see: https://github.com/yokoffing/Betterfox/blob/main/Smoothfox.js
  * OPTION: NATURAL SMOOTH SCROLLING V3 [MODIFIED]
  *  ***/
@@ -122,15 +122,15 @@ user_pref("general.smoothScroll.msdPhysics.enabled", true);
 user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 600);
 user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 650);
 user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 25);
-user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", 2.0);
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", "2");
 user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 250);
-user_pref("general.smoothScroll.currentVelocityWeighting", 1.0);
-user_pref("general.smoothScroll.stopDecelerationWeighting", 1.0);
+user_pref("general.smoothScroll.currentVelocityWeighting", "1");
+user_pref("general.smoothScroll.stopDecelerationWeighting", "1");
 user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this number to your liking
 
 
 /*** 
- * Fastfox zone (ver. 119)
+ * Fastfox zone (ver. 133)
  * see: https://github.com/yokoffing/Betterfox/blob/main/Fastfox.js
  * Options, overriden in arkenfox are commented
  *  ***/
@@ -140,7 +140,7 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
  * Fastfox                                                                              *
  * "Non ducor duco"                                                                     *
  * priority: speedy browsing                                                            *
- * version: 119                                                                         *
+ * version: 133                                                                         *
  * url: https://github.com/yokoffing/Betterfox                                          *
  ***************************************************************************************/
 
@@ -150,14 +150,14 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
 
 // PREF: initial paint delay
 // How long FF will wait before rendering the page (in ms)
-// [NOTE] Older PCs may want to use 250-750.
-// [NOTE] Dark Reader users may want to use 1000-2000 [3].
+// [NOTE] You may prefer using 250.
+// [NOTE] Dark Reader users may want to use 1000 [3].
 // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1283302
 // [2] https://docs.google.com/document/d/1BvCoZzk2_rNZx3u9ESPoFjSADRI0zIPeJRXFLwWXx_4/edit#heading=h.28ki6m8dg30z
 // [3] https://old.reddit.com/r/firefox/comments/o0xl1q/reducing_cpu_usage_of_dark_reader_extension/
 // [4] https://reddit.com/r/browsers/s/wvNB7UVCpx
-user_pref("nglayout.initialpaint.delay", 0); // DEFAULT; formerly 250
-user_pref("nglayout.initialpaint.delay_in_oopif", 0); // DEFAULT
+//user_pref("nglayout.initialpaint.delay", 5); // DEFAULT; formerly 250
+    //user_pref("nglayout.initialpaint.delay_in_oopif", 5); // DEFAULT
 
 // PREF: page reflow timer
 // Rather than wait until a page has completely downloaded to display it to the user,
@@ -182,8 +182,8 @@ user_pref("nglayout.initialpaint.delay_in_oopif", 0); // DEFAULT
 // to impact page load performance.
 // [EXAMPLE] 100000 = .10s = 100 reflows/second
 // [1] https://searchfox.org/mozilla-central/rev/c1180ea13e73eb985a49b15c0d90e977a1aa919c/modules/libpref/init/StaticPrefList.yaml#1824-1834
-// [2] https://dev.opera.com/articles/efficient-javascript/?page=3#reflow
-// [3] https://dev.opera.com/articles/efficient-javascript/?page=3#smoothspeed
+// [2] https://web.archive.org/web/20240115073722/https://dev.opera.com/articles/efficient-javascript/?page=3#reflow
+// [3] https://web.archive.org/web/20240115073722/https://dev.opera.com/articles/efficient-javascript/?page=3#smoothspeed
 user_pref("content.notify.interval", 100000); // (.10s); default=120000 (.12s)
 
 // PREF: new tab preload
@@ -210,7 +210,10 @@ user_pref("content.notify.interval", 100000); // (.10s); default=120000 (.12s)
 //user_pref("browser.sessionstore.restore_tabs_lazily", true); // DEFAULT
 
 // PREF: disable preSkeletonUI on startup [WINDOWS]
-user_pref("browser.startup.preXulSkeletonUI", false);
+//user_pref("browser.startup.preXulSkeletonUI", false);
+
+// PREF: lazy load iframes
+//user_pref("dom.iframe_lazy_loading.enabled", true); // DEFAULT [FF121+]
 
 /****************************************************************************
  * SECTION: GFX RENDERING TWEAKS                                            *
@@ -232,25 +235,19 @@ user_pref("gfx.webrender.compositor", true); // DEFAULT WINDOWS macOS
 //user_pref("gfx.webrender.software", true); // Software Webrender uses CPU instead of GPU
     //user_pref("gfx.webrender.software.opengl", true); // LINUX
 
-// PREF: NVIDIA RTX Video Super Resolution for video overlay [WINDOWS]
-// [NOTE] May not work on Stable release [2].
-// This is also a setting in NVIDIA's driver settings, so once this is
-// stable, it should default to true.
-// [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1823135
-// [2] https://www.reddit.com/r/firefox/comments/17a0noa/nvidia_video_super_resolution_not_working_on/
-//user_pref("gfx.webrender.super-resolution.nvidia", true);
-
 // PREF: GPU-accelerated Canvas2D
-// Use gpu-canvas instead of to skia-canvas.
+// Uses Accelerated Canvas2D for hardware acceleration of Canvas2D.
+// This provides a consistent acceleration architecture across all platforms
+// by utilizing WebGL instead of relying upon Direct2D.
 // [WARNING] May cause issues on some Windows machines using integrated GPUs [2] [3]
 // Add to your overrides if you have a dedicated GPU.
 // [NOTE] Higher values will use more memory.
 // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1741501
 // [2] https://github.com/yokoffing/Betterfox/issues/153
 // [3] https://github.com/yokoffing/Betterfox/issues/198
-user_pref("gfx.canvas.accelerated", true); // DEFAULT macOS LINUX [FF110]; not compatible with WINDOWS integrated GPUs
-    user_pref("gfx.canvas.accelerated.cache-items", 32768); // default=2048; alt=8192
-    user_pref("gfx.canvas.accelerated.cache-size", 4096); // default=256; alt=1024
+//user_pref("gfx.canvas.accelerated", true); // [DEFAULT FF133+]
+    user_pref("gfx.canvas.accelerated.cache-items", 32768); // default=2048; Chrome=4096
+    user_pref("gfx.canvas.accelerated.cache-size", 4096); // default=256; Chrome=512
     user_pref("gfx.content.skia-font-cache-size", 80); // default=5; Chrome=20
     // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1239151#c2
 
@@ -265,11 +262,6 @@ user_pref("media.hardware-video-decoding.enabled", true); // DEFAULT WINDOWS mac
     //user_pref("media.hardware-video-decoding.force-enabled", true); // enforce
 //user_pref("media.gpu-process-decoder", true); // DEFAULT WINDOWS
 user_pref("media.ffmpeg.vaapi.enabled", true); // LINUX
-
-// PREF: disable AV1 for hardware decodeable videos
-// Firefox sometimes uses AV1 video decoding even to GPUs which do not support it.
-// [1] https://www.reddit.com/r/AV1/comments/s5xyph/youtube_av1_codec_have_worse_quality_than_old_vp9
-//user_pref("media.av1.enabled", false);
 
 // PREF: hardware and software decoded video overlay [FF116+]
 // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1829063
@@ -289,7 +281,7 @@ user_pref("media.ffmpeg.vaapi.enabled", true); // LINUX
 // More efficient to keep the browser cache instead of having to
 // re-download objects for the websites you visit frequently.
 // [1] https://www.janbambas.cz/new-firefox-http-cache-enabled/
-//user_pref("browser.cache.disk.enable", true); // DEFAULT
+user_pref("browser.cache.disk.enable", true);
 
 // PREF: disk cache size
 // [1] https://bugzilla.mozilla.org/buglist.cgi?bug_id=913808,968106,968101
@@ -298,6 +290,26 @@ user_pref("media.ffmpeg.vaapi.enabled", true); // LINUX
 //user_pref("browser.cache.disk.smart_size.enabled", false); // force a fixed max cache size on disk
 //user_pref("browser.cache.disk.capacity", 512000); // default=256000; size of disk cache; 1024000=1GB, 2048000=2GB
 //user_pref("browser.cache.disk.max_entry_size", 51200); // DEFAULT (50 MB); maximum size of an object in disk cache
+
+// PREF: Race Cache With Network (RCWN) [FF59+]
+// [ABOUT] about:networking#rcwn
+// Firefox concurrently sends requests for cached resources to both the
+// local disk cache and the network server. The browser uses whichever
+// result arrives first and cancels the other request. This approach sometimes
+// loads pages faster because the network can be quicker than accessing the cache
+// on a hard drive. When RCWN is enabled, the request might be served from
+// the server even if you have valid entry in the cache. Set to false if your
+// intention is to increase cache usage and reduce network usage.
+// [1] https://slides.com/valentingosu/race-cache-with-network-2017
+// [2] https://simonhearne.com/2020/network-faster-than-cache/
+// [3] https://support.mozilla.org/en-US/questions/1267945
+// [4] https://askubuntu.com/questions/1214862/36-syns-in-a-row-how-to-limit-firefox-connections-to-one-website
+// [5] https://bugzilla.mozilla.org/show_bug.cgi?id=1622859
+// [6] https://soylentnews.org/comments.pl?noupdate=1&sid=40195&page=1&cid=1067867#commentwrap
+//user_pref("network.http.rcwn.enabled", false);
+
+// PREF: attempt to RCWN only if a resource is smaller than this size
+//user_pref("network.http.rcwn.small_resource_size_kb", 256); // DEFAULT
 
 // PREF: cache memory pool
 // Cache v2 provides a memory pool that stores metadata (such as response headers)
@@ -335,10 +347,11 @@ user_pref("media.ffmpeg.vaapi.enabled", true); // LINUX
 //user_pref("browser.cache.disk.max_priority_chunks_memory_usage", 40960); // DEFAULT (40 MB)
 
 // PREF: how often to validate document in cache
-// [1] https://searchfox.org/mozilla-release/source/modules/libpref/init/StaticPrefList.yaml#1092-1096
 // 0 = once-per-session
+// 1 = each-time
+// 2 = never
 // 3 = when-appropriate/automatically (default)
-//user_pref("browser.cache.check_doc_frequency, 3); // DEFAULT
+//user_pref("browser.cache.check_doc_frequency", 3); // DEFAULT
 
 // PREF: enforce free space checks
 // When smartsizing is disabled, we could potentially fill all disk space by
@@ -358,10 +371,12 @@ user_pref("media.ffmpeg.vaapi.enabled", true); // LINUX
 user_pref("browser.cache.jsbc_compression_level", 3);
 
 // PREF: strategy to use for when the bytecode should be encoded and saved [TESTING ONLY]
-// -1 makes page load times marginally longer when a page is being loaded for the first time.
-// Subsequent reload of websites will be much much faster.
+// -1 makes page load times marginally longer when a page is being loaded for the first time, while
+// subsequent reload of websites will be much much faster.
+// 0 means that the bytecode is created every 4 page loads [3].
 // [1] https://searchfox.org/mozilla-release/source/modules/libpref/init/StaticPrefList.yaml#3461-3488
 // [2] https://www.reddit.com/r/firefox/comments/12786yv/improving_performance_in_firefox_android_part_ii/
+// [3] https://github.com/zen-browser/desktop/issues/217
 // -1 = saved as soon as the script is seen for the first time, independently of the size or last access time
 // 0 = saved in order to minimize the page-load time (default)
 //user_pref("dom.script_loader.bytecode_cache.enabled", true); // DEFAULT
@@ -382,7 +397,7 @@ user_pref("browser.cache.jsbc_compression_level", 3);
 // [2] https://searchfox.org/mozilla-central/source/netwerk/cache2/CacheObserver.cpp#94-125
 // [3] https://github.com/WaterfoxCo/Waterfox/commit/3fed16932c80a2f6b37d126fe10aed66c7f1c214
 //user_pref("browser.cache.memory.capacity", -1); // DEFAULT; 256000=256 MB; 512000=500 MB; 1048576=1GB, 2097152=2GB
-user_pref("browser.cache.memory.max_entry_size", 153600); // (10 MB); default=5120 (5 MB)
+user_pref("browser.cache.memory.max_entry_size", 256000); // (10 MB); default=5120 (5 MB)
 
 // PREF: amount of Back/Forward cached pages stored in memory for each tab
 // Pages that were recently visited are stored in memory in such a way
@@ -406,6 +421,8 @@ user_pref("browser.cache.memory.max_entry_size", 153600); // (10 MB); default=51
 // [1] https://hg.mozilla.org/mozilla-central/file/tip/modules/libpref/init/StaticPrefList.yaml#l9652
 // [2] https://github.com/arkenfox/user.js/pull/941
 user_pref("media.memory_cache_max_size", 1048576); // default=8192; AF=65536; alt=131072
+
+// PREF: media cache combine sizes
 user_pref("media.memory_caches_combined_limit_kb", 2560000); // DEFAULT; alt=1048576
 //user_pref("media.memory_caches_combined_limit_pc_sysmem", 5); // DEFAULT; alt=10; the percentage of system memory that Firefox can use for media caches
 
@@ -443,9 +460,11 @@ user_pref("image.mem.decode_bytes_at_a_time", 131072); // default=16384; alt=655
 ****************************************************************************/
 
 // PREF: use bigger packets
+// [WARNING] Cannot open HTML files bigger than 4MB if changed [2].
 // Reduce Firefox's CPU usage by requiring fewer application-to-driver data transfers.
 // However, it does not affect the actual packet sizes transmitted over the network.
 // [1] https://www.mail-archive.com/support-seamonkey@lists.mozilla.org/msg74561.html
+// [2] https://github.com/yokoffing/Betterfox/issues/279
 user_pref("network.buffer.cache.size", 262144); // 256 kb; default=32768 (32 kb)
 user_pref("network.buffer.cache.count", 128); // default=24
 
@@ -479,12 +498,12 @@ user_pref("network.http.pacing.requests.enabled", false);
 // PREF: adjust DNS expiration time
 // [ABOUT] about:networking#dns
 // [NOTE] These prefs will be ignored by DNS resolver if using DoH/TRR.
-//user_pref("network.dnsCacheExpiration", 3600); // keep entries for 1 hour
+user_pref("network.dnsCacheExpiration", 3600); // keep entries for 1 hour
     //user_pref("network.dnsCacheExpirationGracePeriod", 240); // default=60; cache DNS entries for 4 minutes after they expire
 
 // PREF: the number of threads for DNS
-user_pref("network.dns.max_high_priority_threads", 8); // default=5
-//user_pref("network.dns.max_any_priority_threads", 3); // DEFAULT
+//user_pref("network.dns.max_high_priority_threads", 40); // DEFAULT [FF 123?]
+//user_pref("network.dns.max_any_priority_threads", 24); // DEFAULT [FF 123?]
 
 // PREF: increase TLS token caching 
 user_pref("network.ssl_tokens_cache_capacity", 32768); // default=2048; more TLS token caching (fast reconnects)
@@ -520,24 +539,34 @@ user_pref("network.ssl_tokens_cache_capacity", 32768); // default=2048; more TLS
 // [3] https://searchfox.org/mozilla-central/rev/028c68d5f32df54bca4cf96376f79e48dfafdf08/modules/libpref/init/all.js#1280-1282
 // [4] https://www.keycdn.com/blog/resource-hints#prefetch
 // [5] https://3perf.com/blog/link-rels/#prefetch
-//user_pref("network.http.speculative-parallel-limit", 6); // DEFAULT
+//user_pref("network.http.speculative-parallel-limit", 20); // DEFAULT (FF127+?)
 
-// PREF: DNS prefetching <link rel="dns-prefetch">
+// PREF: DNS prefetching for HTMLLinkElement <link rel="dns-prefetch">
 // Used for cross-origin connections to provide small performance improvements.
-// Disable DNS prefetching to prevent Firefox from proactively resolving
-// hostnames for other domains linked on a page. This may eliminate
-// unnecessary DNS lookups, but can increase latency when following external links.
+// You can enable rel=dns-prefetch for the HTTPS document without prefetching
+// DNS for anchors, whereas the latter makes more specualtive requests [5].
 // [1] https://bitsup.blogspot.com/2008/11/dns-prefetching-for-firefox.html
 // [2] https://css-tricks.com/prefetching-preloading-prebrowsing/#dns-prefetching
 // [3] https://www.keycdn.com/blog/resource-hints#2-dns-prefetching
 // [4] http://www.mecs-press.org/ijieeb/ijieeb-v7-n5/IJIEEB-V7-N5-2.pdf
-//user_pref("network.dns.disablePrefetch", true);
-//user_pref("network.dns.disablePrefetchFromHTTPS", true); // DEFAULT
+// [5] https://bugzilla.mozilla.org/show_bug.cgi?id=1596935#c28
+user_pref("network.dns.disablePrefetch", true);
+    user_pref("network.dns.disablePrefetchFromHTTPS", true); // [FF127+ false]
+
+// PREF:  DNS prefetch for HTMLAnchorElement (speculative DNS)
+// Disable speculative DNS calls to prevent Firefox from resolving
+// hostnames for other domains linked on a page. This may eliminate
+// unnecessary DNS lookups, but can increase latency when following external links.
+// [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1596935#c28
+// [2] https://github.com/arkenfox/user.js/issues/1870#issuecomment-2220773972
+//user_pref("dom.prefetch_dns_for_anchor_http_document", false); // [FF128+]
+//user_pref("dom.prefetch_dns_for_anchor_https_document", false); // DEFAULT [FF128+]
 
 // PREF: enable <link rel="preconnect"> tag and Link: rel=preconnect response header handling
 //user_pref("network.preconnect", true); // DEFAULT
 
 // PREF: preconnect to the autocomplete URL in the address bar
+// Whether to warm up network connections for autofill or search results.
 // Firefox preloads URLs that autocomplete when a user types into the address bar.
 // Connects to destination server ahead of time, to avoid TCP handshake latency.
 // [NOTE] Firefox will perform DNS lookup (if enabled) and TCP and TLS handshake,
@@ -546,27 +575,8 @@ user_pref("network.ssl_tokens_cache_capacity", 32768); // default=2048; more TLS
 //user_pref("browser.urlbar.speculativeConnect.enabled", false);
 
 // PREF: mousedown speculative connections on bookmarks and history [FF98+]
+// Whether to warm up network connections for places:menus and places:toolbar.
 //user_pref("browser.places.speculativeConnect.enabled", false);
-
-// PREF: network preload <link rel="preload"> [REMOVED]
-// Used to load high-priority resources faster on the current page, for strategic
-// performance improvements.
-// Instructs the browser to immediately fetch and cache high-priority resources
-// for the current page to improve performance. The browser downloads resources
-// but does not execute scripts or apply stylesheets - it just caches them for
-// instant availability later.
-// Unlike other pre-connection tags (except modulepreload), this tag is
-// mandatory for the browser.
-// [1] https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload
-// [2] https://w3c.github.io/preload/
-// [3] https://3perf.com/blog/link-rels/#preload
-// [4] https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf
-// [5] https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/#how-can-preload-do-better
-// [6] https://www.keycdn.com/blog/resource-hints#preload
-// [7] https://github.com/arkenfox/user.js/issues/1098#issue-791949341
-// [8] https://yashints.dev/blog/2018/10/06/web-perf-2#preload
-// [9] https://web.dev/preload-critical-assets/
-//user_pref("network.preload", true); // [REMOVED]
 
 // PREF: network module preload <link rel="modulepreload"> [FF115+]
 // High-priority loading of current page JavaScript modules.
@@ -631,7 +641,7 @@ user_pref("network.prefetch-next", false);
 // [2] https://www.ghacks.net/2014/05/11/seer-disable-firefox/
 // [3] https://github.com/dillbyrne/random-agent-spoofer/issues/238#issuecomment-110214518
 // [4] https://www.igvita.com/posa/high-performance-networking-in-google-chrome/#predictor
-//user_pref("network.predictor.enabled", false);
+user_pref("network.predictor.enabled", false);
 
 // PREF: Network Predictor fetch for resources ahead of time
 // Prefetch page resources based on past user behavior.
@@ -665,34 +675,16 @@ user_pref("network.prefetch-next", false);
 
 // PREF: CSS Masonry Layout [NIGHTLY]
 // [1] https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout
+// [2] https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
 
 // PREF: Prioritized Task Scheduling API [NIGHTLY]
 // [1] https://blog.mozilla.org/performance/2022/06/02/prioritized-task-scheduling-api-is-prototyped-in-nightly/
 // [2] https://medium.com/airbnb-engineering/building-a-faster-web-experience-with-the-posttask-scheduler-276b83454e91
+// [3] https://github.com/WICG/scheduling-apis/blob/main/explainers/prioritized-post-task.md
+// [4] https://wicg.github.io/scheduling-apis/
+// [5] https://caniuse.com/mdn-api_taskcontroller
 user_pref("dom.enable_web_task_scheduling", true);
-
-// PREF: CSS :has() selector [NIGHTLY]
-// Needed for some extensions, filters, and customizations.
-// [1] https://developer.mozilla.org/en-US/docs/Web/CSS/:has
-// [2] https://caniuse.com/css-has
-user_pref("layout.css.has-selector.enabled", true);
-
-// PREF: HTML Sanitizer API [NIGHTLY]
-// [1] https://developer.mozilla.org/en-US/docs/Web/API/Sanitizer
-// [2] https://caniuse.com/mdn-api_sanitizer
-user_pref("dom.security.sanitizer.enabled", true);
-
-// PREF: WebGPU [HIGHLY EXPERIMENTAL!]
-// [WARNING] Do not enable unless you are a web developer!
-// [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1746245
-// [2] https://developer.chrome.com/docs/web-platform/webgpu/
-// [3] https://github.com/gpuweb/gpuweb/wiki/Implementation-Status
-// [4] https://hacks.mozilla.org/2020/04/experimental-webgpu-in-firefox/
-//user_pref("dom.webgpu.enabled", true);
-    //user_pref("gfx.webgpu.force-enabled", true); // enforce
-// enable WebGPU indirect draws/dispatches:
-//user_pref("dom.webgpu.indirect-dispatch.enabled", true);
 
 /****************************************************************************
  * SECTION: TAB UNLOAD                                                      *
@@ -709,18 +701,18 @@ user_pref("dom.security.sanitizer.enabled", true);
 // PREF: determine when tabs unload [WINDOWS] [LINUX]
 // Notify TabUnloader or send the memory pressure if the memory resource
 // notification is signaled AND the available commit space is lower than
-// this value.
-// Set this to some high value, e.g. 2/3 of total memory available in your system:
-// 4GB=2640, 8GB=5280, 16GB=10560, 32GB=21120, 64GB=42240
+// this value (in MiB).
+// Set this to some value, e.g. 4/5 of total memory available on your system:
+// 4GB=3276, 8GB=6553, 16GB=13107, 32GB=25698, 64GB=52429
 // [1] https://dev.to/msugakov/taking-firefox-memory-usage-under-control-on-linux-4b02
-//user_pref("browser.low_commit_space_threshold_mb", 2640); // default=200; WINDOWS LINUX
+//user_pref("browser.low_commit_space_threshold_mb", 3276); // default=200; WINDOWS LINUX
 
 // PREF: determine when tabs unload [LINUX]
 // On Linux, Firefox checks available memory in comparison to total memory,
 // and use this percent value (out of 100) to determine if Firefox is in a
 // low memory scenario.
 // [1] https://dev.to/msugakov/taking-firefox-memory-usage-under-control-on-linux-4b02
-//user_pref("browser.low_commit_space_threshold_percent", 33); // default=5; LINUX
+//user_pref("browser.low_commit_space_threshold_percent", 20); // default=5; LINUX
 
 // PREF: determine how long (in ms) tabs are inactive before they unload
 // 60000=1min; 300000=5min; 600000=10min (default)
