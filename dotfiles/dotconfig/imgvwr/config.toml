@@ -1,0 +1,33 @@
+# window properties
+[window]
+# do you want to see window title?
+decorations = true
+# do you want to apply antialiasing to content?
+antialiasing = true
+# theme
+# possible values: https://docs.rs/iced/latest/iced/enum.Theme.html
+theme = "tokyo_night"
+
+# image viewer properties
+[viewer]
+# minimal zoom-out value
+min_scale = 0.0
+# maximal zoom-in value
+max_scale = 100.0
+# zoom step
+scale_step = 0.08
+# zoom interpolation/filtering method
+# possible values: https://docs.rs/iced/latest/iced/widget/shader/wgpu/enum.FilterMode.html
+filter_method = "linear"
+# image viewer mode
+# possible values: https://docs.rs/iced/latest/iced/enum.ContentFit.html
+content_fit = "none"
+
+# keyboard bindings
+[keybindings]
+# close the application
+quit = "q"
+# rotate image 90 degree left
+rotate_left = "["
+# rotate image 90 degree right
+rotate_right = "]"
