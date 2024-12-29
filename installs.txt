@@ -1,4 +1,4 @@
-7-zip
+7zip
 acpi
 acpid
 adduser
@@ -10,6 +10,7 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
+android-tools
 anime4k-git
 apparmor
 appmenu-gtk-module
@@ -71,6 +72,8 @@ dmidecode
 dmraid
 dnsmasq
 dolphin
+dolphin-emu
+dolphin-emu-tool
 dolphin-plugins
 dosfstools
 dotnet-sdk
@@ -138,13 +141,17 @@ gvfs-nfs
 gvfs-smb
 handbrake
 haveged
+heroic-games-launcher
 hypridle
 hyprkeys
 hyprland
+hyprland-qtutils
 hyprlock
 hyprpaper
-hyprutils
+hyprpolkitagent-git
+hyprutils-git
 illyria-wallpaper
+imgvwr-git
 imv
 inetutils
 innoextract
@@ -209,7 +216,6 @@ lib32-libcanberra
 lib32-libglvnd
 lib32-libva
 lib32-libva-intel-driver
-lib32-libva-vdpau-driver
 lib32-lzo
 lib32-mangohud
 lib32-mesa-demos
@@ -312,6 +318,7 @@ oculante
 oh-my-posh-bin
 oh-my-zsh-git
 oh-my-zsh-powerline-theme-git
+onagre
 onefetch
 opencl-headers
 openresolv
@@ -324,7 +331,6 @@ otf-geist-mono-nerd
 otf-monaspace-nerd
 oxygen
 oxygen-icons
-p7zip
 pacman-contrib
 pamixer
 partitionmanager
@@ -427,7 +433,9 @@ screenfetch
 sddm
 sddm-breath-theme
 sddm-kcm
+sdl2-compat-git
 sdl2_net
+sdl3-git
 shadow
 slurp
 socat
