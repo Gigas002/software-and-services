@@ -1,0 +1,41 @@
+.onagre {
+    --exit-unfocused: false;
+    --icon-theme: "Sweet-Rainbow";
+    /* --icon-size: 22px; */
+    --font-family: "Iosevka Nerd Font Mono";
+    /* font-size: 22px; */
+    background: #000000bb;
+    color: #000000bb;
+    border-color: #ed254eff;
+    border-radius: 50%;
+    border-width: 2px;
+    padding: 10px;
+  
+    .container {
+      background: #00000000;
+      color: #00000000;
+  
+      .search {
+        background: #00000000;
+        color: #00000000;
+  
+        .input {
+          background: #00000000;
+          color: #00c1e4ff;
+        }
+  
+      }
+  
+      .rows {
+        .row {
+          background: #00000000;
+          color: #bd93f9ff;
+        }
+        .row-selected {
+          background: #00000000;
+          color: #f9dc5cff;
+        }
+      }
+    }
+  }
+  

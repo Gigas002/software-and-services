@@ -1,0 +1,7 @@
+[user]
+	email = gigas002@pm.me
+	name = gigas002
+
+[core]
+	sshCommand = ssh -i ~/.ssh/github
+	

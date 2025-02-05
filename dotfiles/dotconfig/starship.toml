@@ -1,0 +1,143 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+$username\
+$directory\
+$fill\
+$all
+$character"""
+
+[c]
+symbol = " "
+format = '\[[$symbol($version(-$name))]($style)\]'
+
+[cmake]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+format = '\[[⏱ $duration]($style)\]'
+
+[directory]
+read_only = " 󰌾 "
+truncate_to_repo = false
+truncation_symbol = '../'
+truncation_length = 8
+
+[dart]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[docker_context]
+symbol = " "
+format = '\[[$symbol$context]($style)\]'
+
+[dotnet]
+symbol = " "
+format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
+
+[git_branch]
+symbol = " "
+format = '\[[$symbol$branch]($style)\]'
+
+[git_metrics]
+format = '(\[[+$added]($added_style)\])(\[[-$deleted]($deleted_style)\])'
+disabled = false
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[git_commit]
+tag_symbol = ' '
+
+[golang]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[gradle]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[java]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[kotlin]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[lua]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[meson]
+symbol = "󰔷 "
+format = '\[[$symbol$project]($style)\]'
+
+[nodejs]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[os]
+disabled = false
+format = '[$symbol]($style)'
+
+[os.symbols]
+Android = " "
+Arch = " "
+CachyOS = " "
+EndeavourOS = " "
+Gentoo = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Redox = "󰀘 "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+disabled = true
+symbol = "󰏗 "
+format = '\[[$symbol$version]($style)\]'
+
+[perl]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[php]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[python]
+symbol = " "
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[ruby]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[rust]
+symbol = "󱘗 "
+format = '\[[$symbol($version)]($style)\]'
+
+[status]
+disabled = false
+
+[sudo]
+disabled = false
+format = '\[[as $symbol]($style)\]'
+
+[swift]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[time]
+disabled = false
+time_format = "%T %d.%m.%Y"
+format = '\[[$time]($style)\]'
+
+[username]
+format = '\[[$user]($style)\]'
