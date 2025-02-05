@@ -13,5 +13,6 @@ done
 
 echo $id
 
-hyprctl keyword decoration:dim_inactive false
+# hyprctl keyword decoration:dim_inactive false
 hyprctl keyword workspace $id,gapsin:0,gapsout:0,rounding:false,bordersize:0
+# hyprctl keyword workspace $id,gapsin:3,gapsout:8,rounding:true,bordersize:2
