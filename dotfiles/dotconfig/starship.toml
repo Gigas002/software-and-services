@@ -2,11 +2,52 @@
 
 format = """
 $os\
+$sudo\
 $username\
 $directory\
 $fill\
-$all
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$git_commit\
+$c\
+$cmake\
+$dart\
+$docker_content\
+$dotnet\
+$golang\
+$gradle\
+$java\
+$kotlin\
+$lua\
+$meson\
+$nodejs\
+$perl\
+$php\
+$python\
+$ruby\
+$rust\
+$swift\
+$cmd_duration\
+$time\
+$status
 $character"""
+
+palette = 'Sweet'
+
+[palettes.Sweet]
+black = '#697388'
+blue = '#7cb7ff'
+cyan = '#00c1e4'
+green = '#71f79f'
+magenta = '#c74ded'
+red = '#ed254e'
+white = '#dcdfe4'
+yellow = '#f9dc5c'
+
+[fill]
+symbol = ' '
 
 [c]
 symbol = " "
@@ -40,6 +81,7 @@ symbol = " "
 format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
 
 [git_branch]
+style = 'bold green'
 symbol = " "
 format = '\[[$symbol$branch]($style)\]'
 
@@ -83,6 +125,7 @@ format = '\[[$symbol($version)]($style)\]'
 
 [os]
 disabled = false
+style = 'bold cyan'
 format = '[$symbol]($style)'
 
 [os.symbols]
@@ -127,8 +170,8 @@ format = '\[[$symbol($version)]($style)\]'
 disabled = false
 
 [sudo]
-disabled = false
-format = '\[[as $symbol]($style)\]'
+disabled = true
+format = '\[[$symbol]($style)\]'
 
 [swift]
 symbol = " "

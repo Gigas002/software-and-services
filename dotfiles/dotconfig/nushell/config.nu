@@ -5,7 +5,8 @@ $env.config = {
     }
 }
 
-source ~/.config/nushell/oh-my-posh.nu
+# source ~/.config/nushell/oh-my-posh.nu
 source ~/.config/nushell/atuin_init.nu
 source ~/.config/nushell/atuin_completions.nu
-# source ~/.config/nushell/starship.nu
+source ~/.config/nushell/starship.nu
+source ~/.config/nushell/carapace.nu

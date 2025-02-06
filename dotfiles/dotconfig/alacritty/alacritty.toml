@@ -20,7 +20,7 @@ save_to_clipboard = true
 # See https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
 
 # Themes:
-import = ["~/.config/alacritty/themes/cyberpunk.toml"]
+import = ["~/.config/alacritty/themes/Sweet.toml"]
 
 [terminal]
 
