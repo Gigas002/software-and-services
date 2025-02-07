@@ -25,21 +25,21 @@ button:focus, button:active, button:hover {
 }
 
 #lock {
-    background-image: image(url("/usr/share/wleave/icons/lock.svg"), url("/usr/local/share/wleave/icons/lock.svg"));
+    background-image: url("/usr/share/wleave/icons/lock.svg");
     border-radius: 50px 0px 0px 0px;
 }
 
 #shutdown {
-    background-image: image(url("/usr/share/wleave/icons/shutdown.svg"), url("/usr/local/share/wleave/icons/shutdown.svg"));
+    background-image: url("/usr/share/wleave/icons/shutdown.svg");
     border-radius: 0px 0px 0px 50px;
 }
 
 #logout {
-    background-image: image(url("/usr/share/wleave/icons/logout.svg"), url("/usr/local/share/wleave/icons/logout.svg"));
+    background-image: url("/usr/share/wleave/icons/logout.svg");
     border-radius: 0px 50px 0px 0px;
 }
 
 #reboot {
-    background-image: image(url("/usr/share/wleave/icons/reboot.svg"), url("/usr/local/share/wleave/icons/reboot.svg"));
+    background-image: url("/usr/share/wleave/icons/reboot.svg");
     border-radius: 0px 0px 50px 0px;
 }
