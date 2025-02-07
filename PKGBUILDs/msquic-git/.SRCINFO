@@ -1,0 +1,21 @@
+pkgbase = msquic-git
+	pkgdesc = Microsoft implementation of the IETF QUIC protocol (git)
+	pkgver = 1.9.0.r1244.ga11b58bc6
+	pkgrel = 2
+	url = https://github.com/microsoft/msquic
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	license = MIT
+	makedepends = cmake>=3.16
+	makedepends = dotnet-sdk>=3.1
+	makedepends = git
+	depends = openssl>=3.0.0
+	provides = msquic
+	provides = libmsquic.so
+	conflicts = msquic
+	conflicts = libmsquic.so
+	source = msquic-git::git+https://github.com/microsoft/msquic.git
+	sha512sums = SKIP
+
+pkgname = msquic-git

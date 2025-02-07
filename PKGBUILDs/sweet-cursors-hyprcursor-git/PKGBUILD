@@ -1,0 +1,41 @@
+# Maintainer: gigas002 <gigas002@pm.me>
+
+# TODO; this requires reworking, use sweet-cursors in a meanwhile
+
+pkgname=sweet-cursors-hyprcursor-git
+_reponame=Sweet-kde
+_pkgname=Sweet-cursors-hyprcursor
+pkgver=r41.9f74f42
+pkgrel=1
+pkgdesc="Sweet cursor theme for hyprcursor"
+arch=('x86_64')
+url="https://github.com/Gigas002/$_reponame"
+license=('GPL3')
+makedepends=('git' 'inkscape')
+depends=('hyprcursor')
+optdepends=()
+provides=("Sweet-cursors-hyprcursor")
+conflicts=()
+options=('!strip')
+source=("git+$url.git#branch=hyprcursors")
+sha256sums=('SKIP')
+
+pkgver() {
+    cd "$srcdir/$_reponame"
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+    cd "$srcdir/$_reponame/cursors"
+
+    chmod +x build_hyprcursors.sh
+
+    ./build_hyprcursors.sh
+}
+
+package() {
+    mkdir -p $pkgdir/usr/share/icons
+
+	cp -R "$srcdir/$_reponame/cursors/$_pkgname" "$pkgdir/usr/share/icons"
+}
+

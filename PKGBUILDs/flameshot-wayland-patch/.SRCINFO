@@ -1,0 +1,25 @@
+pkgbase = flameshot-wayland-patch
+	pkgdesc = Powerful yet simple to use screenshot software
+	pkgver = r1886.fa12848c
+	pkgrel = 1
+	url = https://github.com/flameshot-org/flameshot
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = qt5-tools
+	makedepends = git
+	makedepends = cmake
+	makedepends = kguiaddons
+	depends = qt5-base
+	depends = hicolor-icon-theme
+	depends = qt5-svg
+	optdepends = xdg-desktop-portal: To make Sway, Hyprland, and wlroots work
+	optdepends = xdg-desktop-portal-wlr: To make Sway, Hyprland, and wlroots work
+	optdepends = xdg-desktop-portal-kde
+	optdepends = grim: To make Sway, Hyprland, and wlroots work
+	provides = flameshot-wayland-patch
+	conflicts = flameshot
+	source = git+https://github.com/Gigas002/flameshot.git
+	md5sums = SKIP
+
+pkgname = flameshot-wayland-patch
