@@ -1,0 +1,62 @@
+modules:
+  left:
+    - SystemInfo
+    - Workspaces
+  center:
+    - WindowTitle
+  right:
+    - [Clipboard, KeyboardLayout]
+    - [Tray, Clock, Privacy, Settings]
+# App launcher command, it will be used to open the launcher,
+# without a value the related button will not appear
+# appLauncherCmd: "~/.config/rofi/launcher.sh" # optional, default None
+# Clipboard command, it will be used to open the clipboard menu,
+# without a value the related button will not appear
+clipboardCmd: "cliphist.sh" # optional, default None
+# Workspaces module configuration, optional
+workspaces:
+  # The visibility mode of the workspaces, possible values are:
+  # All: all the workspaces will be displayed
+  # MonitorSpecific: only the workspaces of the related monitor will be displayed
+  visibilityMode: MonitorSpecific # optional, default All
+# Clock module configuration
+clock:
+  # clock format see: https://docs.rs/chrono/latest/chrono/format/strftime/index.html
+  format: "%R %d.%m.%Y" # optional, default: %a %d %b %R
+# Media player module configuration
+mediaPlayer:
+  maxTitleLength: 100 # optional, default 100
+# Settings module configuration
+settings:
+  # command used for lock the system
+  # without a value the related button will not appear
+#   lockCmd: "hyprlock &" # optional, default None
+  # command used to open the sinks audio settings
+  # without a value the related button will not appear
+  audioSinksMoreCmd: "pavucontrol -t 3" # optional default None
+  # command used to open the sources audio settings
+  # without a value the related button will not appear
+  audioSourcesMoreCmd: "pavucontrol -t 4" # optional, default None
+  # command used to open the network settings
+  # without a value the related button will not appear
+  wifiMoreCmd: "nm-connection-editor" # optional, default None
+  # command used to open the VPN settings
+  # without a value the related button will not appear
+  vpnMoreCmd: "nm-connection-editor" # optional, default None
+  # command used to open the Bluetooth settings
+  # without a value the related button will not appear
+  bluetoothMoreCmd: "blueman-manager" # optional, default None
+# Appearance config
+# Each color could be a simple hex color like #228800 or an
+# object that define a base hex color and two optional variant of that color (a strong one and a weak one)
+# and the text color that should be used with that base color
+appearance:
+  backgroundColor: "#161925" # used as a base background color for header module button
+  primaryColor: "#00c1e4" # used as a accent color
+#   secondaryColor: "#11111b" # used for darker background color
+#   successColor: "#a6e3a1" # used for success message or happy state
+#   dangerColor: "#f38ba8" # used for danger message or danger state (the weak version is used for the warning state
+  textColor: "#c74ded" # base default text color
+  # this is a list of color that will be used in the workspace module (one color for each monitor)
+  workspaceColors:
+    - "#00c1e4"
