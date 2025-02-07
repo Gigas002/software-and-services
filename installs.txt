@@ -16,6 +16,7 @@ apparmor
 appmenu-gtk-module
 ark
 asciidoc
+ashell
 aspnet-runtime
 aspnet-targeting-pack
 asunder
@@ -41,6 +42,7 @@ breeze-plymouth
 brightnessctl
 btrfs-progs
 bzip2
+carapace-bin
 cargo-cache
 ccache
 cdparanoia
@@ -155,6 +157,7 @@ hyprlock
 hyprpaper
 hyprpicker
 hyprpolkitagent
+hyprswitch
 hyprutils
 illyria-wallpaper
 imgvwr-git
