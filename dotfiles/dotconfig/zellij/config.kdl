@@ -9,5 +9,5 @@ keybinds {
 //
 default_shell "nu"
 
-theme "blade-runner"
-// theme "Sweet"
+// theme "blade-runner"
+theme "Sweet"
