@@ -63,6 +63,7 @@ cronie
 cryptsetup
 curl
 curl-rustls
+czkawka-gui
 dbeaver
 debtap
 debugedit
@@ -427,7 +428,6 @@ qt6-websockets
 qt6-webview
 qt6ct-kde
 realtime-privileges
-reiserfsprogs
 rsync
 ruby
 rust
@@ -444,7 +444,7 @@ sddm
 sddm-breath-theme
 sddm-kcm
 sdl2_net
-sdl3-git
+sdl3
 shadow
 slurp
 socat
@@ -469,6 +469,7 @@ systemd-sysvcompat
 systemsettings
 tar
 tcpdump
+tealdeer
 telegram-desktop
 terminus-font
 thorium-browser-bin
