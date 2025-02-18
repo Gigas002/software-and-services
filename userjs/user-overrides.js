@@ -3,75 +3,65 @@
 
 user_pref("_user.js.parrot", "gigas overrides");
 
-// GIGAS: Scan downloadings if it's safe
+// GIGAS: Scan downloads if it's safe
 user_pref("browser.safebrowsing.downloads.remote.enabled", true); // 0403
-user_pref("browser.safebrowsing.downloads.remote.url", "https://sb-ssl.google.com/safebrowsing/clientreport/download?key=%GOOGLE_SAFEBROWSING_API_KEY%"); // 0403
 
-// GIGAS: enable search engine in address bar
-user_pref("keyword.enabled", true); // 0801
-user_pref("browser.urlbar.suggest.engines", true); // 0808
-
-// GIGAS: restore session see https://github.com/arkenfox/user.js/issues/1080
-// user_pref("browser.startup.page", 3); // 0102
+// GIGAS: restore session
 user_pref("browser.sessionstore.privacy_level", 0); // 1003
-user_pref("network.cookie.lifetimePolicy", 0); // 2801
-// user_pref("privacy.clearOnShutdown.history", true); // 2811
-// user_pref("privacy.clearOnShutdown.sessions", true); // 2811
-user_pref("browser.privatebrowsing.autostart", false); // 5001
-//user_pref("places.history.enabled", true); // 5013
-user_pref("privacy.clearOnShutdown.cookies", false); // Cookies
-user_pref("privacy.clearOnShutdown.offlineApps", false); // Site Data
-user_pref("privacy.clearOnShutdown.sessions", false);  // Active Logins [DEFAULT: true]
-user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // Cookies, Site Data, Active Logins [FF128+]
+user_pref("privacy.clearOnShutdown.cookies", false); // 2815
+user_pref("privacy.clearOnShutdown.offlineApps", false); // 2815
+user_pref("privacy.clearOnShutdown.sessions", false);  // 2815
+user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // 2815
 
 // GIGAS: for pixiv
-user_pref("network.http.referer.XOriginPolicy", 0); // 1601
-user_pref("network.http.referer.XOriginTrimmingPolicy", 0); // 1602
+user_pref("network.http.referer.XOriginTrimmingPolicy", 1); // 1602
 
-// GIGAS: inner window resolution fix
-user_pref("privacy.resistFingerprinting.letterboxing", false); // 4504
+// GIGAS; follow system theme
+user_pref("browser.display.use_system_colors", true); // 4510
 
-// GIGAS: Enable custome themes, e.g. https://github.com/EliverLara/firefox-sweet-theme
+// GIGAS: Enable custom themes, e.g. https://github.com/EliverLara/firefox-sweet-theme
 
 /* user.js
  * https://github.com/rafaelmardojai/firefox-gnome-theme/
  */
 
 // Enable userChrome.css
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+// user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
 // Enable CSD
 user_pref("browser.tabs.drawInTitlebar", true);
 
 // Reset homepage, see tabliss's guide: https://tabliss.io/support.html
-user_pref("browser.startup.page", 1);
+user_pref("browser.startup.page", 1); // 0102
 user_pref("browser.startup.homepage", "moz-extension://4d648020-4e4a-4402-8dd2-0a47d9df69e8/index.html");
 
 // KDE file explorer
-user_pref("GTK_USE_PORTAL", 1);
-user_pref("GDK_DEBUG", "portals");
-user_pref("widget.use-xdg-desktop-portal", true);
-user_pref("widget.use-xdg-desktop-portal.kde", true);
-user_pref("widget.use-xdg-desktop-portal.location", 1);
-user_pref("widget.use-xdg-desktop-portal.mime-handler", 1);
-user_pref("widget.use-xdg-desktop-portal.open-uri", 1);
-user_pref("widget.use-xdg-desktop-portal.settings", 1);
+// user_pref("xdg-desktop-portal-kde", true);
+// user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
+// user_pref("widget.use-xdg-desktop-portal.location", 1);
+// user_pref("widget.use-xdg-desktop-portal.mime-handler", 1);
+// user_pref("widget.use-xdg-desktop-portal.native-messaging", 1);
+// user_pref("widget.use-xdg-desktop-portal.open-uri", 1);
+// user_pref("widget.use-xdg-desktop-portal.settings", 1);
 
 // GTK scrollbars
 user_pref("widget.gtk.overlay-scrollbars.enabled", true);
 
 // Enable GPU acceleration/Hardware Video Decoding, see: https://www.opennet.ru/opennews/art.shtml?num=57297
-// user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.all", true);
 user_pref("gfx.webrender.software", false);
 user_pref("gfx.webrender.enabled", true);
 
 // Hardware video decoding: https://linuxreviews.org/HOWTO_Make_Mozilla_Firefox_Blazing_Fast_On_Linux
 user_pref("media.ffmpeg.vaapi.enabled", true);
-user_pref("media.ffmpeg.vaapi-drm-display.enabled", true);
-user_pref("media.ffvpx.enabled", false);
+user_pref("media.ffvpx-hw.enabled", false);
 
-// Enable EGL Rendering
+// [X11] Enable EGL Rendering
 user_pref("gfx.x11-egl.force-enabled", true);
+
+// [Wayland]
+user_pref("widget.gtk.global-menu.wayland.enabled", true);
+user_pref("widget.wayland.fractional-scale.enabled", true);
 
 // Force 144fps
 user_pref("layout.frame_rate", 144);
@@ -103,17 +93,26 @@ user_pref("browser.sessionstore.resume_from_crash", false);
 user_pref("browser.backspace_action", 0);
 
 // Enable ipv6
-user_pref("network.dns.disableIPv6", false);
-
-// Enable experimental servo layout
-user_pref("layout.css.servo.enabled", true);
+// user_pref("network.dns.disableIPv6", false); // false by default
+user_pref("network.dns.preferIPv6", true);
 
 
-/*** 
- * Smoothfox zone (ver. December 2024)
- * see: https://github.com/yokoffing/Betterfox/blob/main/Smoothfox.js
- * OPTION: NATURAL SMOOTH SCROLLING V3 [MODIFIED]
- *  ***/
+// GIGAS: experimental prefs
+// https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features
+user_pref("dom.webgpu.enabled", true);
+user_pref("media.mediasource.experimental.enabled", true);
+user_pref("image.jxl.enabled", true);
+user_pref("dom.customHighlightAPI.enabled", true);
+user_pref("dom.shadowdom.selection_across_boundary.enabled", true);
+
+
+/****************************************************************************************
+ * Smoothfox                                                                            *
+ * "Faber est suae quisque fortunae"                                                    *
+ * priority: better scrolling                                                           *
+ * version: 126.1                                                                       *
+ * url: https://github.com/yokoffing/Betterfox                                          *
+ ***************************************************************************************/
 
 user_pref("apz.overscroll.enabled", true); // DEFAULT NON-LINUX
 user_pref("general.smoothScroll", true); // DEFAULT
@@ -127,13 +126,6 @@ user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 250);
 user_pref("general.smoothScroll.currentVelocityWeighting", "1");
 user_pref("general.smoothScroll.stopDecelerationWeighting", "1");
 user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this number to your liking
-
-
-/*** 
- * Fastfox zone (ver. 133)
- * see: https://github.com/yokoffing/Betterfox/blob/main/Fastfox.js
- * Options, overriden in arkenfox are commented
- *  ***/
 
 
 /****************************************************************************************
