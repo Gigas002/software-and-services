@@ -1,8 +1,8 @@
 themes {
  	Sweet {
- 		fg "#c3c7c8"
+ 		fg "#71f79f"
  		bg "#161925"
- 		black "#697388"
+ 		black "#161925"
  		red "#ed254e"
  		green "#71f79f"
  		yellow "#f9dc5c"
@@ -10,6 +10,6 @@ themes {
  		magenta "#c74ded"
  		cyan "#00c1e4"
  		white "#dcdfe4"
- 		orange "#fc5f00"
+ 		orange "#00c1e4"
  	}
 }
