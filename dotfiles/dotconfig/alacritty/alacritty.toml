@@ -1,5 +1,7 @@
-[env]
-ZDOTDIR = "/home/gigas/.config/zsh/"
+# See https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+
+# [env]
+# ZDOTDIR = "/home/gigas/.config/zsh/"
 
 [window]
 opacity = 0.3
@@ -17,9 +19,6 @@ size = 14.0
 save_to_clipboard = true
 
 [general]
-# See https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
-
-# Themes:
 import = ["~/.config/alacritty/themes/Sweet.toml"]
 
 [terminal]
