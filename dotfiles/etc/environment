@@ -1,0 +1,10 @@
+# Force GTK apps to use xdg-desktop-portal if available
+GTK_USE_PORTAL=1
+
+# SDL2 wayland backend: https://wiki.archlinux.org/title/Wayland#SDL2
+SDL_VIDEODRIVER=wayland
+
+# Electron 28+ wayland backend: https://wiki.archlinux.org/title/Wayland#Electron
+ELECTRON_OZONE_PLATFORM_HINT=wayland
+
+XDG_SESSION_TYPE=wayland
