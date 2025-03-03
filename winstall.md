@@ -1,15 +1,15 @@
 # Win
 
-1. Default stuff (originally from `ms-store`):
+## Default stuff (originally from `ms-store`):
 
 - `windows-terminal` (`Windows Terminal`, <https://github.com/microsoft/terminal>)
 - `winget` (`App Installer`, <https://github.com/microsoft/winget-cli>)
 
-1.1 Windows Terminal Theme
+### Windows Terminal Theme
 
 Install theme from <https://github.com/Gigas002/awesome-sweet/tree/master/windows-terminal>
 
-2. `winget` stuff:
+## `winget` stuff:
 
 ```pwsh
 # essential
@@ -18,7 +18,7 @@ winget install --id=Microsoft.PowerShell  -e
 # drivers
 winget install --id=Corsair.iCUE.5  -e
 winget install --id=RazerInc.RazerInstaller4  -e
-# deprecated
+# deprecated, Kitfort not in repos yet
 # winget install --id=WesternDigital.Dashboard  -e
 
 # virtualization
@@ -58,26 +58,26 @@ winget install --id=FilesCommunity.Files  -e
 # winget install --id=ShareX.ShareX  -e
 ```
 
-3. Install `scoop`:
+## Install `scoop`:
 
 ```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
-4. Add buckets to `scoop`:
+## Add buckets to `scoop`:
 
 ```pwsh
 scoop bucket add games
 # scoop bucket add nerd-fonts
 # scoop bucket add sysinternals
 scoop bucket add extras
-scoop bucket add java
+# scoop bucket add java
 # scoop bucket add versions
 # scoop bucket add nonportable
 ```
 
-5. `scoop` stuff:
+## `scoop` stuff:
 
 ```pwsh
 scoop install main/7zip
@@ -90,7 +90,6 @@ scoop install extras/shutup10
 
 scoop install extras/firefox
 
-# shitty, prefer winget
 scoop install extras/vscode
 
 scoop install extras/telegram
@@ -147,11 +146,24 @@ scoop install main/bottom
 # scoop install extras/kdenlive
 ```
 
-6. Not in repos:
-
-`scoop bucket add mock1328_bucket https://github.com/mock1328/scoop-bucket`
+## Not in repos:
 
 - `Playstation Accessories`: <https://controller.dl.playstation.net/controller/lang/en/2100004.html>
 - `HoyoPlay`: <https://hoyoplay.hoyoverse.com/> -> Not in the repo yet
 - `MSI Center`: <https://www.msi.com/Motherboard/MPG-X870E-CARBON-WIFI/support#utility> -> probably auto-installed by windows as driver utility
 - `Western Digital Kitfox`: <https://support-en.wd.com/app/products/downloads/softwaredownloads>
+
+## `vscode` extensions
+
+- Remote Development
+- Remote Explorer
+- Remote Repositories
+- Color Highlight
+- Docker
+- GitHub Copilot
+- GitHub Copilot Chat
+- GitLens
+- markdownlint
+- Path Intellisense
+- PowerShell
+- Prettier
