@@ -313,6 +313,12 @@ git commit -a -m "Initial commit"
 - XML
 - vscode-nushell-lang
 
+`Hyprland` extension requires language server package:
+
+```sh
+paru -S hyprls-git
+```
+
 ## `firefox` sfuff
 
 Locate your profile with on `about:profiles`. Init git repo and pull scripts from arkenfox repos and my `user-overrides.js`. Use `updater.sh`
