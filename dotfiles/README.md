@@ -4,6 +4,8 @@ This directory contains redistributable bits of my system's configuration files.
 
 The overall structure:
 
+- `boot` -> `/boot`
+- `dotcargo` -> `~/.cargo`
 - `dotconfig` -> `~/.config`
 - `dotlocal` -> `~/.local`
 - `etc` -> `/etc`
@@ -90,7 +92,7 @@ Exclude directories you don't want to be scanned (for a better perf and less mem
 
 Your default directories locations
 
-## Stuff in /etc
+## Stuff in /etc and /boot
 
 Don't copy if you don't know what you're doing, use these configs only as a reference material for your own configurations. Copying this can break your stuff and you'll have bad time
 
