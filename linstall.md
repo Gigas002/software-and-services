@@ -302,6 +302,7 @@ git commit -a -m "Initial commit"
 - GitHub Pull Requests
 - GitLens
 - HTML CSS Support
+- Hyprland
 - IntelliCode
 - Markdown Preview Mermaid Support
 - markdownlint
@@ -309,6 +310,8 @@ git commit -a -m "Initial commit"
 - Prettier
 - rust-analyzer
 - YAML
+- XML
+- vscode-nushell-lang
 
 ## `firefox` sfuff
 
@@ -341,12 +344,14 @@ ff2mpv-rust manifest | save -f ff2mpv.json
 
 Extensions:
 
+- [duckduckgo](https://github.com/duckduckgo/duckduckgo-privacy-extension)
+- [libredirect](https://github.com/libredirect/browser_extension)
+- [plasma-browser-integration](https://github.com/KDE/plasma-browser-integration)
+- [smart-referer](https://gitlab.com/smart-referrer/smart-referer)
 - [ff2mpv](https://github.com/woodruffw/ff2mpv)
 - [stylus](https://github.com/openstyles/stylus/)
-- [tabliss](https://github.com/joelshepherd/tabliss)
+- [tabliss](https://github.com/joelshepherd/tabliss) or [tabliss-maintained](https://github.com/BookCatKid/tabliss-maintained)
 - [uBlock Origin](https://github.com/gorhill/uBlock)
 - [control-panel-for-twitter](https://github.com/insin/control-panel-for-twitter)
 - [proton-pass](https://github.com/ProtonPass)
 - [violentmonkey](https://github.com/violentmonkey/violentmonkey)
-
-TODO: export stylus, tabliss, ublock origin rules, violent monkey scripts into repo
