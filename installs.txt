@@ -71,6 +71,7 @@ device-mapper
 dhclient
 dhcpcd
 diffutils
+discover
 diskonaut
 dmidecode
 dmraid
@@ -79,6 +80,7 @@ dolphin
 dolphin-emu
 dolphin-emu-tool
 dolphin-plugins
+dosbox
 dosfstools
 dotnet-sdk
 downgrade
@@ -97,7 +99,7 @@ extra-cmake-modules
 f2fs-tools
 fastfetch
 fd
-ff2mpv-native-messaging-host-git
+ff2mpv-rust
 ffmpeg
 ffmpegthumbs
 ffnvcodec-headers
@@ -115,12 +117,14 @@ gamescope
 gcc-libs
 gdal
 glad
+glib2-devel
 glibc
 glibc-locales
 glu
 gnome-icon-theme
 gnome-keyring
 gnome-themes-extra
+go
 greetd-regreet-git
 greetd-tuigreet
 grimblast-git
@@ -149,12 +153,14 @@ gvfs-nfs
 gvfs-smb
 handbrake
 haveged
+helix
 heroic-games-launcher
 hypridle
 hyprkeys
 hyprland
 hyprland-qtutils
 hyprlock
+hyprls-git
 hyprpaper
 hyprpicker
 hyprpolkitagent
@@ -241,15 +247,14 @@ libglvnd
 libktorrent
 libldap24
 libreoffice-fresh
-libunity
 libva
 libva-intel-driver
 libvips
 libxpresent
 licenses
+linux-cachyos
+linux-cachyos-headers
 linux-steam-integration
-linux-xanmod-linux-bin-x64v3
-linux-xanmod-linux-headers-bin-x64v3
 linux66
 logrotate
 lolcat
@@ -440,6 +445,7 @@ samrewritten-git
 scanmem
 sccache
 screenfetch
+scx-scheds
 sddm
 sddm-breath-theme
 sddm-kcm
@@ -577,3 +583,5 @@ zed
 zellij
 zensu
 zip
+zlib-ng
+zlib-ng-compat
