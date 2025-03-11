@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!prefs.js
+!prefsCleaner.sh
+!user.js
+!user-overrides.js
+!updater.sh
