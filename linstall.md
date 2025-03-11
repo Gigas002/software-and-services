@@ -55,7 +55,7 @@ And logout from LiveCD
     - [ ] sddm
     - [ ] sddm-kcm
     - [ ] phonon-qt6-vlc
-CPU:
+- [x] CPU:
     - [ ] Intel
 - [x] Firefox
 ```
@@ -63,12 +63,13 @@ CPU:
 ## install AUR helper (docker)
 
 ```sh
+cd ~
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 paru --gendb
-cd ../
-rm -rf paru
+cd ~
+rm -rf ~/paru
 ```
 
 ## greeter
@@ -78,21 +79,11 @@ paru -S greetd-tuigreet
 mkdir /etc/greetd
 micro /etc/greetd/config.toml
 # if you have installed sddm
-sudo systemctl disable sddm.service
+# sudo systemctl disable sddm.service
 sudo systemctl enable greetd.service
 ```
 
 Note: updating `/etc/sddm.conf` and `/etc/sddm.conf.d/` not required, since cachyos's defaults uses these configs
-
-## `Apparmor` and `systemd-boot` configurations if needed
-
-See: <https://wiki.cachyos.org/configuration/post_install_setup/>
-See <https://github.com/Gigas002/software-and-services/blob/master/dotfiles/boot/README.md>
-
-```sh
-systemctl enable --now apparmor.service
-micro /etc/apparmor/parser.conf
-```
 
 ## fix global configs
 
@@ -115,25 +106,26 @@ cd ~/downloads
 git clone https://github.com/Gigas002/software-and-services
 
 # manually merge baloofilerc exclude folders and filters
-rm ~/downloads/software-and-services/dotfiles/dotconfig/baloofilerc
+micro ~/.config/baloofilerc
+rm ~/downloads/software-and-services/dotfiles/HOME/dotconfig/baloofilerc
 
 mkdir ~/.config
-cp -r ~/downloads/software-and-services/dotfiles/dotconfig/* ~/.config
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotconfig/* ~/.config
 
 # remove kde places, should be overriden with above copy's ~/.config/user-dirs.dirs
 mkdir ~/desktop ~/documents ~/downloads ~/music ~/images ~/share ~/templates ~/videos
 rm -rf ~/Desktop ~/Documents ~/Downloads/ ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 
 mkdir ~/.cargo
-cp -r ~/downloads/software-and-services/dotfiles/dotcargo/config.toml ~/.cargo/config.toml
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotcargo/config.toml ~/.cargo/config.toml
 ```
 
 For GUI (including above):
 
 ```sh
 mkdir ~/.local
-cp -r ~/downloads/software-and-services/dotfiles/dotlocal/* ~/.local
-cp -r ~/downloads/software-and-services/dotfiles/.gtkrc-2.0 ~/.gtkrc-2.0
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotlocal/* ~/.local
+cp -r ~/downloads/software-and-services/dotfiles/HOME/.gtkrc-2.0 ~/.gtkrc-2.0
 ```
 
 Remove ones you won't need (e.g. for docker container I do this):
@@ -162,7 +154,7 @@ paru -S ccache sccache cargo-cache
 paru -S rust rust-analyzer rust-src
 
 # base cli tools
-paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij openssh downgrade uutils-coreutils bat
+paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij openssh downgrade uutils-coreutils bat onefetch
 
 # installing AUR packages requires yazi and micro installation first
 paru -S carapace-bin
@@ -183,7 +175,7 @@ paru -S cliphist 7zip apparmor apparmor.d-git fwupd modprobed-db network-manager
 paru -S code zed
 
 # fix code configs
-mkdir '~/.config/Code - OSS'
+cd ~/.config && mkdir "Code - OSS" && mkdir "Code - OSS/User"
 cp -r ~/.config/VSCodium/product.json '~/.config/Code - OSS'
 cp -r ~/.config/VSCodium/User/settings.json '~/.config/Code - OSS/User'
 rm -rf ~/.config/VSCodium
@@ -201,6 +193,8 @@ rm ~/.config/mpv/mpv-windows.conf
 paru -S libreoffice-fresh
 
 # downloaders
+# gallery-dl requires gpg key, see: https://aur.archlinux.org/packages/gallery-dl
+gpg --recv-keys 5680CA389D365A88
 paru -S yt-dlp gallery-dl qbittorrent
 
 # communications
@@ -221,6 +215,8 @@ paru -S hyprland hyprlock xdg-desktop-portal-hyprland hyprpicker hyprswitch hypr
 micro ~/.config/hypr/hyprland.conf
 
 # productivity hyprland apps
+# wleave requires key, see: https://aur.archlinux.org/packages/wleave-git
+gpg --recv-keys --keyserver hkps://keyserver.ubuntu.com 4F9434A2EAC21BEC148F3656BF6CB659ADEE60EC
 paru -S wleave-git ashell tofi dunst grimblast-git swww brightnessctl
 
 # remove some qt5, plasma and cachyos stuff
@@ -230,13 +226,38 @@ paru -Rns phonon-qt6-vlc kf5 cachyos-themes-sddm flatpak-kcm cachyos-zsh-config 
 For gaming:
 
 ```sh
-paru -S dualsensectl-git gameconqueror gamemode gamescope gst-plugins-good gstreamer-vaapi steam steam-native-runtime proton-cachyos fuzzylite-git vcmi lutris umu-launcher mangohud osu-lazer-bin protontricks samrewritten-git scanmem vkbasalt vkbasalt-cli vkd3d vkd3d-proton-mingw-git wowup-cf-bin cachyos-gaming-meta
+# when asked for lib32-vulkan, look at this before selecting: https://wiki.archlinux.org/title/Vulkan
 
-# build wine
+# install proton
+paru -S proton-cachyos
+
+# install wine
+paru -S wine-cachyos
+
+# or build your own wine
 cd ~/downloads
 git clone https://github.com/Frogging-Family/wine-tkg-git
 cd ~/downloads/wine-tkg-git/wine-tkg-git
 makepkg -si
+
+# hardware utilities
+paru -S dualsensectl-git
+
+# libs
+paru -S gamemode gamescope gst-plugins-good gstreamer-vaapi vkbasalt vkbasalt-cli vkd3d vkd3d-proton-mingw dxvk-mingw
+
+# launchers
+paru -S steam steam-native-runtime lutris umu-launcher
+
+# utils
+paru -S gameconqueror scanmem mangohud protontricks samrewritten-git
+
+# beware, as it installs wine-cachyos-opt
+paru -S cachyos-gaming-meta
+paru -Rdd wine-cachyos-opt
+
+# games, prefer osu-lazer-bin because nuget shits tons of packages in cache on build
+paru -S fuzzylite-git vcmi osu-lazer-bin wowup-cf-bin anime-games-launcher
 ```
 
 ### fix config paths
@@ -278,6 +299,8 @@ Manually applying theme in KDE system settings may also be required. Reboot afte
 
 ## init repo to track config changes
 
+TODO: add gitignore
+
 ```sh
 cd ~/.config
 git init
@@ -285,6 +308,24 @@ git init
 micro ~/.config/.gitignore
 git add *
 git commit -a -m "Initial commit"
+```
+
+## `Apparmor` and `systemd-boot` configurations if needed
+
+For details, see: <https://wiki.cachyos.org/configuration/post_install_setup/>
+
+And: <https://github.com/Gigas002/software-and-services/blob/master/dotfiles/boot/README.md>
+
+```sh
+# systemd-boot config requires root to enter /boot
+sudo su
+micro /boot/loader/loader.conf
+exit
+micro /etc/sdboot-manage.conf
+sudo sdboot-manage gen
+
+systemctl enable --now apparmor.service
+micro /etc/apparmor/parser.conf
 ```
 
 ## `vscode` extensions
@@ -321,14 +362,20 @@ paru -S hyprls-git
 
 ## `firefox` sfuff
 
-Locate your profile with on `about:profiles`. Init git repo and pull scripts from arkenfox repos and my `user-overrides.js`. Use `updater.sh`
+TODO: add gitignore
+
+Locate your profile with on `about:profiles`
+
+Init git repo and pull scripts from arkenfox repos and my `user-overrides.js`. Use `updater.sh`
 
 ```sh
 cd ~/downloads
 git clone https://github.com/arkenfox/user.js
+
+# %profile% is one with -release in dir name
 cp ~/downloads/user.js/updater.sh ~/.mozilla/firefox/%profile%
 cp ~/downloads/user.js/prefsCleaner.sh ~/.mozilla/firefox/%profile%
-cp ~/downloads/software-and-services/userjs/user-overrides.js ~/.mozilla/firefox/%profile%
+cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/user-overrides.js ~/.mozilla/firefox/%profile%
 cd ~/.mozilla/firefox/%profile%
 chmod +x updater.sh
 chmod +x prefsCleaner.sh
@@ -340,12 +387,16 @@ git add *
 git commit -a -m "Initial commit"
 ```
 
+For `ff2mpv`:
+
 ```sh
 # optionally, check installation guide: https://github.com/ryze312/ff2mpv-rust
 paru -S ff2mpv-rust
 mkdir ~/.mozilla/native-messaging-hosts
-cd ~/.mozilla/native-messaging-hosts
-ff2mpv-rust manifest | save -f ff2mpv.json
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/native-messaging-hosts/* ~/.mozilla/native-messaging-hosts
+# or run this instead of cp
+# cd ~/.mozilla/native-messaging-hosts
+# ff2mpv-rust manifest | save -f ff2mpv.json
 ```
 
 Extensions:
@@ -361,3 +412,24 @@ Extensions:
 - [control-panel-for-twitter](https://github.com/insin/control-panel-for-twitter)
 - [proton-pass](https://github.com/ProtonPass)
 - [violentmonkey](https://github.com/violentmonkey/violentmonkey)
+
+## fancy colors
+
+```sh
+# general
+paru -S openrgb
+
+# razer
+paru -S polychromatic
+
+# corsair
+paru -S openlinkhub-bin
+```
+
+## OLED
+
+See usage: https://github.com/mklan/hyproled
+
+```sh
+paru -S hyproled-git
+```
