@@ -4,4 +4,4 @@ exclude filters=*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,c
 exclude filters version=8
 
 # Exclude folders from indexing, see: https://community.kde.org/Baloo/Configuration#Exclude_Folders
-exclude folders[$e]=$HOME/games/,$HOME/documents/,$HOME/downloads/,$HOME/windisk/,$HOME/.local/share/Steam/
+exclude folders[$e]=$HOME/games/,$HOME/documents/,$HOME/downloads/,$HOME/windisk/,$HOME/.local/share/Steam/,$HOME/.cache,$HOME/.nuget,$HOME/.wine,$HOME/Games
