@@ -12,18 +12,16 @@ makedepends=(
     'git'
 )
 depends=(
-    # TODO: kvantum theme only
-    'kvantum'
-    
     'candy-icons-git'
 )
 optdepends=(
-    'sweet-folders-icons-git: sweet folder icons'
     'cantarell-fonts: tertiary font face defined'
     'beautyline: alternative icons set'
-    # TODO: cursors and kvantum
-    'sweet-cursors-git'
-    # 'sweet-kvantum-git'
+    'sweet-cursors-git: KDE cursors'
+    'sweet-kvantum-git: kvantum theme'
+    'sweet-konsole-git: konsole theme'
+    'sweet-sddm-git: sddm theme'
+    'sweet-folders-git: folder icons'
 )
 conflicts=(
     'plasma5-themes-sweet-kde-git'
@@ -47,13 +45,4 @@ package() {
 
 	# look-and-feel and desktoptheme
     cp -R "$srcdir/$_pkgname/plasma" "$pkgdir/usr/share/plasma"
-
-	# konsole
-    cp -R "$srcdir/$_pkgname/konsole" "$pkgdir/usr/share/konsole"
-    
-	# sddm
-	cp -R "$srcdir/$_pkgname/sddm" "$pkgdir/usr/share/sddm"
-
-    # kvantum
-    cp -R "$srcdir/$_pkgname/Kvantum" "$pkgdir/usr/share/Kvantum"
 }

@@ -1,5 +1,5 @@
-pkgbase = sweet-cursors-git
-	pkgdesc = Sweet cursors KDE theme
+pkgbase = sweet-cursors-hyprcursor-git
+	pkgdesc = Sweet cursor theme for hyprcursor
 	pkgver = r415.3a4a5d5
 	pkgrel = 1
 	url = https://github.com/Gigas002/Sweet
@@ -8,9 +8,10 @@ pkgbase = sweet-cursors-git
 	makedepends = git
 	makedepends = inkscape
 	makedepends = xorg-xcursorgen
-	provides = Sweet-cursors
+	depends = hyprcursor
+	provides = Sweet-cursors-hyprcursor
 	options = !strip
 	source = git+https://github.com/Gigas002/Sweet.git#branch=cursors
 	sha256sums = SKIP
 
-pkgname = sweet-cursors-git
+pkgname = sweet-cursors-hyprcursor-git

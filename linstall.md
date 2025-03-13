@@ -297,18 +297,26 @@ paru -S ttf-roboto ttf-ubuntu-font-family
 cd ~/downloads/software-and-services/PKGBUILDs/gtk-theme-sweet-git
 makepkg -si
 
-# icons
-# TODO: include PR with fix: https://github.com/EliverLara/Sweet-folders/pull/21
-paru -S candy-icons-git sweet-folders-icons-git
+# folder icons
+paru -S candy-icons-git
+cd ~/downloads/software-and-services/PKGBUILDs/sweet-folders-git
+makepkg -si
 
 # KDE
-paru -S kvantum qt6ct-kde
 cd ~/downloads/software-and-services/PKGBUILDs/plasma-themes-sweet-kde-git
 makepkg -si
 
-# Cursors
-# This includes hyprcursors
+# kvantum
+paru -S kvantum qt6ct-kde
+cd ~/downloads/software-and-services/PKGBUILDs/sweet-kvantum-git
+makepkg -si
+
+# cursors
 cd ~/downloads/software-and-services/PKGBUILDs/sweet-cursors-git
+makepkg -si
+
+# hyprcursors
+cd ~/downloads/software-and-services/PKGBUILDs/sweet-cursors-hyprcursor-git
 makepkg -si
 ```
 

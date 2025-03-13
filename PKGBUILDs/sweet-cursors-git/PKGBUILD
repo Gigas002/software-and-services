@@ -3,17 +3,15 @@
 pkgname=sweet-cursors-git
 _reponame=Sweet
 _pkgname=Sweet-cursors
-pkgver=r405.c7e35b1
+pkgver=r415.3a4a5d5
 pkgrel=1
-pkgdesc="Sweet cursors themes"
+pkgdesc="Sweet cursors KDE theme"
 arch=('x86_64')
 url="https://github.com/Gigas002/$_reponame"
 license=('GPL3')
 makedepends=('git' 'inkscape' 'xorg-xcursorgen')
-depends=('hyprcursor')
 optdepends=()
 provides=("Sweet-cursors")
-conflicts=("Sweet-cursors-hyprcursors")
 options=('!strip')
 source=("git+$url.git#branch=cursors")
 sha256sums=('SKIP')
@@ -25,11 +23,9 @@ pkgver() {
 
 build() {
     cd "$srcdir/$_reponame/kde/cursors"
-    chmod +x build_hyprcursors.sh
 	chmod +x build_scalable.sh
     chmod +x build.sh
 
-    ./build_hyprcursors.sh
     ./build_scalable.sh
     ./build.sh
 }
@@ -38,6 +34,5 @@ package() {
     install -d "$pkgdir/usr/share/icons"
 
 	cp -R "$srcdir/$_reponame/kde/cursors/Sweet-cursors" "$pkgdir/usr/share/icons"
-    cp -R "$srcdir/$_reponame/kde/cursors/Sweet-cursors-hyprcursor" "$pkgdir/usr/share/icons"
 }
 
