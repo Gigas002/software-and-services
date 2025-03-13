@@ -154,7 +154,7 @@ paru -S ccache sccache cargo-cache
 paru -S rust rust-analyzer rust-src
 
 # base cli tools
-paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij openssh downgrade uutils-coreutils bat onefetch
+paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij openssh downgrade uutils-coreutils bat onefetch gitui gping
 
 # installing AUR packages requires yazi and micro installation first
 paru -S carapace-bin
@@ -204,7 +204,7 @@ paru -S telegram-desktop vesktop
 paru -S kcalc kdialog kf6 qt6
 
 # other
-paru -S proton-vpn-gtk-app thorium-browser-bin ventoy rustdesk-bin
+paru -S proton-vpn-gtk-app thorium-browser-bin ventoy rustdesk-bin sniffnet
 
 # hyprland essentials
 paru -S hyprland hyprlock xdg-desktop-portal-hyprland hyprpicker hyprswitch hyprpaper hypridle hyprpolkitagent hyprland-protocols
@@ -244,7 +244,7 @@ makepkg -si
 paru -S dualsensectl-git
 
 # libs
-paru -S gamemode gamescope gst-plugins-good gstreamer-vaapi vkbasalt vkbasalt-cli vkd3d vkd3d-proton-mingw dxvk-mingw
+paru -S gamemode gamescope gst-plugins-good gstreamer-vaapi vkbasalt vkbasalt-cli vkd3d vkd3d-proton-mingw-git dxvk-mingw-git
 
 # launchers
 paru -S steam steam-native-runtime lutris umu-launcher
@@ -253,7 +253,7 @@ paru -S steam steam-native-runtime lutris umu-launcher
 paru -S gameconqueror scanmem mangohud protontricks samrewritten-git
 
 # beware, as it installs wine-cachyos-opt
-paru -S cachyos-gaming-meta
+paru -S cachyos-gaming-meta cachyos-gaming-applications
 paru -Rdd wine-cachyos-opt
 
 # games, prefer osu-lazer-bin because nuget shits tons of packages in cache on build
@@ -272,7 +272,6 @@ carapace _carapace nushell | save -f carapace.nu
 
 That's everything, I guess, but better check yourself via `vscode`
 
-
 ## install Sweet theme
 
 ```sh
@@ -282,6 +281,7 @@ cd ~/downloads/software-and-services/PKGBUILDs/gtk-theme-sweet-git
 makepkg -si
 
 # icons
+# TODO: include PR with fix: https://github.com/EliverLara/Sweet-folders/pull/21
 paru -S candy-icons-git sweet-folders-icons-git
 
 # KDE
@@ -299,13 +299,11 @@ Manually applying theme in KDE system settings may also be required. Reboot afte
 
 ## init repo to track config changes
 
-TODO: add gitignore
-
 ```sh
 cd ~/.config
 git init
-# create a .gitignore files for fatty stuff like electron
-micro ~/.config/.gitignore
+# .gitignore file copied from repo, for fatty stuff like electron
+# micro ~/.config/.gitignore
 git add *
 git commit -a -m "Initial commit"
 ```
@@ -362,8 +360,6 @@ paru -S hyprls-git
 
 ## `firefox` sfuff
 
-TODO: add gitignore
-
 Locate your profile with on `about:profiles`
 
 Init git repo and pull scripts from arkenfox repos and my `user-overrides.js`. Use `updater.sh`
@@ -382,7 +378,11 @@ chmod +x prefsCleaner.sh
 ./updater.sh
 ./prefsCleaner.sh
 ./updater.sh
+
+# init repo
 git init
+# manually copy .gitignore
+cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/.gitingore ~/.mozilla/firefox/%profile%
 git add *
 git commit -a -m "Initial commit"
 ```
@@ -428,8 +428,24 @@ paru -S openlinkhub-bin
 
 ## OLED
 
-See usage: https://github.com/mklan/hyproled
+See usage: <https://github.com/mklan/hyproled>
 
 ```sh
 paru -S hyproled-git
 ```
+
+## Disable splitlock to help games
+
+See: <https://wiki.cachyos.org/configuration/general_system_tweaks/#disabling-split-lock-mitigate>
+
+```sh
+sudo mkdir /etc/sysctl.d
+sudo cp ~/downloads/software-and-services/dotfiles/etc/sysctl.d/99-splitlock.conf /etc/sysctl.d/99-splitlock.conf
+```
+
+## Performance Tweaks
+
+- Enable `amd_pstate=guided` -- via kernel args in `sdboot-manage`/`/boot/loader/entries/entry` or via `amdpstate-guided` sciprt on cachyos, see: <https://wiki.cachyos.org/features/cachyos_settings/#helper-scripts>
+- Use `game-performance` script as launch option for games, see: <https://wiki.cachyos.org/configuration/gaming/#how-to-add-game-performance-to-steam-lutris-heroic-games-launcher-and-bottles>
+- Change 3D-V Cache Optimizer mode to `cache` when gaming, see: <https://wiki.cachyos.org/configuration/general_system_tweaks/#amd-3d-v-cache-optimizer>
+- Enable `scx_bpfland` or `scx_lavd` in cachyos Kernel Manager GUI. Then, disable ananicy rules, see: <https://wiki.cachyos.org/configuration/sched-ext/#disable-ananicy-cpp>
