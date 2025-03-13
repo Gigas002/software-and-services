@@ -30,8 +30,10 @@ winget install --id=Microsoft.WSL  -e
 winget install --id=Apple.iTunes  -e
 winget install --id=Proton.ProtonVPN  -e
 winget install --id=CodecGuide.K-LiteCodecPack.Mega  -e
-winget install --id=Microsoft.PowerToys  -e
 winget install --id=FilesCommunity.Files  -e
+
+# prefer changing PowerToys Run hotkey to win+r
+winget install --id=Microsoft.PowerToys  -e
 
 # has context menu/file assotiations
 # winget install --id=Giorgiotani.Peazip  -e
@@ -69,7 +71,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ```pwsh
 scoop bucket add games
-# scoop bucket add nerd-fonts
+scoop bucket add nerd-fonts
 # scoop bucket add sysinternals
 scoop bucket add extras
 # scoop bucket add java
@@ -85,6 +87,9 @@ scoop install main/7zip
 scoop install main/git
 # np in fact
 scoop install extras/vcredist
+
+# font for windows terminal and komorebi
+scoop install nerd-fonts/CascadiaMono-NF-Mono
 
 scoop install extras/shutup10
 
@@ -152,6 +157,43 @@ scoop install main/bottom
 - `HoyoPlay`: <https://hoyoplay.hoyoverse.com/> -> Not in the repo yet
 - `MSI Center`: <https://www.msi.com/Motherboard/MPG-X870E-CARBON-WIFI/support#utility> -> probably auto-installed by windows as driver utility
 - `Western Digital Kitfox`: <https://support-en.wd.com/app/products/downloads/softwaredownloads>
+
+## komorebi setup
+
+See: <https://lgug2z.github.io/komorebi/installation.html>
+
+```sh
+# enable long paths
+Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+scoop install komorebi whkd
+
+# this will generate default configs
+komorebic quickstart
+# komorebic start --whkd --bar
+
+# add auto-start entry
+komorebic enable-autostart --whkd --bar
+```
+
+Add configs:
+
+```sh
+cd $HOME
+git clone https://github.com/Gigas002/software-and-services
+
+mkdir $HOME/.config
+mkdir $HOME/.local
+mkdir $HOME/.local/bin
+
+# copy the configs
+cp $HOME/software-and-services/windows/HOME/komorebi.json $HOME/komorebi.json
+cp $HOME/software-and-services/windows/HOME/komorebi.bar.json $HOME/komorebi.bar.json
+cp $HOME/software-and-services/windows/HOME/dotconfig/whkdrc $HOME/.config/whkdrc
+cp $HOME/software-and-services/windows/HOME/dotlocal/bin/pkill.ps1 $HOME/dotlocal/bin/pkill.ps1
+
+# kill whkd & komorebi if it's running and restart
+komorebic start --whkd --bar
+```
 
 ## `vscode` extensions
 
