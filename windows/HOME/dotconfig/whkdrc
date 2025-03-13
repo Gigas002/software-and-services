@@ -1,0 +1,62 @@
+.shell pwsh
+
+# reload configs
+VK_LWIN + h             : komorebic reload-configuration
+VK_LWIN + o             : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden
+
+# browser
+# VK_LWIN + f             : Start-Process "microsoft-edge:"
+VK_LWIN + f             : start firefox
+
+# terminal
+VK_LWIN + t             : start wt
+
+# kill active
+VK_LWIN + q             : pwsh -File $HOME/.local/bin/pkill.ps1
+
+# editor
+VK_LWIN + c             : start code
+
+# file explorer
+VK_LWIN + e             : start $HOME
+
+# app launcher menu
+# can use Powertoys Run with alt + space hotkey by deafult, or override in settings
+# VK_LWIN + r             : start wox
+
+# Focus windows
+VK_LWIN + left          : komorebic focus left
+VK_LWIN + down          : komorebic focus down
+VK_LWIN + up            : komorebic focus up
+VK_LWIN + right         : komorebic focus right
+
+# Move windows
+VK_LWIN + shift + left  : komorebic move left
+VK_LWIN + shift + down  : komorebic move down
+VK_LWIN + shift + up    : komorebic move up
+VK_LWIN + shift + right : komorebic move right
+
+# Float active
+VK_LWIN + w             : komorebic toggle-float
+
+# Workspaces
+VK_LWIN + 1             : komorebic focus-workspace 0
+VK_LWIN + 2             : komorebic focus-workspace 1
+VK_LWIN + 3             : komorebic focus-workspace 2
+VK_LWIN + 4             : komorebic focus-workspace 3
+VK_LWIN + 5             : komorebic focus-workspace 4
+VK_LWIN + 6             : komorebic focus-workspace 5
+VK_LWIN + 7             : komorebic focus-workspace 6
+VK_LWIN + 8             : komorebic focus-workspace 7
+VK_LWIN + 9             : komorebic focus-workspace 8
+
+# Move windows across workspaces
+VK_LWIN + shift + 1     : komorebic move-to-workspace 0
+VK_LWIN + shift + 2     : komorebic move-to-workspace 1
+VK_LWIN + shift + 3     : komorebic move-to-workspace 2
+VK_LWIN + shift + 4     : komorebic move-to-workspace 3
+VK_LWIN + shift + 5     : komorebic move-to-workspace 4
+VK_LWIN + shift + 6     : komorebic move-to-workspace 5
+VK_LWIN + shift + 7     : komorebic move-to-workspace 6
+VK_LWIN + shift + 8     : komorebic move-to-workspace 7
+VK_LWIN + shift + 9     : komorebic move-to-workspace 8
