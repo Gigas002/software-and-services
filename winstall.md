@@ -1,6 +1,6 @@
 # Win
 
-## Default stuff (originally from `ms-store`):
+## Default stuff (originally from `ms-store`)
 
 - `windows-terminal` (`Windows Terminal`, <https://github.com/microsoft/terminal>)
 - `winget` (`App Installer`, <https://github.com/microsoft/winget-cli>)
@@ -9,7 +9,7 @@
 
 Install theme from <https://github.com/Gigas002/awesome-sweet/tree/master/windows-terminal>
 
-## `winget` stuff:
+## `winget` stuff
 
 ```pwsh
 # essential
@@ -58,14 +58,14 @@ winget install --id=FilesCommunity.Files  -e
 # winget install --id=ShareX.ShareX  -e
 ```
 
-## Install `scoop`:
+## Install `scoop`
 
 ```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
-## Add buckets to `scoop`:
+## Add buckets to `scoop`
 
 ```pwsh
 scoop bucket add games
@@ -77,7 +77,7 @@ scoop bucket add extras
 # scoop bucket add nonportable
 ```
 
-## `scoop` stuff:
+## `scoop` stuff
 
 ```pwsh
 scoop install main/7zip
@@ -146,7 +146,7 @@ scoop install main/bottom
 # scoop install extras/kdenlive
 ```
 
-## Not in repos:
+## Not in repos
 
 - `Playstation Accessories`: <https://controller.dl.playstation.net/controller/lang/en/2100004.html>
 - `HoyoPlay`: <https://hoyoplay.hoyoverse.com/> -> Not in the repo yet
