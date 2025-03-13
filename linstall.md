@@ -2,7 +2,7 @@
 
 ## install cachyos
 
-For proxy config:
+### proxy config
 
 ```sh
 micro /etc/environment
@@ -12,6 +12,8 @@ HTTPS_PROXY=http://192.168.11.88:8080
 
 And logout from LiveCD
 
+### installtion
+
 - systemd-boot
 - American English
 - Asia/Tokyo/en-US/ru-RU
@@ -19,48 +21,48 @@ And logout from LiveCD
 - erase disk/bcachefs
 - plasma
 
-```md
-- [x] CachyOS Packages:
-    - [ ] cachy-browser
-    - [ ] cachyos-hello
-    - [ ] cachyos-zsh-config
-    - [ ] cachyos-wallpapers
-- [x] Base:
-    - [ ] X-system
-    - [x] packages management
-        - [ ] octopi
-    - [x] Some applications:
-        - [ ] btop
-        - [ ] duf
-        - [ ] fsarchiver
-        - [ ] glances
-        - [ ] hwinfo
-        - [ ] inxi
-        - [ ] meld
-        - [ ] nano...
-        - [ ] vi
-        - [ ] wget
-        - [ ] ripgrep
-        - [ ] nano
-        - [ ] vim
-- [x] KDE:
-    - [ ] cachyos-nord-kde-theme-git
-    - [ ] cachyos-iridiscent-kde
-    - [ ] cachyos-emerald-kde-theme-git
-    - [ ] cachyos-themes-sddm
-    - [ ] gwenview
-    - [ ] konsole
-    - [ ] kate
-    - [ ] spectacle
-    - [ ] sddm
-    - [ ] sddm-kcm
-    - [ ] phonon-qt6-vlc
-- [x] CPU:
-    - [ ] Intel
-- [x] Firefox
-```
+Uncheck the following:
 
-## install AUR helper (docker)
+- [x] CachyOS Packages:
+  - [ ] cachy-browser
+  - [ ] cachyos-hello
+  - [ ] cachyos-zsh-config
+  - [ ] cachyos-wallpapers
+- [x] Base:
+  - [ ] X-system
+  - [x] packages management
+    - [ ] octopi
+  - [x] Some applications:
+    - [ ] btop
+    - [ ] duf
+    - [ ] fsarchiver
+    - [ ] glances
+    - [ ] hwinfo
+    - [ ] inxi
+    - [ ] meld
+    - [ ] nano...
+    - [ ] vi
+    - [ ] wget
+    - [ ] ripgrep
+    - [ ] nano
+    - [ ] vim
+- [x] KDE:
+  - [ ] cachyos-nord-kde-theme-git
+  - [ ] cachyos-iridiscent-kde
+  - [ ] cachyos-emerald-kde-theme-git
+  - [ ] cachyos-themes-sddm
+  - [ ] gwenview
+  - [ ] konsole
+  - [ ] kate
+  - [ ] spectacle
+  - [ ] sddm
+  - [ ] sddm-kcm
+  - [ ] phonon-qt6-vlc
+- [x] CPU:
+  - [ ] Intel
+- [x] Firefox
+
+## install AUR helper (arch, docker)
 
 ```sh
 cd ~
@@ -94,6 +96,10 @@ micro /etc/pacman.conf
 micro /etc/environment
 # not all compositors respect it, but also this can be used
 # /etc/profile.d/wayland-env.sh
+
+# disable splitlock for games, see: https://wiki.cachyos.org/configuration/general_system_tweaks/#disabling-split-lock-mitigate
+# sudo mkdir /etc/sysctl.d
+micro /etc/sysctl.d/99-splitlock.conf
 ```
 
 ## install configs
@@ -116,6 +122,7 @@ cp -r ~/downloads/software-and-services/dotfiles/HOME/dotconfig/* ~/.config
 mkdir ~/desktop ~/documents ~/downloads ~/music ~/images ~/share ~/templates ~/videos
 rm -rf ~/Desktop ~/Documents ~/Downloads/ ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
 
+# instruct cargo to use sccache for re-compilations
 mkdir ~/.cargo
 cp -r ~/downloads/software-and-services/dotfiles/HOME/dotcargo/config.toml ~/.cargo/config.toml
 ```
@@ -123,12 +130,15 @@ cp -r ~/downloads/software-and-services/dotfiles/HOME/dotcargo/config.toml ~/.ca
 For GUI (including above):
 
 ```sh
+# local scripts, mostly for hyprland
 mkdir ~/.local
 cp -r ~/downloads/software-and-services/dotfiles/HOME/dotlocal/* ~/.local
+
+# gtk 2.0 color scheme
 cp -r ~/downloads/software-and-services/dotfiles/HOME/.gtkrc-2.0 ~/.gtkrc-2.0
 ```
 
-Remove ones you won't need (e.g. for docker container I do this):
+Remove ones you won't need (e.g. in `docker`):
 
 ```sh
 cd ~/.config
@@ -148,10 +158,11 @@ For CLI:
 
 ```sh
 # improve re-compilations by saving cache
-paru -S ccache sccache cargo-cache
+# instructed in ~/.config/pacman/makepkg.conf and ~/.cargo/config.toml
+paru -S ccache sccache
 
 # dev
-paru -S rust rust-analyzer rust-src
+paru -S rust rust-analyzer rust-src cargo-cache
 
 # base cli tools
 paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij openssh downgrade uutils-coreutils bat onefetch gitui gping
@@ -220,7 +231,7 @@ gpg --recv-keys --keyserver hkps://keyserver.ubuntu.com 4F9434A2EAC21BEC148F3656
 paru -S wleave-git ashell tofi dunst grimblast-git swww brightnessctl
 
 # remove some qt5, plasma and cachyos stuff
-paru -Rns phonon-qt6-vlc kf5 cachyos-themes-sddm flatpak-kcm cachyos-zsh-config octopi sddm sddm-kcm
+paru -Rns phonon-qt6-vlc kf5 qt5 cachyos-themes-sddm flatpak-kcm cachyos-zsh-config octopi sddm sddm-kcm
 ```
 
 For gaming:
@@ -235,10 +246,10 @@ paru -S proton-cachyos
 paru -S wine-cachyos
 
 # or build your own wine
-cd ~/downloads
-git clone https://github.com/Frogging-Family/wine-tkg-git
-cd ~/downloads/wine-tkg-git/wine-tkg-git
-makepkg -si
+# cd ~/downloads
+# git clone https://github.com/Frogging-Family/wine-tkg-git
+# cd ~/downloads/wine-tkg-git/wine-tkg-git
+# makepkg -si
 
 # hardware utilities
 paru -S dualsensectl-git
@@ -265,12 +276,18 @@ paru -S fuzzylite-git vcmi osu-lazer-bin wowup-cf-bin anime-games-launcher
 If your username is not `gigas` you'll need to fix some paths:
 
 ```sh
+# git credentials are also mine
 # rm -rf ~/.config/git
+
+# pacman PACKAGER
+micro ~/.config/pacman/makepkg.conf
+
+# carapace uses full path in it's nu config
 cd ~/.config/nushell
 carapace _carapace nushell | save -f carapace.nu
 ```
 
-That's everything, I guess, but better check yourself via `vscode`
+That's everything, that is installed above, but better check yourself via `vscode` if you want to install anything else
 
 ## install Sweet theme
 
@@ -358,7 +375,7 @@ micro /etc/apparmor/parser.conf
 paru -S hyprls-git
 ```
 
-## `firefox` sfuff
+## `firefox` stuff
 
 Locate your profile with on `about:profiles`
 
@@ -428,19 +445,10 @@ paru -S openlinkhub-bin
 
 ## OLED
 
-See usage: <https://github.com/mklan/hyproled>
+Try to protect OLED display from burn-ins, see usage: <https://github.com/mklan/hyproled>
 
 ```sh
 paru -S hyproled-git
-```
-
-## Disable splitlock to help games
-
-See: <https://wiki.cachyos.org/configuration/general_system_tweaks/#disabling-split-lock-mitigate>
-
-```sh
-sudo mkdir /etc/sysctl.d
-sudo cp ~/downloads/software-and-services/dotfiles/etc/sysctl.d/99-splitlock.conf /etc/sysctl.d/99-splitlock.conf
 ```
 
 ## Performance Tweaks

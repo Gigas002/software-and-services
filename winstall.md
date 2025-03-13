@@ -11,53 +11,50 @@ Install theme from <https://github.com/Gigas002/awesome-sweet/tree/master/window
 
 ## `winget` stuff
 
-```pwsh
+```sh
 # essential
-winget install --id=Microsoft.PowerShell  -e
+winget install --id=Microsoft.PowerShell -e
 
 # drivers
-winget install --id=Corsair.iCUE.5  -e
-winget install --id=RazerInc.RazerInstaller4  -e
+winget install --id=Corsair.iCUE.5 -e
+winget install --id=RazerInc.RazerInstaller4 -e
 # deprecated, Kitfort not in repos yet
-# winget install --id=WesternDigital.Dashboard  -e
+# winget install --id=WesternDigital.Dashboard -e
 
 # virtualization
-winget install --id=Microsoft.WSL  -e
-# winget install --id=Docker.DockerDesktop  -e
-# winget install --id=Oracle.VirtualBox  -e
+# winget install --id=Microsoft.WSL -e
+# winget install --id=Docker.DockerDesktop -e
+# winget install --id=Oracle.VirtualBox -e
 
 # only non-portable
-winget install --id=Apple.iTunes  -e
-winget install --id=Proton.ProtonVPN  -e
-winget install --id=CodecGuide.K-LiteCodecPack.Mega  -e
-winget install --id=FilesCommunity.Files  -e
+# winget install --id=Apple.iTunes -e
+winget install --id=Proton.ProtonVPN -e
+winget install --id=CodecGuide.K-LiteCodecPack.Mega -e
+# winget install --id=FilesCommunity.Files -e
 
 # prefer changing PowerToys Run hotkey to win+r
-winget install --id=Microsoft.PowerToys  -e
+winget install --id=Microsoft.PowerToys -e
 
 # has context menu/file assotiations
-# winget install --id=Giorgiotani.Peazip  -e
-# winget install --id=7zip.7zip  -e
-# winget install --id=TheDocumentFoundation.LibreOffice  -e
-# winget install --id=Microsoft.VisualStudioCode  -e
+# winget install --id=7zip.7zip -e
+# winget install --id=TheDocumentFoundation.LibreOffice -e
+# winget install --id=Microsoft.VisualStudioCode -e
 
 # has file assotiations
-# winget install --id=Mozilla.Firefox  -e
-# winget install --id=DuongDieuPhap.ImageGlass  -e
+# winget install --id=Mozilla.Firefox -e
+# winget install --id=DuongDieuPhap.ImageGlass -e
 
 # has system calls, e.g. from browser
-# winget install --id=Vencord.Vesktop  -e
-# winget install --id=Discord.Discord  -e
-# winget install --id=Valve.Steam  -e
-# winget install --id=qBittorrent.qBittorrent  -e
-# winget install --id=OBSProject.OBSStudio  -e
-# winget install --id=Ventoy.Ventoy  -e
-# winget install --id=RustDesk.RustDesk  -e
+# winget install --id=Vencord.Vesktop -e
+# winget install --id=Discord.Discord -e
+# winget install --id=Valve.Steam -e
+# winget install --id=qBittorrent.qBittorrent -e
+# winget install --id=OBSProject.OBSStudio -e
+# winget install --id=Ventoy.Ventoy -e
+# winget install --id=RustDesk.RustDesk -e
 
 # should be auto-started by system
-# winget install --id=Telegram.TelegramDesktop  -e
-# winget install --id=Flameshot.Flameshot  -e
-# winget install --id=ShareX.ShareX  -e
+# winget install --id=Telegram.TelegramDesktop -e
 ```
 
 ## Install `scoop`
@@ -65,11 +62,14 @@ winget install --id=Microsoft.PowerToys  -e
 ```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+# enable long paths
+Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 ```
 
 ## Add buckets to `scoop`
 
-```pwsh
+```sh
 scoop bucket add games
 scoop bucket add nerd-fonts
 # scoop bucket add sysinternals
@@ -81,9 +81,8 @@ scoop bucket add extras
 
 ## `scoop` stuff
 
-```pwsh
+```sh
 scoop install main/7zip
-# scoop install extras/peazip
 scoop install main/git
 # np in fact
 scoop install extras/vcredist
@@ -96,6 +95,7 @@ scoop install extras/shutup10
 scoop install extras/firefox
 
 scoop install extras/vscode
+# scoop install extras/zed
 
 scoop install extras/telegram
 scoop install extras/vesktop
@@ -106,8 +106,6 @@ scoop install extras/oculante
 scoop install main/ffmpeg
 scoop install extras/mpv
 scoop install extras/obs-studio
-scoop install extras/sharex
-# scoop install extras/flameshot
 
 scoop install extras/cheat-engine
 scoop install games/steam
@@ -123,6 +121,7 @@ scoop install extras/ventoy
 scoop install extras/rustdesk
 # scoop install extras/snappy-driver-installer-origin
 
+# consider using in-system sudo
 scoop install main/gsudo
 # scoop install main/python
 # scoop install java/openjdk
@@ -138,7 +137,7 @@ scoop install main/gsudo
 scoop install main/micro
 scoop install main/yazi
 scoop install main/bottom
-# scoop install main/fastfetch
+scoop install main/fastfetch
 # scoop install main/libvips
 
 # has winget alternatives
@@ -147,26 +146,27 @@ scoop install main/bottom
 # scoop install nonportable/k-lite-codec-pack-mega-np
 # scoop install nonportable/virtualbox-np
 
+# optional editors
 # scoop install extras/krita
 # scoop install extras/kdenlive
+
+# komorebi
+scoop install extras/whkd
+scoop install extras/komorebi
 ```
 
 ## Not in repos
 
-- `Playstation Accessories`: <https://controller.dl.playstation.net/controller/lang/en/2100004.html>
-- `HoyoPlay`: <https://hoyoplay.hoyoverse.com/> -> Not in the repo yet
+- `Playstation Accessories`: <https://controller.dl.playstation.net/controller/lang/en/2100004.html> -> to update dualsense firmware
+- `HoyoPlay`: <https://hoyoplay.hoyoverse.com/> -> not in the repos yet
 - `MSI Center`: <https://www.msi.com/Motherboard/MPG-X870E-CARBON-WIFI/support#utility> -> probably auto-installed by windows as driver utility
-- `Western Digital Kitfox`: <https://support-en.wd.com/app/products/downloads/softwaredownloads>
+- `Western Digital Kitfox`: <https://support-en.wd.com/app/products/downloads/softwaredownloads> -> useless shit
 
 ## komorebi setup
 
 See: <https://lgug2z.github.io/komorebi/installation.html>
 
 ```sh
-# enable long paths
-Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
-scoop install komorebi whkd
-
 # this will generate default configs
 komorebic quickstart
 # komorebic start --whkd --bar
@@ -194,6 +194,10 @@ cp $HOME/software-and-services/windows/HOME/dotlocal/bin/pkill.ps1 $HOME/dotloca
 # kill whkd & komorebi if it's running and restart
 komorebic start --whkd --bar
 ```
+
+## Screenshoting
+
+Use `Snip Tool` from `msstore` (pre-installed), but configure the screenshots saving location on disk
 
 ## `vscode` extensions
 
