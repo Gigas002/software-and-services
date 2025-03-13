@@ -1,0 +1,451 @@
+# CLI setup
+
+## install cachyos
+
+For proxy config:
+
+```sh
+micro /etc/environment
+HTTP_PROXY=http://192.168.11.88:8080
+HTTPS_PROXY=http://192.168.11.88:8080
+```
+
+And logout from LiveCD
+
+- systemd-boot
+- American English
+- Asia/Tokyo/en-US/ru-RU
+- en/Default/alt+shift
+- erase disk/bcachefs
+- plasma
+
+```md
+- [x] CachyOS Packages:
+    - [ ] cachy-browser
+    - [ ] cachyos-hello
+    - [ ] cachyos-zsh-config
+    - [ ] cachyos-wallpapers
+- [x] Base:
+    - [ ] X-system
+    - [x] packages management
+        - [ ] octopi
+    - [x] Some applications:
+        - [ ] btop
+        - [ ] duf
+        - [ ] fsarchiver
+        - [ ] glances
+        - [ ] hwinfo
+        - [ ] inxi
+        - [ ] meld
+        - [ ] nano...
+        - [ ] vi
+        - [ ] wget
+        - [ ] ripgrep
+        - [ ] nano
+        - [ ] vim
+- [x] KDE:
+    - [ ] cachyos-nord-kde-theme-git
+    - [ ] cachyos-iridiscent-kde
+    - [ ] cachyos-emerald-kde-theme-git
+    - [ ] cachyos-themes-sddm
+    - [ ] gwenview
+    - [ ] konsole
+    - [ ] kate
+    - [ ] spectacle
+    - [ ] sddm
+    - [ ] sddm-kcm
+    - [ ] phonon-qt6-vlc
+- [x] CPU:
+    - [ ] Intel
+- [x] Firefox
+```
+
+## install AUR helper (docker)
+
+```sh
+cd ~
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+paru --gendb
+cd ~
+rm -rf ~/paru
+```
+
+## greeter
+
+```sh
+paru -S greetd-tuigreet
+mkdir /etc/greetd
+micro /etc/greetd/config.toml
+# if you have installed sddm
+# sudo systemctl disable sddm.service
+sudo systemctl enable greetd.service
+```
+
+Note: updating `/etc/sddm.conf` and `/etc/sddm.conf.d/` not required, since cachyos's defaults uses these configs
+
+## fix global configs
+
+```sh
+micro /etc/locale.conf
+sudo locale-gen
+micro /etc/pacman.conf
+micro /etc/environment
+# not all compositors respect it, but also this can be used
+# /etc/profile.d/wayland-env.sh
+```
+
+## install configs
+
+For CLI:
+
+```sh
+mkdir ~/downloads
+cd ~/downloads
+git clone https://github.com/Gigas002/software-and-services
+
+# manually merge baloofilerc exclude folders and filters
+micro ~/.config/baloofilerc
+rm ~/downloads/software-and-services/dotfiles/HOME/dotconfig/baloofilerc
+
+mkdir ~/.config
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotconfig/* ~/.config
+
+# remove kde places, should be overriden with above copy's ~/.config/user-dirs.dirs
+mkdir ~/desktop ~/documents ~/downloads ~/music ~/images ~/share ~/templates ~/videos
+rm -rf ~/Desktop ~/Documents ~/Downloads/ ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
+
+mkdir ~/.cargo
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotcargo/config.toml ~/.cargo/config.toml
+```
+
+For GUI (including above):
+
+```sh
+mkdir ~/.local
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotlocal/* ~/.local
+cp -r ~/downloads/software-and-services/dotfiles/HOME/.gtkrc-2.0 ~/.gtkrc-2.0
+```
+
+Remove ones you won't need (e.g. for docker container I do this):
+
+```sh
+cd ~/.config
+rm -rf alacritty/ anyrun/ dunst/ flameshot/ foot/ frogminer/ gallery-dl/ gtk-3.0/ gtk-4.0/ hypr/ imgvwr/ imv/ kickoff/ kitty/ Kvantum/ lapce-stable/ lsd/ menus/ mpv/ nano/ neofetch/ oculante/ oh-my-posh/ onagre/ Proton/ qimgv/ qt5ct/ qt6ct/ rofi/ steamtinkerlaunch/ swaylock/ tofi/ VSCodium/ waybar/ wleave/ wlogout/ xdg-desktop-portal/ xsettingsd/ yay/ zed/ zsh/ ashell.yml baloofilerc dolphinrc electron-flags.conf electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf kcminputrc kdeglobals plasmarc user-dirs.dirs nushell/oh-my-posh.nu ff2mpv-rust.json
+```
+
+For my GUI (instead of above):
+
+```sh
+cd ~/.config
+rm -rf anyrun/ flameshot/ imv/ kickoff/ kitty/ lapce-stable/ lsd/ nano/ neofetch/ oh-my-posh/ onagre/ rofi/ steamtinkerlaunch/ swaylock/ waybar/ wlogout/ yay/ zsh/ electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf
+```
+
+## install apps
+
+For CLI:
+
+```sh
+# improve re-compilations by saving cache
+paru -S ccache sccache cargo-cache
+
+# dev
+paru -S rust rust-analyzer rust-src
+
+# base cli tools
+paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij openssh downgrade uutils-coreutils bat onefetch gitui gping
+
+# installing AUR packages requires yazi and micro installation first
+paru -S carapace-bin
+
+# optionally, install fonts
+paru -S nerd-fonts
+# This requires manual building, may be needed by wine
+# paru -S ttf-ms-win11
+```
+
+For GUI (includes above):
+
+```sh
+# essential system utilities
+paru -S cliphist 7zip apparmor apparmor.d-git fwupd modprobed-db network-manager-applet cachy-chroot cachyos-sysctl-manager
+
+# editors
+paru -S code zed
+
+# fix code configs
+cd ~/.config && mkdir "Code - OSS" && mkdir "Code - OSS/User"
+cp -r ~/.config/VSCodium/product.json '~/.config/Code - OSS'
+cp -r ~/.config/VSCodium/User/settings.json '~/.config/Code - OSS/User'
+rm -rf ~/.config/VSCodium
+
+# media
+paru -S mpv phonon-qt6-mpv oculante libvips obs-studio
+# optionally install stuff for mpv
+# paru -S anime4k-git
+
+# cleanup not needed mpv configurations
+rm ~/.config/mpv/mpv-x11.conf
+rm ~/.config/mpv/mpv-windows.conf
+
+# office
+paru -S libreoffice-fresh
+
+# downloaders
+# gallery-dl requires gpg key, see: https://aur.archlinux.org/packages/gallery-dl
+gpg --recv-keys 5680CA389D365A88
+paru -S yt-dlp gallery-dl qbittorrent
+
+# communications
+paru -S telegram-desktop vesktop
+
+# KDE apps and qt6
+paru -S kcalc kdialog kf6 qt6
+
+# other
+paru -S proton-vpn-gtk-app thorium-browser-bin ventoy rustdesk-bin sniffnet
+
+# hyprland essentials
+paru -S hyprland hyprlock xdg-desktop-portal-hyprland hyprpicker hyprswitch hyprpaper hypridle hyprpolkitagent hyprland-protocols
+
+# manually fix monitor and comment nvidia part in `~/.config/hypr/hyprland.conf`
+# See output of `hyprctl monitors all` or use:
+# monitor = , preferred, auto, 1
+micro ~/.config/hypr/hyprland.conf
+
+# productivity hyprland apps
+# wleave requires key, see: https://aur.archlinux.org/packages/wleave-git
+gpg --recv-keys --keyserver hkps://keyserver.ubuntu.com 4F9434A2EAC21BEC148F3656BF6CB659ADEE60EC
+paru -S wleave-git ashell tofi dunst grimblast-git swww brightnessctl
+
+# remove some qt5, plasma and cachyos stuff
+paru -Rns phonon-qt6-vlc kf5 cachyos-themes-sddm flatpak-kcm cachyos-zsh-config octopi sddm sddm-kcm
+```
+
+For gaming:
+
+```sh
+# when asked for lib32-vulkan, look at this before selecting: https://wiki.archlinux.org/title/Vulkan
+
+# install proton
+paru -S proton-cachyos
+
+# install wine
+paru -S wine-cachyos
+
+# or build your own wine
+cd ~/downloads
+git clone https://github.com/Frogging-Family/wine-tkg-git
+cd ~/downloads/wine-tkg-git/wine-tkg-git
+makepkg -si
+
+# hardware utilities
+paru -S dualsensectl-git
+
+# libs
+paru -S gamemode gamescope gst-plugins-good gstreamer-vaapi vkbasalt vkbasalt-cli vkd3d vkd3d-proton-mingw-git dxvk-mingw-git
+
+# launchers
+paru -S steam steam-native-runtime lutris umu-launcher
+
+# utils
+paru -S gameconqueror scanmem mangohud protontricks samrewritten-git
+
+# beware, as it installs wine-cachyos-opt
+paru -S cachyos-gaming-meta cachyos-gaming-applications
+paru -Rdd wine-cachyos-opt
+
+# games, prefer osu-lazer-bin because nuget shits tons of packages in cache on build
+paru -S fuzzylite-git vcmi osu-lazer-bin wowup-cf-bin anime-games-launcher
+```
+
+### fix config paths
+
+If your username is not `gigas` you'll need to fix some paths:
+
+```sh
+# rm -rf ~/.config/git
+cd ~/.config/nushell
+carapace _carapace nushell | save -f carapace.nu
+```
+
+That's everything, I guess, but better check yourself via `vscode`
+
+## install Sweet theme
+
+```sh
+# GTK
+paru -S ttf-roboto ttf-ubuntu-font-family
+cd ~/downloads/software-and-services/PKGBUILDs/gtk-theme-sweet-git
+makepkg -si
+
+# icons
+# TODO: include PR with fix: https://github.com/EliverLara/Sweet-folders/pull/21
+paru -S candy-icons-git sweet-folders-icons-git
+
+# KDE
+paru -S kvantum qt6ct-kde
+cd ~/downloads/software-and-services/PKGBUILDs/plasma-themes-sweet-kde-git
+makepkg -si
+
+# Cursors
+# This includes hyprcursors
+cd ~/downloads/software-and-services/PKGBUILDs/sweet-cursors-git
+makepkg -si
+```
+
+Manually applying theme in KDE system settings may also be required. Reboot afterwards
+
+## init repo to track config changes
+
+```sh
+cd ~/.config
+git init
+# .gitignore file copied from repo, for fatty stuff like electron
+# micro ~/.config/.gitignore
+git add *
+git commit -a -m "Initial commit"
+```
+
+## `Apparmor` and `systemd-boot` configurations if needed
+
+For details, see: <https://wiki.cachyos.org/configuration/post_install_setup/>
+
+And: <https://github.com/Gigas002/software-and-services/blob/master/dotfiles/boot/README.md>
+
+```sh
+# systemd-boot config requires root to enter /boot
+sudo su
+micro /boot/loader/loader.conf
+exit
+micro /etc/sdboot-manage.conf
+sudo sdboot-manage gen
+
+systemctl enable --now apparmor.service
+micro /etc/apparmor/parser.conf
+```
+
+## `vscode` extensions
+
+- GitHub Repositories
+- vscode-icons
+- C/C++
+- CMake Tools
+- CodeLLDB
+- Color Highlight
+- Even Better TOML
+- GitHub Actions
+- GitHub Copilot
+- GitHub Copilot Chat
+- GitHub Pull Requests
+- GitLens
+- HTML CSS Support
+- Hyprland
+- IntelliCode
+- Markdown Preview Mermaid Support
+- markdownlint
+- Path Intellisense
+- Prettier
+- rust-analyzer
+- YAML
+- XML
+- vscode-nushell-lang
+
+`Hyprland` extension requires language server package:
+
+```sh
+paru -S hyprls-git
+```
+
+## `firefox` sfuff
+
+Locate your profile with on `about:profiles`
+
+Init git repo and pull scripts from arkenfox repos and my `user-overrides.js`. Use `updater.sh`
+
+```sh
+cd ~/downloads
+git clone https://github.com/arkenfox/user.js
+
+# %profile% is one with -release in dir name
+cp ~/downloads/user.js/updater.sh ~/.mozilla/firefox/%profile%
+cp ~/downloads/user.js/prefsCleaner.sh ~/.mozilla/firefox/%profile%
+cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/user-overrides.js ~/.mozilla/firefox/%profile%
+cd ~/.mozilla/firefox/%profile%
+chmod +x updater.sh
+chmod +x prefsCleaner.sh
+./updater.sh
+./prefsCleaner.sh
+./updater.sh
+
+# init repo
+git init
+# manually copy .gitignore
+cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/.gitingore ~/.mozilla/firefox/%profile%
+git add *
+git commit -a -m "Initial commit"
+```
+
+For `ff2mpv`:
+
+```sh
+# optionally, check installation guide: https://github.com/ryze312/ff2mpv-rust
+paru -S ff2mpv-rust
+mkdir ~/.mozilla/native-messaging-hosts
+cp -r ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/native-messaging-hosts/* ~/.mozilla/native-messaging-hosts
+# or run this instead of cp
+# cd ~/.mozilla/native-messaging-hosts
+# ff2mpv-rust manifest | save -f ff2mpv.json
+```
+
+Extensions:
+
+- [duckduckgo](https://github.com/duckduckgo/duckduckgo-privacy-extension)
+- [libredirect](https://github.com/libredirect/browser_extension)
+- [plasma-browser-integration](https://github.com/KDE/plasma-browser-integration)
+- [smart-referer](https://gitlab.com/smart-referrer/smart-referer)
+- [ff2mpv](https://github.com/woodruffw/ff2mpv)
+- [stylus](https://github.com/openstyles/stylus/)
+- [tabliss](https://github.com/joelshepherd/tabliss) or [tabliss-maintained](https://github.com/BookCatKid/tabliss-maintained)
+- [uBlock Origin](https://github.com/gorhill/uBlock)
+- [control-panel-for-twitter](https://github.com/insin/control-panel-for-twitter)
+- [proton-pass](https://github.com/ProtonPass)
+- [violentmonkey](https://github.com/violentmonkey/violentmonkey)
+
+## fancy colors
+
+```sh
+# general
+paru -S openrgb
+
+# razer
+paru -S polychromatic
+
+# corsair
+paru -S openlinkhub-bin
+```
+
+## OLED
+
+See usage: <https://github.com/mklan/hyproled>
+
+```sh
+paru -S hyproled-git
+```
+
+## Disable splitlock to help games
+
+See: <https://wiki.cachyos.org/configuration/general_system_tweaks/#disabling-split-lock-mitigate>
+
+```sh
+sudo mkdir /etc/sysctl.d
+sudo cp ~/downloads/software-and-services/dotfiles/etc/sysctl.d/99-splitlock.conf /etc/sysctl.d/99-splitlock.conf
+```
+
+## Performance Tweaks
+
+- Enable `amd_pstate=guided` -- via kernel args in `sdboot-manage`/`/boot/loader/entries/entry` or via `amdpstate-guided` sciprt on cachyos, see: <https://wiki.cachyos.org/features/cachyos_settings/#helper-scripts>
+- Use `game-performance` script as launch option for games, see: <https://wiki.cachyos.org/configuration/gaming/#how-to-add-game-performance-to-steam-lutris-heroic-games-launcher-and-bottles>
+- Change 3D-V Cache Optimizer mode to `cache` when gaming, see: <https://wiki.cachyos.org/configuration/general_system_tweaks/#amd-3d-v-cache-optimizer>
+- Enable `scx_bpfland` or `scx_lavd` in cachyos Kernel Manager GUI. Then, disable ananicy rules, see: <https://wiki.cachyos.org/configuration/sched-ext/#disable-ananicy-cpp>
