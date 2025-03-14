@@ -5,10 +5,6 @@
 - `windows-terminal` (`Windows Terminal`, <https://github.com/microsoft/terminal>)
 - `winget` (`App Installer`, <https://github.com/microsoft/winget-cli>)
 
-### Windows Terminal Theme
-
-Install theme from <https://github.com/Gigas002/awesome-sweet/tree/master/windows-terminal>
-
 ## `winget` stuff
 
 ```sh
@@ -87,15 +83,16 @@ scoop install main/git
 # np in fact
 scoop install extras/vcredist
 
-# font for windows terminal and komorebi
+# fonts for windows terminal and komorebi
 scoop install nerd-fonts/CascadiaMono-NF-Mono
+scoop install nerd-fonts/Noto-NF-Mono
 
 scoop install extras/shutup10
 
 scoop install extras/firefox
 
 scoop install extras/vscode
-# scoop install extras/zed
+scoop install extras/zed
 
 scoop install extras/telegram
 scoop install extras/vesktop
@@ -162,7 +159,81 @@ scoop install extras/komorebi
 - `MSI Center`: <https://www.msi.com/Motherboard/MPG-X870E-CARBON-WIFI/support#utility> -> probably auto-installed by windows as driver utility
 - `Western Digital Kitfox`: <https://support-en.wd.com/app/products/downloads/softwaredownloads> -> useless shit
 
-## komorebi setup
+## Configs
+
+Copy the config repos
+
+```sh
+cd $HOME
+git clone https://github.com/Gigas002/awesome-sweet
+git clone https://github.com/Gigas002/software-and-services
+git clone https://github.com/arkenfox/user.js
+
+cp $HOME/software-and-services/dotfiles/HOME/dotconfig/git/config $HOME/.gitconfig
+mkdir $HOME/AppData/Roaming/Code/User
+cp $HOME/software-and-services/dotfiles/HOME/dotconfig/VSCodium/User/settings.json $HOME/AppData/Roaming/Code/User/settings.json
+mkdir $HOME/AppData/Roaming/mpv
+cp $HOME/software-and-services/dotfiles/HOME/dotconfig/mpv/mpv-windows.conf $HOME/AppData/Roaming/mpv/mpv.conf
+cp $HOME/software-and-services/dotfiles/HOME/dotconfig/mpv/input.conf $HOME/AppData/Roaming/mpv/input.conf
+mkdir $HOME/.config/micro
+cp -r $HOME/software-and-services/dotfiles/HOME/dotconfig/micro/* $HOME/.config/micro
+mkdir $HOME/.config/yazi
+cp -r $HOME/software-and-services/dotfiles/HOME/dotconfig/yazi/* $HOME/.config/yazi
+mkdir $HOME/.config/bottom
+cp -r $HOME/software-and-services/dotfiles/HOME/dotconfig/bottom/* $HOME/.config/bottom
+mkdir $HOME/.config/fastfetch
+cp -r $HOME/software-and-services/dotfiles/HOME/dotconfig/fastfetch/* $HOME/.config/fastfetch
+```
+
+### Windows Terminal
+
+For reference, also see: `$HOME/software-and-services/windows/windows-terminal/settings.json`
+
+Manually apply theme:
+
+```sh
+# theme at $HOME/awesome-sweet/windows-terminal/Sweet.json
+# add this part to shemes settings.json
+micro $HOME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+```
+
+### `firefox` stuff
+
+Locate your profile with on `about:profiles`
+
+Init git repo and pull scripts from arkenfox repos and my `user-overrides.js`. Use `updater.sh`
+
+```sh
+# %profile% is one with -release in dir name
+cp $HOME/user.js/updater.bat $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/updater.bat
+cp $HOME/user.js/prefsCleaner.sh $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/prefsCleaner.bat
+cp $HOME/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/user-overrides.js $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/user-overrides.js
+cd $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%
+& updater.bat
+& prefsCleaner.bat
+& updater.bat
+
+# init repo
+git init
+# manually copy .gitignore
+cp $HOME/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/.gitingore $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/.gitignore
+git add *
+git commit -a -m "Initial commit"
+```
+
+Extensions:
+
+- [duckduckgo](https://github.com/duckduckgo/duckduckgo-privacy-extension)
+- [libredirect](https://github.com/libredirect/browser_extension)
+- [smart-referer](https://gitlab.com/smart-referrer/smart-referer)
+- [stylus](https://github.com/openstyles/stylus/)
+- [tabliss](https://github.com/joelshepherd/tabliss) or [tabliss-maintained](https://github.com/BookCatKid/tabliss-maintained)
+- [uBlock Origin](https://github.com/gorhill/uBlock)
+- [control-panel-for-twitter](https://github.com/insin/control-panel-for-twitter)
+- [proton-pass](https://github.com/ProtonPass)
+- [violentmonkey](https://github.com/violentmonkey/violentmonkey)
+
+### komorebi
 
 See: <https://lgug2z.github.io/komorebi/installation.html>
 
@@ -178,21 +249,24 @@ komorebic enable-autostart --whkd --bar
 Add configs:
 
 ```sh
-cd $HOME
-git clone https://github.com/Gigas002/software-and-services
-
-mkdir $HOME/.config
-mkdir $HOME/.local
 mkdir $HOME/.local/bin
 
 # copy the configs
 cp $HOME/software-and-services/windows/HOME/komorebi.json $HOME/komorebi.json
 cp $HOME/software-and-services/windows/HOME/komorebi.bar.json $HOME/komorebi.bar.json
 cp $HOME/software-and-services/windows/HOME/dotconfig/whkdrc $HOME/.config/whkdrc
-cp $HOME/software-and-services/windows/HOME/dotlocal/bin/pkill.ps1 $HOME/dotlocal/bin/pkill.ps1
+cp $HOME/software-and-services/windows/HOME/dotlocal/bin/pkill.ps1 $HOME/.local/bin/pkill.ps1
 
 # kill whkd & komorebi if it's running and restart
 komorebic start --whkd --bar
+```
+
+### Cleanup
+
+```sh
+Remove-Item -Path $HOME/awesome-sweet -Recurse -Force
+Remove-Item -Path $HOME/software-and-services -Recurse -Force
+Remove-Item -Path $HOME/user.js -Recurse -Force
 ```
 
 ## Screenshoting

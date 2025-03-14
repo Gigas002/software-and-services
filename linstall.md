@@ -410,6 +410,9 @@ git init
 cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/.gitingore ~/.mozilla/firefox/%profile%
 git add *
 git commit -a -m "Initial commit"
+
+# cleanup
+rm -rf ~/downloads/user.js
 ```
 
 For `ff2mpv`:
