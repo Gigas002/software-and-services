@@ -30,6 +30,7 @@ ghb/
 goverlay/
 !gtk-2.0
 !gtk-3.0
+gtk-3.0/assets
 !gtk-4.0
 !htop
 !hypr
@@ -226,3 +227,4 @@ gsmartcontrol/
 czkawka/czkawka_gui_config_4.txt
 
 go/
+kdeconnect/
