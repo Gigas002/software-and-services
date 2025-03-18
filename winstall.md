@@ -14,6 +14,8 @@ winget install --id=Microsoft.PowerShell -e
 # drivers
 winget install --id=Corsair.iCUE.5 -e
 winget install --id=RazerInc.RazerInstaller4 -e
+# MSI Center
+winget install --id=9NVMNJCR03XV -e
 # deprecated, Kitfort not in repos yet
 # winget install --id=WesternDigital.Dashboard -e
 
@@ -119,7 +121,7 @@ scoop install extras/rustdesk
 # scoop install extras/snappy-driver-installer-origin
 
 # consider using in-system sudo
-scoop install main/gsudo
+# scoop install main/gsudo
 # scoop install main/python
 # scoop install java/openjdk
 # scoop install main/dotnet-sdk
@@ -156,7 +158,7 @@ scoop install extras/komorebi
 
 - `Playstation Accessories`: <https://controller.dl.playstation.net/controller/lang/en/2100004.html> -> to update dualsense firmware
 - `HoyoPlay`: <https://hoyoplay.hoyoverse.com/> -> not in the repos yet
-- `MSI Center`: <https://www.msi.com/Motherboard/MPG-X870E-CARBON-WIFI/support#utility> -> probably auto-installed by windows as driver utility
+- `AMD Adrenalin`: <https://www.amd.com/en/support/download/drivers.html>
 - `Western Digital Kitfox`: <https://support-en.wd.com/app/products/downloads/softwaredownloads> -> useless shit
 
 ## Configs

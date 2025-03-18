@@ -228,7 +228,7 @@ micro ~/.config/hypr/hyprland.conf
 # productivity hyprland apps
 # wleave requires key, see: https://aur.archlinux.org/packages/wleave-git
 gpg --recv-keys --keyserver hkps://keyserver.ubuntu.com 4F9434A2EAC21BEC148F3656BF6CB659ADEE60EC
-paru -S wleave-git ashell tofi dunst grimblast-git swww brightnessctl
+paru -S wleave-git ashell tofi dunst grimblast-git swww brightnessctl playerctl xdg-desktop-portal-gtk xdg-desktop-portal-kde blueman
 
 # remove some qt5, plasma and cachyos stuff
 paru -Rns phonon-qt6-vlc kf5 qt5 cachyos-themes-sddm flatpak-kcm cachyos-zsh-config octopi sddm sddm-kcm
@@ -347,7 +347,9 @@ exit
 micro /etc/sdboot-manage.conf
 sudo sdboot-manage gen
 
-systemctl enable --now apparmor.service
+# warning: apparmor may introduce strange behavior
+# like ~/.mozilla being inaccessable
+# systemctl enable --now apparmor.service
 micro /etc/apparmor/parser.conf
 ```
 
@@ -468,3 +470,7 @@ paru -S hyproled-git
 - Use `game-performance` script as launch option for games, see: <https://wiki.cachyos.org/configuration/gaming/#how-to-add-game-performance-to-steam-lutris-heroic-games-launcher-and-bottles>
 - Change 3D-V Cache Optimizer mode to `cache` when gaming, see: <https://wiki.cachyos.org/configuration/general_system_tweaks/#amd-3d-v-cache-optimizer>
 - Enable `scx_bpfland` or `scx_lavd` in cachyos Kernel Manager GUI. Then, disable ananicy rules, see: <https://wiki.cachyos.org/configuration/sched-ext/#disable-ananicy-cpp>
+
+## Add values to PATH
+
+On cachyos `~/.local/bin` is not added to PATH. Though it is not recommended, you can add it to path in `/etc/profile`
