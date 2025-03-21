@@ -198,3 +198,18 @@ fi
 ```
 
 `Flameshot` is slow on resizing selection: use version `12.1.0` until [PR](https://github.com/flameshot-org/flameshot/pull/3059) is merged
+
+## Connect to 2nd pc in same network
+
+```sh
+sudo systemctl start sshd
+
+# Look for your Wi-Fi adapter (e.g., wlp3s0)
+ip a | grep inet
+# e.g.: inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+
+# on PC, in Dolphin:
+sftp://user@ip
+
+# this will open fs root in dolphin
+```
