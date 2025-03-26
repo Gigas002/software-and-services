@@ -98,7 +98,6 @@ gst-plugins-bad
 gst-plugins-good
 gst-plugins-ugly
 gstreamer-vaapi
-gtk-theme-sweet-git
 haveged
 hdparm
 helix
@@ -127,6 +126,7 @@ kdoctools
 kimageformats
 kinfocenter
 kio-admin
+kompare
 kplotting
 kscreen
 ktexttemplate
@@ -161,6 +161,7 @@ mkinitcpio
 modemmanager
 modprobed-db
 mpv
+mpv-mpris
 mtools
 netctl
 network-manager-applet
@@ -208,7 +209,6 @@ plasma-integration
 plasma-nm
 plasma-pa
 plasma-systemmonitor
-plasma-themes-sweet-kde-git
 plasma-thunderbolt
 plasma-workspace
 playerctl
@@ -266,6 +266,8 @@ sudo
 sweet-cursors-git
 sweet-cursors-hyprcursor-git
 sweet-folders-git
+sweet-gtk-theme-git
+sweet-kde-theme-git
 sweet-kvantum-git
 swww
 sysfsutils

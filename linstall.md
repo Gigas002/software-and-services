@@ -192,7 +192,7 @@ cp -r ~/.config/VSCodium/User/settings.json '~/.config/Code - OSS/User'
 rm -rf ~/.config/VSCodium
 
 # media
-paru -S mpv phonon-qt6-mpv oculante libvips obs-studio
+paru -S mpv phonon-qt6-mpv oculante libvips obs-studio mpv-mpris
 # optionally install stuff for mpv
 # paru -S anime4k-git
 
@@ -212,7 +212,7 @@ paru -S yt-dlp gallery-dl qbittorrent
 paru -S telegram-desktop vesktop
 
 # KDE apps and qt6
-paru -S kcalc kdialog kf6 qt6
+paru -S kcalc kdialog kf6 qt6 kompare
 
 # other
 paru -S proton-vpn-gtk-app thorium-browser-bin ventoy rustdesk-bin sniffnet
