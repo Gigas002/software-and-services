@@ -1,4 +1,4 @@
-pkgbase = plasma-themes-sweet-kde-git
+pkgbase = sweet-kde-theme-git
 	pkgdesc = Sweet KDE Plasma theme
 	pkgver = r47.2ed3782
 	pkgrel = 1
@@ -20,4 +20,4 @@ pkgbase = plasma-themes-sweet-kde-git
 	source = git+https://github.com/Gigas002/Sweet-kde.git#branch=plasma-6-migration
 	sha256sums = SKIP
 
-pkgname = plasma-themes-sweet-kde-git
+pkgname = sweet-kde-theme-git

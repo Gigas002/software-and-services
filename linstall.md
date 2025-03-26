@@ -294,7 +294,7 @@ That's everything, that is installed above, but better check yourself via `vscod
 ```sh
 # GTK
 paru -S ttf-roboto ttf-ubuntu-font-family
-cd ~/downloads/software-and-services/PKGBUILDs/gtk-theme-sweet-git
+cd ~/downloads/software-and-services/PKGBUILDs/sweet-gtk-theme-git
 makepkg -si
 
 # folder icons
@@ -303,7 +303,7 @@ cd ~/downloads/software-and-services/PKGBUILDs/sweet-folders-git
 makepkg -si
 
 # KDE
-cd ~/downloads/software-and-services/PKGBUILDs/plasma-themes-sweet-kde-git
+cd ~/downloads/software-and-services/PKGBUILDs/sweet-kde-theme-git
 makepkg -si
 
 # kvantum

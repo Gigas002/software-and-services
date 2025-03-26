@@ -1,7 +1,7 @@
 # Maintainer: gigas002 <gigas002@pm.me>
 # Maintainer: dr460nf1r3 <aur@dr460nf1r3.org>
 
-pkgname=gtk-theme-sweet-git
+pkgname=sweet-gtk-theme-git
 _pkgname=Sweet
 pkgver=r405.ee0e459
 pkgrel=1

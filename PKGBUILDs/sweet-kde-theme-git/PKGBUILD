@@ -1,6 +1,6 @@
 # Maintainer: gigas002 <gigas002@pm.me>
 
-pkgname=plasma-themes-sweet-kde-git
+pkgname=sweet-kde-theme-git
 _pkgname=Sweet-kde
 pkgver=r47.2ed3782
 pkgrel=1
