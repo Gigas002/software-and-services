@@ -293,6 +293,7 @@ That's everything, that is installed above, but better check yourself via `vscod
 
 ```sh
 # GTK
+paru -S dconf-editor
 cd ~/downloads/software-and-services/PKGBUILDs/sweet-gtk-theme-git
 makepkg -si
 
