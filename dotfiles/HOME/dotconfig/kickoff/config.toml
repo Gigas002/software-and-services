@@ -7,7 +7,7 @@ prompt = ''
 padding = 100
 
 fonts = [
-    'Noto Sans Mono',
+    'NotoSans Nerd Font',
 ] # list of otf or ttf fonts. later elements work as fallback
 font_size = 32.0
 

@@ -10,7 +10,7 @@ configuration {
     display-window:              " ";
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
-    font:                        "JetBrainsMono Nerd Font 10";
+    font:                        "NotoSans Nerd Font 10";
     icon-theme:                  "Sweet-Rainbow";
 }
 

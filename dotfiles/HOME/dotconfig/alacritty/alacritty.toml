@@ -9,10 +9,10 @@ blur = true
 startup_mode = "Maximized"
 
 [font]
-normal = { family = "CaskaydiaMono Nerd Font Mono", style = "Regular" }
-bold = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold" }
-italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Italic" }
-bold_italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold Italic" }
+normal = { family = "NotoSansM Nerd Font", style = "Regular" }
+bold = { family = "NotoSansM Nerd Font", style = "Bold" }
+italic = { family = "NotoSansM Nerd Font", style = "Italic" }
+bold_italic = { family = "NotoSansM Nerd Font", style = "Bold Italic" }
 size = 14.0
 
 [selection]

@@ -170,8 +170,8 @@ paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij
 # installing AUR packages requires yazi and micro installation first
 paru -S carapace-bin
 
-# optionally, install fonts
-paru -S nerd-fonts
+# install fonts
+paru -S ttf-noto-nerd
 # This requires manual building, may be needed by wine
 # paru -S ttf-ms-win11
 ```
@@ -293,7 +293,6 @@ That's everything, that is installed above, but better check yourself via `vscod
 
 ```sh
 # GTK
-paru -S ttf-roboto ttf-ubuntu-font-family
 cd ~/downloads/software-and-services/PKGBUILDs/sweet-gtk-theme-git
 makepkg -si
 

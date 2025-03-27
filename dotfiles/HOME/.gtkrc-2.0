@@ -3,7 +3,7 @@
 
 gtk-theme-name="Sweet"
 gtk-icon-theme-name="Sweet-Rainbow"
-gtk-font-name="Cantarell,  10"
+gtk-font-name="NotoSans Nerd Font, 10"
 gtk-cursor-theme-name="Sweet-cursors"
 gtk-cursor-theme-size=20
 gtk-toolbar-style=GTK_TOOLBAR_ICONS

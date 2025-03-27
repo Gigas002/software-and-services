@@ -13,7 +13,7 @@ The overall structure:
 
 ## Requirements
 
-All theming here relies on [sweet packages](https://github.com/Gigas002/awesome-sweet), keep this in mind. You also will need to install `nerd-fonts` for font support. I mostly use three fonts: [CaskaydiaCove](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaCode), [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono), [Cantarell](https://gitlab.gnome.org/GNOME/cantarell-fonts), but there may be more I'm missing.
+All theming here relies on [sweet packages](https://github.com/Gigas002/awesome-sweet), keep this in mind. You also will need to install `nerd-fonts` for font support: [NotoSans Nerd](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Noto)
 
 Also, some configs specify datetime format, which is `24h` and week start as `monday`. Keep this in mind.
 

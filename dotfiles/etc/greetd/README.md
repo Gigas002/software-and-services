@@ -66,8 +66,7 @@ application_prefer_dark_theme = true
 cursor_theme_name = "Sweet-cursors"
 
 # Font name and size
-font_name = "Cantarell 16"
-# CaskaydiaCove Nerd Font Mono
+font_name = "NotoSans Nerd Font 16"
 
 # Icon theme name
 icon_theme_name = "Sweet-Rainbow"
