@@ -87,6 +87,7 @@ scoop install extras/vcredist
 
 # fonts for windows terminal and komorebi
 scoop install nerd-fonts/Noto-NF-Mono
+scoop install nerd-fonts/CascadiaCode-NF-Mono
 
 scoop install extras/shutup10
 

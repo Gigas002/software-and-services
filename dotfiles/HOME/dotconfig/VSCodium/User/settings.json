@@ -29,7 +29,7 @@
       "icon": "terminal-powershell"
     }
   },
-  "terminal.integrated.fontFamily": "NotoSansM Nerd Font",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
   "terminal.integrated.defaultProfile.linux": "nu",
   "dotnetAcquisitionExtension.enableTelemetry": false,
   "gitlens.telemetry.enabled": false,

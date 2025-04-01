@@ -65,7 +65,7 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "NotoSansM Nerd Font",
+                "face": "CaskaydiaCove Nerd Font Mono",
                 "size": 14
             },
             "opacity": 60,
@@ -90,7 +90,7 @@
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
-                    "face": "NotoSansM Nerd Font"
+                    "face": "CaskaydiaCove Nerd Font Mono"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,

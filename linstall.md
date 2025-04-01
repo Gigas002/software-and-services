@@ -171,7 +171,7 @@ paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij
 paru -S carapace-bin
 
 # install fonts
-paru -S ttf-noto-nerd
+paru -S ttf-noto-nerd ttf-cascadia-code-nerd
 # This requires manual building, may be needed by wine
 # paru -S ttf-ms-win11
 ```
