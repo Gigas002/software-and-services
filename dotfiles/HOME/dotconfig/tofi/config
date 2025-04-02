@@ -7,7 +7,7 @@
 	# characters not in the chosen font will fail to render.
 	#
 	# Otherwise, fonts are interpreted in Pango format.
-	font = "NotoSans Nerd Font"
+	font = "CaskaydiaCove Nerd Font Mono"
 
 	# Point size of text.
 	font-size = 24
