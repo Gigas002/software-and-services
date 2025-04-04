@@ -474,3 +474,49 @@ paru -S hyproled-git
 ## Add values to PATH
 
 On cachyos `~/.local/bin` is not added to PATH. Though it is not recommended, you can add it to path in `/etc/profile`
+
+## Waydroid
+
+Useful links:
+
+- <https://wiki.archlinux.org/title/Waydroid>
+- <https://docs.waydro.id/usage/waydroid-prop-options>
+- <https://herz.moe/content/balinux.php>
+
+```sh
+# install required packages
+paru -S waydroid waydroid-image waydroid-script-git python-pyclip
+# init the configs in /var/lib/waydroid
+sudo waydroid init
+# enable multi windows support
+waydroid prop set persist.waydroid.multi_windows true
+# enable service
+sudo systemctl enable --now waydroid-container.service
+
+# install google, libndk, etc
+sudo waydroid-extras install gapps
+sudo waydroid-extras install libndk
+sudo waydroid-extras install magisk
+sudo waydroid-extras hack hidestatusbar
+
+# download patch for ndk via curl
+cd ~/downloads
+curl -L -o scripton_ndk.sh "https://herz.moe/content/bascripts/scripton_ndk.txt"
+chmod +x scripton_ndk.sh
+sudo ./scripton_ndk.sh
+
+# if network doesn't work
+# sudo ufw allow 53
+# sudo ufw allow 67
+# sudo ufw default allow FORWARD
+
+# restart service after all the changes
+sudo systemctl restart waydroid-container.service
+
+# start new session
+waydroid session start
+waydroid show-full-ui
+
+# get ID for Google Play certification, follow instructions afterwards
+sudo waydroid-extras certified
+```
