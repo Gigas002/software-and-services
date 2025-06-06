@@ -213,3 +213,11 @@ sftp://user@ip
 
 # this will open fs root in dolphin
 ```
+
+## In case `vulkan` doesn't work
+
+Sometimes (e.g. on VMs) you can't use `vulkan` and have to fallback to use `opengl` or cairo. Here's a way to force it with env var:
+
+```sh
+export GSK_RENDERER= # vulkan for vulkan, ngl for opengl, the worst one is cairo
+```
