@@ -221,3 +221,19 @@ Sometimes (e.g. on VMs) you can't use `vulkan` and have to fallback to use `open
 ```sh
 export GSK_RENDERER= # vulkan for vulkan, ngl for opengl, the worst one is cairo
 ```
+
+## bcachefs
+
+See: <https://bcachefs-docs.readthedocs.io/en/latest/options.html>
+
+```sh
+# format new bcachefs partition:
+mkfs.bcachefs --block_size 4k /dev/sda3
+# after format
+bcachefs set-fs-option --compression=zstd --background_compression=zstd --data_checksum=crc64 --metadata_checksum=crc64 
+# check changes
+bcachefs show-super /dev/sda3
+# create snapshot
+mkdir -p /snapshots
+bcachefs subvolume snapshot / /snapshots/root-20250620144900000_1
+```
