@@ -174,6 +174,9 @@ micro /etc/environment
 # disable splitlock for games, see: https://wiki.cachyos.org/configuration/general_system_tweaks/#disabling-split-lock-mitigate
 # sudo mkdir /etc/sysctl.d
 micro /etc/sysctl.d/99-splitlock.conf
+
+# less writes for journald
+micro /etc/systemd/journald.conf
 ```
 
 ## install configs
