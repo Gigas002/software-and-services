@@ -250,7 +250,7 @@ paru -S atuin bottom fastfetch helix micro nushell starship tealdeer yazi zellij
 paru -S carapace-bin
 
 # install fonts
-paru -S ttf-noto-nerd ttf-cascadia-code-nerd
+paru -S ttf-noto-nerd ttf-cascadia-code-nerd ttf-nerd-fonts-symbols ttf-fantasque-nerd ttf-roboto
 # This requires manual building, may be needed by wine
 # paru -S ttf-ms-win11
 ```
@@ -285,7 +285,7 @@ paru -S yt-dlp gallery-dl qbittorrent
 paru -S telegram-desktop vesktop
 
 # KDE apps and qt6
-paru -S kcalc kdialog kf6 qt6 kompare
+paru -S kcalc kdialog kf6 qt6 kompare ksystemlog
 
 # other
 paru -S proton-vpn-gtk-app thorium-browser-bin ventoy rustdesk-bin sniffnet
@@ -305,6 +305,9 @@ paru -S wleave-git ashell tofi dunst grimblast-git swww brightnessctl playerctl 
 
 # remove some qt5, plasma and cachyos stuff
 paru -Rns phonon-qt6-vlc kf5 qt5 cachyos-themes-sddm flatpak-kcm cachyos-zsh-config octopi sddm sddm-kcm
+
+# remove other stuff
+paru -Rns adobe-source-han-sans-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts apparmor apparmor.d-git fwupd otf-aurulent-nerd otf-codenewroman-nerd otf-comicshanns-nerd otf-commit-mono-nerd otf-droid-nerd otf-firamono-nerd otf-geist-mono-nerd otf-hasklig-nerd otf-hermit-nerd otf-monaspace-nerd otf-opendyslexic-nerd otf-overpass-nerd ttf-0xproto-nerd ttf-3270-nerd ttf-agave-nerd ttf-anonymouspro-nerd ttf-arimo-nerd ttf-bigblueterminal-nerd ttf-bitstream-vera ttf-bitstream-vera-mono-nerd ttf-cascadia-mono-nerd ttf-cousine-nerd ttf-d2coding-nerd ttf-daddytime-mono-nerd ttf-dejavu ttf-dejavu-nerd ttf-envycoder-nerd ttf-firacode-nerd ttf-go-nerd ttf-gohu-nerd ttf-hack-nerd ttf-heavydata-nerd ttf-iawriter-nerd ttf-ibmplex-mono-nerd ttf-inconsolata-go-nerd ttf-inconsolata-lgc-nerd ttf-inconsolata-nerd ttf-intone-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-iosevkatermslab-nerd ttf-jetbrains-mono-nerd ttf-lekton-nerd ttf-liberation-mono-nerd ttf-lilex-nerd ttf-martian-mono-nerd ttf-meslo-nerd ttf-monofur-nerd ttf-monoid-nerd ttf-mononoki-nerd ttf-mplus-nerd ttf-nerd-fonts-symbols-mono ttf-opensans ttf-profont-nerd ttf-proggyclean-nerd ttf-recursive-nerd ttf-opensans ttf-profont-nerd ttf-proggyclean-nerd ttf-recursive-nerd
 ```
 
 For gaming:
@@ -366,7 +369,7 @@ That's everything, that is installed above, but better check yourself via `vscod
 
 ```sh
 # GTK
-paru -S dconf-editor
+# paru -S dconf-editor
 cd ~/downloads/software-and-services/PKGBUILDs/sweet-gtk-theme-git
 makepkg -si
 
