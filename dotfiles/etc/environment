@@ -8,3 +8,7 @@ SDL_VIDEODRIVER=wayland
 ELECTRON_OZONE_PLATFORM_HINT=wayland
 
 XDG_SESSION_TYPE=wayland
+
+# Legacy, just in case
+QT_QPA_PLATFORM=wayland
+GDK_BACKEND=wayland
