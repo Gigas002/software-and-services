@@ -1,29 +1,38 @@
 # List of minor linux tweks
 
-
-
 **Export list of installed packages:**
 
-See: https://www.reddit.com/r/archlinux/comments/kfrdqa/export_then_reinstall_packages_installed_with_yay/
-and: https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages
+See: <https://www.reddit.com/r/archlinux/comments/kfrdqa/export_then_reinstall_packages_installed_with_yay/>
+and: <https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages>
 
-`yay -Qqe > installs.txt` or `pacman -Qqe > installs.txt`
+```sh
+yay -Qqe > installs.txt
+```
 
+or:
 
+```sh
+pacman -Qqe > installs.txt
+```
 
 **Reinstall packages from list of installs:**
 
-`yay -S --needed - < installs.txt` or `pacman -S --needed - < pkglist.txt`
+```sh
+yay -S --needed - < installs.txt
+```
 
+or:
 
+```sh
+pacman -S --needed - < pkglist.txt
+```
 
 **yay first run:**
 
-```text
+```sh
 yay -Y --gendb
 yay -Y --devel --save
 ```
-
 
 **/etc/pacman.conf options for yay:**
 
@@ -34,55 +43,79 @@ CheckSpace
 VerbosePkgLists
 ```
 
-
 **Rebuild packages after python update:**
 
-`yay -S $(pacman -Qoq /usr/lib/python3.9) --answerclean All`
-
+```sh
+yay -S $(pacman -Qoq /usr/lib/python3.9) --answerclean All
+```
 
 **Force linux to use local time:**
 
-`timedatectl set-local-rtc 1 --adjust-system-clock`
-
+```sh
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
 
 **Cleanup cache:**
 
-`yay -Sc` or `paru -Sc`
+```sh
+yay -Sc
+```
 
+or:
+
+```sh
+paru -Sc
+```
 
 **Remove unneeded dependencies:**
 
-`yay -Yc` or `paru -Rns $(paru -Qtdq)`
+```sh
+yay -Yc
+```
 
+or:
+
+```sh
+paru -Rns $(paru -Qtdq)
+```
 
 **Force program to run with specific language:**
 
-`LANG=en_US.UTF-8 yay`
-
+```sh
+LANG=en_US.UTF-8 yay
+```
 
 **Always add choice to edit PKGBUILD:**
 
-`yay --editmenu --save`
-
+```sh
+yay --editmenu --save
+```
 
 **Remove withour checking for installed dependencies:**
 
-`yay -Rdd`
-
+```sh
+yay -Rdd
+```
 
 **Create new package for AUR:**
 
 First, add your `ssh` key to aur account. Then you can clone the empty (non-existant) repo and start making the package:
 
-`git clone ssh://aur@aur.archlinux.org/package-name.git`
+```sh
+git clone ssh://aur@aur.archlinux.org/package-name.git
+```
 
-Now you can create PKGBUILD file in this directory. To generate `.SRCINFO` file before pushing commit, use `makepkg --printsrcinfo >.SRCINFO`
+Now you can create PKGBUILD file in this directory. To generate `.SRCINFO` file before pushing commit, use:
 
+```sh
+makepkg --printsrcinfo >.SRCINFO
+```
 
 **Update binary package sums before pushing the new version:**
 
-`updpkgsums`
-
+```sh
+updpkgsums
+```
 
 **Enable NumLock on SDDM in /etc/sddm.conf:**
 
@@ -91,7 +124,6 @@ Now you can create PKGBUILD file in this directory. To generate `.SRCINFO` file 
 ...
 Numlock=on
 ```
-
 
 **Grub tweaks in /etc/default/grub:**
 
@@ -102,18 +134,15 @@ GRUB_TIMEOUT_STYLE=menu
 
 Run `sudo update-grub` afterwards
 
-
 **Use dolphin for vscode:**
 
-See: https://github.com/microsoft/vscode/issues/50386#issuecomment-1035081994
-
+See: <https://github.com/microsoft/vscode/issues/50386#issuecomment-1035081994>
 
 **Check journalctl logs size:**
 
-```text
+```sh
 journalctl --disk-usage
 ```
-
 
 **Remove outdated journalctl logs, leaving last 500Mb of logs:**
 
@@ -121,7 +150,7 @@ journalctl --disk-usage
 journalctl --vacuum-size=500M
 ```
 
-**Show only critical log messages from previous boot**
+**Show only critical log messages from previous boot:**
 
 ```sh
 journalctl --boot=-1 --priority=3
@@ -145,7 +174,6 @@ git rebase -i HEAD~44 -x "git commit --amend --no-edit --reset-author"
 kquitapp5 plasmashell || killall plasmashell && kstart5 plasmashell
 ```
 
-
 ## pacdiff
 
 Sometimes you'll need to run `pacdiff` on your system, e.g. when updating `grub` package. In these cases you'll need to diff and merge the `.pacnew` file with your current config. Run the program as follows:
@@ -156,15 +184,15 @@ sudo -E DIFFPROG=meld pacdiff
 
 The selection of `diff` tool is up to you, but be sure it supports running with `sudo`
 
-
 ## downgrade package
 
-`sudo downgrade mpv`
-
+```sh
+sudo downgrade mpv
+```
 
 ## Wayland tweaks
 
-Electron apps: https://wiki.archlinux.org/title/Wayland; `code`/`vscodium` requires running from cli: `code --ozone-platform=wayland`;
+Electron apps: <https://wiki.archlinux.org/title/Wayland>; `code`/`vscodium` requires running from cli: `code --ozone-platform=wayland`;
 
 Native wayland support for `SDDM` is currently available only in `SDDM-git` package. Example of `/etc/sddm.conf.d/10-wayland.conf`:
 
