@@ -1,4 +1,5 @@
 [target.x86_64-unknown-linux-gnu]
+# add "-C", "link-arg=-fuse-ld=mold" for mold linker
 rustflags = ["-C", "target-cpu=native"]
 
 [build]
