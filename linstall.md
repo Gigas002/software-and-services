@@ -1,5 +1,79 @@
 # CLI setup
 
+## manually partition disk
+
+After inseting LiveCD, start by manually partitioning the disk
+
+Refer to gentoo wiki for a comprehensive guide: <https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks>
+
+First, locate the disk and partitions:
+
+```sh
+sudo fdisk -l
+```
+
+It probably would be `/dev/nvme0n1` in `GPT` (if not, re-format whole disk)
+
+The partitions would probably be like:
+
+```sh
+/dev/nvme0n1p1 -- fat32 boot partition in /efi or /boot
+/dev/nvme0n1p2 -- swap
+/dev/nvme0n1p3 -- linux filesystem
+```
+
+For correct swap size settings, refer to gentoo guide. TLDR: 16GB for 64GB RAM without hibernation
+If your table looks different, run:
+
+```sh
+sudo fdisk /dev/nvme0n1
+# rewrite all existing partitions with GPT disklabel
+g
+# boot/efi
+n
+1
+(empty)
++2G
+t
+1
+1
+# swap
+n
+2
+(empty)
++16G
+t
+2
+19
+# root partition
+n
+3
+(empty)
+(empty)
+# if you want to change 'Linux filesystem' to 'Linux root'
+# not needed generally
+# t
+# 3
+# 23
+
+# write the changes
+w
+```
+
+Next, create the filesystems on partitions:
+
+```sh
+# boot/efi
+sudo mkfs.vfat -F 32 /dev/nvme0n1p1
+# swap
+sudo mkswap /dev/nvme0n1p2
+sudo swapon /dev/nvme0n1p2
+# root
+sudo mkfs.bcachefs --block_size 4k --compression=zstd --background_compression=zstd --data_checksum=crc64 --metadata_checksum=crc64
+```
+
+Finally, install the system. When selecting the partition, select `Manual partitioning`, then `/boot` as mounting point for `efi` partition and `/` for `bcachefs`. Select the `keep` option rather than `format`!
+
 ## install cachyos
 
 ### proxy config
@@ -18,16 +92,16 @@ And logout from LiveCD
 - American English
 - Asia/Tokyo/en-US/ru-RU
 - en/Default/alt+shift
-- erase disk/bcachefs
+- ~~erase disk/bcachefs~~ -> manual partitioning
 - plasma
 
 Uncheck the following:
 
 - [x] CachyOS Packages:
-  - [ ] cachy-browser
   - [ ] cachyos-hello
-  - [ ] cachyos-zsh-config
   - [ ] cachyos-wallpapers
+- [X] CachyOS Shell Configuration:
+  - [ ] cachyos-zsh-config
 - [x] Base:
   - [ ] X-system
   - [x] packages management
@@ -47,20 +121,20 @@ Uncheck the following:
     - [ ] nano
     - [ ] vim
 - [x] KDE:
-  - [ ] cachyos-nord-kde-theme-git
-  - [ ] cachyos-iridiscent-kde
   - [ ] cachyos-emerald-kde-theme-git
+  - [ ] cachyos-iridiscent-kde
+  - [ ] cachyos-nord-kde-theme-git
   - [ ] cachyos-themes-sddm
   - [ ] gwenview
-  - [ ] konsole
+  - [ ] haruna
   - [ ] kate
-  - [ ] spectacle
+  - [ ] kdeconnect
+  - [ ] konsole
   - [ ] sddm
   - [ ] sddm-kcm
-  - [ ] phonon-qt6-vlc
+  - [ ] spectacle
 - [x] CPU:
   - [ ] Intel
-- [x] Firefox
 
 ## install AUR helper (arch, docker)
 
@@ -78,7 +152,7 @@ rm -rf ~/paru
 
 ```sh
 paru -S greetd-tuigreet
-mkdir /etc/greetd
+# mkdir /etc/greetd
 micro /etc/greetd/config.toml
 # if you have installed sddm
 # sudo systemctl disable sddm.service
@@ -115,7 +189,7 @@ git clone https://github.com/Gigas002/software-and-services
 micro ~/.config/baloofilerc
 rm ~/downloads/software-and-services/dotfiles/HOME/dotconfig/baloofilerc
 
-mkdir ~/.config
+# mkdir ~/.config
 cp -r ~/downloads/software-and-services/dotfiles/HOME/dotconfig/* ~/.config
 
 # remove kde places, should be overriden with above copy's ~/.config/user-dirs.dirs
@@ -124,6 +198,7 @@ rm -rf ~/Desktop ~/Documents ~/Downloads/ ~/Music ~/Pictures ~/Public ~/Template
 
 # instruct cargo to use sccache for re-compilations
 mkdir ~/.cargo
+# paru -S mold
 cp -r ~/downloads/software-and-services/dotfiles/HOME/dotcargo/config.toml ~/.cargo/config.toml
 ```
 
@@ -131,6 +206,7 @@ For GUI (including above):
 
 ```sh
 # local scripts, mostly for hyprland
+# don't forget to add this to /etc/profile if you're on cachyos
 mkdir ~/.local
 cp -r ~/downloads/software-and-services/dotfiles/HOME/dotlocal/* ~/.local
 
@@ -183,13 +259,7 @@ For GUI (includes above):
 paru -S cliphist 7zip apparmor apparmor.d-git fwupd modprobed-db network-manager-applet cachy-chroot cachyos-sysctl-manager
 
 # editors
-paru -S code zed
-
-# fix code configs
-cd ~/.config && mkdir "Code - OSS" && mkdir "Code - OSS/User"
-cp -r ~/.config/VSCodium/product.json '~/.config/Code - OSS'
-cp -r ~/.config/VSCodium/User/settings.json '~/.config/Code - OSS/User'
-rm -rf ~/.config/VSCodium
+paru -S code code-marketplace zed
 
 # media
 paru -S mpv phonon-qt6-mpv oculante libvips obs-studio mpv-mpris
@@ -223,7 +293,7 @@ paru -S hyprland hyprlock xdg-desktop-portal-hyprland hyprpicker hyprswitch hypr
 # manually fix monitor and comment nvidia part in `~/.config/hypr/hyprland.conf`
 # See output of `hyprctl monitors all` or use:
 # monitor = , preferred, auto, 1
-micro ~/.config/hypr/hyprland.conf
+micro ~/.config/hypr/monitors.conf
 
 # productivity hyprland apps
 # wleave requires key, see: https://aur.archlinux.org/packages/wleave-git
@@ -265,7 +335,7 @@ paru -S gameconqueror scanmem mangohud protontricks samrewritten-git
 
 # beware, as it installs wine-cachyos-opt
 paru -S cachyos-gaming-meta cachyos-gaming-applications
-paru -Rdd wine-cachyos-opt
+paru -Rdd wine-cachyos-opt heroic-games-launcher-bin
 
 # games, prefer osu-lazer-bin because nuget shits tons of packages in cache on build
 paru -S fuzzylite-git vcmi osu-lazer-bin wowup-cf-bin anime-games-launcher
@@ -327,7 +397,7 @@ Manually applying theme in KDE system settings may also be required. Reboot afte
 ```sh
 cd ~/.config
 git init
-# .gitignore file copied from repo, for fatty stuff like electron
+# check if .gitignore file copied from repo, for fatty stuff like electron!
 # micro ~/.config/.gitignore
 git add *
 git commit -a -m "Initial commit"
@@ -470,6 +540,7 @@ paru -S hyproled-git
 - Use `game-performance` script as launch option for games, see: <https://wiki.cachyos.org/configuration/gaming/#how-to-add-game-performance-to-steam-lutris-heroic-games-launcher-and-bottles>
 - Change 3D-V Cache Optimizer mode to `cache` when gaming, see: <https://wiki.cachyos.org/configuration/general_system_tweaks/#amd-3d-v-cache-optimizer>
 - Enable `scx_bpfland` or `scx_lavd` in cachyos Kernel Manager GUI. Then, disable ananicy rules, see: <https://wiki.cachyos.org/configuration/sched-ext/#disable-ananicy-cpp>
+- Disable all mitigations for kernel with `mitigations=off` -> run `sdboot-manage gen` afterwards
 
 ## Add values to PATH
 

@@ -230,7 +230,7 @@ See: <https://bcachefs-docs.readthedocs.io/en/latest/options.html>
 # format new bcachefs partition:
 mkfs.bcachefs --block_size 4k /dev/sda3
 # after format
-bcachefs set-fs-option --compression=zstd --background_compression=zstd --data_checksum=crc64 --metadata_checksum=crc64 
+bcachefs set-fs-option --compression=zstd --background_compression=zstd --data_checksum=crc64 --metadata_checksum=crc64
 # check changes
 bcachefs show-super /dev/sda3
 # create snapshot
