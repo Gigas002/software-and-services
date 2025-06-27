@@ -484,7 +484,7 @@ chmod +x prefsCleaner.sh
 
 # init repo
 git init
-# manually copy .gitignore
+# manually copy .gitignore or edir it via micro
 cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/.gitingore ~/.mozilla/firefox/%profile%
 git add *
 git commit -a -m "Initial commit"
