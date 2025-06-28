@@ -1,0 +1,25 @@
+# Maintainer: gigas002 <gigas002@pm.me>
+
+pkgname=hyprls-bin
+_pkgname=hyprls
+pkgver=0.7.0
+pkgrel=1
+pkgdesc="A LSP server for Hyprland config files"
+arch=('x86_64')
+url="https://github.com/hyprland-community/hyprls"
+license=('MIT')
+provides=("hyprls")
+options=(!strip)
+depends=()
+source=("${_pkgname}-${pkgver}.zip::https://github.com/hyprland-community/hyprls/releases/download/v$pkgver/hyprls.zip"
+        "${_pkgname}.sh")
+noextract=("${_pkgname}-${pkgver}.zip")
+sha256sums=('9e5c7b1284f1ee57452ed425204a3de8b5b408b6b79579600937c29b5e106fc8'
+            'f20019b45504cba9540a10c5b00b6eae552b4db2b64843b443003fe5a1bded39')
+
+package() {
+    mkdir -p "${pkgdir}/opt/${_pkgname}/"
+    bsdtar -xf "${_pkgname}-${pkgver}.zip" -C "${srcdir}/"
+    mv ${srcdir}/${_pkgname} ${pkgdir}/opt/${_pkgname}
+    install -Dm755 "${_pkgname}.sh" "${pkgdir}/usr/bin/${_pkgname}"
+}
