@@ -177,6 +177,9 @@ micro /etc/sysctl.d/99-splitlock.conf
 
 # less writes for journald
 micro /etc/systemd/journald.conf
+
+# update zram config
+micro /usr/lib/systemd/zram-generator.conf
 ```
 
 ## install configs
@@ -596,4 +599,14 @@ waydroid show-full-ui
 
 # get ID for Google Play certification, follow instructions afterwards
 sudo waydroid-extras certified
+```
+
+## install optional pkgbuilds
+
+```sh
+cd ~/downloads/software-and-services/PKGBUILDs
+cd hyprls-bin/
+makepkg -si
+cd ../wayshot-master-git
+makepkg -si
 ```
