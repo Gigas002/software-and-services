@@ -7,11 +7,48 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "base_keymap": "VSCode",
+  "icon_theme": "Catppuccin Mocha",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "ui_font_family": "NotoSans Nerd Font",
   "ui_font_size": 16,
+  "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
   "buffer_font_size": 16,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Catppuccin Mocha"
-  }
+  "theme": "Catppuccin Mocha",
+  "minimap": {
+    "show": "always",
+    "current_line_highlight": "all"
+  },
+  "terminal": {
+    "copy_on_select": true,
+    "font_family": "CaskaydiaCove Nerd Font Mono",
+    "shell": {
+      "program": "nu"
+    }
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "all"
+  },
+  "format_on_save": "on",
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    },
+    "update_with_cursor": true
+  },
+  "hard_tabs": false,
+  "inlay_hints": {
+    "enabled": true
+  },
+  "journal": {
+    "hour_format": "hour24"
+  },
+  "show_whitespaces": "all",
+  "soft_wrap": "bounded",
+  "preferred_line_length": 160
 }
