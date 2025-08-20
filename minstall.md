@@ -24,8 +24,9 @@ brew install git gitui openssh
 brew install fvm flutter
 brew install gradle openjdk
 brew install cocoapods firebase-cli
-Most configs from linux works on macOS as is, but for nushell you'll need a little bit of tweaking.
 ```
+
+Most configs from linux works on macOS as is, but for nushell you'll need a little bit of tweaking.
 
 ### alacritty
 
