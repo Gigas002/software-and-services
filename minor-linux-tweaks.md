@@ -265,3 +265,14 @@ bcachefs show-super /dev/sda3
 mkdir -p /snapshots
 bcachefs subvolume snapshot / /snapshots/root-20250620144900000_1
 ```
+
+## run gameconqueror on cachyos
+
+You'll need to reinstall `gameconqueror`, `scanmem` and `libscanmem` from arch repos, not cachyos ones first!
+
+Then, run following
+
+```sh
+xhost +local: &; gameconqueror
+gameconqueror
+```
