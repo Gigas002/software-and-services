@@ -55,7 +55,7 @@ source ~/.config/nushell/env.nu
 Also, since homebrew apps are not in `PATH` you should add this into your `~/.config/nushell/env.nu`:
 
 ```nu
-$env.PATH = ($env.PATH | append "/opt/homebrew/bin")
+$env.PATH = ($env.PATH | prepend "/opt/homebrew/bin")
 ```
 
 And for `flutter`/`dart` pub installs via `fvm` (this is especially useful for LSPs if you have not installed flutter globally):
