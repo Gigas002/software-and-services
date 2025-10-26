@@ -1,4 +1,4 @@
-$env.PATH = ($env.PATH | split row (char esep) | prepend "/home/gigas/.config/carapace/bin")
+$env.PATH = ($env.PATH | split row (char esep) | where { $in != "/home/gigas/.config/carapace/bin" } | prepend "/home/gigas/.config/carapace/bin")
 
 def --env get-env [name] { $env | get $name }
 def --env set-env [name, value] { load-env { $name: $value } }
@@ -28,3 +28,4 @@ $current.completions.external = ($current.completions.external
 | upsert completer { if $in == null { $carapace_completer } else { $in } })
 
 $env.config = $current
+    
