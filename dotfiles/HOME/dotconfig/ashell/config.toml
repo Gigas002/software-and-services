@@ -27,6 +27,7 @@ background_color = "#161925"
 primary_color = "#00c1e4"
 text_color = "#c74ded"
 workspace_colors = [ "#00c1e4" ]
+scale_factor = 1.5
 
 [appearance.menu]
 opacity = 0.7
