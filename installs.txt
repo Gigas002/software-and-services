@@ -12,6 +12,7 @@ awesome-terminal-fonts
 base
 base-devel
 bash-completion
+bcachefs-dkms
 bcachefs-tools
 bind
 bluedevil
@@ -105,6 +106,7 @@ hyprlock
 hyprpaper
 hyprpicker
 hyprswitch
+impala
 inetutils
 iptables-nft
 iwd
