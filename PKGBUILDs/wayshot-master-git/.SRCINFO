@@ -1,0 +1,16 @@
+pkgbase = wayshot-master-git
+	pkgdesc = Screenshoting tool
+	pkgver = r221.eeb5e5e
+	pkgrel = 2
+	url = https://github.com/waycrate/wayshot
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = cargo
+	depends = pango
+	provides = wayshot
+	conflicts = wayshot
+	source = wayshot::git+https://github.com/waycrate/wayshot.git
+	sha256sums = SKIP
+
+pkgname = wayshot-master-git

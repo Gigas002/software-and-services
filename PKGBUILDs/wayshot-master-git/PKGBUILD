@@ -2,8 +2,8 @@
 
 _pkgname="wayshot"
 pkgname="${_pkgname}-master-git"
-pkgver=r221.eeb5e5e
-pkgrel=2
+pkgver=r232.df13eb4
+pkgrel=1
 pkgdesc="Screenshoting tool"
 arch=("x86_64")
 url="https://github.com/waycrate/wayshot"

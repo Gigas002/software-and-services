@@ -10,16 +10,3 @@ index 4d3de39..ea93f3d 100644
  
  [workspace.package]
  authors = ["Shinyzenith <https://aakash.is-a.dev>"]
-diff --git a/wayshot/Cargo.toml b/wayshot/Cargo.toml
-index b7e6c37..1038019 100644
---- a/wayshot/Cargo.toml
-+++ b/wayshot/Cargo.toml
-@@ -43,7 +43,7 @@ shellexpand = "3.1.1"
- toml = { version = "0.8.23", default-features = false, features = ["parse"] }
- serde = { version = "1.0.219", features = ["derive"] }
- dirs = "6.0.0"
--libwaysip = "0.4"
-+libwaysip = { git = "https://github.com/waycrate/waysip", rev = "42a285a" }
- 
- [[bin]]
- name = "wayshot"
