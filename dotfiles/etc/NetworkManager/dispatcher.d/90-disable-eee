@@ -1,0 +1,5 @@
+#!/bin/sh
+if [ "$2" = "up" ]; then
+	/usr/sbin/ethtool --set-eee enp8s0 eee off
+	/usr/sbin/ethtool --set-eee enp9s0 eee off
+fi
