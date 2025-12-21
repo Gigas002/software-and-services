@@ -159,6 +159,7 @@ mesa
 micro
 mkinitcpio
 modemmanager
+mpv
 mpv-mpris
 mtools
 netctl
@@ -285,7 +286,6 @@ which
 wine-cachyos
 wireless-regdb
 wireplumber
-wleave-git
 wowup-cf-bin
 wpa_supplicant
 xdg-desktop-portal
