@@ -129,11 +129,12 @@ scoop install extras/rustdesk
 # scoop install main/rust-analyzer
 # scoop install main/nodejs
 
-# scoop install main/nu
+scoop install main/nu
 # scoop install extras/onefetch
 # scoop install extras/carapace-bin
 # scoop install main/starship
 scoop install main/micro
+scoop install main/helix
 scoop install main/yazi
 scoop install main/bottom
 scoop install main/fastfetch
@@ -196,7 +197,7 @@ Manually apply theme:
 ```sh
 # theme at $HOME/awesome-sweet/windows-terminal/Sweet.json
 # add this part to shemes settings.json
-micro $HOME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+helix $HOME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 ```
 
 ### `firefox` stuff

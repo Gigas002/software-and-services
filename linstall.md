@@ -100,7 +100,7 @@ Uncheck the following:
 - [x] CachyOS Packages:
   - [ ] cachyos-hello
   - [ ] cachyos-wallpapers
-- [X] CachyOS Shell Configuration:
+- [x] CachyOS Shell Configuration:
   - [ ] cachyos-zsh-config
 - [x] Base:
   - [ ] X-system
@@ -299,7 +299,7 @@ paru -S hyprland hyprlock xdg-desktop-portal-hyprland hyprpicker hyprswitch hypr
 # manually fix monitor and comment nvidia part in `~/.config/hypr/hyprland.conf`
 # See output of `hyprctl monitors all` or use:
 # monitor = , preferred, auto, 1
-micro ~/.config/hypr/monitors.conf
+helix ~/.config/hypr/monitors.conf
 
 # productivity hyprland apps
 # wleave requires key, see: https://aur.archlinux.org/packages/wleave-git
@@ -359,7 +359,7 @@ If your username is not `gigas` you'll need to fix some paths:
 # rm -rf ~/.config/git
 
 # pacman PACKAGER
-micro ~/.config/pacman/makepkg.conf
+helix ~/.config/pacman/makepkg.conf
 
 # carapace uses full path in it's nu config
 cd ~/.config/nushell
@@ -421,15 +421,15 @@ And: <https://github.com/Gigas002/software-and-services/blob/master/dotfiles/boo
 ```sh
 # systemd-boot config requires root to enter /boot
 sudo su
-micro /boot/loader/loader.conf
+helix /boot/loader/loader.conf
 exit
-micro /etc/sdboot-manage.conf
+helix /etc/sdboot-manage.conf
 sudo sdboot-manage gen
 
 # warning: apparmor may introduce strange behavior
 # like ~/.mozilla being inaccessable
 # systemctl enable --now apparmor.service
-micro /etc/apparmor/parser.conf
+helix /etc/apparmor/parser.conf
 ```
 
 ## `vscode` extensions
