@@ -2,7 +2,7 @@
 
 _pkgname="wayshot"
 pkgname="${_pkgname}-master-git"
-pkgver=r232.df13eb4
+pkgver=r293.bb5838f
 pkgrel=1
 pkgdesc="Screenshoting tool"
 arch=("x86_64")
