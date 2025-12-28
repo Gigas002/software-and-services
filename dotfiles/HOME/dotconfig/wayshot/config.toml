@@ -5,4 +5,4 @@ file = true
 [file]
 path = "$HOME/images/screenshots"
 name_format = "%Y-%m-%d_%H-%M-%S"
-encoding = "png"
+encoding = "jxl"
