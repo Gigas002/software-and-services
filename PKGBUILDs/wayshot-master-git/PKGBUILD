@@ -2,7 +2,7 @@
 
 _pkgname="wayshot"
 pkgname="${_pkgname}-master-git"
-pkgver=r293.bb5838f
+pkgver=r298.99544ee
 pkgrel=1
 pkgdesc="Screenshoting tool"
 arch=("x86_64")
@@ -14,7 +14,6 @@ provides=(${_pkgname})
 conflicts=(${_pkgname})
 source=("${_pkgname}::git+$url.git")
 sha256sums=('SKIP')
-patch="p.patch"
 
 pkgver() {
   cd "${_pkgname}"
@@ -22,12 +21,6 @@ pkgver() {
     git describe --long 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' ||
     printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
   )
-}
-
-prepare() {
-    cd "${srcdir}/${_pkgname}"
-    patch -p1 -i $startdir/$patch
-    cargo update
 }
 
 build() {
