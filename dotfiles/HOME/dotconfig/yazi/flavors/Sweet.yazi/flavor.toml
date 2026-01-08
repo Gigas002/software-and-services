@@ -4,12 +4,8 @@
 
 # : Manager {{{
 
-[manager]
+[mgr]
 cwd = { fg = "#00c1e4" }
-
-# Hovered
-hovered         = { reversed = true }
-preview_hovered = { underline = true }
 
 # Find
 find_keyword  = { fg = "#f9dc5c", bold = true, italic = true, underline = true }
@@ -21,11 +17,6 @@ marker_cut      = { fg = "#ed254e", bg = "#ed254e" }
 marker_marked   = { fg = "#c74ded", bg = "#c74ded" }
 marker_selected = { fg = "#f9dc5c", bg = "#f9dc5c" }
 
-# Tab
-tab_active   = { reversed = true }
-tab_inactive = {}
-tab_width    = 1
-
 # Count
 count_copied   = { fg = "#1e1e2e", bg = "#71f79f" }
 count_cut      = { fg = "#1e1e2e", bg = "#ed254e" }
@@ -34,6 +25,19 @@ count_selected = { fg = "#1e1e2e", bg = "#f9dc5c" }
 # Border
 border_symbol = "│"
 border_style  = { fg = "#697388" }
+
+# : }}}
+
+[indicator]
+current = { reversed = true }
+preview = { underline = true }
+
+
+# : Tabs {{{
+
+[tabs]
+active   = { fg = "#1e1e2e", bg = "#00c1e4", bold = true }
+inactive = { fg = "#00c1e4", bg = "#313244" }
 
 # : }}}
 
@@ -59,9 +63,6 @@ unset_alt  = { fg = "#c74ded", bg = "#313244" }
 # : Status bar {{{
 
 [status]
-separator_open  = ""
-separator_close = ""
-
 # Progress
 progress_label  = { fg = "#ffffff", bold = true }
 progress_normal = { fg = "#7cb7ff", bg = "#697388" }
@@ -100,7 +101,7 @@ selected = { reversed = true }
 
 # : Completion {{{
 
-[completion]
+[cmp]
 border = { fg = "#7cb7ff" }
 
 # : }}}
@@ -111,7 +112,7 @@ border = { fg = "#7cb7ff" }
 [tasks]
 border  = { fg = "#7cb7ff" }
 title   = {}
-hovered = { fg = "#c74ded", underline = true }
+hovered = { fg = "#c74ded", bold = true, underline = true }
 
 # : }}}
 
@@ -140,7 +141,18 @@ footer  = { fg = "#313244", bg = "#cdd6f4" }
 # : }}}
 
 
-# : Notify {{{
+# : Spotter {{{
+
+[spot]
+border   = { fg = "#7cb7ff" }
+title    = { fg = "#7cb7ff" }
+tbl_col  = { fg = "#71f79f" }
+tbl_cell = { fg = "#c74ded", bg = "#697388" }
+
+# : }}}
+
+
+# : Notification {{{
 
 [notify]
 title_info  = { fg = "#71f79f" }
@@ -155,21 +167,23 @@ title_error = { fg = "#ed254e" }
 [filetype]
 
 rules = [
-	# Images
+	# Image
 	{ mime = "image/*", fg = "#c74ded" },
 
 	# Media
 	{ mime = "{audio,video}/*", fg = "#f9dc5c" },
 
-	# Archives
+	# Archive
 	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#c74ded" },
 
-	# Documents
+	# Document
 	{ mime = "application/{pdf,doc,rtf}", fg = "#71f79f" },
 
+	# Virtual file system
+	{ mime = "vfs/{absent,stale}", fg = "#9399b2" },
 	# Fallback
-	{ name = "*", fg = "#cdd6f4" },
-	{ name = "*/", fg = "#7cb7ff" }
+	{ url = "*", fg = "#cdd6f4" },
+	{ url = "*/", fg = "#7cb7ff" },
 ]
 
 # : }}}
