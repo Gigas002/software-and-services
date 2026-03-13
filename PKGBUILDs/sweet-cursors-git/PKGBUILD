@@ -3,7 +3,7 @@
 pkgname=sweet-cursors-git
 _reponame=Sweet
 _pkgname=Sweet-cursors
-pkgver=r415.3a4a5d5
+pkgver=r445.1d92ac7
 pkgrel=1
 pkgdesc="Sweet cursors KDE theme"
 arch=('x86_64')

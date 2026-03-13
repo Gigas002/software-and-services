@@ -3,7 +3,7 @@
 pkgname=sweet-cursors-hyprcursor-git
 _reponame=Sweet
 _pkgname=Sweet-cursors-hyprcursor
-pkgver=r415.3a4a5d5
+pkgver=r445.1d92ac7
 pkgrel=1
 pkgdesc="Sweet cursor theme for hyprcursor"
 arch=('x86_64')
