@@ -12,7 +12,7 @@ def main [
     # ensure awww daemon is running
     if (awww query | complete | get exit_code) != 0 {
         job spawn { ^awww-daemon --format argb }
-        sleep 1sec
+        sleep 10sec
     }
 
     # killall hyprpaper
