@@ -2,18 +2,23 @@
 
 _pkgname="wayshot"
 pkgname="${_pkgname}-master-git"
-pkgver=r298.99544ee
+pkgver=r401.d7fb0a4
 pkgrel=1
 pkgdesc="Screenshoting tool"
 arch=("x86_64")
-url="https://github.com/waycrate/wayshot"
+url="https://github.com/Gigas002/wayshot"
 license=('GPL3')
-depends=(pango)
+depends=(pango libjxl)
 makedepends=(git cargo)
 provides=(${_pkgname})
 conflicts=(${_pkgname})
-source=("${_pkgname}::git+$url.git")
+source=("${_pkgname}::git+$url.git#branch=test/vk-ref")
 sha256sums=('SKIP')
+
+#prepare() {
+#  cd "${srcdir}/${_pkgname}"
+#  git checkout 9165029685297fb8a10f77c826cdeae740c4d842
+#}
 
 pkgver() {
   cd "${_pkgname}"
@@ -25,7 +30,7 @@ pkgver() {
 
 build() {
   cd "${srcdir}/${_pkgname}"
-  cargo build --release
+  cargo build --no-default-features --features vulkan,jxl,selector --release
 }
 
 package() {
