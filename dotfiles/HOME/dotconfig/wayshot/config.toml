@@ -1,6 +1,7 @@
 [base]
 clipboard = true
 file = true
+stdout = true
 
 [file]
 path = "$HOME/images/screenshots"
