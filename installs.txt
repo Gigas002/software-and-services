@@ -9,6 +9,7 @@ ark
 ashell
 atuin
 awesome-terminal-fonts
+awww-git
 base
 base-devel
 bash-completion
@@ -48,18 +49,22 @@ cargo-cache
 ccache
 char-white
 chwd
+claude-code
 cliphist
 cpupower
 cryptsetup
+deno
 device-mapper
 dhclient
 diffutils
+discordo-git
 dmidecode
 dmraid
 dnsmasq
 dolphin
 dosfstools
 downgrade
+dua-cli
 dualsensectl-git
 dunst
 dust
@@ -82,7 +87,6 @@ gallery-dl
 gameconqueror
 gamemode
 gamescope
-gimp
 git
 gitui
 gping
@@ -94,7 +98,6 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
-gstreamer-vaapi
 haveged
 hdparm
 helix
@@ -143,8 +146,11 @@ libopenraw
 libplasma
 libreoffice-fresh
 libvips
+libwebp-utils
 linux-cachyos
 linux-cachyos-headers
+linux-cachyos-lts
+linux-cachyos-lts-headers
 linux-firmware
 logrotate
 lsb-release
@@ -243,7 +249,7 @@ rust
 rust-analyzer
 rust-src
 s-nail
-samrewritten-git
+samrewritten
 scanmem
 sccache
 sg3_utils
@@ -257,7 +263,6 @@ sweet-folders-git
 sweet-gtk-theme-git
 sweet-kde-theme-git
 sweet-kvantum-git
-swww
 sysfsutils
 systemd-boot-manager
 telegram-desktop
@@ -271,6 +276,7 @@ ttf-liberation
 ttf-meslo-nerd
 ttf-noto-nerd
 ttf-roboto
+typos
 ufw
 unrar
 unzip
@@ -280,6 +286,7 @@ usbutils
 vcmi
 ventoy-bin
 vesktop
+vkd3d-proton-mingw-git
 vulkan-radeon
 wayshot-master-git
 which
@@ -301,5 +308,6 @@ xorg-xhost
 xsettingsd
 yazi
 yt-dlp
+yt-dlp-ejs
 zed
 zellij
