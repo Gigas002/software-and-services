@@ -7,17 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    }
-  },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
   "telemetry": {
     "metrics": false,
-    "diagnostics": false
+    "diagnostics": false,
   },
   "ui_font_family": "NotoSans Nerd Font",
   "ui_font_size": 16,
@@ -26,34 +20,34 @@
   "theme": "Catppuccin Mocha",
   "minimap": {
     "show": "always",
-    "current_line_highlight": "all"
+    "current_line_highlight": "all",
   },
   "terminal": {
     "copy_on_select": true,
     "font_family": "CaskaydiaCove Nerd Font Mono",
     "shell": {
-      "program": "nu"
-    }
+      "program": "nu",
+    },
   },
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "all"
+    "show_diagnostics": "all",
   },
   "format_on_save": "on",
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "hard_tabs": false,
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
   },
   "journal": {
-    "hour_format": "hour24"
+    "hour_format": "hour24",
   },
   "show_whitespaces": "all",
   "soft_wrap": "bounded",
-  "preferred_line_length": 160
+  "preferred_line_length": 160,
 }
