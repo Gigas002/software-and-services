@@ -1,15 +1,116 @@
 themes {
- 	Sweet {
- 		fg "#71f79f"
- 		bg "#161925"
- 		black "#161925"
- 		red "#ed254e"
- 		green "#71f79f"
- 		yellow "#f9dc5c"
- 		blue "#7cb7ff"
- 		magenta "#c74ded"
- 		cyan "#00c1e4"
- 		white "#dcdfe4"
- 		orange "#00c1e4"
- 	}
+    Sweet {
+        text_unselected {
+            base "#ffffff"
+            background "#161925"
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#71f79f"
+            emphasis_3 "#00c1e4"
+        }
+        text_selected {
+            base "#161925"
+            background "#00c1e4"
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#71f79f"
+            emphasis_3 "#c74ded"
+        }
+        ribbon_selected {
+            base "#161925"
+            background "#71f79f"
+            emphasis_0 "#ed254e"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#c74ded"
+            emphasis_3 "#7cb7ff"
+        }
+        ribbon_unselected {
+            base "#161925"
+            background "#00c1e4"
+            emphasis_0 "#3d4566"
+            emphasis_1 "#ed254e"
+            emphasis_2 "#c74ded"
+            emphasis_3 "#7cb7ff"
+        }
+        table_title {
+            base "#71f79f"
+            background 0
+            emphasis_0 "#ed254e"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#71f79f"
+            emphasis_3 "#c74ded"
+        }
+        table_cell_selected {
+            base "#71f79f"
+            background "#252849"
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#71f79f"
+            emphasis_3 "#c74ded"
+        }
+        table_cell_unselected {
+            base "#dcdfe4"
+            background "#161925"
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#71f79f"
+            emphasis_3 "#c74ded"
+        }
+        list_selected {
+            base "#71f79f"
+            background "#252849"
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#71f79f"
+            emphasis_3 "#c74ded"
+        }
+        list_unselected {
+            base "#dcdfe4"
+            background "#161925"
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#71f79f"
+            emphasis_3 "#c74ded"
+        }
+        frame_unselected {
+            base "#00c1e4"
+            background 0
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#c74ded"
+            emphasis_3 0
+        }
+        frame_selected {
+            base "#71f79f"
+            background 0
+            emphasis_0 "#f9dc5c"
+            emphasis_1 "#00c1e4"
+            emphasis_2 "#c74ded"
+            emphasis_3 0
+        }
+        frame_highlight {
+            base "#c74ded"
+            background 0
+            emphasis_0 "#c74ded"
+            emphasis_1 "#ed254e"
+            emphasis_2 "#ed254e"
+            emphasis_3 "#ed254e"
+        }
+        exit_code_success {
+            base "#71f79f"
+            background 0
+            emphasis_0 "#00c1e4"
+            emphasis_1 "#161925"
+            emphasis_2 "#c74ded"
+            emphasis_3 "#7cb7ff"
+        }
+        exit_code_error {
+            base "#ed254e"
+            background 0
+            emphasis_0 "#f9dc5c"
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+    }
 }
