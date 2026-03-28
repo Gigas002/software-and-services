@@ -1,7 +1,7 @@
 [modules]
 left = [ "SystemInfo", "Workspaces", "MediaPlayer" ]
 center = [ "WindowTitle" ]
-right = [ [ "KeyboardLayout" ], [ "Tray", "Clock", "Privacy", "Settings" ] ]
+right = [ [ "KeyboardLayout" ], [ "Tray", "Tempo", "Privacy", "Settings" ] ]
 
 [workspaces]
 visibility_mode = "MonitorSpecific"
@@ -12,6 +12,22 @@ visibility_mode = "MonitorSpecific"
 
 [clock]
 format = "%R %d.%m.%Y"
+
+[tempo]
+clock_format = "%R %d.%m.%Y"
+weather_location = { City = "Tokyo" }
+weather_indicator = "Icon"
+formats = [
+    # 21:35 28.03.2026
+    "%R %Z %d.%m.%Y",
+    # TODO: doesn't updates every second
+    # 14:30:45 (updates every second)
+    # "%H:%M:%S",
+]
+timezones = [
+    "Asia/Tokyo",
+    "Europe/Moscow",
+]
 
 [settings]
 audio_sinks_more_cmd = "pavucontrol -t 3"
@@ -30,6 +46,7 @@ primary_color = "#00c1e4"
 text_color = "#c74ded"
 workspace_colors = [ "#00c1e4" ]
 scale_factor = 1.5
+opacity = 0.8
 
 [appearance.menu]
 opacity = 0.7
