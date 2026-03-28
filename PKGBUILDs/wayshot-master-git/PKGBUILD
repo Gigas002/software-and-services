@@ -2,7 +2,7 @@
 
 _pkgname="wayshot"
 pkgname="${_pkgname}-master-git"
-pkgver=r401.d7fb0a4
+pkgver=r462.bf69b10
 pkgrel=1
 pkgdesc="Screenshoting tool"
 arch=("x86_64")
@@ -30,7 +30,7 @@ pkgver() {
 
 build() {
   cd "${srcdir}/${_pkgname}"
-  cargo build --no-default-features --features vulkan,jxl,selector --release
+  cargo build --no-default-features --features jxl,selector --release
 }
 
 package() {
