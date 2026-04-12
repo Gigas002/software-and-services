@@ -9,7 +9,7 @@ ark
 ashell
 atuin
 awesome-terminal-fonts
-awww-git
+awww
 base
 base-devel
 bash-completion
@@ -111,7 +111,7 @@ hyprpicker
 hyprswitch
 impala
 inetutils
-iptables-nft
+iptables
 iwd
 jfsutils
 kapidox
@@ -185,6 +185,7 @@ nushell
 obs-studio
 oculante
 onefetch
+openbsd-netcat
 opencl-mesa
 opendesktop-fonts
 openssh
@@ -289,6 +290,7 @@ vesktop
 vkd3d-proton-mingw-git
 vulkan-radeon
 wayshot-master-git
+waysip-git
 which
 wine-cachyos
 wireless-regdb
