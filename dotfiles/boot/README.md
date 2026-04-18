@@ -12,6 +12,4 @@ Edit your entry file, e.g: `/boot/loader/linux-cachyos.conf`, add to `options` l
 quiet amd_pstate=guided lsm=landlock,lockdown,yama,integrity,apparmor,bpf
 ```
 
-TODO: `psi=1` is required for `waydroid`?
-
 Or use cachyos's `sdboot-manage`. Edit the `/etc/sdboot-manage.conf` and run `sudo sdboot-manage gen`
