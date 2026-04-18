@@ -18,11 +18,11 @@ The partitions would probably be like:
 
 ```sh
 /dev/nvme0n1p1 -- fat32 boot partition in /efi or /boot
-/dev/nvme0n1p2 -- swap
-/dev/nvme0n1p3 -- linux filesystem
+/dev/nvme0n1p2 -- linux filesystem
 ```
 
-For correct swap size settings, refer to gentoo guide. TLDR: 16GB for 64GB RAM without hibernation
+Swap is handled by zram (configured via `zram-generator`), no dedicated swap partition needed.
+
 If your table looks different, run:
 
 ```sh
@@ -37,23 +37,15 @@ n
 t
 1
 1
-# swap
-n
-2
-(empty)
-+16G
-t
-2
-19
 # root partition
 n
-3
+2
 (empty)
 (empty)
 # if you want to change 'Linux filesystem' to 'Linux root'
 # not needed generally
 # t
-# 3
+# 2
 # 23
 
 # write the changes
@@ -65,14 +57,11 @@ Next, create the filesystems on partitions:
 ```sh
 # boot/efi
 sudo mkfs.vfat -F 32 /dev/nvme0n1p1
-# swap
-sudo mkswap /dev/nvme0n1p2
-sudo swapon /dev/nvme0n1p2
 # root
 sudo mkfs.bcachefs --block_size 4k --compression=zstd --background_compression=zstd --data_checksum=crc64 --metadata_checksum=crc64
 ```
 
-Finally, install the system. When selecting the partition, select `Manual partitioning`, then `/boot` as mounting point for `efi` partition and `/` for `bcachefs`. Select the `keep` option rather than `format`!
+Finally, install the system. When selecting the partition, select `Manual partitioning`, then `/boot` as mounting point for `efi` partition and `/` for `bcachefs`. Select the `keep` option rather than `format`! No swap partition — zram will be configured after install.
 
 ## install cachyos
 
@@ -215,23 +204,20 @@ For GUI (including above):
 # don't forget to add this to /etc/profile if you're on cachyos
 mkdir ~/.local
 cp -r ~/downloads/software-and-services/dotfiles/HOME/dotlocal/* ~/.local
-
-# gtk 2.0 color scheme
-cp -r ~/downloads/software-and-services/dotfiles/HOME/.gtkrc-2.0 ~/.gtkrc-2.0
 ```
 
 Remove ones you won't need (e.g. in `docker`):
 
 ```sh
 cd ~/.config
-rm -rf alacritty/ anyrun/ dunst/ flameshot/ foot/ frogminer/ gallery-dl/ gtk-3.0/ gtk-4.0/ hypr/ imgvwr/ imv/ kickoff/ kitty/ Kvantum/ lapce-stable/ lsd/ menus/ mpv/ nano/ neofetch/ oculante/ oh-my-posh/ onagre/ Proton/ qimgv/ qt5ct/ qt6ct/ rofi/ steamtinkerlaunch/ swaylock/ tofi/ VSCodium/ waybar/ wleave/ wlogout/ xdg-desktop-portal/ xsettingsd/ yay/ zed/ zsh/ ashell.yml baloofilerc dolphinrc electron-flags.conf electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf kcminputrc kdeglobals plasmarc user-dirs.dirs nushell/oh-my-posh.nu ff2mpv-rust.json
+rm -rf legacy/ alacritty/ ashell/ dunst/ frogminer/ gallery-dl/ gtk-3.0/ gtk-4.0/ hypr/ imgvwr/ Kvantum/ menus/ mpv/ Proton/ qt6ct/ tofi/ VSCodium/ wayshot/ xdg-desktop-portal/ xsettingsd/ yazi/ zed/ zellij/ baloofilerc dolphinrc electron-flags.conf electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf kcminputrc kdeglobals plasmarc user-dirs.dirs nushell/oh-my-posh.nu ff2mpv-rust.json
 ```
 
 For my GUI (instead of above):
 
 ```sh
 cd ~/.config
-rm -rf anyrun/ flameshot/ imv/ kickoff/ kitty/ lapce-stable/ lsd/ nano/ neofetch/ oh-my-posh/ onagre/ rofi/ steamtinkerlaunch/ swaylock/ waybar/ wlogout/ yay/ zsh/ electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf
+rm -rf legacy/ electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf
 ```
 
 ## install apps
@@ -268,7 +254,7 @@ paru -S cliphist 7zip apparmor apparmor.d-git fwupd modprobed-db network-manager
 paru -S code code-marketplace zed
 
 # media
-paru -S mpv phonon-qt6-mpv oculante libvips obs-studio mpv-mpris
+paru -S mpv phonon-qt6-mpv libvips obs-studio mpv-mpris
 # optionally install stuff for mpv
 # paru -S anime4k-git
 
@@ -605,7 +591,7 @@ sudo waydroid-extras certified
 
 ```sh
 cd ~/downloads/software-and-services/PKGBUILDs
-cd hyprls-bin/
+cd imgvwr
 makepkg -si
 cd ../wayshot-master-git
 makepkg -si
