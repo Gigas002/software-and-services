@@ -2,23 +2,18 @@
 
 _pkgname="wayshot"
 pkgname="${_pkgname}-master-git"
-pkgver=r462.bf69b10
-pkgrel=1
+pkgver=r418.5d9899c
+pkgrel=4
 pkgdesc="Screenshoting tool"
 arch=("x86_64")
-url="https://github.com/Gigas002/wayshot"
+url="https://github.com/waycrate/wayshot"
 license=('GPL3')
 depends=(pango libjxl)
 makedepends=(git cargo)
 provides=(${_pkgname})
 conflicts=(${_pkgname})
-source=("${_pkgname}::git+$url.git#branch=test/vk-ref")
+source=("${_pkgname}::git+$url.git")
 sha256sums=('SKIP')
-
-#prepare() {
-#  cd "${srcdir}/${_pkgname}"
-#  git checkout 9165029685297fb8a10f77c826cdeae740c4d842
-#}
 
 pkgver() {
   cd "${_pkgname}"

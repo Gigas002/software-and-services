@@ -1,8 +1,8 @@
 pkgbase = wayshot-master-git
 	pkgdesc = Screenshoting tool
-	pkgver = r395.aa4f460
+	pkgver = r414.1801fe3
 	pkgrel = 1
-	url = https://github.com/Gigas002/wayshot
+	url = https://github.com/waycrate/wayshot
 	arch = x86_64
 	license = GPL3
 	makedepends = git
@@ -11,7 +11,7 @@ pkgbase = wayshot-master-git
 	depends = libjxl
 	provides = wayshot
 	conflicts = wayshot
-	source = wayshot::git+https://github.com/Gigas002/wayshot.git#branch=test/vk-ref
+	source = wayshot::git+https://github.com/waycrate/wayshot.git
 	sha256sums = SKIP
 
 pkgname = wayshot-master-git
