@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=imgvwr
-Terminal=false
-Exec=/usr/bin/imgvwr %U
-Categories=Graphics;Application;
