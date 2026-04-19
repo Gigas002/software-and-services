@@ -1,0 +1,24 @@
+[prompt]
+text = "run: "
+
+[text]
+color = "#c3c7c8"
+prompt_color = "#f9dc5c"
+input-color = "#00c1e4"
+selection_color = "#bd93f9"
+
+[results]
+spacing = 25
+
+[font]
+name = "CaskaydiaCove Nerd Font Mono"
+
+[window]
+background_color = "#000000bb"
+outline_color = "#ed254eff"
+border_color = "#c74dedff"
+outline_width = 1
+border_width = 2
+corner_radius = 50
+width = "45%"
+height = "60%"
