@@ -10,9 +10,8 @@ pkgbase = waysip
 	depends = pango
 	depends = cairo
 	depends = glib2
-	provides = waysip
 	conflicts = waysip-git
-	source = waysip-0.6.1.tar.gz::https://github.com/waycrate/waysip/archive/refs/tags/0.6.1.tar.gz
-	sha256sums = d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+	source = waysip-0.6.1.tar.gz::https://github.com/waycrate/waysip/archive/refs/tags/v0.6.1.tar.gz
+	b2sums = a245d32b03ad7bc5dda40950d9d7762f36a8f8582ed266505c0b1c7cb59be981fcfa0b2f1cb46e0dabb092ea56d53301b295368420f74ed41330dc73978436f9
 
 pkgname = waysip

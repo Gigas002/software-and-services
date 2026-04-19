@@ -1,13 +1,14 @@
 pkgbase = sweet-konsole-git
-	pkgdesc = Sweet KDE Plasma theme
-	pkgver = r47.2ed3782
+	pkgdesc = Sweet KDE color scheme for Konsole
+	pkgver = r50.0feee61
 	pkgrel = 1
 	url = https://github.com/Gigas002/Sweet-kde
-	arch = x86_64
+	arch = any
 	license = GPL-3.0-or-later
 	makedepends = git
 	depends = konsole
-	options = !strip
+	provides = sweet-konsole=r50.0feee61
+	conflicts = sweet-konsole
 	source = git+https://github.com/Gigas002/Sweet-kde.git#branch=plasma-6-migration
 	sha256sums = SKIP
 

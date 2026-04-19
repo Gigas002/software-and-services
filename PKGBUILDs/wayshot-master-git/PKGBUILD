@@ -2,14 +2,19 @@
 
 _pkgname="wayshot"
 pkgname="${_pkgname}-master-git"
-pkgver=r418.5d9899c
-pkgrel=4
-pkgdesc="Screenshoting tool"
+pkgver=r466.96fa4f9
+pkgrel=1
+pkgdesc="Screenshotting tool"
 arch=("x86_64")
 url="https://github.com/waycrate/wayshot"
-license=('GPL3')
+license=('GPL-3.0-only')
 depends=(pango libjxl)
-makedepends=(git cargo)
+makedepends=(git cargo scdoc)
+optdepends=(
+  'wl-clipboard: copy screenshots to clipboard'
+  'slurp: interactive region selection'
+  'waysip: interactive region selection (Wayland-native)'
+)
 provides=(${_pkgname})
 conflicts=(${_pkgname})
 source=("${_pkgname}::git+$url.git")
@@ -24,11 +29,18 @@ pkgver() {
 }
 
 build() {
-  cd "${srcdir}/${_pkgname}"
-  cargo build --no-default-features --features jxl,selector --release
+  cd "${_pkgname}"
+  cargo build --no-default-features --features logger,jxl,selector --release
+  for f in docs/*.scd; do
+    scdoc < "$f" > "${f%.scd}"
+  done
 }
 
 package() {
   cd "${_pkgname}"
   install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/${_pkgname}"
+  install -Dm644 LICENSE-GPL "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  for f in docs/wayshot.[0-9]; do
+    install -Dm644 "$f" "$pkgdir/usr/share/man/man${f##*.}/${f##*/}"
+  done
 }
