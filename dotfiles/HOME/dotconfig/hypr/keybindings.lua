@@ -13,7 +13,6 @@ local sysmon          = "btm"
 local launcher        = "tofi"
 
 -- Complex commands
-local switch_cmd      = "hyprswitch gui --mod-key alt_l --key tab --close mod-key-release && hyprswitch dispatch"
 local lock_cmd        = "hyprlock"
 local bar_cmd         = "killall ashell || ashell"
 local screenshot_cmd  = "wayshot -g | wl-copy"
@@ -26,8 +25,10 @@ local reload_cmd      = "hyprctl reload"
 -- │  Window / session actions               │
 -- └─────────────────────────────────────────┘
 
--- Window switcher (hyprswitch)
-hl.bind("ALT + tab", hl.dsp.exec_cmd(switch_cmd))
+-- Window switcher
+-- cycle_next: https://wiki.hypr.land/Configuring/Basics/Dispatchers/#window
+-- Cycle order follows binds:focus_preferred_method (history / edge-length)
+hl.bind("ALT + tab", hl.dsp.window.cycle_next())
 
 -- Close focused window
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())

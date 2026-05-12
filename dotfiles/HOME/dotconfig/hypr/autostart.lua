@@ -19,7 +19,6 @@ local clipboard_images = "wl-paste --type image --watch cliphist store"
 local wallpaper = "hyprpaper"
 
 local idle = "hypridle"
-local switch = "hyprswitch init --show-title"
 
 hl.on("hyprland.start", function()
     hl.exec_cmd(polkit)
@@ -31,5 +30,4 @@ hl.on("hyprland.start", function()
     hl.exec_cmd(clipboard_images)
     hl.exec_cmd(wallpaper)
     hl.exec_cmd(idle)
-    hl.exec_cmd(switch)
 end)
