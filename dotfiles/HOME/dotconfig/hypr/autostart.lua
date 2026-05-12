@@ -3,9 +3,9 @@
 -- XDPH:     https://wiki.hypr.land/Hypr-Ecosystem/xdg-desktop-portal-hyprland/
 
 -- hyprpolkit
--- local polkit = "systemctl --user start hyprpolkitagent"
+local polkit = "systemctl --user start hyprpolkitagent"
 -- kde polkit
-local polkit = "/usr/lib/polkit-kde-authentication-agent-1"
+-- local polkit = "/usr/lib/polkit-kde-authentication-agent-1"
 
 local bar = "ashell"
 local bluetooth_applet = "blueman-applet"

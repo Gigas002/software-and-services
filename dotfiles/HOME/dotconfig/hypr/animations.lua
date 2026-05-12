@@ -18,13 +18,22 @@ hl.curve("quick", { type = "bezier", points = { { 0.15, 0.0 }, { 0.1, 1.0 } } })
 -- Bezier: true linear for continuous border-angle rotation
 hl.curve("liner", { type = "bezier", points = { { 1.0, 1.0 }, { 1.0, 1.0 } } })
 
+-- Bezier: gentle ease-out with a tiny overshoot — natural inertia for slides
+hl.curve("wind", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.05 } } })
+
+-- Bezier: fast-in with a pronounced overshoot — punchy "landing" for incoming elements
+hl.curve("winIn", { type = "bezier", points = { { 0.1, 1.1 }, { 0.1, 1.1 } } })
+
+-- Bezier: brief reverse before exiting — reads as a deliberate dismiss, not a vanish
+hl.curve("winOut", { type = "bezier", points = { { 0.3, -0.3 }, { 0.0, 1.0 } } })
+
 
 -- ── Windows ───────────────────────────────────────────────────────────────
--- Spring motion for move/drag; popin for open/close (windows "materialise")
+-- Spring motion for move/drag; directional slide for open/close
 
 hl.animation({ leaf = "windows", enabled = true, speed = 4.8, spring = "snap" })
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 4.2, spring = "snap", style = "popin 87%" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 1.5, bezier = "liner", style = "popin 87%" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 5.0, bezier = "winIn", style = "slide" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 4.0, bezier = "winOut", style = "slide" })
 hl.animation({ leaf = "windowsMove", enabled = true, speed = 4.0, spring = "snap" })
 
 
@@ -48,11 +57,11 @@ hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 2.5, bezier = "al
 
 
 -- ── Workspaces ────────────────────────────────────────────────────────────
--- Crossfade feels cleaner than a hard directional slide for workspace switching
+-- Directional slide: outgoing panel exits with wind inertia, incoming snaps in with winIn punch
 
-hl.animation({ leaf = "workspaces", enabled = true, speed = 2.5, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesIn", enabled = true, speed = 2.5, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesOut", enabled = true, speed = 2.0, bezier = "almostLinear", style = "fade" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 5.0, bezier = "wind" })
+hl.animation({ leaf = "workspacesIn", enabled = true, speed = 5.0, bezier = "winIn" })
+hl.animation({ leaf = "workspacesOut", enabled = true, speed = 4.5, bezier = "wind" })
 
 
 -- ── Layers (notifications, launchers, bars, etc.) ─────────────────────────

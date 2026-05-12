@@ -2,23 +2,22 @@
 -- Binds:          https://wiki.hypr.land/Configuring/Basics/Binds/
 -- Dispatchers:    https://wiki.hypr.land/Configuring/Basics/Dispatchers/
 
-local helpers = require("helpers")
+local helpers        = require("helpers")
 
-local mainMod         = "SUPER"
+local mainMod        = "SUPER"
 
 -- Application assignments
-local term            = "alacritty"
-local editor          = "zeditor"
-local file_mgr        = "dolphin"
-local browser         = "firefox"
-local sysmon          = "btm"
-local launcher        = "tofi"
+local term           = "alacritty"
+local editor         = "zeditor"
+local file_mgr       = "dolphin"
+local browser        = "firefox"
+local sysmon         = "btm"
+local launcher       = "tofi"
 
 -- Complex commands
 local lock_cmd       = "hyprlock"
 local bar_cmd        = "killall ashell || ashell"
 local screenshot_cmd = "wayshot -g | wl-copy"
-local reload_cmd     = "hyprctl reload"
 
 
 -- ┌─────────────────────────────────────────┐
@@ -38,7 +37,6 @@ hl.bind(mainMod .. " + Delete", hl.dsp.exit())
 
 -- Toggle float / group / fullscreen
 hl.bind(mainMod .. " + W", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + G", hl.dsp.window.group({ action = "toggle" }))
 hl.bind("ALT + Return", hl.dsp.window.fullscreen())
 
 -- Lock screen
@@ -52,12 +50,6 @@ hl.bind("print", hl.dsp.exec_cmd(screenshot_cmd))
 
 -- Borderless toggle
 hl.bind(mainMod .. " + H", function() helpers.toggle_borderless() end)
-
--- Reload Hyprland config
-hl.bind(mainMod .. " + ALT + O", hl.dsp.exec_cmd(reload_cmd))
-
--- Make all windows on current workspace floating
--- hl.bind(mainMod .. " + SHIFT + C", hl.dsp.workspace.opt("allfloat"))
 
 -- Wallpaper daemon
 -- hl.bind(mainMod .. " + SHIFT + P",       hl.dsp.exec_cmd("wallpaper.nu"))
@@ -91,11 +83,11 @@ hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 
 -- Keys 1–9 map to workspaces 1–9; key 0 maps to workspace 10.
 for i = 1, 10 do
-        local key = tostring(i % 10)
-        hl.bind(mainMod .. " + " .. key,
-                hl.dsp.focus({ workspace = i }))
-        hl.bind(mainMod .. " + SHIFT + " .. key,
-                hl.dsp.window.move({ workspace = i }))
+    local key = tostring(i % 10)
+    hl.bind(mainMod .. " + " .. key,
+        hl.dsp.focus({ workspace = i }))
+    hl.bind(mainMod .. " + SHIFT + " .. key,
+        hl.dsp.window.move({ workspace = i }))
 end
 
 
@@ -103,10 +95,10 @@ end
 -- │  Resize windows (keyboard)              │
 -- └─────────────────────────────────────────┘
 
-hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.resize({ delta = { 30, 0 } }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.resize({ delta = { -30, 0 } }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.resize({ delta = { 0, -30 } }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.resize({ delta = { 0, 30 } }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.resize({ x = 30, y = 0 }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.resize({ x = -30, y = 0 }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.resize({ x = 0, y = -30 }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.resize({ x = 0, y = 30 }), { repeating = true })
 
 
 -- ┌─────────────────────────────────────────┐
