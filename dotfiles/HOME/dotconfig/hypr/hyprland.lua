@@ -11,6 +11,7 @@
 --   Animations    -> animations.lua
 --   Input         -> input.lua
 --   Misc          -> misc.lua
+--   Helpers       -> helpers.lua
 --   Binds         -> keybindings.lua
 --   XWayland      -> xwayland.lua
 --   Render        -> render.lua
@@ -24,6 +25,7 @@ require("xwayland")
 require("render")
 require("input")
 require("animations")
+require("helpers")
 require("keybindings")
 -- require("font")
 require("themes.Sweet")

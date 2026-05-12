@@ -2,6 +2,8 @@
 -- Binds:          https://wiki.hypr.land/Configuring/Basics/Binds/
 -- Dispatchers:    https://wiki.hypr.land/Configuring/Basics/Dispatchers/
 
+local helpers = require("helpers")
+
 local mainMod         = "SUPER"
 
 -- Application assignments
@@ -13,12 +15,10 @@ local sysmon          = "btm"
 local launcher        = "tofi"
 
 -- Complex commands
-local lock_cmd        = "hyprlock"
-local bar_cmd         = "killall ashell || ashell"
-local screenshot_cmd  = "wayshot -g | wl-copy"
-local borderless_cmd  = "borderless.nu"
-local rst_borders_cmd = "reset_borders.nu"
-local reload_cmd      = "hyprctl reload"
+local lock_cmd       = "hyprlock"
+local bar_cmd        = "killall ashell || ashell"
+local screenshot_cmd = "wayshot -g | wl-copy"
+local reload_cmd     = "hyprctl reload"
 
 
 -- ┌─────────────────────────────────────────┐
@@ -50,9 +50,8 @@ hl.bind("CTRL + Escape", hl.dsp.exec_cmd(bar_cmd))
 -- Screenshot
 hl.bind("print", hl.dsp.exec_cmd(screenshot_cmd))
 
--- Window border helpers
-hl.bind(mainMod .. " + H", hl.dsp.exec_cmd(borderless_cmd))
-hl.bind(mainMod .. " + ALT + H", hl.dsp.exec_cmd(rst_borders_cmd))
+-- Borderless toggle
+hl.bind(mainMod .. " + H", function() helpers.toggle_borderless() end)
 
 -- Reload Hyprland config
 hl.bind(mainMod .. " + ALT + O", hl.dsp.exec_cmd(reload_cmd))
