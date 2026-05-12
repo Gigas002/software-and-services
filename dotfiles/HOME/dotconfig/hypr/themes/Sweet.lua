@@ -67,7 +67,7 @@ hl.config({
         active_opacity   = 0.85,
         inactive_opacity = 0.85,
         dim_inactive     = true,
-        -- dim_strength    = 0.3,
+        dim_strength    = 0.15,
         dim_special      = 0.3,
         -- border_part_of_window = true,
 
