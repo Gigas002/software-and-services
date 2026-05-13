@@ -1,0 +1,54 @@
+# Maintainer: local overlay — system ggml (matches airi/README row 2 step B).
+# Install exactly one of: libggml-zen5-git | libggml-vulkan-git | libggml-hip-git (each provides libggml-git).
+
+pkgname=whisper.cpp-system-libggml-git
+pkgver=r0.0000000
+pkgrel=1
+pkgdesc="whisper.cpp (git) — WHISPER_USE_SYSTEM_GGML=ON, whisper-server (needs libggml-git provider)"
+arch=('x86_64')
+url="https://github.com/ggml-org/whisper.cpp"
+license=('MIT')
+depends=('libggml-git' 'gcc-libs')
+makedepends=('cmake' 'git' 'ninja')
+provides=('whisper.cpp-git' 'whisper.cpp')
+conflicts=('whisper.cpp' 'whisper.cpp-git' 'whisper.cpp-zen5-git' 'whisper.cpp-vulkan-git' 'whisper.cpp-hip-git')
+source=('whisper.cpp::git+https://github.com/ggml-org/whisper.cpp.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/whisper.cpp"
+  git describe --long --tags --abbrev=7 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' \
+    || printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+}
+
+prepare() {
+  cd "$srcdir/whisper.cpp"
+  git submodule update --init --recursive
+}
+
+build() {
+  # : "${ROCM_PATH:=/opt/rocm}"
+  # local _prefix_path=/usr
+  # if [[ -d "$ROCM_PATH" ]]; then
+  #   _prefix_path="/usr;${ROCM_PATH}"
+  # fi
+
+  # -DCMAKE_PREFIX_PATH="${_prefix_path}" \
+  cmake -B build -G Ninja -S "$srcdir/whisper.cpp" \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWHISPER_USE_SYSTEM_GGML=ON \
+    -DWHISPER_BUILD_SERVER=ON \
+    -DWHISPER_BUILD_TESTS=OFF \
+    -DWHISPER_ALL_WARNINGS=OFF \
+    -Wno-dev
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$srcdir/whisper.cpp/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname/"
+  if [[ -e "$pkgdir/usr/bin/whisper-cli" ]]; then
+    ln -sf whisper-cli "$pkgdir/usr/bin/whisper.cpp"
+  fi
+}

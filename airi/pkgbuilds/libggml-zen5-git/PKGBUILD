@@ -1,0 +1,50 @@
+# Maintainer: local overlay — see airi/README.md whisper patterns (CPU / Zen-class SIMD).
+# Inspired by https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=libggml-git
+
+pkgname=libggml-zen5-git
+pkgver=r0.0000000
+pkgrel=1
+pkgdesc="ggml (git) — CPU backend with Zen-class AVX-512 SIMD flags (no Vulkan/HIP)"
+arch=('x86_64')
+url="https://github.com/ggml-org/ggml"
+license=('MIT')
+depends=('gcc-libs')
+makedepends=('cmake' 'git' 'ninja')
+provides=('libggml-git' 'libggml')
+conflicts=('libggml' 'libggml-git' 'libggml-vulkan-git' 'libggml-hip-git')
+source=('ggml::git+https://github.com/ggml-org/ggml.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/ggml"
+  git describe --long --tags --abbrev=7 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' \
+    || printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+}
+
+build() {
+  cmake -B build -G Ninja -S "$srcdir/ggml" \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DGGML_NATIVE=ON \
+    -DGGML_LTO=ON \
+    -DGGML_OPENMP=ON \
+    -DGGML_FMA=ON \
+    -DGGML_F16C=ON \
+    -DGGML_AVX512=ON \
+    -DGGML_AVX512_VBMI=ON \
+    -DGGML_AVX512_VNNI=ON \
+    -DGGML_AVX512_BF16=ON \
+    -DGGML_AVX_VNNI=ON \
+    -DGGML_BUILD_TESTS=OFF \
+    -DGGML_BUILD_EXAMPLES=OFF \
+    -DGGML_ALL_WARNINGS=OFF \
+    -DGGML_ALL_WARNINGS_3RD_PARTY=OFF \
+    -DBUILD_SHARED_LIBS=ON \
+    -Wno-dev
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$srcdir/ggml/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname/"
+}

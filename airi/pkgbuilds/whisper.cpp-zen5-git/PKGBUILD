@@ -1,0 +1,57 @@
+# Maintainer: local overlay — bundled ggml, CPU SIMD (matches airi/README 1-1).
+# Inspired by https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=whisper.cpp-git
+
+pkgname=whisper.cpp-zen5-git
+pkgver=r0.0000000
+pkgrel=1
+pkgdesc="whisper.cpp (git) — bundled ggml, Zen-class CPU SIMD, whisper-server"
+arch=('x86_64')
+url="https://github.com/ggml-org/whisper.cpp"
+license=('MIT')
+depends=('gcc-libs')
+makedepends=('cmake' 'git' 'ninja')
+provides=('whisper.cpp-git' 'whisper.cpp')
+conflicts=('whisper.cpp' 'whisper.cpp-git' 'whisper.cpp-vulkan-git' 'whisper.cpp-hip-git' 'whisper.cpp-system-libggml-git')
+source=('whisper.cpp::git+https://github.com/ggml-org/whisper.cpp.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/whisper.cpp"
+  git describe --long --tags --abbrev=7 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' \
+    || printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+}
+
+prepare() {
+  cd "$srcdir/whisper.cpp"
+  git submodule update --init --recursive
+}
+
+build() {
+  cmake -B build -G Ninja -S "$srcdir/whisper.cpp" \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWHISPER_USE_SYSTEM_GGML=OFF \
+    -DGGML_NATIVE=ON \
+    -DGGML_LTO=ON \
+    -DGGML_OPENMP=ON \
+    -DGGML_FMA=ON \
+    -DGGML_F16C=ON \
+    -DGGML_AVX512=ON \
+    -DGGML_AVX512_VBMI=ON \
+    -DGGML_AVX512_VNNI=ON \
+    -DGGML_AVX512_BF16=ON \
+    -DGGML_AVX_VNNI=ON \
+    -DWHISPER_BUILD_SERVER=ON \
+    -DWHISPER_BUILD_TESTS=OFF \
+    -DWHISPER_ALL_WARNINGS=OFF \
+    -Wno-dev
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$srcdir/whisper.cpp/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname/"
+  if [[ -e "$pkgdir/usr/bin/whisper-cli" ]]; then
+    ln -sf whisper-cli "$pkgdir/usr/bin/whisper.cpp"
+  fi
+}
