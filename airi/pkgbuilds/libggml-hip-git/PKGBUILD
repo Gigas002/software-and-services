@@ -1,20 +1,19 @@
-# Maintainer: local overlay — see airi/README.md (HIP + same CPU SIMD).
-# ROCm layout follows Arch / upstream ggml (ROCM_PATH in environment; default /opt/rocm).
-# Override GPU ISA before makepkg:  export _GPU_TARGETS=gfx1201
-
+# Prefer using rocm-gfx120x-bin package for all rocm deps at once
 pkgname=libggml-hip-git
-pkgver=r0.0000000
+pkgver=v0.11.1.r25.g57ea0bc
 pkgrel=1
 pkgdesc="ggml (git) — ROCm HIP + CPU (Zen-class SIMD flags)"
 arch=('x86_64')
 url="https://github.com/ggml-org/ggml"
 license=('MIT')
 depends=('gcc-libs' 'hip-runtime-amd' 'rocblas' 'hipblas')
-makedepends=('cmake' 'git' 'ninja' 'rocm-hip-sdk')
+makedepends=('cmake' 'git' 'ninja')
 provides=('libggml-git' 'libggml')
 conflicts=('libggml' 'libggml-git' 'libggml-zen5-git' 'libggml-vulkan-git')
-source=('ggml::git+https://github.com/ggml-org/ggml.git')
-sha256sums=('SKIP')
+source=('ggml::git+https://github.com/ggml-org/ggml.git'
+        'no-wmma.patch')
+sha256sums=('SKIP'
+            'SKIP')
 
 pkgver() {
   cd "$srcdir/ggml"
@@ -22,17 +21,15 @@ pkgver() {
     || printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
 }
 
+prepare() {
+  cd "$srcdir/ggml"
+  # patch -Np1 < "$startdir/no-wmma.patch"
+}
+
 build() {
-  # : "${ROCM_PATH:=/opt/rocm}"
-  # : "${_GPU_TARGETS:=gfx1100}"
-  # export ROCM_PATH
-
-    # -DCMAKE_C_COMPILER="${ROCM_PATH}/lib/llvm/bin/clang" \
-    # -DCMAKE_CXX_COMPILER="${ROCM_PATH}/lib/llvm/bin/clang++" \
-    # -DCMAKE_PREFIX_PATH="${ROCM_PATH}" \
-
+    # -DCMAKE_HIP_FLAGS="-DGGML_HIP_NO_WMMA=1" \
   cmake -B build -G Ninja -S "$srcdir/ggml" \
-    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DGGML_HIP=ON \
     -DGPU_TARGETS="gfx1201" \

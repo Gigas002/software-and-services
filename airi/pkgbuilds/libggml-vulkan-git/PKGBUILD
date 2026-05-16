@@ -1,8 +1,5 @@
-# Maintainer: local overlay — see airi/README.md (Vulkan + same CPU SIMD as zen5).
-# Inspired by https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=libggml-git
-
 pkgname=libggml-vulkan-git
-pkgver=r0.0000000
+pkgver=v0.11.1.r3.g5725fee
 pkgrel=1
 pkgdesc="ggml (git) — Vulkan + CPU (Zen-class SIMD flags), OpenBLAS like AUR libggml"
 arch=('x86_64')

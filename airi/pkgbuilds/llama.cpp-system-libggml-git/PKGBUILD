@@ -1,0 +1,42 @@
+pkgname=llama.cpp-system-libggml-git
+pkgver=b9145.r7.g253ba11
+pkgrel=1
+pkgdesc="llama.cpp (git) — LLAMA_USE_SYSTEM_GGML=ON, llama-server + tools (needs libggml-git provider)"
+arch=('x86_64')
+url="https://github.com/ggerganov/llama.cpp"
+license=('MIT')
+depends=('libggml-git' 'gcc-libs' 'openssl')
+makedepends=('cmake' 'git' 'ninja')
+provides=('llama.cpp-git' 'llama.cpp')
+conflicts=('llama.cpp' 'llama.cpp-git' 'llama.cpp-hip-git' 'llama.cpp-vulkan-git' 'llama.cpp-zen5-git')
+source=('llama.cpp::git+https://github.com/ggerganov/llama.cpp.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/llama.cpp"
+  git describe --long --tags --abbrev=7 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' \
+    || printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+}
+
+prepare() {
+  cd "$srcdir/llama.cpp"
+  git submodule update --init --recursive
+}
+
+build() {
+  cmake -B build -G Ninja -S "$srcdir/llama.cpp" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DLLAMA_USE_SYSTEM_GGML=ON \
+    -DLLAMA_BUILD_SERVER=ON \
+    -DLLAMA_BUILD_TESTS=OFF \
+    -DLLAMA_ALL_WARNINGS=OFF \
+    -DLLAMA_ALL_WARNINGS_3RD_PARTY=OFF \
+    -Wno-dev
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$srcdir/llama.cpp/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname/"
+}

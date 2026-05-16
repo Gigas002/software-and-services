@@ -1,8 +1,5 @@
-# Maintainer: local overlay — system ggml (matches airi/README row 2 step B).
-# Install exactly one of: libggml-zen5-git | libggml-vulkan-git | libggml-hip-git (each provides libggml-git).
-
 pkgname=whisper.cpp-system-libggml-git
-pkgver=r0.0000000
+pkgver=v1.8.4.r249.g3e9b7d0
 pkgrel=1
 pkgdesc="whisper.cpp (git) — WHISPER_USE_SYSTEM_GGML=ON, whisper-server (needs libggml-git provider)"
 arch=('x86_64')
@@ -27,13 +24,6 @@ prepare() {
 }
 
 build() {
-  # : "${ROCM_PATH:=/opt/rocm}"
-  # local _prefix_path=/usr
-  # if [[ -d "$ROCM_PATH" ]]; then
-  #   _prefix_path="/usr;${ROCM_PATH}"
-  # fi
-
-  # -DCMAKE_PREFIX_PATH="${_prefix_path}" \
   cmake -B build -G Ninja -S "$srcdir/whisper.cpp" \
     -DCMAKE_BUILD_TYPE=None \
     -DCMAKE_INSTALL_PREFIX=/usr \
