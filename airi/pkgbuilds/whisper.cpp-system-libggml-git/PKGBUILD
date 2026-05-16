@@ -1,0 +1,44 @@
+pkgname=whisper.cpp-system-libggml-git
+pkgver=v1.8.4.r249.g3e9b7d0
+pkgrel=1
+pkgdesc="whisper.cpp (git) — WHISPER_USE_SYSTEM_GGML=ON, whisper-server (needs libggml-git provider)"
+arch=('x86_64')
+url="https://github.com/ggml-org/whisper.cpp"
+license=('MIT')
+depends=('libggml-git' 'gcc-libs')
+makedepends=('cmake' 'git' 'ninja')
+provides=('whisper.cpp-git' 'whisper.cpp')
+conflicts=('whisper.cpp' 'whisper.cpp-git' 'whisper.cpp-zen5-git' 'whisper.cpp-vulkan-git' 'whisper.cpp-hip-git')
+source=('whisper.cpp::git+https://github.com/ggml-org/whisper.cpp.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/whisper.cpp"
+  git describe --long --tags --abbrev=7 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' \
+    || printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+}
+
+prepare() {
+  cd "$srcdir/whisper.cpp"
+  git submodule update --init --recursive
+}
+
+build() {
+  cmake -B build -G Ninja -S "$srcdir/whisper.cpp" \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWHISPER_USE_SYSTEM_GGML=ON \
+    -DWHISPER_BUILD_SERVER=ON \
+    -DWHISPER_BUILD_TESTS=OFF \
+    -DWHISPER_ALL_WARNINGS=OFF \
+    -Wno-dev
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$srcdir/whisper.cpp/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname/"
+  if [[ -e "$pkgdir/usr/bin/whisper-cli" ]]; then
+    ln -sf whisper-cli "$pkgdir/usr/bin/whisper.cpp"
+  fi
+}

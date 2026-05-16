@@ -1,0 +1,10 @@
+--- a/src/ggml-cuda/common.cuh
++++ b/src/ggml-cuda/common.cuh
+@@ -243,7 +243,7 @@ static __forceinline__ int mmf_get_padding(int cc) {
+ #define AMD_MFMA_AVAILABLE
+ #endif // defined(GGML_USE_HIP) && defined(CDNA) && !defined(GGML_HIP_NO_MMQ_MFMA)
+ 
+-#if defined(GGML_USE_HIP) && (defined(RDNA4) || defined(RDNA3))
++#if defined(GGML_USE_HIP) && (defined(RDNA4) || defined(RDNA3)) && !defined(GGML_HIP_NO_WMMA)
+ #define AMD_WMMA_AVAILABLE
+ #endif // defined(GGML_USE_HIP) && defined(RDNA4)
