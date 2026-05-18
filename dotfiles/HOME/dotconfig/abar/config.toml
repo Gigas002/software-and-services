@@ -1,0 +1,82 @@
+[base]
+# font_name is required to run abar.
+font_name = "NotoSans Nerd Font"
+font_size = 16
+# themes are looked-up at ~/.config/abar/themes, e.g. theme.toml in this directory
+theme = "theme.toml"
+
+# Modules:
+# All modules are an opt-in cargo compile-time features.
+# Built-in modules can have pre-defined settings, which can be tweaked in the config.
+# Build-in modules list includes:
+# - workspaces: depends on 3rd party implementation, e.g. hyprland-rs, niri-ipc, etc
+# - window: same as above
+# - mpris
+# - keyboard
+# - tray
+# - clock
+#
+# All modules include following events:
+# - on_left_click
+# - on_right_click
+# - on_middle_click
+# - on_scroll_up
+# - on_scroll_down
+
+# Custom modules:
+# Custom modules are just a tiny icons on your bar with defined behavior.
+# Create custom modules, by defining a new entries below.
+# Each entry requires a unique name and an icon (FreeDesktop.org icon name).
+# If icon is not specified or not found the panic is expected.
+[modules]
+custom = [
+    { name = "system_info", icon = "gnome-system-monitor", on_left_click = "btm" },
+    { name = "wleave", icon = "system-log-out", submenu = [
+        { content = "sleep", action = "alacritty" },
+        { content = "logout", action = "alacritty" },
+        { content = "poweroff", action = "alacritty" },
+    ] },
+    { name = "audio", icon = "pavucontrol", on_left_click = "pavucontrol", on_scroll_up = "pavucontrol -t 3", on_scroll_down = "pavucontrol -t 4" },
+    { name = "bluetooth", icon = "blueman", on_left_click = "blueman-manager" },
+    { name = "network", icon = "preferences-system-network", on_left_click = "nm-connection-editor" },
+]
+
+# Layout:
+# Layout is a list of modules, each module is a string.
+# Modules can be built-in or custom.
+# Modules are displayed in the order they are defined.
+# Modules are displayed on the left, center, and right sides of the bar.
+[layout]
+left = ["system_info", "workspaces"]
+center = ["window"]
+right = [
+    [
+        "keyboard",
+    ],
+    [
+        "tray",
+        "clock",
+        "bluetooth",
+        "network",
+        "audio",
+        "wleave",
+    ],
+]
+
+[window]
+# Maximum number of characters to show before truncating with "…". 0 = no limit.
+max_length = 50
+
+[keyboard]
+layouts = ["en-US", "ru-RU"]
+on_left_click = "hyprctl switchxkblayout all next"
+
+[clock]
+formats = [
+    # 21:35 28.03.2026
+    "%R %Z %d.%m.%Y",
+]
+# on_scroll_up / on_scroll_down: cycle through timezones
+timezones = ["Asia/Tokyo", "Europe/Moscow"]
+# launch calendar app on left click
+on_left_click = "rusti-cal"

@@ -1,0 +1,11 @@
+[base]
+background_color = "#161925ff"
+foreground_color = "#c74dedFF"
+# TODO: decide how to configure bar size and scaling, hardcode some value for now
+# scale_factor = 1.5
+
+# pre-defined modules can have some additional theming options
+[workspaces]
+visibility_mode = "monitor_specific"
+active_color = "#00c1e4FF"
+inactive_color = "#c74dedFF"
