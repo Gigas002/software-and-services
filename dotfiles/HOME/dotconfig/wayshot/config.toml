@@ -2,8 +2,13 @@
 clipboard = true
 file = true
 stdout = true
+notifications = true
 
 [file]
 path = "$HOME/images/screenshots"
 name_format = "%Y-%m-%d_%H-%M-%S"
 encoding = "jxl"
+
+[notification]
+action = "xdg-open $HOME/images/screenshots"
+icon = "accessories-camera"
