@@ -1,0 +1,20 @@
+schema = 1
+
+[defaults]
+flavor = "retail"
+channel = "stable"
+install_tag = "retail-main"
+
+[logging]
+level = "warn"
+
+[paths]
+cache = "~/.cache/wau"
+
+[[paths.installs]]
+tag = "retail-main"
+flavor = "retail"
+# TODO: simplify path
+wow_root = "/home/gigas/downloads/World of Warcraft/_retail_"
+
+[providers.curseforge]
