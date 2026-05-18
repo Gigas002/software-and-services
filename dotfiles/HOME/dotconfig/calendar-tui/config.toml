@@ -1,0 +1,29 @@
+# Example config for calendar-tui
+#
+# Install:
+#   mkdir -p "$XDG_CONFIG_HOME/calendar-tui"
+#   cp examples/config.toml "$XDG_CONFIG_HOME/calendar-tui/config.toml"
+#   mkdir -p "$XDG_CONFIG_HOME/calendar-tui/themes"
+#   cp examples/theme.toml "$XDG_CONFIG_HOME/calendar-tui/themes/theme.toml"
+#
+# Or run with explicit paths:
+#   calendar-tui --config examples/config.toml --theme examples/theme.toml
+
+[calendar]
+# First column of the month grid (case-insensitive):
+#   monday | tuesday | wednesday | thursday | friday | saturday | sunday
+week_start = "monday"
+
+# ISO-style week number column
+show_week_numbers = true
+
+# Theme file name or path; resolved relative to this config file, then XDG themes dir
+theme = "theme.toml"
+
+[display]
+# Starting view: month | year  (toggle anytime with m / y)
+default_mode = "year"
+
+# strftime-style formats (chrono); used on status and header lines
+date_format = "%a, %d %b %Y"
+month_year_format = "%B %Y"
