@@ -1,5 +1,5 @@
 [modules]
-left = [ "SystemInfo", "Workspaces", "MediaPlayer" ]
+left = [ "SystemInfo", "Workspaces" ]
 center = [ "WindowTitle" ]
 right = [ [ "KeyboardLayout" ], [ "Tray", "Tempo", "Privacy", "Settings" ] ]
 
