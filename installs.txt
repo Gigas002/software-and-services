@@ -1,5 +1,6 @@
 7zip
 accountsservice
+airi-bin
 alacritty
 alsa-firmware
 alsa-plugins
@@ -22,6 +23,7 @@ bluez
 bluez-hid2hci
 bluez-libs
 bluez-utils
+boost
 bottom
 breeze-gtk
 brightnessctl
@@ -43,14 +45,16 @@ cachyos-settings
 cachyos-sysctl-manager
 cachyos-v3-mirrorlist
 cachyos-v4-mirrorlist
+calendar-tui-git
 candy-icons-git
 carapace-bin
 cargo-cache
+cargo-deny
+cargo-llvm-cov
 ccache
 char-white
 chwd
 claude-code
-cliphist
 cpupower
 cryptsetup
 deno
@@ -91,6 +95,7 @@ git
 gitui
 gping
 greetd-tuigreet
+grim
 gst-libav
 gst-plugin-pipewire
 gst-plugin-va
@@ -108,7 +113,9 @@ hyprland-protocols
 hyprlock
 hyprpaper
 hyprpicker
-hyprswitch
+hyprpolkitagent
+hyprqt6engine
+imgvwr-git
 impala
 inetutils
 iptables
@@ -183,7 +190,6 @@ ntfs-3g
 ntp
 nushell
 obs-studio
-oculante
 onefetch
 openbsd-netcat
 opencl-mesa
@@ -253,6 +259,7 @@ s-nail
 samrewritten
 scanmem
 sccache
+servo-bin
 sg3_utils
 smartmontools
 sof-firmware
@@ -270,7 +277,7 @@ telegram-desktop
 texinfo
 thorium-browser-bin
 threadweaver
-tofi
+tofi-rs-git
 ttf-bitstream-vera
 ttf-cascadia-code-nerd
 ttf-liberation
