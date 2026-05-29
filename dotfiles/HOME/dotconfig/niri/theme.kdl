@@ -1,0 +1,22 @@
+// hypr/themes/Sweet.lua — layout, borders, gaps
+
+layout {
+    gaps 8
+
+    focus-ring {
+        width 2
+        active-gradient from="#c74ded" to="#ed254e" angle=45
+        inactive-color "#00c1e4"
+    }
+
+    border {
+        width 2
+        active-gradient from="#c74ded" to="#ed254e" angle=45
+        inactive-color "#00c1e4"
+        urgent-color "#ed254e"
+    }
+
+    shadow {
+        off
+    }
+}

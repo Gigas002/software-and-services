@@ -1,0 +1,13 @@
+// hypr/autostart.lua + hypr/hypridle.conf + hypr/hyprpaper.conf
+
+spawn-at-startup "swaybg" "-i" "~/images/wallpapers/yuuki.png" "-m" "fill"
+
+spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
+// spawn-at-startup "/usr/lib/polkit-gnome-authentication-agent-1"
+
+spawn-at-startup "ashell"
+// spawn-at-startup "blueman-applet"
+spawn-at-startup "nm-applet" "--indicator"
+spawn-at-startup "mako"
+
+spawn-sh-at-startup "swayidle -w timeout 900 'brightnessctl -s set 10' resume 'brightnessctl -r' before-sleep 'swaylock' timeout 1800 'swaylock' timeout 3600 'niri msg action power-off-monitors' resume 'brightnessctl -r'"
