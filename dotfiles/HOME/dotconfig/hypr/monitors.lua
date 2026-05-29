@@ -27,6 +27,14 @@ hl.monitor({
     -- supports_hdr     = 0,
 })
 
+--hl.monitor({
+--    output = "HDMI-A-1",
+  --  mode = "2560x1440@100",
+  --  scale = "1",
+ --   transform = 3,
+   -- bitdepth = 10,
+--})
+
 -- Generic fallback — catches any monitor not matched by an explicit rule:
 -- hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" })
 
