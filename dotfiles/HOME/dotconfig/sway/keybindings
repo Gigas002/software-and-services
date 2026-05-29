@@ -56,10 +56,10 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
 # Resize (hypr: ±30 px, repeating)
-bindsym --repeat $mod+Shift+Right resize shrink width 30px
-bindsym --repeat $mod+Shift+Left resize grow width 30px
-bindsym --repeat $mod+Shift+Up resize grow height 30px
-bindsym --repeat $mod+Shift+Down resize shrink height 30px
+bindsym $mod+Shift+Right resize shrink width 30px
+bindsym $mod+Shift+Left resize grow width 30px
+bindsym $mod+Shift+Up resize grow height 30px
+bindsym $mod+Shift+Down resize shrink height 30px
 
 # Move tiled container
 bindsym $mod+Shift+Ctrl+Left move left
