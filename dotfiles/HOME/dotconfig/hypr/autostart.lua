@@ -10,7 +10,7 @@ local polkit = "systemctl --user start hyprpolkitagent"
 local bar = "ashell"
 local bluetooth_applet = "blueman-applet"
 local network_applet = "nm-applet --indicator"
-local notification_daemon = "dunst"
+local notification_daemon = "mako"
 -- See: https://wiki.hypr.land/Useful-Utilities/Clipboard-Managers/#cliphist
 local clipboard_text = "wl-paste --type text --watch cliphist store"
 local clipboard_images = "wl-paste --type image --watch cliphist store"
