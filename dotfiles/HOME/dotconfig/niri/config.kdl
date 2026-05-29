@@ -1,7 +1,6 @@
 // Niri — derived from hypr/*.lua
 // https://github.com/niri-wm/niri/wiki/Configuration:-Introduction
 //
-// Session env for tuigreet: ~/.local/share/wayland-sessions/niri-dotfiles.desktop
 // Validate: niri validate -c ~/.config/niri/config.kdl
 // Reload: save any included file (live reload)
 

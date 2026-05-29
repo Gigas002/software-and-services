@@ -14,7 +14,5 @@ input {
         natural-scroll
     }
 
-    mouse {
-        off
-    }
+    mouse {}
 }

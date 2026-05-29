@@ -1,54 +1,69 @@
 // hypr/rules.lua — match uses app-id (Wayland) / WM class (Xwayland)
 
 window-rule {
-    match app-id="^steam$" opacity 0.8
+    match app-id="^steam$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^steamwebhelper$" opacity 0.8
+    match app-id="^steamwebhelper$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^org\\.kde\\.dolphin$" opacity 0.8
+    match app-id="^org\\.kde\\.dolphin$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^xdg-desktop-portal" opacity 0.8
+    match app-id="^xdg-desktop-portal"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^qt5ct$" opacity 0.8
+    match app-id="^qt5ct$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^qt6ct$" opacity 0.8
+    match app-id="^qt6ct$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^kvantummanager$" opacity 0.8
+    match app-id="^kvantummanager$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^com\\.obsproject\\.Studio$" opacity 0.8
+    match app-id="^com\\.obsproject\\.Studio$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^discord$" opacity 0.8
+    match app-id="^discord$"
+    opacity 0.8
 }
 window-rule {
-    match app-id="^yad$" opacity 0.8
+    match app-id="^yad$"
+    opacity 0.8
     open-floating true
 }
 window-rule {
-    match app-id="^pavucontrol$" opacity 0.8
+    match app-id="^pavucontrol$"
+    opacity 0.8
     open-floating true
 }
 window-rule {
-    match app-id="^blueman-manager$" opacity 0.8
+    match app-id="^blueman-manager$"
+    opacity 0.8
     open-floating true
 }
 window-rule {
-    match app-id="^nm-applet$" opacity 0.8
+    match app-id="^nm-applet$"
+    opacity 0.8
     open-floating true
 }
 window-rule {
-    match app-id="^nm-connection-editor$" opacity 0.8
+    match app-id="^nm-connection-editor$"
+    opacity 0.8
     open-floating true
 }
 window-rule {
-    match app-id="^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org\\.kde\\.polkit-kde-authentication-agent-1)" opacity 0.8
+    match app-id="^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org\\.kde\\.polkit-kde-authentication-agent-1)"
+    opacity 0.8
     open-floating true
 }
 
