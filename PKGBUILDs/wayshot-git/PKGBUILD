@@ -1,10 +1,10 @@
 # Maintainer: gigas002 <gigas002@pm.me>
 
 _pkgname="wayshot"
-pkgname="${_pkgname}-master-git"
-pkgver=r466.96fa4f9
+pkgname="${_pkgname}-git"
+pkgver=r506.100dff7
 pkgrel=1
-pkgdesc="Screenshotting tool"
+pkgdesc="Screenshotting tool for wayland compositors"
 arch=("x86_64")
 url="https://github.com/waycrate/wayshot"
 license=('GPL-3.0-only')
@@ -30,7 +30,7 @@ pkgver() {
 
 build() {
   cd "${_pkgname}"
-  cargo build --no-default-features --features logger,jxl,selector --release
+  cargo build --all-features --release
   for f in docs/*.scd; do
     scdoc < "$f" > "${f%.scd}"
   done

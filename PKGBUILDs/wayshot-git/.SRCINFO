@@ -1,6 +1,6 @@
-pkgbase = wayshot-master-git
-	pkgdesc = Screenshotting tool
-	pkgver = r466.96fa4f9
+pkgbase = wayshot-git
+	pkgdesc = Screenshotting tool for wayland compositors
+	pkgver = r506.100dff7
 	pkgrel = 1
 	url = https://github.com/waycrate/wayshot
 	arch = x86_64
@@ -18,4 +18,4 @@ pkgbase = wayshot-master-git
 	source = wayshot::git+https://github.com/waycrate/wayshot.git
 	sha256sums = SKIP
 
-pkgname = wayshot-master-git
+pkgname = wayshot-git
