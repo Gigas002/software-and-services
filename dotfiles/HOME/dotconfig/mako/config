@@ -1,0 +1,82 @@
+# Mako notification daemon — derived from dunst/dunstrc
+# See mako(5) for all configuration options
+
+# Geometry (dunst: origin=top-right, offset=(20,20), width=(300,300), height max 300)
+anchor=top-right
+outer-margin=20
+width=300
+height=300
+max-visible=20
+
+# History (dunst: history_length=20, sticky_history=yes)
+history=1
+max-history=20
+
+# Sort by urgency (dunst: sort=yes)
+sort=-priority
+
+# Text (dunst: font, markup=full, format, alignment)
+font=NotoSans Nerd Font 12
+markup=1
+format=%s\n%b
+text-alignment=left
+
+# Layout (dunst: padding=8, gap_size=5, frame_width=5, corner_radius=10)
+padding=8
+margin=5
+border-size=5
+border-radius=10
+icon-border-radius=10
+
+# Colors (dunst: transparency=30 on urgency_normal background)
+background-color=#161925B3
+text-color=#c3c7c8FF
+border-color=#c74dedFF
+
+# Progress bar (dunst: progress_bar=yes; value hint int:value:N)
+progress-color=over #c74dedFF
+
+# Icons (dunst: icon_position=left, min/max_icon_size, icon_theme)
+icons=1
+icon-location=left
+max-icon-size=128
+icon-path=/usr/share/icons/Sweet-Rainbow
+
+# Timeouts (dunst urgency_normal default; per-urgency overrides below)
+default-timeout=5000
+
+# Grouping (dunst: stack_duplicates=true)
+group-by=summary,body
+
+# Show on focused output (dunst: follow=mouse; mako follows focus when output is empty)
+output=
+
+# Pointer bindings (dunst: left/middle=do_action+close, right=close_all)
+on-button-left=invoke-default-action
+on-button-middle=invoke-default-action
+on-button-right=dismiss-all
+
+actions=1
+
+# Hidden notification count (dunst: indicate_hidden=yes)
+[hidden]
+format=+%h more
+
+[urgency=low]
+border-color=#00c1e4FF
+default-timeout=5000
+
+[urgency=normal]
+border-color=#c74dedFF
+default-timeout=5000
+
+[urgency=critical]
+border-color=#ed254eFF
+default-timeout=0
+
+# dunst [Type-1] / [Type-2] appname rules
+[app-name=t1]
+format=<b>%s</b>
+
+[app-name=t2]
+format=<span size="250%">%s</span>\n%b
