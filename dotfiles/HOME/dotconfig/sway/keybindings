@@ -1,0 +1,72 @@
+# Keybindings — hypr/keybindings.lua
+
+set $term alacritty
+set $editor zeditor
+set $files dolphin
+set $browser firefox
+set $sysmon btm
+set $launcher tofi
+
+# Window / session
+bindsym Alt+Tab focus next
+bindsym Alt+Shift+Tab focus prev
+bindsym $mod+q kill
+bindsym $mod+Delete exec swaymsg exit
+bindsym $mod+w floating toggle
+bindsym Mod1+Return fullscreen toggle
+bindsym $mod+l exec swaylock
+bindsym Ctrl+Escape exec sh -c 'killall ashell || ashell'
+bindsym Print exec sh -c 'wayshot -g | wl-copy'
+
+# Applications
+bindsym $mod+t exec $term
+bindsym $mod+e exec $files
+bindsym $mod+c exec $editor
+bindsym $mod+f exec $browser
+bindsym Ctrl+Shift+Escape exec $term -e $sysmon
+bindsym $mod+r exec $launcher
+
+# Focus
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+
+# Workspaces 1–10 (0 → workspace 10)
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# Resize (hypr: ±30 px, repeating)
+bindsym --repeat $mod+Shift+Right resize shrink width 30px
+bindsym --repeat $mod+Shift+Left resize grow width 30px
+bindsym --repeat $mod+Shift+Up resize grow height 30px
+bindsym --repeat $mod+Shift+Down resize shrink height 30px
+
+# Move tiled container
+bindsym $mod+Shift+Ctrl+Left move left
+bindsym $mod+Shift+Ctrl+Right move right
+bindsym $mod+Shift+Ctrl+Up move up
+bindsym $mod+Shift+Ctrl+Down move down
+
+# Mouse: workspace scroll + move/resize floating ($mod is floating_modifier)
+bindsym --whole-window --no-warn $mod+button4 workspace prev
+bindsym --whole-window --no-warn $mod+button5 workspace next
