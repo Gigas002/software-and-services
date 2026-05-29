@@ -1,0 +1,19 @@
+# Sweet theme — hypr/themes/Sweet.lua (borders, gaps, colors)
+# Sway has no rounded corners or blur; opacity rules live in rules.
+
+font pango:NotoSans Nerd Font 12
+
+gaps inner 3
+gaps outer 8
+
+default_border pixel 2
+default_floating_border pixel 2
+
+# border / background / text / indicator / child_border
+client.focused          #c74ded #161925 #c3c7c8 #c74ded #161925
+client.focused_inactive #00c1e4 #161925 #c3c7c8 #00c1e4 #161925
+client.unfocused        #00c1e4 #161925 #c3c7c8 #00c1e4 #161925
+client.urgent           #ed254e #161925 #c3c7c8 #ed254e #161925
+client.placeholder      #00c1e4 #161925 #c3c7c8 #00c1e4 #161925
+
+seat * xcursor_theme Sweet-cursors 30

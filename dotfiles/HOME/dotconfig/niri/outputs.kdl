@@ -1,0 +1,8 @@
+// hypr/monitors.lua — run `niri msg outputs` and fix mode Hz if needed
+
+output "HDMI-A-1" {
+    mode "2560x1440@100.000"
+    scale 1
+    variable-refresh-rate
+    focus-at-startup
+}

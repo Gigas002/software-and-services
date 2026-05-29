@@ -1,0 +1,69 @@
+// hypr/keybindings.lua — Mod = Super on a TTY session
+
+binds {
+    // Window / session
+    Alt+Tab { focus-window-down; }
+    Alt+Shift+Tab { focus-window-up; }
+    Mod+Q { close-window; }
+    Mod+Delete { quit skip-confirmation=true; }
+    Mod+W { toggle-window-floating; }
+    Alt+Return { fullscreen-window; }
+    Mod+L { spawn "swaylock"; }
+    Ctrl+Escape { spawn-sh "killall ashell || ashell"; }
+    Print { spawn-sh "wayshot -g | wl-copy"; }
+
+    // Applications
+    Mod+T { spawn "alacritty"; }
+    Mod+E { spawn "dolphin"; }
+    Mod+C { spawn "zeditor"; }
+    Mod+F { spawn "firefox"; }
+    Ctrl+Shift+Escape { spawn "alacritty" "-e" "btm"; }
+    Mod+R { spawn "tofi"; }
+
+    // Focus (niri: columns + windows in column)
+    Mod+Left { focus-column-left; }
+    Mod+Right { focus-column-right; }
+    Mod+Up { focus-window-up; }
+    Mod+Down { focus-window-down; }
+
+    // Workspaces 1–10 (0 → 10)
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+    Mod+0 { focus-workspace 10; }
+
+    Mod+Shift+1 { move-window-to-workspace 1; }
+    Mod+Shift+2 { move-window-to-workspace 2; }
+    Mod+Shift+3 { move-window-to-workspace 3; }
+    Mod+Shift+4 { move-window-to-workspace 4; }
+    Mod+Shift+5 { move-window-to-workspace 5; }
+    Mod+Shift+6 { move-window-to-workspace 6; }
+    Mod+Shift+7 { move-window-to-workspace 7; }
+    Mod+Shift+8 { move-window-to-workspace 8; }
+    Mod+Shift+9 { move-window-to-workspace 9; }
+    Mod+Shift+0 { move-window-to-workspace 10; }
+
+    // Resize (hypr ±30px)
+    Mod+Shift+Right repeat=true { set-column-width "+30"; }
+    Mod+Shift+Left repeat=true { set-column-width "-30"; }
+    Mod+Shift+Up repeat=true { set-window-height "-30"; }
+    Mod+Shift+Down repeat=true { set-window-height "+30"; }
+
+    // Move column/window in workspace
+    Mod+Shift+Ctrl+Left { move-column-left; }
+    Mod+Shift+Ctrl+Right { move-column-right; }
+    Mod+Shift+Ctrl+Up { move-window-up; }
+    Mod+Shift+Ctrl+Down { move-window-down; }
+
+    // Workspace scroll (hypr Mod+mouse wheel)
+    Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+}

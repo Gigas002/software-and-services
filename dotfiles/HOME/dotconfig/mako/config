@@ -1,0 +1,48 @@
+# See mako(5) for all configuration options
+
+# Geometry
+outer-margin=20
+height=300
+
+# Text
+font=NotoSans Nerd Font 12
+
+# Layout
+padding=8
+margin=5
+border-size=5
+border-radius=10
+icon-border-radius=10
+
+# Colors
+background-color=#161925B3
+text-color=#c3c7c8FF
+border-color=#c74dedFF
+
+# Progress bar
+progress-color=over #c74dedFF
+
+# Icons
+max-icon-size=128
+icon-path=/usr/share/icons/Sweet-Rainbow
+
+# Timeouts
+default-timeout=5000
+
+# Grouping
+group-by=summary,body
+
+# Pointer bindings
+on-button-middle=invoke-default-action
+on-button-right=dismiss-all
+
+# Hidden notification count
+[hidden]
+format=+%h more
+
+[urgency=low]
+border-color=#00c1e4FF
+
+[urgency=critical]
+border-color=#ed254eFF
+default-timeout=0

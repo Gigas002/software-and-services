@@ -1,0 +1,115 @@
+// hypr/rules.lua — match uses app-id (Wayland) / WM class (Xwayland)
+
+window-rule {
+    match app-id="^steam$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^steamwebhelper$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^org\\.kde\\.dolphin$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^xdg-desktop-portal"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^qt5ct$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^qt6ct$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^kvantummanager$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^com\\.obsproject\\.Studio$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^discord$"
+    opacity 0.8
+}
+window-rule {
+    match app-id="^yad$"
+    opacity 0.8
+    open-floating true
+}
+window-rule {
+    match app-id="^pavucontrol$"
+    opacity 0.8
+    open-floating true
+}
+window-rule {
+    match app-id="^blueman-manager$"
+    opacity 0.8
+    open-floating true
+}
+window-rule {
+    match app-id="^nm-applet$"
+    opacity 0.8
+    open-floating true
+}
+window-rule {
+    match app-id="^nm-connection-editor$"
+    opacity 0.8
+    open-floating true
+}
+window-rule {
+    match app-id="^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org\\.kde\\.polkit-kde-authentication-agent-1)"
+    opacity 0.8
+    open-floating true
+}
+
+// hypr decoration dim_inactive
+window-rule {
+    match is-active=false
+    opacity 0.85
+}
+
+window-rule {
+    match app-id="^org\\.kde\\.dolphin$" title="^Progress Dialog — Dolphin$"
+    open-floating true
+}
+window-rule {
+    match app-id="^org\\.kde\\.dolphin$" title="^Copying — Dolphin$"
+    open-floating true
+}
+window-rule {
+    match app-id="^(org\\.freedesktop\\.impl\\.portal\\.desktop\\.kde|xdg-desktop-portal)"
+    open-floating true
+}
+window-rule {
+    match title="^Picture-in-Picture$"
+    open-floating true
+}
+window-rule {
+    match title="^Save File$"
+    open-floating true
+}
+window-rule {
+    match title="^Enter name of file"
+    open-floating true
+}
+window-rule {
+    match title="^Save Image$"
+    open-floating true
+}
+window-rule {
+    match title="^Open File$"
+    open-floating true
+}
+window-rule {
+    match app-id="^firefox$" title="^Library$"
+    open-floating true
+}
+window-rule {
+    match app-id="^org\\.kde\\.ark$"
+    open-floating true
+}
