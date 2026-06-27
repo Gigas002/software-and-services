@@ -1,0 +1,15 @@
+command = /usr/bin/nu
+
+background-opacity = 0.3
+background-blur-radius = 20
+
+window-save-state = always
+maximize = true
+
+font-family = CaskaydiaCove Nerd Font Mono
+font-style = Regular
+font-size = 14
+
+copy-on-select = true
+
+theme = Sweet
