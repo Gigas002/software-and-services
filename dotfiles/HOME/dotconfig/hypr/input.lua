@@ -18,7 +18,7 @@ hl.config({
 
         -- ── Mouse ─────────────────────────────────────
         sensitivity        = 0.5,
-        -- force_no_accel         = true,
+        force_no_accel     = true,
     },
 })
 

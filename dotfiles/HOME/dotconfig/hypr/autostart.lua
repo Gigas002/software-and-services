@@ -7,7 +7,7 @@ local polkit = "systemctl --user start hyprpolkitagent"
 -- kde polkit
 -- local polkit = "/usr/lib/polkit-kde-authentication-agent-1"
 
-local bar = "ashell"
+local bar = "abar"
 local bluetooth_applet = "blueman-applet"
 local network_applet = "nm-applet --indicator"
 local notification_daemon = "mako"
@@ -24,7 +24,9 @@ local wallpaper = "hyprpaper"
 local idle = "hypridle"
 
 hl.on("hyprland.start", function()
+    hl.exec_cmd("systemctl --user start hyprland-session.target")
     hl.exec_cmd(polkit)
+    -- hl.exec_cmd(tray_daemon)
     hl.exec_cmd(bar)
     -- hl.exec_cmd(bluetooth_applet)
     hl.exec_cmd(network_applet)
@@ -33,4 +35,8 @@ hl.on("hyprland.start", function()
     -- hl.exec_cmd(clipboard_images)
     hl.exec_cmd(wallpaper)
     hl.exec_cmd(idle)
+end)
+
+hl.on("hyprland.shutdown", function()
+    os.execute("systemctl --user stop hyprland-session.target && sleep 0.1")
 end)

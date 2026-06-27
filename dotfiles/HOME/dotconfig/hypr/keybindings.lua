@@ -9,14 +9,14 @@ local mainMod        = "SUPER"
 -- Application assignments
 local term           = "alacritty"
 local editor         = "zeditor"
-local file_mgr       = "dolphin"
+local file_mgr       = "ghostty -e yazi"
 local browser        = "firefox"
 local sysmon         = "btm"
 local launcher       = "tofi"
 
 -- Complex commands
 local lock_cmd       = "hyprlock"
-local bar_cmd        = "killall ashell || ashell"
+local bar_cmd        = "killall abar || abar"
 local screenshot_cmd = "wayshot -g | wl-copy"
 
 
