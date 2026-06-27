@@ -19,5 +19,4 @@ save_to_clipboard = true
 import = ["~/.config/alacritty/themes/Sweet.toml"]
 
 [terminal]
-
 shell = "nu"
