@@ -1,8 +1,8 @@
 [base]
-clipboard = true
+clipboard = false
 file = true
 stdout = true
-notifications = true
+notifications = false
 
 [file]
 path = "$HOME/images/screenshots"
