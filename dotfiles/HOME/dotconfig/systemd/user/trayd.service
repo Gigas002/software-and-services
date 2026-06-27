@@ -1,0 +1,13 @@
+[Unit]
+Description=trayd system tray daemon
+Documentation=https://github.com/Gigas002/trayd
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/trayd run
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target
