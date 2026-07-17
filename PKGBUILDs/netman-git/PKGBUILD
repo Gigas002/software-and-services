@@ -1,18 +1,18 @@
 # Maintainer: gigas002 <gigas002@pm.me>
 
-_pkgname="abar"
+_pkgname="netman"
 pkgname="${_pkgname}-git"
-pkgver=r95.g80ac871
+pkgver=r19.gdbb64ca
 pkgrel=1
-pkgdesc="Minimalistic Wayland-native bar with pango and cairo"
+pkgdesc="TUI applet analogue of network-manager-applet"
 arch=("x86_64")
-url="https://github.com/Gigas002/abar"
+url="https://github.com/Gigas002/netman"
 license=('GPL-3.0-only')
-depends=(cairo pango wayland)
+depends=(networkmanager dbus)
 makedepends=(git cargo)
-optdepends=(socat)
-provides=(abar)
-conflicts=(abar)
+optdepends=()
+provides=(netman)
+conflicts=(netman)
 source=("${_pkgname}::git+$url.git")
 b2sums=('SKIP')
 
@@ -23,11 +23,11 @@ pkgver() {
 
 build() {
   cd "${_pkgname}"
-  cargo build --all-features --release
+  cargo build --release
 }
 
 package() {
   cd "${_pkgname}"
-  install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/abar"
+  install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/netman"
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }

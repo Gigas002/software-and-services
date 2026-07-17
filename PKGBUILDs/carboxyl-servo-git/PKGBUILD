@@ -23,6 +23,7 @@ pkgver() {
 
 build() {
   cd "${_pkgname}"
+  export RUSTFLAGS="${RUSTFLAGS} --remap-path-prefix=${srcdir}=/build"
   cargo build --all-features --release
 }
 
