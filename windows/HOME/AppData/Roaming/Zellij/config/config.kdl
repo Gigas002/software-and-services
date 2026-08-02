@@ -1,0 +1,13 @@
+keybinds {
+	normal {
+    	unbind "Ctrl q" "Ctrl s"
+	}
+}
+
+// Choose the path to the default shell that zellij will use for opening new panes
+// Default: $SHELL
+//
+default_shell "nu"
+
+// theme "blade-runner"
+theme "Sweet"

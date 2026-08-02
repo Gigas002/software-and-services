@@ -1,0 +1,3 @@
+# atuin
+
+Same as linux

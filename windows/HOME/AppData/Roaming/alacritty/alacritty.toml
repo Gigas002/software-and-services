@@ -1,0 +1,19 @@
+# See https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+
+[window]
+opacity = 0.7
+blur = true
+startup_mode = "Maximized"
+
+[font]
+normal = { family = "CaskaydiaMono Nerd Font Mono", style = "Regular" }
+size = 14.0
+
+[selection]
+save_to_clipboard = true
+
+[general]
+import = ["~/AppData/Roaming/alacritty/themes/Sweet.toml"]
+
+[terminal]
+shell = "nu"
