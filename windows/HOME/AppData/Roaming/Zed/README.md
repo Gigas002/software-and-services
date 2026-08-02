@@ -1,0 +1,3 @@
+# Zed
+
+Same as linux

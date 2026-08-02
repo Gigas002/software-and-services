@@ -1,0 +1,3 @@
+# fastfetch
+
+Same as linux

@@ -1,0 +1,3 @@
+# zellij
+
+Same as linux
