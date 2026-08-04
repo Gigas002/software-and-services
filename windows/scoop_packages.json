@@ -1,0 +1,351 @@
+{
+    "apps": [
+        {
+            "Name": "7zip",
+            "Updated": "2026-07-05T22:01:39.2044077+09:00",
+            "Source": "main",
+            "Version": "26.02",
+            "Info": ""
+        },
+        {
+            "Name": "alacritty",
+            "Updated": "2026-08-02T16:25:01.6854859+09:00",
+            "Source": "extras",
+            "Version": "0.17.0",
+            "Info": ""
+        },
+        {
+            "Name": "atuin",
+            "Updated": "2026-08-04T16:04:24.7626074+09:00",
+            "Source": "main",
+            "Version": "18.19.0",
+            "Info": ""
+        },
+        {
+            "Name": "bat",
+            "Updated": "2026-08-02T16:51:20.4905159+09:00",
+            "Source": "main",
+            "Version": "0.26.1",
+            "Info": ""
+        },
+        {
+            "Name": "bottom",
+            "Updated": "2026-07-31T20:00:06.7818008+09:00",
+            "Source": "main",
+            "Version": "0.14.7",
+            "Info": ""
+        },
+        {
+            "Name": "carapace-bin",
+            "Updated": "2026-08-02T16:06:10.5487816+09:00",
+            "Source": "extras",
+            "Version": "1.7.3",
+            "Info": ""
+        },
+        {
+            "Name": "CascadiaMono-NF-Mono",
+            "Updated": "2026-08-04T16:04:26.434906+09:00",
+            "Source": "nerd-fonts",
+            "Version": "3.5.0",
+            "Info": ""
+        },
+        {
+            "Name": "chafa",
+            "Updated": "2026-08-04T16:38:45.7469907+09:00",
+            "Source": "main",
+            "Version": "1.18.2",
+            "Info": ""
+        },
+        {
+            "Name": "cheat-engine",
+            "Updated": "2025-04-17T21:01:23.747307+09:00",
+            "Source": "extras",
+            "Version": "7.6",
+            "Info": ""
+        },
+        {
+            "Name": "claude-code",
+            "Updated": "2026-08-04T16:08:05.945187+09:00",
+            "Source": "main",
+            "Version": "2.1.221",
+            "Info": ""
+        },
+        {
+            "Name": "ddu",
+            "Updated": "2026-07-27T21:56:57.9570888+09:00",
+            "Source": "extras",
+            "Version": "18.1.5.6",
+            "Info": ""
+        },
+        {
+            "Name": "discordo",
+            "Updated": "2026-08-02T17:45:39.7613237+09:00",
+            "Source": "vvxrtues",
+            "Version": "1.0",
+            "Info": ""
+        },
+        {
+            "Name": "fastfetch",
+            "Updated": "2026-07-20T12:29:35.5158458+09:00",
+            "Source": "main",
+            "Version": "2.66.0",
+            "Info": ""
+        },
+        {
+            "Name": "ffmpeg",
+            "Updated": "2026-07-05T22:01:47.0827138+09:00",
+            "Source": "main",
+            "Version": "8.1.2",
+            "Info": ""
+        },
+        {
+            "Name": "gallery-dl",
+            "Updated": "2026-08-02T16:01:37.4472405+09:00",
+            "Source": "main",
+            "Version": "1.32.9",
+            "Info": ""
+        },
+        {
+            "Name": "git",
+            "Updated": "2026-07-20T12:29:43.9169651+09:00",
+            "Source": "main",
+            "Version": "2.55.0.3",
+            "Info": ""
+        },
+        {
+            "Name": "gitui",
+            "Updated": "2026-04-24T23:45:22.9255003+09:00",
+            "Source": "main",
+            "Version": "0.28.1",
+            "Info": ""
+        },
+        {
+            "Name": "gsudo",
+            "Updated": "2025-10-13T16:24:15.6088281+09:00",
+            "Source": "main",
+            "Version": "2.6.1",
+            "Info": ""
+        },
+        {
+            "Name": "helix",
+            "Updated": "2026-04-25T00:11:58.2114553+09:00",
+            "Source": "main",
+            "Version": "25.07.1",
+            "Info": ""
+        },
+        {
+            "Name": "imagemagick",
+            "Updated": "2026-08-04T16:40:28.3455312+09:00",
+            "Source": "main",
+            "Version": "7.1.2-29",
+            "Info": ""
+        },
+        {
+            "Name": "innounp",
+            "Updated": "2026-07-27T21:57:03.0431759+09:00",
+            "Source": "main",
+            "Version": "2.70.1",
+            "Info": ""
+        },
+        {
+            "Name": "libreoffice",
+            "Updated": "2026-07-27T21:58:26.9147236+09:00",
+            "Source": "extras",
+            "Version": "26.2.5",
+            "Info": ""
+        },
+        {
+            "Name": "mpv",
+            "Updated": "2025-12-27T20:17:41.2678186+09:00",
+            "Source": "extras",
+            "Version": "0.41.0",
+            "Info": ""
+        },
+        {
+            "Name": "Noto-NF",
+            "Updated": "2026-08-04T16:04:43.1015283+09:00",
+            "Source": "nerd-fonts",
+            "Version": "3.5.0",
+            "Info": ""
+        },
+        {
+            "Name": "Noto-NF-Mono",
+            "Updated": "2026-08-04T16:04:52.3057924+09:00",
+            "Source": "nerd-fonts",
+            "Version": "3.5.0",
+            "Info": ""
+        },
+        {
+            "Name": "nu",
+            "Updated": "2026-08-02T16:02:22.2473333+09:00",
+            "Source": "main",
+            "Version": "0.114.1",
+            "Info": ""
+        },
+        {
+            "Name": "obs-studio",
+            "Updated": "2026-07-27T21:58:43.2244244+09:00",
+            "Source": "extras",
+            "Version": "32.2.1",
+            "Info": ""
+        },
+        {
+            "Name": "oculante",
+            "Updated": "2025-03-16T01:46:42.0318435+09:00",
+            "Source": "extras",
+            "Version": "0.9.2",
+            "Info": ""
+        },
+        {
+            "Name": "rustdesk",
+            "Updated": "2026-07-20T12:29:49.3384895+09:00",
+            "Source": "extras",
+            "Version": "1.4.9",
+            "Info": ""
+        },
+        {
+            "Name": "scoop-search",
+            "Updated": "2026-03-14T15:31:27.9211178+09:00",
+            "Source": "main",
+            "Version": "2.1.0",
+            "Info": ""
+        },
+        {
+            "Name": "shutup10",
+            "Updated": "2026-07-20T12:29:52.0043968+09:00",
+            "Source": "extras",
+            "Version": "3.2.1111",
+            "Info": ""
+        },
+        {
+            "Name": "starship",
+            "Updated": "2026-08-02T16:05:59.1193463+09:00",
+            "Source": "main",
+            "Version": "1.26.0",
+            "Info": ""
+        },
+        {
+            "Name": "steam",
+            "Updated": "2025-03-16T01:48:21.7193939+09:00",
+            "Source": "games",
+            "Version": "nightly-20250316",
+            "Info": ""
+        },
+        {
+            "Name": "unigetui",
+            "Updated": "2026-08-02T16:01:40.0438125+09:00",
+            "Source": "extras",
+            "Version": "2026.2.7",
+            "Info": ""
+        },
+        {
+            "Name": "vcredist",
+            "Updated": "2026-06-14T13:10:40.3743446+09:00",
+            "Source": "extras",
+            "Version": "14.51.36247.0",
+            "Info": ""
+        },
+        {
+            "Name": "vcredist2005",
+            "Updated": "2025-03-16T01:40:47.7310436+09:00",
+            "Source": "extras",
+            "Version": "8.0.50727.6195",
+            "Info": ""
+        },
+        {
+            "Name": "vcredist2008",
+            "Updated": "2025-03-16T01:40:51.5416577+09:00",
+            "Source": "extras",
+            "Version": "9.0.30729.5677",
+            "Info": ""
+        },
+        {
+            "Name": "vcredist2010",
+            "Updated": "2025-03-16T01:41:02.3484915+09:00",
+            "Source": "extras",
+            "Version": "10.0.40219.325",
+            "Info": ""
+        },
+        {
+            "Name": "vcredist2012",
+            "Updated": "2025-03-16T01:41:07.0235961+09:00",
+            "Source": "extras",
+            "Version": "11.0.61030.0",
+            "Info": ""
+        },
+        {
+            "Name": "vcredist2013",
+            "Updated": "2025-03-16T01:41:11.525242+09:00",
+            "Source": "extras",
+            "Version": "12.0.40664.0",
+            "Info": ""
+        },
+        {
+            "Name": "ventoy",
+            "Updated": "2026-07-27T21:58:44.0697188+09:00",
+            "Source": "extras",
+            "Version": "1.1.17",
+            "Info": ""
+        },
+        {
+            "Name": "yazi",
+            "Updated": "2026-05-08T20:01:14.61112+09:00",
+            "Source": "main",
+            "Version": "26.5.6",
+            "Info": ""
+        },
+        {
+            "Name": "yt-dlp",
+            "Updated": "2026-07-05T22:02:08.4938701+09:00",
+            "Source": "main",
+            "Version": "2026.07.04",
+            "Info": ""
+        },
+        {
+            "Name": "zed",
+            "Updated": "2026-08-04T16:05:02.2428486+09:00",
+            "Source": "extras",
+            "Version": "1.13.2",
+            "Info": ""
+        },
+        {
+            "Name": "zellij",
+            "Updated": "2026-08-02T16:15:17.3446372+09:00",
+            "Source": "main",
+            "Version": "0.44.3",
+            "Info": ""
+        }
+    ],
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": "2026-08-04T14:24:49+09:00",
+            "Manifests": 1618
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2026-08-04T14:26:03+09:00",
+            "Manifests": 2357
+        },
+        {
+            "Name": "nerd-fonts",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+            "Updated": "2026-08-03T12:32:38+09:00",
+            "Manifests": 367
+        },
+        {
+            "Name": "games",
+            "Source": "https://github.com/Calinou/scoop-games",
+            "Updated": "2026-08-04T15:42:39+09:00",
+            "Manifests": 417
+        },
+        {
+            "Name": "vvxrtues",
+            "Source": "https://github.com/vvirtues/bucket",
+            "Updated": "2026-08-04T02:53:08+09:00",
+            "Manifests": 3
+        }
+    ]
+}
