@@ -1,0 +1,28 @@
+[Added Associations]
+application/json=dev.zed.Zed.desktop;
+application/pdf=firefox.desktop;
+image/avif=imgvwr.desktop;
+image/gif=imgvwr.desktop;oculante.desktop;
+image/jpeg=imgvwr.desktop;oculante.desktop;
+image/jxl=imgvwr.desktop;oculante.desktop;
+image/png=imgvwr.desktop;oculante.desktop;
+image/webp=imgvwr.desktop;oculante.desktop;
+text/html=firefox.desktop;
+text/plain=dev.zed.Zed.desktop;
+video/webm=mpv.desktop;
+
+[Default Applications]
+application/json=dev.zed.Zed.desktop;
+application/pdf=firefox.desktop;
+image/avif=imgvwr.desktop;
+image/gif=imgvwr.desktop;
+image/jpeg=imgvwr.desktop;
+image/jxl=imgvwr.desktop;
+image/png=imgvwr.desktop;
+image/webp=imgvwr.desktop;
+text/html=firefox.desktop;
+text/plain=dev.zed.Zed.desktop;
+video/webm=mpv.desktop;
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+audio/flac=mpv.desktop
