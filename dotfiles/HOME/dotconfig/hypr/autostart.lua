@@ -8,14 +8,7 @@ local polkit = "systemctl --user start hyprpolkitagent"
 -- local polkit = "/usr/lib/polkit-kde-authentication-agent-1"
 
 local bar = "abar"
-local bluetooth_applet = "blueman-applet"
-local network_applet = "nm-applet --indicator"
-local notification_daemon = "mako"
--- See: https://wiki.hypr.land/Useful-Utilities/Clipboard-Managers/#cliphist
-local clipboard_text = "wl-paste --type text --watch cliphist store"
-local clipboard_images = "wl-paste --type image --watch cliphist store"
--- See: https://wiki.hypr.land/Useful-Utilities/Clipboard-Managers/#clipvault
-local clipvault = "wl-paste --watch clipvault store"
+local notification_daemon = "poshanka"
 
 -- for awww
 -- local wallpaper = "wallpaper.nu"
@@ -28,11 +21,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd(polkit)
     -- hl.exec_cmd(tray_daemon)
     hl.exec_cmd(bar)
-    -- hl.exec_cmd(bluetooth_applet)
-    hl.exec_cmd(network_applet)
     hl.exec_cmd(notification_daemon)
-    -- hl.exec_cmd(clipboard_text)
-    -- hl.exec_cmd(clipboard_images)
     hl.exec_cmd(wallpaper)
     hl.exec_cmd(idle)
 end)

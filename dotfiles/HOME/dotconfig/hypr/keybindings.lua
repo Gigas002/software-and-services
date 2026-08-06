@@ -2,23 +2,23 @@
 -- Binds:          https://wiki.hypr.land/Configuring/Basics/Binds/
 -- Dispatchers:    https://wiki.hypr.land/Configuring/Basics/Dispatchers/
 
-local helpers        = require("helpers")
+local helpers    = require("helpers")
 
-local mainMod        = "SUPER"
+local mainMod    = "SUPER"
 
 -- Application assignments
-local term           = "alacritty"
-local editor         = "zeditor"
-local file_mgr       = "ghostty -e yazi"
-local browser        = "firefox"
-local sysmon         = "btm"
-local launcher       = "tofi"
+local term       = "alacritty"
+local editor     = "zeditor"
+local file_mgr   = "ghostty -e yazi"
+local browser    = "firefox"
+local sysmon     = "btm"
+local launcher   = "tofi"
 
 -- Complex commands
-local lock_cmd       = "hyprlock"
-local bar_cmd        = "killall abar || abar"
-local screenshot_cmd = "wayshot -g | wl-copy"
-
+local lock       = "hyprlock"
+local bar        = "killall abar || abar"
+local selector   = "waysip -d --freeze"
+local screenshot = "wayshot -g \"$(" .. selector .. ")\" | wl-copy"
 
 -- ┌─────────────────────────────────────────┐
 -- │  Window / session actions               │
@@ -40,13 +40,13 @@ hl.bind(mainMod .. " + W", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("ALT + Return", hl.dsp.window.fullscreen())
 
 -- Lock screen
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lock_cmd))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lock))
 
 -- Toggle bar
-hl.bind("CTRL + Escape", hl.dsp.exec_cmd(bar_cmd))
+hl.bind("CTRL + Escape", hl.dsp.exec_cmd(bar))
 
 -- Screenshot
-hl.bind("print", hl.dsp.exec_cmd(screenshot_cmd))
+hl.bind("print", hl.dsp.exec_cmd(screenshot))
 
 -- Borderless toggle
 hl.bind(mainMod .. " + H", function() helpers.toggle_borderless() end)
@@ -64,7 +64,12 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(file_mgr))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser))
 hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd(term .. " -e " .. sysmon))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(launcher))
+-- Launch tofi on whichever output currently has focus
+hl.bind(mainMod .. " + R", function()
+    local mon = hl.get_active_monitor()
+    local output = mon and mon.name or ""
+    hl.exec_cmd(launcher .. ' --output "' .. output .. '"')
+end)
 
 
 -- ┌─────────────────────────────────────────┐
