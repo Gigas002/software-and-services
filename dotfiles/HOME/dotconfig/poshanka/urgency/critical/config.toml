@@ -1,0 +1,6 @@
+[override]
+type = "urgency"
+level = "critical"
+
+[paths]
+theme = "theme.toml"

@@ -1,0 +1,21 @@
+[paths]
+theme = "theme.toml"
+overrides = [
+    "urgency/low/config.toml",
+    "urgency/critical/config.toml",
+]
+
+[provider]
+exec = "scripts/notred-subscribe.sh"
+command = "notredctl"
+
+[stack]
+gap = 10
+
+[placement]
+anchor = "top-right"
+margin = 20
+
+[layer]
+layer = "overlay"
+output = ""

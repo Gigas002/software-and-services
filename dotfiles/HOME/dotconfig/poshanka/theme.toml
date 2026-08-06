@@ -1,0 +1,33 @@
+[font]
+name = "NotoSans Nerd Font"
+size = 12.0
+
+[colors]
+background = "#161925B3"
+foreground = "#c3c7c8FF"
+border = "#c74dedFF"
+progress = "#c74dedFF"
+
+[layout]
+width = 300
+height = 300
+padding = 8
+margin = 5
+
+[border]
+size = 5
+radius = 10
+
+[text]
+alignment = "left"
+summary = "<b>{summary}</b>"
+body = "{body}"
+
+[icons]
+size = 64
+position = "left"
+theme = ""
+default = "notification-active"
+
+[progress]
+mode = "over"
