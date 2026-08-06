@@ -229,3 +229,15 @@ go/
 kdeconnect/
 openmw/
 github-copilot/
+
+GIMP/
+ow-electron/
+
+ai.moeru.airi/*
+servo/*
+httptoolkit
+systemd/user/graphical-session.target.wants/
+discord
+gh
+!mimeapps.list
+!user-dirs.locale
