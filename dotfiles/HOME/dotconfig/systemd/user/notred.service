@@ -1,0 +1,14 @@
+[Unit]
+Description=Freedesktop notification daemon (notred)
+Documentation=https://github.com/Gigas002/notred
+After=graphical-session-pre.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=notred
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

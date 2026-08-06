@@ -1,0 +1,15 @@
+[Unit]
+Description=Wayland popup notification subscriber (poshanka)
+Documentation=https://github.com/Gigas002/poshanka
+After=graphical-session.target notred.service
+Wants=notred.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=poshanka
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
