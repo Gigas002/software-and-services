@@ -9,9 +9,15 @@
 #
 # Requires: trayctl, trayd
 
-# Outer loop: reconnect automatically when trayd is not running or restarts.
+# Outer loop: subscribe, clear tray on exit, and retry.
+# If trayd is not running, trayctl subscribe exits immediately and we retry
+# after a short sleep — no need to poll the process table separately.
 while true; do
     trayctl subscribe
-    # trayd not available or disconnected; pause before retrying.
-    sleep 3
+
+    # trayd exited or was not reachable — clear the tray so stale items
+    # are not shown while the daemon is down.
+    echo '[]'
+
+    sleep 2
 done
