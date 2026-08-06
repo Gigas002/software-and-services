@@ -37,7 +37,8 @@ SOCKET_PATH="$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock"
 
 socat -U - UNIX-CONNECT:"$SOCKET_PATH" | while read -r line; do
     if [[ "$line" == workspace* || "$line" == createworkspace* || \
-          "$line" == destroyworkspace* || "$line" == moveworkspace* ]]; then
+          "$line" == destroyworkspace* || "$line" == moveworkspace* || \
+          "$line" == focusedmon* ]]; then
         emit_workspaces
     fi
 done
