@@ -1,0 +1,45 @@
+[markdown]
+# mask_spoilers = true
+# https://xyproto.github.io/splash/docs/
+theme = "catppuccin-mocha"
+
+[timestamps]
+# https://pkg.go.dev/time#Layout
+format = "15:04:05"
+
+[date_separator]
+# https://pkg.go.dev/time#Layout
+format = "02.01.2006"
+
+[keybinds]
+focus_previous = "ctrl+up"
+focus_next = "ctrl+down"
+quit = "ctrl+q"
+
+[keybinds.guilds_tree]
+select_up = "up"
+select_down = "down"
+
+[keybinds.messages_list]
+select_up = "up"
+select_down = "down"
+scroll_up = "shift+up"
+scroll_down = "shift+down"
+select_reply = "s"
+reply = "r"
+reply_mention = "R"
+edit = "e"
+open = "enter"
+yank_content = "y"
+
+[keybinds.composer]
+undo = "ctrl+u"
+open_editor = "ctrl+c"
+open_file_picker = "ctrl+e"
+
+# [rpc]
+# enabled = true
+# port = 1337
+# binary = "/home/gigas/documents/repos/discordo/rsRPC/target/release/rsrpc-cli"
+# spawn_server = true
+# process_scan = true
