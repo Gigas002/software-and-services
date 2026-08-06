@@ -1,11 +1,3 @@
-# [colors]
-# dim_foreground = "#5C6370"
-# foreground = "#C3C7D1"
-# bright_foreground = "#828997"
-# dim_background = "#282C34"
-# background = "#161925"
-# bright_background = "#282C34"
-
 [colors.primary]
 background = '#000000'
 foreground = '#ffffff'
@@ -22,6 +14,3 @@ white = "#dcdfe4"
 
 [colors.bright]
 white = "#ffffff"
-
-# [colors.dim]
-# white = "#dcdfe4"

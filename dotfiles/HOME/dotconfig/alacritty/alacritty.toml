@@ -1,8 +1,5 @@
 # See https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
 
-# [env]
-# ZDOTDIR = "/home/gigas/.config/zsh/"
-
 [window]
 opacity = 0.3
 blur = true
