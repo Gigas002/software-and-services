@@ -13,11 +13,25 @@
 -- vrr mode:   0=off 1=on 2=fullscreen-only 3=fullscreen with video/game content type
 
 -- PC monitor
+-- hl.monitor({
+--     output   = "HDMI-A-1",
+--     mode     = "2560x1440@100",
+--     position = "auto",
+--     scale    = "1",
+--     -- cm       = "srgb",
+--     -- transform        = 0,
+--     -- mirror           = "",
+--     bitdepth = 10,
+--     -- vrr              = 0,
+--     -- supports_wide_color = 0,
+--     -- supports_hdr     = 0,
+-- })
+
 hl.monitor({
-    output   = "HDMI-A-1",
-    mode     = "2560x1440@100",
+    output = "DP-3",
+    mode = "2560x1440@260",
     position = "auto",
-    scale    = "1",
+    scale = "1",
     -- cm       = "srgb",
     -- transform        = 0,
     -- mirror           = "",
@@ -27,14 +41,6 @@ hl.monitor({
     -- supports_hdr     = 0,
 })
 
---hl.monitor({
---    output = "HDMI-A-1",
-  --  mode = "2560x1440@100",
-  --  scale = "1",
- --   transform = 3,
-   -- bitdepth = 10,
---})
-
 -- Generic fallback — catches any monitor not matched by an explicit rule:
 -- hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" })
 
@@ -42,4 +48,17 @@ hl.monitor({
 -- hl.monitor({ output = "eDP-1", mode = "1920x1080@144", position = "0x0", scale = 1 })
 
 -- Left-of-primary secondary example:
--- hl.monitor({ output = "HDMI-A-2", mode = "2560x1440@75", position = "-2560x0", scale = 1 })
+-- hl.monitor({ output = "HDMI-A-2", mode = "2560x1440@75", position = "-2560x0", scale = 1})
+hl.monitor({
+    output = "HDMI-A-1",
+    mode = "2560x1440@100",
+    position = "-1440x-470",
+    scale = "1",
+    -- cm = "srgb",
+    transform = 3,
+    -- mirror = "",
+    bitdepth = 10,
+    -- vrr = 0,
+    -- supports_wide_color = 0,
+    -- supports_hdr = 0,
+})
