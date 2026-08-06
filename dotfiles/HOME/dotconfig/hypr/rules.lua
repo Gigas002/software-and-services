@@ -88,12 +88,12 @@ hl.window_rule({
     opacity = "0.80 0.70",
 })
 
-hl.window_rule({
-    name    = "windowrule-networkmanager",
-    match   = { class = "^(nm-applet)$" },
-    float   = true,
-    opacity = "0.80 0.70",
-})
+-- hl.window_rule({
+--     name    = "windowrule-networkmanager",
+--     match   = { class = "^(nm-applet)$" },
+--     float   = true,
+--     opacity = "0.80 0.70",
+-- })
 
 hl.window_rule({
     name    = "windowrule-nm-connection-editor",
