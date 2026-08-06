@@ -3,5 +3,5 @@
 # for linux:
 $env.EDITOR = "helix"
 $env.VISUAL = "zeditor"
-$env.DIFFPROG = "kompare"
+$env.DIFFPROG = "zeditor --wait --diff"
 $env.MICRO_TRUECOLOR = "1"
