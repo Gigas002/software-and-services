@@ -1,0 +1,6 @@
+[queue]
+default_timeout_ms = 5000
+
+[events]
+on_button_middle = ["sh", "-c", "notredctl activate \"$NOTRED_ID\""]
+on_button_right = ["sh", "-c", "notredctl close-all"]
