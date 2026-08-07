@@ -1,5 +1,5 @@
 spawn-at-startup "awww-daemon"
-spawn-sh-at-startup "sleep 1 && awww img ~/Downloads/bg.jpg"
+spawn-sh-at-startup "sleep 1 && awww img ~/images/wallpapers/yuuki.png"
 
 spawn-at-startup "cosmic-osd"
 spawn-at-startup "trayd"

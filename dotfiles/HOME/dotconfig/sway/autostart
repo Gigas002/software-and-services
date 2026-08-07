@@ -17,7 +17,7 @@ exec sh -c '\
     export GDK_SCALE=1; \
     export TERMINAL=alacritty; \
     awww-daemon & \
-    (sleep 1 && awww img ~/Downloads/bg.jpg) & \
+    (sleep 1 && awww img ~/images/wallpapers/yuuki.png) & \
     cosmic-osd & \
     abar --config ~/.config/abar/sway_config.toml & \
     trayd & \
