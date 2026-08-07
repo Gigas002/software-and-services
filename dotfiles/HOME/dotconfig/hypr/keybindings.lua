@@ -16,7 +16,7 @@ local launcher   = "tofi"
 
 -- Complex commands
 local lock       = "hyprlock"
-local bar        = "killall abar || abar"
+local bar        = "killall abar || abar --config ~/.config/abar/hyprland_config.toml"
 local selector   = "waysip -d --freeze"
 local screenshot = "wayshot -g \"$(" .. selector .. ")\" | wl-copy"
 
