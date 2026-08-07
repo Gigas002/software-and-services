@@ -1,6 +1,3 @@
-# Sweet theme — hypr/themes/Sweet.lua (borders, gaps, colors)
-# Sway has no rounded corners or blur; opacity rules live in rules.
-
 font pango:NotoSans Nerd Font 12
 
 gaps inner 3

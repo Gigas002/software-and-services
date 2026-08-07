@@ -1,7 +1,3 @@
-// Toolkit env for apps spawned by niri (spawn / spawn-at-startup).
-// Compositor session vars (XDG_CURRENT_DESKTOP, etc.) belong in the Wayland
-// session .desktop file so tuigreet passes them when starting niri.
-
 environment {
     GDK_BACKEND "wayland,x11,*"
     QT_QPA_PLATFORM "wayland;xcb"

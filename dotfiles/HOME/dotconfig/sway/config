@@ -1,10 +1,3 @@
-# Sway — derived from hypr/*.lua
-# Docs: https://github.com/swaywm/sway/wiki
-#
-# Vulkan: WLR_RENDERER=vulkan is set in the Wayland session .desktop file
-# (sway-dotfiles.desktop) before sway starts — required for render_bit_depth etc.
-# Reload: swaymsg reload
-
 set $mod Mod4
 
 xwayland enable
@@ -19,7 +12,7 @@ mouse_warping container
 
 smart_gaps off
 
-include ~/.config/sway/theme
+include ~/.config/sway/themes/Sweet
 include ~/.config/sway/outputs
 include ~/.config/sway/input
 include ~/.config/sway/rules
