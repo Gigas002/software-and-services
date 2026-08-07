@@ -1,14 +1,8 @@
-// hypr/autostart.lua + hypr/hypridle.conf + hypr/hyprpaper.conf
-
 spawn-at-startup "awww-daemon"
-spawn-sh-at-startup "sleep 1 && awww img ~/images/wallpapers/yuuki.png"
+spawn-sh-at-startup "sleep 1 && awww img ~/Downloads/bg.jpg"
 
-spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
-// spawn-at-startup "/usr/lib/polkit-gnome-authentication-agent-1"
-
-spawn-at-startup "ashell"
-// spawn-at-startup "blueman-applet"
-spawn-at-startup "nm-applet" "--indicator"
-spawn-at-startup "mako"
-
-// spawn-sh-at-startup "swayidle -w timeout 900 'brightnessctl -s set 10' resume 'brightnessctl -r' before-sleep 'swaylock' timeout 1800 'swaylock' timeout 3600 'niri msg action power-off-monitors' resume 'brightnessctl -r'"
+spawn-at-startup "cosmic-osd"
+spawn-at-startup "trayd"
+spawn-at-startup "abar" "--config" "~/.config/abar/niri_config.toml"
+spawn-at-startup "notred"
+spawn-at-startup "poshanka"

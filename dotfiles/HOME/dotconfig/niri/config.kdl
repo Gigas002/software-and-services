@@ -1,13 +1,10 @@
-// Niri — derived from hypr/*.lua
-// https://github.com/niri-wm/niri/wiki/Configuration:-Introduction
-//
 // Validate: niri validate -c ~/.config/niri/config.kdl
 // Reload: save any included file (live reload)
 
 include "environment.kdl"
 include "input.kdl"
 include "outputs.kdl"
-include "theme.kdl"
+include "themes/Sweet.kdl"
 include "rules.kdl"
 include "autostart.kdl"
 include "binds.kdl"

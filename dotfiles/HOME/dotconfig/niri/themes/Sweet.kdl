@@ -1,0 +1,21 @@
+layout {
+    gaps 8
+
+    focus-ring {
+        off
+        width 2
+        active-gradient from="#c74dedff" to="#ed254eff" angle=45
+        inactive-gradient from="#00c1e4cc" to="#7cb7ffcc" angle=45
+    }
+
+    border {
+        width 2
+        active-gradient from="#c74dedff" to="#ed254eff" angle=45
+        inactive-gradient from="#00c1e4cc" to="#7cb7ffcc" angle=45
+        urgent-color "#ed254e"
+    }
+
+    shadow {
+        off
+    }
+}

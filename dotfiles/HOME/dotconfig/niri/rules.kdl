@@ -1,4 +1,9 @@
-// hypr/rules.lua — match uses app-id (Wayland) / WM class (Xwayland)
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+    draw-border-with-background false
+    opacity 0.95
+}
 
 window-rule {
     match app-id="^steam$"
@@ -67,7 +72,7 @@ window-rule {
     open-floating true
 }
 
-// hypr decoration dim_inactive
+// hypr decoration dim_inactive, toned down from the literal hypr values
 window-rule {
     match is-active=false
     opacity 0.85
