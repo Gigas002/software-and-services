@@ -7,7 +7,7 @@ local polkit = "systemctl --user start hyprpolkitagent"
 -- kde polkit
 -- local polkit = "/usr/lib/polkit-kde-authentication-agent-1"
 
-local bar = "abar"
+local bar = "abar --config ~/.config/abar/hyprland_config.toml"
 local notification_daemon = "poshanka"
 
 -- for awww
