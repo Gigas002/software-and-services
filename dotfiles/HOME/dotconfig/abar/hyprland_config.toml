@@ -1,0 +1,74 @@
+[base]
+font_name = "NotoSans Nerd Font"
+font_size = 16
+theme = "theme.toml"
+
+[icons]
+prefer = "theme"
+
+[modules]
+custom = [
+    { name = "system_info", icon = "gnome-system-monitor", on_left_click = "$TERMINAL -e btm" },
+    { name = "leave", icon = "system-log-out", submenu = [
+        { content = "logout", action = "~/.config/abar/scripts/leave/hyprland_logout.sh" },
+        { content = "sleep", action = "systemctl suspend" },
+        { content = "reboot", action = "systemctl reboot" },
+        { content = "poweroff", action = "systemctl poweroff" },
+    ] },
+    { name = "audio", icon = "pavucontrol", on_left_click = "$TERMINAL -e pavuc", on_scroll_up = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+", on_scroll_down = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-" },
+    { name = "bluetooth", icon = "blueman", on_left_click = "$TERMINAL -e bluetui" },
+    { name = "network", icon = "preferences-system-network", on_left_click = "$TERMINAL -e netman" },
+]
+
+[layout]
+left = ["system_info", "workspaces"]
+center = ["window"]
+right = [
+    [
+        "keyboard",
+    ],
+    [
+        "tray",
+        "clock",
+        "bluetooth",
+        "network",
+        "audio",
+        "leave",
+    ],
+]
+
+[workspaces]
+exec = "~/.config/abar/scripts/workspaces/hyprland.sh"
+on_scroll_up = "~/.config/abar/scripts/workspaces/hyprland_scroll.sh up"
+on_scroll_down = "~/.config/abar/scripts/workspaces/hyprland_scroll.sh down"
+
+[window]
+exec = "~/.config/abar/scripts/window/hyprland.sh"
+max_length = 50
+on_scroll_up = "~/.config/abar/scripts/window/hyprland_scroll.sh up"
+on_scroll_down = "~/.config/abar/scripts/window/hyprland_scroll.sh down"
+
+[keyboard]
+exec = "~/.config/abar/scripts/keyboard/hyprland.sh"
+on_left_click = "~/.config/abar/scripts/keyboard/hyprland_switch.sh"
+
+[mpris]
+exec = "~/.config/abar/scripts/mpris/playerctl.sh"
+max_length = 50
+on_left_click = "playerctl play-pause"
+on_right_click = "playerctl next"
+on_scroll_up = "playerctl volume 0.05+"
+on_scroll_down = "playerctl volume 0.05-"
+
+[clock]
+formats = [
+    # 21:35 28.03.2026
+    "%R %Z %d.%m.%Y",
+]
+timezones = ["Asia/Tokyo", "Europe/Moscow"]
+on_left_click = "$TERMINAL -e calendar-tui"
+
+[tray]
+exec = "~/.config/abar/scripts/tray/tray.sh"
+feed_id = true
+on_left_click = "~/.config/abar/scripts/tray/hyprland_menu.sh"

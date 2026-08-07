@@ -5,32 +5,20 @@
 # Clicking any tray icon opens a tofi picker of all active apps;
 # selecting one invokes `trayctl menu --app-id` for that app.
 #
+# Compositor-agnostic by design: which output tofi opens on is decided by
+# the caller via ABAR_OUTPUT, not detected here. See tray/niri_menu.sh and
+# tray/sway_menu.sh, which set it via each compositor's own IPC and then
+# exec this script.
+#
 # Requires: trayctl, jq, tofi
-# Optional: hyprctl or swaymsg, to auto-detect the focused output on
-# multi-monitor setups (see `focused_output` below).
 #
 # Env vars:
 #   DMENU_CMD     override the dmenu command passed to trayctl
-#                 (default: "tofi --mode dmenu --output <focused output>")
-#   ABAR_OUTPUT   force the output tofi opens on (e.g. "DP-2"), skipping
-#                 auto-detection
-
-# tofi does not open on the focused output by default in multi-monitor
-# setups, and always needs an explicit `--output` to land on the right
-# monitor. Ask the compositor which output currently has focus.
-focused_output() {
-    if [ -n "$ABAR_OUTPUT" ]; then
-        printf '%s' "$ABAR_OUTPUT"
-    elif command -v hyprctl >/dev/null 2>&1; then
-        hyprctl monitors -j 2>/dev/null | jq -r '.[] | select(.focused) | .name' | head -1
-    elif command -v swaymsg >/dev/null 2>&1; then
-        swaymsg -t get_outputs 2>/dev/null | jq -r '.[] | select(.focused) | .name' | head -1
-    fi
-}
+#                 (default: "tofi --mode dmenu --output <ABAR_OUTPUT>")
+#   ABAR_OUTPUT   output tofi opens on (e.g. "DP-2"); omitted entirely if unset
 
 TOFI_CMD="tofi --mode dmenu"
-output=$(focused_output)
-[ -n "$output" ] && TOFI_CMD="$TOFI_CMD --output $output"
+[ -n "${ABAR_OUTPUT:-}" ] && TOFI_CMD="$TOFI_CMD --output $ABAR_OUTPUT"
 
 DMENU_CMD="${DMENU_CMD:-$TOFI_CMD}"
 
