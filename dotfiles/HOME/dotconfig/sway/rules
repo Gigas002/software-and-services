@@ -1,6 +1,3 @@
-# Window rules — hypr/rules.lua
-# title/class/app_id accept PCRE where noted.
-
 # Opacity 0.80
 for_window [class="steam"] opacity 0.8
 for_window [app_id="steam"] opacity 0.8

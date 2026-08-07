@@ -1,21 +1,27 @@
-# Wallpaper
-exec awww-daemon
-exec sh -c 'sleep 1 && awww img ~/images/wallpapers/yuuki.png'
-
-
-# Polkit
-exec /usr/lib/polkit-kde-authentication-agent-1
-
-exec ashell
-# exec blueman-applet
-exec nm-applet --indicator
-exec mako
-
-# Idle — hypr/hypridle.conf (swayidle)
-# exec swayidle -w \
-#     timeout 900 'brightnessctl -s set 10' \
-#     resume 'brightnessctl -r' \
-#     before-sleep 'swaylock' \
-#     timeout 1800 'swaylock' \
-#     timeout 3600 'swaymsg "output * power off"' \
-#     resume 'swaymsg "output * power on"; brightnessctl -r'
+exec sh -c '\
+    export GDK_BACKEND="wayland,x11,*"; \
+    export QT_QPA_PLATFORM="wayland;xcb"; \
+    export SDL_VIDEODRIVER="wayland,x11"; \
+    export ELECTRON_OZONE_PLATFORM_HINT=wayland; \
+    export MOZ_ENABLE_WAYLAND=1; \
+    export CLUTTER_BACKEND=wayland; \
+    export GTK_USE_PORTAL=1; \
+    export GTK_THEME="Sweet:dark"; \
+    export QT_QPA_PLATFORMTHEME=qt6ct; \
+    export QT_WAYLAND_DISABLE_WINDOWDECORATION=1; \
+    export QT_AUTO_SCREEN_SCALE_FACTOR=1; \
+    export QT_ENABLE_HIGHDPI_SCALING=1; \
+    export XCURSOR_THEME="Sweet-cursors"; \
+    export XCURSOR_SIZE=30; \
+    export XDG_ICON_THEME=candy-icons; \
+    export GDK_SCALE=1; \
+    export TERMINAL=alacritty; \
+    awww-daemon & \
+    (sleep 1 && awww img ~/Downloads/bg.jpg) & \
+    cosmic-osd & \
+    abar --config ~/.config/abar/sway_config.toml & \
+    trayd & \
+    notred & \
+    poshanka & \
+    wait \
+'

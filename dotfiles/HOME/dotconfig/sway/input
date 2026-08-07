@@ -1,5 +1,3 @@
-# Input — hypr/input.lua
-
 input type:keyboard {
     xkb_layout "us,ru"
     xkb_options "grp:alt_shift_toggle"
@@ -10,6 +8,5 @@ input type:keyboard {
 
 input type:pointer pointer_accel 0.5
 
-# 3-finger horizontal swipe → workspace (hypr gesture workspace)
 bindgesture swipe:right workspace next
 bindgesture swipe:left workspace prev
