@@ -2,5 +2,6 @@
 vt = 1
 
 [default_session]
-command = "tuigreet -t --asterisks"
+command = "ratgreet"
+# command = "tuigreet -t --asterisks"
 user = "greeter"
