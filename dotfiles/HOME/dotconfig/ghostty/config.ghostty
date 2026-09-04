@@ -13,3 +13,5 @@ font-size = 14
 copy-on-select = true
 
 theme = Sweet
+
+confirm-close-surface = false
