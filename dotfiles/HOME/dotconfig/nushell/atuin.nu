@@ -118,6 +118,14 @@ $env.config = (
 )
 
 $env.config = ($env.config | default [] keybindings)
+
+if (version).minor >= 104 or (version).major > 0 {
+    with-env { ATUIN_SHELL: nu } {
+        job spawn {
+            atuin __internal prepare-search-index | complete
+        } | ignore
+    }
+}
 $env.config = (
     $env.config | upsert keybindings (
         $env.config.keybindings
@@ -134,7 +142,7 @@ $env.config = (
     $env.config | upsert keybindings (
         $env.config.keybindings
         | append {
-            name: atuin
+            name: atuin_up_arrow
             modifier: none
             keycode: up
             mode: [emacs, vi_normal, vi_insert]
