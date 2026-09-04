@@ -2,23 +2,24 @@
 -- Binds:          https://wiki.hypr.land/Configuring/Basics/Binds/
 -- Dispatchers:    https://wiki.hypr.land/Configuring/Basics/Dispatchers/
 
-local helpers    = require("helpers")
+local helpers        = require("helpers")
 
-local mainMod    = "SUPER"
+local mainMod        = "SUPER"
 
 -- Application assignments
-local term       = "alacritty"
-local editor     = "zeditor"
-local file_mgr   = "ghostty -e yazi"
-local browser    = "firefox"
-local sysmon     = "btm"
-local launcher   = "tofi"
+local term           = "alacritty"
+local editor         = "zeditor"
+local file_mgr       = "ghostty -e yazi"
+local browser        = "firefox"
+local sysmon         = "btm"
+local launcher       = "tofi"
 
 -- Complex commands
-local lock       = "hyprlock"
-local bar        = "killall abar || abar --config ~/.config/abar/hyprland_config.toml"
-local selector   = "waysip -d --freeze"
-local screenshot = "wayshot -g \"$(" .. selector .. ")\" | wl-copy"
+local lock           = "hyprlock"
+local bar            = "killall abar || abar --config ~/.config/abar/hyprland_config.toml"
+local selector       = "waysip -d --freeze"
+local screenshot     = "wayshot -g \"$(" .. selector .. ")\" | wl-copy"
+local screenshot_web = "wayshot -g \"$(" .. selector .. ")\" --encoding jpg | wl-copy"
 
 -- ┌─────────────────────────────────────────┐
 -- │  Window / session actions               │
@@ -47,6 +48,7 @@ hl.bind("CTRL + Escape", hl.dsp.exec_cmd(bar))
 
 -- Screenshot
 hl.bind("print", hl.dsp.exec_cmd(screenshot))
+hl.bind(mainMod .. " + print", hl.dsp.exec_cmd(screenshot_web))
 
 -- Borderless toggle
 hl.bind(mainMod .. " + H", function() helpers.toggle_borderless() end)
