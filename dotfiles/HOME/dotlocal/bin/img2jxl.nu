@@ -19,7 +19,7 @@ def main [
     | where { ($in | path type) == "file" }
     | where {
         let p = ($in | path parse)
-        let ext = ($p.extension | default "" | str downcase)
+        let ext = ($p.extension | default "" | str lowercase)
         $ext in $image_exts
       }
     | where {
@@ -33,7 +33,7 @@ def main [
 
       let p = ($path | path parse)
       let out = ($p.parent | path join ($p.stem + ".jxl"))
-      let ext = ($p.extension | default "" | str downcase)
+      let ext = ($p.extension | default "" | str lowercase)
 
       let r = match $ext {
 
@@ -115,7 +115,7 @@ def main [
               magick $path
                 -strip
                 -define png:color-type=6
-                PNG32:$tmp
+                $"PNG32:($tmp)"
               | complete
             )
 
