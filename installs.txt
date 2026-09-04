@@ -25,8 +25,6 @@ bpf
 brightnessctl
 cachy-chroot
 cachyos-fish-config
-cachyos-gaming-applications
-cachyos-gaming-meta
 cachyos-hooks
 cachyos-keyring
 cachyos-micro-settings
@@ -53,6 +51,7 @@ device-mapper
 dhclient
 diffutils
 discordo-git
+diskonaut-ng-git
 dmidecode
 dnsmasq
 dosfstools
@@ -71,7 +70,6 @@ ff2mpv-rust
 firefox
 fuzzylite-git
 gallery-dl
-gameconqueror
 gamemode
 gamescope
 ghostty
@@ -139,7 +137,6 @@ netman-git
 networkmanager
 networkmanager-openvpn
 nfs-utils
-niri
 noto-color-emoji-fontconfig
 noto-fonts
 noto-fonts-cjk
@@ -176,6 +173,7 @@ python-packaging
 qt6-connectivity
 qt6-wayland
 qt6ct
+ratgreet-git
 rebuild-detector
 reflector
 rsync
@@ -185,7 +183,7 @@ rust-analyzer
 rust-src
 s-nail
 samrewritten
-scanmem
+scanmem-rs-git
 sccache
 scx-manager
 scx-scheds
@@ -195,6 +193,8 @@ smartmontools
 socat
 sof-firmware
 starship
+steam
+steam-devices
 sudo
 sweet-cursors-git
 sweet-cursors-hyprcursor-git
@@ -214,17 +214,20 @@ ttf-noto-nerd
 ttf-roboto
 typos
 ufw
+umu-launcher
 unrar
 unzip
 upower
 usb_modeswitch
 usbutils
+uv
 vcmi
 ventoy-bin
 vkd3d-proton-mingw-git
 vulkan-radeon
 wayshot-git
 waysip-git
+wget
 which
 wild
 wine-cachyos
@@ -245,3 +248,4 @@ yt-dlp
 yt-dlp-ejs
 zed
 zellij
+zenity
