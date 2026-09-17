@@ -11,3 +11,5 @@ default_shell "nu"
 
 // theme "blade-runner"
 theme "Sweet"
+
+pane_frame_style "full"
