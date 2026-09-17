@@ -1,0 +1,738 @@
+version = 1
+
+[[package]]
+source = "git"
+id = "Details"
+slug = "Details"
+name = "Details"
+description = ""
+url = "https://github.com/Tercioo/Details-Damage-Meter"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/Details/r2997.17e716eb.zip"
+date_published = "2026-09-08T22:41:17Z"
+version = "r2997.17e716eb"
+changelog_url = "data:,17e716eb%20Merge%20pull%20request%20%231128%20from%20Hollicsh/master%0A305f95e4%20Update%20the%20.toc%20files%0Aabe57d29%20Show%20note%20for%20the%20user%20when%20it%20is%20not%20in%20group%0A527c638b%20Fix%20deprecated%20call%0Ac139bf36%20Rework%20how%20text%20objects%20work%20on%20bars%0Af6e258b6%20ToC%20Updates%2012.1.0%0Aca97fe51%20Fixes%20in%20tooltip%20reading%3B%20toc%20updates%0Acf961a84%20Fix%20a%20rare%20issue%20where%20the%20client%20does%20not%20give%20the%20name%20of%20an%20unit%20while%20in%20arena.%0A695fbde1%20Improvements%2C%20see%20github%20log.%0Acf723076%20Update%20tocs%20and%20bump%20version%0A"
+folders = [
+    "Details_Vanguard",
+    "Details_TinyThreat",
+    "Details_DataStorage",
+    "Details_EncounterDetails",
+    "Details_Compare2",
+    "Details",
+    "Details_Streamer",
+    "Details_RaidCheck",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "git"
+id = "ZSBT"
+slug = "ZSBT"
+name = "ZSBT"
+description = ""
+url = "https://github.com/Zorellion/ZSBT"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/ZSBT/r78.01f7890.zip"
+date_published = "2026-06-14T14:04:32Z"
+version = "r78.01f7890"
+changelog_url = "data:,01f7890%20Release%20v2.4.7%0A811273c%20Release%20v2.4.6%0A4d8cdc0%20Release%20v2.4.5%0A003abe6%20Release%20v2.4.4%0Af23f13a%20Release%20v2.4.3%0Ad3c9634%20Release%20v2.4.2%0Aab6c7e2%20Release%20v2.4.1%0A9557781%20Release%20v2.4.0%0A763f548%20Release%20v2.4.0.beta%0A5737fa7%20Release%20v2.3.9b%0A"
+folders = ["ZSBT"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1120247637"
+slug = "kemayo/wow-handynotes-midnight"
+name = "wow-handynotes-midnight"
+description = "World of Warcraft addon to tell you where treasures are in the Midnight expansion (requires HandyNotes)"
+url = "https://github.com/kemayo/wow-handynotes-midnight"
+download_url = "https://api.github.com/repos/kemayo/wow-handynotes-midnight/releases/assets/546404444"
+date_published = "2026-09-05T22:56:53Z"
+version = "v66"
+changelog_url = "data:,%23%23%20Changed%20in%20v66%0D%0A%0D%0A%2A%20Eversong%20Woods%3A%20hide%20the%20runestones%20by%20default%3B%20Blizzard%20shows%20the%20active%20one%2C%20and%20I%20add%20the%20completion%20data%20onto%20that%20when%20it%27s%20present%20anyway%0D%0A%2A%20Rares%20with%20%2Aonly%2A%20shared%20loot%20would%20hide%20when%20their%20achievement%20was%20completed%20rather%20than%20respecting%20the%20notable-loot%20setting%0D%0A%2A%20Avoid%20a%20secret%20taint%20issue%20when%20showing%20the%20tooltip%20for%20a%20mob%20that%20has%20no%20loot%0D%0A%0D%0A"
+folders = ["HandyNotes_MidnightTreasures"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1157501703"
+slug = "sheaglass/midnightbattletext"
+name = "MidnightBattleText"
+description = "Scrolling Battle Text compatible with ThreatPlatesRemake.  Working post 12.0 API"
+url = "https://github.com/SheaGlass/MidnightBattleText"
+download_url = "https://api.github.com/repos/SheaGlass/MidnightBattleText/releases/assets/366952381"
+date_published = "2026-03-04T18:23:46Z"
+version = "v1.3.2"
+changelog_url = "data:,%23%20MidnightBattleText%0D%0A%0D%0A%23%23%20%5Bv1.3.2%5D%28https%3A//github.com/SheaGlass/MidnightBattleText/tree/v1.3.2%29%20%282026-03-04%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/SheaGlass/MidnightBattleText/compare/v1.3.0...v1.3.2%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/SheaGlass/MidnightBattleText/releases%29%0D%0A%0D%0A-%20Fix%20stacking%20mode%20crash%3A%20drop%20secret%20UnitGUID%20from%20stack%20key%20%20%0D%0A"
+folders = ["MidnightBattleText"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181239755"
+slug = "deadlybossmods/dbm-vanilla"
+name = "DBM-Vanilla"
+description = "Deadly Boss Mods (DBM) - Vanilla and Season of Discovery mods (Classic and Retail)"
+url = "https://github.com/DeadlyBossMods/DBM-Vanilla"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Vanilla/releases/assets/549958042"
+date_published = "2026-09-08T05:54:31Z"
+version = "r827"
+changelog_url = "data:,%23%20DBM%20-%20Vanilla%20and%20Season%20of%20Discovery%0D%0A%0D%0A%23%23%20%5Br827%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/tree/r827%29%20%282026-09-08%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/compare/r826...r827%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/releases%29%0D%0A%0D%0A-%20Update%20localization.cn.lua%20%28%23564%29%20%20%0D%0A-%20Update%20localization.tw.lua%20%28%23563%29%20%20%0D%0A-%20Update%20Lucifron%20%28%23555%29%20%20%0D%0A-%20Update%20Sulfuron%20%28%23558%29%20%20%0D%0A-%20Update%20Shazzrah.lua%20%28%23561%29%20%20%0D%0A-%20Update%20localization.ru.lua%20%28%23549%29%20%20%0D%0A-%20Update%20Magmadar%20%28%23560%29%20%20%0D%0A-%20Update%20Nefarian%20%28%23548%29%20%20%0D%0A-%20Update%20Horsemen.lua%20%28%23554%29%20%20%0D%0A-%20Update%20Kel%27Thuzad.lua%20%28%23553%29%20%20%0D%0A-%20Update%20localization.fr.lua%20%28%23550%29%20%20%0D%0A-%20Update%20localization.br.lua%20%28%23547%29%20%20%0D%0A-%20Update%20Razorgore%20%28%23546%29%20%20%0D%0A-%20Remove%20DBM.InfoFrame%3AHide%28%29%20in%20OnCombatEnd%28%29%20Function%20%28%23545%29%20%20%0D%0A-%20Update%20Kel%27Thuzad%20%28%23544%29%20%20%0D%0A-%20Update%20Noth.lua%20%28%23543%29%20%20%0D%0A-%20Update%20localization.ru.lua%20%28%23542%29%20%20%0D%0A-%20Cthun%20refactor%20%28%23541%29%20%20"
+folders = [
+    "DBM-Azeroth",
+    "DBM-Test-Vanilla",
+    "DBM-Raids-Vanilla",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181239873"
+slug = "deadlybossmods/dbm-wotlk"
+name = "DBM-WotLK"
+description = "Deadly Boss Mods (DBM) - WotLK mods"
+url = "https://github.com/DeadlyBossMods/DBM-WotLK"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-WotLK/releases/assets/510631969"
+date_published = "2026-08-11T20:52:10Z"
+version = "r352"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28WoTLK%29%0D%0A%0D%0A%23%23%20%5Br352%5D%28https%3A//github.com/DeadlyBossMods/DBM-WotLK/tree/r352%29%20%282026-08-10%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-WotLK/compare/r351...r352%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-WotLK/releases%29%0D%0A%0D%0A-%20Update%20RU%20locale%20%28%2379%29%20%20%0D%0A-%20wrath%20toc%20bump%20%20%0D%0A-%20Fix%20and%20close%20https%3A//github.com/DeadlyBossMods/DBM-WotLK/issues/78%23issuecomment-5082487274%20with%20more%20efficent%20and%20precise%20debuff%20check%20%28well%20efficiency%20part%20will%20come%20with%20new%20core%20update%20soon%E2%84%A2%29%20%20%0D%0A-%20toc%20bumps%20%20%0D%0A-%20cleanup%20obsolete%20mop%20game%20version%20%20%0D%0A"
+folders = ["DBM-Raids-WoTLK"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181239900"
+slug = "deadlybossmods/dbm-cataclysm"
+name = "DBM-Cataclysm"
+description = "Deadly Boss Mods (DBM) - Cataclysm mods"
+url = "https://github.com/DeadlyBossMods/DBM-Cataclysm"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Cataclysm/releases/assets/430888012"
+date_published = "2026-05-27T07:26:43Z"
+version = "r262"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28Cata%29%0D%0A%0D%0A%23%23%20%5Br262%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/tree/r262%29%20%282026-05-25%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/compare/r261...r262%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/releases%29%0D%0A%0D%0A-%20Add%20missing%20voiceFile%20paths%20for%20test%20object%20%20%0D%0A-%2012.0.7%20toc%20%20%0D%0A-%20forgot%20to%20bump%20these%20before%20tag%2C%20oops%20%20%0D%0A"
+folders = [
+    "DBM-Raids-Cata",
+    "DBM-Cataclysm",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181239916"
+slug = "deadlybossmods/dbm-mop"
+name = "DBM-MoP"
+description = "Deadly Boss Mods (DBM) - MoP mods"
+url = "https://github.com/DeadlyBossMods/DBM-MoP"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-MoP/releases/assets/510633023"
+date_published = "2026-08-11T20:54:43Z"
+version = "r190"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28MoP%29%0D%0A%0D%0A%23%23%20%5Br190%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/tree/r190%29%20%282026-08-10%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/compare/r189...r190%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/releases%29%0D%0A%0D%0A-%20Update%20RU%20locale%20%28%2378%29%20%20%0D%0A-%20Upgrade%20Thok%20and%20Malkorak%20to%20support%20voice%20pack%20sounds%20and%20showing%20icons%20used%20next%20to%20icon%20options%20%20%0D%0A-%20Optimize%20GetRaidUnitId%20%20%0D%0A-%20toc%20bumps%20%20%0D%0A-%20cleanup%20obsolete%20mop%20game%20version%20%20%0D%0A"
+folders = [
+    "DBM-Raids-MoP",
+    "DBM-Scenario-MoP",
+    "DBM-Pandaria",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181240301"
+slug = "deadlybossmods/dbm-spelltimers"
+name = "DBM-SpellTimers"
+description = "Addon that uses DBM timers to show spell cooldowns from raid members. It is fully configurable through a simple GUI so you can easily add new spells."
+url = "https://github.com/DeadlyBossMods/DBM-SpellTimers"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-SpellTimers/releases/assets/269022271"
+date_published = "2025-07-01T14:43:15Z"
+version = "r162"
+changelog_url = "data:,%23%20%3CDBM%20Extra%3E%20Spell%20Timers%0D%0A%0D%0A%23%23%20%5Br162%5D%28https%3A//github.com/DeadlyBossMods/DBM-SpellTimers/tree/r162%29%20%282025-07-01%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-SpellTimers/compare/r161...r162%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-SpellTimers/releases%29%0D%0A%0D%0A-%20Add%20mists%20support%20%20%0D%0A-%20Add%2011.2%20TOC%20%20%0D%0A-%20Fix%20outdated%20media%20pack%20tocs%20%20%0D%0A-%20toc%20bumps%20for%20ptr%20%20%0D%0A"
+folders = ["DBM-SpellTimers"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181240897"
+slug = "deadlybossmods/dbm-pvp"
+name = "DBM-PvP"
+description = "This mod adds support for PvP battlegrounds and arena to Deadly Boss Mods."
+url = "https://github.com/DeadlyBossMods/DBM-PvP"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-PvP/releases/assets/490484263"
+date_published = "2026-07-26T16:02:39Z"
+version = "r192"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20PvP%0D%0A%0D%0A%23%23%20%5Br192%5D%28https%3A//github.com/DeadlyBossMods/DBM-PvP/tree/r192%29%20%282026-07-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-PvP/compare/r191...r192%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-PvP/releases%29%0D%0A%0D%0A-%20Fix%20LuaLS%20%20%0D%0A-%20Fix%20https%3A//github.com/DeadlyBossMods/DBM-Vanilla/issues/527%20%20%0D%0A%20%20%20%20Fixes%20the%20gametime%20comparison%20code%20for%20Era%20%20%0D%0A-%20do%20vanilla%20toc%20as%20well%20%20%0D%0A-%20Missed%20a%20toc%20bump%20for%20TBC%20%20%0D%0A-%20toc%20bumps%20%20%0D%0A-%20cleanup%20obsolete%20mop%20game%20version%20%20%0D%0A-%20Fix%20checkout%20misbehaving%20%20%0D%0A-%2012.0.7%20toc%20%20%0D%0A-%20forgot%20to%20bump%20these%20before%20tag%2C%20oops%20%20%0D%0A-%20remove%2012.0.1%20toc%2C%20take%202%20%28CN%20and%20KR%20updated%20now%29%20%20%0D%0A-%20Mist%20toc%20bumps%20for%20PTR%20%20%0D%0A-%20wrath%20titan%20toc%20bump%20%20%0D%0A-%20Update%20to%20checkout%20versoin%205%20%20%0D%0A-%20toc%20updates%20%20%0D%0A-%20toc%20cleanup%20%20%0D%0A"
+folders = ["DBM-PvP"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181241501"
+slug = "deadlybossmods/dbm-legion"
+name = "DBM-Legion"
+description = "Deadly Boss Mods (DBM) - Legion mods"
+url = "https://github.com/DeadlyBossMods/DBM-Legion"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Legion/releases/assets/430888544"
+date_published = "2026-05-27T07:27:38Z"
+version = "r66"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28Legion%29%0D%0A%0D%0A%23%23%20%5Br66%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/tree/r66%29%20%282026-05-25%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/compare/r65...r66%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/releases%29%0D%0A%0D%0A-%20Add%20missing%20voiceFile%20paths%20for%20test%20object%20%20%0D%0A-%20Make%20compatible%20with%20stage%203%20rename%20rollout%20%20%0D%0A-%20forgot%20to%20bump%20these%20before%20tag%2C%20oops%20%20%0D%0A"
+folders = [
+    "DBM-BrokenIsles",
+    "DBM-Raids-Legion",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181241531"
+slug = "deadlybossmods/dbm-wod"
+name = "DBM-WoD"
+description = "Deadly Boss Mods (DBM) - WoD mods"
+url = "https://github.com/DeadlyBossMods/DBM-WoD"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-WoD/releases/assets/430888293"
+date_published = "2026-05-27T07:27:21Z"
+version = "r96"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28WoD%29%0D%0A%0D%0A%23%23%20%5Br96%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/tree/r96%29%20%282026-05-25%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/compare/r95...r96%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/releases%29%0D%0A%0D%0A-%20Add%20missing%20voiceFile%20paths%20for%20test%20object%20%20%0D%0A-%20Make%20compatible%20with%20stage%203%20rename%20rollout%20%20%0D%0A-%20forgot%20to%20bump%20these%20before%20tag%2C%20oops%20%20%0D%0A"
+folders = [
+    "DBM-Raids-WoD",
+    "DBM-Draenor",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181242114"
+slug = "deadlybossmods/dbm-dungeons"
+name = "DBM-Dungeons"
+description = "This mod will add support for 5 man Dungeons and World Events, spanning Classic all the way to Dragonflight, to Deadly Boss Mods (DBM)."
+url = "https://github.com/DeadlyBossMods/DBM-Dungeons"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Dungeons/releases/assets/539163335"
+date_published = "2026-09-01T07:14:58Z"
+version = "r261"
+changelog_url = "data:,%23%20DBM%20-%20Dungeons%2C%20Delves%2C%20%26%20Events%0D%0A%0D%0A%23%23%20%5Br261%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/tree/r261%29%20%282026-09-01%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/compare/r260...r261%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/releases%29%0D%0A%0D%0A-%20push%20significant%20number%20more%20renames%20%20%0D%0A-%20Temple%20renames%20%20%0D%0A-%20Add%20kings%20rest%20renames%20%20%0D%0A-%20Dazar%20Update%3A%20%20%0D%0A%20%20%20%20Fix%20invalid%20option%20spellid%20for%20Gilded%20destuction%20that%20caused%20it%20to%20always%20display%20wrong%20spell%20name/description%20%20%0D%0A%20%20%20%20fixed%20one%20genuine%20misroute%20for%20hunting%20leap%20%20%0D%0A-%20push%20renames%20for%20DoN%20and%20AoF%20%20%0D%0A%20%20%20%20TOC%20cleanup%20%20%0D%0A-%20%20-%20Fix%20two%20more%20bugs%20on%20ass%20pix%20with%20our%20blizz%20bug%20work%20arounds.%20Closes%20https%3A//github.com/DeadlyBossMods/DBM-Dungeons/issues/625%20%20%0D%0A%20%20%20%20%20-%20Fix%20bug%20with%20warning%20ext%20on%20Light%20blossem%20beam.%20Closes%20https%3A//github.com/DeadlyBossMods/DBM-Dungeons/issues/626%20%20%0D%0A%20%20%20%20%20-%20Fix%20bug%20with%20false%20timer%20refreshes%20on%20Ikuss.%20Closes%20https%3A//github.com/DeadlyBossMods/DBM-Dungeons/issues/626%20%20%0D%0A-%20Fix%20audio%20sounds%20on%20Tazrah%20to%20reflect%20current%20mechanic%20and%20not%20PTR%20versions.%20%20%0D%0A%20%20%20%20Add%20audio%20options%20for%20void%20beam%20and%20sky%20strike%20on%20trash%20in%20arena%20%20%0D%0A%20%20%20%20at%20GTFO%20audio%20to%20bloodletting%20on%20zul%20jan%20in%20altar%20of%20fangs%20%20%0D%0A-%20Fix%20trash%20modules%20in%20wrong%20categories%20%20%0D%0A%20%20%20%20add%20another%20route%20to%20aztarec%20%20%0D%0A"
+folders = [
+    "DBM-Party-WarWithin",
+    "DBM-Party-WoD",
+    "DBM-Party-Dragonflight",
+    "DBM-WorldEvents",
+    "DBM-Party-Vanilla",
+    "DBM-Delves-Midnight",
+    "DBM-Test-Dungeons",
+    "DBM-Challenges",
+    "DBM-Party-Midnight",
+    "DBM-Party-Legion",
+    "DBM-Party-MoP",
+    "DBM-Party-BC",
+    "DBM-Party-Shadowlands",
+    "DBM-Delves-WarWithin",
+    "DBM-Party-WotLK",
+    "DBM-Party-BfA",
+    "DBM-Party-Cataclysm",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "181242143"
+slug = "deadlybossmods/dbm-timelessisle"
+name = "DBM-TimelessIsle"
+description = "This mod will add support for Timeless Isle to Deadly Boss Mods (DBM)."
+url = "https://github.com/DeadlyBossMods/DBM-TimelessIsle"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-TimelessIsle/releases/assets/548044866"
+date_published = "2026-09-07T02:48:33Z"
+version = "r57"
+changelog_url = "data:,%23%20%3CDBM%3E%20World%3A%20Timeless%20Isle%0D%0A%0D%0A%23%23%20%5Br57%5D%28https%3A//github.com/DeadlyBossMods/DBM-TimelessIsle/tree/r57%29%20%282026-06-10%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-TimelessIsle/compare/r56...r57%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-TimelessIsle/releases%29%0D%0A%0D%0A-%20fix%20redundant%20toc%20%20%0D%0A-%20forgot%20to%20bump%20these%20before%20tag%2C%20oops%20%20%0D%0A"
+folders = ["DBM-TimelessIsle"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "195662692"
+slug = "2072/h-h-t-d"
+name = "H-H-T-D"
+description = ""
+url = "https://github.com/2072/H-H-T-D"
+download_url = "https://api.github.com/repos/2072/H-H-T-D/releases/assets/345398833"
+date_published = "2026-01-24T22:34:40Z"
+version = "2.4.27"
+changelog_url = "data:,H.H.T.D.%0D%0A%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%0D%0A%2AChange%20log%2A%0D%0A------------%0D%0A%0D%0A%2A%2Aversion%202.4.27%20%282025-01-24%29%3A%2A%2A%0D%0A%0D%0A-%20Do%20not%20crash%20on%20Midnight%20but%20does%20not%20do%20much%20either...%20The%20custom%20marker%0D%0A%20%20feature%20may%20still%20work%20in%20certain%20conditions...%0D%0A%0D%0A-%20Add%20TOC%20for%20BCC.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.26%20%282025-12-31%29%3A%2A%2A%0D%0A%0D%0A-%20Fix%20an%20error%20message%20in%20chat%20at%20startup%20on%20retail.%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A%2A%2Aversion%202.4.25%20%282025-07-21%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.24%20%282025-03-14%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.23%20%282025-01-06%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.22%20%282024-10-04%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.21%20%282024-08-07%29%3A%2A%2A%0D%0A%0D%0A-%20Compatible%20with%20The%20War%20Within%0D%0A%0D%0A-%20Remove%20Penance%20from%20specialized%20healer%20spell%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.20%20%282024-05-26%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%20for%2010.2.7%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.19%20%282024-05-02%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A-%20Cataclysm%20compatibility%20fix%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.18%20%282024-03-05%29%3A%2A%2A%0D%0A%0D%0A-%20Remove%20Soothing%20Mist%2C%20Renew%20and%20Holy%20Nova%20from%20the%20specialized%20healer%20spells%20list.%20%28WoW%2010.2.5%20only%29%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.17%20%282024-01-22%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20update%20for%2010.2.5.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.16%20%282023-11-22%29%3A%2A%2A%0D%0A%0D%0A-%20Fix%20ADDON_ACTION_BLOCKED%20error%20due%20to%20the%20now%20forbidden%20usage%20of%0D%0A%20%20CheckInteractDistance%28%29%20while%20in%20combat.%20This%20was%20used%20to%20display%20an%20alert%0D%0A%20%20when%20a%20friendly%20nearby%20healer%20is%20being%20attacked.%20HHTD%20is%20now%20using%0D%0A%20%20UnitInRange%28%29%20instead%20but%20this%20will%20only%20work%20for%20unit%20in%20the%20players%20party%20or%0D%0A%20%20raid%20so%20no%20longer%20for%20potential%20NPC%20healers...%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.15%20%282023-11-08%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.14%20%282023-10-22%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.13%20%282023-07-16%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.12%20%282023-05-29%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20update%20for%2010.1.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.11%20%282023-04-02%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A-%20Fix%20for%20WoW%2010.1%20%28PTR%29%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.10%20%282023-01-07%29%3A%2A%2A%0D%0A%0D%0A-%20Update%20libNameplateRegistry%20to%20fix%20issue%20with%20object%20nameplates.%0D%0A%0D%0A-%20Add%20support%20for%20Evoker%20Class%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.14%20%282022-11-28%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20update%20for%20retail.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.13%20%282022-09-04%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20updates%20%28%2B%20for%20WotLK%29%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.12%20%282022-06-12%29%3A%2A%2A%0D%0A%0D%0A-%20Fix%20/hhtdg%20option%20panel%20for%20retail%20%28was%20crashing%20due%20to%20custom%20marks%20panel%29.%0D%0A%0D%0A-%20TOC%20updates%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.11%20%282022-02-27%29%3A%2A%2A%0D%0A%0D%0A-%20Fix%20Binding%20Heal%20%28missing%20spell%20ID%20in%20WoW%209.2.0%29%0D%0A%0D%0A-%20TOC%20update%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.10%20%282021-11-06%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20update%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.9%20%282021-07-03%29%3A%2A%2A%0D%0A%0D%0A-%20Do%20not%20generate%20a%20Decursive%20error%20report%20when%20no%20target%20is%20selected%20while%0D%0A%20%20using%20the%20Custom%20Mark%20UI.%20Print%20a%20message%20to%20the%20chat%20instead.%0D%0A%0D%0A-%20TOC%20uodate%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.8%20%282021-03-21%29%3A%2A%2A%0D%0A%0D%0A-%20Fix%20WoW%20Classic%20detection%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.7%20%282021-03-21%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20update%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.6%20%282020-10-19%29%3A%2A%2A%0D%0A%0D%0A-%20Adjust%20specialization%20spells%20list.%0D%0A%0D%0A-%20TOC%20to%2090001%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.5%20%282020-02-27%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20to%2080205%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.4%20%282019-10-28%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20to%2080205%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.3%20%282019-09-03%29%3A%2A%2A%0D%0A%0D%0A-%20Compatible%20with%20WoW%20Classic%0D%0A-%20Using%20BigWigs%27%20packager%2C%20as%20a%20result%20-nolib%20packages%20are%20only%20available%20from%0D%0A%20%20Github.%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.2%20%282019-07-07%29%3A%2A%2A%0D%0A%0D%0A-%20Fix%20sound%20for%20WoW%208.2%0D%0A-%20TOC%20update%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9.1%20%282019-01-07%29%3A%2A%2A%0D%0A%0D%0A-%20TOC%20update%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.9%20%282018-08-12%29%3A%2A%2A%0D%0A%0D%0A-%20Remove%20%60Vivify%60%20and%20%60Wild%20Growth%60%20from%20the%20%5Bspecialized%20healer%20spell%20list%5D%5Bspelllist%5D.%0D%0A%20%20%28If%20you%20see%20any%20inconsistencies%20in%20this%20list%20please%20%5Bopen%20a%20new%20ticket%5D%5Btickets%5D%29%0D%0A%0D%0A%0D%0A%2A%2Aversion%202.4.8%20%282018-07-22%29%3A%2A%2A%0D%0A%0D%0A-%20Add%20a%20setting%20to%20set%20the%20maximum%20display%20distance%20of%20nameplates%20in%20both%0D%0A%20%20nameplate%20related%20modules.%0D%0A%20%20%28This%20is%20a%20WoW%20setting%20only%20available%20through%20chat%20command%29%0D%0A%0D%0A-%20Homogenize%20nameplates%20settings%20between%20modules%20using%20them.%0D%0A%0D%0A%0D%0A%2A%2A%2A%2A%0D%0AFor%20older%20versions%20changes%20see%20version-oldnews.md%0D%0A%0D%0A%0D%0A%5Bspelllist%5D%3A%20https%3A//www.wowace.com/projects/h-h-t-d/pages/specialized-healers-spells%0D%0A%5Blocalization%5D%3A%20https%3A//www.wowace.com/projects/h-h-t-d/localization%0D%0A%5Btidyplates%5D%3A%20https%3A//www.curseforge.com/wow/addons/tidy-plates%0D%0A%5BLibNamePlateRegistry%5D%3A%20https%3A//www.wowace.com/projects/libnameplateregistry-1-0%0D%0A%5Btickets%5D%3A%20https%3A//www.wowace.com/projects/h-h-t-d/issues%0D%0A"
+folders = ["HHTD"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "211287257"
+slug = "nevcairiel/handynotes"
+name = "HandyNotes"
+description = "Handy Notes for your maps. "
+url = "https://github.com/Nevcairiel/HandyNotes"
+download_url = "https://api.github.com/repos/Nevcairiel/HandyNotes/releases/assets/511144459"
+date_published = "2026-08-12T05:56:20Z"
+version = "v1.6.31"
+changelog_url = "data:,%23%20HandyNotes%0D%0A%0D%0A%23%23%20%5Bv1.6.31%5D%28https%3A//github.com/Nevcairiel/HandyNotes/tree/v1.6.31%29%20%282026-08-12%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/Nevcairiel/HandyNotes/compare/v1.6.30...v1.6.31%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/Nevcairiel/HandyNotes/releases%29%0D%0A%0D%0A-%20Fix%20Mouse%20Over%20check%20in%2012.1%20%20%0D%0A"
+folders = ["HandyNotes"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "313155439"
+slug = "deadlybossmods/dbm-bfa"
+name = "DBM-BfA"
+description = "Deadly Boss Mods (DBM) - Battle for Azeroth mods"
+url = "https://github.com/DeadlyBossMods/DBM-BfA"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-BfA/releases/assets/430886208"
+date_published = "2026-05-27T07:24:26Z"
+version = "r49"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28BfA%29%0D%0A%0D%0A%23%23%20%5Br49%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/tree/r49%29%20%282026-05-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/compare/r48...r49%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/releases%29%0D%0A%0D%0A-%20Fix%20lingering%20migration%20issues%20%20%0D%0A-%20Add%20missing%20voiceFile%20paths%20for%20test%20object%20%20%0D%0A-%20Make%20compatible%20with%20stage%203%20rename%20rollout%20%20%0D%0A-%20forgot%20to%20bump%20these%20before%20tag%2C%20oops%20%20%0D%0A"
+folders = [
+    "DBM-BfA",
+    "DBM-Raids-BfA",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "315809051"
+slug = "kemayo/wow-handynotes-shadowlandstreasures"
+name = "wow-handynotes-shadowlandstreasures"
+description = "World of Warcraft addon to tell you where treasures are in Shadowlands (requires HandyNotes)"
+url = "https://github.com/kemayo/wow-handynotes-shadowlandstreasures"
+download_url = "https://api.github.com/repos/kemayo/wow-handynotes-shadowlandstreasures/releases/assets/534803340"
+date_published = "2026-08-29T05:25:52Z"
+version = "v101"
+changelog_url = "data:,%23%23%20Changed%20in%20v101%0D%0A%0D%0A%2A%20Bring%20in%20systems%20improvements%20from%20%5Bmy%20Midnight%20plugin%5D%28https%3A//www.curseforge.com/wow/addons/handynotes-midnight-treasures%29%2C%20notably%3A%0D%0A%20%20%20%20%2A%20When%20Blizzard%27s%20own%20map%20pin%20already%20shows%20extra%20content%2C%20the%20plugin%20now%20attaches%20its%20tooltip%20below%20instead%20of%20showing%20nothing%0D%0A%0D%0A"
+folders = ["HandyNotes_ShadowlandsTreasures"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "379119807"
+slug = "legacy-of-sylvanaar/prat-3-0"
+name = "prat-3-0"
+description = "Prat-3.0 is a chat enhancement addon for world of warcraft"
+url = "https://github.com/Legacy-of-Sylvanaar/prat-3-0"
+download_url = "https://api.github.com/repos/Legacy-of-Sylvanaar/prat-3-0/releases/assets/535104767"
+date_published = "2026-08-29T10:55:29Z"
+version = "3.9.106"
+changelog_url = "data:,%23%20Prat%203.0%0D%0A%0D%0A%23%23%20%5B3.9.106%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/tree/3.9.106%29%20%282026-08-29%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/compare/3.9.105...3.9.106%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/releases%29%0D%0A%0D%0A-%20Handle%20CMEResult%20on%20secret%20handling.%20%20%0D%0A-%20Fix%20emotes%20randomly%20injecting%20a%20timestamp.%20%20%0D%0A-%20Fix%20ping%20not%20showing%20username.%20%20%0D%0A"
+folders = ["Prat-3.0"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "44074003"
+slug = "sfx-wow/masque"
+name = "Masque"
+description = "A button-skinning engine for World of Warcraft."
+url = "https://github.com/SFX-WoW/Masque"
+download_url = "https://api.github.com/repos/SFX-WoW/Masque/releases/assets/527819371"
+date_published = "2026-08-24T15:48:33Z"
+version = "12.1.0"
+changelog_url = "data:,%23%23%2012.1.0%0A%0A%23%23%23%20General%0A%0A-%20Updated%20the%20%60Interface%60%20versions%3A%0A%20%20-%20%2A%2AMidnight%2A%2A%3A%20%60120100%60%0A%0A%23%23%23%20API%0A%0A-%20Removed%20the%20hook%20for%20%60ActionButton_ShowOverlayGlow%60.%0A%0A%5BRelease%20History%5D%28https%3A//github.com/SFX-WoW/Masque/wiki/History%29%0A"
+folders = ["Masque"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "564117101"
+slug = "kemayo/wow-handynotes-dragonflight"
+name = "wow-handynotes-dragonflight"
+description = "World of Warcraft addon to tell you where treasures are in the Dragon Isles (requires HandyNotes)"
+url = "https://github.com/kemayo/wow-handynotes-dragonflight"
+download_url = "https://api.github.com/repos/kemayo/wow-handynotes-dragonflight/releases/assets/534803339"
+date_published = "2026-08-29T05:25:51Z"
+version = "v82"
+changelog_url = "data:,%23%23%20Changed%20in%20v82%0D%0A%0D%0A%2A%20Bring%20in%20systems%20improvements%20from%20%5Bmy%20Midnight%20plugin%5D%28https%3A//www.curseforge.com/wow/addons/handynotes-midnight-treasures%29%2C%20notably%3A%0D%0A%20%20%20%20%2A%20When%20Blizzard%27s%20own%20map%20pin%20already%20shows%20extra%20content%2C%20the%20plugin%20now%20attaches%20its%20tooltip%20below%20instead%20of%20showing%20nothing%0D%0A%0D%0A"
+folders = ["HandyNotes_DragonflightTreasures"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "575147193"
+slug = "deadlybossmods/dbm-shadowlands"
+name = "DBM-Shadowlands"
+description = "Repo for Shadowlands content raid modules"
+url = "https://github.com/DeadlyBossMods/DBM-Shadowlands"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Shadowlands/releases/assets/430886540"
+date_published = "2026-05-27T07:24:59Z"
+version = "r31"
+changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28SL%29%0D%0A%0D%0A%23%23%20%5Br31%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/tree/r31%29%20%282026-05-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/compare/r30...r31%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/releases%29%0D%0A%0D%0A-%20Fix%20lingering%20migration%20issues%20%20%0D%0A-%20Add%20missing%20voiceFile%20paths%20for%20test%20object%20%20%0D%0A-%20Make%20compatible%20with%20stage%203%20rename%20rollout%20%20%0D%0A-%20forgot%20to%20bump%20these%20before%20tag%2C%20oops%20%20%0D%0A"
+folders = [
+    "DBM-Raids-Shadowlands",
+    "DBM-Shadowlands",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "708657"
+slug = "tullamods/omnicc"
+name = "OmniCC"
+description = "Cooldown count for everything"
+url = "https://github.com/tullamods/OmniCC"
+download_url = "https://api.github.com/repos/tullamods/OmniCC/releases/assets/328626081"
+date_published = "2025-12-14T21:07:04Z"
+version = "11.2.8"
+changelog_url = "data:,%23%20OmniCC%20Changelog%0D%0A%0D%0A%23%23%2011.2.8%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%2011.2.7%2C%205.5.3%2C%203.8.0%2C%202.5.2%2C%20and%201.5.8%0D%0A%0D%0A%23%23%2011.2.7%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.2.5%20and%205.5.1%0D%0A%0D%0A%23%23%2011.2.6%0D%0A%0D%0A%2A%20The%20Cooldown%20Timer%20Offset%20option%20should%20work%20again.%0D%0A%2A%20Added%20an%20additional%20guard%20to%20hopefully%20prevent%20instances%20of%20the%20Attempt%20to%20call%20method%20%27RemoveCooldown%27%20error%0D%0A%2A%20Resolved%20the%20%27Attempted%20to%20release%20inactive%20object%27%20error%20for%20the%20Shine%20and%20Flare%20effects.%0D%0A%0D%0A%23%23%2011.2.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.2.0%20%28thanks%20Hollicsh%29%0D%0A%0D%0A%23%23%2011.2.4%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.1.7%20and%205.5.0%0D%0A%0D%0A%23%23%2011.2.3%0D%0A%0D%0A%2A%20Fix%20an%20error%20that%20could%20appear%20when%20hiding%20flare%20finish%20effect.%0D%0A%0D%0A%23%23%2011.2.2%0D%0A%0D%0A%2A%20Added%20a%20more%20agressive%20disable%20for%20cooldown%20text%20to%20handle%20flickering%20issues.%0D%0A%0D%0A%23%23%2011.2.1%0D%0A%0D%0A%2A%20Fix%20%60/omnicc%60%20not%20showing%20the%20options%20menu%2C%0D%0A%0D%0A%23%23%2011.2.0%0D%0A%0D%0A%2A%20OmniCC%20will%20now%20disable%20Blizzard%27s%20default%20cooldown%20text%20implementation%20text%0D%0A%20%20on%20all%20cooldowns%20by%20default.%20You%20can%20toggle%20this%20behavior%20via%20the%20new%20%60/occ%20blizzard%60%0D%0A%20%20slash%20command.%0D%0A%0D%0A%23%23%2011.1.0%0D%0A%0D%0A%2A%20%28Retail%29%20OmniCC%20will%20now%20check%20GetHideCountdownNumbers%20and%20skip%20displaying%20text%20where%20the%20value%20is%20set%20to%20false.%0D%0A%20%20This%20should%20prevent%20double%20text.%0D%0A%0D%0A%23%23%2011.0.8%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.7%0D%0A%0D%0A%23%23%2011.0.7%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.1.0%2C%204.4.2%20and%201.15.6%0D%0A%0D%0A%23%23%2011.0.6%0D%0A%0D%0A%2A%20Fix%20another%20nil%20value%20error%0D%0A%0D%0A%23%23%2011.0.5%0D%0A%0D%0A%2A%20Fix%20an%20error%20that%20could%20ocurr%20when%20updating%20timer%20settings%20while%20active%20timers%20are%20present%0D%0A%0D%0A%23%23%2011.0.4%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%2A%20Update%20cooldown%20calculations%0D%0A%2A%20Add%20typings%0D%0A%0D%0A%23%23%2011.0.3%0D%0A%0D%0A%2A%20Add%20modRate%20to%20display%20duration%20calculations%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2011.0.2%0D%0A%0D%0A%2A%20Fixed%20bug%20in%20PreviewDialog%20that%20caused%20some%20effects%20not%20to%20show%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2011.0.1%0D%0A%0D%0A%2A%20Increase%20cooldown%20text%20frame%20level%0D%0A%0D%0A%23%23%2011.0.0%0D%0A%0D%0A%2A%20Fix%20an%20error%20when%20attempting%20to%20display%20the%20cooldown%20preview%20frame%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.9%0D%0A%0D%0A%2A%20Add%20an%20additional%20check%20for%20forbidden%20frames%0D%0A%0D%0A%23%23%2010.2.8%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.7%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%2A%20Preliminary%20War%20Within%20support%0D%0A%0D%0A%23%23%2010.2.6%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.5%0D%0A%0D%0A%2A%20Updated%20Russian%20translation%20%28thanks%20to%20%5BHollicsh%5D%28https%3A//github.com/Hollicsh%29%29%0D%0A%0D%0A%23%23%2010.2.4%0D%0A%0D%0A%2A%20Updated%20Portuguese%20translation%20%28thanks%20to%20%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%0D%0A%0D%0A%23%23%2010.2.3%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.1%0D%0A%0D%0A%23%23%2010.2.2%0D%0A%0D%0A%23%23%23%20Thank%20you%20to%20%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%20for%20these%20contributions%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.2.5%0D%0A%2A%20Updated%20French%2C%20Portuguese%2C%20and%20Spanish%20translations%0D%0A%0D%0A%23%23%2010.2.1%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.0%0D%0A%0D%0A%23%23%2010.2.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.2.0%0D%0A%0D%0A%23%23%2010.1.2%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.1.7%20and%201.14.4%0D%0A%2A%20Add%20Multi%20Action%20Burs%20to%20the%20default%20Action%20Bars%20rule%0D%0A%0D%0A%23%23%2010.1.1%0D%0A%0D%0A%2A%20Update%20TOCs%20for%203.4.3%0D%0A%0D%0A%23%23%2010.1.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.1.0%0D%0A%0D%0A%23%23%2010.0.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.7%0D%0A%0D%0A%23%23%2010.0.4%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.5%0D%0A%0D%0A%23%23%2010.0.3%0D%0A%0D%0A%2A%20Update%20TOCs%20for%203.4.1%0D%0A%0D%0A%23%23%2010.0.2%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.2%0D%0A%2A%20NOTE%3A%20OmniCC%27s%20options%20menu%20is%20now%20no%20longer%20a%20part%20of%20the%20main%20options%20menu%2C%0D%0A%20%20to%20avoid%20issues%20introduced%20with%20Dragonflight%27s%20UI%20changes.%20To%20bring%20up%20the%0D%0A%20%20options%20menu%2C%20use%20either%20the%20/omnicc%20or%20/occ%20slash%20commands.%0D%0A%0D%0A%23%23%2010.0.1%0D%0A%0D%0A%2A%20Tagging%20as%20release%0D%0A%0D%0A%23%23%2010.0.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.0%0D%0A%0D%0A%23%23%209.2.1%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.2.5%2C%203.4.0%2C%202.5.4%2C%20and%201.14.3.%0D%0A%0D%0A%23%23%209.2.0%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.2.0%2C%202.5.3%2C%20and%201.14.2%0D%0A%0D%0A%23%23%209.1.6%0D%0A%0D%0A%2A%20Whoops%2C%20I%20forgot%20that%209.1.5%20introduced%20a%20new%20Maximum%20Cooldown%20Duration%20setting%20%28thanks%20Lyrex%29%0D%0A%2A%20Setting%20the%20maximum%20duration%20slider%20to%200%20will%20enable%20cooldowns%20of%20any%20duration%0D%0A%2A%20Adjusted%20default%20for%20max%20duration%20to%20be%200%20instead%20of%20600%0D%0A%0D%0A%23%23%209.1.5%0D%0A%0D%0A%2A%20TOC%20updates%20for%201.14.1%20and%209.1.5%0D%0A%0D%0A%23%23%209.1.0%0D%0A%0D%0A%2A%20TOC%20updates%20for%20WoW%209.1.0%0D%0A%0D%0A%23%23%209.0.10%0D%0A%0D%0A%2A%20Update%20TOCs%20for%20Burning%20Crusade%20Classic%0D%0A%0D%0A%23%23%209.0.9%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.13.7%0D%0A%0D%0A%23%23%209.0.8%0D%0A%0D%0A%2A%20The%20cooldown%20opacity%20setting%20is%20now%20only%20applied%20when%20set%20at%20an%20opacity%20value%20under%20100%25%0D%0A%2A%20Update%20TOCs%20values%20for%209.0.5%0D%0A%0D%0A%23%23%209.0.7%0D%0A%0D%0A%2A%20Updated%20Korean%20translation%20%28thanks%2C%20WetU%29%0D%0A%2A%20Updated%20Russian%20translation%20%28thanks%20mone-ennen%29%0D%0A%2A%20Fixed%20an%20issue%20when%20upgrading%20from%20OmniCC%20versions%20prior%20to%208.1%20or%20so%0D%0A%2A%20Added%20a%20setting%20to%20disable%20auto%20disabling%20of%20blizzard%20cooldown%20text%20%60/run%20OmniCC.db.global.disableBlizzardCooldownText%20%3D%20false%3B%20ReloadUI%28%29%60%0D%0A%0D%0A%23%23%209.0.6%0D%0A%0D%0A%2A%20Replaced%20the%20Draw%20Cooldown%20Swipes%20with%20a%20Cooldown%20Opacity%20slider%0D%0A%2A%20Updated%20Russian%20Localization%20%28thanks%2C%20Artur91425%29%0D%0A%0D%0A%23%23%209.0.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.13.6%0D%0A%2A%20Add%20a%20nil%20check%20when%20deciding%20to%20hide%20cooldown%20spirals%20or%20not%0D%0A%2A%20Build%20process%20updates%0D%0A%0D%0A%23%23%209.0.4%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.0.2%0D%0A%0D%0A%23%23%209.0.3%0D%0A%0D%0A%2A%20Fix%20cases%20where%20cooldowns%20may%20not%20properly%20refresh%0D%0A%0D%0A%23%23%209.0.2%0D%0A%0D%0A%2A%20Fixed%20an%20error%20for%20when%20OmniCC%20attempts%20to%20display%20configuration%20for%20rules%20with%20missing%20id%20values%0D%0A%0D%0A%23%23%209.0.1%0D%0A%0D%0A%2A%20Apply%20default%20rulesets%20only%20when%20a%20profile%20is%20first%20created.%20This%20fixes%20an%20issue%20with%20deleting%20the%20defaults.%0D%0A%0D%0A%23%23%209.0.0%0D%0A%0D%0A%2A%20Finish%20effects%20will%20now%20trigger%20immediately%20for%20cooldowns%20that%20are%20soon%20to%20complete%2C%20but%20were%20overridden%20by%20the%20GCD.%0D%0A%2A%20Added%20a%20new%20setting%2C%20Timer%20Offset%2C%20to%20adjust%20the%20end%20point%20for%20timers%20to%20account%20for%20things%20like%20spell%20queue%20windows%20and%20latency.%0D%0A%2A%20Added%20predefined%20rules%20for%20Action%20Bars%2C%20nameplates%2C%20and%20auras%0D%0A%2A%20Updated%20TOCs%20for%20the%20Shadowlands%20pre-patch%0D%0A%0D%0A%23%23%208.3.6%0D%0A%0D%0A%2A%20Deferred%20loading%20of%20OmniCC_Config%20until%20you%20either%20use%20/omnicc%20or%20click%20on%20it%20in%20interface%20options%0D%0A%2A%20Updated%20Ace3%20packages%20for%20compatibility%20with%20World%20of%20Warcraft%20Shadowlands%0D%0A"
+folders = [
+    "OmniCC",
+    "OmniCC_Config",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "799222606"
+slug = "deadlybossmods/dbm-burningcrusade"
+name = "DBM-BurningCrusade"
+description = " Deadly Boss Mods (DBM) - Burning Crusade mods"
+url = "https://github.com/DeadlyBossMods/DBM-BurningCrusade"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-BurningCrusade/releases/assets/510636092"
+date_published = "2026-08-11T20:55:04Z"
+version = "r19"
+changelog_url = "data:,%23%20DBM%20-%20The%20Burning%20Crusade%20mods%0D%0A%0D%0A%23%23%20%5Br19%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/tree/r19%29%20%282026-07-29%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/compare/r18...r19%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/releases%29%0D%0A%0D%0A-%20wrath%20toc%20bumps%20%20%0D%0A"
+folders = [
+    "DBM-Raids-BC",
+    "DBM-Outlands",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "831145022"
+slug = "kemayo/wow-handynotes-warwithin"
+name = "wow-handynotes-warwithin"
+description = "World of Warcraft addon to tell you where treasures are in the War Within expansion (requires HandyNotes) "
+url = "https://github.com/kemayo/wow-handynotes-warwithin"
+download_url = "https://api.github.com/repos/kemayo/wow-handynotes-warwithin/releases/assets/534803410"
+date_published = "2026-08-29T05:25:57Z"
+version = "v112"
+changelog_url = "data:,%23%23%20Changed%20in%20v112%0D%0A%0D%0A%2A%20Bring%20in%20systems%20improvements%20from%20%5Bmy%20Midnight%20plugin%5D%28https%3A//www.curseforge.com/wow/addons/handynotes-midnight-treasures%29%2C%20notably%3A%0D%0A%20%20%20%20%2A%20When%20Blizzard%27s%20own%20map%20pin%20already%20shows%20extra%20content%2C%20the%20plugin%20now%20attaches%20its%20tooltip%20below%20instead%20of%20showing%20nothing%0D%0A%0D%0A"
+folders = ["HandyNotes_WarWithin"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "99789256"
+slug = "bullseiwowaddons/battlegroundenemies"
+name = "BattleGroundEnemies"
+description = "A enemy display for battlegrounds"
+url = "https://github.com/BullseiWoWAddons/BattleGroundEnemies"
+download_url = "https://api.github.com/repos/BullseiWoWAddons/BattleGroundEnemies/releases/assets/283779247"
+date_published = "2025-08-18T19:37:22Z"
+version = "11.2.0.6"
+changelog_url = "data:,%23%20BattleGroundEnemies%0D%0A%0D%0A%23%23%20%5B11.2.0.6%5D%28https%3A//github.com/BullseiWoWAddons/BattleGroundEnemies/tree/11.2.0.6%29%20%282025-08-18%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/BullseiWoWAddons/BattleGroundEnemies/compare/11.2.0.5...11.2.0.6%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/BullseiWoWAddons/BattleGroundEnemies/releases%29%0D%0A%0D%0A-%20fix%3A%20update%20version%20to%2011.2.0.6%20and%20add%20detailed%20changelog%20entries%20for%20bug%20fixes%20%20%0D%0A-%20fix%3A%20remove%20error%20in%20setting%20custom%20player%20count%20profile%20to%20defaults%20of%20normal%20profiles%20%20%0D%0A-%20fix%3A%20rename%20variable%20for%20clarity%20in%20addEnemyAndAllySettings%20function%20%20%0D%0A-%20fix%3A%20remove%20unnecessary%20enabling%20and%20disabling%20of%20mainframe%20in%20CreateMainFrame%20function%20%20%0D%0A-%20fix%3A%20add%20config%20nil%20check%20in%20AfterFullAuraUpdate%20function%20%20%0D%0A-%20fix%3A%20prevent%20drag%20actions%20during%20combat%20lockdown%20in%20CreatePlayerButton%20function%20%20%0D%0A-%20fix%3A%20add%20config%20nil%20check%20in%20UpdateRangeViaLibRangeCheck%20function%20%20%0D%0A-%20fix%3A%20remove%20duplicate%20counter%20table%20on%20mainframe%20%20%0D%0A-%20fix%3A%20correct%20indentation%20in%20CreatePlayerButton%20function%20%20%0D%0A-%20refactor%3A%20remove%20unused%20GetTexCoordsForRoleSmallCircle%20function%20%20%0D%0A-%20fix%3A%20remove%20unnecessary%20Show/Hide%20calls%20in%20Disable%20and%20Enable%20functions%20%20%0D%0A-%20Move%20Disable%20func%20to%20the%20bottom%2C%20this%20cause%20the%20scroll%20targeting%20functionality%20to%20not%20work...%20Also%20mainframe%27s%20parent%20is%20UIParent%20now%20%20%0D%0A-%20feat%3A%20add%20PLAYER%5C_REGEN%5C_DISABLED%20event%20handling%20to%20manage%20test/edit%20mode%20%20%0D%0A"
+folders = ["BattleGroundEnemies"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "wowi"
+id = "7032"
+slug = "7032-tomtom"
+name = "TomTom"
+description = """
+TomTom is your personal navigation assistant in World of Warcraft. This addon is very simple, but provides a nice set of functionality.
+Thank you to:
+[LIST]
+[*]Esamynn for Astrolabe which did the heavy lifting in this addon before Blizzard changed the mapping system
+[*]Nevcairiel for HereBeDragons, which does the heavy lifting these days
+[*]Carl Thomas and Chris Braithwaite for their contributions of the new lovely artwork and themes
+[*]Ludovicus for maintaining during my days away from WoW[/LIST][B]New Updates[/B]
+As we head into Midnight we've been able to give TomTom a fresh coat of paint, thanks to some lovely community members. There are now theme customizations for the Crazy Arrow, and for both the Minimap and Worldmap waypoints. Just run /tomtom to open the options and navigate to the section to preview and select a theme.
+[B]Features[/B]
+TomTom offers the following major features:
+[LIST]
+[*]Set waypoints via command, or by clicking on the world map
+[*]Set multiple waypoints at a time (such as those you can copy and paste from WowHead)
+[*]A draggable coordinate display with customizable accuracy. This frame can be hidden or locked.
+[*]Player and cursor coordinates on the World Map (these can be hidden)
+[*]A floating "crazy-taxi" style arrow that points you to your destination
+[*]Displaying the "crazy-taxi" arrow or coordinate block in compatible LDB displays, such as [URL="http://www.wowinterface.com/downloads/info11884-NinjaPanel.html"]NinjaPanel[/URL]
+[*]Show a waypoint that points you towards your corpse for easy recovery
+[*]Can set waypoints by clicking on quest objective POIs on the World Map and watch frame.[/LIST][B]Slash Commands:[/B]
+/tomtom - Opens configuration GUI
+/ttpaste - Opens a window where you can paste a list of /way commands, such as those you might copy from WowHead, and have them all added in one go!
+In addition you can use the /way command to add and reset waypoints. In order to overcome conflicts with the Cartographer /way command, you can also use /tway to access TomTom's waypoint command. The following slash commands are available:
+Slash CommandDescription /tway 14.78 23.9Add a new waypoint at 14.78, 23.90 /tway Nagrand 45 50Add a new waypoint in Nagrand at 45, 50 /tway 14.78 23.90 This is a waypoint!Add a new waypoint with a description /tway reset allRemove ALL current waypoints /tway reset NagrandRemove all waypoints in Nagrand /wayb or /waybackSets a waypoint at the current location /cway or /closestwaySet the crazy arrow to the closest waypoint/tway listList the current known waypoints/tway arrowPrint the status of the Crazy Arrow
+TomTom has been designed to publish the Crazy-Arrow and Coordinate Block as LDB feeds, allowing them to be displayed in compatible display addons. I've written a very simple, easy-to-configure panel that is capable of displaying these called [URL="http://www.wowinterface.com/downloads/info11884-NinjaPanel.html#info"]NinjaPanel[/URL].
+If you're looking to bulk import waypoints (to track achievements, etc), use the /ttpaste command to open an easy bulk create waypoint window.
+[B][U]Donations:[/U][/B]
+Some folks have asked for how they can donate money, and for many years I've enjoyed hearing about how my addons have helped other people enjoy World of Warcraft. If you would like to donate, I'd ask you to make a donation to the [URL="https://www.ccalliance.org/donate"]Colorectal Cancer Alliance[/URL], a worthy organisation that helped my sister immensely from her diagnosis through her final years. If you or a family member suspect you might have something not right in your butt, please have a doctor check it out. Colorectal cancer is one of the most preventable cancers in the world."""
+url = "https://www.wowinterface.com/downloads/info7032"
+download_url = "https://cdn.wowinterface.com/downloads/getfile.php?id=7032&d=1788009085&minion"
+date_published = "2026-08-29T13:11:25Z"
+version = "v4.3.9-release"
+changelog_url = "data:,%5Bsize%3D5%5DTomTom%5B/size%5D%0D%0A%5Bsize%3D4%5D%5Burl%3Dhttps%3A//github.com/jnwhiteh/TomTom/tree/v4.3.9-release%5Dv4.3.9-release%5B/url%5D%20%282026-08-29%29%5B/size%5D%0D%0A%5Burl%3Dhttps%3A//github.com/jnwhiteh/TomTom/commits/v4.3.9-release%5DFull%20Changelog%5B/url%5D%20%5Burl%3Dhttps%3A//github.com/jnwhiteh/TomTom/releases%5DPrevious%20Releases%5B/url%5D%0D%0A%5Blist%5D%0D%0A%5B%2A%5DUpdate%20embedded%20Ace3%20and%20HereBeDragons%20libraries%0D%0A%20%20%20%20AceGUI-3.0%3A%0D%0A%20%20%20%20-%20CheckBox%3A%20replace%20deprecated%20SetDesaturation%20global%20with%20%3ASetDesaturated%20method%0D%0A%20%20%20%20-%20Slider%3A%20workaround%20for%20font-loading%20bug%20leaving%20editbox%20blank%20until%20text%20changes%0D%0A%20%20%20%20HereBeDragons%20%285ccefa1%20-%3E%200547c95%2C%20tag%202.17-release%29%3A%0D%0A%20%20%20%20-%20Pins%3A%20Add%2A%20pin%20functions%20now%20return%20true/false%20to%20indicate%20success%0D%0A%20%20%20%20-%20TOC%3A%20bump%20supported%20interface%20versions%0D%0A%5B%2A%5DAdd%20French%20translation%20for%20map%20data%20availability%20message%20%28%2317%29%0D%0A%5B%2A%5DAvoid%20lookup%20for%20/way%20%23XXXX%20commands%2C%20just%20try%20to%20set%20directly%0D%0A%5B%2A%5DMove%20back%20to%20a%20unified%20TOC%0D%0A%5B%2A%5DUpdate%20TOC%20flavors%20and%20add%20explicit%20Wrath%20TOC%0D%0A%20%20%20%20Interface-Classic/BCC%20renamed%20to%20Interface-Vanilla/TBC%20to%20match%20the%0D%0A%20%20%20%20flavor%20names%20update.sh%20writes%20and%20release.sh%20validates.%20Interface-Retail%0D%0A%20%20%20%20and%20Interface-Cata%20dropped%3B%20the%20base%20line%20already%20covers%20retail%20and%20there%0D%0A%20%20%20%20is%20no%20live%20Cata%20product%20to%20track.%0D%0A%20%20%20%20Titan%20ships%20as%20an%20explicit%20TomTom_Wrath.toc%20at%2038002.%20The%20packager%27s%0D%0A%20%20%20%20split-TOC%20case%20for%20titan%20is%20commented%20out%2C%20so%20an%20Interface-Titan%20line%0D%0A%20%20%20%20produces%20an%20extensionless%20file%20rather%20than%20a%20TOC.%0D%0A%5B%2A%5DUpdate%20TomTom%20for%2012.0.7%0D%0A%5B%2A%5DAdd%20new%20localization%20strings%20for%20TomTom%20%28%2316%29%0D%0A%20%20%20%20%2A%20Update%20Localization.frFR.lua%0D%0A%5B%2A%5DUpdate%20for%20MOP-Classic%0D%0A%5B%2A%5DUpdate%20for%20retail%0D%0A%5B%2A%5DUpdate%20TOC%0D%0A%5B%2A%5DRevert%20Wrath%20interface%20version%20to%2030403%0D%0A%5B%2A%5DUpdate%20TOC%20interface%20versions%0D%0A%5B%2A%5DClean%20up%20paste%20window%3A%20remove%20dead%20code%20and%20redundant%20size%20calls%0D%0A%5B%2A%5DAdd%20auto-close%20option%20and%20fix%20Ctrl%2BEnter%20in%20paste%20window%0D%0A%5B%2A%5DUpdate%20TOC%0D%0A%5B%2A%5DDecouple%20distance-callback%20dispatch%20from%20minimap%20visibility%0D%0A%20%20%20%20bc040bd%20tied%20callbacks.distance%20dispatch%20to%20the%20minimap%20frame%27s%0D%0A%20%20%20%20OnUpdate%2C%20which%20stops%20firing%20when%20show_minimap%3Dfalse%20because%20the%0D%0A%20%20%20%20frame%20is%20never%20registered%20with%20HBDP.%20Breaks%20Routes%20integration%20and%0D%0A%20%20%20%20the%20default%20cleardistance/arrival%20callbacks%20for%20users%20with%0D%0A%20%20%20%20profile.minimap.enable%3Dfalse.%20Move%20dispatch%20to%20a%20dedicated%20ticker%0D%0A%20%20%20%20frame%20that%20runs%20independent%20of%20HBDP%20registration.%0D%0A%20%20%20%20Also%20gate%20Minimap_OnEvent%27s%20re-registration%20on%20data.show_minimap%20so%0D%0A%20%20%20%20hidden%20waypoints%20don%27t%20leak%20onto%20the%20minimap%20after%20loading%20screens.%0D%0A%5B%2A%5DMerge%20pull%20request%20%2314%20from%20jnwhiteh/frFR%0D%0A%5B%2A%5DUpdate%20Localization.frFR.lua%0D%0A%5B%2A%5DUpdate%20Localization.frFR.lua%0D%0A%5B%2A%5DRefine%20French%20localization%20for%20clarity%0D%0A%20%20%20%20Updated%20French%20localization%20strings%20for%20clarity%20and%20accuracy.%0D%0A%5B%2A%5DUpdate%20frFR%20locale%20%28thanks%20Tolsow%21%29%0D%0A%5B%2A%5DGuard%20set%20waypoint%20from%20objectives%0D%0A%5B%2A%5DFix%20some%20issues%20with%20the%20minimap%20button%20and%20compartment%0D%0A%20%20%20%20This%20should%20more%20reliably%20respect%20the%20users%20settings%0D%0A%5B%2A%5DRemove%20CN%20from%20TOC%0D%0A%5B%2A%5DUpdate%20TOC%20for%20Mists/Classic%0D%0A%5B%2A%5DAdd%20an%20Export%20Waypoints%20button%20to%20/ttpaste%0D%0A%5B%2A%5DAdd%20an%20option%20to%20print%20a%20/way%20command%20when%20right-clicking%20the%20coord%20block%0D%0A%5B%2A%5DUpdate%20TOC%20for%2012.0.1%0D%0A%5B%2A%5DAdd%20split%20configuration%20for%20addon%20compartment%20button%0D%0A%5B%2A%5DRemove%20AceEvent%20so%20TomTom%20can%27t%20get%20blamed%0D%0A%5B%2A%5DUpdate%20TOC%20for%2012.0%0D%0A%5B%2A%5DFix%20opening%20options%20with%20/tomtom%0D%0A%5B%2A%5DAdd%20control-enter%20to%20paste%20window%20for%20easy%20submit%0D%0A%5B%2A%5DUpdate%20TOC%20for%20TBC%20Anniversary%0D%0A%5B%2A%5DUpdate%20TOC%20to%20work%20for%20retail%20%2B%20beta%20%2B%20PTR%0D%0A%5B%2A%5DFix%20duplicate%20localization%0D%0A%5B%2A%5DUpdate%20HBD%20again%2C%20maybe%20fix%20issues%0D%0A%5B%2A%5DUpdate%20HBD%20embed%20and%20TOC%20for%2012.0.1%0D%0A%5B%2A%5DMore%20efficiently%20compute%20the%20distance%20and%20angle%0D%0A%20%20%20%20If%20the%20minimap%20waypoint%20isn%27t%20shown%2C%20we%20should%20still%20function%0D%0A%20%20%20%20and%20not%20invoke%20all%20of%20those%20computations%20in%20HBD.%0D%0A%5B%2A%5DUpdate%20frFR%20Localization%0D%0A%5B%2A%5DUpdate%20TOC%0D%0A%5B%2A%5DUpdate%20HBD%20to%20work%20properly%20with%20some%20Midnight%20zones%0D%0A%5B%2A%5DAdd%20a%20minimap%20button%20for%20/ttpaste%0D%0A%20%20%20%20Can%20be%20configured%20in%20the%20options%20window%20or%20/ttpaste%20minimap%0D%0A%5B%2A%5DAdded%20text%20color%20customization%0D%0A%5B%2A%5DFix%20missing%20label%20and%20update%20localization%0D%0A%5B%2A%5DAdd%20new%20/ttpaste%20window%0D%0A%5B%2A%5DUpdate%20localization%0D%0A%5B%2A%5DFix%20an%20issue%20with%20the%20purple%20ring%20theme%0D%0A%5B%2A%5DUpdate%20HereBeDragons%0D%0A%5B%2A%5DAdd%20support%20for%20minimap%20and%20worldmap%20themes%0D%0A%5B%2A%5DAdd%20support%20for%20modern%20and%20modern-top-down%20themes%0D%0A%5B%2A%5DMove%20some%20small%20util%20functions%0D%0A%5B%2A%5DAdd%20new%20modern%20theme%2C%20as%20default%0D%0A%5B%2A%5DAdd%20credits%20to%20addon%20options%20panel%0D%0A%5B%2A%5DUpdate%20TomTom%20Logo%20and%20add%20license%20for%20new%20assets%0D%0A%5B%2A%5DUpdate%20TOC%20for%2011.2.5%0D%0A%5B%2A%5DInitial%20support%20for%20Midnight%0D%0A%5B%2A%5DUpdate%20embedded%20libraries%0D%0A%5B%2A%5DFix%20remove%20waypoint%0D%0A%5B%2A%5DRe-implement%20dropdowns%20using%20MenuUtil%0D%0A%5B%2A%5DUpdate%20TOC%20for%2011.2%0D%0A%5B%2A%5DUpdate%20TOC%20for%20Mists%0D%0A%5B%2A%5DFix%20an%20issue%20with%20release%0D%0A%5B%2A%5DUpdate%20for%2011.0.7%0D%0A%5B%2A%5DUpdate%20TOC%20for%2011.0.5%0D%0A%5B%2A%5DUpdate%20TOC%20for%2011.1%0D%0A%5B%2A%5DUpdate%20TOC%20for%2011.0.7%0D%0A%5B%2A%5DUpdate%20TOC%20for%20classic%20and%20cata%0D%0A%5B%2A%5DUpdate%20for%2011.0.5%0D%0A%5B%2A%5DUpdate%20TOC%20for%20Classic%0D%0A%5B%2A%5DRespect%20the%20set%20closest%20waypoint%20setting%0D%0A%5B%2A%5DFix%20auto%20quest%20tracking%0D%0A%5B%2A%5DStupid%20vscode%0D%0A%5B%2A%5DUpdate%20HereBeDragons%20embedded%20library%0D%0A%5B%2A%5DUpdate%20for%2011.x%20codebranch%0D%0A%5B%2A%5DBetter%20defaults%20for%20distance%20units%0D%0A%20%20%20%20%20-%20Default%20to%20yards%20in%20the%20US%0D%0A%20%20%20%20%20-%20Default%20to%20km/m%20elsewhere%0D%0A%20%20%20%20%20-%20Provide%20options%20for%20yards/meters%20only%0D%0A%5B%2A%5DDeclare%20UnitGUID%20global%0D%0A%5B%2A%5DAdd%20units%20for%20waypoint%20arrow%20%28metric%2C%20imperial%29%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.2.7%0D%0A%5B%2A%5DUpdate%20TOC%20for%20Cataclysm%20Classic%0D%0A%5B%2A%5DSupport%2011.0%20by%20removing%20some%20broken%20functionality%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.2.6%0D%0A%5B%2A%5DUpdate%20toc%20for%2010.2.5%20and%201.15.0%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.2.0%0D%0A%5B%2A%5DUpdate%20TOC%20for%203.4.3%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.1.7%0D%0A%5B%2A%5DFix%20issue%20with%20SetPassThroughButtons%0D%0A%5B%2A%5DUpdate%20Ace3%20and%20HereBeDragons%0D%0A%5B%2A%5DFix%20luacheckrc%0D%0A%5B%2A%5DAdd%20Addon%20IconTexture%0D%0A%5B%2A%5DMake%20objective%20tracker%20integration%20work%20on%20retail%0D%0A%5B%2A%5DAdd%20higher%20resolution%20arrow%20images%0D%0A%5B%2A%5DFix%20quest%20poi%20integration%20for%2010.1.5%0D%0A%20%20%20%20In%20this%20version%20the%20QuestPOIButton_OnClick%20is%20replaced%20with%20a%0D%0A%20%20%20%20Mixin%20that%20provider%20similar%20functionality%2C%20so%20hook%20the%20container%0D%0A%20%20%20%20and%20ensure%20we%27re%20registered.%0D%0A%5B%2A%5DFix%20an%20issue%20with%20fallback%20coords%0D%0A%5B%2A%5DAdd%20some%20resilience%20to%20player%20coordinates%0D%0A%20%20%20%20With%20the%20new%20C_Map%20API%20we%20have%20a%20way%20to%20check%20where%20the%20game%0D%0A%20%20%20%20thinks%20the%20player%20is%2C%20this%20can%20be%20combined%20with%20HBD%20to%20return%0D%0A%20%20%20%20more%20accurate%20results%20without%20major%20sacrifice%2C%20so%20let%27s%20try%20that.%0D%0A%5B%2A%5DAdd%20a%20/tomtom%20help%20command%20for%20getting%20more%20info%0D%0A%20%20%20%20This%20returns%20a%20basic%20usage%20text%20that%20describes%20the%20most%20commonly%0D%0A%20%20%20%20used%20slash%20commands%20and%20options%0D%0A%5B%2A%5DConfig%20line-endings%20by%20default%0D%0A%5B%2A%5DUpdate%20build%20workflows%20to%20support%20beta%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.1.0%0D%0A%5B%2A%5DFix%20for%2010.1.0%20PTR%20with%20removal%20of%20GetAddOnMetadata%20%28%237%29%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.0.7%0D%0A%5B%2A%5DFix%20frame%20strata%20for%20dropdowns%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.0.5%20and%203.4.1%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.0.2%0D%0A%5B%2A%5DRemove%20throttle%20for%20click-grabber%20enable/disable%0D%0A%5B%2A%5DReduce%20the%20throttle%20timer%0D%0A%5B%2A%5DDon%27t%20package%20.vscode%20or%20.github%0D%0A%5B%2A%5DAdd%20an%20OnUpdate%20to%20catch%20issues%20with%20the%20new%20world%20map%20integration%0D%0A%5B%2A%5DUpdate%20AddonCore%0D%0A%5B%2A%5DFix%20taint%20issue%20relating%20to%20the%20WorldMapFrame%0D%0A%5B%2A%5DFix%20frame%20strata%20of%20world%20map%20elements%0D%0A%5B%2A%5DFix%20world%20map%20dropdown%0D%0A%5B%2A%5DUpdate%20LibDropdown%0D%0A%5B%2A%5DFix%20an%20issue%20with%20duplicate%20waypoint%20registration%0D%0A%5B%2A%5DReplace%20UIDropdown%20with%20LibDropdown%0D%0A%5B%2A%5DInclude%20LibDropDown%0D%0A%5B%2A%5DUpdate%20libraries%0D%0A%5B%2A%5DFix%20stray%20global%2C%20sorry%21%0D%0A%5B%2A%5DFix%20issues%20with%20config%20registration%0D%0A%5B%2A%5DUpdate%20TOC%20for%2010.x%0D%0A%5B%2A%5DUpdate%20embedded%20Ace%20libraries%0D%0A%5B%2A%5DAdd%20TOC%20support%20for%20Wrath%20at%2030400%0D%0A%5B%2A%5DUpdate%20TOC%20for%209.2.7%0D%0A%5B%2A%5DFix%20DB%20initialization%20for%20paste%20pages%2C%20and%20show%20when%20loading%20a%20page%0D%0A%5B%2A%5DMerge%20pull%20request%20%236%20from%20jnwhiteh/update-globals%0D%0A%20%20%20%20Declare%20additional%20global%20usage%0D%0A%5B%2A%5DUpdate%20enUS%20locale%20defaults%0D%0A%5B%2A%5DDeclare%20additional%20global%20usage%0D%0A%5B%2A%5DAdd%20new%20API%20function%20TomTom%3AClearCrazyArrowPoint%0D%0A%20%20%20%20This%20method%20takes%20a%20single%20parameter%20%27remove%27.%20When%20true%2C%20this%20will%0D%0A%20%20%20%20cause%20the%20waypoint%20to%20be%20removed%20from%20the%20current%20set%20of%20waypoints.%0D%0A%20%20%20%20When%20false%2C%20this%20will%20only%20clear%20the%20waypoint%20from%20the%20active%20crazy%0D%0A%20%20%20%20arrow%0D%0A%5B%2A%5DAdd%20a%20/ttpaste%20command%2C%20enabling%20the%20pasting%20of%20multiple%20commands%0D%0A%20%20%20%20Using%20/ttpaste%20will%20open%20the%20window%2C%20where%20multiple%20lines%20of%20commands%0D%0A%20%20%20%20can%20be%20pasted.%20The%20%22Paste%22%20button%20will%20send%20those%20as%20multiple%20chat%20commands%0D%0A%20%20%20%20enabling%20the%20setting%20of%20multiple%20waypoints.%0D%0A%20%20%20%20%2A%20The%20contents%20of%20the%20window%20can%20be%20saved%20with%20/ttpaste%20save%20%5Bname%5D%0D%0A%20%20%20%20%2A%20Previously%20saved%20contents%20can%20be%20loaded%20with%20/ttpaste%20load%20%5Bname%5D%0D%0A%20%20%20%20%2A%20A%20page%20can%20be%20removed%20with%20/ttpaste%20remove%20%5Bname%5D%0D%0A%20%20%20%20%2A%20You%20can%20list%20the%20names%20of%20saved%20pages%20using%20/ttpaste%20list%0D%0A%5B%2A%5DUpdate%20HereBeDragons%0D%0A%5B%2A%5DUpdate%20TOC%0D%0A%5B%2A%5DDon%27t%20package%20branches%0D%0A%5B%2A%5DFix%20packaging%20for%20Curseforge%0D%0A%5B%2A%5DUpdate%20packager%20for%20v2%0D%0A%5B%2A%5DUpdate%20TOC%20for%209.2%2C%20retail%2C%20TBCC%0D%0A%5B%2A%5DMerge%20pull%20request%20%235%20from%20jnwhiteh/jnwhiteh-9.1.5-toc-update%0D%0A%20%20%20%20Update%20TOC%20for%209.1.5%0D%0A%5B%2A%5DUpdate%20TOC%20for%209.1.5%0D%0A%5B%2A%5DMerge%20branch%20%27main%27%20of%20github.com%3Ajnwhiteh/TomTom%20into%20main%0D%0A%5B%2A%5DUpdate%20Interface%20for%20Retail%20to%2090100%0D%0A%5B%2A%5DMerge%20pull%20request%20%233%20from%20jnwhiteh/issue-2%0D%0A%20%20%20%20Clean%20up%20WOW%20version%20detection%0D%0A%5B%2A%5DClean%20up%20WOW%20client%20version%20detection%0D%0A%5B%2A%5DAdd%20interface%20versions%20for%20all%20three%20game%20versions%0D%0A%5B%2A%5DMerge%20pull%20request%20%231%20from%20jnwhiteh/update-authors%0D%0A%20%20%20%20Update%20author%20list%0D%0A%5B%2A%5DDeclare%20and%20fix%20issues%20with%20global%20usage%0D%0A%5B%2A%5DUpdate%20to%20latest%20version%20of%20AddonCore%0D%0A%5B%2A%5DUpdate%20author%20list%0D%0A%5B%2A%5DAdd%20actions%20for%20release%20to%20Curseforge/WowI/Wago%0D%0A%5B%2A%5DMinor%20toc%20tweaks.%0D%0A%5B%2A%5DUpdate%20to%20Ace3%20%20Revision%20r1252%20%28May%2017th%2C%202021%29%0D%0A%5B%2A%5DAdd%20new%20.toc%20files%20for%20BC%20and%20Classic.%0D%0A%5B%2A%5DCall%20EnableDisablePOIIntegration%28%29%20only%20in%20retail.%0D%0A%5B%2A%5DUpdate%20HBD%20to%202.06-release%20v16%0D%0A%5B%2A%5DUpdate%20Retail%20interface%20to%2090005%0D%0A%5B%2A%5DAdd%20a%20.pkgmeta%20to%20control%20releases.%0D%0A%5B%2A%5DAdd%20.release%20and%20.env%20to%20.gitignore%0D%0A%5B%2A%5DAdd%20Curse%20and%20WoWI%20project%20IDs%20to%20.toc%0D%0A%5B%2A%5DREADME..md%20tweak%20to%20prod%20the%20packager.%0D%0A%5B%2A%5DAdd%20help%20text%20for%20/wayb%0D%0A%5B%2A%5DAdded%20my%20name%20to%20.toc%20for%20push%20to%20curse%0D%0A%5B%2A%5DSet%20Retail%20Interface%0D%0A%5B%2A%5DSet%20Classic%20Interface%0D%0A%5B%2A%5DAllow%20larger%20ranges%20for%20playeroffset%20and%20cursoroffset.%0D%0A%5B%2A%5DMake%20RemoveWaypoint%20return%20on%20nil%2C%20because%20race%20conditions.%0D%0A%5B%2A%5DOverride%20MapType%20for%20Lunarfall/Frostwall%20so%20it%20can%20be%20named.%0D%0A%5B%2A%5DAccept%20World%20or%20Cosmic%20map%20parents%20for%20Shadowlands.%0D%0A%5B%2A%5DUpdate%20%20TOC%20for%209.0.2%0D%0A%5B%2A%5DHBD%27s%20GetPlayerZonePosition%28%29%20seems%20laggy.%20Roll%20our%20own%20for%20now.%0D%0A%5B%2A%5DUpdate%20reference%20from%20GetQuestLogIndexByID%20to%20C_QuestLog.GetLogIndexForQuestID%0D%0A%5B%2A%5DSet%20default%20modifer%20from%20Control%20to%20Alt.%0D%0A%5B%2A%5DImproved%20%20QuestPOI%20integration%20for%20retail.%0D%0A%5B%2A%5DCall%20EnableDisablePOIIntegration%28%29%20and%20ReloadWaypoints%20after%20PLAYER_LOGIN.%0D%0A%5B%2A%5DSet%20Retail%20Interface%0D%0A%5B%2A%5DSet%20Classic%20Interface%0D%0A%5B%2A%5DUpdate%20HereBeDragons%20to%202.04%0D%0A%5B%2A%5DUpdate%20ACE3%20to%20r1241%0D%0A%5B%2A%5DUpdate%20zhTW%20localixation.%0D%0A%5B%2A%5DUpdate%20zhCN%20localixation.%0D%0A%5B%2A%5DRetail%20Interface%20update.%0D%0A%5B%2A%5DSet%20Classic%20Interface%0D%0A%5B%2A%5DAdd%20placeholder%20ptBR%20Localization%0D%0A%5B%2A%5DUse%20%27Unnamed%20Map%27%20if%20the%20map%20has%20no%20known%20name.%0D%0A%5B%2A%5DUpdate%20enUS%20locaization%0D%0A%5B%2A%5DUpdated%20deDE%20localization%20by%20Dathwada%0D%0A%5B%2A%5DAdd%20new%20L%20strings.%0D%0A%5B%2A%5DGethe%3A%20WoW%209.0%20needs%20BackdropTemplate%20for%20TomTomBlock%0D%0A%5B%2A%5DAdd%20L%20lookups%20for%20Icon%20names.%0D%0A%5B%2A%5DAdd%20deDE%20notes%20to%20.toc%20file.%20%20Thanks%20Dathwada.%0D%0A%5B%2A%5DAdd%20L%20lookups%20for%20Player%3A%20and%20Cursor%3A%20on%20map.%0D%0A%5B%2A%5DRetail%20Interface%20update.%0D%0A%5B%2A%5DUpdate%20classic%20interface%20to%2011305%0D%0A%5B%2A%5DAnanhaid%3A%20Localization.zhCN.lua%20update%0D%0A%5B%2A%5DDisable%20BlockDo%20not%20attempt%20Block%20hiding%20during%20Pet%20battles%20in%20Classic.%0D%0A%5B%2A%5DHide%20coord%20block%20as%20well%20during%20pet%20battles.%0D%0A%5B%2A%5DSet%20Classic%20Interface%0D%0A%5B%2A%5DUpdate%20to%20HereBeDragons%202.03%0D%0A%5B%2A%5DIf%20HBD%20does%20not%20know%20where%20we%20are%2C%20do%20not%20crash%20in%20/way%20list.%0D%0A%5B%2A%5DUse%20HereBeDragons-2.02-release-10-gd4da4b5%20till%20next%20release.%0D%0A%5B%2A%5DRetail%20Interface%20update.%0D%0A%5B%2A%5DUpdated%20RU%20translations.%0D%0A%5B%2A%5DUse%20HereBeDragons-2.02-release-6-g3a585ad%20for%208.3%20until%20next%20update.%0D%0A%5B%2A%5DSet%20Retail%20Interface%0D%0A%5B%2A%5DSet%20Classic%20Interface%0D%0A%5B%2A%5DAdd%20Purple%20Ring%20for%20Icon.%0D%0A%5B%2A%5DKaiBo%3A%20Wayward%20reference%20to%20TomTom%3AAddZWaypoint%28%29%20that%20had%20the%20extra%20Z.%0D%0A%5B%2A%5DCluey%3A%20Bad%20reference%20to%20self%20in%20poi_OnClick%28%29.%0D%0A%5B%2A%5DRetail%20Cut.%0D%0A%5B%2A%5DClassic%20Cut.%0D%0A%5B%2A%5DRecord%20the%20source%20of%20the%20waypoint.%0D%0A%5B%2A%5DUpdate%20Localization.enUS.lua%0D%0A%5B%2A%5D%23115%3A%20Add%20%27/way%20reset%20away%27%20and%20%27/way%20reset%20not%20%3Czone%3E%27.%0D%0A%5B%2A%5D%2379%3A%20Mention%20/cway%20in%20usage%20text.%0D%0A%5B%2A%5D%2375%3A%20Lock/Unlock%20the%20arrow%20from%20the%20context%20menu.%0D%0A%5B%2A%5D%2335%3A%20%20Add%20control%20of%20sound%20channel%20to%20play%20ping%20through.%0D%0A%5B%2A%5Dre-enable%20otherzone%20flags.%0D%0A%5B%2A%5DRerun%20Babelfish%20to%20update%20Localization.enUS.lua%0D%0A%5B%2A%5D%23472%3A%20Disable%20POI%20Integration%20code%20on%20Classic.%0D%0A%5B%2A%5D%23472%3A%20Do%20not%20config%20POI%20on%20classic.%0D%0A%5B%2A%5D%23472%3A%20%20Dont%20call%20EnableDisablePOIIntegration%28%29%20on%20classic%0D%0A%5B%2A%5D%23477%3A%20If%20no%20coordinates%2C%20do%20not%20try%20to%20set%20waypoint%20from%20coord%20block.%0D%0A%5B%2A%5D%23478%3A%20%27Send%20waypoint%20to%27%20on%20arrow.%0D%0A%5B%2A%5DUpdate%20interface%20to%208.2.5%0D%0A%5B%2A%5DAdd%20Interface%20for%20Classic.%0D%0A%5B%2A%5DMake%20sure%20that%20arrow%20and%20block%20positions%20are%20always%20valid%20and%20reset%20properly.%0D%0A%5B%2A%5DFirst%20draft%20of%20README%0D%0A%5B%2A%5DUpdate%20to%20ACE%20r1227%0D%0A%5B%2A%5DFixed%20typo%20in%20%28Save%20this%20waypoint%20between%20sessions%29%0D%0A%5B%2A%5DRemoved%20debug%20print%20in%20%28Save%20this%20waypoint%20between%20sessions%29%0D%0A%5B%2A%5DFixed%20Map%20dropdown%20menu%20option%20%28Save%20this%20waypoint%20between%20sessions%29%0D%0A%5B%2A%5DOfficial%20r1225%20fix%20forAceConfigDialog-3.0.lua%0D%0A%5B%2A%5DTemp%20ACE3%20classic%20patch.%0D%0A%5B%2A%5DUpdate%20to%20ACE3%20Release%20r1224%0D%0A%5B%2A%5DSave%20window%20positions%20in%20profile%20and%20do%20not%20use%20layout-local.txt%0D%0A%5B%2A%5DUpdate%20to%20ACE3%20r1214%20%28probably%203%20days%20before%20the%20next%20update%29.%0D%0A%5B%2A%5DUpdate%20to%20HereBeDragons%202.02-release%0D%0A%5B%2A%5DOne%20last%20update%20for%20.TGA%20files.%0D%0A%5B%2A%5DUpdate%20.gitignore%20for%20png%20files%0D%0A%5B%2A%5DCF%23448%3A%20Protect%20RemoveWaypoint%28%29%20from%20non-table%20inputs.%0D%0A%5B%2A%5DUpdate%20.pkgmeta%20to%20exlude%20unneeded%20files.%0D%0A%5B%2A%5DCF%23329%3A%20New%20colored%20dots.%0D%0A%5B%2A%5DFix%20potential%20crash%20in%20%27Save%20this%20waypoint%20between%20sessions%27%0D%0A%5B%2A%5DDebugListAllWaypoints%28%29%20was%20not%20printing%20the%20worldmap_icon.%0D%0A%5B%2A%5DAdd%20default_iconsize%20controls%20for%20world%20and%20mini%20map.%0D%0A%5B%2A%5DDFortun81%3A%20Patch%20for%20TomTom%3ASetWaypoint%28%29%20_displayID%0D%0A%5B%2A%5DFix%20bugs%20in%20SetWaypoint%28%29%20and%20add%20_displayID%20support.%20CF%23422.%0D%0A%5B%2A%5DCreateFontString%20arguments%20in%20wrong%20order%2C%20CF%23212%0D%0A%5B%2A%5DDuplicate%20call%20to%20InterfaceOptionsFrame_OpenToCategory%20in%20case%20BlizzBugsSuck%20not%20installed.%0D%0A%5B%2A%5DSet%20TomTomBlock%20statum%20to%20MEDIUM%20to%20avoid%20it%20hiding%20behind%20everything.%0D%0A%5B%2A%5DMake%20CrazyArrow%20stratum%20be%20settable%20to%20HIGH/MEDIUM.%0D%0A%5B%2A%5DAnnounce%20%5BCould%20not%20find%20a%20closest%20waypoint%5D%20message%20only%20if%20/cway%20was%20used.%0D%0A%5B%2A%5DDocument%20/way%20arrow%20and%20block.%0D%0A%5B%2A%5DEnforce%20conditions%20on%20arrivaldistance%20and%20cleardistance%20if%20user%20has%20set%20arrow.enablePing.%0D%0A%5B%2A%5DAllow%20precise%20placement%20of%20coord%20text%20on%20world%20map.%0D%0A%5B%2A%5DUpdate%20to%20compensate%20for%20Outland%20and%20Draenor%20being%20demoted%20from%20Worlds.%0D%0A%5B%2A%5DFix%20bogus%20references%20to%20opts.silent%0D%0A%5B%2A%5DUpdate%20Interface%20to%2080200%0D%0A%5B%2A%5DMake%20comparison%20only%20using%20lowercase%20letters%20and%20no%20spaces%20%28UTF-8%20safety%29%0D%0A%5B%2A%5DBug%20%23441%3A%20%20Allow%20UIMapType.Continent%20for%20zones.%0D%0A%5B%2A%5DAccept%20only%20maps%20that%20exist%20in%20a%20world%20for%20names.%0D%0A%5B%2A%5DBug%20%23447%3A%20hbd%3AGetZoneDistance%28%29%20may%20return%20nil%0D%0A%5B%2A%5DAdd%20silencing%20to%20some%20errant%20AddMessage%20calls.%0D%0A%5B%2A%5DUpdate%20to%20HereBeDragons%202.01-release-5-gcd7e0dd%0D%0A%5B%2A%5DUpdate%20to%20HereBeDragons%202.0.9%20aka%20gcd7e0dd%0D%0A%5B%2A%5DDo%20not%20register%20for%20QUEST_POI_UPDATE%20or%20QUEST_LOG_UPDATE%20in%20Classic.%0D%0A%5B%2A%5DMake%20sure%20C_PetBattles%20exists%20before%20checking%20IsInBattle%28%29%0D%0A%5B%2A%5DAdd%20Classic%20detection%20and%20dont%20register%20PET_BATTLE_%20events.%0D%0A%5B%2A%5DFix%20crash%20when%20printing%20coordinates%20with%20no%20coordinates%20availible.%0D%0A%5B%2A%5DAdd%20code%20to%20allow%20TomTom%20specific%20overrides%20of%20HDB%20data.%0D%0A%5B%2A%5DProtect%20against%20orphan%20maps%2C%20which%20the%20latest%20HBD%20now%20discovers.%0D%0A%5B%2A%5DAdd%20a%20backup%20zone%20name%20of%20%23mapID%0D%0A%5B%2A%5DAssume%20that%20the%20lowest%20numbered%20mapId%20is%20the%20primary.%20%20Blizzard%2C%20yiu%20drive%20me%20crazy.%0D%0A%5B%2A%5DRestrict%20mapTypes%20to%20Zone%20and%20Micro.%0D%0A%5B%2A%5DUpdate%20CrazyArrow%20on%20ZONE_CHANGED%20as%20well.%0D%0A%5B%2A%5DAdd%20missing%20argument%20to%20SetClampedToScreen%28%29.%0D%0A%5B%2A%5DAdd%20/tway%20arrow%20to%20print%20arrow%20status.%0D%0A%5B%2A%5DAdd%20zone/continent/world%20to%20%27/tway%20list%27.%20Resolves%20%233.%0D%0A%5B%2A%5DProtect%20against%20empty%20_icon%20properties%20in%20DebugListAllWaypoints%28%29.%20%20Resolves%20%232.%0D%0A%5B%2A%5DCorrect%20GetCZWFromMapID%28%29%20and%20GetClosestWaypoint%28%29.%20Resolves%20%231.%0D%0A%5B%2A%5DUpdate%20HereBeDragons%20to%202.01-release%2C%20resolves%20%236%0D%0A%5B%2A%5DMerge%20branch%20%27master%27%20of%20github.com%3ALudovicus-Maior/TomTom%0D%0A%5B%2A%5DUpdate%20ACE%20to%20r1200%2C%20resolves%20%235%0D%0A%5B%2A%5DCreate%20README.md%0D%0A%5B%2A%5DUpdate%20interface%20to%2080100%0D%0A%5B%2A%5DAdd%20code%20to%20DebugListAllWaypoints%28%29%20to%20list%20more%20info.%0D%0A%5B%2A%5DAdd%20code%20to%20support%20custom%20waypoint%20icons%20and%20sizes.%0D%0A%5B%2A%5DAdd%20the%20floatOnEdge%20back%20to%20minimap.%20%20Display%20Pins%20on%20WORLDMAP%20on%20WORLD%0D%0A%5B%2A%5DIf%20a%20profile.arrow.alpha%20%3C%200.1%20is%20seen%2C%20reset%20to%201.0%20.%20%20No%20invisible%20arrows%21%0D%0A%5B%2A%5DDo%20not%20allow%20the%20waypoint%20arrow%20alpha%20to%20go%20below%200.1%20.%0D%0A%5B%2A%5DCorrect%20the%20POI%20Integration%20to%20use%20the%20RIGHT%20button%2C%20as%20per%20the%20control%20panel.%0D%0A%5B%2A%5DRainbowMagicMarker%20Issue%20%23381%3A%20/cway%20not%20working%20and%20very%20quiet.%0D%0A%5B%2A%5Dsigprof%20issue%20%23357%3A%20Death%20in%20the%20Ritual%20of%20Doom.%0D%0A%5B%2A%5DFix%20Saroana%20%23374%20issue%20with%20profile%20reference%20at%20load%20time.%0D%0A%5B%2A%5DFix%20JonasJSK26849%20%23383%20Issue%20with%20SendWaypoint%0D%0A%5B%2A%5DIf%20the%20WorldMap%20is%20open%2C%20use%20the%20map%27s%20MapID%2C%20else%20guess%20the%20current%20players%27%20map%20for%20a%20QuestPOI.%0D%0A%5B%2A%5DEnable%20POI%20integration%20using%20QuestPOIButton_OnClick%0D%0A%5B%2A%5DFix%20TomTom%3AAddWaypointToCurrentZone%28%29%20to%20use%20AddWaypoint%28%29%0D%0A%5B%2A%5DUncomment%20call%20to%20EnableDisablePOIIntegration%28%29%0D%0A%5B%2A%5DUpdate%20for%20BFA%0D%0A%5B%2A%5DMerged%20Commit%20from%20BFA%20branch.%0D%0A%5B%2A%5DCorrect%20typo%20found%20%20by%20arith%20in%20%20TomTom%3AResetWaypointOptions%28%29%0D%0A%5B%2A%5DAdd%20new%20code%20for%20zone%20names.%0D%0A%5B%2A%5DUpdate%20to%20HereBeDragons-1.92-beta%0D%0A%5B%2A%5DUpdate%20to%20Ace-r1177-alpha%0D%0A%5B%2A%5DFirst%20BFA%20Port%20of%20TomTom_POIIntegration.lua%3A%20Convert%20to%20new%20APIs.%20Missing%20Button%20integration.%0D%0A%5B%2A%5DFirst%20BFA%20Port%20of%20TomTom_Waypoints.lua%3A%20Convert%20to%20new%20APIs.%0D%0A%5B%2A%5DFirst%20BFA%20Port%20of%20TomTom_Corpse.lua%3A%20Convert%20to%20new%20APIs.%0D%0A%5B%2A%5DFirst%20BFA%20Port%20of%20TomTom.toc%3A%20Use%20HereBeDragons%202.0%0D%0A%5B%2A%5DFirst%20BFA%20port%20of%20TomTom.lua%3A%20missing%20nameToMapId%20translation.%0D%0A%5B%2A%5DUpdate%20to%20ACE%20r1175-alpha%0D%0A%5B%2A%5DUpdate%20HereBeDragons%20to%201.91-beta-1-gaf699f6-alpha%0D%0A%5B%2A%5DUpdate%20POI%20Integration%20to%20use%20new%20C_TaskQuest%20API%0D%0A%5B%2A%5DUpdate%20to%20Ace3%20Release%20-%20Revision%20r1166%20%28August%2029th%2C%202017%29%0D%0A%5B%2A%5DUpdate%20for%207.3%0D%0A%5B%2A%5DUpdate%20TOC%20for%207.2%0D%0A%5B%2A%5DFix%20an%20issue%20with%20POI%20integration%0D%0A%5B%2A%5DUpdate%20for%2070100%0D%0A%5B%2A%5DFix%20issue%20with%20non-titled%20waypoints%0D%0A%20%20%20%20Thanks%20to%20AnrDaemon%20for%20the%20patch%2C%20this%20makes%20it%20possible%20to%20distinguish%0D%0A%20%20%20%20between%20waypoints%20set%20by%20TomTom%20without%20a%20title%20and%20those%20set%20by%20another%0D%0A%20%20%20%20addon.%0D%0A%5B%2A%5DEnable%20/wayb%20to%20take%20a%20name/title%20as%20an%20argument%0D%0A%20%20%20%20If%20one%20is%20not%20provided%2C%20just%20use%20the%20existing%20behaviour.%0D%0A%5B%2A%5DUpdate%20AceGUI%0D%0A%5B%2A%5DAdd%20a%20fix%20for%20poi_OnClick%0D%0A%20%20%20%20Thanks%20to%20Jackalo%20for%20providing%20the%20fix%21%0D%0A%5B%2A%5DUpdated%20embedded%20HereBeDragons%0D%0A%5B%2A%5DUpdate%20TOC%20for%207.0.3%0D%0A%5B%2A%5DUpdate%20HereBeDragons%20to%20version%201.08-release%0D%0A%5B%2A%5DReplace%20the%20unmaintained%20Astrolabe%20with%20HereBeDragons-1.0%0D%0A%5B%2A%5DReplace%20%28unmaintained%29%20LibMapData-1.0%20with%20HereBeDragons-1.0%0D%0A%5B%2A%5DUpdate%20TOC%20for%206.2.0%0D%0A%5B%2A%5DUpdate%20TOC%20for%206.1.x%0D%0A%5B%2A%5DAdd%20explicit%20function%20for%20adding%20waypoint%20to%20current%20zone%0D%0A%5B%2A%5DFix%20an%20issue%20with%20corpse%20waypoints%0D%0A%5B%2A%5DProperly%20fork%20Astrolabe%20to%20prevent%20conflicts%0D%0A%5B%2A%5DDe-duplicate%20zone%20names%20to%20fix%20fuzzy%20searching%0D%0A%5B%2A%5DUpdate%20Astrolabe%0D%0A%20%20%20%20This%20is%20a%20forked%20version%20that%20fixes%20an%20issue%20with%20zone%20mappings%20but%20will%0D%0A%20%20%20%20be%20overridden%20by%20a%20new%20version%20of%20Astrolabe%20if%20made%20available.%0D%0A%5B%2A%5DAttempted%20fix%20for%20issue%20in%20TomTom_POIIntegration%0D%0A%20%20%20%20There%20may%20still%20be%20an%20issue%20with%20floors%2C%20please%20provide%20clear%20and%20direct%0D%0A%20%20%20%20bug%20reports%20if%20you%27re%20able%20to%20reproduce%20a%20Lua%20error.%0D%0A%5B%2A%5DFix%20setting%20waypoints%20on%20world%20map%0D%0A%5B%2A%5DFix%20coordinate%20placement%20on%20world%20map%0D%0A%5B%2A%5DFix%20an%20issue%20with%20automatic%20quest%20POIs%0D%0A%20%20%20%20The%20GetQuestLogTitle%28%29%20had%20two%20returns%20removed%20and%20another%20added%2C%20so%20the%0D%0A%20%20%20%20questID%20return%20has%20been%20moved.%0D%0A%5B%2A%5DUpdate%20LibMapData-1.0%0D%0A%5B%2A%5DUpdate%20Ace3%0D%0A%5B%2A%5DUpdate%20Astrolabe%0D%0A%5B%2A%5DSome%20updates%20for%206.0.2%0D%0A%20%20%20%20%20-%20Remove%20frame%20registrations%20for%20removed%20frames%0D%0A%20%20%20%20%20-%20Thanks%20for%20LudovicusMajor%20for%20these%20changes%0D%0A%5B%2A%5DUpdate%20for%205.4%0D%0A%5B%2A%5DFix%20zone%20searching%20in%20commandlines%0D%0A%5B%2A%5DAdd%20updated%20zhCN%20localisation%20from%20ananhaid%0D%0A%5B%2A%5DAdd%20french%20localisation%20to%20.TOC%0D%0A%5B%2A%5DUpdate%20TOC%20for%204.3%2C%20update%20libraries%0D%0A%5B%2A%5DAdd%20frFR%20locale%0D%0A%5B%2A%5DBumping%3F%0D%0A%5B%2A%5DUpdating%20Astrolabe%20and%20bumping%20ToC%0D%0A%5B%2A%5DDon%27t%20use%20magic%20constants%0D%0A%5B%2A%5DReduce%20the%20chance%20of%20tainting%0D%0A%5B%2A%5DAdded%20frFR%20localization%2C%20courtesy%20of%20ckeurk%0D%0A%5B%2A%5DUpdate%20libmapdata%0D%0A%5B%2A%5DUpdated%20TOC%20for%205.1%0D%0A%5B%2A%5DFix%20an%20error%20with%20feed%20frame%0D%0A%5B%2A%5DDon%27t%20allow%20waypoint%20placement%20on%20the%20cosmic%20map%0D%0A%5B%2A%5DThrottle%20the%20coordinate%20calls%20on%20the%20world%20map%0D%0A%5B%2A%5DHide%20the%20crazy%20arrow%20feed%20frame%20when%20no%20waypoint%0D%0A%20%20%20%20This%20prevents%20excessive%20calls%20when%20there%20is%20no%20waypoint%20being%20displayed.%0D%0A%5B%2A%5DAdd%20cleardistance/arrivaldistance%20to%20reset%20button%0D%0A%5B%2A%5DAdd%20an%20option%20to%20reset%20options%20on%20waypoints%0D%0A%20%20%20%20If%20you%20change%20the%20minimap%20display%20or%20world%20display%20options%2C%20they%20will%0D%0A%20%20%20%20not%20take%20affect%20for%20any%20waypoints%20that%20are%20already%20set.%20This%20button%0D%0A%20%20%20%20under%20%27General%20Options%27%20will%20re-set%20these%20options%20on%20all%20of%20the%0D%0A%20%20%20%20currently%20set%20waypoints.%0D%0A%5B%2A%5DFix%20a%20bug%20with%20distance%20callbacks%0D%0A%20%20%20%20If%20the%20player%20is%20within%20the%20distance%20callback%20circle%20when%20the%20waypoint%0D%0A%20%20%20%20is%20first%20set%2C%20the%20last%20parameter%20of%20the%20callback%20should%20be%20nil.%20This%0D%0A%20%20%20%20enables%20the%20callbacks%20to%20ignore%20the%20initial%20trigger%20of%20the%20callback.%0D%0A%20%20%20%20Practically%2C%20this%20stops%20/wayb%20from%20being%20immediately%20cleared.%0D%0A%5B%2A%5DUpdated%20zhTW%20locale%20thanks%20to%20BNSSNB%0D%0A%5B%2A%5DFix%20an%20issue%20with%20saved%20variables/callbacks%0D%0A%5B%2A%5D1%20Add%20an%20option%20to%20make%20the%20corpse%20arrow%20sticky%0D%0A%20%20%20%20Other%20addons%20that%20attempt%20to%20set%20waypoints%20on%20the%20crazy%20arrow%20when%0D%0A%20%20%20%20you%20are%20dead%20will%20silently%20fail%2C%20if%20this%20option%20is%20enabled.%0D%0A%5B%2A%5DFix%20callback%20bug%2C%20clean%20up%20leaked%20globals%0D%0A%5B%2A%5DUpdate%20localization%0D%0A%5B%2A%5DAutomatically%20hide%20the%20crazy%20arrow%20during%20pet%20battles%0D%0A%20%20%20%20There%20is%20an%20option%20to%20disable%20this%20feature%2C%20under%20%27Crazy%20Arrow%27.%0D%0A%5B%2A%5DAdd%20a%20method%20to%20get%20a%20table%20of%20default%20callbacks%0D%0A%20%20%20%20This%20makes%20it%20possible%20for%20an%20add-on%20to%20create%20a%20waypoint%20with%20custom%20callbacks%20without%20losing%20the%20tooltip/onclick%20functionality%20that%20currently%20exists%20in%20TomTom.%20Usage%20is%20something%20like%20this%3A%0D%0A%20%20%20%20local%20opts%20%3D%20%7B%7D%20--%20any%20options%20for%20your%20waypoint%2C%20such%20as%20title%2C%20etc.%0D%0A%20%20%20%20opts.callbacks%20%3D%20TomTom%3ADefaultCallbacks%28%29%0D%0A%20%20%20%20opts.callbacks.distance%5B15%5D%20%3D%20function%28event%2C%20uid%2C%20range%2C%20distance%2C%20lastdistance%29%0D%0A%20%20%20%20%20%20--%20this%20function%20will%20be%20called%20when%20the%20player%20moves%20from%0D%0A%20%20%20%20%20%20--%20outside%2015%20yards%20to%20within%2C%20or%20vide-versa%20and%20passed%0D%0A%20%20%20%20%20%20--%20several%20parameters%0D%0A%20%20%20%20%20%20--%0D%0A%20%20%20%20%20%20--%20event%3A%20%22distance%22%0D%0A%20%20%20%20%20%20--%20uid%3A%20the%20UID%20of%20the%20waypoint%0D%0A%20%20%20%20%20%20--%20range%3A%20the%20callback%20range%20being%20triggered%20%2815%20in%20this%20case%29%0D%0A%20%20%20%20%20%20--%20distance%3A%20the%20current%20distance%20to%20the%20waypoint%0D%0A%20%20%20%20%20%20--%20%20%20%20%20%20%20%20%20%20%20this%20MAY%20be%20less%20than%2015%2C%20if%20you%20move%20really%20fast%0D%0A%20%20%20%20%20%20--%20lastdistance%3A%20the%20previous%20distance%20to%20the%20waypoint.%20This%0D%0A%20%20%20%20%20%20--%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20can%20be%20used%20to%20determine%20whether%20or%20not%20you%20are%0D%0A%20%20%20%20%20%20--%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20leaving%20the%20circle%20or%20entering%20it.%0D%0A%20%20%20%20%20%20if%20not%20lastdistance%20or%20lastdistance%20and%20lastdistance%20%3E%20dist%20then%0D%0A%20%20%20%20%20%20%20%20--%20entering%20circle%20%0D%0A%20%20%20%20%20%20else%0D%0A%20%20%20%20%20%20%20%20--%20exiting%20circle%0D%0A%20%20%20%20%20%20end%20%20%20%20%0D%0A%20%20%20%20end%0D%0A%5B%2A%5DRegister%20the%20TomTom%20addon%20prefix%20for%20waypoint%20comm%0D%0A%20%20%20%20Fixes%2047%0D%0A%5B%2A%5DUpdated%20zhTW%20localization%20thanks%20to%20BNSSNB%0D%0A%5B%2A%5DUpdate%20Astrolabe%20to%20r155%0D%0A%20%20%20%20This%20includes%20the%20change%20to%20remove%20the%20clicking%20noise%20when%20in%20a%20zone.%0D%0A%5B%2A%5DAdd%20exact%20coloring%20%28when%2098%25%20on%20target%29%20to%20feed%0D%0A%5B%2A%5DAdd%20a%20function%20to%20fetch%20coordinates%20safely%0D%0A%20%20%20%20For%20the%20coordinate%20feed%20and%20coordinate%20block.%20this%20function%20can%20be%20used%0D%0A%20%20%20%20instead%20of%20the%20heavier%20player%20position%20function%20to%20get%20the%20current%0D%0A%20%20%20%20player%27s%20coordinates.%20This%20means%20that%20depending%20on%20the%20current%20map%20zoom%2C%0D%0A%20%20%20%20the%20%27coordinates%27%20will%20display%20the%20position%20on%20that%20map%2C%20which%20is%20what%0D%0A%20%20%20%20we%27d%20expect.%0D%0A%20%20%20%20The%20arrow%20and%20rest%20of%20the%20addon%20continues%20to%20function%20correctly.%0D%0A%20%20%20%20This%20fixes%20an%20issue%20in%20the%20deeprun%20tram%20and%20other%20zones%20with%20no%0D%0A%20%20%20%20coordinates.%0D%0A%5B%2A%5DFix%20map%20flipping%20race%20condition%0D%0A%5B%2A%5DPrevent%20integer%20overflow%20for%20crazy%20arrow%0D%0A%5B%2A%5DUpdate%20libraries%0D%0A%5B%2A%5DFix%20integer%20overflow%20issue%0D%0A%5B%2A%5DUpdate%20LibMapData%20to%200.23-release%0D%0A%5B%2A%5DUpdate%20TOC%20for%205.x%0D%0A%5B%2A%5DUpdate%20coordinate%20positioning%20on%20non-fullscreen%20map%0D%0A%5B%2A%5DAdd%20an%20%27exactcolor%27%20option%20for%20the%20waypoint%20arrow%0D%0A%20%20%20%20This%20will%20be%20used%20when%20you%20are%20moving%20within%2098%25%20accuracy%20of%20the%0D%0A%20%20%20%20intended%20direction%20and%20can%20be%20useful%20for%20distinguishing%20between%20the%0D%0A%20%20%20%20shades%20of%20%27good%27%20and%20some%20value%20of%20%27exact%27.%0D%0A%5B%2A%5DUpdate%20.gitignore%0D%0A%5B%2A%5DUse%20stored%20options%20when%20reloading%20waypoints%0D%0A%5B%2A%5DDon%27t%20bail%20out%20immediately%20without%20floor%20information%0D%0A%5B%2A%5DRemove%20an%20extraneous%20print%0D%0A%5B%2A%5DAvoid%20IEEE-754%20precision%20issues%0D%0A%5B%2A%5DUpdate%20TOC%20for%204.3%0D%0A%5B%2A%5DUpdate%20LibMapData%20to%200.20%0D%0A%5B%2A%5DMerge%20branch%20%27master%27%20of%20git.wowinterface.com%3ATomTom-11%0D%0A%5B%2A%5DAdded%20an%20option%20to%20hide%20the%20%27distance%27%20portion%20of%20the%20waypoint%20arrow.%0D%0A%20%20%20%20This%20option%20is%20disabled%20by%20default.%0D%0A%5B%2A%5DAdd%20an%20option%20to%20use%20waypoints%20outside%20zone%20to%20find%20closest%0D%0A%20%20%20%20It%20will%20still%20restrict%20the%20search%20to%20the%20current%20continent%2C%20but%20will%20now%20lead%20you%20outside%20the%20zone%2C%20if%20that%20waypoint%20is%20closer.%20This%20option%20is%20disabled%20by%20default.%0D%0A%5B%2A%5DUpdate%20LibMapData%20to%20fix%20span/firelands%0D%0A%5B%2A%5DUpdate%20TOC%20for%204.2%0D%0A%5B%2A%5DUpdating%20to%20the%20latest%20Ace3%0D%0A%5B%2A%5DPossible%20fix%20for%2021%2C%20receiving%20waypoints%0D%0A%5B%2A%5DAdd%20a%20/way%20list%20command%20to%20list%20waypoints%20in%20zone%0D%0A%20%20%20%20This%20is%20a%20simple%20debug%20command%20that%20may%20be%20useful%2C%20but%20is%20not%20expected%0D%0A%20%20%20%20to%20be%20useful%20to%20the%20average%20user.%0D%0A%5B%2A%5DFix%20handling%20of%20floors%20%28fixes%2028%29%0D%0A%5B%2A%5DMove%20to%20AddonCore%20and%20add%20version%20to%20About%20box%0D%0A%20%20%20%20Fixes%2022%0D%0A%5B%2A%5DEnsure%20the%20waypoint%20table%20doesn%27t%20get%20dirty%0D%0A%5B%2A%5DFix%20title%20display%20when%20AddMFWaypoint%20is%20used%0D%0A%20%20%20%20Fixes%2025%0D%0A%5B%2A%5DFix%20fuzzy%20zone%20matching%0D%0A%20%20%20%20This%20ensures%20that%20%27Icecrown%27%20will%20match%20%27Icecrown%27%2C%20whereas%20%27Icec%27%20will%0D%0A%20%20%20%20match%20both%20%27Icecrown%27%20and%20%27Icecrown%20Citadel%27.%20In%20short%2C%20an%20exact%20match%0D%0A%20%20%20%20will%20automatically%20be%20accepted.%0D%0A%5B%2A%5DUpdate%20LibMapData%20to%200.16%0D%0A%5B%2A%5DFail%20gracefully%20when%20coordinate%20information%20can%27t%20be%20found%0D%0A%5B%2A%5DUpdate%20TOC%20for%204.1%0D%0A%5B%2A%5DFix%20indentation%20on%20recently%20edited%20files%0D%0A%5B%2A%5DFix%20corpse%20generation%20module%0D%0A%5B%2A%5DFork%20Astrolabe%0D%0A%5B%2A%5DDon%27t%20flip%20map%20to%20display%20coordinates%0D%0A%5B%2A%5DDisable%20automatic%20quest%20tracking%20by%20default%0D%0A%5B%2A%5DFix%20a%20bug%20when%20sharing%20waypoints%0D%0A%5B%2A%5DFix%20proximity%20and%20POI%20integration%0D%0A%5B%2A%5DFixes%20issue%2014%0D%0A%5B%2A%5DFix%20descriptions%20in%20/way%20command%0D%0A%5B%2A%5DFix%20an%20issue%20that%20was%20causing%20a%20WORLD_MAP_UPDATE%20race%20condition%0D%0A%5B%2A%5DBetter%20handle%20zone%20names%20with%20spaces%20and%20special%0D%0A%20%20%20%20The%20comparison%20of%20user%20input%20to%20zone%20name%20is%20made%20more%20relaxed%20by%20this%0D%0A%20%20%20%20commit%20which%20forces%20both%20strings%20to%20be%20forced%20to%20lowercase%2C%20and%20have%20all%0D%0A%20%20%20%20non-alphanumeric%20characters%20removed.%20In%20short%2C%20it%20should%20work%20much%0D%0A%20%20%20%20better%20now.%0D%0A%5B%2A%5DAllow%20user%20to%20set%20POI%20arrival%20distance%0D%0A%20%20%20%20This%20works%20for%20both%20the%20ping%20and%20the%20crazy%20arrow%2C%20and%20will%20apply%20to%0D%0A%20%20%20%20auto-set%20waypoints%20as%20well%20as%20those%20set%20by%20clicking%20on%20the%20POI%20icon.%0D%0A%5B%2A%5DFix%20an%20error%20when%20invalid%20zone%20supplied%0D%0A%5B%2A%5DInitial%20update%20to%20POI%20integration%20plugin%0D%0A%20%20%20%20Currently%2C%20most%20of%20the%20old%20features%20should%20work%20properly%2C%20only%20there%20is%0D%0A%20%20%20%20now%20a%20limitation%20that%20it%20will%20only%20work%20with%20objective%20waypoints%20that%0D%0A%20%20%20%20are%20in%20your%20current%20zone%2C%20in%20particular%20with%20the%20ones%20on%20the%20watch%0D%0A%20%20%20%20frame.%20I%20will%20likely%20change%20it%20so%20that%20the%20ones%20on%20the%20world%20map%20work%0D%0A%20%20%20%20properly%2C%20but%20this%20will%20be%20in%20a%20separate%20commit.%0D%0A%5B%2A%5DAdd%20a%20function%20to%20indicate%20if%20the%20crazy%20arrow%20is%20empty%0D%0A%5B%2A%5DAdd%20a%20tag%20to%20make%20it%20easier%20to%20find%20core%20logic%0D%0A%5B%2A%5DFix%20non-zone%20slash%20command%0D%0A%5B%2A%5DUpdated%20based%20locale%20file%0D%0A%5B%2A%5DFixed%20slash%20commands%20for%20/way%20reset%20and%20/way%0D%0A%5B%2A%5DFix%20feedback%20from%20slash%20command%20and%20zone%20search%0D%0A%20%20%20%20The%20feedback%20being%20provided%20by%20these%20functions%20was%20not%20correct%2C%20and%20the%0D%0A%20%20%20%20fuzzy%20search%20was%20not%20functioning%20properly.%20This%20should%20resolve%20those%0D%0A%20%20%20%20issues%2C%20particularly%20with%20two-token%20zone%20names.%0D%0A%5B%2A%5DDon%27t%20strip%20spaces%20from%20zone%20name%20in%20slash%20cmd%0D%0A%20%20%20%20Previously%20the%20fuzzy%20matching%20was%20using%20a%20gsub%20on%20%25L%20to%20%22%22%2C%20which%0D%0A%20%20%20%20removed%20all%20of%20the%20spaces%20from%20the%20user%27s%20input.%20This%20no%20longer%20works%0D%0A%20%20%20%20with%20two%20word%20zone%20names.%0D%0A%5B%2A%5DFix%20the%20/way%20command%20so%20it%20works%20in%20instances%0D%0A%5B%2A%5DClarify%20that%20license%20is%20in%20fact%20All%20Rights%20Reserved%2C%20as%20it%20has%20always%20been%0D%0A%5B%2A%5DFix%20the%20zone%20search%20on%20slash%20commands%0D%0A%5B%2A%5DFix%20the%20positioning%20of%20the%20world%20frame%20coordinates%0D%0A%20%20%20%20These%20positions%20will%20not%20be%20good%20for%20all%2C%20but%20should%20work%20with%20the%0D%0A%20%20%20%20default%20user%20interface.%0D%0A%5B%2A%5DFix%20the%20/wayb%20command%20for%20%27wayback%27%20points%0D%0A%5B%2A%5DFix%20clicking%20on%20coordinate%20block%20to%20set%20waypoint%0D%0A%5B%2A%5DRemove%20some%20debug%20messages%0D%0A%5B%2A%5DFix%20key%20uid%20generation%0D%0A%5B%2A%5DDisable%20POI%20integration%20by%20default%0D%0A%5B%2A%5DInitial%20revamp%20for%204.X%20mapping%20system%0D%0A%20%20%20%20There%20are%20many%20things%20still%20broken%20and%20not%20quite%20working%2C%20but%20I%20am%0D%0A%20%20%20%20trying%20to%20test%20them%20as%20much%20and%20as%20quickly%20as%20possible.%0D%0A%5B%2A%5DAdd%20more%20robust%20coordinate%20parsing%20support%2C%20thanks%20to%20Phanx%0D%0A%5B%2A%5DUpdated%20Astrolabe%20to%20r121%0D%0A%5B%2A%5DUpdate%20to%20Astrolabe-r122%0D%0A%5B%2A%5DFix%20an%20issue%20with%20coords%20and%20another%20with%20Orgrimar%0D%0A%5B%2A%5DUpdate%20to%20Astrolabe%20r121%0D%0A%5B%2A%5DUpdate%20Astrolabe%20to%20rev%20118%0D%0A%5B%2A%5DFix%20an%20error%20when%20navigating%20the%20world%20map%0D%0A%5B%2A%5DMerge%20branch%20%27master%27%20of%20git.curseforge.net%3Awow/tomtom/mainline%0D%0A%5B%2A%5DFix%20issues%20with%20mapfile%20%3C-%3E%20c%2Cz%20%3C-%3E%20name%20lookups%0D%0A%5B%2A%5DFixing%20some%20whitespace%20issues%0D%0A%5B%2A%5DFix%20issues%20with%20mapfile%20%3C-%3E%20c%2Cz%20%3C-%3E%20name%20lookups%0D%0A%5B%2A%5DFixing%20some%20whitespace%20issues%0D%0A%5B%2A%5DUpdate%20%28and%20compat%29%20for%20Astrolabe-1.0%20with%20Cataclysm%0D%0A%5B%2A%5DUpdate%20%28and%20compat%29%20for%20Astrolabe-1.0%20with%20Cataclysm%0D%0A%5B%2A%5DAdded%20Astrolabe%20as%20a%20tool-used%0D%0A%5B%2A%5DAdded%20Astrolabe%20as%20a%20tool-used%0D%0A%5B%2A%5DAdded%20a%20.staticIcon%20for%20LDB%20displays%20that%20don%27t%20use%20the%20dynamic%20icon%0D%0A%5B%2A%5DAdded%20a%20.staticIcon%20for%20LDB%20displays%20that%20don%27t%20use%20the%20dynamic%20icon%0D%0A%5B%2A%5DMake%20checked%20out%20version%20sane%0D%0A%5B%2A%5DMake%20checked%20out%20version%20sane%0D%0A%5B%2A%5DAdded%20koKR%20localization.%0D%0A%5B%2A%5DFix%20a%20bug%20with%20updating%20the%20coord%20feed%20throttle%0D%0A%5B%2A%5DAdded%20koKR%20localization.%0D%0A%5B%2A%5DFix%20a%20bug%20with%20updating%20the%20coord%20feed%20throttle%0D%0A%5B%2A%5DUpdate%20.pkgmeta%20file%0D%0A%5B%2A%5DUpdated%20.TOC%0D%0A%5B%2A%5DUpdated%20.TOC%0D%0A%5B%2A%5DUpdate%20.pkgmeta%20file%0D%0A%5B%2A%5DAdd%20base%20versions%20of%20required%20libraries%0D%0A%5B%2A%5DConvert%20svn%3Aignore%20properties%20to%20.gitignore.%0D%0A%5B%2A%5DRemove%20objective%20POIs%20before%20adding%20a%20new%20one%0D%0A%5B%2A%5DFix%20an%20error%20that%20can%20occur%20due%20to%20a%20bad%20copy/pasta%20from%20WatchFrame%0D%0A%5B%2A%5DA%20number%20of%20enhancements%20and%20minor%20bug%20fixes%0D%0A%20%20%20%20%20%20%2A%20Added%20a%20%27ping%27%20sound%20that%20can%20be%20played%20when%20you%27ve%20arrived%20at%20your%20destination.%20%20The%20sound%20will%20be%20played%20when%20you%27re%20within%20the%20%27arrival%20distance%27%2C%20as%20set%20under%20the%20%22Waypoint%20Arrow%22%20configuration.%20%20This%20is%20also%20where%20the%20option%20can%20be%20found.%0D%0A%20%20%20%20%20%20%2A%20Enabled%20dual%20positioning%20for%20world%20map%20coordinates%2C%20hopefully%20the%20placement%20now%20works%20properly.%0D%0A%20%20%20%20%20%20%2A%20Added%20a%20function%20TomTom%3AWaypointExists%28c%2C%20z%2C%20x%2C%20y%2C%20desc%29%20which%20returns%20true%20or%20false%0D%0A%20%20%20%20%20%20%2A%20Fixed%20POI%20integration%20%28from%20what%20I%20tested%29%0D%0A%20%20%20%20%20%20%2A%20Added%20an%20%27automatic%20objectives%20waypoint%27%20setting%20that%20will%20automatically%20set%20waypoints%20to%20your%20closest%20quest%20objective.%20%20I%27m%20not%20sure%20how%20useful%20this%20will%20be%2C%20it%27s%20disabled%20by%20default.%0D%0A%5B%2A%5DFix%20POI%20integration%20with%20scaled%20POIs%0D%0A%5B%2A%5DFix%20parenting%20of%20waypoint%20buttons%20on%20the%20world%20map%0D%0A%5B%2A%5DProperly%20calculate%20the%20effective%20scale%2C%20so%20POI%20integration%20works%20when%20the%20world%20map%20is%20scaled%20down%0D%0A%5B%2A%5DAdded%20quest%20objective%20intergration%20%28Control-right-click%20to%20set%20a%20waypoint%29%0D%0A%5B%2A%5DFix%20world%20map%20coord%20positions%2C%20update%20.toc%0D%0A%5B%2A%5DAdded%20the%20ability%20to%20right-click%20on%20the%20coordinate%20block%20to%20set%20a%20waypoint%20at%20the%20current%20location%0D%0A%5B%2A%5DTrying%20to%20fix%20curseforge%20fingerprinting%0D%0A%5B%2A%5DUpdated%20.toc%20and%20Astrolabe%20version%0D%0A%5B%2A%5DFix%20some%20texture/fontstring%20definitions%0D%0A%5B%2A%5DLocalize%20additional%20strings%0D%0A%5B%2A%5D%2A%20Add%20the%20description%20to%20the%20%22waypoint%20added%22%20message%2C%20if%20it%20is%20set%0D%0A%5B%2A%5DAdded%20zhTW%20localization%0D%0A%5B%2A%5DFix%20a%20bug%20in%20TomTom%3ASetCrazyArrowTitle%28%29%0D%0A%5B%2A%5DShow%20the%20waypoint%20arrow%20when%20hijacked%0D%0A%5B%2A%5DAdded%20comments%20and%20%28hopefully%29%20example%20usage%20for%20hijacking%20the%20crazy%20arrow%0D%0A%5B%2A%5DAdded%20an%20API%20to%20hijack%20the%20TomTom%20arrow%20for%20your%20own%20purposes%0D%0A%5B%2A%5DUpdate%20.pkgmeta%20file%20to%20re-enable%20no-libs%20creation%20on%20Curse%0D%0A%5B%2A%5DPlace%20all%20TomTom%20waypoints%20on%20an%20overlay%20attached%20to%20the%20world%20map%2C%20to%20nudge%20them%20higher%0D%0A%5B%2A%5D%2A%20Fix%20for%20world%20map%20issues%20with%20points%20of%20interest%2C%20etc.%0D%0A%5B%2A%5DDon%27t%20external%20CBH%20from%20Ace3%2C%20use%20the%20project%20instead%0D%0A%5B%2A%5DDon%27t%20create%20-nolib%20versions%0D%0A%5B%2A%5DUpdated%20paths%20in%20.pkgmeta%0D%0A%5B%2A%5DAdding%20.pkgmeta%20file%20for%20packaging%20purposes%0D%0A%5B%2A%5DFixing%20an%20issue%20with%20creating%20waypoints%20via%20the%20world%20map%0D%0A%5B%2A%5DUpdating%20TomTom%20for%203.1%20including%20new%20Astrolabe%0D%0A%5B%2A%5D%2A%20When%20handling%20a%20multi-word%20zone%20in%20/way%2C%20make%20sure%20to%20set%20the%20description%20correctly%0D%0A%5B%2A%5D%2A%20Fix%20an%20error%20when%20calling%20/wayb%20in%20a%20non-zoned%20area%0D%0A%20%20%20%20%2A%20Add%20uid%20%3D%20TomTom%3AGetClosestWaypoint%28%29%0D%0A%20%20%20%20%2A%20Altered%20the%20behavior%20of%20%22Clear%20Waypoint%22%20when%20interacting%20with%20%22Automatically%20set%20closest%20waypoint%22.%20%20When%20you%20clear%20a%20waypoint%2C%20if%20the%20%27closest%27%20waypoint%20is%20the%20waypoint%20you%20cleared%20it%20will%20not%20be%20set%0D%0A%5B%2A%5D%2A%20Fixed%20an%20error%20that%20caused%20the%20battlemap%20to%20flip%20back%20and%20forth%20when%20using%20the%20corpse%20arrow%20in%20a%20battleground%20%28which%20does%20not%20work%29%0D%0A%5B%2A%5D%2A%20Only%20try%20to%20set%20the%20corpse%20waypoint%20when%20c%2Cz%2Cx%2Cy%20are%20positive%20numbers%0D%0A%5B%2A%5D%2A%20Added%20a%20Corpse%20arrow%20that%20can%20be%20configured%20on%20the%20general%20options%20screen.%20%20When%20enabled%2C%20a%20non-persistent%20waypoint%20arrow%20will%20be%20set%20directing%20you%20towards%20your%20corpse.%20%20It%20will%20be%20removed%20when%20you%20resurrect.%0D%0A%5B%2A%5D%2A%20Added%20a%20slash%20command%20to%20set%20a%20waypoint%20at%20the%20current%20location%20/wayb%2C%20/wayback%20%28contributed%20by%20Lamalas%29%0D%0A%20%20%20%20%2A%20Added%20a%20slash%20command%20to%20set%20the%20crazy%20arrow%20to%20the%20closet%20waypoint%20in%20the%20current%20zone%20/cway%2C%20/closestway%20%28contributed%20by%20Lamalas%29%0D%0A%20%20%20%20%2A%20Added%20an%20option%20that%20will%20automatically%20set%20the%20crazy%20arrow%20destination%20to%20the%20closest%20waypoint%20in%20your%20current%20zone%0D%0A%20%20%20%20%2A%20Added%20TomTom%3AIsValidWaypoint%28uid%29%20to%20test%20if%20a%20given%20UID%20is%20currently%20valid%20%0D%0A%5B%2A%5D%2A%20Updated%20to%20the%20latest%20version%20of%20Astrolabe%2C%20should%20hopefully%20fix%20the%20issues%20people%20are%20seeing%20when%20setting%20a%20waypoint%20and%20not%20having%20the%20crazy%20arrow%20appear%0D%0A%5B%2A%5D%2A%20Add%20an%20option%20to%20control%20the%20accuracy%20of%20the%20coordinate%20LDB%20feed%0D%0A%5B%2A%5D%2A%20Add%20options%20to%20throttle%20updates%20of%20the%20two%20data%20feeds%0D%0A%20%20%20%20%2A%20Enable%20right-clicking%20of%20the%20arrow%20feed%20to%20bring%20up%20the%20dropdown%20menu%0D%0A%5B%2A%5D%2A%20Added%20LDB%20data%20feed%20for%20coordinates%0D%0A%20%20%20%20%2A%20Added%20LDB%20data%20feed%20for%20crazy%20arrow%2C%20requires%20iconR%2C%20iconG%2C%20iconB%2C%20and%20iconCoords%20support%0D%0A%20%20%20%20%2A%20Added%20options%20to%20enable/disable%20the%20above%20feeds%20within%20TomTom%0D%0A%20%20%20%20%2A%20Updated%20Astrolabe%20to%20get%20rid%20of%20an%20error%20that%20can%20occur%20when%20logging%20in%0D%0A%5B%2A%5D%2A%20Fix%20the%20%22Disable%20Waypoint%20Arrow%22%20mouse%20input%20passthrough%0D%0A%5B%2A%5D%2A%20Add%20an%20option%20to%20reset%20the%20position%20of%20the%20coordinate%20block%0D%0A%5B%2A%5D%2A%20Fix%20the%20bug%20where%20position%20was%20not%20properly%20saved%0D%0A%20%20%20%20%2A%20Actually%20added%20the%20ability%20to%20scale/alpha%20the%20title%20text%0D%0A%5B%2A%5D%2A%20Updating%20Astrolabe%20to%20fix%20the%20%22first-waypoint-wrong%22%20bug%0D%0A%5B%2A%5D%2A%20Added%20a%20/tomtomway%20command%20to%20get%20around%20Cartographer%20clobbering%20everything%20I%20set%0D%0A%20%20%20%20%2A%20Changed%20the%20global%20I%20use%20for%20slash%20commands%2C%20the%20previous%20one%20was%20ill-advised%0D%0A%5B%2A%5DStop%20the%20SetScale%20error%20from%20being%20thrown%20temporarily%0D%0A%5B%2A%5D%2A%20Updated%20deDE%20localization%20courtesy%20of%20Elto%40Kil%27jaeden%0D%0A%20%20%20%20%2A%20Localized%20the%20crazy%20arrow%27s%20distance%20indication%0D%0A%5B%2A%5DFix%20an%20error%20that%20could%20occur%20when%20right-clicking%20a%20waypoint%20after%20setting%20it%2C%20without%20ReloadWaypoints%20having%20been%20called%0D%0A%5B%2A%5D%2A%20Added%20an%20option%20to%20%22disable%20clicks%22%20on%20the%20crazy%20taxi%20arrow%20entirely%2C%20so%20you%20can%20have%20clicks%20pass%20through%0D%0A%20%20%20%20%2A%20Added%20an%20option%20to%20change%20the%20scale%20of%20the%20crazy%20arrow%20title%20text%0D%0A%20%20%20%20%2A%20Added%20an%20option%20to%20change%20the%20alpha%20of%20the%20crazy%20arrow%20title%20text%0D%0A%5B%2A%5D%2A%20Instead%20of%20displaying%20nothing%20and%20erroring%20OnUpdate%2C%20just%20display%20%22Unknown%20Distance%22%0D%0A%5B%2A%5DDon%27t%20display%20distance%20on%20the%20tooltip%20when%20we%20can%27t%20calculate%20it%0D%0A%5B%2A%5D%2A%20Fixed%20an%20issue%20that%20prevented%20Modifier-RightClicking%20on%20the%20world%20map%20from%20setting%20a%20new%20waypoint%0D%0A%5B%2A%5D%2A%20Don%27t%20automatically%20open%20the%20TomTom%20dialog%20when%20opening%20the%20Interface%20Options%20frame%0D%0A%20%20%20%20%2A%20Add%20ruRU%20localization%2C%20thanks%20to%20Swix%0D%0A%5B%2A%5D%2A%20Removed%20Wrath%20compatibility%20code%0D%0A%20%20%20%20%2A%20TomTom%20options%20will%20now%20be%20created%20automatically%20when%20the%20interface%20options%20frame%20is%20opened%0D%0A%5B%2A%5DFixed%20the%20moved%20AceConfig%20externals%2C%20and%20fix%20the%20/tomtom%20slash%20command%0D%0A%5B%2A%5D%2A%20Updated%20version%20of%20Astrolabe%20to%20fix%20resize%20issue%20with%20EP/SW%0D%0A%20%20%20%20%2A%20Updated%20interface%20version%20number%0D%0A%20%20%20%20%2A%20Moved%20LibStub%20from%20an%20external%20to%20a%20static%20file%20%28no%20user%20impact%29%0D%0A%5B%2A%5DDon%27t%20hide%20icons%20that%20are%20disabled%2C%20so%20they%20still%20get%20callbacks%0D%0A%5B%2A%5DFixes%20an%20issue%20that%20prevented%20the%20%22Reset%20waypoints%22%20command%20from%20working%0D%0A%5B%2A%5DUpdated%20to%20a%20beta-compatible%20version%20of%20Astrolabe%0D%0A%5B%2A%5DAltered%20the%20configuration%20options%20to%20always%20use%20the%20Blizz%20UI%20panel%0D%0A%5B%2A%5DReverting%20to%20prior%20version%20of%20Astrolabe%0D%0A%5B%2A%5DFixed%20some%20of%20the%20bugs%20that%20exist%2C%20while%20breaking%20new%20features.%0D%0A%20%20%20%20%20%20%2A%20The%20option%20to%20disable%20waypoints%20from%20other%20zones%20on%20the%20world%20and%20minimap%20is%20disabled%2C%20since%20it%27s%20broken%20in%20pieces%20right%20now%0D%0A%5B%2A%5DFixed%20a%20number%20of%20massive%20bugs%20in%20TomTom%27s%20zoning%20code%0D%0A%5B%2A%5DFixed%20a%20bug%20that%20cause%20new%20waypoints%20to%20not%20respect%20the%20Enable%20World%20and%20Enable%20Minimap%20options%0D%0A%5B%2A%5DFixing%20TomTom%20in%20wrath%2C%20using%20IsWrathBuild%28%29%0D%0A%5B%2A%5DAdded%20/tway%20as%20a%20slash%20command%20for%20TomTom%27s%20waypoint%20command%2C%20to%20avoid%20conflicts%20with%20Cartographer%0D%0A%5B%2A%5DFixed%20an%20issue%20with%20the%20graphics%20on%20the%20waypoint%20arrow%2C%20thanks%20Krill3%20for%20the%20report.%0D%0A%5B%2A%5DAdded%20zhCN%20localization%20thanks%20to%20Onlyfly%20and%20fixed%20some%20non-native%20line%20endings%0D%0A%5B%2A%5DAdded%20an%20option%20to%20reset%20the%20waypoint%20arrow%20location%2C%20and%20a%20toggle%20for%20waypoints%20announcements%0D%0A%5B%2A%5DDon%27t%20clear%20waypoints%20when%20you%20are%20on%20a%20taxi%0D%0A%5B%2A%5DAdded%20an%20option%20to%20change%20the%20world-map%20click%20modifier%0D%0A%5B%2A%5DFixed%20a%20bug%20with%20the%20/way%20slash%20command%2C%20when%20used%20without%20arguments%0D%0A%5B%2A%5DAlter%20TomTom%20to%20use%20Astrolabe%20trunk%0D%0A%5B%2A%5DAdded%20an%20option%20to%20change%20the%20title%20height/width%20of%20the%20crazy%20arrow%0D%0A%5B/list%5D"
+folders = ["TomTom"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "Details"
+version = "r2997.17e716eb"
+install_time = "2026-09-17T12:45:50.589002875Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "TomTom"
+version = "r524.bc7ab3a"
+install_time = "2026-09-17T12:46:01.772488959Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "ZSBT"
+version = "r78.01f7890"
+install_time = "2026-09-17T12:46:09.176979737Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1120247637"
+version = "v66"
+install_time = "2026-09-17T12:44:26.865534216Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1157501703"
+version = "v1.3.2"
+install_time = "2026-09-17T12:43:47.755526950Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181239755"
+version = "r827"
+install_time = "2026-09-17T12:42:50.825876485Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181239873"
+version = "r352"
+install_time = "2026-09-17T12:43:05.608914890Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181239900"
+version = "r262"
+install_time = "2026-09-17T12:41:34.966981478Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181239916"
+version = "r190"
+install_time = "2026-09-17T12:41:56.930151852Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181240301"
+version = "r162"
+install_time = "2026-09-17T12:42:28.573896334Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181240897"
+version = "r192"
+install_time = "2026-09-17T12:42:02.737093759Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181241501"
+version = "r66"
+install_time = "2026-09-17T12:41:49.332222107Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181241531"
+version = "r96"
+install_time = "2026-09-17T12:42:58.131907097Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181242114"
+version = "r261"
+install_time = "2026-09-17T12:41:42.185393025Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181242143"
+version = "r57"
+install_time = "2026-09-17T12:42:37.598635009Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "195662692"
+version = "2.4.27"
+install_time = "2026-09-17T12:43:21.846642085Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "211287257"
+version = "v1.6.31"
+install_time = "2026-09-17T12:43:29.366666062Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "313155439"
+version = "r49"
+install_time = "2026-09-17T12:41:08.248124636Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "315809051"
+version = "v101"
+install_time = "2026-09-17T12:45:20.123714087Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "379119807"
+version = "3.9.106"
+install_time = "2026-09-17T12:44:14.500318605Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "44074003"
+version = "12.1.0"
+install_time = "2026-09-17T12:43:37.792256225Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "564117101"
+version = "v82"
+install_time = "2026-09-17T12:44:55.979979031Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "575147193"
+version = "r31"
+install_time = "2026-09-17T12:42:10.134535265Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "708657"
+version = "11.2.8"
+install_time = "2026-09-17T12:43:58.182463205Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "799222606"
+version = "r19"
+install_time = "2026-09-17T12:41:26.889306057Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "831145022"
+version = "v112"
+install_time = "2026-09-17T12:44:37.449126057Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "99789256"
+version = "11.2.0.6"
+install_time = "2026-09-17T12:40:46.473299966Z"
+
+[[version_log]]
+pkg_source = "wowi"
+pkg_id = "7032"
+version = "v4.3.9-release"
+install_time = "2026-09-17T13:17:05.705361505Z"

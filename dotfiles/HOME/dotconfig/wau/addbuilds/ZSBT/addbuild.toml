@@ -1,0 +1,5 @@
+addname = "ZSBT"
+url = "https://github.com/Zorellion/ZSBT"
+makedepends = [ "git", "tar" ]
+flavors = [ "mainline" ]
+build = "build.sh"

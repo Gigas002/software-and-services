@@ -1,0 +1,4 @@
+addname = "Details"
+url = "https://github.com/Tercioo/Details-Damage-Meter"
+makedepends = [ "git", "tar" ]
+build = "build.sh"
