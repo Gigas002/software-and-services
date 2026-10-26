@@ -44,6 +44,7 @@ cargo-llvm-cov
 ccache
 chwd
 claude-code
+concord-bin
 cpupower
 cryptsetup
 deno
@@ -115,8 +116,6 @@ linux-cachyos
 linux-cachyos-gcc
 linux-cachyos-gcc-headers
 linux-cachyos-headers
-linux-cachyos-lts
-linux-cachyos-lts-headers
 linux-firmware
 logrotate
 lsb-release
@@ -225,6 +224,7 @@ vcmi
 ventoy-bin
 vkd3d-proton-mingw-git
 vulkan-radeon
+wau-git
 wayshot-git
 waysip-git
 wget
@@ -233,7 +233,6 @@ wild
 wine-cachyos
 wireless-regdb
 wireplumber
-wowup-cf-bin
 wpa_supplicant
 xdg-desktop-portal
 xdg-desktop-portal-gtk
