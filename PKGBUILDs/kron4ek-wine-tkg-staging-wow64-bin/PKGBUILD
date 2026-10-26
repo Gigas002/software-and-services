@@ -1,0 +1,52 @@
+# Maintainer: gigas002 <gigas002@pm.me>
+pkgname="kron4ek-wine-tkg-staging-wow64-bin"
+pkgver=11.20
+pkgrel=1
+pkgdesc="A compatibility layer for running Windows programs (WOW64 with TkG-Staging patches)"
+url="https://github.com/Kron4ek/Wine-Builds"
+license=('LGPL-2.1-or-later')
+arch=('x86_64')
+options=('!strip' '!debug')
+depends=(alsa-lib fontconfig freetype2 gnutls gst-plugins-base-libs libpcap libpulse libxcomposite libxcursor libxi libxinerama libxkbcommon libxrandr opencl-icd-loader pcsclite sdl2 unixodbc v4l-utils wayland desktop-file-utils libgphoto2 glibc)
+optdepends=(
+  'alsa-plugins: ALSA plugins (e.g. PipeWire/PulseAudio bridge)'
+  'gst-plugins-good: additional media codecs'
+  'gst-plugins-bad: additional media codecs'
+  'gst-plugins-ugly: additional media codecs'
+  'ffmpeg4.4: winedmo media demuxer'
+  'vulkan-icd-loader: Vulkan support (DXVK, vkd3d)'
+  'libxxf86vm: X11 video mode switching'
+  'libxrender: X11 render extension'
+  'libxfixes: X11 fixes extension'
+  'libusb: USB device passthrough'
+  'cups: printing support'
+  'sane: scanner support'
+  'krb5: Kerberos authentication'
+  'samba: NTLM authentication (ntlm_auth)'
+  'libcapi: ISDN CAPI support'
+  'perl: winemaker and function_grep.pl'
+  'wine-gecko: HTML rendering engine (MSHTML)'
+  'wine-mono: .NET Framework implementation'
+)
+provides=(
+  "wine=$pkgver"
+  "wine-staging=$pkgver"
+  "wine-wow64=$pkgver"
+)
+conflicts=(
+  "wine"
+  "wine-staging"
+  "wine-wow64"
+)
+source=("https://github.com/Kron4ek/Wine-Builds/releases/download/${pkgver}/wine-${pkgver}-staging-tkg-amd64-wow64.tar.xz")
+sha256sums=('fac3cabfb094b109f45ca6ee16eda43621b843c283243ea7e011dda581468744')
+
+package() {
+
+  ## Create usr directory
+  install -d "${pkgdir}/usr"
+
+  ## Install wine package (preserve symlinks, permissions and timestamps)
+  cp -a "${srcdir}/wine-${pkgver}-staging-tkg-amd64-wow64"/{bin,include,lib,share} "${pkgdir}/usr/"
+
+}
