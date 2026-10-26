@@ -1,0 +1,27 @@
+pkgbase = concord-client-git
+	pkgdesc = A feature-rich TUI client for Discord
+	pkgver = r996.gffa2edcc
+	pkgrel = 1
+	url = https://github.com/chojs23/concord
+	arch = x86_64
+	license = GPL-3.0-only
+	makedepends = git
+	makedepends = cargo
+	makedepends = clang
+	makedepends = cmake
+	makedepends = nasm
+	makedepends = pkgconf
+	depends = gcc-libs
+	depends = glibc
+	depends = alsa-lib
+	depends = libdrm
+	depends = libva
+	depends = libpipewire
+	depends = mesa
+	optdepends = xdg-desktop-portal: screen sharing and global push-to-talk shortcuts
+	provides = concord-client
+	conflicts = concord-client
+	source = concord::git+https://github.com/chojs23/concord.git
+	b2sums = SKIP
+
+pkgname = concord-client-git

@@ -1,0 +1,49 @@
+# Maintainer: Gigas002 <gigas002@pm.me>
+
+_pkgname="concord"
+pkgname="${_pkgname}-client-git"
+pkgver=r996.gffa2edcc
+pkgrel=1
+pkgdesc="A feature-rich TUI client for Discord"
+arch=('x86_64')
+url="https://github.com/chojs23/$_pkgname"
+license=('GPL-3.0-only')
+depends=(gcc-libs glibc alsa-lib libdrm libva libpipewire mesa)
+makedepends=(git cargo clang cmake nasm pkgconf)
+optdepends=('xdg-desktop-portal: screen sharing and global push-to-talk shortcuts')
+provides=(concord)
+conflicts=(concord)
+source=("${_pkgname}::git+$url.git")
+b2sums=('SKIP')
+
+pkgver() {
+  cd "${_pkgname}"
+  printf "r%s.g%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+prepare() {
+  cd "${_pkgname}"
+  export RUSTUP_TOOLCHAIN=stable
+  cargo fetch --locked --target "$(rustc --print host-tuple)"
+}
+
+build() {
+  cd "${_pkgname}"
+  export RUSTUP_TOOLCHAIN=stable
+  export CARGO_TARGET_DIR=target
+  export RUSTFLAGS="${RUSTFLAGS} --remap-path-prefix=${srcdir}=/build"
+  # thorvg-sys and other vendored C/C++ deps honour CFLAGS/CXXFLAGS; with LTO in them the
+  # objects are emitted as GIMPLE that rustc/lld can't resolve, breaking the link with
+  # "undefined symbol: tvg_*". Strip LTO flags for this build only.
+  local _strip_lto='s/-flto[^ ]*//g; s/-f(no-)?fat-lto-objects//g'
+  export CFLAGS=$(sed -E "$_strip_lto" <<< "$CFLAGS")
+  export CXXFLAGS=$(sed -E "$_strip_lto" <<< "$CXXFLAGS")
+  export LDFLAGS=$(sed -E "$_strip_lto" <<< "$LDFLAGS")
+  cargo build --frozen --release
+}
+
+package() {
+  cd "${_pkgname}"
+  install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/concord"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
