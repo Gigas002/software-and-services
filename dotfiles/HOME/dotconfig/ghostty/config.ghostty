@@ -15,3 +15,8 @@ copy-on-select = true
 theme = Sweet
 
 confirm-close-surface = false
+
+env = EDITOR=helix
+env = VISUAL=zeditor
+env = DIFFPROG=zeditor --wait --diff
+env = MICRO_TRUECOLOR=1
