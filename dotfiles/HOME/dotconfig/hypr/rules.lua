@@ -184,6 +184,24 @@ hl.window_rule({
 
 
 -- ┌─────────────────────────────────────────┐
+-- │  Game rules                             │
+-- └─────────────────────────────────────────┘
+hl.window_rule({
+    name           = "windowrule-wow-float",
+    match          = { title = "^(World of Warcraft)$" },
+    float          = false,
+    suppress_event = "maximize fullscreen",
+    no_anim        = true,
+})
+
+hl.window_rule({
+    name = "windowrule-battle-net",
+    match = { title = "^(Battle.net)$" },
+    float = true,
+})
+
+
+-- ┌─────────────────────────────────────────┐
 -- │  Layer rules                            │
 -- │  https://wiki.hypr.land/Configuring/Basics/Window-Rules/#layer-rules
 -- └─────────────────────────────────────────┘
