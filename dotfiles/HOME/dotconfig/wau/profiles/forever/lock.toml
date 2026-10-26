@@ -1,0 +1,121 @@
+version = 1
+
+[[package]]
+source = "git"
+id = "ForeverTools"
+slug = "ForeverTools"
+name = "ForeverTools"
+description = ""
+url = "https://github.com/krilar1/ForeverTools"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/ForeverTools/r19.753f8b5.zip"
+date_published = "2026-10-23T18:41:49Z"
+version = "r19.753f8b5"
+changelog_url = "data:,753f8b5%20ForeverTools%201.0.0%0Adbf68a1%200.90.0%3A%20diminishing%20returns%2C%20shorter%20texts%2C%20section%20headings%2C%20right-click%20menus%0A4f1f1a1%20ForeverTools%200.80.0%3A%20Bags%2C%20PvP%20awareness%2C%20guided%20tour%2C%20new%20Macros%20window%0A1c5b36e%20ForeverTools%200.70.0%0A704030b%20ForeverTools%200.60.0%0A5afab06%20ForeverTools%200.50.0%0A32eb946%20ForeverTools%200.40.0%0A6f44642%20ForeverTools%200.30.0%0Ab542330%20ForeverTools%200.20.0%0A3d80b4b%20Release%200.15.0%0A"
+folders = ["ForeverTools"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "git"
+id = "HighFidelityWorldMap"
+slug = "HighFidelityWorldMap"
+name = "HighFidelityWorldMap"
+description = ""
+url = "https://github.com/Sectimus/HighFidelityWorldMap"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/HighFidelityWorldMap/r250.400e345.zip"
+date_published = "2026-10-23T14:57:28Z"
+version = "r250.400e345"
+changelog_url = "data:,400e345%20Add%20custom%20POI%20labels%20and%20area%20label%20options%20%28%2329%29%0A2fd5a34%20Still%20include%20hybrid%20map%20background%20with%20disabled%20fow%0A12e3f55%20Refactor%20CASC%20file%20fetching%20and%20caching%20logic%0A894d6bf%20Allow%20custom%20fonts%20on%20area%20labels%0A528a2db%20Merge%20pull%20request%20%2328%20from%20Sectimus/feat/16-underground-hubs%0A664f30e%20Generate%20README%20from%20docs%0A204f850%20Feat/16%20Underground%20Hubs%20%28%2325%29%0A2d5d07f%20Change%20layer_leaves%20to%20incorporate%20floor%20heights%20and%20adjust%20sublevel%20calculation%0Addd5114%20Update%20default%20configurations%20for%20city%20map%20background%20and%20district%20area%20label%20behavior%0A2efd683%20Add%20support%20for%20city%20districts%20in%20area%20labels%20and%20update%20related%20configurations%0A"
+folders = ["HighFidelityWorldMap"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1330531373"
+slug = "adaptvx/lorewalker"
+name = "Lorewalker"
+description = "A modern questing experience."
+url = "https://github.com/Adaptvx/Lorewalker"
+download_url = "https://api.github.com/repos/Adaptvx/Lorewalker/releases/assets/658392988"
+date_published = "2026-10-20T05:42:20Z"
+version = "0.0.8"
+changelog_url = "data:,%23%23%23%20Dialogue%0D%0A-%20%2ANew%2A%20Quest%20Preview%20Tooltip%0D%0A%20%20-%20Displays%20quest%20information%20in%20a%20tooltip%20when%20hovering%20over%20quest%20options.%0D%0A-%20Added%20text%20playback%20to%20the%20Dialog%20Frame.%0D%0A%0D%0A%23%23%23%20Effects%0D%0A-%20Your%20current%20experience%20is%20now%20visible%20when%20Hide%20UI%20is%20enabled.%0D%0A%0D%0A%23%23%23%20Translation%0D%0A-%20Added%20frFR%20localization%20%28Courtesy%20of%20Brainc3ll%21%29.%0D%0A%0D%0A%23%23%23%20Supported%20Addons%0D%0A-%20Added%20support%20for%20%5BTotal%20RP%203%3A%20RP%20Name%20in%20Quest%20Text%5D%28https%3A//www.curseforge.com/wow/addons/trp3-rpnameinquests%29."
+folders = ["Lorewalker"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1406354078"
+slug = "svengabr/foreverlootsparkles"
+name = "ForeverLootSparkles"
+description = "WoW Forever addon: always show the sparkle effect on lootable quest items"
+url = "https://github.com/svengabr/ForeverLootSparkles"
+download_url = "https://api.github.com/repos/svengabr/ForeverLootSparkles/releases/assets/662016713"
+date_published = "2026-10-21T09:37:02Z"
+version = "v1.3.0"
+changelog_url = "data:,-%20Corpses%20that%20still%20hold%20loot%20for%20you%20sparkle%20as%20you%20approach%20them%20after%20the%20fight%2C%20bosses%20included%20%28the%20game%27s%20own%20loot%20sparkle%20left%20boss%20corpses%20out%29.%20New%20checkbox%20%22Corpses%20with%20loot%22%20%28on%3B%20off%20if%20you%20had%20switched%20all%20sparkles%20off%20before%29.%0A-%20Fewer%20Lua%20errors%20blaming%20ForeverLootSparkles%20%28%22GetAuraDataByIndex%28%29%3A%20Auras%20cannot%20be%20accessed%20when%20secret%20while%20tainted%22%2C%20seen%20on%20level%20up%29%3A%20the%20soft%20targeting%20console%20variables%20are%20now%20only%20written%20when%20their%20value%20actually%20changes.%0A%0A"
+folders = ["ForeverLootSparkles"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1418025059"
+slug = "krelock/nodesight"
+name = "NodeSight"
+description = "See what every herb and ore on your minimap is, and make the ones near you sparkle. WoW Forever addon"
+url = "https://github.com/Krelock/NodeSight"
+download_url = "https://api.github.com/repos/Krelock/NodeSight/releases/assets/660539993"
+date_published = "2026-10-20T21:29:48Z"
+version = "v1.4.1"
+changelog_url = "data:,%23%23%20NodeSight%201.4.1%0A%0A%23%23%23%20New%0A-%20%2A%2ASkill%20colors%20on%20herbs%20and%20ore%2A%2A%20%28always%20on%29.%20Hover%20a%20herb%20or%20ore%20in%20the%20world%20to%20see%20the%20skill%20it%20needs%2C%20colored%20like%20on%20the%20minimap%0A-%20%2A%2AKeep%20the%20game%27s%20icons%2A%2A%20%28off%20by%20default%29.%20The%20game%27s%20own%20icon%20stays%20over%20the%20herb%2C%20ore%2C%20chest%20or%20corpse%20you%20can%20interact%20with%20while%20sparkles%20are%20on.%20Turn%20it%20on%20under%20%2A%2ASparkles%2A%2A%0A%0A%23%23%23%20Changes%0A-%20%2A%2ASwitch%20between%20herbs%20and%20ore%2A%2A.%20No%20more%20click%20each%20time%20it%20switches%0A"
+folders = ["NodeSight"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "ForeverTools"
+version = "r19.753f8b5"
+install_time = "2026-10-26T15:05:40.503754153Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "HighFidelityWorldMap"
+version = "r250.400e345"
+install_time = "2026-10-26T15:16:12.612031646Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1330531373"
+version = "0.0.8"
+install_time = "2026-10-26T15:01:42.118235875Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1406354078"
+version = "v1.3.0"
+install_time = "2026-10-26T15:05:19.214358912Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1418025059"
+version = "v1.4.1"
+install_time = "2026-10-26T15:04:13.321718966Z"

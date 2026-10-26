@@ -1,0 +1,5 @@
+addname = "HighFidelityWorldMap"
+url = "https://github.com/Sectimus/HighFidelityWorldMap"
+makedepends = ["git", "gh", "unzip"]
+flavors = ["forever"]
+build = "build.sh"

@@ -1,0 +1,5 @@
+addname = "ForeverTools"
+url = "https://github.com/krilar1/ForeverTools"
+makedepends = ["git", "tar"]
+flavors = ["forever"]
+build = "build.sh"
