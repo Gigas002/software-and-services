@@ -1,0 +1,15 @@
+[[game]]
+name = "azeroth-survivors"
+exe = "~/games/AzerothSurvivors/AzerothSurvivors.exe"
+profile = "proton_cachyos"
+
+[[game]]
+name = "battlenet"
+exe = "~/games/Battle.net/Battle.net Launcher.exe"
+profile = "proton_cachyos"
+env = { PROTON_ENABLE_WAYLAND = "0" }
+
+[[game]]
+name = "uncanny-cat-golf"
+exe = "~/games/uncanny/Uncanny Cat Golf.exe"
+profile = "proton_cachyos"

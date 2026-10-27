@@ -1,0 +1,15 @@
+# Migrated from Lutris (wine runner, version proton-cachyos-native).
+name = "proton_cachyos"
+runner = "umu"
+prefix = "~/games/proton_prefix"
+
+[env]
+PROTON_FSR4_UPGRADE = "0"
+PROTON_USE_OPTISCALER = "0"
+PROTON_USE_WOW64 = "1"
+PROTON_ENABLE_WAYLAND = "1"
+MESA_LOADER_DRIVER_OVERRIDE = "zink"
+PROTON_NO_WM_DECORATIONS = "0"
+
+[umu]
+proton = "/usr/share/steam/compatibilitytools.d/proton-cachyos-native"
