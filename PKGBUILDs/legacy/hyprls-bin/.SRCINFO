@@ -1,0 +1,16 @@
+pkgbase = hyprls-bin
+	pkgdesc = A LSP server for Hyprland config files
+	pkgver = 0.7.0
+	pkgrel = 1
+	url = https://github.com/hyprland-community/hyprls
+	arch = x86_64
+	license = MIT
+	provides = hyprls
+	noextract = hyprls-0.7.0.zip
+	options = !strip
+	source = hyprls-0.7.0.zip::https://github.com/hyprland-community/hyprls/releases/download/v0.7.0/hyprls.zip
+	source = hyprls.sh
+	sha256sums = 9e5c7b1284f1ee57452ed425204a3de8b5b408b6b79579600937c29b5e106fc8
+	sha256sums = f20019b45504cba9540a10c5b00b6eae552b4db2b64843b443003fe5a1bded39
+
+pkgname = hyprls-bin
