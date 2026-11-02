@@ -9,7 +9,7 @@ local mainMod        = "SUPER"
 -- Application assignments
 local term           = "alacritty"
 local editor         = "zeditor"
-local file_mgr       = "ghostty -e yazi"
+local file_mgr       = "alacritty -e yazi"
 local browser        = "firefox"
 local sysmon         = "btm"
 local launcher       = "tofi"
@@ -19,7 +19,7 @@ local lock           = "hyprlock"
 local bar            = "killall abar || abar --config ~/.config/abar/hyprland_config.toml"
 local selector       = "waysip -d --freeze"
 local screenshot     = "wayshot -g \"$(" .. selector .. ")\" | wl-copy"
-local screenshot_web = "wayshot -g \"$(" .. selector .. ")\" --encoding jpg | wl-copy"
+local screenshot_web = "wayshot -g \"$(" .. selector .. ")\" --encoding png | wl-copy"
 
 -- ┌─────────────────────────────────────────┐
 -- │  Window / session actions               │
