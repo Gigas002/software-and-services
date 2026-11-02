@@ -1,0 +1,25 @@
+pkgbase = tgt-gigas-git
+	pkgdesc = A simple TUI for Telegram
+	pkgver = r988.gdaad8a5
+	pkgrel = 1
+	url = https://github.com/Gigas002/tgt
+	arch = x86_64
+	arch = aarch64
+	license = MIT OR Apache-2.0
+	makedepends = cargo
+	makedepends = git
+	makedepends = pkgconf
+	depends = gcc-libs
+	depends = glibc
+	depends = dbus
+	depends = telegram-tdlib
+	optdepends = xdg-utils: open media with default applications
+	optdepends = gnome-keyring: Secret Service provider for the encrypted TDLib database
+	optdepends = keepassxc: alternative Secret Service provider
+	optdepends = notification-daemon: desktop notifications (or any other notification server)
+	provides = tgt
+	conflicts = tgt
+	source = tgt::git+https://github.com/Gigas002/tgt.git
+	sha256sums = SKIP
+
+pkgname = tgt-gigas-git
