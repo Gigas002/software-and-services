@@ -1,0 +1,60 @@
+# Maintainer: Gigas002 <gigas002@pm.me>
+
+_pkgname=alacritty
+pkgname=alacritty-kitty-git
+pkgver=0.18.0.dev.r2498.g067f901b
+pkgrel=1
+pkgdesc='A cross-platform, GPU-accelerated terminal emulator (with kitty graphics protocol support)'
+arch=('x86_64' 'aarch64')
+url='https://github.com/Gigas002/alacritty'
+license=('Apache-2.0' 'MIT')
+depends=('freetype2' 'fontconfig' 'gcc-libs' 'glibc' 'libxi' 'libxcursor' 'libxkbcommon' 'libxkbcommon-x11' 'libxrandr')
+makedepends=('cargo' 'cmake' 'desktop-file-utils' 'git' 'libxcb' 'scdoc')
+optdepends=('ncurses: for alacritty terminfo database')
+provides=('alacritty')
+conflicts=('alacritty')
+source=("$_pkgname::git+$url.git#branch=feature/kitty-protocol-graphics")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$_pkgname"
+  local _ver
+  _ver=$(sed -n 's/^version = "\(.*\)"/\1/p' alacritty/Cargo.toml | head -1 | tr - .)
+  printf "%s.r%s.g%s" "$_ver" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+prepare() {
+  cd "$_pkgname"
+  export RUSTUP_TOOLCHAIN=stable
+  cargo fetch --locked --target "$(rustc --print host-tuple)"
+}
+
+build() {
+  cd "$_pkgname"
+  export RUSTUP_TOOLCHAIN=stable
+  export CARGO_TARGET_DIR=target
+  CARGO_INCREMENTAL=0 cargo build --release --frozen -p "$_pkgname"
+}
+
+package() {
+  cd "$_pkgname"
+
+  install -Dm755 "target/release/$_pkgname" "$pkgdir/usr/bin/$_pkgname"
+
+  desktop-file-install -m 644 --dir "$pkgdir/usr/share/applications/" extra/linux/Alacritty.desktop
+  install -Dm644 extra/linux/org.alacritty.Alacritty.appdata.xml -t "$pkgdir/usr/share/metainfo/"
+  install -Dm644 extra/logo/compat/alacritty-term.svg "$pkgdir/usr/share/pixmaps/Alacritty.svg"
+
+  local _page _sec
+  for _page in extra/man/*.scd; do
+    _sec=${_page%.scd}; _sec=${_sec##*.}
+    scdoc < "$_page" | install -Dm644 /dev/stdin \
+      "$pkgdir/usr/share/man/man$_sec/$(basename "${_page%.scd}")"
+  done
+
+  install -Dm644 extra/completions/alacritty.bash "$pkgdir/usr/share/bash-completion/completions/$_pkgname"
+  install -Dm644 extra/completions/_alacritty -t "$pkgdir/usr/share/zsh/site-functions/"
+  install -Dm644 extra/completions/alacritty.fish -t "$pkgdir/usr/share/fish/vendor_completions.d/"
+
+  install -Dm644 LICENSE-APACHE LICENSE-MIT -t "$pkgdir/usr/share/licenses/$pkgname/"
+}

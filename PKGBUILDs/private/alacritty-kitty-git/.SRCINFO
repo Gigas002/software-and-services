@@ -1,0 +1,31 @@
+pkgbase = alacritty-kitty-git
+	pkgdesc = A cross-platform, GPU-accelerated terminal emulator (with kitty graphics protocol support)
+	pkgver = 0.18.0.dev.r2498.g067f901b
+	pkgrel = 1
+	url = https://github.com/Gigas002/alacritty
+	arch = x86_64
+	arch = aarch64
+	license = Apache-2.0
+	license = MIT
+	makedepends = cargo
+	makedepends = cmake
+	makedepends = desktop-file-utils
+	makedepends = git
+	makedepends = libxcb
+	makedepends = scdoc
+	depends = freetype2
+	depends = fontconfig
+	depends = gcc-libs
+	depends = glibc
+	depends = libxi
+	depends = libxcursor
+	depends = libxkbcommon
+	depends = libxkbcommon-x11
+	depends = libxrandr
+	optdepends = ncurses: for alacritty terminfo database
+	provides = alacritty
+	conflicts = alacritty
+	source = alacritty::git+https://github.com/Gigas002/alacritty.git#branch=feature/kitty-protocol-graphics
+	sha256sums = SKIP
+
+pkgname = alacritty-kitty-git
