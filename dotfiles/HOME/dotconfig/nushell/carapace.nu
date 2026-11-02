@@ -1,8 +1,40 @@
 $env.PATH = ($env.PATH | split row (char esep) | where { $in != "/home/gigas/.config/carapace/bin" } | prepend "/home/gigas/.config/carapace/bin")
 
-def --env get-env [name] { $env | get $name }
-def --env set-env [name, value] { load-env { $name: $value } }
-def --env unset-env [name] { hide-env $name }
+# nushell passes a place record since 0.116, the element text since 0.115 and only the token before that
+def _carapace-env-span [command: string, place: any] {
+  let described = ($place | describe)
+  let parts = (if $described =~ "record" {
+      ($place.command? | default [])
+    } else if $described =~ "list" {
+      $place
+    } else {
+      ($place | split row " ")
+    })
+
+  if ($parts | is-empty) {
+    [$command, ""]
+  } else if (($parts | length) > 1) and (($parts | first) == $command) {
+    $parts
+  } else {
+    [$command, ...$parts]
+  }
+}
+
+def _carapace-env-complete [command: string, place: any] {
+  let spans = (_carapace-env-span $command $place)
+
+  with-env { CARAPACE_SHELL: "nushell" } {
+    carapace $spans.0 nushell ...$spans | from json
+  }
+}
+
+def _carapace-get-env [place?] { _carapace-env-complete get-env $place }
+def _carapace-set-env [place?] { _carapace-env-complete set-env $place }
+def _carapace-unset-env [place?] { _carapace-env-complete unset-env $place }
+
+def --env get-env [name: any@_carapace-get-env] { $env | get $name }
+def --env set-env [name: any@_carapace-set-env, value: any@_carapace-set-env] { load-env { $name: $value } }
+def --env unset-env [name: any@_carapace-unset-env] { hide-env $name }
 
 let carapace_completer = {|place|
   # backwards compatible workaround for positional completer input, see nushell #18791
