@@ -1,0 +1,42 @@
+[app]
+mouse_support = true
+paste_support = true
+frame_rate = 120.0
+show_status_bar = true
+show_title_bar = true
+use_emoji_icons = true
+download_dir = "~/downloads/Telegram Desktop"
+
+[logger]
+level = "info"
+rotation = "daily"
+keep = 7
+
+[telegram]
+use_file_database = true
+use_chat_info_database = true
+use_message_database = true
+system_language_code = "en"
+device_model = "Desktop"
+log_verbosity = 2
+log_redirect_stderr = false
+
+[credentials]
+store = "auto"
+
+[notifications]
+enabled = true
+show_preview = true
+sound = "message-new-instant"
+open_on_click = true
+unread_in_title = true
+
+[privacy]
+appear_online = true
+send_typing = true
+
+[media]
+auto_download_previews = true
+max_preview_size_mb = 8
+cache_max_size_mb = 1024
+cache_max_age_days = 0
