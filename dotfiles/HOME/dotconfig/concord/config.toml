@@ -1,0 +1,12 @@
+[display]
+show_avatars = false
+circular_avatars = true
+
+[credentials]
+store = "keychain"
+
+[presence]
+share_rich_presence = true
+
+[updates]
+check_for_updates = false
