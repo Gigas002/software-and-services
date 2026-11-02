@@ -67,11 +67,15 @@ hl.config({
         active_opacity   = 0.85,
         inactive_opacity = 0.85,
         dim_inactive     = true,
-        dim_strength    = 0.15,
+        dim_strength     = 0.15,
         dim_special      = 0.3,
         -- border_part_of_window = true,
 
         blur             = {
+            -- 0.57 variants: kawase frost ripple drops water fluid_jar prism
+            --                heat_shimmer acrylic aurora haze
+            variant       = "ripple",
+            -- ripple = { strength = 30, radius = 400, width = 32, duration = 0.45 },
             size          = 6,
             passes        = 3,
             -- xray = false,
@@ -80,9 +84,24 @@ hl.config({
             input_methods = true,
         },
 
-        shadow = {
+        shadow           = {
             enabled = false,
             sharp = true,
+        },
+
+        -- Inner glow (0.57+), tinted with the border gradients at low alpha
+        glow             = {
+            enabled        = true,
+            range          = 8,
+            render_power   = 3,
+            color          = { colors = { "#c74ded55", "#ed254e55" }, angle = 45 },
+            color_inactive = { colors = { "#00c1e422", "#7cb7ff22" }, angle = 45 },
+        },
+
+        -- Jelly deformation while moving/resizing (0.57+)
+        wobble           = {
+            enabled   = true,
+            intensity = 0.15,
         },
     },
 })

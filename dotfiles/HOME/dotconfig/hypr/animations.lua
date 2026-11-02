@@ -7,7 +7,7 @@
 -- ── Curves ────────────────────────────────────────────────────────────────
 
 -- Spring: snappy, slightly elastic window motion
-hl.curve("snap", { type = "spring", mass = 1, stiffness = 120, dampening = 18 })
+hl.curve("snap", { type = "spring", mass = 1, stiffness = 120, damping = 18 })
 
 -- Bezier: smooth near-linear ease for fades / workspaces (subtle, not boring)
 hl.curve("almostLinear", { type = "bezier", points = { { 0.5, 0.5 }, { 0.75, 1.0 } } })

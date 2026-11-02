@@ -111,9 +111,11 @@ hl.window_rule({
 
 -- Force full opacity for everything on workspace 9 (e.g. gaming workspace)
 hl.window_rule({
-    name    = "windowrule-ignore-opacity",
-    match   = { workspace = 9 },
-    opacity = "1.0 override 1.0 override",
+    name      = "windowrule-ignore-opacity",
+    match     = { workspace = 9 },
+    opacity   = "1.0 override 1.0 override",
+    no_glow   = true,
+    no_wobble = true,
 })
 
 
@@ -192,6 +194,8 @@ hl.window_rule({
     float          = false,
     suppress_event = "maximize fullscreen",
     no_anim        = true,
+    no_glow        = true,
+    no_wobble      = true,
 })
 
 hl.window_rule({

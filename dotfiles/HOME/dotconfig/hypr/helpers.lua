@@ -15,6 +15,7 @@ local ACTIVE_OPACITY   = 0.85
 local INACTIVE_OPACITY = 0.85
 local DIM_INACTIVE     = true
 local DIM_STRENGTH     = 0.15
+local GLOW_ENABLED     = true
 
 
 -- ── Internal state ────────────────────────────────────────────────────────
@@ -47,7 +48,7 @@ local function apply_normal(ws_id)
     })
 end
 
--- Opacity and dim are global config values — not supported by workspace rules.
+-- Opacity, dim and glow are global config values — not supported by workspace rules.
 -- They are snapped to the active workspace's state on every workspace switch.
 local function apply_opacity_dim_borderless()
     hl.config({
@@ -55,6 +56,7 @@ local function apply_opacity_dim_borderless()
             active_opacity   = 1.0,
             inactive_opacity = 1.0,
             dim_inactive     = false,
+            glow             = { enabled = false },
         },
     })
 end
@@ -66,6 +68,7 @@ local function apply_opacity_dim_normal()
             inactive_opacity = INACTIVE_OPACITY,
             dim_inactive     = DIM_INACTIVE,
             dim_strength     = DIM_STRENGTH,
+            glow             = { enabled = GLOW_ENABLED },
         },
     })
 end
@@ -74,7 +77,7 @@ end
 -- ── Public: borderless toggle ─────────────────────────────────────────────
 
 --- Toggle borderless mode on the **active workspace only**.
---- First press:  strip gaps, borders, rounding, opacity and dim.
+--- First press:  strip gaps, borders, rounding, opacity, dim and glow.
 --- Second press: restore all theme values for that workspace.
 --- Bind: SUPER + H
 function M.toggle_borderless()
