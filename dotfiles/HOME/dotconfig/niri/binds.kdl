@@ -12,7 +12,7 @@ binds {
 
     // Applications
     Mod+T { spawn "alacritty"; }
-    Mod+E { spawn "ghostty" "-e" "yazi"; }
+    Mod+E { spawn "alacritty" "-e" "yazi"; }
     Mod+C { spawn "zeditor"; }
     Mod+F { spawn "firefox"; }
     Ctrl+Shift+Escape { spawn "alacritty" "-e" "btm"; }
