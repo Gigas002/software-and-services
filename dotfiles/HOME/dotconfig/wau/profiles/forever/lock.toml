@@ -25,10 +25,10 @@ slug = "HighFidelityWorldMap"
 name = "HighFidelityWorldMap"
 description = ""
 url = "https://github.com/Sectimus/HighFidelityWorldMap"
-download_url = "file:///home/gigas/.cache/wau/git/git-build/HighFidelityWorldMap/r250.400e345.zip"
-date_published = "2026-10-23T14:57:28Z"
-version = "r250.400e345"
-changelog_url = "data:,400e345%20Add%20custom%20POI%20labels%20and%20area%20label%20options%20%28%2329%29%0A2fd5a34%20Still%20include%20hybrid%20map%20background%20with%20disabled%20fow%0A12e3f55%20Refactor%20CASC%20file%20fetching%20and%20caching%20logic%0A894d6bf%20Allow%20custom%20fonts%20on%20area%20labels%0A528a2db%20Merge%20pull%20request%20%2328%20from%20Sectimus/feat/16-underground-hubs%0A664f30e%20Generate%20README%20from%20docs%0A204f850%20Feat/16%20Underground%20Hubs%20%28%2325%29%0A2d5d07f%20Change%20layer_leaves%20to%20incorporate%20floor%20heights%20and%20adjust%20sublevel%20calculation%0Addd5114%20Update%20default%20configurations%20for%20city%20map%20background%20and%20district%20area%20label%20behavior%0A2efd683%20Add%20support%20for%20city%20districts%20in%20area%20labels%20and%20update%20related%20configurations%0A"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/HighFidelityWorldMap/r264.801ff7b.zip"
+date_published = "2026-10-30T13:25:59Z"
+version = "r264.801ff7b"
+changelog_url = "data:,801ff7b%20Add%20/hfwm%20issue%20settings%20dialog%20and%20require%20it%20in%20bug%20reports%20%28%2321%29%0Ada0612b%20Merge%20branch%20%27poi%27%0A400e345%20Add%20custom%20POI%20labels%20and%20area%20label%20options%20%28%2329%29%0A79073aa%20Add%20sound%20effects%20for%20cave%20window%20visibility%20changes%0Abd76e23%20Update%20configuration%20for%20area%20labels%3A%20enable%20movable%20toggle%2C%20adjust%20district%20label%20scale%2C%20and%20modify%20uppercase%20settings%20for%20POIs%0A543f4df%20Fix%20subzone%20label%20visibility%20under%20Fog%20of%20War%20conditions%0A83f2963%20Remove%20%22Venerous%20Ale%22%20point%20of%20interest%20from%20custom%20labels%0A48e16ea%20Add%20support%20for%20hiding%20custom%20labels%20and%20update%20coordinates%20for%20points%20of%20interest%0A9ccd4a4%20Enable%20inclusion%20of%20custom%20area%20labels%20for%20all%20types%20in%20configuration%0Af817c83%20Update%20custom%20label%20handling%20to%20allow%20shadowing%20of%20area%20labels%20and%20clarify%20documentation%0A"
 folders = ["HighFidelityWorldMap"]
 
 [package.options]
@@ -48,6 +48,85 @@ date_published = "2026-10-20T05:42:20Z"
 version = "0.0.8"
 changelog_url = "data:,%23%23%23%20Dialogue%0D%0A-%20%2ANew%2A%20Quest%20Preview%20Tooltip%0D%0A%20%20-%20Displays%20quest%20information%20in%20a%20tooltip%20when%20hovering%20over%20quest%20options.%0D%0A-%20Added%20text%20playback%20to%20the%20Dialog%20Frame.%0D%0A%0D%0A%23%23%23%20Effects%0D%0A-%20Your%20current%20experience%20is%20now%20visible%20when%20Hide%20UI%20is%20enabled.%0D%0A%0D%0A%23%23%23%20Translation%0D%0A-%20Added%20frFR%20localization%20%28Courtesy%20of%20Brainc3ll%21%29.%0D%0A%0D%0A%23%23%23%20Supported%20Addons%0D%0A-%20Added%20support%20for%20%5BTotal%20RP%203%3A%20RP%20Name%20in%20Quest%20Text%5D%28https%3A//www.curseforge.com/wow/addons/trp3-rpnameinquests%29."
 folders = ["Lorewalker"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1360371543@books-audio-ruRU"
+slug = "rusty-key/spoken-wow@books-audio-ruRU"
+name = "spoken-wow (books-audio-ruRU)"
+description = "Voiced quest dialogue, zone lore and in-world books for World of Warcraft Forever/Classic — addons, the site behind them, and the pipelines that generate the audio."
+url = "https://github.com/rusty-key/spoken-wow"
+download_url = "https://api.github.com/repos/rusty-key/spoken-wow/releases/assets/592617606"
+date_published = "2026-09-27T09:48:10Z"
+version = "books-audio-ruRU/v2.0.0"
+changelog_url = "data:,%23%23%202.0.0%20%E2%80%94%20books-audio-ruRU%20%E2%80%94%202026-09-27%0A%0A-%20%2A%2AThe%20first%20Russian%20sound%20pack%2A%2A%2C%20%60SpokenBooksAudio_ruRU%60%3A%201135%20pages%20read%20aloud%20from%0A%20%20the%20game%27s%20own%20Russian%20text.%20It%20plays%20on%20a%20ruRU%20client%2C%20and%20installs%20beside%0A%20%20the%20English%20pack%20rather%20than%20over%20it.%20Needs%20Spoken%20Books%202.1.0%20or%20later.%0A%0A%2A%2AThis%20pack%20is%20data%20only.%2A%2A%20It%20needs%20%5Bspoken-books%5D%28https%3A//addons.wago.io/addons/spoken-books%29%2C%20which%20plays%20it%3B%20installed%20alone%20it%20does%20nothing.%0A%0AReleased%20here%20because%20the%20pack%20is%20426M%3A%20Wago%27s%20upload%20endpoint%20refuses%20a%20file%20this%20size%2C%20and%20it%20is%20not%20on%20CurseForge%20yet."
+folders = ["SpokenBooksAudio_ruRU"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1360371543@quests-audio-ruRU"
+slug = "rusty-key/spoken-wow@quests-audio-ruRU"
+name = "spoken-wow (quests-audio-ruRU)"
+description = "Voiced quest dialogue, zone lore and in-world books for World of Warcraft Forever/Classic — addons, the site behind them, and the pipelines that generate the audio."
+url = "https://github.com/rusty-key/spoken-wow"
+download_url = "https://api.github.com/repos/rusty-key/spoken-wow/releases/assets/605106677"
+date_published = "2026-10-02T07:55:52Z"
+version = "quests-audio-ruRU/v0.0.3"
+changelog_url = "data:,%23%23%200.0.3%20%E2%80%94%20quests-audio-ruRU%20%E2%80%94%202026-10-02%0A%0A-%20The%20pack%20loads%20on%20the%20Forever%20client%20again.%20Its%20update%20on%202%20October%20marked%20it%0A%20%20%2A%2AIncompatible%2A%2A%2C%20and%20Spoken%20Quests%20said%20no%20usable%20sound%20packs%20were%20loaded.%20The%20audio%20is%0A%20%20unchanged%3B%20install%20over%20the%20previous%20version.%0A%0A%2A%2AThis%20pack%20is%20data%20only.%2A%2A%20It%20needs%20%5Bspoken-quests%5D%28https%3A//addons.wago.io/addons/spoken-quests%29%2C%20which%20plays%20it%3B%20installed%20alone%20it%20does%20nothing.%0A%0AReleased%20here%20because%20the%20pack%20is%201.2G%3A%20Wago%27s%20upload%20endpoint%20refuses%20a%20file%20this%20size%2C%20and%20it%20is%20not%20on%20CurseForge%20yet."
+folders = ["SpokenQuestsAudio_ruRU"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1360371543@spoken/"
+slug = "rusty-key/spoken-wow@spoken/"
+name = "spoken-wow (spoken)"
+description = "Voiced quest dialogue, zone lore and in-world books for World of Warcraft Forever/Classic — addons, the site behind them, and the pipelines that generate the audio."
+url = "https://github.com/rusty-key/spoken-wow"
+download_url = "https://api.github.com/repos/rusty-key/spoken-wow/releases/assets/696196859"
+date_published = "2026-10-31T18:52:15Z"
+version = "spoken/v3.7.0"
+changelog_url = "data:,%23%23%203.7.0%20%E2%80%94%202026-10-31%0A%0A-%20%2A%2AWorld%20Chatter%20voices%20what%20people%20say%20out%20loud%20in%20the%20world.%2A%2A%20Guards%2C%20farmers%20and%20others%20who%20talk%0A%20%20without%20a%20quest%20are%20matched%20by%20who%20says%20what%2C%20and%20the%20line%20plays%20when%20a%20voice%20pack%20has%20it%2C%20only%20when%0A%20%20nothing%20else%20is%20being%20read.%20The%20game%27s%20chat%20bubble%20stays%20the%20only%20thing%20on%20screen%2C%20and%20lights%20the%20word%0A%20%20being%20read.%20It%20is%20a%20part%20of%20its%20own%20on%20Spoken%27s%20page%2C%20with%20a%20switch%20and%20a%20page%2C%20and%20%60/spq%20chatter%60%0A%20%20replays%20an%20NPC%27s%20lines.%20%2A%28%5BNucabe%5D%28https%3A//github.com/Nucabe%29%29%2A%0A-%20%2A%2ASpoken%20NPCs%20is%20now%20Spoken%20Bosses.%2A%2A%20The%20module%20has%20a%20new%20name%20and%20folder%2C%20%60Spoken_Bosses%60%2C%20so%0A%20%20the%20bosses%20you%20found%20and%20the%20stories%20already%20told%20start%20over.%20An%20old%20%60Spoken_NPCs%60%20folder%20left%0A%20%20beside%20it%20is%20switched%20off%2C%20and%20Spoken%20offers%20the%20reload%20that%20finishes%20it.%0A%20%20%2A%28%5Brusty-key%5D%28https%3A//github.com/rusty-key%29%29%2A%0A-%20%2A%2ABoss%20stories%20are%20read%20aloud.%2A%2A%20Install%20Spoken%20Audio%3A%20Places%20and%20Bosses%20and%20a%20boss%27s%20story%20is%20voiced%20when%20it%20falls%3B%20without%20it%20the%20story%20shows%20as%20text%2C%20as%20before.%0A%20%20The%20Bosses%20settings%20page%20lists%20the%20pack%2C%20with%20the%20address%20to%20download%20it%2C%20as%20the%20Places%20and%0A%20%20Readables%20pages%20list%20theirs.%20Play%20on%20a%20boss%27s%20page%20in%20the%20Compendium%20plays%20its%20story%2C%20and%20the%0A%20%20boss%20still%20tells%20it%20when%20it%20falls.%0A%20%20%2A%28%5Brusty-key%5D%28https%3A//github.com/rusty-key%29%29%2A%0A-%20%2A%2ABoss%20stories%20in%20your%20language.%2A%2A%20Every%20story%20is%20now%20written%20in%20German%2C%20French%2C%20Spanish%20%28EU%20and%0A%20%20AL%29%2C%20Portuguese%2C%20Russian%2C%20Korean%20and%20Chinese%20%28Simplified%20and%20Traditional%29%2C%20and%20the%20Bosses%20page%0A%20%20shows%20the%20one%20for%20your%20client%2C%20English%20where%20it%20has%20none.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2APlaces%20and%20Readables%20are%20reachable%20by%20other%20addons%2A%2A%2C%20through%20the%20globals%20%60SpokenPlaces%60%20and%0A%20%20%60SpokenReadables%60%2C%20as%20Bosses%20already%20is%20through%20%60SpokenBossesAddon%60%3A%20an%20addon%20that%20lists%20a%20place%0A%20%20or%20a%20book%20can%20ask%20whether%20Spoken%20has%20its%20story%20and%20have%20it%20read%20or%20shown.%20Such%20an%20addon%20checks%0A%20%20first%20whether%20the%20player%20has%20found%20it.%0A%20%20%2A%28%5Bfallenguards%5D%28https%3A//github.com/fallenguards%29%29%2A%0A-%20%2A%2ARaid%20and%20world%20bosses%20wear%20the%20elite%20skull%20in%20the%20Compendium%2C%20dungeon%20bosses%20the%20plain%20one.%2A%2A%0A%20%20On%20Season%20of%20Discovery%2C%20Blackfathom%20Deeps%2C%20Gnomeregan%20and%20Sunken%20Temple%20count%20as%20raids.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2AThe%20Quests%2C%20Readables%20and%20Bosses%20pages%20have%20an%20icon%20before%20anything%20is%20chosen.%2A%2A%20Quests%20shows%0A%20%20its%20scroll%3B%20Readables%20and%20Bosses%20show%20the%20Compendium%27s%20book%2C%20replacing%20the%20dragon%20on%20Bosses.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2AOn%20Forever%2C%20the%20Contribute%20box%20names%20the%20released%20game%27s%20folder.%2A%2A%20It%20points%20to%0A%20%20%60_forever_%60%20for%20the%20saved%20file%20to%20upload%2C%20instead%20of%20the%20ended%20beta%27s%20%60_classic_beta_%60.%0A%20%20%2A%28%5Bsvengabr%5D%28https%3A//github.com/svengabr%29%29%2A%0A"
+folders = [
+    "Spoken_Quests",
+    "SpokenContributions",
+    "Spoken_Places",
+    "Spoken",
+    "Spoken_Readables",
+    "Spoken_Bosses",
+]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1360371543@zones-audio-ruRU"
+slug = "rusty-key/spoken-wow@zones-audio-ruRU"
+name = "spoken-wow (zones-audio-ruRU)"
+description = "Voiced quest dialogue, zone lore and in-world books for World of Warcraft Forever/Classic — addons, the site behind them, and the pipelines that generate the audio."
+url = "https://github.com/rusty-key/spoken-wow"
+download_url = "https://api.github.com/repos/rusty-key/spoken-wow/releases/assets/591142826"
+date_published = "2026-09-26T17:49:41Z"
+version = "zones-audio-ruRU/v2.0.0"
+changelog_url = "data:,%23%23%202.0.0%20%E2%80%94%20zones-audio-ruRU%20%E2%80%94%202026-09-26%0A%0A-%20%2A%2AThe%20first%20Russian%20sound%20pack%2A%2A%2C%20%60SpokenZonesAudio_ruRU%60%3A%20every%20zone%20and%20subzone%0A%20%20Spoken%20Zones%20has%20lore%20for%2C%20read%20aloud%20in%20Russian.%20It%20plays%20only%20while%20Spoken%20Zones%20is%0A%20%20showing%20Russian%20text%2C%20and%20installs%20beside%20the%20English%20pack%20rather%20than%20over%20it.%0A%20%20Ravaged%20Twilight%20Camp%20is%20not%20voiced%20yet%20and%20stays%20silent.%0A%0A%2A%2AThis%20pack%20is%20data%20only.%2A%2A%20It%20needs%20%5Bspoken-zones%5D%28https%3A//addons.wago.io/addons/spoken-zones%29%2C%20which%20plays%20it%3B%20installed%20alone%20it%20does%20nothing.%0A%0AReleased%20here%20because%20the%20pack%20is%20441M%3A%20CurseForge%20carries%20it%20too%2C%20and%20Wago%27s%20upload%20endpoint%20refuses%20a%20file%20this%20size."
+folders = ["SpokenZonesAudio_ruRU"]
 
 [package.options]
 any_flavour = false
@@ -79,11 +158,47 @@ slug = "krelock/nodesight"
 name = "NodeSight"
 description = "See what every herb and ore on your minimap is, and make the ones near you sparkle. WoW Forever addon"
 url = "https://github.com/Krelock/NodeSight"
-download_url = "https://api.github.com/repos/Krelock/NodeSight/releases/assets/660539993"
-date_published = "2026-10-20T21:29:48Z"
-version = "v1.4.1"
-changelog_url = "data:,%23%23%20NodeSight%201.4.1%0A%0A%23%23%23%20New%0A-%20%2A%2ASkill%20colors%20on%20herbs%20and%20ore%2A%2A%20%28always%20on%29.%20Hover%20a%20herb%20or%20ore%20in%20the%20world%20to%20see%20the%20skill%20it%20needs%2C%20colored%20like%20on%20the%20minimap%0A-%20%2A%2AKeep%20the%20game%27s%20icons%2A%2A%20%28off%20by%20default%29.%20The%20game%27s%20own%20icon%20stays%20over%20the%20herb%2C%20ore%2C%20chest%20or%20corpse%20you%20can%20interact%20with%20while%20sparkles%20are%20on.%20Turn%20it%20on%20under%20%2A%2ASparkles%2A%2A%0A%0A%23%23%23%20Changes%0A-%20%2A%2ASwitch%20between%20herbs%20and%20ore%2A%2A.%20No%20more%20click%20each%20time%20it%20switches%0A"
+download_url = "https://api.github.com/repos/Krelock/NodeSight/releases/assets/697174523"
+date_published = "2026-11-01T03:08:26Z"
+version = "v1.5.1"
+changelog_url = "data:,%23%23%20NodeSight%201.5.1%0A%0A%23%23%23%20New%0A-%20%2A%2AColored%20ring%20and%20Colored%20gem%2A%2A%20%28Red%20when%20too%20low%20by%20default%29.%20Symbols%20can%20show%20your%20chance%20of%20a%20skill-up%20in%20the%20profession%20window%27s%20colors%3A%20red%20when%20your%20skill%20is%20too%20low%2C%20then%20orange%2C%20yellow%2C%20green%20and%20gray.%20Pick%20one%20in%20%2A%2ASkill%20colors%2A%2A%20under%20%2A%2ASymbols%2A%2A%0A%0A%23%23%23%20Changes%0A-%20%2A%2ASkill%20colors%2A%2A.%20The%20Red%20symbols%20when%20too%20low%20checkbox%20is%20now%20a%20dropdown%3A%20Red%20when%20too%20low%2C%20Colored%20ring%2C%20Colored%20gem%20or%20Off.%20If%20you%20had%20it%20off%2C%20it%20stays%20off%0A-%20%2A%2AHerbs%20and%20ore%20in%20caves%2A%2A.%20Their%20symbols%20fade%20out%20now%20instead%20of%20turning%20dark%20gray%0A%0A%23%23%23%20Fixes%0A-%20Nightmare%20Moss%2C%20Dreamroot%20and%20Star%20Lotus%20never%20got%20a%20symbol.%20Thanks%20to%20tester617%20for%20this%20on%20GitHub%0A-%20An%20error%20in%20the%20minimap%20scan%2C%20the%20symbols%2C%20the%20arrow%20or%20Far%20away%20sparkles%20%28Beta%29%20could%20repeat%20on%20every%20frame.%20Now%20it%20shows%20once%2C%20and%20Far%20away%20sparkles%20stay%20off%20until%20a%20/reload.%20Thanks%20to%20tester617%20for%20this%20on%20GitHub%0A"
 folders = ["NodeSight"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "1442012554"
+slug = "openmap-world/openmap"
+name = "openmap"
+description = "An open source, seamless world map addon for WoW Forever that prioritizes the original Vanilla art style. Finally zoom and pan in the world map with a truly open source community built map addon. "
+url = "https://github.com/openmap-world/openmap"
+download_url = "https://api.github.com/repos/openmap-world/openmap/releases/assets/698870848"
+date_published = "2026-11-01T16:35:11Z"
+version = "v0.7.5-beta"
+changelog_url = "data:,%23%23%23%20Fixed%0A%0A-%20%2A%2AThe%20map%27s%20art%20is%20there%20at%20once%20when%20you%20open%20it%2A%2A%3A%20since%200.7.4%20the%20zones%20showed%20blank%20parchment%0A%20%20for%20a%20moment%20each%20time%20the%20map%20opened.%0A-%20%2A%2AClicking%20a%20quest%20on%20the%20map%20keeps%20the%20map%20as%20it%20is%2A%2A%3A%20the%20quest%20is%20tracked%20and%20the%20map%20zooms%20in%20on%0A%20%20it%2C%20full%20screen%20or%20windowed.%20It%20opened%20the%20quest%27s%20details%2C%20which%20Blizzard%20shows%20in%20the%20windowed%0A%20%20map%2C%20so%20a%20full-screen%20map%20left%20full%20screen.%20With%20the%20quest%20log%20open%20beside%20the%20map%2C%20its%20details%0A%20%20show%20there%20too.%0A-%20%2A%2AHiding%20your%20pins%20hides%20their%20drawings%20too%2A%2A%20%28the%20menu%27s%20Pins%2C%20right-clicked%29%3A%20what%20you%20drew%20on%20a%0A%20%20pin%20stayed%20on%20the%20map%20without%20it.%0A%0A"
+folders = ["OpenMap"]
+
+[package.options]
+any_flavour = false
+any_release_type = false
+version_eq = false
+
+[[package]]
+source = "github"
+id = "79417795"
+slug = "seblindfors/immersion"
+name = "Immersion"
+description = "Replaces WoW's quest and gossip frames with a cinematic dialogue box that paces the text to encourage reading the lore."
+url = "https://github.com/seblindfors/Immersion"
+download_url = "https://api.github.com/repos/seblindfors/Immersion/releases/assets/585356687"
+date_published = "2026-09-24T06:59:53Z"
+version = "1.4.61"
+changelog_url = "data:,%23%20Immersion%0D%0A%0D%0A%23%23%20%5B1.4.61%5D%28https%3A//github.com/seblindfors/Immersion/tree/1.4.61%29%20%282026-09-24%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/seblindfors/Immersion/compare/1.4.60...1.4.61%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/seblindfors/Immersion/releases%29%0D%0A%0D%0A-%20Update%20Immersion.toc%20%20%0D%0A-%20Merge%20pull%20request%20%2355%20from%20seblindfors/native-settings%20%20%0D%0A%20%20%20%20Replace%20Ace%20config%20with%20native%20settings%20panel%20%20%0D%0A-%20Fix%20boolean%20setting%20defaults%20%20%0D%0A-%20Replace%20Ace%20config%20with%20native%20settings%20panel%20%20%0D%0A"
+folders = ["Immersion"]
 
 [package.options]
 any_flavour = false
@@ -103,10 +218,40 @@ version = "r250.400e345"
 install_time = "2026-10-26T15:16:12.612031646Z"
 
 [[version_log]]
+pkg_source = "git"
+pkg_id = "HighFidelityWorldMap"
+version = "r264.801ff7b"
+install_time = "2026-11-01T10:01:59.733477392Z"
+
+[[version_log]]
 pkg_source = "github"
 pkg_id = "1330531373"
 version = "0.0.8"
 install_time = "2026-10-26T15:01:42.118235875Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1360371543@books-audio-ruRU"
+version = "books-audio-ruRU/v2.0.0"
+install_time = "2026-11-01T15:08:44.641748857Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1360371543@quests-audio-ruRU"
+version = "quests-audio-ruRU/v0.0.3"
+install_time = "2026-11-01T13:36:16.518132138Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1360371543@spoken/"
+version = "spoken/v3.7.0"
+install_time = "2026-11-01T13:15:57.411932124Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1360371543@zones-audio-ruRU"
+version = "zones-audio-ruRU/v2.0.0"
+install_time = "2026-11-01T14:31:23.631599059Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -119,3 +264,33 @@ pkg_source = "github"
 pkg_id = "1418025059"
 version = "v1.4.1"
 install_time = "2026-10-26T15:04:13.321718966Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1418025059"
+version = "v1.4.2"
+install_time = "2026-10-27T15:11:16.708486013Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1418025059"
+version = "v1.5.1"
+install_time = "2026-11-01T10:01:59.676195266Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1428502859"
+version = "v0.7.5-beta"
+install_time = "2026-11-01T10:37:59.066011867Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1442012554"
+version = "v0.7.5-beta"
+install_time = "2026-11-02T13:11:41.094560655Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "79417795"
+version = "1.4.61"
+install_time = "2026-11-01T10:27:08.608958113Z"
