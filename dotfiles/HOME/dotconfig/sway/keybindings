@@ -1,6 +1,6 @@
 set $term alacritty
 set $editor zeditor
-set $files "ghostty -e yazi"
+set $files "alacritty -e yazi"
 set $browser firefox
 set $sysmon btm
 set $launcher tofi
