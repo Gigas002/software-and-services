@@ -1,0 +1,14 @@
+{
+  "steam_library_path": "/home/gigas/games",
+  "proton_version": "proton-cachyos-native",
+  "chat_presence": "online",
+  "steam_runtime_runner": "",
+  "steam_prefix_mode": "Shared",
+  "enable_cloud_sync": true,
+  "use_shared_compat_data": true,
+  "windows_steam_discovery_enabled": true,
+  "steam_runtime_policy": "Auto",
+  "install_resume": "manual",
+  "experimental": false,
+  "encrypt_session": true
+}
