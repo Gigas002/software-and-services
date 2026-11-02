@@ -1,7 +1,7 @@
 7zip
 abar-git
 accountsservice
-alacritty
+alacritty-kitty-git
 alsa-firmware
 alsa-plugins
 alsa-utils
@@ -51,7 +51,6 @@ deno
 device-mapper
 dhclient
 diffutils
-discordo-git
 diskonaut-ng-git
 dmidecode
 dnsmasq
@@ -59,7 +58,6 @@ dosfstools
 downgrade
 dualsensectl
 dust
-dxvk-mingw-git
 e2fsprogs
 efibootmgr
 efitools
@@ -70,10 +68,8 @@ extra-cmake-modules
 ff2mpv-rust
 firefox
 fuzzylite-git
-gallery-dl
 gamemode
 gamescope
-ghostty
 git
 github-cli
 gitui
@@ -109,7 +105,6 @@ lib32-pipewire-jack
 lib32-vulkan-radeon
 libgsf
 libopenraw
-libreoffice-fresh
 libvips
 libwebp-utils
 linux-cachyos
@@ -118,14 +113,15 @@ linux-cachyos-gcc-headers
 linux-cachyos-headers
 linux-firmware
 logrotate
+lootrs-git
 lsb-release
 lsscsi
-lutris
 lvm2
 man-db
 man-pages
 mangohud
 mesa
+mesa-utils
 micro
 mkinitcpio
 mpv
@@ -203,7 +199,9 @@ sweet-kvantum-git
 sysfsutils
 systemd-boot-manager
 telegram-desktop
+telegram-tdlib
 texinfo
+tgt-gigas-git
 thorium-browser-bin
 tofi-rs-git
 trayd-git
@@ -221,8 +219,6 @@ usb_modeswitch
 usbutils
 uv
 vcmi
-ventoy-bin
-vkd3d-proton-mingw-git
 vulkan-radeon
 wau-git
 wayshot-git
