@@ -190,7 +190,7 @@ sof-firmware
 starship
 steam
 steam-devices
-sudo
+sudo-rs
 sweet-cursors-git
 sweet-cursors-hyprcursor-git
 sweet-folders-git
@@ -210,6 +210,7 @@ ttf-liberation
 ttf-noto-nerd
 ttf-roboto
 typos
+udisks2
 ufw
 umu-launcher
 unrar
