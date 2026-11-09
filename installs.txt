@@ -201,7 +201,7 @@ systemd-boot-manager
 telegram-desktop
 telegram-tdlib
 texinfo
-tgt-gigas-git
+tgrs-git
 thorium-browser-bin
 tofi-rs-git
 trayd-git

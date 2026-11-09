@@ -1,8 +1,8 @@
-pkgbase = tgt-gigas-git
+pkgbase = tgrs-git
 	pkgdesc = A simple TUI for Telegram
-	pkgver = r988.gdaad8a5
+	pkgver = r998.g84f5307
 	pkgrel = 1
-	url = https://github.com/Gigas002/tgt
+	url = https://github.com/Gigas002/tgrs
 	arch = x86_64
 	arch = aarch64
 	license = MIT OR Apache-2.0
@@ -17,9 +17,9 @@ pkgbase = tgt-gigas-git
 	optdepends = gnome-keyring: Secret Service provider for the encrypted TDLib database
 	optdepends = keepassxc: alternative Secret Service provider
 	optdepends = notification-daemon: desktop notifications (or any other notification server)
-	provides = tgt
-	conflicts = tgt
-	source = tgt::git+https://github.com/Gigas002/tgt.git
+	provides = tgrs
+	conflicts = tgrs
+	source = tgrs::git+https://github.com/Gigas002/tgrs.git
 	sha256sums = SKIP
 
-pkgname = tgt-gigas-git
+pkgname = tgrs-git
