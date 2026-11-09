@@ -7,19 +7,19 @@ slug = "Details"
 name = "Details"
 description = ""
 url = "https://github.com/Tercioo/Details-Damage-Meter"
-download_url = "file:///home/gigas/.cache/wau/git/git-build/Details/r3016.d1e8ad72.zip"
-date_published = "2026-10-16T01:39:05Z"
-version = "r3016.d1e8ad72"
-changelog_url = "data:,d1e8ad72%20Improvements%20and%20bug%20fixes%20to%20the%20options%20panel.%0A648b7247%20Use%20UnitNameFromGUID%20instead%20of%20UnitName%20where%20possible%0A1ab60f42%20ToC%20Updates%3B%20Framework%20Update%0Ac8f1ae22%20Merge%20branch%20%27master%27%20of%20https%3A//github.com/Tercioo/Details-Damage-Meter%0Af244715a%20Big%20update%20on%20window%20handling.%0A5a11e5e2%20Standardize%20the%20remove%20realm%20names%20and%20use%20it%20for%20removing%20last%20names%20on%20Forever%0Ace649ef3%20Bug%20fixes%20for%20Forever%20Wow%3B%20Added%20LibKeystone%0A0f654e38%20Major%20update%0Ac7037bc9%20More%20Forever%20updates%0A4fbeff3a%20More%20fixes%0A"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/Details/r3032.256a0d70.zip"
+date_published = "2026-11-09T03:37:16Z"
+version = "r3032.256a0d70"
+changelog_url = "data:,256a0d70%20More%20fixes%20for%20cooltip%0A3ed3a66e%20Player%20color%20and%20spells%20display%20added.%0Ad22dad42%20Secret%20error%20on%20cooltips%0A6b47ab8c%20Player%20name%20length%20minimum%20value%20reduced%20to%2010%2C%20down%20from%2050.%0Af7d6f192%20Framework%20update%0A756c3883%20Update%20font%20and%20add%20transliterate%20%28Flamanis%29%0A195e9430%20Add%20translit%20on%20forever/midnight%0A81b19e69%20Update%20accidental%20presidency%20font%20to%20try%20to%20fix%20font%20slug%20issue%0A318be35d%20More%20fixes%20for%20Forever%0Ab82082b8%20Fix%20show%20percent%0A"
 folders = [
-    "Details_EncounterDetails",
-    "Details_Streamer",
-    "Details_Vanguard",
     "Details_DataStorage",
-    "Details_TinyThreat",
+    "Details_Compare2",
     "Details",
     "Details_RaidCheck",
-    "Details_Compare2",
+    "Details_Streamer",
+    "Details_EncounterDetails",
+    "Details_Vanguard",
+    "Details_TinyThreat",
 ]
 
 [package.options]
@@ -88,11 +88,14 @@ slug = "deadlybossmods/dbm-vanilla"
 name = "DBM-Vanilla"
 description = "Deadly Boss Mods (DBM) - Vanilla and Season of Discovery mods (Classic and Retail)"
 url = "https://github.com/DeadlyBossMods/DBM-Vanilla"
-download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Vanilla/releases/assets/679069986"
-date_published = "2026-10-26T18:23:50Z"
-version = "r834"
-changelog_url = "data:,%23%20DBM%20-%20Vanilla%20and%20Season%20of%20Discovery%0D%0A%0D%0A%23%23%20%5Br834%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/tree/r834%29%20%282026-10-23%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/compare/r833...r834%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/releases%29%0D%0A%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A-%20Update%20raz3%20%28%23585%29%20%20%0D%0A%20%20%20%20%2A%20Remove%20uneeded%20antispam%20%20%0D%0A%20%20%20%20%2A%20remove%20unndeded%20check%20for%20dest%20type%20player%20%20%0D%0A%20%20%20%20%2A%20IsDestTypePlayer%20to%20avoid%20showing%20pets%20in%20the%20frame%20%20%0D%0A%20%20%20%20%2A%20Added%20too%20many%20%20%0D%0A%20%20%20%20%2A%20missed%20one%20%20%0D%0A%20%20%20%20%2A%20Update%20Razuvious%20%20%0D%0A%20%20%20%20%2A%20Make%20pink%20color%20darker%20%20%0D%0A%20%20%20%20%2A%20simplify%20icon%20code%20%20%0D%0A%20%20%20%20%2A%20Antispam%20MC%20end%20since%20they%20all%20break%20at%20end%20of%20fight%20%20%0D%0A%20%20%20%20%2A%20messed%20up%20color%20%20%0D%0A%20%20%20%20%2A%20Warnings%20only%20for%20razuvious%20%3E%205%25%20%20%0D%0A%20%20%20%20%2A%20tank%20for%20tauntCD%20by%20default%20%20"
-folders = ["DBM-Azeroth", "DBM-Raids-Vanilla"]
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Vanilla/releases/assets/704287730"
+date_published = "2026-11-03T04:27:49Z"
+version = "r835"
+changelog_url = "data:,%23%20DBM%20-%20Vanilla%20and%20Season%20of%20Discovery%0D%0A%0D%0A%23%23%20%5Br835%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/tree/r835%29%20%282026-11-03%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/compare/r834...r835%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/releases%29%0D%0A%0D%0A-%20Update%20a%20few%20world%20bosses%20%28%23586%29%20%20%0D%0A%20%20%20%20%2A%20Remove%20uneeded%20antispam%20%20%0D%0A%20%20%20%20%2A%20remove%20unndeded%20check%20for%20dest%20type%20player%20%20%0D%0A%20%20%20%20%2A%20IsDestTypePlayer%20to%20avoid%20showing%20pets%20in%20the%20frame%20%20%0D%0A%20%20%20%20%2A%20Added%20too%20many%20%20%0D%0A%20%20%20%20%2A%20missed%20one%20%20%0D%0A%20%20%20%20%2A%20Update%20some%20world%20bosses%20%20%0D%0A%20%20%20%20%2A%20fix%20error%20%20%0D%0A%20%20%20%20%2A%20reordering%20%20%0D%0A%20%20%20%20%2A%20all%20all%20swirl%20spell%20ids%20%20%0D%0A%20%20%20%20%2A%20adjust%20antispam%20%20%0D%0A%20%20%20%20%2A%20remove%20swirl%2C%20its%20constantly%20being%20cast%20%20%0D%0A%20%20%20%20%2A%20specialwarning%20for%20heal%20for%20emeriss%20%20%0D%0A%20%20%20%20%2A%20switch%20order%20%20%0D%0A%20%20%20%20%2A%20SoD%20only%20for%20spell%20for%20Ysondre%2C%20add%20personal%20specialwarning%20for%20volatile%20infection%20%20%0D%0A%20%20%20%20%2A%20code%20alignment%20%20%0D%0A%20%20%20%20%2A%20fix%20error%20%20%0D%0A%20%20%20%20%2A%20reorder%20%20%0D%0A-%20Update%20raz4%20%28%23587%29%20%20%0D%0A%20%20%20%20%2A%20Remove%20uneeded%20antispam%20%20%0D%0A%20%20%20%20%2A%20remove%20unndeded%20check%20for%20dest%20type%20player%20%20%0D%0A%20%20%20%20%2A%20IsDestTypePlayer%20to%20avoid%20showing%20pets%20in%20the%20frame%20%20%0D%0A%20%20%20%20%2A%20Added%20too%20many%20%20%0D%0A%20%20%20%20%2A%20missed%20one%20%20%0D%0A%20%20%20%20%2A%20Update%20Razuvious%20%20%0D%0A%20%20%20%20%2A%20fix%20error%20%20%0D%0A%20%20%20%20%2A%20change%20defaults%20%20%0D%0A-%20Fix%20azeroth%20world%20bosses%20not%20having%20icon%20and%20not%20loading%20on%20forever%20%20%0D%0A"
+folders = [
+    "DBM-Azeroth",
+    "DBM-Raids-Vanilla",
+]
 
 [package.options]
 any_flavour = false
@@ -128,7 +131,10 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Cataclysm/releas
 date_published = "2026-10-14T19:44:12Z"
 version = "r264"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28Cata%29%0D%0A%0D%0A%23%23%20%5Br264%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/tree/r264%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/compare/r263...r264%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A-%20tweaks%20%20%0D%0A"
-folders = ["DBM-Raids-Cata", "DBM-Cataclysm"]
+folders = [
+    "DBM-Raids-Cata",
+    "DBM-Cataclysm",
+]
 
 [package.options]
 any_flavour = false
@@ -146,7 +152,11 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-MoP/releases/ass
 date_published = "2026-10-14T19:38:59Z"
 version = "r192"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28MoP%29%0D%0A%0D%0A%23%23%20%5Br192%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/tree/r192%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/compare/r191...r192%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A"
-folders = ["DBM-Pandaria", "DBM-Raids-MoP", "DBM-Scenario-MoP"]
+folders = [
+    "DBM-Pandaria",
+    "DBM-Raids-MoP",
+    "DBM-Scenario-MoP",
+]
 
 [package.options]
 any_flavour = false
@@ -200,7 +210,10 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Legion/releases/
 date_published = "2026-10-26T17:34:07Z"
 version = "r69"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28Legion%29%0D%0A%0D%0A%23%23%20%5Br69%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/tree/r69%29%20%282026-10-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/compare/r68...r69%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/releases%29%0D%0A%0D%0A-%20Strip%20hudmap%20usage/notes%20%20%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A"
-folders = ["DBM-BrokenIsles", "DBM-Raids-Legion"]
+folders = [
+    "DBM-BrokenIsles",
+    "DBM-Raids-Legion",
+]
 
 [package.options]
 any_flavour = false
@@ -218,7 +231,10 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-WoD/releases/ass
 date_published = "2026-10-26T17:33:47Z"
 version = "r99"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28WoD%29%0D%0A%0D%0A%23%23%20%5Br99%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/tree/r99%29%20%282026-10-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/compare/r98...r99%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/releases%29%0D%0A%0D%0A-%20Strip%20hudmap%20usage/notes%20%20%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A-%20update%20legacy%20CI%20%20%0D%0A"
-folders = ["DBM-Raids-WoD", "DBM-Draenor"]
+folders = [
+    "DBM-Raids-WoD",
+    "DBM-Draenor",
+]
 
 [package.options]
 any_flavour = false
@@ -232,28 +248,28 @@ slug = "deadlybossmods/dbm-dungeons"
 name = "DBM-Dungeons"
 description = "This mod will add support for 5 man Dungeons and World Events, spanning Classic all the way to Dragonflight, to Deadly Boss Mods (DBM)."
 url = "https://github.com/DeadlyBossMods/DBM-Dungeons"
-download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Dungeons/releases/assets/678949135"
-date_published = "2026-10-26T17:33:16Z"
-version = "r269"
-changelog_url = "data:,%23%20DBM%20-%20Dungeons%2C%20Delves%2C%20%26%20Events%0D%0A%0D%0A%23%23%20%5Br269%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/tree/r269%29%20%282026-10-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/compare/r268...r269%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/releases%29%0D%0A%0D%0A-%20CI%20tweak%20%20%0D%0A-%20always%20play%20sound%20when%20routing%20fails%20%20%0D%0A-%20Fix%20and%20close%20%20%0D%0A-%20Headless%20Horseman%20locale%20%20%0D%0A%20%20%20%20Fixes%20and%20closes%20%23647%20%20%0D%0A-%20fix%20regression%20%20%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A-%20Fix%20missing%20zhCN%20localization%20loading%20and%20names%20in%20TBC%20dungeons%20%28%23645%29%20%20%0D%0A-%20Just%20silence%20a%20false%20error%20at%20this%20point%20%20%0D%0A-%20revise%20follower/normal%20timers%20for%203rd%20and%204th%20boss%20of%20MT%20Closes%20https%3A//github.com/DeadlyBossMods/DBM-Dungeons/issues/643%20%20%0D%0A"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Dungeons/releases/assets/719508547"
+date_published = "2026-11-07T03:39:26Z"
+version = "r271"
+changelog_url = "data:,%23%20DBM%20-%20Dungeons%2C%20Delves%2C%20%26%20Events%0D%0A%0D%0A%23%23%20%5Br271%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/tree/r271%29%20%282026-11-07%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/compare/270...r271%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/releases%29%0D%0A%0D%0A-%20Add%20remaining%2030-60%20dungeons%20to%20forever%20now%20that%20blizzard%20has%20exposed%20the%20data%20for%20them%20%20%0D%0A"
 folders = [
-    "DBM-Party-Shadowlands",
-    "DBM-Party-Midnight",
-    "DBM-Party-BfA",
-    "DBM-Challenges",
-    "DBM-WorldEvents",
-    "DBM-Party-WarWithin",
-    "DBM-Delves-WarWithin",
-    "DBM-Party-Dragonflight",
-    "DBM-Delves-Midnight",
-    "DBM-Party-Cataclysm",
-    "DBM-Party-Legion",
     "DBM-Party-Vanilla",
+    "DBM-Party-BC",
+    "DBM-Party-Shadowlands",
+    "DBM-Party-Dragonflight",
+    "DBM-Party-Midnight",
+    "DBM-Party-Legion",
+    "DBM-WorldEvents",
+    "DBM-Party-WotLK",
+    "DBM-Party-BfA",
+    "DBM-Delves-WarWithin",
+    "DBM-Challenges",
     "DBM-Party-Forever",
     "DBM-Party-WoD",
-    "DBM-Party-WotLK",
+    "DBM-Delves-Midnight",
+    "DBM-Party-Cataclysm",
     "DBM-Party-MoP",
-    "DBM-Party-BC",
+    "DBM-Party-WarWithin",
 ]
 
 [package.options]
@@ -304,10 +320,10 @@ slug = "nevcairiel/handynotes"
 name = "HandyNotes"
 description = "Handy Notes for your maps. "
 url = "https://github.com/Nevcairiel/HandyNotes"
-download_url = "https://api.github.com/repos/Nevcairiel/HandyNotes/releases/assets/511144459"
-date_published = "2026-08-12T05:56:20Z"
-version = "v1.6.31"
-changelog_url = "data:,%23%20HandyNotes%0D%0A%0D%0A%23%23%20%5Bv1.6.31%5D%28https%3A//github.com/Nevcairiel/HandyNotes/tree/v1.6.31%29%20%282026-08-12%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/Nevcairiel/HandyNotes/compare/v1.6.30...v1.6.31%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/Nevcairiel/HandyNotes/releases%29%0D%0A%0D%0A-%20Fix%20Mouse%20Over%20check%20in%2012.1%20%20%0D%0A"
+download_url = "https://api.github.com/repos/Nevcairiel/HandyNotes/releases/assets/704369064"
+date_published = "2026-11-03T05:03:38Z"
+version = "v1.6.32"
+changelog_url = "data:,%23%20HandyNotes%0D%0A%0D%0A%23%23%20%5Bv1.6.32%5D%28https%3A//github.com/Nevcairiel/HandyNotes/tree/v1.6.32%29%20%282026-10-02%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/Nevcairiel/HandyNotes/compare/v1.6.31...v1.6.32%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/Nevcairiel/HandyNotes/releases%29%0D%0A%0D%0A-%20Update%20for%20Forever%20%20%0D%0A-%20Update%20TOC%20for%20Forever%20%20"
 folders = ["HandyNotes"]
 
 [package.options]
@@ -326,7 +342,10 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-BfA/releases/ass
 date_published = "2026-10-14T19:42:26Z"
 version = "r51"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28BfA%29%0D%0A%0D%0A%23%23%20%5Br51%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/tree/r51%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/compare/r50...r51%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A"
-folders = ["DBM-Raids-BfA", "DBM-BfA"]
+folders = [
+    "DBM-Raids-BfA",
+    "DBM-BfA",
+]
 
 [package.options]
 any_flavour = false
@@ -358,10 +377,10 @@ slug = "legacy-of-sylvanaar/prat-3-0"
 name = "prat-3-0"
 description = "Prat-3.0 is a chat enhancement addon for world of warcraft"
 url = "https://github.com/Legacy-of-Sylvanaar/prat-3-0"
-download_url = "https://api.github.com/repos/Legacy-of-Sylvanaar/prat-3-0/releases/assets/639978222"
-date_published = "2026-10-14T10:05:03Z"
-version = "3.9.113"
-changelog_url = "data:,%23%20Prat%203.0%0D%0A%0D%0A%23%23%20%5B3.9.113%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/tree/3.9.113%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/compare/3.9.112...3.9.113%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/releases%29%0D%0A%0D%0A-%20TOC%20Bump%20%20%0D%0A-%20Potential%20fix%20for%20handling%20player%20server.%20Fixes%20%23347%20%20%0D%0A"
+download_url = "https://api.github.com/repos/Legacy-of-Sylvanaar/prat-3-0/releases/assets/723860773"
+date_published = "2026-11-08T12:24:00Z"
+version = "3.9.117"
+changelog_url = "data:,%23%20Prat%203.0%0D%0A%0D%0A%23%23%20%5B3.9.117%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/tree/3.9.117%29%20%282026-11-08%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/compare/3.9.116...3.9.117%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/Legacy-of-Sylvanaar/prat-3-0/releases%29%0D%0A%0D%0A-%20Toc%20cleanup%20and%20bump%20%20%0D%0A-%20Forever%3A%20Tell%20Target%20fix.%20Fixes%20%23359%20%20%0D%0A"
 folders = ["Prat-3.0"]
 
 [package.options]
@@ -376,10 +395,10 @@ slug = "sfx-wow/masque"
 name = "Masque"
 description = "A button-skinning engine for World of Warcraft."
 url = "https://github.com/SFX-WoW/Masque"
-download_url = "https://api.github.com/repos/SFX-WoW/Masque/releases/assets/685665899"
-date_published = "2026-10-28T16:47:14Z"
-version = "12.1.7"
-changelog_url = "data:,%23%23%2012.1.7%0A%0A%23%23%23%20Skins%0A%0A-%20Due%20to%20all%20game%20versions%20now%20using%20a%20similar%20%60AutoCastOverlay%60%20template%2C%20the%20following%20changes%20have%20been%20made%3A%0A%20%20-%20The%20%60AutoCast%60/%60AutoCastShine%60%20and%20%60AutoCastable%60%20regions%20have%20been%20deprecated.%0A%20%20-%20For%20%2A%2AClassic%2A%2A%20clients%2C%20%2A%2AMasque%2A%2A%20will%20now%20look%20in%20the%20%60AutoCast_Frame.Classic%60%20and%20%60AutoCast_Corners.Classic%60%20fields%20for%20the%20respective%20%2A%2AClassic%2A%2A%20settings.%0A%20%20-%20%2A%2AMasque%2A%2A%20will%20automatically%20redirect%20those%20fields%20to%20the%20respective%20skin%20definition%20if%20the%20parent%20field%20exists.%20Otherwise%20it%20will%20use%20the%20default%20settings.%0A%20%20%20%20-%20Eg%3A%20If%20%60AutoCast_Corners%60%20exists%20within%20the%20skin%2C%20%2A%2AMasque%2A%2A%20will%20point%20%60AutoCast_Corners.Classic%60%20toward%20%60AutoCastable%60%20if%20%60AutoCast_Corners.Classic%60%20is%20missing.%0A%0A%23%23%23%20Bug%20Fixes%0A%0A-%20Fixed%20error%20with%20the%20%60Backdropp%60%20region%20during%20skinning.%0A%0A%5BRelease%20History%5D%28https%3A//github.com/SFX-WoW/Masque/wiki/History%29%0A"
+download_url = "https://api.github.com/repos/SFX-WoW/Masque/releases/assets/702654825"
+date_published = "2026-11-02T17:54:22Z"
+version = "12.1.8"
+changelog_url = "data:,%23%23%2012.1.8%0A%0A%23%23%23%20Skins%0A%0A-%20Updated%20the%20skin%20settings%20to%20reflect%20%60AutoCast%60%20changes.%0A%0A%23%23%23%20Bug%20Fixes%0A%0A-%20Fixed%20an%20error%20that%20could%20occur%20when%20an%20add-on%20passed%20%60AutoCastable%60%20or%20%60AutoCastShine%60%20in%20the%20%60Regions%60%20table.%0A%0A%5BRelease%20History%5D%28https%3A//github.com/SFX-WoW/Masque/wiki/History%29%0A"
 folders = ["Masque"]
 
 [package.options]
@@ -416,7 +435,10 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Shadowlands/rele
 date_published = "2026-10-14T19:42:08Z"
 version = "r33"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28SL%29%0D%0A%0D%0A%23%23%20%5Br33%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/tree/r33%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/compare/r32...r33%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A"
-folders = ["DBM-Shadowlands", "DBM-Raids-Shadowlands"]
+folders = [
+    "DBM-Shadowlands",
+    "DBM-Raids-Shadowlands",
+]
 
 [package.options]
 any_flavour = false
@@ -434,7 +456,10 @@ download_url = "https://api.github.com/repos/tullamods/OmniCC/releases/assets/32
 date_published = "2025-12-14T21:07:04Z"
 version = "11.2.8"
 changelog_url = "data:,%23%20OmniCC%20Changelog%0D%0A%0D%0A%23%23%2011.2.8%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%2011.2.7%2C%205.5.3%2C%203.8.0%2C%202.5.2%2C%20and%201.5.8%0D%0A%0D%0A%23%23%2011.2.7%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.2.5%20and%205.5.1%0D%0A%0D%0A%23%23%2011.2.6%0D%0A%0D%0A%2A%20The%20Cooldown%20Timer%20Offset%20option%20should%20work%20again.%0D%0A%2A%20Added%20an%20additional%20guard%20to%20hopefully%20prevent%20instances%20of%20the%20Attempt%20to%20call%20method%20%27RemoveCooldown%27%20error%0D%0A%2A%20Resolved%20the%20%27Attempted%20to%20release%20inactive%20object%27%20error%20for%20the%20Shine%20and%20Flare%20effects.%0D%0A%0D%0A%23%23%2011.2.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.2.0%20%28thanks%20Hollicsh%29%0D%0A%0D%0A%23%23%2011.2.4%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.1.7%20and%205.5.0%0D%0A%0D%0A%23%23%2011.2.3%0D%0A%0D%0A%2A%20Fix%20an%20error%20that%20could%20appear%20when%20hiding%20flare%20finish%20effect.%0D%0A%0D%0A%23%23%2011.2.2%0D%0A%0D%0A%2A%20Added%20a%20more%20agressive%20disable%20for%20cooldown%20text%20to%20handle%20flickering%20issues.%0D%0A%0D%0A%23%23%2011.2.1%0D%0A%0D%0A%2A%20Fix%20%60/omnicc%60%20not%20showing%20the%20options%20menu%2C%0D%0A%0D%0A%23%23%2011.2.0%0D%0A%0D%0A%2A%20OmniCC%20will%20now%20disable%20Blizzard%27s%20default%20cooldown%20text%20implementation%20text%0D%0A%20%20on%20all%20cooldowns%20by%20default.%20You%20can%20toggle%20this%20behavior%20via%20the%20new%20%60/occ%20blizzard%60%0D%0A%20%20slash%20command.%0D%0A%0D%0A%23%23%2011.1.0%0D%0A%0D%0A%2A%20%28Retail%29%20OmniCC%20will%20now%20check%20GetHideCountdownNumbers%20and%20skip%20displaying%20text%20where%20the%20value%20is%20set%20to%20false.%0D%0A%20%20This%20should%20prevent%20double%20text.%0D%0A%0D%0A%23%23%2011.0.8%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.7%0D%0A%0D%0A%23%23%2011.0.7%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.1.0%2C%204.4.2%20and%201.15.6%0D%0A%0D%0A%23%23%2011.0.6%0D%0A%0D%0A%2A%20Fix%20another%20nil%20value%20error%0D%0A%0D%0A%23%23%2011.0.5%0D%0A%0D%0A%2A%20Fix%20an%20error%20that%20could%20ocurr%20when%20updating%20timer%20settings%20while%20active%20timers%20are%20present%0D%0A%0D%0A%23%23%2011.0.4%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%2A%20Update%20cooldown%20calculations%0D%0A%2A%20Add%20typings%0D%0A%0D%0A%23%23%2011.0.3%0D%0A%0D%0A%2A%20Add%20modRate%20to%20display%20duration%20calculations%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2011.0.2%0D%0A%0D%0A%2A%20Fixed%20bug%20in%20PreviewDialog%20that%20caused%20some%20effects%20not%20to%20show%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2011.0.1%0D%0A%0D%0A%2A%20Increase%20cooldown%20text%20frame%20level%0D%0A%0D%0A%23%23%2011.0.0%0D%0A%0D%0A%2A%20Fix%20an%20error%20when%20attempting%20to%20display%20the%20cooldown%20preview%20frame%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.9%0D%0A%0D%0A%2A%20Add%20an%20additional%20check%20for%20forbidden%20frames%0D%0A%0D%0A%23%23%2010.2.8%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.7%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%2A%20Preliminary%20War%20Within%20support%0D%0A%0D%0A%23%23%2010.2.6%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.5%0D%0A%0D%0A%2A%20Updated%20Russian%20translation%20%28thanks%20to%20%5BHollicsh%5D%28https%3A//github.com/Hollicsh%29%29%0D%0A%0D%0A%23%23%2010.2.4%0D%0A%0D%0A%2A%20Updated%20Portuguese%20translation%20%28thanks%20to%20%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%0D%0A%0D%0A%23%23%2010.2.3%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.1%0D%0A%0D%0A%23%23%2010.2.2%0D%0A%0D%0A%23%23%23%20Thank%20you%20to%20%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%20for%20these%20contributions%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.2.5%0D%0A%2A%20Updated%20French%2C%20Portuguese%2C%20and%20Spanish%20translations%0D%0A%0D%0A%23%23%2010.2.1%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.0%0D%0A%0D%0A%23%23%2010.2.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.2.0%0D%0A%0D%0A%23%23%2010.1.2%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.1.7%20and%201.14.4%0D%0A%2A%20Add%20Multi%20Action%20Burs%20to%20the%20default%20Action%20Bars%20rule%0D%0A%0D%0A%23%23%2010.1.1%0D%0A%0D%0A%2A%20Update%20TOCs%20for%203.4.3%0D%0A%0D%0A%23%23%2010.1.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.1.0%0D%0A%0D%0A%23%23%2010.0.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.7%0D%0A%0D%0A%23%23%2010.0.4%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.5%0D%0A%0D%0A%23%23%2010.0.3%0D%0A%0D%0A%2A%20Update%20TOCs%20for%203.4.1%0D%0A%0D%0A%23%23%2010.0.2%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.2%0D%0A%2A%20NOTE%3A%20OmniCC%27s%20options%20menu%20is%20now%20no%20longer%20a%20part%20of%20the%20main%20options%20menu%2C%0D%0A%20%20to%20avoid%20issues%20introduced%20with%20Dragonflight%27s%20UI%20changes.%20To%20bring%20up%20the%0D%0A%20%20options%20menu%2C%20use%20either%20the%20/omnicc%20or%20/occ%20slash%20commands.%0D%0A%0D%0A%23%23%2010.0.1%0D%0A%0D%0A%2A%20Tagging%20as%20release%0D%0A%0D%0A%23%23%2010.0.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.0%0D%0A%0D%0A%23%23%209.2.1%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.2.5%2C%203.4.0%2C%202.5.4%2C%20and%201.14.3.%0D%0A%0D%0A%23%23%209.2.0%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.2.0%2C%202.5.3%2C%20and%201.14.2%0D%0A%0D%0A%23%23%209.1.6%0D%0A%0D%0A%2A%20Whoops%2C%20I%20forgot%20that%209.1.5%20introduced%20a%20new%20Maximum%20Cooldown%20Duration%20setting%20%28thanks%20Lyrex%29%0D%0A%2A%20Setting%20the%20maximum%20duration%20slider%20to%200%20will%20enable%20cooldowns%20of%20any%20duration%0D%0A%2A%20Adjusted%20default%20for%20max%20duration%20to%20be%200%20instead%20of%20600%0D%0A%0D%0A%23%23%209.1.5%0D%0A%0D%0A%2A%20TOC%20updates%20for%201.14.1%20and%209.1.5%0D%0A%0D%0A%23%23%209.1.0%0D%0A%0D%0A%2A%20TOC%20updates%20for%20WoW%209.1.0%0D%0A%0D%0A%23%23%209.0.10%0D%0A%0D%0A%2A%20Update%20TOCs%20for%20Burning%20Crusade%20Classic%0D%0A%0D%0A%23%23%209.0.9%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.13.7%0D%0A%0D%0A%23%23%209.0.8%0D%0A%0D%0A%2A%20The%20cooldown%20opacity%20setting%20is%20now%20only%20applied%20when%20set%20at%20an%20opacity%20value%20under%20100%25%0D%0A%2A%20Update%20TOCs%20values%20for%209.0.5%0D%0A%0D%0A%23%23%209.0.7%0D%0A%0D%0A%2A%20Updated%20Korean%20translation%20%28thanks%2C%20WetU%29%0D%0A%2A%20Updated%20Russian%20translation%20%28thanks%20mone-ennen%29%0D%0A%2A%20Fixed%20an%20issue%20when%20upgrading%20from%20OmniCC%20versions%20prior%20to%208.1%20or%20so%0D%0A%2A%20Added%20a%20setting%20to%20disable%20auto%20disabling%20of%20blizzard%20cooldown%20text%20%60/run%20OmniCC.db.global.disableBlizzardCooldownText%20%3D%20false%3B%20ReloadUI%28%29%60%0D%0A%0D%0A%23%23%209.0.6%0D%0A%0D%0A%2A%20Replaced%20the%20Draw%20Cooldown%20Swipes%20with%20a%20Cooldown%20Opacity%20slider%0D%0A%2A%20Updated%20Russian%20Localization%20%28thanks%2C%20Artur91425%29%0D%0A%0D%0A%23%23%209.0.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.13.6%0D%0A%2A%20Add%20a%20nil%20check%20when%20deciding%20to%20hide%20cooldown%20spirals%20or%20not%0D%0A%2A%20Build%20process%20updates%0D%0A%0D%0A%23%23%209.0.4%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.0.2%0D%0A%0D%0A%23%23%209.0.3%0D%0A%0D%0A%2A%20Fix%20cases%20where%20cooldowns%20may%20not%20properly%20refresh%0D%0A%0D%0A%23%23%209.0.2%0D%0A%0D%0A%2A%20Fixed%20an%20error%20for%20when%20OmniCC%20attempts%20to%20display%20configuration%20for%20rules%20with%20missing%20id%20values%0D%0A%0D%0A%23%23%209.0.1%0D%0A%0D%0A%2A%20Apply%20default%20rulesets%20only%20when%20a%20profile%20is%20first%20created.%20This%20fixes%20an%20issue%20with%20deleting%20the%20defaults.%0D%0A%0D%0A%23%23%209.0.0%0D%0A%0D%0A%2A%20Finish%20effects%20will%20now%20trigger%20immediately%20for%20cooldowns%20that%20are%20soon%20to%20complete%2C%20but%20were%20overridden%20by%20the%20GCD.%0D%0A%2A%20Added%20a%20new%20setting%2C%20Timer%20Offset%2C%20to%20adjust%20the%20end%20point%20for%20timers%20to%20account%20for%20things%20like%20spell%20queue%20windows%20and%20latency.%0D%0A%2A%20Added%20predefined%20rules%20for%20Action%20Bars%2C%20nameplates%2C%20and%20auras%0D%0A%2A%20Updated%20TOCs%20for%20the%20Shadowlands%20pre-patch%0D%0A%0D%0A%23%23%208.3.6%0D%0A%0D%0A%2A%20Deferred%20loading%20of%20OmniCC_Config%20until%20you%20either%20use%20/omnicc%20or%20click%20on%20it%20in%20interface%20options%0D%0A%2A%20Updated%20Ace3%20packages%20for%20compatibility%20with%20World%20of%20Warcraft%20Shadowlands%0D%0A"
-folders = ["OmniCC", "OmniCC_Config"]
+folders = [
+    "OmniCC",
+    "OmniCC_Config",
+]
 
 [package.options]
 any_flavour = false
@@ -452,7 +477,10 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-BurningCrusade/r
 date_published = "2026-10-28T16:28:50Z"
 version = "r22"
 changelog_url = "data:,%23%20DBM%20-%20The%20Burning%20Crusade%20mods%0D%0A%0D%0A%23%23%20%5Br22%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/tree/r22%29%20%282026-10-24%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/compare/r21...r22%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/releases%29%0D%0A%0D%0A-%20Update%20Storm%20CD%20timer%20with%20variable%20duration%20gathered%20from%201000%20logs%20%28%2313%29%20%20%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A"
-folders = ["DBM-Raids-BC", "DBM-Outlands"]
+folders = [
+    "DBM-Raids-BC",
+    "DBM-Outlands",
+]
 
 [package.options]
 any_flavour = false
@@ -529,10 +557,10 @@ If you're looking to bulk import waypoints (to track achievements, etc), use the
 [B][U]Donations:[/U][/B]
 Some folks have asked for how they can donate money, and for many years I've enjoyed hearing about how my addons have helped other people enjoy World of Warcraft. If you would like to donate, I'd ask you to make a donation to the [URL="https://www.ccalliance.org/donate"]Colorectal Cancer Alliance[/URL], a worthy organisation that helped my sister immensely from her diagnosis through her final years. If you or a family member suspect you might have something not right in your butt, please have a doctor check it out. Colorectal cancer is one of the most preventable cancers in the world."""
 url = "https://www.wowinterface.com/downloads/info7032"
-download_url = "https://cdn.wowinterface.com/downloads/getfile.php?id=7032&d=1792849717&minion"
-date_published = "2026-10-24T13:48:37Z"
-version = "v4.3.13-release"
-changelog_url = "data:,%23%20Changelog%0D%0A%0D%0A%23%23%20v4.3.10-release%0D%0A%20%20-%20Update%20TOC%20to%20include%20WoW%3A%20Forever%20support"
+download_url = "https://cdn.wowinterface.com/downloads/getfile.php?id=7032&d=1794062518&minion"
+date_published = "2026-11-07T14:41:58Z"
+version = "v4.4.1-release"
+changelog_url = "data:,%23%20Changelog%0D%0A%0D%0A%23%23%20v4.4.1%0D%0A%0D%0A%23%23%23%20Options%0D%0A%20%20-%20Fixed%3A%20after%20a%20search%20in%20the%20Settings%20panel%2C%20a%20key%20binding%20in%20combat%0D%0A%20%20%20%20failed%20with%20%22Interface%20action%20blocked%22%20%28blamed%20on%20TomTom%29.%20The%20TomTom%0D%0A%20%20%20%20pages%20now%20hold%20their%20own%20list%2C%20out%20of%20reach%20of%20the%20settings%20search.%0D%0A%20%20-%20Because%20of%20this%20fix%2C%20the%20settings%20search%20no%20longer%20finds%20TomTom%0D%0A%20%20%20%20options%2C%20and%20a%20gamepad%20cannot%20move%20into%20the%20TomTom%20pages.%20Type%0D%0A%20%20%20%20%60/tomtom%60%20to%20open%20them.%0D%0A%0D%0A%23%23%23%20Changes%20and%20fixes%0D%0A%20%20-%20%60/way%20arrow%20clear%60%20clears%20the%20waypoint%20from%20the%20crazy%20arrow.%0D%0A%20%20%20%20%60/way%20arrow%20remove%60%20removes%20the%20waypoint%20on%20the%20crazy%20arrow.%0D%0A%20%20-%20On%20retail%20and%20Forever%2C%20the%20player%20and%20cursor%20coordinates%20are%20in%20the%0D%0A%20%20%20%20header%20of%20the%20world%20map%2C%20on%20top%20of%20it.%0D%0A%0D%0A%23%23%20v4.4.0-beta%0D%0A%0D%0AThis%20beta%20changes%20most%20of%20the%20inner%20code%20of%20TomTom.%20Your%20waypoints%20and%0D%0Asettings%20stay.%20Please%20report%20problems.%0D%0A%0D%0A%23%23%23%20Options%0D%0A%20%20-%20The%20options%20are%20now%20in%20the%20Blizzard%20Settings%20panel.%20Type%20%60/tomtom%60%20to%0D%0A%20%20%20%20open%20them.%20The%20pages%20are%3A%20TomTom%20%28with%20a%20list%20of%20all%20features%29%2C%0D%0A%20%20%20%20Waypoint%20Arrow%2C%20Minimap%2C%20World%20Map%2C%20Coordinate%20Block%2C%20Quest%0D%0A%20%20%20%20Objectives%2C%20Paste%20window%2C%20Data%20Feed%20Options%20and%20Profiles.%0D%0A%20%20-%20Each%20feature%20turns%20on%20and%20off%20at%20once%2C%20with%20no%20%60/reload%60.%0D%0A%20%20-%20The%20two%20unused%20quest%20options%20%28click%20integration%20and%20its%20modifier%29%20are%0D%0A%20%20%20%20gone.%0D%0A%0D%0A%23%23%23%20Changes%20and%20fixes%0D%0A%20%20-%20The%20arrow%20and%20the%20coordinate%20block%20hide%20during%20pet%20battles%20on%20all%0D%0A%20%20%20%20clients%20that%20have%20pet%20battles%2C%20also%20Mists%20Classic.%0D%0A%20%20-%20%22Display%20waypoints%20from%20other%20zones%22%20works%20on%20the%20minimap.%20Minimap%0D%0A%20%20%20%20waypoints%20also%20show%20in%20the%20caves%20of%20their%20zone.%0D%0A%20%20-%20The%20quest%20objective%20waypoints%20work%20on%20retail%2C%20Forever%20and%20Mists%0D%0A%20%20%20%20Classic.%20A%20new%20%22Quest%20to%20follow%22%20setting%20chooses%20the%20quest%20where%20the%0D%0A%20%20%20%20client%20allows%20both%20options.%0D%0A%20%20-%20In%20gamepad%20mode%2C%20the%20world%20map%20pins%20and%20map%20click%20are%20off%2C%20to%20prevent%0D%0A%20%20%20%20errors%20on%20the%20world%20map.%0D%0A%20%20-%20The%20player%20and%20cursor%20coordinates%20show%20on%20the%20small%20and%20the%20maximized%0D%0A%20%20%20%20world%20map%20of%20the%20classic%20clients.%0D%0A%20%20-%20The%20cursor%20coordinates%20show%20%22---%22%20when%20the%20mouse%20is%20off%20the%20map.%0D%0A%20%20-%20%60/way%60%20with%20a%20zone%20name%20that%20has%20a%20parenthesis%2C%20a%20percent%20sign%20or%20a%20dot%0D%0A%20%20%20%20no%20longer%20causes%20an%20error%20or%20matches%20the%20wrong%20zone.%0D%0A%20%20-%20%22Send%20to%20battleground%22%20uses%20the%20instance%20chat%20channel.%0D%0A%20%20-%20The%20arrow%20scale%20sliders%20stop%20at%200.05%2C%20not%200.%0D%0A%20%20-%20Fixes%20for%20waypoint%20sharing%2C%20minimap%20pin%20updates%2C%20the%20data%20feeds%2C%20the%0D%0A%20%20%20%20themes%2C%20the%20tooltips%20and%20the%20paste%20export.%0D%0A%20%20-%20The%20quest%20waypoint%20no%20longer%20loops%20with%20WaypointUI.%0D%0A%0D%0A%23%23%23%20For%20addon%20authors%0D%0A%20%20-%20Public%20callbacks%3A%20%60TomTom.RegisterCallback%28owner%2C%20event%2C%20handler%29%60%20with%0D%0A%20%20%20%20%60WaypointAdded%60%2C%20%60WaypointRemoved%60%2C%20%60WaypointsReloaded%60%2C%0D%0A%20%20%20%20%60ArrowTargetChanged%60%2C%20%60ArrowThemeChanged%60%2C%20%60ArrowVisibilityChanged%60%20and%0D%0A%20%20%20%20%60ArrowSettingsApplied%60.%0D%0A%20%20-%20Feature%20suppression%3A%20%60TomTom%3ASuppressFeature%28owner%2C%20feature%29%60%20turns%20a%0D%0A%20%20%20%20TomTom%20feature%20off%20for%20one%20session%20without%20a%20change%20to%20the%20saved%0D%0A%20%20%20%20settings.%20Features%3A%20%60%22poi%22%60%20and%20%60%22arrow.setclosest%22%60.%0D%0A%20%20-%20%60AddWaypoint%60%20accepts%20%60source%60%20as%20another%20name%20for%20%60from%60.%0D%0A%20%20-%20%60ShowWaypoint%60%20and%20the%20arrow%20hijack%20API%20work%20again.%0D%0A%20%20-%20README.md%20documents%20the%20full%20public%20API.%20The%20methods%20that%20addons%20hook%0D%0A%20%20%20%20today%20still%20work."
 folders = ["TomTom"]
 
 [package.options]
@@ -575,6 +603,24 @@ pkg_source = "git"
 pkg_id = "Details"
 version = "r3016.d1e8ad72"
 install_time = "2026-10-25T15:10:26.748676762Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "Details"
+version = "r3020.3161ab43"
+install_time = "2026-11-05T15:31:55.322771851Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "Details"
+version = "r3024.318be35d"
+install_time = "2026-11-07T05:07:08.445387517Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "Details"
+version = "r3032.256a0d70"
+install_time = "2026-11-09T14:42:46.772482814Z"
 
 [[version_log]]
 pkg_source = "git"
@@ -647,6 +693,12 @@ pkg_source = "github"
 pkg_id = "181239755"
 version = "r834"
 install_time = "2026-10-27T15:11:06.851059995Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181239755"
+version = "r835"
+install_time = "2026-11-05T15:31:55.163876072Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -771,6 +823,12 @@ install_time = "2026-10-27T15:11:06.990328707Z"
 [[version_log]]
 pkg_source = "github"
 pkg_id = "181242114"
+version = "270"
+install_time = "2026-11-05T15:31:55.140002906Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181242114"
 version = "r261"
 install_time = "2026-09-17T12:41:42.185393025Z"
 
@@ -791,6 +849,12 @@ pkg_source = "github"
 pkg_id = "181242114"
 version = "r269"
 install_time = "2026-10-27T15:11:06.942967392Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181242114"
+version = "r271"
+install_time = "2026-11-07T05:07:08.551757671Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -815,6 +879,12 @@ pkg_source = "github"
 pkg_id = "211287257"
 version = "v1.6.31"
 install_time = "2026-09-17T12:43:29.366666062Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "211287257"
+version = "v1.6.32"
+install_time = "2026-11-05T15:31:55.210095121Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -872,6 +942,18 @@ install_time = "2026-10-25T15:10:26.777310195Z"
 
 [[version_log]]
 pkg_source = "github"
+pkg_id = "379119807"
+version = "3.9.116"
+install_time = "2026-11-05T15:31:55.361774413Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "379119807"
+version = "3.9.117"
+install_time = "2026-11-09T14:42:46.939977700Z"
+
+[[version_log]]
+pkg_source = "github"
 pkg_id = "44074003"
 version = "12.1.0"
 install_time = "2026-09-17T12:43:37.792256225Z"
@@ -893,6 +975,12 @@ pkg_source = "github"
 pkg_id = "44074003"
 version = "12.1.7"
 install_time = "2026-11-02T13:09:34.853577598Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "44074003"
+version = "12.1.8"
+install_time = "2026-11-05T15:31:55.200171042Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -977,3 +1065,15 @@ pkg_source = "wowi"
 pkg_id = "7032"
 version = "v4.3.9-release"
 install_time = "2026-09-17T13:17:05.705361505Z"
+
+[[version_log]]
+pkg_source = "wowi"
+pkg_id = "7032"
+version = "v4.4.0-release"
+install_time = "2026-11-05T15:31:55.039599176Z"
+
+[[version_log]]
+pkg_source = "wowi"
+pkg_id = "7032"
+version = "v4.4.1-release"
+install_time = "2026-11-09T14:42:46.907636641Z"

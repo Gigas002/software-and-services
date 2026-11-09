@@ -7,10 +7,10 @@ slug = "ForeverTools"
 name = "ForeverTools"
 description = ""
 url = "https://github.com/krilar1/ForeverTools"
-download_url = "file:///home/gigas/.cache/wau/git/git-build/ForeverTools/r19.753f8b5.zip"
-date_published = "2026-10-23T18:41:49Z"
-version = "r19.753f8b5"
-changelog_url = "data:,753f8b5%20ForeverTools%201.0.0%0Adbf68a1%200.90.0%3A%20diminishing%20returns%2C%20shorter%20texts%2C%20section%20headings%2C%20right-click%20menus%0A4f1f1a1%20ForeverTools%200.80.0%3A%20Bags%2C%20PvP%20awareness%2C%20guided%20tour%2C%20new%20Macros%20window%0A1c5b36e%20ForeverTools%200.70.0%0A704030b%20ForeverTools%200.60.0%0A5afab06%20ForeverTools%200.50.0%0A32eb946%20ForeverTools%200.40.0%0A6f44642%20ForeverTools%200.30.0%0Ab542330%20ForeverTools%200.20.0%0A3d80b4b%20Release%200.15.0%0A"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/ForeverTools/r20.5a52700.zip"
+date_published = "2026-11-09T10:51:06Z"
+version = "r20.5a52700"
+changelog_url = "data:,5a52700%20ForeverTools%201.2.0%3A%20no%20lag%20after%20fights%2C%20bug%20fixes%2C%20version%20notice%0A753f8b5%20ForeverTools%201.0.0%0Adbf68a1%200.90.0%3A%20diminishing%20returns%2C%20shorter%20texts%2C%20section%20headings%2C%20right-click%20menus%0A4f1f1a1%20ForeverTools%200.80.0%3A%20Bags%2C%20PvP%20awareness%2C%20guided%20tour%2C%20new%20Macros%20window%0A1c5b36e%20ForeverTools%200.70.0%0A704030b%20ForeverTools%200.60.0%0A5afab06%20ForeverTools%200.50.0%0A32eb946%20ForeverTools%200.40.0%0A6f44642%20ForeverTools%200.30.0%0Ab542330%20ForeverTools%200.20.0%0A"
 folders = ["ForeverTools"]
 
 [package.options]
@@ -25,10 +25,10 @@ slug = "HighFidelityWorldMap"
 name = "HighFidelityWorldMap"
 description = ""
 url = "https://github.com/Sectimus/HighFidelityWorldMap"
-download_url = "file:///home/gigas/.cache/wau/git/git-build/HighFidelityWorldMap/r264.801ff7b.zip"
-date_published = "2026-10-30T13:25:59Z"
-version = "r264.801ff7b"
-changelog_url = "data:,801ff7b%20Add%20/hfwm%20issue%20settings%20dialog%20and%20require%20it%20in%20bug%20reports%20%28%2321%29%0Ada0612b%20Merge%20branch%20%27poi%27%0A400e345%20Add%20custom%20POI%20labels%20and%20area%20label%20options%20%28%2329%29%0A79073aa%20Add%20sound%20effects%20for%20cave%20window%20visibility%20changes%0Abd76e23%20Update%20configuration%20for%20area%20labels%3A%20enable%20movable%20toggle%2C%20adjust%20district%20label%20scale%2C%20and%20modify%20uppercase%20settings%20for%20POIs%0A543f4df%20Fix%20subzone%20label%20visibility%20under%20Fog%20of%20War%20conditions%0A83f2963%20Remove%20%22Venerous%20Ale%22%20point%20of%20interest%20from%20custom%20labels%0A48e16ea%20Add%20support%20for%20hiding%20custom%20labels%20and%20update%20coordinates%20for%20points%20of%20interest%0A9ccd4a4%20Enable%20inclusion%20of%20custom%20area%20labels%20for%20all%20types%20in%20configuration%0Af817c83%20Update%20custom%20label%20handling%20to%20allow%20shadowing%20of%20area%20labels%20and%20clarify%20documentation%0A"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/HighFidelityWorldMap/r266.dcfcb35.zip"
+date_published = "2026-11-06T00:59:49Z"
+version = "r266.dcfcb35"
+changelog_url = "data:,dcfcb35%20Generate%20README%20from%20docs%0A8fdfe11%20Make%20Remember%20zoom%2Bpan%20and%20Keep%20Centered%20opt-in%20behind%20a%20confirmation%20%28%2332%29%0A801ff7b%20Add%20/hfwm%20issue%20settings%20dialog%20and%20require%20it%20in%20bug%20reports%20%28%2321%29%0Ada0612b%20Merge%20branch%20%27poi%27%0A400e345%20Add%20custom%20POI%20labels%20and%20area%20label%20options%20%28%2329%29%0A79073aa%20Add%20sound%20effects%20for%20cave%20window%20visibility%20changes%0Abd76e23%20Update%20configuration%20for%20area%20labels%3A%20enable%20movable%20toggle%2C%20adjust%20district%20label%20scale%2C%20and%20modify%20uppercase%20settings%20for%20POIs%0A543f4df%20Fix%20subzone%20label%20visibility%20under%20Fog%20of%20War%20conditions%0A83f2963%20Remove%20%22Venerous%20Ale%22%20point%20of%20interest%20from%20custom%20labels%0A48e16ea%20Add%20support%20for%20hiding%20custom%20labels%20and%20update%20coordinates%20for%20points%20of%20interest%0A"
 folders = ["HighFidelityWorldMap"]
 
 [package.options]
@@ -43,10 +43,10 @@ slug = "adaptvx/lorewalker"
 name = "Lorewalker"
 description = "A modern questing experience."
 url = "https://github.com/Adaptvx/Lorewalker"
-download_url = "https://api.github.com/repos/Adaptvx/Lorewalker/releases/assets/658392988"
-date_published = "2026-10-20T05:42:20Z"
-version = "0.0.8"
-changelog_url = "data:,%23%23%23%20Dialogue%0D%0A-%20%2ANew%2A%20Quest%20Preview%20Tooltip%0D%0A%20%20-%20Displays%20quest%20information%20in%20a%20tooltip%20when%20hovering%20over%20quest%20options.%0D%0A-%20Added%20text%20playback%20to%20the%20Dialog%20Frame.%0D%0A%0D%0A%23%23%23%20Effects%0D%0A-%20Your%20current%20experience%20is%20now%20visible%20when%20Hide%20UI%20is%20enabled.%0D%0A%0D%0A%23%23%23%20Translation%0D%0A-%20Added%20frFR%20localization%20%28Courtesy%20of%20Brainc3ll%21%29.%0D%0A%0D%0A%23%23%23%20Supported%20Addons%0D%0A-%20Added%20support%20for%20%5BTotal%20RP%203%3A%20RP%20Name%20in%20Quest%20Text%5D%28https%3A//www.curseforge.com/wow/addons/trp3-rpnameinquests%29."
+download_url = "https://api.github.com/repos/Adaptvx/Lorewalker/releases/assets/712454631"
+date_published = "2026-11-05T07:15:13Z"
+version = "0.0.9"
+changelog_url = "data:,%23%23%23%20Effects%0D%0A-%20Added%20a%20new%20%22Custom%22%20preset%20that%20allows%20you%20to%20fully%20customize%20camera%20effects.%0D%0A%0D%0A%23%23%23%20Immersive%20Mode%0D%0A-%20Added%20a%20standalone%20dialog%20box%20style.%0D%0A%0D%0A%23%23%23%20Translation%0D%0A-%20Added%20ptBR%20localization%20%28Courtesy%20of%20cathtail%21%29."
 folders = ["Lorewalker"]
 
 [package.options]
@@ -97,17 +97,17 @@ slug = "rusty-key/spoken-wow@spoken/"
 name = "spoken-wow (spoken)"
 description = "Voiced quest dialogue, zone lore and in-world books for World of Warcraft Forever/Classic — addons, the site behind them, and the pipelines that generate the audio."
 url = "https://github.com/rusty-key/spoken-wow"
-download_url = "https://api.github.com/repos/rusty-key/spoken-wow/releases/assets/696196859"
-date_published = "2026-10-31T18:52:15Z"
-version = "spoken/v3.7.0"
-changelog_url = "data:,%23%23%203.7.0%20%E2%80%94%202026-10-31%0A%0A-%20%2A%2AWorld%20Chatter%20voices%20what%20people%20say%20out%20loud%20in%20the%20world.%2A%2A%20Guards%2C%20farmers%20and%20others%20who%20talk%0A%20%20without%20a%20quest%20are%20matched%20by%20who%20says%20what%2C%20and%20the%20line%20plays%20when%20a%20voice%20pack%20has%20it%2C%20only%20when%0A%20%20nothing%20else%20is%20being%20read.%20The%20game%27s%20chat%20bubble%20stays%20the%20only%20thing%20on%20screen%2C%20and%20lights%20the%20word%0A%20%20being%20read.%20It%20is%20a%20part%20of%20its%20own%20on%20Spoken%27s%20page%2C%20with%20a%20switch%20and%20a%20page%2C%20and%20%60/spq%20chatter%60%0A%20%20replays%20an%20NPC%27s%20lines.%20%2A%28%5BNucabe%5D%28https%3A//github.com/Nucabe%29%29%2A%0A-%20%2A%2ASpoken%20NPCs%20is%20now%20Spoken%20Bosses.%2A%2A%20The%20module%20has%20a%20new%20name%20and%20folder%2C%20%60Spoken_Bosses%60%2C%20so%0A%20%20the%20bosses%20you%20found%20and%20the%20stories%20already%20told%20start%20over.%20An%20old%20%60Spoken_NPCs%60%20folder%20left%0A%20%20beside%20it%20is%20switched%20off%2C%20and%20Spoken%20offers%20the%20reload%20that%20finishes%20it.%0A%20%20%2A%28%5Brusty-key%5D%28https%3A//github.com/rusty-key%29%29%2A%0A-%20%2A%2ABoss%20stories%20are%20read%20aloud.%2A%2A%20Install%20Spoken%20Audio%3A%20Places%20and%20Bosses%20and%20a%20boss%27s%20story%20is%20voiced%20when%20it%20falls%3B%20without%20it%20the%20story%20shows%20as%20text%2C%20as%20before.%0A%20%20The%20Bosses%20settings%20page%20lists%20the%20pack%2C%20with%20the%20address%20to%20download%20it%2C%20as%20the%20Places%20and%0A%20%20Readables%20pages%20list%20theirs.%20Play%20on%20a%20boss%27s%20page%20in%20the%20Compendium%20plays%20its%20story%2C%20and%20the%0A%20%20boss%20still%20tells%20it%20when%20it%20falls.%0A%20%20%2A%28%5Brusty-key%5D%28https%3A//github.com/rusty-key%29%29%2A%0A-%20%2A%2ABoss%20stories%20in%20your%20language.%2A%2A%20Every%20story%20is%20now%20written%20in%20German%2C%20French%2C%20Spanish%20%28EU%20and%0A%20%20AL%29%2C%20Portuguese%2C%20Russian%2C%20Korean%20and%20Chinese%20%28Simplified%20and%20Traditional%29%2C%20and%20the%20Bosses%20page%0A%20%20shows%20the%20one%20for%20your%20client%2C%20English%20where%20it%20has%20none.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2APlaces%20and%20Readables%20are%20reachable%20by%20other%20addons%2A%2A%2C%20through%20the%20globals%20%60SpokenPlaces%60%20and%0A%20%20%60SpokenReadables%60%2C%20as%20Bosses%20already%20is%20through%20%60SpokenBossesAddon%60%3A%20an%20addon%20that%20lists%20a%20place%0A%20%20or%20a%20book%20can%20ask%20whether%20Spoken%20has%20its%20story%20and%20have%20it%20read%20or%20shown.%20Such%20an%20addon%20checks%0A%20%20first%20whether%20the%20player%20has%20found%20it.%0A%20%20%2A%28%5Bfallenguards%5D%28https%3A//github.com/fallenguards%29%29%2A%0A-%20%2A%2ARaid%20and%20world%20bosses%20wear%20the%20elite%20skull%20in%20the%20Compendium%2C%20dungeon%20bosses%20the%20plain%20one.%2A%2A%0A%20%20On%20Season%20of%20Discovery%2C%20Blackfathom%20Deeps%2C%20Gnomeregan%20and%20Sunken%20Temple%20count%20as%20raids.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2AThe%20Quests%2C%20Readables%20and%20Bosses%20pages%20have%20an%20icon%20before%20anything%20is%20chosen.%2A%2A%20Quests%20shows%0A%20%20its%20scroll%3B%20Readables%20and%20Bosses%20show%20the%20Compendium%27s%20book%2C%20replacing%20the%20dragon%20on%20Bosses.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2AOn%20Forever%2C%20the%20Contribute%20box%20names%20the%20released%20game%27s%20folder.%2A%2A%20It%20points%20to%0A%20%20%60_forever_%60%20for%20the%20saved%20file%20to%20upload%2C%20instead%20of%20the%20ended%20beta%27s%20%60_classic_beta_%60.%0A%20%20%2A%28%5Bsvengabr%5D%28https%3A//github.com/svengabr%29%29%2A%0A"
+download_url = "https://api.github.com/repos/rusty-key/spoken-wow/releases/assets/724264361"
+date_published = "2026-11-08T14:59:10Z"
+version = "spoken/v3.8.4"
+changelog_url = "data:,%23%23%203.8.4%20%E2%80%94%202026-11-08%0A%0A-%20%2A%2ALeatrix%20Maps%20dungeon%20maps%20now%20open%20Spoken%27s%20lore%20beside%20the%20map.%2A%2A%20Choosing%20a%20dungeon%20or%20clicking%0A%20%20its%20entrance%20shows%20the%20dungeon%27s%20lore%2C%20clicking%20a%20boss%20shows%20that%20boss%27s%20story%20with%20its%203D%20model%2C%0A%20%20and%20right-clicking%20out%20returns%20to%20the%20zone%27s%20lore.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2ABoss%20lore%20in%20the%20Compendium%20shows%20the%20boss%27s%203D%20model%2A%2A%20above%20the%20story.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2AUnlock%20Undiscovered%20Places%20and%20Unlock%20Unfound%20Bosses%20now%20show%20everything%20in%20the%20Compendium%2A%2A%2C%20even%0A%20%20with%20Discovered%20Only%20or%20Found%20Only%20on.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20Stratholme%27s%20Balnazzar%20and%20the%20Four%20Horsemen%20use%20corrected%20models%2C%20and%20Scarlet%20Enclave%27s%20Balnazzar%0A%20%20now%20has%20one.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2ASpoken%27s%20separators%20render%20on%20Chinese%20clients.%2A%2A%20Visible%20separators%20now%20use%20the%20middle%20dot%0A%20%20%28%60%C2%B7%60%29%2C%20which%20the%20Chinese%20client%20renders%20where%20the%20previous%20bullet%20%28%60%E2%80%A2%60%29%20could%20disappear.%0A%20%20%2A%28%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%2A%0A-%20%2A%2AA%20quest%27s%20Play%20button%20in%20the%20objective%20tracker%20no%20longer%20covers%20the%20quest%27s%20item%20button.%2A%2A%20The%0A%20%20item%20stays%20where%20the%20game%20puts%20it%20and%20Play%20sits%20below%20it.%20%2A%28%5BNucabe%5D%28https%3A//github.com/Nucabe%29%29%2A%0A"
 folders = [
-    "Spoken_Quests",
     "SpokenContributions",
-    "Spoken_Places",
-    "Spoken",
+    "Spoken_Quests",
     "Spoken_Readables",
     "Spoken_Bosses",
+    "Spoken_Places",
+    "Spoken",
 ]
 
 [package.options]
@@ -140,10 +140,10 @@ slug = "svengabr/foreverlootsparkles"
 name = "ForeverLootSparkles"
 description = "WoW Forever addon: always show the sparkle effect on lootable quest items"
 url = "https://github.com/svengabr/ForeverLootSparkles"
-download_url = "https://api.github.com/repos/svengabr/ForeverLootSparkles/releases/assets/662016713"
-date_published = "2026-10-21T09:37:02Z"
-version = "v1.3.0"
-changelog_url = "data:,-%20Corpses%20that%20still%20hold%20loot%20for%20you%20sparkle%20as%20you%20approach%20them%20after%20the%20fight%2C%20bosses%20included%20%28the%20game%27s%20own%20loot%20sparkle%20left%20boss%20corpses%20out%29.%20New%20checkbox%20%22Corpses%20with%20loot%22%20%28on%3B%20off%20if%20you%20had%20switched%20all%20sparkles%20off%20before%29.%0A-%20Fewer%20Lua%20errors%20blaming%20ForeverLootSparkles%20%28%22GetAuraDataByIndex%28%29%3A%20Auras%20cannot%20be%20accessed%20when%20secret%20while%20tainted%22%2C%20seen%20on%20level%20up%29%3A%20the%20soft%20targeting%20console%20variables%20are%20now%20only%20written%20when%20their%20value%20actually%20changes.%0A%0A"
+download_url = "https://api.github.com/repos/svengabr/ForeverLootSparkles/releases/assets/711422273"
+date_published = "2026-11-05T00:11:59Z"
+version = "v1.3.1"
+changelog_url = "data:,-%20The%20addon%20no%20longer%20touches%20your%20outline%20mode%2C%20so%20the%20Self%20Highlight%20outline%20around%20your%20character%20works%20again.%20It%20only%20keeps%20the%20loot%20sparkle%20switched%20on.%20Up%20to%201.3.0%20it%20switched%20the%20outline%20mode%20off%3B%20pick%20it%20again%20under%20Options%20%3E%20Graphics%20if%20you%20want%20it%20back.%0A-%20Fixed%3A%20searching%20the%20game%27s%20Options%20%28e.g.%20for%20%22name%22%20or%20%22display%22%29%20with%20the%20addon%20enabled%20raised%20%60ADDON_ACTION_FORBIDDEN%20%E2%80%A6%20IsUserOAuthed%28%29%60%20and%20blamed%20ForeverLootSparkles.%20The%20restart%20reminder%20is%20no%20longer%20a%20line%20in%20the%20options%20panel%3B%20it%20is%20printed%20in%20chat%20when%20you%20switch%20the%20sparkles%20off.%0A-%20Fixed%3A%20the%20addon%20no%20longer%20switches%20on%20all%20of%20%2A%2AInteract%20Key%20Icons%2A%2A%2C%20which%20put%20icons%20on%20every%20chair%20and%20NPC.%20It%20only%20keeps%20the%20icons%20on%20world%20objects%2C%20which%20the%20herb%20and%20ore%20sparkle%20needs%3B%20the%20rest%20goes%20back%20to%20what%20you%20had%20before%201.2.0.%0A-%20Fixed%3A%20%2A%2AEnable%20Interact%20Key%2A%2A%20and%20the%20icons%20on%20world%20objects%20are%20no%20longer%20switched%20back%20on%20at%20every%20login%20and%20%60/reload%60.%20The%20addon%20turns%20them%20on%20when%20the%20sparkles%20start%20and%20when%20you%20tick%20a%20sparkle%20checkbox%3B%20if%20you%20switch%20them%20off%20afterwards%2C%20they%20stay%20off%20%28and%20nodes%20and%20corpses%20don%27t%20sparkle%29.%0A%0A"
 folders = ["ForeverLootSparkles"]
 
 [package.options]
@@ -158,10 +158,10 @@ slug = "krelock/nodesight"
 name = "NodeSight"
 description = "See what every herb and ore on your minimap is, and make the ones near you sparkle. WoW Forever addon"
 url = "https://github.com/Krelock/NodeSight"
-download_url = "https://api.github.com/repos/Krelock/NodeSight/releases/assets/697174523"
-date_published = "2026-11-01T03:08:26Z"
-version = "v1.5.1"
-changelog_url = "data:,%23%23%20NodeSight%201.5.1%0A%0A%23%23%23%20New%0A-%20%2A%2AColored%20ring%20and%20Colored%20gem%2A%2A%20%28Red%20when%20too%20low%20by%20default%29.%20Symbols%20can%20show%20your%20chance%20of%20a%20skill-up%20in%20the%20profession%20window%27s%20colors%3A%20red%20when%20your%20skill%20is%20too%20low%2C%20then%20orange%2C%20yellow%2C%20green%20and%20gray.%20Pick%20one%20in%20%2A%2ASkill%20colors%2A%2A%20under%20%2A%2ASymbols%2A%2A%0A%0A%23%23%23%20Changes%0A-%20%2A%2ASkill%20colors%2A%2A.%20The%20Red%20symbols%20when%20too%20low%20checkbox%20is%20now%20a%20dropdown%3A%20Red%20when%20too%20low%2C%20Colored%20ring%2C%20Colored%20gem%20or%20Off.%20If%20you%20had%20it%20off%2C%20it%20stays%20off%0A-%20%2A%2AHerbs%20and%20ore%20in%20caves%2A%2A.%20Their%20symbols%20fade%20out%20now%20instead%20of%20turning%20dark%20gray%0A%0A%23%23%23%20Fixes%0A-%20Nightmare%20Moss%2C%20Dreamroot%20and%20Star%20Lotus%20never%20got%20a%20symbol.%20Thanks%20to%20tester617%20for%20this%20on%20GitHub%0A-%20An%20error%20in%20the%20minimap%20scan%2C%20the%20symbols%2C%20the%20arrow%20or%20Far%20away%20sparkles%20%28Beta%29%20could%20repeat%20on%20every%20frame.%20Now%20it%20shows%20once%2C%20and%20Far%20away%20sparkles%20stay%20off%20until%20a%20/reload.%20Thanks%20to%20tester617%20for%20this%20on%20GitHub%0A"
+download_url = "https://api.github.com/repos/Krelock/NodeSight/releases/assets/726362361"
+date_published = "2026-11-09T05:35:45Z"
+version = "v1.9.0"
+changelog_url = "data:,%23%23%20NodeSight%201.9.0%0A%0A%23%23%23%20New%0A%0A-%20%2A%2AMap%20while%20scanning%20%28Beta%29%2A%2A%20%28on%20by%20default%29.%20While%20the%20minimap%20is%20hidden%20for%20a%20scan%2C%20the%20world%20map%27s%20picture%20of%20where%20you%20are%20shows%20in%20its%20place%2C%20moving%20as%20you%20walk.%20Not%20with%20a%20rotating%20minimap.%20On%20the%20%2A%2AScanning%2A%2A%20page.%0A-%20%2A%2AFade%20in%20and%20out%2A%2A%20%28on%20by%20default%29.%20The%20minimap%20and%20its%20buttons%20fade%20into%20the%20map%20picture%20before%20a%20scan%20and%20back%20after%2C%20instead%20of%20blinking.%20Each%20scan%20starts%20a%20moment%20later.%20On%20the%20%2A%2AScanning%2A%2A%20page.%0A-%20%2A%2AFewer%20blinks%2A%2A%20%28on%20by%20default%29.%20When%20your%20mouse%20goes%20over%20a%20window%20%28your%20bags%29%20or%20you%20hold%20a%20mouse%20button%20to%20turn%20mid-scan%2C%20the%20minimap%20stays%20hidden%20for%20a%20moment%20instead%20of%20flashing%20back%3A%20up%20to%202%20seconds%20over%20a%20window%2C%201%20while%20you%20hold%20a%20button.%20On%20the%20%2A%2AScanning%2A%2A%20page.%0A%0A%23%23%23%20Changes%0A%0A-%20%2A%2AScan%20every%20%28seconds%29%2A%2A%20%2810%20by%20default%29.%20Turned%20on%20at%2010%20once%20for%20everyone%20who%20had%20it%20off%20and%20doesn%27t%20use%20Scan%20as%20you%20move.%20On%20the%20%2A%2AScanning%2A%2A%20page.%0A-%20%2A%2ANPC%20windows%2A%2A.%20Scans%20wait%20while%20a%20vendor%2C%20quest%20giver%2C%20bank%2C%20mailbox%2C%20auction%20house%20or%20trade%20window%20is%20open%2C%20so%20addons%20that%20sell%20junk%20or%20turn%20in%20quests%20for%20you%20aren%27t%20interrupted.%0A%0A%23%23%23%20Fixes%0A%0A-%20%2A%2AEllesmereUI%2A%2A.%20Its%20coordinates%20and%20zoom%20buttons%20no%20longer%20show%20up%20under%20your%20mouse%20during%20a%20scan.%0A-%20%2A%2AMail%20icon%2A%2A.%20With%20Leatrix%20Plus%20or%20another%20minimap%20addon%2C%20the%20mail%20tooltip%20no%20longer%20pops%20up%20and%20pauses%20scans.%0A-%20%2A%2AMinimap%20icons%2A%2A.%20Icons%20other%20addons%20put%20on%20or%20next%20to%20the%20minimap%20stay%20hidden%20and%20can%27t%20be%20hovered%20during%20a%20scan%2C%20including%20ones%20added%20mid-scan.%0A-%20%2A%2AButtons%20shown%20on%20hover%2A%2A.%20Addon%20buttons%20that%20only%20show%20when%20you%20hover%20the%20minimap%20%28Leatrix%20Plus%29%20no%20longer%20flash%20under%20your%20mouse%20at%20the%20start%20of%20a%20scan.%0A-%20%2A%2ADay/night%20dial%2A%2A.%20It%20stays%20on%20top%20of%20the%20minimap%27s%20border%20during%20a%20scan%2C%20and%20hidden%20if%20your%20UI%20hides%20it.%0A"
 folders = ["NodeSight"]
 
 [package.options]
@@ -176,10 +176,10 @@ slug = "openmap-world/openmap"
 name = "openmap"
 description = "An open source, seamless world map addon for WoW Forever that prioritizes the original Vanilla art style. Finally zoom and pan in the world map with a truly open source community built map addon. "
 url = "https://github.com/openmap-world/openmap"
-download_url = "https://api.github.com/repos/openmap-world/openmap/releases/assets/698870848"
-date_published = "2026-11-01T16:35:11Z"
-version = "v0.7.5-beta"
-changelog_url = "data:,%23%23%23%20Fixed%0A%0A-%20%2A%2AThe%20map%27s%20art%20is%20there%20at%20once%20when%20you%20open%20it%2A%2A%3A%20since%200.7.4%20the%20zones%20showed%20blank%20parchment%0A%20%20for%20a%20moment%20each%20time%20the%20map%20opened.%0A-%20%2A%2AClicking%20a%20quest%20on%20the%20map%20keeps%20the%20map%20as%20it%20is%2A%2A%3A%20the%20quest%20is%20tracked%20and%20the%20map%20zooms%20in%20on%0A%20%20it%2C%20full%20screen%20or%20windowed.%20It%20opened%20the%20quest%27s%20details%2C%20which%20Blizzard%20shows%20in%20the%20windowed%0A%20%20map%2C%20so%20a%20full-screen%20map%20left%20full%20screen.%20With%20the%20quest%20log%20open%20beside%20the%20map%2C%20its%20details%0A%20%20show%20there%20too.%0A-%20%2A%2AHiding%20your%20pins%20hides%20their%20drawings%20too%2A%2A%20%28the%20menu%27s%20Pins%2C%20right-clicked%29%3A%20what%20you%20drew%20on%20a%0A%20%20pin%20stayed%20on%20the%20map%20without%20it.%0A%0A"
+download_url = "https://api.github.com/repos/openmap-world/openmap/releases/assets/723384345"
+date_published = "2026-11-08T08:33:43Z"
+version = "v0.8.2"
+changelog_url = "data:,%23%23%20WoW%20Forever%0A%0A%23%23%23%20Improved%0A%0A-%20%2A%2APanning%20no%20longer%20hitches%2A%2A%3A%20the%20map%20set%20up%20to%20300%20textures%27%20files%20in%20a%20single%20frame%20where%20a%0A%20%20pan%20brought%20new%20ground%20into%20view%2C%20and%20each%20set%20is%20a%20load%20and%20an%20upload%2C%20so%20that%20frame%20showed%20as%0A%20%20a%20hitch%20of%20about%2035%20ms.%20It%20sets%2060%20a%20frame%20now%3B%20the%20art%20still%20fades%20in%2C%20a%20few%20frames%20later.%0A%0A%23%23%23%20Fixed%0A%0A-%20%2A%2AThe%20map%20no%20longer%20stalls%20a%20moment%20after%20it%20opens%2A%2A%3A%20since%200.8.0%20OpenMap%20keeps%20the%20map%27s%20art%0A%20%20loaded%20while%20it%27s%20closed%2C%20then%20let%20go%20of%20it%20all%20in%20one%20frame%20a%20second%20into%20the%20opening%2C%20which%20the%0A%20%20game%20unloaded%20at%20once%20%28about%20a%20second%27s%20freeze%29.%20It%20now%20lets%20go%20of%20it%20a%20little%20at%20a%20time.%0A%0A-%20%2A%2AZooming%20in%20notch%20by%20notch%20is%20smooth%20again%2A%2A%3A%20since%200.8.1%20the%20blur%20came%20back%20all%20at%20once%20each%0A%20%20time%20the%20map%20stopped%2C%20one%20long%20frame%20the%20next%20wheel%20notch%20landed%20on.%20It%20now%20waits%20out%20a%20pause%0A%20%20between%20notches%20and%20comes%20back%20a%20few%20zones%20a%20frame.%20Questie%27s%20mob%20paths%20are%20worked%20out%20once%20the%0A%20%20map%20stops%2C%20not%20on%20every%20frame%20of%20a%20zoom.%0A%0A%23%23%20Retail%0A%0A%23%23%23%20Improved%0A%0A-%20%2A%2APanning%20no%20longer%20hitches%2A%2A%3A%20the%20map%20set%20up%20to%20300%20textures%27%20files%20in%20a%20single%20frame%20where%20a%0A%20%20pan%20brought%20new%20ground%20into%20view%2C%20and%20each%20set%20is%20a%20load%20and%20an%20upload%2C%20so%20that%20frame%20showed%20as%0A%20%20a%20hitch%20of%20about%2035%20ms.%20It%20sets%2060%20a%20frame%20now%3B%20the%20art%20still%20fades%20in%2C%20a%20few%20frames%20later.%0A%0A%23%23%23%20Fixed%0A%0A-%20%2A%2AThe%20map%20no%20longer%20stalls%20a%20moment%20after%20it%20opens%2A%2A%3A%20since%200.8.0%20OpenMap%20keeps%20the%20map%27s%20art%0A%20%20loaded%20while%20it%27s%20closed%2C%20then%20let%20go%20of%20it%20all%20in%20one%20frame%20a%20second%20into%20the%20opening%2C%20which%20the%0A%20%20game%20unloaded%20at%20once%20%28about%20a%20second%27s%20freeze%29.%20It%20now%20lets%20go%20of%20it%20a%20little%20at%20a%20time.%0A%0A-%20%2A%2AZooming%20in%20notch%20by%20notch%20is%20smooth%20again%2A%2A%3A%20since%200.8.1%20the%20blur%20came%20back%20all%20at%20once%20each%0A%20%20time%20the%20map%20stopped%2C%20one%20long%20frame%20the%20next%20wheel%20notch%20landed%20on.%20It%20now%20waits%20out%20a%20pause%0A%20%20between%20notches%20and%20comes%20back%20a%20few%20zones%20a%20frame.%20Questie%27s%20mob%20paths%20are%20worked%20out%20once%20the%0A%20%20map%20stops%2C%20not%20on%20every%20frame%20of%20a%20zoom.%0A"
 folders = ["OpenMap"]
 
 [package.options]
@@ -213,6 +213,12 @@ install_time = "2026-10-26T15:05:40.503754153Z"
 
 [[version_log]]
 pkg_source = "git"
+pkg_id = "ForeverTools"
+version = "r20.5a52700"
+install_time = "2026-11-09T14:43:33.465880453Z"
+
+[[version_log]]
+pkg_source = "git"
 pkg_id = "HighFidelityWorldMap"
 version = "r250.400e345"
 install_time = "2026-10-26T15:16:12.612031646Z"
@@ -224,10 +230,22 @@ version = "r264.801ff7b"
 install_time = "2026-11-01T10:01:59.733477392Z"
 
 [[version_log]]
+pkg_source = "git"
+pkg_id = "HighFidelityWorldMap"
+version = "r266.dcfcb35"
+install_time = "2026-11-07T05:06:58.484343796Z"
+
+[[version_log]]
 pkg_source = "github"
 pkg_id = "1330531373"
 version = "0.0.8"
 install_time = "2026-10-26T15:01:42.118235875Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1330531373"
+version = "0.0.9"
+install_time = "2026-11-05T15:31:41.024240996Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -249,6 +267,24 @@ install_time = "2026-11-01T13:15:57.411932124Z"
 
 [[version_log]]
 pkg_source = "github"
+pkg_id = "1360371543@spoken/"
+version = "spoken/v3.8.2"
+install_time = "2026-11-05T15:31:41.500862229Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1360371543@spoken/"
+version = "spoken/v3.8.3"
+install_time = "2026-11-07T05:06:58.419749990Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1360371543@spoken/"
+version = "spoken/v3.8.4"
+install_time = "2026-11-09T14:43:34.068123989Z"
+
+[[version_log]]
+pkg_source = "github"
 pkg_id = "1360371543@zones-audio-ruRU"
 version = "zones-audio-ruRU/v2.0.0"
 install_time = "2026-11-01T14:31:23.631599059Z"
@@ -258,6 +294,12 @@ pkg_source = "github"
 pkg_id = "1406354078"
 version = "v1.3.0"
 install_time = "2026-10-26T15:05:19.214358912Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1406354078"
+version = "v1.3.1"
+install_time = "2026-11-05T15:31:41.505540970Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -279,6 +321,24 @@ install_time = "2026-11-01T10:01:59.676195266Z"
 
 [[version_log]]
 pkg_source = "github"
+pkg_id = "1418025059"
+version = "v1.5.4"
+install_time = "2026-11-05T15:31:41.504052205Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1418025059"
+version = "v1.7.0"
+install_time = "2026-11-07T05:06:58.487837097Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1418025059"
+version = "v1.9.0"
+install_time = "2026-11-09T14:43:33.443795448Z"
+
+[[version_log]]
+pkg_source = "github"
 pkg_id = "1428502859"
 version = "v0.7.5-beta"
 install_time = "2026-11-01T10:37:59.066011867Z"
@@ -288,6 +348,12 @@ pkg_source = "github"
 pkg_id = "1442012554"
 version = "v0.7.5-beta"
 install_time = "2026-11-02T13:11:41.094560655Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "1442012554"
+version = "v0.8.2"
+install_time = "2026-11-09T14:43:33.439316127Z"
 
 [[version_log]]
 pkg_source = "github"
