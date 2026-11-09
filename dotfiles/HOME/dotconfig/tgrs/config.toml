@@ -1,7 +1,6 @@
 [app]
 mouse_support = true
 paste_support = true
-frame_rate = 120.0
 show_status_bar = true
 show_title_bar = true
 use_emoji_icons = true
