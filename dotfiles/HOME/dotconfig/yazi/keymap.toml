@@ -1,0 +1,8 @@
+[mgr]
+prepend_keymap = [
+	{ on = "T", run = "shell --orphan -- alacritty", desc = "Open terminal in CWD" },
+	{ on = [ "c", "m" ], run = "plugin chmod", desc = "Chmod on selected files" },
+	{ on = "C", run = "plugin compress", desc = "Compress selected files" },
+	{ on = "E", run = "shell -- ya pub extract --list %s", desc = "Extract selected archives here" },
+	{ on = "M", run = "plugin mount", desc = "Mount manager" },
+]

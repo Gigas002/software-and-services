@@ -1,3 +1,42 @@
 [flavor]
 dark = "Sweet"
 light = "Sweet"
+
+# Per-extension filename colors (Sweet palette).
+# yazi 26 has no prepend_rules for [filetype], so this full list replaces the flavor's rules.
+[filetype]
+rules = [
+	# Code
+	{ url = "*.{rs,go,c,h,cpp,hpp,cc,cs,java,kt,zig,py,lua,js,mjs,ts,jsx,tsx,rb,php,swift,dart,hs,ex,exs}", fg = "#00c1e4" },
+	# Shell scripts
+	{ url = "*.{sh,bash,zsh,fish,nu,ps1}", fg = "#71f79f" },
+	# Web / markup
+	{ url = "*.{html,htm,css,scss,sass,vue,svelte}", fg = "#ff9e64" },
+	# Config / data
+	{ url = "*.{toml,yaml,yml,json,jsonc,json5,ini,conf,cfg,xml,kdl,ron,env,lock,csv}", fg = "#7cb7ff", bold = true },
+	# Text / docs source
+	{ url = "*.{md,markdown,txt,rst,org,tex}", fg = "#ffffff" },
+	# Documents
+	{ url = "*.{pdf,epub,djvu,doc,docx,odt,rtf,xls,xlsx,ods,ppt,pptx,odp}", fg = "#71f79f", italic = true },
+	# Images
+	{ url = "*.{png,jpg,jpeg,gif,webp,avif,bmp,svg,ico,tiff,heic,jxl,PNG,JPG,JPEG}", fg = "#c74ded" },
+	# Audio / video
+	{ url = "*.{mp3,flac,ogg,opus,wav,m4a,aac,mp4,mkv,webm,avi,mov,m4v}", fg = "#f9dc5c" },
+	# Archives / packages
+	{ url = "*.{zip,rar,7z,tar,gz,tgz,xz,zst,bz2,lz4,lzma,iso,deb,rpm,AppImage}", fg = "#ed254e" },
+	# Logs / backups / temp
+	{ url = "*.{log,bak,old,tmp,swp,orig}", fg = "#697388" },
+
+	# Mime-based fallbacks (from Sweet flavor)
+	{ mime = "**/image/*", fg = "#c74ded" },
+	{ mime = "**/{audio,video}/*", fg = "#f9dc5c" },
+	{ mime = "**/application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#ed254e" },
+	{ mime = "**/application/{pdf,doc,rtf}", fg = "#71f79f", italic = true },
+	{ mime = "vfs/{absent,stale}", fg = "#9399b2" },
+	# Special files
+	{ url = "*", is = "orphan", bg = "#ed254e" },
+	{ url = "*", is = "exec", fg = "#71f79f" },
+	# Fallback
+	{ url = "*", fg = "#cdd6f4" },
+	{ url = "*/", fg = "#7cb7ff" },
+]
