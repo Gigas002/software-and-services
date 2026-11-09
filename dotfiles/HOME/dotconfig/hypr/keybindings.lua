@@ -18,8 +18,8 @@ local launcher       = "tofi"
 local lock           = "hyprlock"
 local bar            = "killall abar || abar --config ~/.config/abar/hyprland_config.toml"
 local selector       = "waysip -d --freeze"
-local screenshot     = "wayshot -g \"$(" .. selector .. ")\" | wl-copy"
-local screenshot_web = "wayshot -g \"$(" .. selector .. ")\" --encoding png | wl-copy"
+local screenshot     = "wayshot -G \"$(" .. selector .. ")\" | wl-copy"
+local screenshot_web = "wayshot -G \"$(" .. selector .. ")\" --encoding png | wl-copy"
 
 -- ┌─────────────────────────────────────────┐
 -- │  Window / session actions               │
