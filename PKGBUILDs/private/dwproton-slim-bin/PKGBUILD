@@ -70,7 +70,6 @@ optdepends=(
   umu-launcher
   NTSYNC-MODULE
 )
-install=${pkgname}.install
 
 prepare() {
     sed -i -E 's/"dwproton-[^"]*"/"dwproton"/g' \
@@ -88,4 +87,3 @@ package() {
     mv "${srcdir}/${_srcdir}"/* \
        "${pkgdir}/usr/share/steam/compatibilitytools.d/${_pkgname}"
 }
-
