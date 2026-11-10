@@ -13,6 +13,7 @@ makedepends=(git cargo clang cmake nasm pkgconf)
 optdepends=('xdg-desktop-portal: screen sharing and global push-to-talk shortcuts')
 provides=(concord)
 conflicts=(concord)
+options=('!strip' '!lto')
 source=("${_pkgname}::git+$url.git")
 b2sums=('SKIP')
 
@@ -32,14 +33,7 @@ build() {
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
   export RUSTFLAGS="${RUSTFLAGS} --remap-path-prefix=${srcdir}=/build"
-  # thorvg-sys and other vendored C/C++ deps honour CFLAGS/CXXFLAGS; with LTO in them the
-  # objects are emitted as GIMPLE that rustc/lld can't resolve, breaking the link with
-  # "undefined symbol: tvg_*". Strip LTO flags for this build only.
-  local _strip_lto='s/-flto[^ ]*//g; s/-f(no-)?fat-lto-objects//g'
-  export CFLAGS=$(sed -E "$_strip_lto" <<< "$CFLAGS")
-  export CXXFLAGS=$(sed -E "$_strip_lto" <<< "$CXXFLAGS")
-  export LDFLAGS=$(sed -E "$_strip_lto" <<< "$LDFLAGS")
-  cargo build --frozen --release
+  cargo build --frozen --release --no-default-features
 }
 
 package() {

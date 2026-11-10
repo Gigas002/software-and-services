@@ -1,0 +1,38 @@
+# Maintainer: Gigas002 <gigas002@pm.me>
+
+_pkgname="concord"
+pkgname="${_pkgname}-client"
+pkgver=2.7.0
+pkgrel=1
+pkgdesc="A feature-rich TUI client for Discord"
+arch=('x86_64')
+url="https://github.com/chojs23/$_pkgname"
+license=('GPL-3.0-only')
+depends=(gcc-libs glibc alsa-lib libdrm libva libpipewire mesa)
+makedepends=(cargo clang cmake nasm pkgconf)
+optdepends=('xdg-desktop-portal: screen sharing and global push-to-talk shortcuts')
+provides=(concord)
+conflicts=(concord)
+options=('!strip' '!lto')
+source=("${_pkgname}-${pkgver}.tar.gz::$url/archive/refs/tags/v${pkgver}.tar.gz")
+b2sums=('5955f42959e2e9802248604529e3221e1685375980436184a048ef04fa9c323ce91b635ae46092025c0b46832777125566f2b9aa56a090d4f556a05ed7fd8cb2')
+
+prepare() {
+  cd "${_pkgname}-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
+  cargo fetch --locked --target "$(rustc --print host-tuple)"
+}
+
+build() {
+  cd "${_pkgname}-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
+  export CARGO_TARGET_DIR=target
+  export RUSTFLAGS="${RUSTFLAGS} --remap-path-prefix=${srcdir}=/build"
+  cargo build --frozen --release --no-default-features
+}
+
+package() {
+  cd "${_pkgname}-${pkgver}"
+  install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/concord"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
