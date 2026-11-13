@@ -1,11 +1,11 @@
-# Local trimmed fork of AUR dwproton-bin
+# Local trimmed fork of AUR dwproton-bin: WOW64-only, no lib32 deps or 32-bit host libs
 # Original maintainer: Shira Nguyen <sn3446409@gmail.com>
 
 _pkgname=dwproton
 pkgname=${_pkgname}-slim-bin
 _srcver=11.0-16
 pkgver=${_srcver//-/_}
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="Proton builds with the latest Dawn Winery fixes for gacha games, based on Proton-CachyOS."
 arch=('x86_64')
@@ -45,35 +45,22 @@ depends=(
   xorg-xrandr
   xz
 )
-depends_x86_64=(
-  lib32-alsa-plugins
-  lib32-fontconfig
-  lib32-gcc-libs
-  lib32-glibc
-  lib32-libgl
-  lib32-libgpg-error
-  lib32-libnm
-  lib32-libva
-  lib32-libx11
-  lib32-libxcrypt
-  lib32-libxcrypt-compat
-  lib32-libxinerama
-  lib32-libxss
-  lib32-nss
-  lib32-pipewire
-  lib32-systemd
-  lib32-vulkan-driver
-  lib32-vulkan-icd-loader
-)
 optdepends=(
   steam
-  umu-launcher
+  umu-launcher-nolib32
   NTSYNC-MODULE
 )
 
 prepare() {
     sed -i -E 's/"dwproton-[^"]*"/"dwproton"/g' \
       "${srcdir}/${_srcdir}/compatibilitytool.vdf"
+
+    # WOW64-only: drop 32-bit host (ELF) libs, keep i386-windows PE dlls.
+    # Needs PROTON_USE_WOW64=1, which also makes proton skip 32-bit nvidia-libs.
+    local _files="${srcdir}/${_srcdir}/files"
+    rm -rf "${_files}/lib/i386-linux-gnu" \
+           "${_files}/lib/wine/i386-unix"
+    rm -f "${_files}"/lib/wine/nvidia-libs/*/i386-windows/*.dll.so
 }
 
 package() {
