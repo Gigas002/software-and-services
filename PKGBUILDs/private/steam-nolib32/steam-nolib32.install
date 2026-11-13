@@ -1,0 +1,5 @@
+post_remove() {
+  if [ -e /proc/sys/fs/binfmt_misc/steam-reaper ]; then
+    echo -1 > /proc/sys/fs/binfmt_misc/steam-reaper
+  fi
+}

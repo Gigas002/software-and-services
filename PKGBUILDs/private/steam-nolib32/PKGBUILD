@@ -1,0 +1,118 @@
+# Fork: steam without lib32 dependencies (64-bit SteamRT3 client + 64-bit reaper)
+# Based on Arch Linux multilib/steam:
+# Maintainer: Levente Polyak <anthraxx[at]archlinux[dot]org>
+# Maintainer: Giancarlo Razzolini <grazzolini@archlinux.org>
+# Maintainer: Christian Heusel <gromit@archlinux.org>
+# Contributor: Daniel Wallace <danielwallace at gtmanfred dot com>
+# Contributor: K900 <k0009000@gmail.com>
+
+pkgbase=steam-nolib32
+_upstream=steam
+pkgname=(steam-nolib32 steam-devices)
+pkgver=1.0.0.87
+pkgrel=3
+pkgdesc="Valve's digital software delivery system"
+url='https://steampowered.com/'
+arch=('x86_64')
+license=('LicenseRef-steam-subscriber-agreement')
+# the beta directory is a superset of stable and also contains the stable releases
+_reaper_commit=fb26ffe691718ae149095b2b478ad88628463017
+source=(
+  https://repo.steampowered.com/${_upstream}/archive/beta/${_upstream}_${pkgver}{.tar.gz,.dsc}
+  steam.sh
+  "reaper::git+https://github.com/Plagman/reaper.git#commit=${_reaper_commit}"
+  steam-reaper.conf
+)
+makedepends=(git gcc)
+sha512sums=('a4db3cbf5c3889b6463177407b8eb30d28aa7c9c759276333ba7721c3f7144f60973fa70df1978d50761af3405e70236eac3cd8fc86e71e655ceac114ec568c6'
+            '4c95d3b2f2fc23b2fb8a770c180d3400af18f38888691a1d3f6013a89398fb7908391259770c9bfc0f4231f4b6fb5d876be1549538a7305f92c73d81b59fc02d'
+            '322c41bd82dadc4d438d9cd87ed238c49205c32b533d2b01d414a9b06e6fb1d96a4b4cb997237704526830ebe9a2a1cb241e2081622e434095113f6074e67658'
+            '7ccb62367dbe000820504a1d1ae7a91b1e2c62c8bdf6adf44158a2232f8c9a6f99cb400955cd0874e660848fa83f6ecdd9d51f73edecdd69070916adde4835ef'
+            '62054be8d35efd2e4d66f65d2f8477d703e5c8b069ff669ee6050dbc53da2468ff53ab24530a69398ef3e1ebd65cb95f869c501edf1ed15f4c2396ddbd1f5ffd')
+b2sums=('8c68b5a8858fc78d0786e30b84dd42896e5e3070822a599a08cccc913deb4517ae90edf5ec62d65586d7c954fbc41810bb402b21d1dd8faecda3ef747fa03b6b'
+        '8fc16c7252a6eeb0f3998f903fc05da427c838f407d8645f9d88594957a0273d5568d437eb0c79b3206cb59ca2aba7e9ff49d41717c3dbd05d176a80b84b546f'
+        '1c0e308a8c4e8fe98bd68c17a7501bfe7e0865ce1a1de7d3e48a3903f47eb8c5ddbff6c1336d28eb6c45029553f2d03b438205fcf851c3b06a6f6490c29f7a49'
+        'e1846a4a4a04c10702f08bc8ff7efd44931335b010b6dc5d3ca3b68a2ab5d2c720e682d8b8d68045188b14762d69605553000a3011ab438a51a3aa3040eaf28e'
+        'db1bf877ffd54e9597daaa5c64f0da6ab44432030a2b564921ee12eca32fdb71131b369eaacc255b1595c2798e49c94c9b910d2469570145d77a16bd2cc98456')
+validpgpkeys=('BA1816EF8E75005FCF5E27A1F24AEA9FB05498B7') # linux@steampowered.com
+
+build() {
+  # 64-bit replacement for Valve's 32-bit reaper (MIT, by Plagman / Valve)
+  g++ ${CPPFLAGS} ${CXXFLAGS} ${LDFLAGS} -o reaper64 reaper/reaper.cpp
+}
+
+package_steam-nolib32() {
+  provides=("steam=${pkgver}")
+  conflicts=(steam)
+  install=steam-nolib32.install
+  depends=(
+    bash
+    coreutils
+    curl
+    dbus
+    desktop-file-utils
+    diffutils
+    freetype2
+    gdk-pixbuf2
+    glibc
+    hicolor-icon-theme
+    libgcc
+    libxcrypt
+    libxcrypt-compat
+    libxkbcommon-x11
+    lsb-release
+    lsof
+    nss
+    python
+    ttf-font
+    usbutils
+    vulkan-driver
+    vulkan-icd-loader
+    xdg-user-dirs
+    xorg-xrandr
+    xz
+    zenity
+  )
+  optdepends=(
+    'ntsync-autoload: for NTSync support'
+    'polkit: to setup SteamVR without root access'
+    'xdg-desktop-portal-impl: file & folder picker'
+    'xorg-fonts-misc: for non-latin locales'
+  )
+  depends+=(steam-devices)
+
+  cd ${_upstream}-launcher
+  make DESTDIR="${pkgdir}" install
+
+  mv "${pkgdir}/usr/bin/steam" "${pkgdir}/usr/lib/steam/steam"
+  install -Dm 755 "${srcdir}/steam.sh" "${pkgdir}/usr/bin/steam"
+
+  install -Dm 755 "${srcdir}/reaper64" "${pkgdir}/usr/lib/steam/reaper64"
+  install -Dm 644 "${srcdir}/steam-reaper.conf" "${pkgdir}/usr/lib/binfmt.d/steam-reaper.conf"
+  install -Dm 644 "${srcdir}/reaper/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.reaper"
+
+  install -d "${pkgdir}/usr/share/licenses/${pkgname}"
+  ln -s "../../doc/${_upstream}/steam_subscriber_agreement.txt" "${pkgdir}/usr/share/licenses/${pkgname}/"
+  install -Dm 644 debian/changelog -t "${pkgdir}/usr/share/doc/${_upstream}"
+
+  # blank steamdeps because apt-get
+  ln -sf true "${pkgdir}/usr/bin/steamdeps"
+}
+
+package_steam-devices() {
+  pkgdesc="List of devices Steam and SteamVR will want read/write permissions on"
+  license=(MIT)
+  depends=(udev)
+
+  cd "$srcdir/steam-launcher/subprojects/steam-devices"
+
+  install -Dm 644 LICENSE \
+    "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+
+  install -Dm 644 60-steam-input.rules \
+    "${pkgdir}/usr/lib/udev/rules.d/60-steam-input.rules"
+  install -Dm 644 60-steam-vr.rules \
+    "${pkgdir}/usr/lib/udev/rules.d/60-steam-vr.rules"
+}
+
+# vim: ts=2 sw=2 et:
