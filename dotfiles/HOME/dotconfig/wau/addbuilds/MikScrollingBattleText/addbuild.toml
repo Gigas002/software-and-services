@@ -1,0 +1,5 @@
+addname = "MikScrollingBattleText"
+url = "https://github.com/VadimTofan/MiksScrollingBattleText"
+makedepends = ["git", "tar"]
+flavors = ["forever"]
+build = "build.sh"
