@@ -10,6 +10,7 @@ PROTON_USE_WOW64 = "1"
 PROTON_ENABLE_WAYLAND = "1"
 MESA_LOADER_DRIVER_OVERRIDE = "zink"
 PROTON_NO_WM_DECORATIONS = "0"
+VKD3D_CONFIG = "descriptor_heap"
 
 [umu]
 proton = "/usr/share/steam/compatibilitytools.d/proton-cachyos-native"
