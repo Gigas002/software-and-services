@@ -13,3 +13,10 @@ default_shell "nu"
 theme "Sweet"
 
 pane_frame_style "full"
+show_startup_tips false
+show_release_notes false
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
