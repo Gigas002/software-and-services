@@ -20,7 +20,6 @@ emit_workspaces() {
         --arg vis "$VISIBILITY" \
         --arg ac "$ACTIVE_COLOR" \
         --arg ic "$INACTIVE_COLOR" '
-        map(select($vis != "monitor_specific" or .monitor == $mon)) |
         sort_by(.id) |
         map(
             (.name | gsub("&"; "&amp;") | gsub("<"; "&lt;") | gsub(">"; "&gt;")) as $n |
