@@ -2,17 +2,17 @@
 
 _pkgname="waysip"
 pkgname="${_pkgname}-git"
-pkgver=r290.2b8e9cc
-pkgrel=2
+pkgver=r338.3c23179
+pkgrel=1
 pkgdesc="A wayland-native, blazing-fast area selection tool"
 arch=('x86_64')
-url="https://github.com/waycrate/waysip"
+url="https://github.com/Gigas002/waysip"
 license=('MIT')
 depends=(wayland pango cairo glib2)
 makedepends=(git cargo pkg-config)
 provides=("${_pkgname}=${pkgver}")
 conflicts=("${_pkgname}")
-source=("${_pkgname}::git+${url}.git")
+source=("$_pkgname::git+$url.git#branch=experimental/audit")
 sha256sums=('SKIP')
 
 pkgver() {

@@ -1,17 +1,23 @@
 #!/bin/env bash
 
-# Pango foreground colors for active/inactive workspaces.
-# Override by setting these in your environment before launching abar.
+# abar sets these from the theme's [workspaces] section: the colors of the
+# active and the other workspaces, and whether to list every monitor's
+# workspaces ("all_monitors") or only the focused monitor's ("monitor_specific").
 ACTIVE_COLOR="${ABAR_WS_ACTIVE_COLOR:-#00c1e4}"
 INACTIVE_COLOR="${ABAR_WS_INACTIVE_COLOR:-#c0caf5}"
+VISIBILITY="${ABAR_WS_VISIBILITY:-all_monitors}"
 
 emit_workspaces() {
-    local active_id
-    active_id=$(hyprctl activeworkspace -j | jq '.id')
+    local active active_id active_mon
+    active=$(hyprctl activeworkspace -j)
+    active_id=$(jq '.id' <<<"$active")
+    active_mon=$(jq -r '.monitor' <<<"$active")
 
     local text
     text=$(hyprctl workspaces -j | jq -r \
         --argjson active "$active_id" \
+        --arg mon "$active_mon" \
+        --arg vis "$VISIBILITY" \
         --arg ac "$ACTIVE_COLOR" \
         --arg ic "$INACTIVE_COLOR" '
         sort_by(.id) |
