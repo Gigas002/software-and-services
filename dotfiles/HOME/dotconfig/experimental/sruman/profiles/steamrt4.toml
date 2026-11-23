@@ -1,0 +1,9 @@
+# Native games in the Steam Linux Runtime 4 (steamrt4, the latest) container,
+# with their own home in the prefix (saves and configs stay there, like a
+# wine prefix).
+name = "steamrt4"
+runner = "slr"
+prefix = "~/prefixes/steamrt4"
+
+[slr]
+runtime = "steamrt4"

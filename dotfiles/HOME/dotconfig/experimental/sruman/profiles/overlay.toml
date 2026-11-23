@@ -1,0 +1,8 @@
+# Native games on the host, real home: steamrt4's libraries only where the
+# system's are missing or older (glibc and GPU drivers always from the host).
+name = "overlay"
+runner = "slr"
+
+[slr]
+runtime = "steamrt4"
+mode = "overlay"

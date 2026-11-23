@@ -1,0 +1,4 @@
+# sruman settings; every key is optional (see /usr/share/doc/sruman-git/examples/config.toml).
+
+# `sruman execute`/`shell` without -p, and games without `profile`.
+default_profile = "steamrt4"
