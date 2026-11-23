@@ -14,7 +14,7 @@ $git_commit\
 $c\
 $cmake\
 $dart\
-$docker_content\
+$docker_context\
 $dotnet\
 $golang\
 $gradle\
@@ -45,6 +45,14 @@ magenta = '#c74ded'
 red = '#ed254e'
 white = '#dcdfe4'
 yellow = '#f9dc5c'
+bright-black = '#697388'
+bright-blue = '#7cb7ff'
+bright-cyan = '#00c1e4'
+bright-green = '#71f79f'
+bright-magenta = '#c74ded'
+bright-red = '#ed254e'
+bright-white = '#ffffff'
+bright-yellow = '#f9dc5c'
 
 [fill]
 symbol = ' '
