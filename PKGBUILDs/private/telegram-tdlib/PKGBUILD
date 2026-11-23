@@ -1,0 +1,43 @@
+# Maintainer: Gigas002 <gigas002@pm.me>
+# Contributor: Frestein <fresteinart@gmail.com>
+
+pkgname=telegram-tdlib
+pkgver=1.8.70
+pkgrel=1
+# TDLib tags no releases: each version is the commit "Update version to $pkgver."
+_commit=23383aef218a3123f02b744bfa91bde21056a814
+pkgdesc='Cross-platform library for building Telegram clients'
+arch=('x86_64' 'aarch64')
+url='https://core.telegram.org/tdlib'
+license=('BSL-1.0')
+depends=('gcc-libs' 'glibc' 'openssl' 'zlib')
+makedepends=('cmake' 'git' 'gperf')
+options=('!lto' '!debug')
+source=("$pkgname::git+https://github.com/tdlib/td.git#commit=$_commit")
+sha256sums=('288ae9010a14131d9e65d46d2daac9a2f5337efd533552421201a29378536269')
+
+pkgver() {
+  cd "$pkgname"
+  sed -n 's/^project(TDLib VERSION \([0-9.]*\) .*/\1/p' CMakeLists.txt
+}
+
+build() {
+  cmake -B build -S "$pkgname" \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release
+
+  # A compiler job peaks at ~2.8 GB here (measured, 1.8.70): cap MAKEFLAGS' -j to what the
+  # available memory allows, so -j$(nproc) can't run the machine out of memory.
+  local jobs mem_jobs
+  jobs=$(sed -n 's/.*-j *\([0-9]\+\).*/\1/p' <<< "${MAKEFLAGS:-}")
+  mem_jobs=$(( $(awk '/^MemAvailable:/ {print $2}' /proc/meminfo) / (3 * 1024 * 1024) ))
+  jobs=${jobs:-1}
+  (( mem_jobs < 1 )) && mem_jobs=1
+  (( jobs > mem_jobs )) && jobs=$mem_jobs
+  cmake --build build --parallel "$jobs"
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$pkgname/LICENSE_1_0.txt" -t "$pkgdir/usr/share/licenses/$pkgname/"
+}
