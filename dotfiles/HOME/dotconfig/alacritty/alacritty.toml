@@ -13,7 +13,7 @@ size = 14.0
 save_to_clipboard = true
 
 [general]
-import = ["~/.config/alacritty/themes/Sweet.toml"]
+import = ["themes/Sweet.toml"]
 
 [terminal]
 shell = "nu"
