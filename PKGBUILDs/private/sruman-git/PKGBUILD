@@ -2,7 +2,7 @@
 
 _pkgname=sruman
 pkgname=sruman-git
-pkgver=r44.g28de8a9
+pkgver=r69.gd256199
 pkgrel=1
 pkgdesc='Steam Linux Runtime manager and launcher for native games, without Steam'
 arch=('x86_64')
@@ -10,6 +10,7 @@ url='https://github.com/Gigas002/sruman'
 license=('GPL-3.0-or-later')
 depends=('gcc-libs' 'glibc')
 makedepends=('cargo' 'git')
+options=('!lto')  # ring's C code built with -flto can't be linked by rustc's lld
 provides=('sruman')
 conflicts=('sruman')
 source=("$_pkgname::git+$url.git")
