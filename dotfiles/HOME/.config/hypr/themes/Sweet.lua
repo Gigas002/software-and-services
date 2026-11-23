@@ -11,9 +11,9 @@
 
 hl.env("GTK_THEME", "Sweet:dark")
 hl.env("XCURSOR_THEME", "Sweet-cursors")
-hl.env("XCURSOR_SIZE", "30")
+hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_THEME", "Sweet-cursors-hyprcursor")
-hl.env("HYPRCURSOR_SIZE", "30")
+hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("XDG_ICON_THEME", "candy-icons")
 
 -- ┌─────────────────────────────────────────┐
