@@ -17,3 +17,8 @@ import = ["themes/Sweet.toml"]
 
 [terminal]
 shell = "nu"
+
+[env]
+EDITOR = "helix"
+VISUAL = "zeditor"
+
