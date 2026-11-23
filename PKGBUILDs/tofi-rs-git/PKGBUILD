@@ -13,7 +13,7 @@ depends=('wayland' 'cairo' 'pango' 'harfbuzz' 'libxkbcommon')
 provides=("tofi=${pkgver}")
 conflicts=('tofi' 'tofi-git')
 options=('!strip')
-source=("$_pkgname::git+$url.git#branch=rust")
+source=("$_pkgname::git+$url.git")
 b2sums=('SKIP')
 
 pkgver() {

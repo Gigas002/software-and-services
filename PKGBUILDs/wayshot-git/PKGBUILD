@@ -8,7 +8,7 @@ pkgdesc="Screenshotting tool for wayland compositors"
 arch=("x86_64")
 url="https://github.com/Gigas002/wayshot"
 license=('GPL-3.0-only')
-depends=(pango libjxl)
+depends=(gcc-libs glibc wayland)
 makedepends=(git cargo scdoc)
 optdepends=(
   'wl-clipboard: copy screenshots to clipboard'

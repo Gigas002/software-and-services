@@ -2,7 +2,7 @@
 
 pkgname=sweet-kde-theme-git
 _pkgname=Sweet-kde
-pkgver=r58.9f667b5
+pkgver=r67.051c50f
 pkgrel=1
 pkgdesc="Sweet KDE Plasma theme"
 arch=('any')
@@ -19,8 +19,6 @@ optdepends=(
 	'beautyline: alternative icons set'
 	'sweet-cursors-git: KDE cursors'
 	'sweet-kvantum-git: kvantum theme'
-	'sweet-konsole-git: konsole theme'
-	'sweet-sddm-git: sddm theme'
 	'sweet-folders-git: folder icons'
 )
 conflicts=(
