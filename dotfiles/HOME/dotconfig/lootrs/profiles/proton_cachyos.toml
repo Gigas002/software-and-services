@@ -1,7 +1,7 @@
 # Migrated from Lutris (wine runner, version proton-cachyos-native).
 name = "proton_cachyos"
 runner = "umu"
-prefix = "~/games/proton_prefix"
+prefix = "~/prefixes/proton"
 
 [env]
 PROTON_FSR4_UPGRADE = "0"

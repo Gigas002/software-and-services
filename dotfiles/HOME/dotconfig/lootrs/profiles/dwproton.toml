@@ -1,6 +1,6 @@
 name = "dwproton"
 runner = "umu"
-prefix = "~/games/dwproton_prefix"
+prefix = "~/prefixes/dwproton"
 
 [env]
 PROTON_FSR4_UPGRADE = "0"
