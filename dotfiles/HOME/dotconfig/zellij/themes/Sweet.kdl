@@ -1,7 +1,7 @@
 themes {
     Sweet {
         text_unselected {
-            base "#ffffff"
+            base "#c3c7d1"
             background "#161925"
             emphasis_0 "#f9dc5c"
             emphasis_1 "#00c1e4"
