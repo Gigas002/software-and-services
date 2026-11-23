@@ -18,8 +18,9 @@ local wallpaper = "hyprpaper"
 
 local idle = "hypridle"
 
+-- hyprland-session.target is started/stopped by Hyprland itself since 0.57
+-- (set HYPRLAND_NO_SD_TARGET=1 to opt out)
 hl.on("hyprland.start", function()
-    hl.exec_cmd("systemctl --user start hyprland-session.target")
     hl.exec_cmd(polkit)
     hl.exec_cmd(tray_daemon)
     hl.exec_cmd(bar)
@@ -27,8 +28,4 @@ hl.on("hyprland.start", function()
     hl.exec_cmd(notification_presenter)
     hl.exec_cmd(wallpaper)
     hl.exec_cmd(idle)
-end)
-
-hl.on("hyprland.shutdown", function()
-    os.execute("systemctl --user stop hyprland-session.target && sleep 0.1")
 end)
