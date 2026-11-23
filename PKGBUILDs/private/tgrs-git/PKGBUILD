@@ -2,7 +2,7 @@
 
 _pkgname=tgrs
 pkgname=tgrs-git
-pkgver=r1022.gd8d0060
+pkgver=r1025.gbe21cb3
 pkgrel=1
 pkgdesc='A simple TUI for Telegram'
 arch=('x86_64' 'aarch64')

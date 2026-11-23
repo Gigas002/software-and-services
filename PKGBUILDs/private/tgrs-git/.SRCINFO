@@ -1,6 +1,6 @@
 pkgbase = tgrs-git
 	pkgdesc = A simple TUI for Telegram
-	pkgver = r998.g84f5307
+	pkgver = r1022.gd8d0060
 	pkgrel = 1
 	url = https://github.com/Gigas002/tgrs
 	arch = x86_64
