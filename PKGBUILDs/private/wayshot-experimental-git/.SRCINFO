@@ -1,0 +1,23 @@
+pkgbase = wayshot-experimental-git
+	pkgdesc = Screenshotting tool for wayland compositors
+	pkgver = r708.29436b2
+	pkgrel = 1
+	url = https://github.com/Gigas002/wayshot
+	arch = x86_64
+	license = GPL-3.0-only
+	makedepends = git
+	makedepends = cargo
+	makedepends = scdoc
+	depends = gcc-libs
+	depends = glibc
+	depends = wayland
+	optdepends = wl-clipboard: copy screenshots to clipboard
+	optdepends = slurp: interactive region selection
+	optdepends = waysip: interactive region selection (Wayland-native)
+	provides = wayshot
+	conflicts = wayshot
+	conflicts = wayshot-git
+	source = wayshot::git+https://github.com/Gigas002/wayshot.git#branch=experimental/audit
+	sha256sums = SKIP
+
+pkgname = wayshot-experimental-git

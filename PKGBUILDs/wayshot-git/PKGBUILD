@@ -6,7 +6,7 @@ pkgver=r708.29436b2
 pkgrel=1
 pkgdesc="Screenshotting tool for wayland compositors"
 arch=("x86_64")
-url="https://github.com/Gigas002/wayshot"
+url="https://github.com/waycrate/wayshot"
 license=('GPL-3.0-only')
 depends=(gcc-libs glibc wayland)
 makedepends=(git cargo scdoc)
@@ -17,7 +17,7 @@ optdepends=(
 )
 provides=(${_pkgname})
 conflicts=(${_pkgname})
-source=("$_pkgname::git+$url.git#branch=experimental/audit")
+source=("$_pkgname::git+$url.git")
 sha256sums=('SKIP')
 
 pkgver() {
