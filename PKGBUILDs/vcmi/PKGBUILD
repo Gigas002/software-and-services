@@ -19,7 +19,6 @@ optdepends=('innoextract: required by vcmibuilder'
             'unzip: required by vcmibuilder'
             'onnxruntime: ML-powered combat AI')
 makedepends=('boost' 'cmake' 'qt6-tools' 'ninja')
-install="${pkgname}.install"
 _pkgsrc="${pkgname}-${pkgver}"
 source=("${_pkgsrc}.tar.gz::https://github.com/${pkgname}/${pkgname}/releases/download/${pkgver}/VCMI-Sources.tar.gz")
 noextract=("${_pkgsrc}.tar.gz")
