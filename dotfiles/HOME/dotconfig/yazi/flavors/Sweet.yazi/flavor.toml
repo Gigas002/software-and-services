@@ -1,6 +1,6 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
-# based on catppucchin-mocha: https://github.com/yazi-rs/flavors/tree/main/catppuccin-mocha.yazi
+# Sweet flavor for yazi; layout based on https://github.com/yazi-rs/flavors/tree/main/catppuccin-mocha.yazi
 
 # : Manager {{{
 
@@ -18,9 +18,9 @@ marker_marked   = { fg = "#c74ded", bg = "#c74ded" }
 marker_selected = { fg = "#f9dc5c", bg = "#f9dc5c" }
 
 # Count
-count_copied   = { fg = "#1e1e2e", bg = "#71f79f" }
-count_cut      = { fg = "#1e1e2e", bg = "#ed254e" }
-count_selected = { fg = "#1e1e2e", bg = "#f9dc5c" }
+count_copied   = { fg = "#161925", bg = "#71f79f" }
+count_cut      = { fg = "#161925", bg = "#ed254e" }
+count_selected = { fg = "#161925", bg = "#f9dc5c" }
 
 # Border
 border_symbol = "│"
@@ -36,8 +36,8 @@ preview = { underline = true }
 # : Tabs {{{
 
 [tabs]
-active   = { fg = "#1e1e2e", bg = "#00c1e4", bold = true }
-inactive = { fg = "#00c1e4", bg = "#313244" }
+active   = { fg = "#161925", bg = "#00c1e4", bold = true }
+inactive = { fg = "#00c1e4", bg = "#282c34" }
 
 # : }}}
 
@@ -46,16 +46,16 @@ inactive = { fg = "#00c1e4", bg = "#313244" }
 
 [mode]
 
-normal_main = { fg = "#1e1e2e", bg = "#7cb7ff", bold = true }
-normal_alt  = { fg = "#7cb7ff", bg = "#313244" }
+normal_main = { fg = "#161925", bg = "#7cb7ff", bold = true }
+normal_alt  = { fg = "#7cb7ff", bg = "#282c34" }
 
 # Select mode
-select_main = { fg = "#1e1e2e", bg = "#c74ded", bold = true }
-select_alt  = { fg = "#c74ded", bg = "#313244" }
+select_main = { fg = "#161925", bg = "#c74ded", bold = true }
+select_alt  = { fg = "#c74ded", bg = "#282c34" }
 
 # Unset mode
-unset_main = { fg = "#1e1e2e", bg = "#c74ded", bold = true }
-unset_alt  = { fg = "#c74ded", bg = "#313244" }
+unset_main = { fg = "#161925", bg = "#c74ded", bold = true }
+unset_alt  = { fg = "#c74ded", bg = "#282c34" }
 
 # : }}}
 
@@ -120,12 +120,12 @@ hovered = { fg = "#c74ded", bold = true, underline = true }
 # : Which {{{
 
 [which]
-mask            = { bg = "#313244" }
+mask            = { bg = "#282c34" }
 cand            = { fg = "#c74ded" }
-rest            = { fg = "#9399b2" }
+rest            = { fg = "#828997" }
 desc            = { fg = "#c74ded" }
 separator       = "  "
-separator_style = { fg = "#585b70" }
+separator_style = { fg = "#5c6370" }
 
 # : }}}
 
@@ -136,7 +136,7 @@ separator_style = { fg = "#585b70" }
 on      = { fg = "#c74ded" }
 run     = { fg = "#c74ded" }
 hovered = { reversed = true, bold = true }
-footer  = { fg = "#313244", bg = "#cdd6f4" }
+footer  = { fg = "#282c34", bg = "#c3c7d1" }
 
 # : }}}
 
@@ -174,15 +174,15 @@ rules = [
 	{ mime = "{audio,video}/*", fg = "#f9dc5c" },
 
 	# Archive
-	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#c74ded" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#ed254e" },
 
 	# Document
 	{ mime = "application/{pdf,doc,rtf}", fg = "#71f79f" },
 
 	# Virtual file system
-	{ mime = "vfs/{absent,stale}", fg = "#9399b2" },
+	{ mime = "vfs/{absent,stale}", fg = "#828997" },
 	# Fallback
-	{ url = "*", fg = "#cdd6f4" },
+	{ url = "*", fg = "#c3c7d1" },
 	{ url = "*/", fg = "#7cb7ff" },
 ]
 
