@@ -2,7 +2,7 @@
 
 _pkgname=alacritty
 pkgname=alacritty-kitty-git
-pkgver=0.18.0.dev.r2498.g067f901b
+pkgver=0.18.0.dev.r2502.g067a43bf
 pkgrel=1
 pkgdesc='A cross-platform, GPU-accelerated terminal emulator (with kitty graphics protocol support)'
 arch=('x86_64' 'aarch64')

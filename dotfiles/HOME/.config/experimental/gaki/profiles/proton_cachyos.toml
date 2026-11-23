@@ -1,0 +1,15 @@
+name = "proton_cachyos"
+runner = "proton"
+# Proton's compat data dir; the Wine prefix is its pfx/.
+prefix = "~/prefixes/proton_cachyos"
+
+[proton]
+build = "/usr/share/steam/compatibilitytools.d/proton-cachyos-native"
+
+[env]
+PROTON_FSR4_UPGRADE = "0"
+PROTON_USE_OPTISCALER = "0"
+PROTON_USE_WOW64 = "1"
+PROTON_ENABLE_WAYLAND = "1"
+MESA_LOADER_DRIVER_OVERRIDE = "zink"
+PROTON_NO_WM_DECORATIONS = "0"

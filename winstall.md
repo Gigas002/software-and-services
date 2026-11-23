@@ -210,7 +210,7 @@ Init git repo and pull scripts from arkenfox repos and my `user-overrides.js`. U
 # %profile% is one with -release in dir name
 cp $HOME/user.js/updater.bat $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/updater.bat
 cp $HOME/user.js/prefsCleaner.sh $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/prefsCleaner.bat
-cp $HOME/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/user-overrides.js $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/user-overrides.js
+cp $HOME/software-and-services/dotfiles/HOME/dotconfig/mozilla/firefox/profile/user-overrides.js $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/user-overrides.js
 cd $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%
 & updater.bat
 & prefsCleaner.bat
@@ -219,7 +219,7 @@ cd $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%
 # init repo
 git init
 # manually copy .gitignore
-cp $HOME/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/.gitingore $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/.gitignore
+cp $HOME/software-and-services/dotfiles/HOME/dotconfig/mozilla/firefox/profile/.gitignore $HOME/AppData/Roaming/Mozilla/Firefox/Profiles/%profile%/.gitignore
 git add *
 git commit -a -m "Initial commit"
 ```

@@ -1,0 +1,6 @@
+# Native Linux games run through sruman (Windows games are in lootrs).
+
+[[game]]
+name = "buckshot-roulette"
+exe = "~/games/sruman-test/buckshot/Buckshot Roulette.x86_64"
+profile = "steamrt4"

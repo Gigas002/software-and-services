@@ -1,0 +1,3 @@
+allowed_games = ["Game", "DLC"]
+check_updates = true
+store_regions = []

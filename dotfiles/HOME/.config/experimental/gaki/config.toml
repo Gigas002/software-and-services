@@ -1,0 +1,8 @@
+steam_library = "~/games"
+default_profile = "proton_cachyos"
+default_proton = "experimental"
+presence = "online"
+secret_store = "keyring"
+daemon_idle_timeout = 1800
+info_cache_ttl = 21600
+experimental = false

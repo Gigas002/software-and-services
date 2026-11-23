@@ -1,0 +1,15 @@
+# Sweet for calendar-tui (https://github.com/Gigas002/calendar-tui)
+# Alpha 00 = transparent: the terminal's background shows through
+
+[base]
+background = "#16192500"
+foreground = "#c3c7d1FF"
+border = "#697388FF"
+
+[calendar]
+header = "#c74dedFF"
+status = "#71f79fFF"
+today = "#f9dc5cFF"
+selected = "#00c1e4FF"
+weekend = "#ed254eFF"
+other_month = "#5c6370FF"

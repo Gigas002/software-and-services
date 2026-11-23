@@ -1,0 +1,10 @@
+# Native games in Steam Linux Runtime 4 (steamrt4, the latest): gaki runs
+# them with `sruman execute -p steamrt4`, and sruman reads its own copy of
+# this profile (~/.config/sruman/profiles/steamrt4.toml), so keep the two
+# the same.
+name = "steamrt4"
+runner = "slr"
+prefix = "~/prefixes/steamrt4"
+
+[slr]
+runtime = "steamrt4"

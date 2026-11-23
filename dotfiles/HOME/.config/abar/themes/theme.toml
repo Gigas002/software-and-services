@@ -1,0 +1,13 @@
+# Sweet for abar (https://github.com/Gigas002/abar)
+
+[base]
+background_color = "#161925FF"
+foreground_color = "#c74dedFF"
+# islands under the pointer, and while clicked
+hover_background_color = "#1f2333FF"
+active_background_color = "#282c34FF"
+
+[workspaces]
+visibility_mode = "monitor_specific"
+active_color = "#00c1e4FF"
+inactive_color = "#c74dedFF"

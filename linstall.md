@@ -210,14 +210,14 @@ Remove ones you won't need (e.g. in `docker`):
 
 ```sh
 cd ~/.config
-rm -rf legacy/ alacritty/ ashell/ dunst/ frogminer/ gallery-dl/ gtk-3.0/ gtk-4.0/ hypr/ imgvwr/ Kvantum/ menus/ mpv/ Proton/ qt6ct/ tofi/ VSCodium/ wayshot/ xdg-desktop-portal/ xsettingsd/ yazi/ zed/ zellij/ baloofilerc dolphinrc electron-flags.conf electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf kcminputrc kdeglobals plasmarc user-dirs.dirs nushell/oh-my-posh.nu ff2mpv-rust.json
+rm -rf legacy/ experimental/ alacritty/ ashell/ dunst/ frogminer/ gallery-dl/ gtk-3.0/ gtk-4.0/ hypr/ imgvwr/ Kvantum/ menus/ mpv/ Proton/ qt6ct/ tofi/ VSCodium/ wayshot/ xdg-desktop-portal/ xsettingsd/ yazi/ zed/ zellij/ baloofilerc dolphinrc electron-flags.conf electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf kcminputrc kdeglobals plasmarc user-dirs.dirs nushell/oh-my-posh.nu ff2mpv-rust.json
 ```
 
 For my GUI (instead of above):
 
 ```sh
 cd ~/.config
-rm -rf legacy/ electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf
+rm -rf legacy/ experimental/ electron20-flags.conf electron21-flags.conf electron22-flags.conf electron23-flags.conf electron24-flags.conf electron25-flags.conf electron26-flags.conf electron27-flags.conf electron28-flags.conf
 ```
 
 ## install apps
@@ -463,7 +463,7 @@ git clone https://github.com/arkenfox/user.js
 # %profile% is one with -release in dir name
 cp ~/downloads/user.js/updater.sh ~/.mozilla/firefox/%profile%
 cp ~/downloads/user.js/prefsCleaner.sh ~/.mozilla/firefox/%profile%
-cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/user-overrides.js ~/.mozilla/firefox/%profile%
+cp ~/downloads/software-and-services/dotfiles/HOME/dotconfig/mozilla/firefox/profile/user-overrides.js ~/.mozilla/firefox/%profile%
 cd ~/.mozilla/firefox/%profile%
 chmod +x updater.sh
 chmod +x prefsCleaner.sh
@@ -474,7 +474,7 @@ chmod +x prefsCleaner.sh
 # init repo
 git init
 # manually copy .gitignore or edir it via micro
-cp ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/firefox/profile/.gitingore ~/.mozilla/firefox/%profile%
+cp ~/downloads/software-and-services/dotfiles/HOME/dotconfig/mozilla/firefox/profile/.gitignore ~/.mozilla/firefox/%profile%
 git add *
 git commit -a -m "Initial commit"
 
@@ -487,11 +487,8 @@ For `ff2mpv`:
 ```sh
 # optionally, check installation guide: https://github.com/ryze312/ff2mpv-rust
 paru -S ff2mpv-rust
-mkdir ~/.mozilla/native-messaging-hosts
-cp -r ~/downloads/software-and-services/dotfiles/HOME/dotmozilla/native-messaging-hosts/* ~/.mozilla/native-messaging-hosts
-# or run this instead of cp
-# cd ~/.mozilla/native-messaging-hosts
-# ff2mpv-rust manifest | save -f ff2mpv.json
+# the package installs the native messaging manifest system-wide
+# (/usr/lib/mozilla/native-messaging-hosts/ff2mpv.json), nothing to copy
 ```
 
 Extensions:

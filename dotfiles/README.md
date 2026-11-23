@@ -7,13 +7,12 @@ The overall structure mirrors the filesystem:
 - `boot/` -> `/boot`
 - `etc/` -> `/etc`
 - `HOME/` -> `~/`
-  - `dotcargo/` -> `~/.cargo`
-  - `dotconfig/` -> `~/.config`
-  - `dotlocal/` -> `~/.local`
-  - `dotmozilla/` -> `~/.mozilla`
+  - `.cargo/` -> `~/.cargo`
+  - `.config/` -> `~/.config`
+  - `.local/` -> `~/.local`
 - `usr/` -> `/usr`
 
-Configs that are no longer actively used are kept under `HOME/dotconfig/legacy/`.
+Configs that are no longer actively used are kept under `HOME/.config/legacy/`.
 
 ## Requirements
 
@@ -27,11 +26,11 @@ Don't copy this directory without understanding what you're doing. Compositor co
 
 ## mpv
 
-Config references 3rd-party shaders (commented out by default). Links are in `mpv.conf`. The Windows-specific config (`mpv-windows.conf`) contains absolute `C:\Users\gigas\...` paths — update these if reusing it.
+Config references 3rd-party shaders (commented out by default). Links are in `mpv.conf`. On Windows, `install.ps1` switches its audio output to `wasapi` and GPU context to `winvk`.
 
 ## nushell
 
-Requires generating plugin init scripts before use. See `HOME/dotconfig/nushell/README.md` for full setup instructions (starship, atuin, carapace).
+Requires generating plugin init scripts before use. See `HOME/.config/nushell/README.md` for full setup instructions (starship, atuin, carapace).
 
 ## baloofilerc
 

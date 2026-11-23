@@ -1,0 +1,6 @@
+# lootrs settings; every key is optional (see /usr/share/doc/lootrs-git/examples/config.toml).
+
+# umu runs Protons that need a Steam Linux Runtime (dwproton: steamrt4) on
+# sruman's copy: `sruman provide-umu steamrt4` makes <dir>/umu/steamrt4.
+umu_folders = "~/.local/share/sruman"
+umu_runtime_update = false

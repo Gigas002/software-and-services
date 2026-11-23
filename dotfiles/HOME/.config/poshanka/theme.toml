@@ -1,0 +1,35 @@
+# Sweet for poshanka (https://github.com/Gigas002/poshanka)
+
+[font]
+name = "NotoSans Nerd Font"
+size = 14.0
+
+[colors]
+background = "#161925b3"
+foreground = "#c3c7d1ff"
+border = "#c74dedff"
+progress = "#c74dedff"
+
+[layout]
+width = 300
+height = 300
+padding = 8
+margin = 5
+
+[border]
+size = 5
+radius = 10
+
+[text]
+alignment = "left"
+summary = "<b>{summary}</b>"
+body = "{body}"
+
+[icons]
+size = 64
+position = "left"
+theme = ""
+default = "notification-active"
+
+[progress]
+mode = "over"

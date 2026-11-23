@@ -2,7 +2,7 @@
 
 _pkgname="concord"
 pkgname="${_pkgname}-client"
-pkgver=2.7.0
+pkgver=2.7.2
 pkgrel=1
 pkgdesc="A feature-rich TUI client for Discord"
 arch=('x86_64')
@@ -15,7 +15,7 @@ provides=(concord)
 conflicts=(concord)
 options=('!strip' '!lto')
 source=("${_pkgname}-${pkgver}.tar.gz::$url/archive/refs/tags/v${pkgver}.tar.gz")
-b2sums=('5955f42959e2e9802248604529e3221e1685375980436184a048ef04fa9c323ce91b635ae46092025c0b46832777125566f2b9aa56a090d4f556a05ed7fd8cb2')
+b2sums=('12d2b2cd2d5556e62fd24232af31671af916db7e344060719318930beb09dd51c70d1c15a286baeec689ddd0b2d71c14fa6eb6320acac092cc362c5ecdf3760e')
 
 prepare() {
   cd "${_pkgname}-${pkgver}"

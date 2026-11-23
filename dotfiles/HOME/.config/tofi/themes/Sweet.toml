@@ -1,0 +1,28 @@
+# Sweet for tofi-rs (https://github.com/Gigas002/tofi-rs)
+
+[prompt]
+text = "run: "
+
+[results]
+spacing = 25
+
+[text]
+color = "#c3c7d1"
+prompt_color = "#f9dc5c"
+input_color = "#00c1e4"
+match_color = "#c3c7d1"
+selection_color = "#c74ded"
+selection_match_color = "#f9dc5c"
+
+[font]
+name = "CaskaydiaCove Nerd Font Mono"
+
+[window]
+background_color = "#161925cc"
+outline_color = "#ed254eff"
+border_color = "#c74dedff"
+outline_width = 1
+border_width = 2
+corner_radius = 50
+width = "45%"
+height = "60%"
