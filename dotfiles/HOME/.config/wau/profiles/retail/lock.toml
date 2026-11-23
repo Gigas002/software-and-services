@@ -34,10 +34,10 @@ slug = "ZSBT"
 name = "ZSBT"
 description = ""
 url = "https://github.com/Zorellion/ZSBT"
-download_url = "file:///home/gigas/.cache/wau/git/git-build/ZSBT/r78.01f7890.zip"
-date_published = "2026-06-14T14:04:32Z"
-version = "r78.01f7890"
-changelog_url = "data:,01f7890%20Release%20v2.4.7%0A811273c%20Release%20v2.4.6%0A4d8cdc0%20Release%20v2.4.5%0A003abe6%20Release%20v2.4.4%0Af23f13a%20Release%20v2.4.3%0Ad3c9634%20Release%20v2.4.2%0Aab6c7e2%20Release%20v2.4.1%0A9557781%20Release%20v2.4.0%0A763f548%20Release%20v2.4.0.beta%0A5737fa7%20Release%20v2.3.9b%0A"
+download_url = "file:///home/gigas/.cache/wau/git/git-build/ZSBT/r96.35637d4.zip"
+date_published = "2026-11-13T23:28:44Z"
+version = "r96.35637d4"
+changelog_url = "data:,35637d4%20Release%20v3.5.9%0A1d947f2%20Release%20v3.5.8%0Af0228e9%20Release%20v3.5.7%0A83047fa%20Release%20v3.5.6%0Adb34b35%20Release%20v3.5.5%0A2908e69%20Release%20v3.5.4%0A4719103%20Release%20v3.5.3%0Ad12c76c%20Expand%20v3.5.2%20changelog%20notes%0Acbf3d79%20Release%20v3.5.2%0Ae5da576%20Release%20v3.5.1%3A%20aura%20notifications%20in%20secret%20contexts%20%2B%20dedup%20fix%0A"
 folders = ["ZSBT"]
 
 [package.options]
@@ -92,10 +92,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Vanilla/releases
 date_published = "2026-11-03T04:27:49Z"
 version = "r835"
 changelog_url = "data:,%23%20DBM%20-%20Vanilla%20and%20Season%20of%20Discovery%0D%0A%0D%0A%23%23%20%5Br835%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/tree/r835%29%20%282026-11-03%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/compare/r834...r835%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Vanilla/releases%29%0D%0A%0D%0A-%20Update%20a%20few%20world%20bosses%20%28%23586%29%20%20%0D%0A%20%20%20%20%2A%20Remove%20uneeded%20antispam%20%20%0D%0A%20%20%20%20%2A%20remove%20unndeded%20check%20for%20dest%20type%20player%20%20%0D%0A%20%20%20%20%2A%20IsDestTypePlayer%20to%20avoid%20showing%20pets%20in%20the%20frame%20%20%0D%0A%20%20%20%20%2A%20Added%20too%20many%20%20%0D%0A%20%20%20%20%2A%20missed%20one%20%20%0D%0A%20%20%20%20%2A%20Update%20some%20world%20bosses%20%20%0D%0A%20%20%20%20%2A%20fix%20error%20%20%0D%0A%20%20%20%20%2A%20reordering%20%20%0D%0A%20%20%20%20%2A%20all%20all%20swirl%20spell%20ids%20%20%0D%0A%20%20%20%20%2A%20adjust%20antispam%20%20%0D%0A%20%20%20%20%2A%20remove%20swirl%2C%20its%20constantly%20being%20cast%20%20%0D%0A%20%20%20%20%2A%20specialwarning%20for%20heal%20for%20emeriss%20%20%0D%0A%20%20%20%20%2A%20switch%20order%20%20%0D%0A%20%20%20%20%2A%20SoD%20only%20for%20spell%20for%20Ysondre%2C%20add%20personal%20specialwarning%20for%20volatile%20infection%20%20%0D%0A%20%20%20%20%2A%20code%20alignment%20%20%0D%0A%20%20%20%20%2A%20fix%20error%20%20%0D%0A%20%20%20%20%2A%20reorder%20%20%0D%0A-%20Update%20raz4%20%28%23587%29%20%20%0D%0A%20%20%20%20%2A%20Remove%20uneeded%20antispam%20%20%0D%0A%20%20%20%20%2A%20remove%20unndeded%20check%20for%20dest%20type%20player%20%20%0D%0A%20%20%20%20%2A%20IsDestTypePlayer%20to%20avoid%20showing%20pets%20in%20the%20frame%20%20%0D%0A%20%20%20%20%2A%20Added%20too%20many%20%20%0D%0A%20%20%20%20%2A%20missed%20one%20%20%0D%0A%20%20%20%20%2A%20Update%20Razuvious%20%20%0D%0A%20%20%20%20%2A%20fix%20error%20%20%0D%0A%20%20%20%20%2A%20change%20defaults%20%20%0D%0A-%20Fix%20azeroth%20world%20bosses%20not%20having%20icon%20and%20not%20loading%20on%20forever%20%20%0D%0A"
-folders = [
-    "DBM-Azeroth",
-    "DBM-Raids-Vanilla",
-]
+folders = ["DBM-Azeroth", "DBM-Raids-Vanilla"]
 
 [package.options]
 any_flavour = false
@@ -131,10 +128,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Cataclysm/releas
 date_published = "2026-10-14T19:44:12Z"
 version = "r264"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28Cata%29%0D%0A%0D%0A%23%23%20%5Br264%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/tree/r264%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/compare/r263...r264%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Cataclysm/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A-%20tweaks%20%20%0D%0A"
-folders = [
-    "DBM-Raids-Cata",
-    "DBM-Cataclysm",
-]
+folders = ["DBM-Raids-Cata", "DBM-Cataclysm"]
 
 [package.options]
 any_flavour = false
@@ -152,11 +146,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-MoP/releases/ass
 date_published = "2026-10-14T19:38:59Z"
 version = "r192"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28MoP%29%0D%0A%0D%0A%23%23%20%5Br192%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/tree/r192%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/compare/r191...r192%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-MoP/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A"
-folders = [
-    "DBM-Pandaria",
-    "DBM-Raids-MoP",
-    "DBM-Scenario-MoP",
-]
+folders = ["DBM-Pandaria", "DBM-Raids-MoP", "DBM-Scenario-MoP"]
 
 [package.options]
 any_flavour = false
@@ -210,10 +200,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Legion/releases/
 date_published = "2026-10-26T17:34:07Z"
 version = "r69"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28Legion%29%0D%0A%0D%0A%23%23%20%5Br69%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/tree/r69%29%20%282026-10-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/compare/r68...r69%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Legion/releases%29%0D%0A%0D%0A-%20Strip%20hudmap%20usage/notes%20%20%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A"
-folders = [
-    "DBM-BrokenIsles",
-    "DBM-Raids-Legion",
-]
+folders = ["DBM-BrokenIsles", "DBM-Raids-Legion"]
 
 [package.options]
 any_flavour = false
@@ -231,10 +218,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-WoD/releases/ass
 date_published = "2026-10-26T17:33:47Z"
 version = "r99"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28WoD%29%0D%0A%0D%0A%23%23%20%5Br99%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/tree/r99%29%20%282026-10-26%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/compare/r98...r99%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-WoD/releases%29%0D%0A%0D%0A-%20Strip%20hudmap%20usage/notes%20%20%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A-%20update%20legacy%20CI%20%20%0D%0A"
-folders = [
-    "DBM-Raids-WoD",
-    "DBM-Draenor",
-]
+folders = ["DBM-Raids-WoD", "DBM-Draenor"]
 
 [package.options]
 any_flavour = false
@@ -248,28 +232,28 @@ slug = "deadlybossmods/dbm-dungeons"
 name = "DBM-Dungeons"
 description = "This mod will add support for 5 man Dungeons and World Events, spanning Classic all the way to Dragonflight, to Deadly Boss Mods (DBM)."
 url = "https://github.com/DeadlyBossMods/DBM-Dungeons"
-download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Dungeons/releases/assets/719508547"
-date_published = "2026-11-07T03:39:26Z"
-version = "r271"
-changelog_url = "data:,%23%20DBM%20-%20Dungeons%2C%20Delves%2C%20%26%20Events%0D%0A%0D%0A%23%23%20%5Br271%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/tree/r271%29%20%282026-11-07%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/compare/270...r271%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/releases%29%0D%0A%0D%0A-%20Add%20remaining%2030-60%20dungeons%20to%20forever%20now%20that%20blizzard%20has%20exposed%20the%20data%20for%20them%20%20%0D%0A"
+download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Dungeons/releases/assets/738248322"
+date_published = "2026-11-12T05:39:38Z"
+version = "r272"
+changelog_url = "data:,%23%20DBM%20-%20Dungeons%2C%20Delves%2C%20%26%20Events%0D%0A%0D%0A%23%23%20%5Br272%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/tree/r272%29%20%282026-11-11%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/compare/r271...r272%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Dungeons/releases%29%0D%0A%0D%0A-%20Fix%20bug%20causing%20cookie%20not%20to%20work%20in%20forever%20%20%0D%0A-%20refactor%3A%20use%20core%20encounter%20locales%20%28%23653%29%20%20%0D%0A-%20Fix%20encounter%20IDs%20for%20Classic%20dungeons%20on%20Forever%20%28%23652%29%20%20%0D%0A%20%20%20%20IDs%20from%20Forever%27s%20DungeonEncounter%20table%2C%20verified%20in%20game%20for%20multiple%20%20%0D%0A%20%20%20%20low-level%20dungeons.%20%20%0D%0A%20%20%20%20Co-authored-by%3A%20Claude%20Opus%205.5%20%3Cnoreply%40anthropic.com%3E%20%20%0D%0A-%20Forever%20models%202%20%28%23651%29%20%20%0D%0A%20%20%20%20Forever%20models%202%20%20%0D%0A-%20Forever%20models%20%28%23649%29%20%20%0D%0A%20%20%20%20Forever%20models%20%20"
 folders = [
-    "DBM-Party-Vanilla",
-    "DBM-Party-BC",
-    "DBM-Party-Shadowlands",
-    "DBM-Party-Dragonflight",
+    "DBM-Party-Forever",
     "DBM-Party-Midnight",
-    "DBM-Party-Legion",
+    "DBM-Party-Vanilla",
+    "DBM-Party-MoP",
+    "DBM-Delves-WarWithin",
+    "DBM-Party-Dragonflight",
+    "DBM-Party-BfA",
+    "DBM-Challenges",
     "DBM-WorldEvents",
     "DBM-Party-WotLK",
-    "DBM-Party-BfA",
-    "DBM-Delves-WarWithin",
-    "DBM-Challenges",
-    "DBM-Party-Forever",
-    "DBM-Party-WoD",
-    "DBM-Delves-Midnight",
+    "DBM-Party-Shadowlands",
     "DBM-Party-Cataclysm",
-    "DBM-Party-MoP",
+    "DBM-Delves-Midnight",
+    "DBM-Party-Legion",
     "DBM-Party-WarWithin",
+    "DBM-Party-WoD",
+    "DBM-Party-BC",
 ]
 
 [package.options]
@@ -342,10 +326,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-BfA/releases/ass
 date_published = "2026-10-14T19:42:26Z"
 version = "r51"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28BfA%29%0D%0A%0D%0A%23%23%20%5Br51%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/tree/r51%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/compare/r50...r51%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-BfA/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A"
-folders = [
-    "DBM-Raids-BfA",
-    "DBM-BfA",
-]
+folders = ["DBM-Raids-BfA", "DBM-BfA"]
 
 [package.options]
 any_flavour = false
@@ -435,10 +416,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-Shadowlands/rele
 date_published = "2026-10-14T19:42:08Z"
 version = "r33"
 changelog_url = "data:,%23%20%3CDBM%20Mod%3E%20Raids%20%28SL%29%0D%0A%0D%0A%23%23%20%5Br33%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/tree/r33%29%20%282026-10-14%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/compare/r32...r33%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-Shadowlands/releases%29%0D%0A%0D%0A-%20forgot%20to%20actually%20add%2012.1.5%20toc%20%20%0D%0A"
-folders = [
-    "DBM-Shadowlands",
-    "DBM-Raids-Shadowlands",
-]
+folders = ["DBM-Shadowlands", "DBM-Raids-Shadowlands"]
 
 [package.options]
 any_flavour = false
@@ -456,10 +434,7 @@ download_url = "https://api.github.com/repos/tullamods/OmniCC/releases/assets/32
 date_published = "2025-12-14T21:07:04Z"
 version = "11.2.8"
 changelog_url = "data:,%23%20OmniCC%20Changelog%0D%0A%0D%0A%23%23%2011.2.8%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%2011.2.7%2C%205.5.3%2C%203.8.0%2C%202.5.2%2C%20and%201.5.8%0D%0A%0D%0A%23%23%2011.2.7%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.2.5%20and%205.5.1%0D%0A%0D%0A%23%23%2011.2.6%0D%0A%0D%0A%2A%20The%20Cooldown%20Timer%20Offset%20option%20should%20work%20again.%0D%0A%2A%20Added%20an%20additional%20guard%20to%20hopefully%20prevent%20instances%20of%20the%20Attempt%20to%20call%20method%20%27RemoveCooldown%27%20error%0D%0A%2A%20Resolved%20the%20%27Attempted%20to%20release%20inactive%20object%27%20error%20for%20the%20Shine%20and%20Flare%20effects.%0D%0A%0D%0A%23%23%2011.2.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.2.0%20%28thanks%20Hollicsh%29%0D%0A%0D%0A%23%23%2011.2.4%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.1.7%20and%205.5.0%0D%0A%0D%0A%23%23%2011.2.3%0D%0A%0D%0A%2A%20Fix%20an%20error%20that%20could%20appear%20when%20hiding%20flare%20finish%20effect.%0D%0A%0D%0A%23%23%2011.2.2%0D%0A%0D%0A%2A%20Added%20a%20more%20agressive%20disable%20for%20cooldown%20text%20to%20handle%20flickering%20issues.%0D%0A%0D%0A%23%23%2011.2.1%0D%0A%0D%0A%2A%20Fix%20%60/omnicc%60%20not%20showing%20the%20options%20menu%2C%0D%0A%0D%0A%23%23%2011.2.0%0D%0A%0D%0A%2A%20OmniCC%20will%20now%20disable%20Blizzard%27s%20default%20cooldown%20text%20implementation%20text%0D%0A%20%20on%20all%20cooldowns%20by%20default.%20You%20can%20toggle%20this%20behavior%20via%20the%20new%20%60/occ%20blizzard%60%0D%0A%20%20slash%20command.%0D%0A%0D%0A%23%23%2011.1.0%0D%0A%0D%0A%2A%20%28Retail%29%20OmniCC%20will%20now%20check%20GetHideCountdownNumbers%20and%20skip%20displaying%20text%20where%20the%20value%20is%20set%20to%20false.%0D%0A%20%20This%20should%20prevent%20double%20text.%0D%0A%0D%0A%23%23%2011.0.8%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.7%0D%0A%0D%0A%23%23%2011.0.7%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2011.1.0%2C%204.4.2%20and%201.15.6%0D%0A%0D%0A%23%23%2011.0.6%0D%0A%0D%0A%2A%20Fix%20another%20nil%20value%20error%0D%0A%0D%0A%23%23%2011.0.5%0D%0A%0D%0A%2A%20Fix%20an%20error%20that%20could%20ocurr%20when%20updating%20timer%20settings%20while%20active%20timers%20are%20present%0D%0A%0D%0A%23%23%2011.0.4%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%2A%20Update%20cooldown%20calculations%0D%0A%2A%20Add%20typings%0D%0A%0D%0A%23%23%2011.0.3%0D%0A%0D%0A%2A%20Add%20modRate%20to%20display%20duration%20calculations%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2011.0.2%0D%0A%0D%0A%2A%20Fixed%20bug%20in%20PreviewDialog%20that%20caused%20some%20effects%20not%20to%20show%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2011.0.1%0D%0A%0D%0A%2A%20Increase%20cooldown%20text%20frame%20level%0D%0A%0D%0A%23%23%2011.0.0%0D%0A%0D%0A%2A%20Fix%20an%20error%20when%20attempting%20to%20display%20the%20cooldown%20preview%20frame%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.9%0D%0A%0D%0A%2A%20Add%20an%20additional%20check%20for%20forbidden%20frames%0D%0A%0D%0A%23%23%2010.2.8%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.7%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%2A%20Preliminary%20War%20Within%20support%0D%0A%0D%0A%23%23%2010.2.6%0D%0A%0D%0A%2A%20Update%20TOCs%0D%0A%0D%0A%23%23%2010.2.5%0D%0A%0D%0A%2A%20Updated%20Russian%20translation%20%28thanks%20to%20%5BHollicsh%5D%28https%3A//github.com/Hollicsh%29%29%0D%0A%0D%0A%23%23%2010.2.4%0D%0A%0D%0A%2A%20Updated%20Portuguese%20translation%20%28thanks%20to%20%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%29%0D%0A%0D%0A%23%23%2010.2.3%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.1%0D%0A%0D%0A%23%23%2010.2.2%0D%0A%0D%0A%23%23%23%20Thank%20you%20to%20%5Banon1231823%5D%28https%3A//github.com/anon1231823%29%20for%20these%20contributions%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.2.5%0D%0A%2A%20Updated%20French%2C%20Portuguese%2C%20and%20Spanish%20translations%0D%0A%0D%0A%23%23%2010.2.1%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.15.0%0D%0A%0D%0A%23%23%2010.2.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.2.0%0D%0A%0D%0A%23%23%2010.1.2%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.1.7%20and%201.14.4%0D%0A%2A%20Add%20Multi%20Action%20Burs%20to%20the%20default%20Action%20Bars%20rule%0D%0A%0D%0A%23%23%2010.1.1%0D%0A%0D%0A%2A%20Update%20TOCs%20for%203.4.3%0D%0A%0D%0A%23%23%2010.1.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.1.0%0D%0A%0D%0A%23%23%2010.0.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.7%0D%0A%0D%0A%23%23%2010.0.4%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.5%0D%0A%0D%0A%23%23%2010.0.3%0D%0A%0D%0A%2A%20Update%20TOCs%20for%203.4.1%0D%0A%0D%0A%23%23%2010.0.2%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.2%0D%0A%2A%20NOTE%3A%20OmniCC%27s%20options%20menu%20is%20now%20no%20longer%20a%20part%20of%20the%20main%20options%20menu%2C%0D%0A%20%20to%20avoid%20issues%20introduced%20with%20Dragonflight%27s%20UI%20changes.%20To%20bring%20up%20the%0D%0A%20%20options%20menu%2C%20use%20either%20the%20/omnicc%20or%20/occ%20slash%20commands.%0D%0A%0D%0A%23%23%2010.0.1%0D%0A%0D%0A%2A%20Tagging%20as%20release%0D%0A%0D%0A%23%23%2010.0.0%0D%0A%0D%0A%2A%20Update%20TOCs%20for%2010.0.0%0D%0A%0D%0A%23%23%209.2.1%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.2.5%2C%203.4.0%2C%202.5.4%2C%20and%201.14.3.%0D%0A%0D%0A%23%23%209.2.0%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.2.0%2C%202.5.3%2C%20and%201.14.2%0D%0A%0D%0A%23%23%209.1.6%0D%0A%0D%0A%2A%20Whoops%2C%20I%20forgot%20that%209.1.5%20introduced%20a%20new%20Maximum%20Cooldown%20Duration%20setting%20%28thanks%20Lyrex%29%0D%0A%2A%20Setting%20the%20maximum%20duration%20slider%20to%200%20will%20enable%20cooldowns%20of%20any%20duration%0D%0A%2A%20Adjusted%20default%20for%20max%20duration%20to%20be%200%20instead%20of%20600%0D%0A%0D%0A%23%23%209.1.5%0D%0A%0D%0A%2A%20TOC%20updates%20for%201.14.1%20and%209.1.5%0D%0A%0D%0A%23%23%209.1.0%0D%0A%0D%0A%2A%20TOC%20updates%20for%20WoW%209.1.0%0D%0A%0D%0A%23%23%209.0.10%0D%0A%0D%0A%2A%20Update%20TOCs%20for%20Burning%20Crusade%20Classic%0D%0A%0D%0A%23%23%209.0.9%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.13.7%0D%0A%0D%0A%23%23%209.0.8%0D%0A%0D%0A%2A%20The%20cooldown%20opacity%20setting%20is%20now%20only%20applied%20when%20set%20at%20an%20opacity%20value%20under%20100%25%0D%0A%2A%20Update%20TOCs%20values%20for%209.0.5%0D%0A%0D%0A%23%23%209.0.7%0D%0A%0D%0A%2A%20Updated%20Korean%20translation%20%28thanks%2C%20WetU%29%0D%0A%2A%20Updated%20Russian%20translation%20%28thanks%20mone-ennen%29%0D%0A%2A%20Fixed%20an%20issue%20when%20upgrading%20from%20OmniCC%20versions%20prior%20to%208.1%20or%20so%0D%0A%2A%20Added%20a%20setting%20to%20disable%20auto%20disabling%20of%20blizzard%20cooldown%20text%20%60/run%20OmniCC.db.global.disableBlizzardCooldownText%20%3D%20false%3B%20ReloadUI%28%29%60%0D%0A%0D%0A%23%23%209.0.6%0D%0A%0D%0A%2A%20Replaced%20the%20Draw%20Cooldown%20Swipes%20with%20a%20Cooldown%20Opacity%20slider%0D%0A%2A%20Updated%20Russian%20Localization%20%28thanks%2C%20Artur91425%29%0D%0A%0D%0A%23%23%209.0.5%0D%0A%0D%0A%2A%20Update%20TOCs%20for%201.13.6%0D%0A%2A%20Add%20a%20nil%20check%20when%20deciding%20to%20hide%20cooldown%20spirals%20or%20not%0D%0A%2A%20Build%20process%20updates%0D%0A%0D%0A%23%23%209.0.4%0D%0A%0D%0A%2A%20Updated%20TOCs%20for%209.0.2%0D%0A%0D%0A%23%23%209.0.3%0D%0A%0D%0A%2A%20Fix%20cases%20where%20cooldowns%20may%20not%20properly%20refresh%0D%0A%0D%0A%23%23%209.0.2%0D%0A%0D%0A%2A%20Fixed%20an%20error%20for%20when%20OmniCC%20attempts%20to%20display%20configuration%20for%20rules%20with%20missing%20id%20values%0D%0A%0D%0A%23%23%209.0.1%0D%0A%0D%0A%2A%20Apply%20default%20rulesets%20only%20when%20a%20profile%20is%20first%20created.%20This%20fixes%20an%20issue%20with%20deleting%20the%20defaults.%0D%0A%0D%0A%23%23%209.0.0%0D%0A%0D%0A%2A%20Finish%20effects%20will%20now%20trigger%20immediately%20for%20cooldowns%20that%20are%20soon%20to%20complete%2C%20but%20were%20overridden%20by%20the%20GCD.%0D%0A%2A%20Added%20a%20new%20setting%2C%20Timer%20Offset%2C%20to%20adjust%20the%20end%20point%20for%20timers%20to%20account%20for%20things%20like%20spell%20queue%20windows%20and%20latency.%0D%0A%2A%20Added%20predefined%20rules%20for%20Action%20Bars%2C%20nameplates%2C%20and%20auras%0D%0A%2A%20Updated%20TOCs%20for%20the%20Shadowlands%20pre-patch%0D%0A%0D%0A%23%23%208.3.6%0D%0A%0D%0A%2A%20Deferred%20loading%20of%20OmniCC_Config%20until%20you%20either%20use%20/omnicc%20or%20click%20on%20it%20in%20interface%20options%0D%0A%2A%20Updated%20Ace3%20packages%20for%20compatibility%20with%20World%20of%20Warcraft%20Shadowlands%0D%0A"
-folders = [
-    "OmniCC",
-    "OmniCC_Config",
-]
+folders = ["OmniCC", "OmniCC_Config"]
 
 [package.options]
 any_flavour = false
@@ -477,10 +452,7 @@ download_url = "https://api.github.com/repos/DeadlyBossMods/DBM-BurningCrusade/r
 date_published = "2026-10-28T16:28:50Z"
 version = "r22"
 changelog_url = "data:,%23%20DBM%20-%20The%20Burning%20Crusade%20mods%0D%0A%0D%0A%23%23%20%5Br22%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/tree/r22%29%20%282026-10-24%29%0D%0A%5BFull%20Changelog%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/compare/r21...r22%29%20%5BPrevious%20Releases%5D%28https%3A//github.com/DeadlyBossMods/DBM-BurningCrusade/releases%29%0D%0A%0D%0A-%20Update%20Storm%20CD%20timer%20with%20variable%20duration%20gathered%20from%201000%20logs%20%28%2313%29%20%20%0D%0A-%20Update%20tocs%20for%2012.1.7%20ptr%20%20%0D%0A"
-folders = [
-    "DBM-Raids-BC",
-    "DBM-Outlands",
-]
+folders = ["DBM-Raids-BC", "DBM-Outlands"]
 
 [package.options]
 any_flavour = false
@@ -633,6 +605,24 @@ pkg_source = "git"
 pkg_id = "ZSBT"
 version = "r78.01f7890"
 install_time = "2026-09-17T12:46:09.176979737Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "ZSBT"
+version = "r80.a2b436a"
+install_time = "2026-11-10T12:20:17.966816443Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "ZSBT"
+version = "r94.f0228e9"
+install_time = "2026-11-13T15:55:24.437748811Z"
+
+[[version_log]]
+pkg_source = "git"
+pkg_id = "ZSBT"
+version = "r96.35637d4"
+install_time = "2026-11-14T11:56:47.438314215Z"
 
 [[version_log]]
 pkg_source = "github"
@@ -855,6 +845,12 @@ pkg_source = "github"
 pkg_id = "181242114"
 version = "r271"
 install_time = "2026-11-07T05:07:08.551757671Z"
+
+[[version_log]]
+pkg_source = "github"
+pkg_id = "181242114"
+version = "r272"
+install_time = "2026-11-13T15:55:24.394397991Z"
 
 [[version_log]]
 pkg_source = "github"

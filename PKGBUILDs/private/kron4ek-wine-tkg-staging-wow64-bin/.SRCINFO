@@ -1,6 +1,6 @@
 pkgbase = kron4ek-wine-tkg-staging-wow64-bin
 	pkgdesc = A compatibility layer for running Windows programs (WOW64 with TkG-Staging patches)
-	pkgver = 11.20
+	pkgver = 11.22
 	pkgrel = 1
 	url = https://github.com/Kron4ek/Wine-Builds
 	arch = x86_64
@@ -45,15 +45,15 @@ pkgbase = kron4ek-wine-tkg-staging-wow64-bin
 	optdepends = perl: winemaker and function_grep.pl
 	optdepends = wine-gecko: HTML rendering engine (MSHTML)
 	optdepends = wine-mono: .NET Framework implementation
-	provides = wine=11.20
-	provides = wine-staging=11.20
-	provides = wine-wow64=11.20
+	provides = wine=11.22
+	provides = wine-staging=11.22
+	provides = wine-wow64=11.22
 	conflicts = wine
 	conflicts = wine-staging
 	conflicts = wine-wow64
 	options = !strip
 	options = !debug
-	source = https://github.com/Kron4ek/Wine-Builds/releases/download/11.20/wine-11.20-staging-tkg-amd64-wow64.tar.xz
-	sha256sums = fac3cabfb094b109f45ca6ee16eda43621b843c283243ea7e011dda581468744
+	source = https://github.com/Kron4ek/Wine-Builds/releases/download/11.22/wine-11.22-staging-tkg-amd64-wow64.tar.xz
+	sha256sums = 1849bca8ae3220413b6b08623bedb053a3921719ffc10c2de16ec216012122fa
 
 pkgname = kron4ek-wine-tkg-staging-wow64-bin

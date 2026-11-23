@@ -34,3 +34,6 @@ hl.env("QT_ENABLE_HIGHDPI_SCALING", "1")
 
 -- Default terminal
 hl.env("TERMINAL", "alacritty")
+
+-- Steam: force 64-bit runtime client
+hl.env("STEAM_FORCE_CLIENT", "steamrt64")
