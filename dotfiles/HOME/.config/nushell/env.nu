@@ -5,6 +5,7 @@ match $nu.os-info.name {
         $env.EDITOR = "helix"
         $env.VISUAL = "zeditor"
         $env.DIFFPROG = "zeditor --wait --diff"
+        $env.STARSHIP_CONFIG = ($nu.home-dir | path join ".config" "starship" "config.toml")
     }
     "macos" => {
         $env.EDITOR = "hx"
