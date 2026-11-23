@@ -3,5 +3,5 @@ vt = 1
 
 [default_session]
 command = "ratgreet"
-# command = "tuigreet -t --asterisks"
+# command = "tuigreet"  # its settings: /etc/tuigreet/config.toml
 user = "greeter"

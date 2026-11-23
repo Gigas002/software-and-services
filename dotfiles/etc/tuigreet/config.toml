@@ -1,0 +1,23 @@
+# /etc/tuigreet/config.toml, read by tuigreet >= 0.11 (command-line options override it).
+# `tuigreet --dump-config` prints the effective configuration; unknown keys are ignored silently.
+
+[display]
+show_time = true
+
+[secret]
+mode = "characters"
+characters = "*"
+
+# Sweet, from awesome-sweet/tuigreet. Hex colors need a truecolor terminal (cage + a terminal,
+# kmscon): a plain Linux VT has 16 colors.
+[theme]
+container = "#161925"
+time = "#00c1e4"
+text = "#c3c7d1"
+border = "#71f79f"
+title = "#00c1e4"
+greet = "#00c1e4"
+prompt = "#71f79f"
+input = "#00c1e4"
+action = "#f9dc5c"
+button = "#f9dc5c"
