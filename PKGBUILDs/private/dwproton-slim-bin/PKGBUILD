@@ -5,7 +5,7 @@ _pkgname=dwproton
 pkgname=${_pkgname}-slim-bin
 _srcver=11.0-17
 pkgver=${_srcver//-/_}
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="Proton builds with the latest Dawn Winery fixes for gacha games, based on Proton-CachyOS."
 arch=('x86_64')
@@ -57,9 +57,12 @@ prepare() {
 
     # WOW64-only: drop 32-bit host (ELF) libs, keep i386-windows PE dlls.
     # Needs PROTON_USE_WOW64=1, which also makes proton skip 32-bit nvidia-libs.
+    # i386-unix also holds the 64-bit wine64 and wine64-preloader that WOW64
+    # runs on: without them wine can't start wineboot, so keep those two.
     local _files="${srcdir}/${_srcdir}/files"
-    rm -rf "${_files}/lib/i386-linux-gnu" \
-           "${_files}/lib/wine/i386-unix"
+    rm -rf "${_files}/lib/i386-linux-gnu"
+    find "${_files}/lib/wine/i386-unix" -mindepth 1 \
+         ! -name wine64 ! -name wine64-preloader -delete
     rm -f "${_files}"/lib/wine/nvidia-libs/*/i386-windows/*.dll.so
 }
 
