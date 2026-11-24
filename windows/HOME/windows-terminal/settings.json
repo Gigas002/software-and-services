@@ -102,7 +102,7 @@
     "schemes": 
     [
         {
-            "background": "#000000",
+            "background": "#161925",
             "black": "#697388",
             "blue": "#7CB7FF",
             "brightBlack": "#697388",
@@ -113,14 +113,14 @@
             "brightRed": "#ED254E",
             "brightWhite": "#FFFFFF",
             "brightYellow": "#F9DC5C",
-            "cursorColor": "#DCDFE4",
+            "cursorColor": "#C3C7D1",
             "cyan": "#00C1E4",
-            "foreground": "#FFFFFF",
+            "foreground": "#C3C7D1",
             "green": "#71F79F",
             "name": "Sweet",
             "purple": "#C74DED",
             "red": "#ED254E",
-            "selectionBackground": "#7CB7FF",
+            "selectionBackground": "#C50ED2",
             "white": "#DCDFE4",
             "yellow": "#F9DC5C"
         }
