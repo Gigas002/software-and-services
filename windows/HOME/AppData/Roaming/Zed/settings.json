@@ -7,8 +7,54 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "title_bar": {
+    "show_branch_status_icon": true,
+  },
+  "status_bar": {
+    "show_active_file": true,
+    "line_endings_button": true,
+    "active_encoding_button": "enabled",
+  },
+  "auto_update": false,
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "cli_default_open_behavior": "new_window",
   "project_panel": {
+    "git_status_indicator": true,
     "dock": "left",
+  },
+  "outline_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "git_panel": {
+    "file_icons": true,
+    "tree_view": true,
+    "dock": "left",
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-5",
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.3-codex",
+    },
   },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
@@ -18,7 +64,7 @@
   },
   "ui_font_family": "NotoSans Nerd Font",
   "ui_font_size": 16,
-  "buffer_font_family": "CaskaydiaMono Nerd Font Mono",
+  "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
   "buffer_font_size": 16,
   "theme": "Catppuccin Mocha",
   "minimap": {
@@ -27,7 +73,7 @@
   },
   "terminal": {
     "copy_on_select": true,
-    "font_family": "CaskaydiaMono Nerd Font Mono",
+    "font_family": "CaskaydiaCove Nerd Font Mono",
     "shell": {
       "program": "nu",
     },
@@ -43,7 +89,6 @@
       "enabled": true,
     },
   },
-  "hard_tabs": false,
   "inlay_hints": {
     "enabled": true,
   },
