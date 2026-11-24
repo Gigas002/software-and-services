@@ -1,0 +1,8 @@
+[mgr]
+linemode = "mtime_full"
+
+[plugin]
+prepend_fetchers = [
+	{ url = "*", run = "git", group = "git" },
+	{ url = "*/", run = "git", group = "git" },
+]
