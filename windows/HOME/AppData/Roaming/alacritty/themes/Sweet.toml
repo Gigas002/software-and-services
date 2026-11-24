@@ -1,14 +1,33 @@
-# [colors]
-# dim_foreground = "#5C6370"
-# foreground = "#C3C7D1"
-# bright_foreground = "#828997"
-# dim_background = "#282C34"
-# background = "#161925"
-# bright_background = "#282C34"
+# Sweet for alacritty, the palette of the original Sweet konsole scheme
 
 [colors.primary]
-background = '#000000'
-foreground = '#ffffff'
+background = "#161925"
+foreground = "#c3c7d1"
+dim_foreground = "#5c6370"
+
+[colors.cursor]
+text = "#161925"
+cursor = "#c3c7d1"
+
+[colors.selection]
+text = "#fefefe"
+background = "#c50ed2"
+
+[colors.search.matches]
+foreground = "#161925"
+background = "#00c1e4"
+
+[colors.search.focused_match]
+foreground = "#161925"
+background = "#f9dc5c"
+
+[colors.hints.start]
+foreground = "#161925"
+background = "#f9dc5c"
+
+[colors.hints.end]
+foreground = "#161925"
+background = "#00c1e4"
 
 [colors.normal]
 black = "#697388"
@@ -20,8 +39,13 @@ magenta = "#c74ded"
 cyan = "#00c1e4"
 white = "#dcdfe4"
 
+# Sweet's bright colors are its normal ones; only white gets brighter
 [colors.bright]
+black = "#697388"
+red = "#ed254e"
+green = "#71f79f"
+yellow = "#f9dc5c"
+blue = "#7cb7ff"
+magenta = "#c74ded"
+cyan = "#00c1e4"
 white = "#ffffff"
-
-# [colors.dim]
-# white = "#dcdfe4"

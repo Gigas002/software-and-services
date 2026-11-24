@@ -6,7 +6,7 @@ blur = true
 startup_mode = "Maximized"
 
 [font]
-normal = { family = "CaskaydiaMono Nerd Font Mono", style = "Regular" }
+normal = { family = "CaskaydiaCove Nerd Font Mono", style = "Regular" }
 size = 14.0
 
 [selection]
@@ -17,3 +17,7 @@ import = ["~/AppData/Roaming/alacritty/themes/Sweet.toml"]
 
 [terminal]
 shell = "nu"
+
+[env]
+EDITOR = "hx"
+VISUAL = "zed"
