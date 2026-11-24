@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2026-08-04T16:49:52.933-00:00",
+	"CreationDate" : "2026-11-24T22:48:25.259-00:00",
 	"Sources" : 
 	[
 		{
@@ -10,22 +10,19 @@
 					"PackageIdentifier" : "Mozilla.Firefox.ru"
 				},
 				{
-					"PackageIdentifier" : "Proton.ProtonVPN"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.GameInput"
-				},
-				{
-					"PackageIdentifier" : "Google.Chrome"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
+				},
+				{
+					"PackageIdentifier" : "WireGuard.WireGuard"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2008.x64"
 				},
 				{
-					"PackageIdentifier" : "WireGuard.WireGuard"
+					"PackageIdentifier" : "Google.GoogleDrive"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.GameInput"
 				},
 				{
 					"PackageIdentifier" : "PlayStation.PlayStationAccessories"
@@ -34,13 +31,13 @@
 					"PackageIdentifier" : "Corsair.iCUE.5"
 				},
 				{
+					"PackageIdentifier" : "Google.Chrome"
+				},
+				{
 					"PackageIdentifier" : "CodecGuide.K-LiteCodecPack.Mega"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2013.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2012.x86"
@@ -52,31 +49,28 @@
 					"PackageIdentifier" : "Microsoft.VCRedist.2008.x86"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2013.x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2012.x64"
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
-					"PackageIdentifier" : "Discord.Discord"
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2012.x64"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
 				},
 				{
 					"PackageIdentifier" : "Telegram.TelegramDesktop"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.PowerToys"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.AppInstaller"
@@ -124,5 +118,5 @@
 			}
 		}
 	],
-	"WinGetVersion" : "1.29.280"
+	"WinGetVersion" : "1.29.380"
 }
