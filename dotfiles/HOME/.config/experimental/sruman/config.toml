@@ -2,6 +2,3 @@
 
 # `sruman execute`/`shell` without -p, and games without `profile`.
 default_profile = "steamrt4"
-
-# `sruman steam relocate` moves Steam's library (steamapps) here.
-steam_library = "~/games/steam"
