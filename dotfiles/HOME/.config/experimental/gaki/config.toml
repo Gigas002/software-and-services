@@ -1,6 +1,6 @@
 steam_library = "~/games"
 default_profile = "proton_cachyos"
-default_proton = "experimental"
+default_proton = "/usr/share/steam/compatibilitytools.d/proton-cachyos-native"
 presence = "online"
 secret_store = "keyring"
 daemon_idle_timeout = 1800
