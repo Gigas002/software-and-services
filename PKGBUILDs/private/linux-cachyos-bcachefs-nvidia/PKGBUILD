@@ -1,0 +1,9 @@
+# Maintainer: gigas002
+#
+# linux-cachyos-bcachefs + linux-cachyos-bcachefs-nvidia-open, for NVIDIA
+# (Turing+) machines. Everything lives in ../linux-cachyos-bcachefs (overlay,
+# vendored upstream PKGBUILD/config, update.sh); this only enables nvidia-open.
+# The kernel package itself is identical to the one built there.
+
+_build_nvidia_open=yes
+source "$(dirname "${BASH_SOURCE[0]}")/../linux-cachyos-bcachefs/PKGBUILD"

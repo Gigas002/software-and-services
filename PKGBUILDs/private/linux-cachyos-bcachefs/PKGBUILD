@@ -1,0 +1,134 @@
+# Maintainer: gigas002
+#
+# linux-cachyos with bcachefs compiled *into* the kernel (CONFIG_BCACHEFS_FS=y),
+# so a broken bcachefs/kernel combo fails here, at makepkg time, instead of
+# in a DKMS hook after the new kernel is already installed.
+#
+# This is an overlay: it sources the unmodified upstream CachyOS PKGBUILD
+# (linux-cachyos.PKGBUILD + config, vendored next to this file) and only
+# changes what it has to. Resync both with ./update.sh.
+#
+# All upstream build options (_cpusched, _use_llvm_lto, _localmodcfg, ...)
+# still work as env vars, e.g.:  _localmodcfg=yes makepkg -s
+#
+# This variant builds no GPU modules (AMD/Intel machines). For NVIDIA (Turing+)
+# use ../linux-cachyos-bcachefs-nvidia, which reuses this file and also builds
+# linux-cachyos-bcachefs-nvidia-open.
+
+# bcachefs version to build in. Keep in step with the bcachefs-tools package
+# (update.sh does that and refreshes the checksum).
+_bcachefs_ver=1.39.7
+_bcachefs_b2sum='ff067f77ea2de9944b1a83d7058d357833aa13f2445c680c002593535fedbe81d551f9c960a715b5fed4d5e193563dfb9d5872004b5e299a8e0c98c1973268b0'
+
+# Defaults that differ from upstream. Must be set before sourcing it.
+: "${_build_nvidia_open:=no}"
+
+source "$(dirname "${BASH_SOURCE[0]}")/linux-cachyos.PKGBUILD"
+
+### Identity ###################################################################
+
+_upstream_pkgbase=$pkgbase
+_pkgsuffix=cachyos-bcachefs
+pkgbase="linux-$_pkgsuffix"
+_kernuname="${pkgver}-${_pkgsuffix}"
+pkgdesc="${pkgdesc% Kernel*} Kernel by CachyOS, with bcachefs built in."
+export KBUILD_BUILD_USER="$pkgbase"
+
+### Sources ####################################################################
+
+_bcachefs_src="bcachefs-tools-${_bcachefs_ver}"
+# Upstream only lists checksums for its base sources (optional nvidia etc.
+# sources aren't covered), so pad with SKIP before appending ours.
+while (( ${#b2sums[@]} < ${#source[@]} )); do b2sums+=('SKIP'); done
+source+=("${_bcachefs_src}.tar.gz::https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v${_bcachefs_ver}.tar.gz")
+b2sums+=("$_bcachefs_b2sum")
+
+### prepare ####################################################################
+
+eval "_upstream_prepare() $(declare -f prepare | tail -n +2)"
+
+prepare() {
+    _upstream_prepare
+
+    cd "${srcdir}/${_srcname}"
+
+    echo "Adding bcachefs ${_bcachefs_ver} to the kernel tree..."
+    [[ -f "${srcdir}/${_bcachefs_src}/fs/Kconfig" ]] \
+        || _die "bcachefs-tools ${_bcachefs_ver} has no fs/Kconfig - source layout changed"
+
+    rm -rf fs/bcachefs
+    cp -a "${srcdir}/${_bcachefs_src}/fs" fs/bcachefs
+
+    if ! grep -q 'fs/bcachefs/Kconfig' fs/Kconfig; then
+        grep -q '^source "fs/btrfs/Kconfig"$' fs/Kconfig \
+            || _die 'Anchor `source "fs/btrfs/Kconfig"` not found in fs/Kconfig'
+        sed -i '/^source "fs\/btrfs\/Kconfig"$/a source "fs/bcachefs/Kconfig"' fs/Kconfig
+    fi
+    if ! grep -q 'CONFIG_BCACHEFS_FS' fs/Makefile; then
+        printf 'obj-$(CONFIG_BCACHEFS_FS)\t+= bcachefs/\n' >> fs/Makefile
+    fi
+
+    # Kernel 7.3's Rust bindings renamed workqueue::system_unbound() to
+    # system_dfl(); bcachefs (<= 1.39.7) still calls the old name when built
+    # in-tree. (DKMS doesn't notice: it builds against its own vendored copy
+    # of the kernel crate.) Only rewrite when the kernel actually lacks it.
+    if ! grep -q 'pub fn system_unbound' rust/kernel/workqueue.rs \
+        && grep -q 'pub fn system_dfl' rust/kernel/workqueue.rs \
+        && grep -q 'kernel::workqueue::system_unbound()' fs/bcachefs/util/async_exec.rs; then
+        echo "Fixing bcachefs for kernel workqueue::system_unbound -> system_dfl rename..."
+        sed -i 's/kernel::workqueue::system_unbound()/kernel::workqueue::system_dfl()/' \
+            fs/bcachefs/util/async_exec.rs
+    fi
+
+    echo "Enabling built-in bcachefs..."
+    scripts/config -e BCACHEFS_FS -e BCACHEFS_QUOTA -e BCACHEFS_SIX_OPTIMISTIC_SPIN
+    make "${BUILD_FLAGS[@]}" olddefconfig
+
+    grep -qx 'CONFIG_BCACHEFS_FS=y' .config \
+        || _die "CONFIG_BCACHEFS_FS did not end up =y (got: $(grep BCACHEFS_FS .config || echo unset))"
+
+    make -s kernelrelease > version
+    echo "Prepared $pkgbase version $(<version)"
+
+    # Upstream saved the config before bcachefs was in it; save it again.
+    local basedir="$(dirname "$(readlink "${srcdir}/config")")"
+    cat .config > "${basedir}/config-${pkgver}-${pkgrel}${pkgbase#linux}"
+}
+
+### build ######################################################################
+
+eval "_upstream_build() $(declare -f build | tail -n +2)"
+
+build() {
+    cd "${srcdir}/${_srcname}"
+    # Compile bcachefs before anything else, so a broken kernel/bcachefs combo
+    # fails in minutes instead of at the end of a full kernel build.
+    echo "Building bcachefs first..."
+    make "${BUILD_FLAGS[@]}" -j"$(nproc)" fs/bcachefs/
+
+    # Upstream's build() does a relative `cd "$_srcname"`, so start it from srcdir.
+    cd "$srcdir"
+    _upstream_build
+
+    cd "${srcdir}/${_srcname}"
+    [[ -s fs/bcachefs/built-in.a ]] && grep -q 'bcachefs' modules.builtin \
+        || _die "bcachefs was not built into the kernel"
+    if [[ ! -f fs/bcachefs/mod.o ]]; then
+        warning "bcachefs was built WITHOUT its Rust parts (no fs/bcachefs/mod.o)."
+        warning "Check the build log for 'bcachefs:' messages explaining why."
+    fi
+    echo "bcachefs ${_bcachefs_ver} is built in."
+}
+
+### packages ###################################################################
+
+# Upstream generated package_${_upstream_pkgbase}*() functions; generate ours.
+pkgname=("${pkgname[@]/#$_upstream_pkgbase/$pkgbase}")
+for _p in "${pkgname[@]}"; do
+    unset -f "package_${_upstream_pkgbase}${_p#$pkgbase}"
+    eval "package_$_p() {
+    $(declare -f "_package${_p#$pkgbase}")
+    _package${_p#$pkgbase}
+    }"
+done
+unset _p
