@@ -1,0 +1,9 @@
+/*
+!/.gitignore
+!/.SRCINFO
+!/PKGBUILD
+!/update.sh
+!/steam.cfg
+!/steam-frozen.sh
+!/steam_client_steamrt64.manifest
+!/keys/
