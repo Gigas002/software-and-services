@@ -31,7 +31,7 @@ winget install --id=PlayStation.PlayStationAccessories -e
 # winget install --id=Proton.ProtonVPN -e
 winget install --id=WireGuard.WireGuard -e
 winget install --id=CodecGuide.K-LiteCodecPack.Mega -e
-winget install --id=Google.GoogleDrive -e
+# winget install --id=Google.GoogleDrive -e
 # winget install --id=FilesCommunity.Files -e
 
 # prefer changing PowerToys Run hotkey to win+r
@@ -80,7 +80,7 @@ scoop bucket add extras
 # scoop bucket add java
 # scoop bucket add versions
 # scoop bucket add nonportable
-# own bucket: acheron, concord
+# own bucket: acheron, concord, rust-gnu, cargo-deny
 scoop bucket add gigas https://github.com/Gigas002/scoop-bucket
 # discordo
 scoop bucket add vvxrtues https://github.com/vvirtues/bucket
@@ -155,10 +155,11 @@ scoop install main/python
 # reg import $HOME/scoop/apps/python/current/install-pep-514.reg
 # scoop install java/openjdk
 # scoop install main/dotnet-sdk
-scoop install main/rust-gnu
+scoop install gigas/rust-gnu
 scoop install main/rust-analyzer
 scoop install main/mingw
 scoop install main/typos
+scoop install gigas/cargo-deny
 # scoop install main/nodejs
 scoop install main/claude-code
 

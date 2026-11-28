@@ -3,32 +3,32 @@
         {
             "Name": "main",
             "Source": "https://github.com/ScoopInstaller/Main",
-            "Updated": "2026-11-24T21:30:03+09:00",
-            "Manifests": 1719
+            "Updated": "2026-11-28T09:41:02+09:00",
+            "Manifests": 1730
         },
         {
             "Name": "extras",
             "Source": "https://github.com/ScoopInstaller/Extras",
-            "Updated": "2026-11-24T21:31:06+09:00",
+            "Updated": "2026-11-28T09:42:07+09:00",
             "Manifests": 2479
         },
         {
             "Name": "nerd-fonts",
             "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
-            "Updated": "2026-11-11T05:21:53+09:00",
+            "Updated": "2026-11-27T08:37:52+09:00",
             "Manifests": 367
         },
         {
             "Name": "games",
             "Source": "https://github.com/Calinou/scoop-games",
-            "Updated": "2026-11-24T13:50:29+09:00",
+            "Updated": "2026-11-28T09:04:21+09:00",
             "Manifests": 427
         },
         {
             "Name": "gigas",
             "Source": "https://github.com/Gigas002/scoop-bucket",
-            "Updated": "2026-11-23T09:58:22+09:00",
-            "Manifests": 2
+            "Updated": "2026-11-28T09:07:57+09:00",
+            "Manifests": 4
         },
         {
             "Name": "vvxrtues",
@@ -47,9 +47,9 @@
         },
         {
             "Name": "acheron",
-            "Version": "2026.11.23-08dd089",
+            "Version": "2026.11.27-eb4c7c3",
             "Source": "gigas",
-            "Updated": "2026-11-23T16:09:25.623978+09:00",
+            "Updated": "2026-11-28T12:03:23.291039+09:00",
             "Info": ""
         },
         {
@@ -88,6 +88,13 @@
             "Info": ""
         },
         {
+            "Name": "cargo-deny",
+            "Version": "0.22.2",
+            "Source": "gigas",
+            "Updated": "2026-11-28T12:03:24.0240943+09:00",
+            "Info": ""
+        },
+        {
             "Name": "CascadiaCode-NF-Mono",
             "Version": "3.5.1",
             "Source": "nerd-fonts",
@@ -110,16 +117,16 @@
         },
         {
             "Name": "claude-code",
-            "Version": "2.1.331",
+            "Version": "2.1.332",
             "Source": "main",
-            "Updated": "2026-11-24T22:04:36.005721+09:00",
+            "Updated": "2026-11-25T18:47:09.7192936+09:00",
             "Info": ""
         },
         {
             "Name": "concord",
-            "Version": "2.7.2",
+            "Version": "2.7.3",
             "Source": "gigas",
-            "Updated": "2026-11-22T16:43:05.7883234+09:00",
+            "Updated": "2026-11-27T19:23:26.2016399+09:00",
             "Info": ""
         },
         {
@@ -299,9 +306,9 @@
         },
         {
             "Name": "rust-gnu",
-            "Version": "1.100.0",
-            "Source": "main",
-            "Updated": "2026-11-24T22:08:31.731505+09:00",
+            "Version": "1.100.1",
+            "Source": "gigas",
+            "Updated": "2026-11-28T12:05:59.2743887+09:00",
             "Info": ""
         },
         {
@@ -418,9 +425,9 @@
         },
         {
             "Name": "zed",
-            "Version": "1.29.3",
+            "Version": "1.30.2",
             "Source": "extras",
-            "Updated": "2026-11-22T16:43:24.2375691+09:00",
+            "Updated": "2026-11-26T20:21:12.1474185+09:00",
             "Info": ""
         },
         {

@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2026-11-24T22:48:25.259-00:00",
+	"CreationDate" : "2026-11-28T13:47:11.535-00:00",
 	"Sources" : 
 	[
 		{
@@ -17,9 +17,6 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2008.x64"
-				},
-				{
-					"PackageIdentifier" : "Google.GoogleDrive"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.GameInput"
